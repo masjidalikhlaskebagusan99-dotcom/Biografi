@@ -542,7 +542,278 @@ header, .breadcrumb, .share-bar, .article-nav, .kalam-back-btn { display: none !
 body { background: #fff; }
 }
 </style>
-<script src="kalam-nav-patch.js"></script>
+/*!
+ * ============================================================
+ *  KALAM — ANTI-SCROLL PATCH v2.0 (AGGRESSIVE)
+ * ------------------------------------------------------------
+ *  Masalah yang diperbaiki:
+ *    - Browser scroll restoration bekerja sebelum script jalan
+ *    - file:// protocol mengabaikan history.scrollRestoration
+ *    - Mobile browser punya internal scroll anchoring
+ *    - Font Arab / gambar yang baru dimuat memicu layout shift
+ *
+ *  Solusi:
+ *    1. Inline script di <head> (lebih cepat dari external)
+ *    2. Scroll-lock polling dengan requestAnimationFrame
+ *    3. Event listener yang menangkap & memaksa scroll ke 0
+ *    4. Timeout pengaman agar tidak terkunci selamanya
+ *
+ *  Cara pakai:
+ *    <script src="kalam-nav-patch.js"></script>
+ *    letakkan di <head>, TEPAT SEBELUM </head>
+ *
+ *  Berlaku untuk: jilani2.html s/d jilani9.html
+ *                 syafii*.html / naqsyabandi*.html (otomatis)
+ * ============================================================
+ */
+(function () {
+  'use strict';
+
+  if (window.__KALAM_SCROLL_LOCK__) return;
+  window.__KALAM_SCROLL_LOCK__ = '2.0';
+
+  /* ===== KONFIGURASI ===== */
+  var LOCK_DURATION = 800;   // ms: durasi kunci scroll (naikkan jika masih loncat)
+  var POLL_INTERVAL = 16;    // ms: interval paksa scroll ke 0 (≈1 frame)
+  var SELECTOR      = '.article-nav a[href], .article-nav-btn[href]';
+
+  var html      = document.documentElement;
+  var body      = document.body;
+  var locked    = true;
+  var startTime = Date.now();
+  var rafId     = null;
+
+  /* ===== 1. MATIKAN SCROLL RESTORATION SECEPAT MUNGKIN ===== */
+  try {
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+  } catch (e) {}
+
+  /* ===== 2. CSS PATCH (diinjeksi otomatis) ===== */
+  var css = document.createElement('style');
+  css.textContent = [
+    'html,body{scroll-behavior:auto!important;}',
+    'html{overflow-anchor:none!important;}',
+    'html.kalam-locked,html.kalam-locked body{',
+    '  overflow:hidden!important;',
+    '  overscroll-behavior:none!important;',
+    '  position:fixed!important;',
+    '  width:100%!important;',
+    '  top:0!important;',
+    '  left:0!important;',
+    '}',
+    '.article-nav,.article-nav *{scroll-behavior:auto!important;}',
+    '@media print{html.kalam-locked,html.kalam-locked body{',
+    '  overflow:visible!important;position:static!important;',
+    '}}'
+  ].join('\n');
+  (document.head || html).appendChild(css);
+
+  /* ===== 3. PAKSA SCROLL KE 0 (fungsi inti) ===== */
+  function forceTop() {
+    try { window.scrollTo(0, 0); } catch (e) {}
+    html.scrollTop = 0;
+    html.scrollLeft = 0;
+    if (body) {
+      body.scrollTop = 0;
+      body.scrollLeft = 0;
+    }
+  }
+
+  /* ===== 4. KUNCI SCROLL ===== */
+  function lockScroll() {
+    locked = true;
+    startTime = Date.now();
+    html.classList.add('kalam-locked');
+    forceTop();
+    startPolling();
+  }
+
+  /* ===== 5. LEPAS KUNCI ===== */
+  function unlockScroll() {
+    if (!locked) return;
+    locked = false;
+    stopPolling();
+    html.classList.remove('kalam-locked');
+    forceTop(); // pastikan final position = 0
+  }
+
+  /* ===== 6. POLLING — paksa scroll ke 0 setiap frame ===== */
+  function poll() {
+    if (!locked) return;
+
+    forceTop();
+
+    // Auto-unlock setelah LOCK_DURATION ms
+    if (Date.now() - startTime > LOCK_DURATION) {
+      unlockScroll();
+      return;
+    }
+
+    rafId = requestAnimationFrame(poll);
+  }
+
+  function startPolling() {
+    if (rafId) cancelAnimationFrame(rafId);
+    rafId = requestAnimationFrame(poll);
+  }
+
+  function stopPolling() {
+    if (rafId) {
+      cancelAnimationFrame(rafId);
+      rafId = null;
+    }
+  }
+
+  /* ===== 7. TANGKAP SEMUA UPAYA SCROLL SELAMA TERKUNCI ===== */
+  function onScroll() {
+    if (locked) forceTop();
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true, capture: true });
+  document.addEventListener('scroll', onScroll, { passive: true, capture: true });
+
+  // Tangkap wheel, touch, pointer — cegah user scroll saat terkunci
+  ['wheel', 'touchstart', 'touchmove', 'pointerdown', 'keydown'].forEach(function (type) {
+    document.addEventListener(type, function (e) {
+      if (locked) {
+        forceTop();
+        // Jangan cegah navigasi, cukup paksa scroll ke 0
+      }
+    }, { passive: true, capture: true });
+  });
+
+  /* ===== 8. TANGKAP KLIK TOMBOL NAVIGASI ===== */
+  document.addEventListener('click', function (e) {
+    if (e.defaultPrevented || e.button !== 0 ||
+        e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+
+    var t = e.target;
+    if (!t || typeof t.closest !== 'function') return;
+
+    var a = t.closest(SELECTOR);
+    if (!a) return;
+
+    // Abaikan: header, breadcrumb, tombol KALAM kembali
+    if (t.closest('header') || t.closest('.breadcrumb') ||
+        a.classList.contains('kalam-back-btn')) return;
+
+    var href = a.getAttribute('href');
+    if (!href || /^(#|javascript:|mailto:|tel:)/i.test(href.trim())) return;
+
+    var url;
+    try {
+      var u = new URL(href, location.href);
+      if (u.origin !== location.origin) return;
+      if (!/\.html?$/i.test(u.pathname)) return;
+      url = u.href;
+    } catch (err) { return; }
+
+    e.preventDefault();
+    e.stopPropagation();
+
+    // Klik halaman aktif → cukup scroll ke top
+    if (url === location.href.split('#')[0]) {
+      lockScroll();
+      setTimeout(unlockScroll, 300);
+      return;
+    }
+
+    // Pindah halaman: kunci dulu, baru pindah
+    lockScroll();
+    try {
+      sessionStorage.setItem('KALAM_JUMP', '1');
+    } catch (err) {}
+
+    try { location.assign(url); }
+    catch (err) { location.href = url; }
+  }, false);
+
+  /* ===== 9. DETEKSI HALAMAN BARU (setelah reload) ===== */
+  var isJump = false;
+  try {
+    isJump = sessionStorage.getItem('KALAM_JUMP') === '1';
+    if (isJump) sessionStorage.removeItem('KALAM_JUMP');
+  } catch (err) {
+    isJump = true; // default: anggap jump jika sessionStorage tidak tersedia
+  }
+
+  /* ===== 10. BOOT — jalankan SEGERA ===== */
+  if (isJump) {
+    lockScroll();
+  }
+
+  // Pastikan unlock saat DOM ready + load
+  function onReady() {
+    forceTop();
+    // Tunda unlock sedikit agar gambar/font selesai
+    setTimeout(function () {
+      forceTop();
+      setTimeout(unlockScroll, 200);
+    }, 100);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', onReady, { once: true });
+  } else {
+    onReady();
+  }
+
+  window.addEventListener('load', function () {
+    forceTop();
+    setTimeout(unlockScroll, 300);
+  }, { once: true });
+
+  /* ===== 11. ANTI-LAYOUT-SHIFT (gambar & font) ===== */
+  document.addEventListener('load', function (e) {
+    if (locked && e.target && e.target.tagName === 'IMG') {
+      forceTop();
+    }
+  }, true);
+
+  if (document.fonts && document.fonts.ready && document.fonts.ready.then) {
+    document.fonts.ready.then(function () {
+      if (locked) forceTop();
+    });
+  }
+
+  /* ===== 12. BACK/FORWARD & bfcache ===== */
+  window.addEventListener('pageshow', function (e) {
+    if (e.persisted) {
+      lockScroll();
+      setTimeout(unlockScroll, 500);
+    }
+  });
+
+  window.addEventListener('popstate', function () {
+    lockScroll();
+    setTimeout(unlockScroll, 500);
+  });
+
+  /* ===== 13. SINKRON TOMBOL .active ===== */
+  function syncActive() {
+    var list = document.querySelectorAll('.article-nav-btn[href], .article-nav a[href]');
+    var here = location.pathname + location.search;
+    for (var i = 0; i < list.length; i++) {
+      var a = list[i];
+      if (!a.classList.contains('article-nav-btn')) continue;
+      var on = false;
+      try {
+        var u = new URL(a.getAttribute('href'), location.href);
+        on = (u.pathname + u.search) === here;
+      } catch (e) {}
+      a.classList.toggle('active', on);
+    }
+  }
+
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    syncActive();
+  } else {
+    document.addEventListener('DOMContentLoaded', syncActive, { once: true });
+  }
+
+})();
 </head>
 <body>
 <header>
