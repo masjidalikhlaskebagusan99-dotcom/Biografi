@@ -20,6 +20,16 @@ color: #333;
 min-height: 100vh;
 line-height: 1.8;
 }
+/* PENTING: Nonaktifkan smooth scroll global agar lompatan instan */
+html {
+    scroll-behavior: auto !important;
+}
+
+/* Cegah animasi scroll saat load halaman */
+html, body {
+    overflow-anchor: none;
+    -webkit-overflow-scrolling: auto;
+}
 /* 2. MEDIA QUERY TABLET */
 @media (max-width: 768px) {
 .article-container {
@@ -796,31 +806,105 @@ KALAM
 </footer>
 
 <script>
-/* KONTROL UKURAN HURUF — SAMA DENGAN contoh.txt */
-let currentFontSize = 1.05;
-function changeFontSize(delta) {
-currentFontSize += delta * 0.1;
-if (currentFontSize < 0.8) currentFontSize = 0.8;
-if (currentFontSize > 1.5) currentFontSize = 1.5;
-document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+/* ============================================
+   PATCH UNIVERSAL v1.0 — SMOOTH PAGE JUMP
+   Mencegah scroll flicker saat pindah halaman
+   Berlaku untuk: jilani2.html - jilani9.html
+   ============================================ */
+
+// 1. NONAKTIFKAN SCROLL RESTORASI BROWSER
+// Mencegah browser mengingat posisi scroll halaman sebelumnya
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
 }
 
-/* TOMBOL BAGIKAN */
-document.querySelector('.share-btn.fb').addEventListener('click', function (e) {
-e.preventDefault();
-window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(location.href), '_blank', 'noopener,noreferrer');
+// 2. PASTIKAN POSISI SCROLL DI TOP SAAT HALAMAN DIMUAT
+// Ini dijalankan SEBELUM rendering konten untuk mencegah flicker
+window.addEventListener('pageshow', function(event) {
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
 });
-document.querySelector('.share-btn.tw').addEventListener('click', function (e) {
-e.preventDefault();
-window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(location.href) + '&text=' + encodeURIComponent(document.title), '_blank', 'noopener,noreferrer');
+
+// 3. PAKSA SCROLL KE TOP SAAT DOM READY
+document.addEventListener('DOMContentLoaded', function() {
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
 });
-document.querySelector('.share-btn.wa').addEventListener('click', function (e) {
-e.preventDefault();
-window.open('https://wa.me/?text=' + encodeURIComponent(document.title + ' — ' + location.href), '_blank', 'noopener,noreferrer');
+
+// 4. OVERRIDE KLIK TOMBOL NAVIGASI — JUMP LANGSUNG
+// Mencegah animasi scroll dan langsung lompat ke halaman tujuan
+document.addEventListener('click', function(e) {
+    const navBtn = e.target.closest('.article-nav-btn');
+    if (navBtn) {
+        const href = navBtn.getAttribute('href');
+        if (href && href.endsWith('.html')) {
+            e.preventDefault();
+            // Reset scroll position SEBELUM pindah halaman
+            window.scrollTo(0, 0);
+            // Langsung lompat ke halaman tujuan
+            window.location.href = href;
+        }
+    }
+    
+    // Override juga untuk tombol "Kembali ke Beranda"
+    const backBtn = e.target.closest('.kalam-back-btn');
+    if (backBtn) {
+        const href = backBtn.getAttribute('href');
+        if (href) {
+            e.preventDefault();
+            window.scrollTo(0, 0);
+            window.location.href = href;
+        }
+    }
+    
+    // Override untuk link navigasi di header
+    const navLink = e.target.closest('header nav a');
+    if (navLink) {
+        const href = navLink.getAttribute('href');
+        if (href && (href.endsWith('.html') || href.includes('github.io'))) {
+            e.preventDefault();
+            window.scrollTo(0, 0);
+            window.location.href = href;
+        }
+    }
+    
+    // Override untuk breadcrumb link
+    const breadcrumbLink = e.target.closest('.breadcrumb a');
+    if (breadcrumbLink) {
+        const href = breadcrumbLink.getAttribute('href');
+        if (href) {
+            e.preventDefault();
+            window.scrollTo(0, 0);
+            window.location.href = href;
+        }
+    }
 });
-document.querySelector('.share-btn.tg').addEventListener('click', function (e) {
-e.preventDefault();
-window.open('https://t.me/share/url?url=' + encodeURIComponent(location.href) + '&text=' + encodeURIComponent(document.title), '_blank', 'noopener,noreferrer');
+
+// 5. FONTSIZE CONTROL — TETAP DI TOP SETELAH PERUBAHAN
+function changeFontSize(delta) {
+    currentFontSize += delta * 0.1;
+    if (currentFontSize < 0.8) currentFontSize = 0.8;
+    if (currentFontSize > 1.5) currentFontSize = 1.5;
+    document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+    // Pastikan tetap di posisi semula, tidak scroll
+    const scrollPos = window.scrollY;
+    window.scrollTo(0, scrollPos);
+}
+let currentFontSize = 1.05;
+
+// 6. CEGAH SCROLL OTOMATIS DARI HASH URL
+// Jika URL mengandung #, abaikan dan tetap di top
+if (window.location.hash) {
+    window.scrollTo(0, 0);
+    history.replaceState(null, null, window.location.pathname);
+}
+
+// 7. DETEKSI BACK/FORWARD BUTTON BROWSER
+// Pastikan saat user tekan back/forward, scroll tetap di top
+window.addEventListener('popstate', function() {
+    window.scrollTo(0, 0);
 });
 </script>
 </body>
