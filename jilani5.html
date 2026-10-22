@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halaman 5 — Perjalanan Spiritual Jalur Umum Syeikh Abdul Qadir Al-Jilani - KALAM</title>
+<style>
+/* 1. RESET & DASAR */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+/* 2. MEDIA QUERY TABLET */
+@media (max-width: 768px) {
+.article-container {
+max-width: 100%;
+padding: 20px;
+}
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+/* 3. HEADER & NAVIGASI ATAS */
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+/* 4. BREADCRUMB & CONTAINER */
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+/* 5. ARTICLE HEADER & META */
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+/* 6. GAMBAR & SHARE BAR */
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+/* 7. KONTEN ARTIKEL */
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+.article-content ol {
+margin: 15px 0 20px 30px;
+}
+.article-content ol li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 8. KOTAK ARAB & KAROMAH */
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.latin-text {
+direction: ltr;
+text-align: center;
+font-style: italic;
+color: #8a6d2f;
+font-size: 0.95rem;
+line-height: 1.9;
+margin: 12px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 9. NAVIGASI HALAMAN (9 TOMBOL — DIATUR AGAR ELEGAN) */
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* 10. TOMBOL KEMBALI & FOOTER */
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+/* 11. MEDIA QUERY MOBILE */
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+/* PATCH UNIVERSAL v2.0 */
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="artikelwali2.html">Artikel</a>
+</nav>
+</header>
+
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Abdul Qadir Al-Jilani — Halaman 5
+</div>
+
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Abdul Qadir Al-Jilani Sulthanul Awliya'</h1>
+<div class="subtitle">Halaman 5 dari 9 — Bagian 3: Perjalanan Spiritual — Jalur Umum</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Kamis, 22 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Abdul_Qadir_Jilani.jpg/440px-Abdul_Qadir_Jilani.jpg"
+alt="Syeikh Abdul Qadir Al-Jilani"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Cairo_-_Islamic_district_-_Gate_of_Bab_Zuweila.jpg/440px-Cairo_-_Islamic_district_-_Gate_of_Bab_Zuweila.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Ilustrasi Syeikh Abdul Qadir Al-Jilani, Sulthanul Awliya', ulama mazhab Hanbali dan pendiri Tarekat Qadiriyah yang makamnya di Baghdad hingga kini menjadi tujuan ziarah.</div>
+</div>
+
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+
+<div class="article-content" id="articleContent">
+
+<p class="lead">
+Perjalanan spiritual Syeikh Abdul Qadir Al-Jilani dapat dibaca dalam dua lapisan: <strong>jalur umum</strong> yang wajib ditempuh setiap Muslim, dan <strong>jalur khusus</strong> yang berupa pembinaan suluk dalam bimbingan mursyid. Beliau tidak pernah menempatkan jalur khusus sebagai pengganti jalur umum. Justru karena ketaatannya pada yang umum begitu sempurna, maka elevasi spiritual yang khusus dapat dipahami sebagai buah dari pondasi yang kokoh, bukan sebagai pelarian dari kewajiban.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG JALUR UMUM — QS. AL-HIJR: 99</div>
+<div class="arabic-text">
+وَاعْبُدْ رَبَّكَ حَتَّىٰ يَأْتِيَكَ الْيَقِينُ
+</div>
+<div class="latin-text">
+Wa‘bud rabbaka ḥattā ya’tiyakal-yaqīn.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan sembahlah Tuhanmu sampai datang kepadamu yang diyakini (ajal)."
+<br>— QS. Al-Hijr: 99. Ayat ini menjadi dasar bahwa ibadah dan ketaatan adalah jalur umum yang tidak pernah terputus sampai akhir hayat.
+</div>
+</div>
+
+<h2>Jalur Umum vs Jalur Khusus dalam Tasawuf</h2>
+<p>
+Sebelum membahas perjalanan spiritual Syeikh Abdul Qadir Al-Jilani secara lebih rinci, penting untuk memahami perbedaan antara jalur umum dan jalur khusus dalam tradisi tasawuf. <strong>Jalur umum</strong> adalah jalan yang terbuka bagi seluruh umat Islam tanpa syarat khusus: membenarkan tauhid, menegakkan shalat lima waktu, menunaikan zakat, berpuasa Ramadan, menunaikan haji bila mampu, berbuat adil, menunaikan amanah, menjaga lisan, menyayangi sesama, dan menjauhi larangan Allah. Bagi beliau, semua ini bukan "tahap pemula" yang boleh ditinggalkan setelah seseorang merasa mencapai maqam tinggi.
+</p>
+<p>
+<strong>Jalur khusus</strong> adalah jalan yang ditempuh di bawah bimbingan mursyid: bai'ah, khirqah, dzikir yang dibimbing, muhasabah intensif, serta tahapan maqam dan hal. Namun ciri paling kuat dari ajaran beliau adalah <strong>penjagaan batas</strong>: pengalaman batin tidak boleh menggulingkan hukum, dan kedudukan spiritual tidak boleh mengubah seorang hamba menjadi sosok yang disembah.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">LIMA PILLAR ISLAM — JALUR UMUM YANG WAJIB</div>
+<div class="arabic-text">
+شَهَادَةُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ وَأَنَّ مُحَمَّدًا رَسُولُ اللَّهِ ۝ إِقَامُ الصَّلَاةِ ۝ إِيتَاءُ الزَّكَاةِ ۝ صَوْمُ رَمَضَانَ ۝ حَجُّ الْبَيْتِ
+</div>
+<div class="latin-text">
+Syahādatu an lā ilāha illallāhu wa anna Muḥammadan rasūlullāh ۝ iqāmuṣ-ṣalāh ۝ ītā'uz-zakāh ۝ ṣawmu Ramaḍān ۝ ḥajjul-bait.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> Syahadat bahwa tiada Tuhan selain Allah dan bahwa Muhammad adalah utusan Allah ۝ Mendirikan shalat ۝ Menunaikan zakat ۝ Puasa Ramadan ۝ Haji ke Baitullah.
+<br>— Lima pilar Islam yang merupakan pondasi jalur umum setiap Muslim.
+</div>
+</div>
+
+<h2>Taubat: Pintu Masuk Perjalanan Spiritual</h2>
+<p>
+Taubat (التَّوْبَةُ) adalah langkah pertama dan paling mendasar dalam perjalanan spiritual. Secara bahasa, taubat berarti "kembali". Dalam istilah tasawuf, taubat adalah kembali secara sadar dari dosa, dengan penyesalan yang mendalam, penghentian perbuatan dosa saat itu juga, dan tekad yang kuat untuk tidak mengulanginya di masa depan.
+</p>
+<p>
+Bagi Syeikh Abdul Qadir Al-Jilani, taubat bukan hanya peristiwa satu kali, melainkan <strong>keadaan yang terus diperbarui</strong>. Beliau mengajarkan bahwa seorang hamba harus bertaubat setiap hari, bahkan setiap saat, karena kelalaian dan dosa kecil yang tidak disadari senantiasa mengintai hati. Dalam kitab <em>Al-Futuh al-Ghaib</em>, beliau sering memulai nasihatnya dengan ajakan untuk bertaubat, karena tanpa taubat yang jujur, perjalanan spiritual tidak akan pernah dimulai dengan benar.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TAUBAT — QS. AT-TAUBAH: 119</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ وَكُونُوا مَعَ الصَّادِقِينَ
+</div>
+<div class="latin-text">
+Yā ayyuhallażīna āmanuttaqullāha wa kūnū ma‘aṣ-ṣādiqīn.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, bertakwalah kepada Allah, dan hendaklah kamu bersama orang-orang yang benar (jujur)."
+<br>— QS. At-Taubah: 119. Kejujuran dalam taubat adalah syarat utama agar taubat diterima oleh Allah.
+</div>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Tiga Syarat Taubat yang Diterima</span>
+<div class="karomah-arabic">شُرُوطُ التَّوْبَةِ النَّصُوحِ</div>
+<p>
+Menurut Syeikh Abdul Qadir Al-Jilani, taubat yang diterima oleh Allah harus memenuhi tiga syarat utama:
+</p>
+<ul>
+<li><strong>Penyesalan yang mendalam (النَّدَمُ):</strong> hati merasa sakit atas dosa yang telah dilakukan, bukan hanya takut dari hukuman, tetapi malu di hadapan Allah.</li>
+<li><strong>Penghentian segera (الْإِقْلَاعُ):</strong> meninggalkan perbuatan dosa saat itu juga, tanpa menunda-nunda.</li>
+<li><strong>Tekad untuk tidak mengulangi (الْعَزْمُ عَلَى أَنْ لَا يَعُودَ):</strong> niat yang kuat untuk tidak kembali kepada dosa tersebut di masa depan.</li>
+</ul>
+<p>
+Beliau juga menambahkan syarat keempat yang sering dilupakan: <strong>mengganti dosa dengan amal shaleh</strong>. Jika dosa itu berkaitan dengan hak Allah, maka diganti dengan ibadah tambahan. Jika dosa itu berkaitan dengan hak manusia, maka diganti dengan mengembalikan hak tersebut atau meminta maaf.
+</p>
+</div>
+
+<h2>Istiqamah: Konsistensi di Atas Kebenaran</h2>
+<p>
+Istiqamah (الِاسْتِقَامَةُ) adalah konsistensi di atas perintah dan larangan Allah dalam keadaan senang maupun sulit, sehat maupun sakit, kaya maupun miskin. Bagi Syeikh Abdul Qadir Al-Jilani, istiqamah adalah <strong>karomah yang paling agung</strong> — lebih tinggi daripada berjalan di atas air atau terbang di udara. Beliau pernah berkata:
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH ABDUL QADIR AL-JILANI</div>
+<div class="arabic-text">
+أَعْظَمُ الْكَرَامَةِ الِاسْتِقَامَةُ عَلَى الشَّرِيعَةِ وَاتِّبَاعُ السُّنَّةِ
+</div>
+<div class="latin-text">
+A‘ẓamul-karāmati al-istiqāmatu ‘alasy-syarī‘ati wattibā‘us-sunnah.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Karomah yang paling agung adalah istiqamah di atas syariat dan mengikuti sunnah Nabi SAW dalam setiap keadaan."
+<br>— Syeikh Abdul Qadir Al-Jilani, dalam kitab <em>Al-Fath ar-Rabbani</em>
+</div>
+</div>
+
+<p>
+Istiqamah bukan berarti tidak pernah berbuat dosa, melainkan <strong>segera kembali kepada Allah setelah berbuat dosa</strong>. Seorang yang istiqamah tidak akan membiarkan dirinya tenggelam dalam kelalaian, tetapi akan segera bertaubat dan memperbaiki diri. Inilah yang membedakan antara istiqamah yang sejati dengan kesombongan rohani.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL ISTIQAMAH — QS. FUSSILAT: 30</div>
+<div class="arabic-text">
+إِنَّ الَّذِينَ قَالُوا رَبُّنَا اللَّهُ ثُمَّ اسْتَقَامُوا تَتَنَزَّلُ عَلَيْهِمُ الْمَلَائِكَةُ أَلَّا تَخَافُوا وَلَا تَحْزَنُوا وَأَبْشِرُوا بِالْجَنَّةِ الَّتِي كُنْتُمْ تُوعَدُونَ
+</div>
+<div class="latin-text">
+Innallażīna qālū rabbunallāhu ṡṡumma staqāmu tatanazzalu ‘alaihimul-malā'ikatu allā takhāfū wa lā taḥzanū wa absyirū bil-jannatillatī kuntum tū‘adūn.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sesungguhnya orang-orang yang mengatakan: 'Tuhan kami ialah Allah' kemudian mereka istiqamah pada pendirian mereka, maka malaikat akan turun kepada mereka (dengan mengatakan): 'Janganlah kamu merasa takut dan janganlah kamu merasa sedih; dan bergembiralah kamu dengan (memperoleh) surga yang telah dijanjikan Allah kepadamu.'"
+<br>— QS. Fussilat: 30
+</div>
+</div>
+
+<h2>Ikhlas: Membersihkan Niat dari Campuran</h2>
+<p>
+Ikhlas (الْإِخْلَاصُ) adalah membersihkan niat dari pujian manusia dan kepentingan diri. Dalam pandangan Syeikh Abdul Qadir Al-Jilani, ikhlas adalah <strong>ruh dari seluruh amal</strong>. Tanpa ikhlas, amal shaleh menjadi kering dan tidak bernilai di sisi Allah. Beliau mengajarkan bahwa seorang hamba harus memeriksa niatnya secara terus-menerus, karena penyakit riya' (ingin dipuji) dan sum'ah (ingin didengar) sangat halus dan mudah menyusup ke dalam hati.
+</p>
+<p>
+Beliau pernah berkata: <em>"Ikhlas adalah engkau tidak mencari atas amalmu selain ridha Allah, tidak peduli apakah manusia memuji atau mencela, apakah engkau diberi atau tidak diberi, apakah engkau dikenal atau tidak dikenal."</em> Inilah tingkat ikhlas yang tertinggi — ketika seorang hamba tidak lagi peduli terhadap pandangan manusia, karena seluruh perhatiannya tertuju kepada Allah semata.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL IKHLAS — QS. AL-BAYYINAH: 5</div>
+<div class="arabic-text">
+وَمَا أُمِرُوا إِلَّا لِيَعْبُدُوا اللَّهَ مُخْلِصِينَ لَهُ الدِّينَ
+</div>
+<div class="latin-text">
+Wa mā umirū illā liya‘budullāha mukhliṣīna lahud-dīn.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Padahal mereka tidak disuruh kecuali supaya menyembah Allah dengan memurnikan ketaatan kepada-Nya dalam (menjalankan) agama."
+<br>— QS. Al-Bayyinah: 5
+</div>
+</div>
+
+<h2>Muhasabah: Mengoreksi Diri Setiap Hari</h2>
+<p>
+Muhasabah (الْمُحَاسَبَةُ) adalah mengoreksi diri setiap hari sebelum dihisab di hari kiamat. Syeikh Abdul Qadir Al-Jilani sangat menekankan pentingnya muhasabah, karena tanpa muhasabah, seorang hamba tidak akan menyadari kesalahan-kesalahan kecil yang lama-kelamaan menumpuk dan menjadi penghalang bagi kemajuan spiritual.
+</p>
+<p>
+Beliau mengajarkan agar setiap Muslim meluangkan waktu setiap malam — meskipun hanya sepuluh menit — untuk mengoreksi dirinya: <em>"Apa yang telah aku lakukan hari ini? Apakah aku telah menunaikan kewajiban-kewajibanku? Apakah aku telah menjaga lisan dan pandanganku? Apakah aku telah berbuat baik kepada sesama? Apakah ada dosa yang harus aku taubati?"</em> Dengan muhasabah yang rutin, seorang hamba akan semakin peka terhadap kelemahan dirinya dan semakin cepat bertaubat.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL MUHASABAH — QS. AL-HASYR: 18</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ وَلْتَنْظُرْ نَفْسٌ مَا قَدَّمَتْ لِغَدٍ وَاتَّقُوا اللَّهَ إِنَّ اللَّهَ بِمَا تَعْمَلُونَ خَبِيرٌ
+</div>
+<div class="latin-text">
+Yā ayyuhallażīna āmanuttaqullāha waltanẓur nafsum mā qaddamat lighad, wattaqullāha innallāha bimā ta‘malūna khabīr.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, bertakwalah kepada Allah dan hendaklah setiap diri memperhatikan apa yang telah diperbuatnya untuk hari esok (akhirat); dan bertakwalah kepada Allah, sesungguhnya Allah Maha Mengetahui apa yang kamu kerjakan."
+<br>— QS. Al-Hasyr: 18
+</div>
+</div>
+
+<h2>Dzikir: Menghadirkan Allah dalam Setiap Keadaan</h2>
+<p>
+Dzikir (الدِّكْرُ) adalah menghadirkan Allah dalam lisan, hati, dan perbuatan. Bagi Syeikh Abdul Qadir Al-Jilani, dzikir bukan hanya mengucapkan kalimat-kalimat tasbih, tahmid, tahlil, dan takbir, melainkan <strong>kehadiran hati di hadapan Allah</strong> dalam setiap keadaan — ketika bekerja, ketika makan, ketika berbicara, ketika berjalan, dan ketika beribadah.
+</p>
+<p>
+Beliau mengajarkan beberapa bentuk dzikir yang menjadi amalan utama dalam Tarekat Qadiriyah:
+</p>
+<ul>
+<li><strong>Dzikir jahar (dzikir keras):</strong> mengucapkan <em>Lā ilāha illallāh</em> dengan suara yang dapat didengar oleh telinga sendiri, untuk melatih konsentrasi dan mengusir kelalaian.</li>
+<li><strong>Dzikir khafi (dzikir dalam hati):</strong> menghadirkan kalimat tauhid di dalam hati tanpa menggerakkan lisan, untuk mencapai tingkat kehadiran yang lebih dalam.</li>
+<li><strong>Dzikir nafi itsbat:</strong> mengucapkan <em>Lā ilāha illallāh</em> dengan penekanan pada peniadaan segala sesuatu selain Allah dan penetapan bahwa hanya Allah yang berhak disembah.</li>
+<li><strong>Istighfar:</strong> memperbanyak memohon ampun kepada Allah, karena istighfar adalah kunci pembuka pintu rahmat.</li>
+<li><strong>Shalawat kepada Nabi SAW:</strong> memperbanyak shalawat, karena shalawat adalah wasilah terdekat kepada Allah.</li>
+</ul>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL DZIKIR — QS. AL-AHZAB: 41–42</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا اذْكُرُوا اللَّهَ ذِكْرًا كَثِيرًا ۝ وَسَبِّحُوهُ بُكْرَةً وَأَصِيلًا
+</div>
+<div class="latin-text">
+Yā ayyuhallażīna āmanużkuru Llāha żikran kaṡīrā. Wa sabbiḥūhu bukratan wa aṣīlā.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, ingatlah Allah dengan dzikir yang sebanyak-banyaknya. Dan bertasbihlah kepada-Nya pada waktu pagi dan petang."
+<br>— QS. Al-Ahzab: 41–42
+</div>
+</div>
+
+<h2>Mujahadah dan Khalwat: Latihan yang Sangat Ketat</h2>
+<p>
+Setelah menyelesaikan masa pembelajaran dan mencapai kematangan keilmuan, menurut riwayat yang masyhur Syeikh Abdul Qadir Al-Jilani memilih menyendiri selama <strong>dua puluh lima tahun</strong> untuk mujahadah dan khalwat. Sebagian manaqib menyebut kawasan gurun Ruhba dalam perjalanan beliau, sementara riwayat lain menempatkannya di sekitar Baghdad dan dalam perjalanan haji. Perbedaan lokasi ini tidak mengubah inti kisahnya: beliau sengaja menjauh dari keramaian untuk menyelesaikan pertempuran dengan dirinya sendiri sebelum berbicara kepada orang lain.
+</p>
+
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Masa Khalwat Selama 25 Tahun</span>
+<div class="karomah-arabic">الْخَلْوَةُ خَمْسًا وَعِشْرِينَ سَنَةً</div>
+<p>
+Masa khalwat (penyendirian) selama 25 tahun adalah salah satu ciri khas perjalanan spiritual Syeikh Abdul Qadir Al-Jilani. Dalam masa ini, beliau melatih diri dengan latihan yang sangat ketat:
+</p>
+<ul>
+<li><strong>Shalat malam yang panjang:</strong> beliau menghabiskan sebagian besar malam untuk shalat tahajud, witir, dan tilawah Al-Qur'an.</li>
+<li><strong>Puasa yang disiplin:</strong> beliau berpuasa secara rutin, terkadang berhari-hari tanpa berbuka kecuali dengan makanan yang sangat sederhana.</li>
+<li><strong>Pembacaan Al-Qur'an dengan perenungan:</strong> beliau tidak hanya membaca Al-Qur'an, melainkan merenungkan makna-maknanya dan menangis karena takut kepada Allah.</li>
+<li><strong>Dzikir berkesinambungan:</strong> lisan dan hatinya senantiasa basah dengan dzikir kepada Allah.</li>
+<li><strong>Tidur yang sedikit:</strong> beliau mengurangi tidur untuk memperbanyak waktu beribadah.</li>
+<li><strong>Makanan halal yang sederhana:</strong> beliau hanya memakan makanan yang halal dan thayyib, tanpa berlebihan.</li>
+</ul>
+<p>
+Tujuan dari latihan ini bukan menyiksa tubuh, melainkan melemahkan dominasi hawa nafsu agar hati mampu menerima cahaya kebenaran. Beliau mengingatkan bahwa riyadah tanpa syariat adalah kesesatan, dan syariat tanpa kehadiran hati sering kali kering.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL MUJAHADAH — QS. AL-ANKABUT: 69</div>
+<div class="arabic-text">
+وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا وَإِنَّ اللَّهَ لَمَعَ الْمُحْسِنِينَ
+</div>
+<div class="latin-text">
+Walladzīna jāhadū fīnā lanahdiyannahum subulanā wa innallāha lama‘al-muḥsinīn.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan orang-orang yang berjihad untuk (mencari keridhaan) Kami, benar-benar akan Kami tunjukkan kepada mereka jalan-jalan Kami. Dan sesungguhnya Allah benar-benar beserta orang-orang yang berbuat baik."
+<br>— QS. Al-Ankabut: 69
+</div>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">MODAL PERJALANAN — QS. AL-BAQARAH: 153</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا اسْتَعِينُوا بِالصَّبْرِ وَالصَّلَاةِ إِنَّ اللَّهَ مَعَ الصَّابِرِينَ
+</div>
+<div class="latin-text">
+Yā ayyuhallażīna āmanusta‘īnū biṣ-ṣabri waṣ-ṣalāh, innallāha ma‘aṣ-ṣābirīn.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, mohonlah pertolongan (kepada Allah) dengan sabar dan shalat. Sesungguhnya Allah beserta orang-orang yang sabar."
+<br>— QS. Al-Baqarah: 153
+</div>
+</div>
+
+<h2>Perjalanan Haji dan Pertemuan dengan Para Wali</h2>
+<p>
+Dalam biografi beliau disebutkan beberapa kali perjalanan haji ke Makkah dan kunjungan ke Madinah. Perjalanan ini dalam tradisi Qadiriyah tidak hanya dipahami sebagai pergerakan fisik, tetapi juga sebagai bagian dari pembentukan adab: belajar tawaf dengan kehadiran hati, belajar persaudaraan di antara kaum Muslimin dari berbagai bangsa, dan belajar rendah hati di hadapan rumah Allah.
+</p>
+<p>
+Manaqib juga memuat kisah pertemuan beliau dengan para wali dalam perjalanan, termasuk pesan spiritual yang memperkuat tugas dakwahnya. Kisah-kisah semacam ini perlu dibaca sebagai <em>literatur pembinaan rohani</em> yang menekankan adab dan ketaatan, bukan sebagai data sejarah yang seluruh rincinya dapat diverifikasi. Yang penting secara substansi adalah bahwa perjalanan haji beliau menjadi bagian dari pembentukan kepribadian spiritual yang utuh.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL HAJI — QS. AL-BAQARAH: 196–197</div>
+<div class="arabic-text">
+وَأَتِمُّوا الْحَجَّ وَالْعُمْرَةَ لِلَّهِ
+</div>
+<div class="latin-text">
+Wa atimmul-ḥajja wal-‘umrata lillāh.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan sempurnakanlah ibadah haji dan umrah karena Allah."
+<br>— QS. Al-Baqarah: 196 (potongan ayat). Haji adalah perjalanan spiritual yang menyatukan fisik dan hati dalam ketaatan kepada Allah.
+</div>
+</div>
+
+<h2>Kembali ke Kota: Dari Khalwat Menuju Khidmah</h2>
+<p>
+Menurut kronologi yang umum dipakai pengikut tarekat, sekitar tahun <strong>521 H / 1127 M</strong>, ketika beliau berusia sekitar lima puluh tahun, beliau muncul dari masa penyendirian dan mulai menyampaikan majelis secara terbuka di Baghdad. Sejak itu ribat dan madrasah beliau menjadi tujuan orang-orang yang ingin bertaubat, belajar fiqih, atau memperbaiki perjalanan rohaninya.
+</p>
+<p>
+Yang menakjubkan bukan hanya jumlah pendengar, melainkan jenis pendengarnya. Beliau menyambut pecandu, orang yang keras hidup dalam kemaksiatan, pedagang curang, dan pejabat yang ingin memperbaiki diri. Pesan beliau kepada kelompok ini selalu dimulai dengan pintu harapan, bukan pintu keputusasaan. Beliau meyakini bahwa <strong>setiap orang memiliki potensi untuk kembali kepada Allah</strong>, dan tugas seorang mursyid adalah membuka pintu itu dengan hikmah dan kasih sayang.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">PINTU HARAPAN BAGI ORANG BERTAUBAT — QS. AZ-ZUMAR: 53</div>
+<div class="arabic-text">
+قُلْ يَا عِبَادِيَ الَّذِينَ أَسْرَفُوا عَلَىٰ أَنْفُسِهِمْ لَا تَقْنَطُوا مِنْ رَحْمَةِ اللَّهِ إِنَّ اللَّهَ يَغْفِرُ الذُّنُوبَ جَمِيعًا إِنَّهُ هُوَ الْغَفُورُ الرَّحِيمُ
+</div>
+<div class="latin-text">
+Qul yā ‘ibādiyallażīna asrafū ‘alā anfusihim lā taqnaṭū min raḥmatillāh, innallāha yagfiruż-żunūba jamī‘ā, innahū huwal-Ghafūrur-Raḥīm.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Katakanlah: 'Wahai hamba-hamba-Ku yang melampaui batas terhadap diri mereka sendiri, janganlah kamu berputus asa dari rahmat Allah. Sesungguhnya Allah mengampuni dosa-dosa semuanya. Sesungguhnya Dialah Yang Maha Pengampun lagi Maha Penyayang.'"
+<br>— QS. Az-Zumar: 53. Ayat ini menjadi dasar dakwah beliau yang selalu membuka pintu harapan bagi para pendosa.
+</div>
+</div>
+
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Ciri-ciri Perjalanan Spiritual Jalur Umum Syeikh Abdul Qadir Al-Jilani:</strong>
+<ul>
+<li><strong>Taubat sebagai pintu masuk</strong> — Kembali kepada Allah dengan penyesalan, penghentian, dan tekad</li>
+<li><strong>Istiqamah di atas syariat</strong> — Konsisten dalam ketaatan sebagai karomah tertinggi</li>
+<li><strong>Ikhlas dalam niat</strong> — Membersihkan amal dari campuran riya' dan kepentingan diri</li>
+<li><strong>Muhasabah setiap hari</strong> — Mengoreksi diri sebelum dihisab di hari kiamat</li>
+<li><strong>Dzikir berkesinambungan</strong> — Menghadirkan Allah dalam setiap keadaan</li>
+<li><strong>Mujahadah dan khalwat 25 tahun</strong> — Latihan ketat untuk melemahkan hawa nafsu</li>
+<li><strong>Perjalanan haji</strong> — Pembentukan adab dan persaudaraan umat</li>
+<li><strong>Kembali ke masyarakat</strong> — Dari khalwat menuju khidmah, melayani umat</li>
+</ul>
+</div>
+
+<h2>Doa Memohon Istiqamah dan Taufik</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON ISTIQAMAH</div>
+<div class="arabic-text">
+اللَّهُمَّ إِنِّي أَسْأَلُكَ الِاسْتِقَامَةَ عَلَى أَمْرِكَ، وَالصِّدْقَ فِي قَوْلِي، وَالْإِخْلَاصَ فِي عَمَلِي، وَالتَّوْفِيقَ لِمَا تُحِبُّ وَتَرْضَى
+</div>
+<div class="latin-text">
+Allāhumma innī as'alukal-istiqāmata ‘alā amrik, waṣ-ṣidqa fī qaulī, wal-ikhlāṣa fī ‘amalī, wat-taufīqa limā tuḥibbu wa tarḍā.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, sesungguhnya aku memohon kepada-Mu istiqamah di atas perintah-Mu, kejujuran dalam perkataanku, keikhlasan dalam amalku, dan taufik untuk apa yang Engkau cintai dan ridhai."
+</div>
+</div>
+
+<h2>Penutup Halaman 5</h2>
+<p>
+Demikianlah pembahasan tentang perjalanan spiritual jalur umum Syeikh Abdul Qadir Al-Jilani — mulai dari taubat sebagai pintu masuk, istiqamah di atas syariat, ikhlas dalam niat, muhasabah setiap hari, dzikir berkesinambungan, mujahadah dan khalwat selama 25 tahun, perjalanan haji, hingga kembali ke masyarakat untuk melayani umat. Jalur umum inilah yang menjadi pondasi bagi elevasi spiritual yang beliau capai, dan inilah yang beliau ajarkan kepada para muridnya sebagai jalan yang aman menuju Allah.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas perjalanan spiritual jalur khusus beliau — bai'ah, khirqah, fath, maqam, dan ajaran Tarekat Qadiriyah yang beliau wariskan kepada umat.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-text">
+رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً إِنَّكَ أَنْتَ الْوَهَّابُ
+</div>
+<div class="latin-text">
+Rabbanā lā tuzigh qulūbanā ba‘da iż hadaitanā wa hab lanā min ladunka raḥmah innaka anta al-Wahhāb.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Tuhan kami, janganlah Engkau jadikan hati kami condong kepada kesesatan sesudah Engkau beri petunjuk kepada kami, dan karuniakanlah kepada kami rahmat dari sisi-Mu; sesungguhnya Engkau-lah Maha Pemberi (karunia)."
+<br>— QS. Ali Imran: 8
+</div>
+</div>
+
+</div>
+
+<!-- NAVIGASI 9 TOMBOL — DIATUR AGAR ELEGAN -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="jilani1.html" class="article-nav-btn" title="Halaman 1">1</a>
+<div class="nav-btn-label">Halaman 1</div>
+</div>
+<div class="nav-group">
+<a href="jilani2.html" class="article-nav-btn" title="Halaman 2">2</a>
+<div class="nav-btn-label">Halaman 2</div>
+</div>
+<div class="nav-group">
+<a href="jilani3.html" class="article-nav-btn" title="Halaman 3">3</a>
+<div class="nav-btn-label">Halaman 3</div>
+</div>
+<div class="nav-group">
+<a href="jilani4.html" class="article-nav-btn" title="Halaman 4">4</a>
+<div class="nav-btn-label">Halaman 4</div>
+</div>
+<div class="nav-group">
+<a href="jilani5.html" class="article-nav-btn active" title="Halaman 5">5</a>
+<div class="nav-btn-label">Halaman 5</div>
+</div>
+<div class="nav-group">
+<a href="jilani6.html" class="article-nav-btn" title="Halaman 6">6</a>
+<div class="nav-btn-label">Halaman 6</div>
+</div>
+<div class="nav-group">
+<a href="jilani7.html" class="article-nav-btn" title="Halaman 7">7</a>
+<div class="nav-btn-label">Halaman 7</div>
+</div>
+<div class="nav-group">
+<a href="jilani8.html" class="article-nav-btn" title="Halaman 8">8</a>
+<div class="nav-btn-label">Halaman 8</div>
+</div>
+<div class="nav-group">
+<a href="jilani9.html" class="article-nav-btn" title="Halaman 9">9</a>
+<div class="nav-btn-label">Halaman 9</div>
+</div>
+</div>
+
+</div>
+
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

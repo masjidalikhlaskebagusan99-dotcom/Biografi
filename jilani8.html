@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halaman 8 — Pro Kontra Masyarakat, Ulama, dan Penguasa terhadap Syeikh Abdul Qadir Al-Jilani - KALAM</title>
+<style>
+/* 1. RESET & DASAR */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+/* 2. MEDIA QUERY TABLET */
+@media (max-width: 768px) {
+.article-container {
+max-width: 100%;
+padding: 20px;
+}
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+/* 3. HEADER & NAVIGASI ATAS */
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+/* 4. BREADCRUMB & CONTAINER */
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+/* 5. ARTICLE HEADER & META */
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+/* 6. GAMBAR & SHARE BAR */
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+/* 7. KONTEN ARTIKEL */
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+.article-content ol {
+margin: 15px 0 20px 30px;
+}
+.article-content ol li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 8. KOTAK ARAB & KAROMAH */
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.latin-text {
+direction: ltr;
+text-align: center;
+font-style: italic;
+color: #8a6d2f;
+font-size: 0.95rem;
+line-height: 1.9;
+margin: 12px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 9. NAVIGASI HALAMAN (9 TOMBOL — DIATUR AGAR ELEGAN) */
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* 10. TOMBOL KEMBALI & FOOTER */
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+/* 11. MEDIA QUERY MOBILE */
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+/* PATCH UNIVERSAL v2.0 */
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="artikelwali2.html">Artikel</a>
+</nav>
+</header>
+
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Abdul Qadir Al-Jilani — Halaman 8
+</div>
+
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Abdul Qadir Al-Jilani Sulthanul Awliya'</h1>
+<div class="subtitle">Halaman 8 dari 9 — Bagian 5: Pro Kontra Masyarakat, Ulama, dan Penguasa</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Kamis, 22 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Abdul_Qadir_Jilani.jpg/440px-Abdul_Qadir_Jilani.jpg"
+alt="Syeikh Abdul Qadir Al-Jilani"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Cairo_-_Islamic_district_-_Gate_of_Bab_Zuweila.jpg/440px-Cairo_-_Islamic_district_-_Gate_of_Bab_Zuweila.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Ilustrasi Syeikh Abdul Qadir Al-Jilani, Sulthanul Awliya', ulama mazhab Hanbali dan pendiri Tarekat Qadiriyah yang makamnya di Baghdad hingga kini menjadi tujuan ziarah.</div>
+</div>
+
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+
+<div class="article-content" id="articleContent">
+
+<p class="lead">
+Sepak terjang Syeikh Abdul Qadir Al-Jilani tidak diterima secara seragam oleh semua kalangan. Di sekeliling beliau terbentuk tiga lingkaran respons: <strong>masyarakat</strong> yang melihatnya sebagai pelita dan penolong, <strong>ulama</strong> yang menghormati sekaligus mengkritik sebagian ungkapan yang dinisbatkan kepadanya, dan <strong>penguasa</strong> yang melihatnya sebagai penopang moral sekaligus potensi otoritas independen. Memahami ketiga reaksi ini penting agar biografi beliau tidak berubah menjadi cerita satu sisi, melainkan potret yang utuh tentang bagaimana seorang wali besar berinteraksi dengan zamannya.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TABAYYUN — QS. AL-HUJURAT: 6</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا إِنْ جَاءَكُمْ فَاسِقٌ بِنَبَإٍ فَتَبَيَّنُوا أَنْ تُصِيبُوا قَوْمًا بِجَهَالَةٍ فَتُصْبِحُوا عَلَىٰ مَا فَعَلْتُمْ نَادِمِينَ
+</div>
+<div class="latin-text">
+Yā ayyuhallażīna āmanū in jā'ākum fāsiqun binaba'in fa tabayyanū an tuṣībū qawman bi-jahālatin fa tuṣbiḥū 'alā mā fa'altum nādimīn.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, jika datang kepadamu orang fasik membawa suatu berita, maka periksalah dengan teliti, agar kamu tidak menimpakan suatu musibah kepada suatu kaum tanpa mengetahui keadaannya yang menyebabkan kamu menyesal atas perbuatanmu itu."
+<br>— QS. Al-Hujurat: 6. Ayat ini menjadi pedoman dalam menilai riwayat karamah maupun tuduhan terhadap seorang ulama.
+</div>
+</div>
+
+<h2>1. Pro dan Kontra di Kalangan Masyarakat</h2>
+
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Pihak yang Mendukung: Rakyat Kecil</span>
+<div class="karomah-arabic">الْمُؤَيِّدُونَ: الْعَامَّةُ وَالْفُقَرَاءُ</div>
+<p>
+Rakyat kecil adalah basis sosial yang paling dekat dengan beliau. Mereka menemukan padanya tempat mengadu, bantuan ketika terjerat utang, pembelaan ketika ditindas, dan jalan keluar ketika merasa dosanya terlalu besar. Majelis beliau menarik pedagang, petani, pekerja kota, para penuntut ilmu, hingga orang-orang yang sebelumnya hidup dalam kemaksiatan.
+</p>
+<p>
+Dalam manaqib, jumlah pendengar disebut mencapai ribuan bahkan puluhan ribu; angka ini sebaiknya dibaca sebagai gambaran pengaruh, bukan statistik sensus yang terverifikasi. Yang jelas, majelis beliau menjadi tempat di mana orang-orang yang merasa terbuang oleh masyarakat menemukan kembali martabat mereka di hadapan Allah.
+</p>
+<ul>
+<li>Pedagang yang merasa dirugikan oleh praktik riba menemukan pembela</li>
+<li>Fakir miskin menemukan tempat berbagi dan bantuan</li>
+<li>Orang yang bertaubat menemukan jalan kembali tanpa dihakimi</li>
+<li>Wanita dan anak-anak menemukan perlindungan dari kezaliman</li>
+</ul>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Pihak yang Menolak atau Curiga</span>
+<div class="karomah-arabic">الْمُعَارِضُونَ أَوِ الْمُتَرَدِّدُونَ</div>
+<p>
+Mereka yang penghasilannya bergantung pada riba, suap, manipulasi, dan hiburan terlarang merasa dirugikan oleh nasihat beliau. Sebagian masyarakat awam juga mudah terseret dua ekstrem:
+</p>
+<ul>
+<li><strong>Mengagungkan berlebihan:</strong> sebagian orang menganggap beliau memiliki kekuasaan mutlak atas alam semesta, bahkan menyamakannya dengan Allah dalam beberapa hal. Ini adalah ekstrem yang berbahaya.</li>
+<li><strong>Menolak mentah-mentah:</strong> sebagian orang menganggap semua keramaian majelis sebagai sesuatu yang mencurigakan, atau menolak semua kisah karamah sebagai dongeng belaka. Ini juga ekstrem yang tidak adil.</li>
+</ul>
+<p>
+Kisah-kisah karamah yang beredar luas kadang memperkuat dua reaksi sekaligus — kekaguman pada satu sisi dan keraguan pada sisi lain. Sikap yang benar adalah sikap tengah: menghormati beliau sebagai wali besar, tetapi tidak menuhankannya; menerima karomah sebagai anugerah Allah, tetapi tidak memaksakan setiap riwayat sebagai fakta historis.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG SIKAP TENGAH — QS. AL-BAQARAH: 143</div>
+<div class="arabic-text">
+وَكَذَٰلِكَ جَعَلْنَاكُمْ أُمَّةً وَسَطًا
+</div>
+<div class="latin-text">
+Wa każālika ja‘alnākum ummatan wasaṭā.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan demikian (pula) Kami telah menjadikan kamu (umat Islam) umat yang adil dan pilihan."
+<br>— QS. Al-Baqarah: 143 (potongan ayat). Sikap tengah (wasathiyah) adalah ciri umat Islam yang benar.
+</div>
+</div>
+
+<h2>2. Pro dan Kontra di Kalangan Ulama</h2>
+
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Sikap Positif: Penghormatan dari Para Ulama Besar</span>
+<div class="karomah-arabic">مَوْقِفُ الْإِجْلَالِ مِنَ الْعُلَمَاءِ الْكِبَارِ</div>
+<p>
+Banyak ulama menempatkan beliau sebagai faqih Hanbali, zahid, dan mursyid yang jujur. Tradisi tasawuf Sunni — baik Syafi'i maupun Hanbali — kemudian menyebut beliau dengan kehormatan tinggi. Beberapa contoh penghormatan dari para ulama besar:
+</p>
+<ul>
+<li><strong>Syeikh Muhyiddin Ibn Arabi (w. 638 H / 1240 M):</strong> menyebutnya sebagai <em>al-Ghautsul A'zham</em> dan menempatkannya dalam maqam kewalian yang sangat tinggi dalam karya-karyanya.</li>
+<li><strong>Syeikh Ibnu Hajar al-Haitami (w. 974 H / 1567 M):</strong> dalam kitabnya <em>Al-Kaf al-Ra'i'</em>, membela beliau dari tuduhan-tuduhan yang tidak berdasar dan menegaskan kewalian beliau.</li>
+<li><strong>Syeikh Ahmad Sirhindi (w. 1034 H / 1624 M):</strong> meskipun dikenal kritis terhadap sebagian praktik tarekat, tetap menghormati kedudukan rohani beliau.</li>
+<li><strong>Para ulama India:</strong> seperti Syah Waliullah ad-Dahlawi dan Abdul Haq al-Muhaddits ad-Dahlawi memperkuat penghormatan terhadap kedudukan rohaninya.</li>
+<li><strong>Di Nusantara:</strong> pesantren dan komunitas tarekat menjadikannya salah satu rujukan akhlak dan dzikir. Tarekat Qadiriyah berkembang luas di Jawa, Sumatra, dan Sulawesi.</li>
+</ul>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Sikap Kritis: Kritik dari Sebagian Ulama</span>
+<div class="karomah-arabic">الْمَنْقِدُونَ مِنَ الْعُلَمَاءِ</div>
+<p>
+Sebagian ulama menolak atau mengkritik ungkapan-ungkapan yang dinisbatkan kepada beliau, terutama yang seolah mengklaim kedudukan kosmik, kepemilikan atas kunci rahmat, atau kapasitas di luar manusia. Beberapa nama yang dikenal kritis:
+</p>
+<ul>
+<li><strong>Ibnu al-Jauzi (w. 597 H / 1201 M):</strong> dikenal kritis terhadap sebagian praktik dan kelompok sufi pada zamannya. Meskipun beliau hidup tidak jauh setelah masa Syeikh Abdul Qadir, kritiknya lebih ditujukan kepada fenomena sufi secara umum daripada kepada beliau secara pribadi.</li>
+<li><strong>Ibnu Taimiyah (w. 728 H / 1328 M):</strong> mengkritik keras sejumlah pernyataan yang dinisbahkan kepada Abdul Qadir serta praktik istighatsah dan tawasul tertentu. Namun ia juga mengakui kezuhudan dan kedudukan beliau sebagai ulama. Sikapnya adalah: menghormati pribadi beliau, tetapi menolak ungkapan-ungkapan yang dianggap melampaui batas.</li>
+<li><strong>Imam adz-Dzahabi (w. 748 H / 1348 M):</strong> dalam <em>Siyar A'lam an-Nubala</em> dan <em>Tarikh al-Islam</em>, mencatat beliau dalam deretan tokoh dan syeikh Baghdad, dengan penilaian yang tidak selalu seragam terhadap ucapan-ucapannya. Beliau mencatat biografi beliau secara faktual tanpa berlebihan memuji atau mencela.</li>
+</ul>
+</div>
+
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Poin Metodologis yang Penting:</strong>
+<ul>
+<li>Banyak ucapan beliau sampai kepada kita melalui catatan murid, kompilasi kemudian, dan kitab manaqib. Karena itu, menilai beliau harus dilakukan dengan membedakan <em>teks yang benar-benar terbukti berasal dari beliau</em> dan <em>ucapan yang dinisbatkan kepadanya</em>.</li>
+<li>Kritik terhadap suatu riwayat belum tentu sama dengan penolakan terhadap seluruh sosok beliau.</li>
+<li>Perbedaan pendapat tentang beliau adalah hal yang wajar dalam tradisi keilmuan Islam. Yang penting adalah menjaga adab dalam berbeda pendapat.</li>
+<li>Sebagian ungkapan yang dianggap kontroversial mungkin berasal dari konteks majelis yang spesifik, di mana beliau menggunakan bahasa hiperbola untuk menggugah hati pendengar, bukan sebagai pernyataan teologis yang literal.</li>
+</ul>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG PERBEDAAN PENDAPAT — QS. AL-HUJURAT: 10</div>
+<div class="arabic-text">
+إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ
+</div>
+<div class="latin-text">
+Innamal-mu'minūna ikhwatun fa aṣliḥū baina akhawaikum.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Orang-orang beriman itu sesungguhnya bersaudara. Sebab itu damaikanlah (perbaikilah hubungan) antara kedua saudaramu itu."
+<br>— QS. Al-Hujurat: 10 (potongan ayat). Perbedaan pendapat tidak boleh merusak persaudaraan.
+</div>
+</div>
+
+<h2>3. Sikap Pro dan Kontra Penguasa</h2>
+
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Konteks Kekuasaan pada Masa Beliau</span>
+<div class="karomah-arabic">سِيَاقُ السُّلْطَةِ فِي عَصْرِهِ</div>
+<p>
+Masa dakwah publik beliau di Baghdad berlangsung pada akhir masa Khalifah ar-Rasyid Billah dan sepanjang masa Khalifah <strong>al-Muqtafi li-Amrillah</strong> (1136–1160 M), dengan dinamika Sultan Seljuk seperti Mas'ud dan Tughril II. Pada periode ini para khalifah berusaha memulihkan otoritas Abbasiyah setelah lama berada di bawah kekuatan militer dinasti asing, sekaligus menopang ortodoksi Sunni.
+</p>
+<p>
+Dalam konteks inilah pengaruh Syeikh Abdul Qadir harus dipahami: beliau bukan sekadar tokoh spiritual, melainkan juga figur sosial yang mampu memobilisasi massa dan memengaruhi opini publik.
+</p>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">6</span>
+<span class="karomah-title">Sikap Mendukung atau Toleran</span>
+<div class="karomah-arabic">مَوْقِفُ الدَّعْمِ أَوِ التَّسَامُحِ</div>
+<p>
+Dakwah beliau yang menekankan ketaatan, ketertiban, keadilan, dan penolakan terhadap kemaksiatan secara objektif membantu legitimasi moral penguasa Sunni. Karena itu, sumber tradisi menyebut adanya hubungan yang hormat antara beliau dan sebagian khalifah serta pejabat.
+</p>
+<ul>
+<li>Sebagian penguasa memberikan bantuan atau wakaf untuk keperluan madrasah dan ribat</li>
+<li>Majelis beliau dibiarkan berkembang karena dipandang menenangkan masyarakat dan memperkuat ortodoksi Sunni</li>
+<li>Beberapa pejabat istana datang kepadanya untuk meminta nasihat dan doa</li>
+<li>Beliau diakui sebagai tokoh yang mampu meredakan ketegangan sosial melalui dakwahnya</li>
+</ul>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">7</span>
+<span class="karomah-title">Sikap Curiga atau Berjarak</span>
+<div class="karomah-arabic">مَوْقِفُ التَّرَدُّدِ أَوِ الْمَسَافَةِ</div>
+<p>
+Di sisi lain, seorang tokoh yang mampu mengumpulkan massa besar tanpa bergantung pada anggaran istana adalah figur yang tidak mudah dikendalikan. Ketika beliau menolak hadiah, menolak hadir sebagai legitimator kebijakan, dan mengkritik kezaliman pejabat, muncul kekecewaan di lingkungan istana.
+</p>
+<ul>
+<li>Sebagian pihak menilai pengaruhnya dapat mengalihkan loyalitas masyarakat dari lembaga resmi kepada seorang guru independen</li>
+<li>Ketika beliau mengkritik praktik korupsi pejabat, mereka merasa terancam</li>
+<li>Ada kekhawatiran bahwa majelis beliau dapat menjadi basis perlawanan politik jika situasi memburuk</li>
+<li>Beberapa pejabat mencoba mengontrol beliau dengan menawarkan posisi resmi, tetapi beliau menolaknya</li>
+</ul>
+</div>
+
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Yang Perlu Diluruskan:</strong>
+<ul>
+<li>Tidak ada bukti sejarah yang cukup kuat untuk menyatakan bahwa beliau secara resmi dipenjarakan atau diasingkan oleh penguasa Abbasiyah karena dakwahnya. Kisah semacam itu lebih banyak muncul dalam literatur populer dan perlu diperiksa sanad sejarahnya.</li>
+<li>Yang dapat dipastikan dari ajaran beliau adalah <strong>penolakan untuk menjual kedudukan agama kepada kekuasaan</strong>. Beliau tidak menjadi alat legitimasi bagi kezaliman, tetapi juga tidak mengajak pemberontakan bersenjata.</li>
+<li>Hubungan beliau dengan penguasa adalah hubungan tegang yang sehat: saling menghormati dalam kebaikan, saling mengoreksi dalam kesalahan, tanpa saling menghancurkan.</li>
+</ul>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KETAQWAAN DAN JALAN REZEKI — QS. AT-TALAQ: 2–3</div>
+<div class="arabic-text">
+وَمَنْ يَتَّقِ اللَّهَ يَجْعَلْ لَهُ مَخْرَجًا ۝ وَيَرْزُقْهُ مِنْ حَيْثُ لَا يَحْتَسِبُ
+</div>
+<div class="latin-text">
+Wa man yattaqillāha yaj‘al lahū makhrajā. Wa yarzuqhu min ḥaiṡu lā yaḥtasib.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Barangsiapa bertakwa kepada Allah niscaya Dia akan mengadakan baginya jalan keluar. Dan memberinya rezeki dari arah yang tiada disangka-sangkanya."
+<br>— QS. At-Talaq: 2–3. Prinsip ini menjadi dasar ketegaran beliau menolak rezeki yang disertai kompromi atas kebenaran.
+</div>
+</div>
+
+<h2>4. Sikap Beliau terhadap Pro dan Kontra</h2>
+
+<div class="karomah-card">
+<span class="karomah-number">8</span>
+<span class="karomah-title">Enam Sikap Beliau terhadap Tanggapan Masyarakat</span>
+<div class="karomah-arabic">سِتَّةُ مَوَاقِفَ لَهُ تِجَاهَ آَرَاءِ النَّاسِ</div>
+<ul>
+<li><strong>Tidak mencari jabatan:</strong> beliau tidak pernah meminta posisi resmi, gaji negara, atau gelar dari penguasa. Ketika ditawarkan, beliau menolaknya dengan hormat tetapi tegas.</li>
+<li><strong>Menolak hadiah yang merusak kemerdekaan dakwah:</strong> bantuan yang bersumber dari kezaliman atau disertai syarat dibungkamnya kritik beliau tolak. Beliau tidak mau dakwahnya dikendalikan oleh uang.</li>
+<li><strong>Menerima wakaf untuk kepentingan umum:</strong> bantuan yang halal untuk murid, fakir, dan pendidikan diterima dan dikelola secara amanah, bukan untuk kemewahan pribadi. Beliau membedakan antara harta untuk diri sendiri dan harta untuk umat.</li>
+<li><strong>Menghormati penguasa tanpa membungkuk pada kezaliman:</strong> beliau tidak menjadikan kritik sebagai ajakan pemberontakan, tetapi juga tidak diam ketika melihat kezaliman. Beliau berbicara dengan hikmah, bukan dengan emosi.</li>
+<li><strong>Menegaskan tauhid di tengah pujian berlebihan:</strong> setiap kali pengagungan mengarah kepada penyamaan beliau dengan Allah, ajaran beliau menarik batas dengan tegas. Beliau mengingatkan bahwa beliau hanyalah hamba yang tidak memiliki daya upaya apapun kecuali dengan izin Allah.</li>
+<li><strong>Menyerahkan penilaian kepada Allah:</strong> celaan dan pujian tidak mengubah arah dakwahnya. Beliau tidak hidup untuk mendapatkan pujian manusia, melainkan untuk mendapatkan ridha Allah.</li>
+</ul>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH ABDUL QADIR AL-JILANI TENTANG PUJIAN DAN CELAAN</div>
+<div class="arabic-text">
+لَا تَفْرَحْ بِمَدْحِ النَّاسِ وَلَا تَحْزَنْ بِذَمِّهِمْ، فَإِنَّ اللَّهَ هُوَ الْحَمِيدُ الْمَجِيدُ
+</div>
+<div class="latin-text">
+Lā tafraḥ bi-madḥin-nāsi wa lā taḥzan bi-dzammihim, fa innallāha huwal-Ḥamīdul-Majīd.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Janganlah engkau gembira dengan pujian manusia, dan janganlah engkau bersedih dengan celaan mereka, karena sesungguhnya Allah Dialah Yang Maha Terpuji lagi Maha Mulia."
+<br>— Syeikh Abdul Qadir Al-Jilani, dalam kitab <em>Al-Futuh al-Ghaib</em>
+</div>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEMANDIRIAN DARI MANUSIA — QS. YUNUS: 32</div>
+<div class="arabic-text">
+فَمَاذَا بَعْدَ الْحَقِّ إِلَّا الضَّلَالُ
+</div>
+<div class="latin-text">
+Fa māżā ba‘dal-ḥaqqi illaḍ-ḍalāl.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Maka apakah ada (sesuatu) setelah kebenaran itu melainkan kesesatan?"
+<br>— QS. Yunus: 32 (potongan ayat). Prinsip ini menjadi dasar ketegaran beliau: setelah mengetahui kebenaran, tidak ada jalan lain kecuali mengikutinya, apapun tanggapan manusia.
+</div>
+</div>
+
+<h2>5. Intisari Bagian Pro Kontra</h2>
+
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Kesimpulan Bagian 5:</strong>
+<ul>
+<li><strong>Konflik beliau dengan masyarakat</strong> pada dasarnya adalah konflik antara kebenaran dan kepentingan. Beliau tidak menolak masyarakat, melainkan menolak kezaliman yang merajalela di dalamnya.</li>
+<li><strong>Perbedaan ulama</strong> lebih banyak berkisar pada otentisitas ungkapan dan praktik pengikut, bukan pada satu penilaian tunggal. Menghormati beliau tidak berarti menutup mata dari kritik, dan mengkritik beliau tidak berarti menolak seluruh warisan beliau.</li>
+<li><strong>Hubungan dengan penguasa</strong> adalah ketegangan antara <em>otoritas moral</em> dan <em>otoritas politik</em>, bukan perebutan kekuasaan. Beliau tidak ingin menjadi penguasa, tetapi juga tidak ingin menjadi stempel legitimasi bagi kezaliman.</li>
+<li><strong>Sikap paling bersejarah dari beliau:</strong> agama tidak boleh menjadi stempel legitimasi bagi kezaliman. Inilah prinsip yang membuat beliau dihormati selama hampir sembilan abad, bahkan oleh mereka yang tidak sepakat dengan beliau dalam beberapa hal.</li>
+</ul>
+</div>
+
+<h2>6. Doa Memohon Hikmah dalam Menilai Tokoh</h2>
+
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON HIKMAH DAN KEADILAN</div>
+<div class="arabic-text">
+اللَّهُمَّ ارْزُقْنَا الْحِكْمَةَ فِي الْحُكْمِ عَلَى النَّاسِ، وَالْعَدْلَ فِي تَقْوِيمِ الرِّجَالِ، وَلَا تَجْعَلْنَا مِنَ الْمُتَعَصِّبِينَ وَلَا مِنَ الْمُسْتَهْتِرِينَ
+</div>
+<div class="latin-text">
+Allāhummārzuqnal-ḥikmata fil-ḥukmi ‘alan-nās, wal-‘adla fī taqwīmir-rijāl, wa lā taj‘alnā minal-muta‘aṣṣibīna wa lā minal-mustahzirīn.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, anugerahkanlah kepada kami hikmah dalam menilai manusia, dan keadilan dalam menilai tokoh-tokoh, dan janganlah Engkau jadikan kami termasuk orang-orang yang fanatik dan tidak pula orang-orang yang meremehkan."
+</div>
+</div>
+
+<h2>Penutup Halaman 8</h2>
+
+<p>
+Demikianlah pembahasan tentang tanggapan pro dan kontra masyarakat, ulama, dan penguasa terhadap sepak terjang Syeikh Abdul Qadir Al-Jilani di masanya, serta sikap beliau terhadap tanggapan tersebut. Kita telah melihat bahwa beliau tidak hidup dalam ruang hampa — beliau direspons oleh berbagai kalangan dengan cara yang berbeda-beda, dan beliau menghadapi semua respons itu dengan hikmah, keteguhan, dan adab yang mulia.
+</p>
+
+<p>
+Yang paling mengagumkan dari sikap beliau adalah kemampuannya untuk tetap teguh di atas kebenaran tanpa kehilangan kasih sayang kepada manusia. Beliau mengkritik kezaliman tanpa membenci pelaku kezaliman. Beliau menolak kompromi dengan penguasa tanpa mengajak pemberontakan. Beliau menghormati perbedaan pendapat tanpa memaksakan pandangannya. Inilah akhlak seorang wali sejati — bukan orang yang sempurna tanpa cela, melainkan orang yang senantiasa berusaha memperbaiki diri dan menyampaikan kebenaran dengan cara yang paling baik.
+</p>
+
+<p>
+Pada halaman berikutnya — halaman terakhir — kita akan membahas intisari dari seluruh perjalanan beliau: warisan yang hidup hingga hari ini, pelajaran untuk kita di masa kini, dan penutup yang layak bagi biografi seorang Sulthanul Awliya'.
+</p>
+
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-text">
+رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً إِنَّكَ أَنْتَ الْوَهَّابُ
+</div>
+<div class="latin-text">
+Rabbanā lā tuzigh qulūbanā ba‘da iż hadaitanā wa hab lanā min ladunka raḥmah innaka anta al-Wahhāb.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Tuhan kami, janganlah Engkau jadikan hati kami condong kepada kesesatan sesudah Engkau beri petunjuk kepada kami, dan karuniakanlah kepada kami rahmat dari sisi-Mu; sesungguhnya Engkau-lah Maha Pemberi (karunia)."
+<br>— QS. Ali Imran: 8
+</div>
+</div>
+
+</div>
+
+<!-- NAVIGASI 9 TOMBOL — DIATUR AGAR ELEGAN -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="jilani1.html" class="article-nav-btn" title="Halaman 1">1</a>
+<div class="nav-btn-label">Halaman 1</div>
+</div>
+<div class="nav-group">
+<a href="jilani2.html" class="article-nav-btn" title="Halaman 2">2</a>
+<div class="nav-btn-label">Halaman 2</div>
+</div>
+<div class="nav-group">
+<a href="jilani3.html" class="article-nav-btn" title="Halaman 3">3</a>
+<div class="nav-btn-label">Halaman 3</div>
+</div>
+<div class="nav-group">
+<a href="jilani4.html" class="article-nav-btn" title="Halaman 4">4</a>
+<div class="nav-btn-label">Halaman 4</div>
+</div>
+<div class="nav-group">
+<a href="jilani5.html" class="article-nav-btn" title="Halaman 5">5</a>
+<div class="nav-btn-label">Halaman 5</div>
+</div>
+<div class="nav-group">
+<a href="jilani6.html" class="article-nav-btn" title="Halaman 6">6</a>
+<div class="nav-btn-label">Halaman 6</div>
+</div>
+<div class="nav-group">
+<a href="jilani7.html" class="article-nav-btn" title="Halaman 7">7</a>
+<div class="nav-btn-label">Halaman 7</div>
+</div>
+<div class="nav-group">
+<a href="jilani8.html" class="article-nav-btn active" title="Halaman 8">8</a>
+<div class="nav-btn-label">Halaman 8</div>
+</div>
+<div class="nav-group">
+<a href="jilani9.html" class="article-nav-btn" title="Halaman 9">9</a>
+<div class="nav-btn-label">Halaman 9</div>
+</div>
+</div>
+
+</div>
+
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

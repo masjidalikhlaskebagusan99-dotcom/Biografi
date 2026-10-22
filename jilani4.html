@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halaman 4 — Nama-Nama Para Guru Syeikh Abdul Qadir Al-Jilani - KALAM</title>
+<style>
+/* 1. RESET & DASAR */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+/* 2. MEDIA QUERY TABLET */
+@media (max-width: 768px) {
+.article-container {
+max-width: 100%;
+padding: 20px;
+}
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+/* 3. HEADER & NAVIGASI ATAS */
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+/* 4. BREADCRUMB & CONTAINER */
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+/* 5. ARTICLE HEADER & META */
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+/* 6. GAMBAR & SHARE BAR */
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+/* 7. KONTEN ARTIKEL */
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+.article-content ol {
+margin: 15px 0 20px 30px;
+}
+.article-content ol li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 8. KOTAK ARAB & KAROMAH */
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.latin-text {
+direction: ltr;
+text-align: center;
+font-style: italic;
+color: #8a6d2f;
+font-size: 0.95rem;
+line-height: 1.9;
+margin: 12px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 9. NAVIGASI HALAMAN (9 TOMBOL — DIATUR AGAR ELEGAN) */
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* 10. TOMBOL KEMBALI & FOOTER */
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+/* 11. MEDIA QUERY MOBILE */
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+/* PATCH UNIVERSAL v2.0 */
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="artikelwali2.html">Artikel</a>
+</nav>
+</header>
+
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Abdul Qadir Al-Jilani — Halaman 4
+</div>
+
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Abdul Qadir Al-Jilani Sulthanul Awliya'</h1>
+<div class="subtitle">Halaman 4 dari 9 — Bagian 2: Nama-Nama Para Guru dalam Menuntut Ilmu</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Kamis, 22 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Abdul_Qadir_Jilani.jpg/440px-Abdul_Qadir_Jilani.jpg"
+alt="Syeikh Abdul Qadir Al-Jilani"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Cairo_-_Islamic_district_-_Gate_of_Bab_Zuweila.jpg/440px-Cairo_-_Islamic_district_-_Gate_of_Bab_Zuweila.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Ilustrasi Syeikh Abdul Qadir Al-Jilani, Sulthanul Awliya', ulama mazhab Hanbali dan pendiri Tarekat Qadiriyah yang makamnya di Baghdad hingga kini menjadi tujuan ziarah.</div>
+</div>
+
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+
+<div class="article-content" id="articleContent">
+
+<p class="lead">
+Tidak ada wali besar dalam sejarah Islam yang tumbuh tanpa guru. Syeikh Abdul Qadir Al-Jilani menempuh perjalanan keilmuan melalui rantai (silasilah) para ulama Baghdad yang masing-masing mewariskan satu dimensi: ada yang mengajarkan ketelitian hukum, ada yang menanamkan disiplin hadis, ada yang melatih lidah dalam dakwah, dan ada yang membimbing hati dalam suluk. Melalui tangan-tangan para gurulah, cahaya ilmu dan spiritualitas beliau terbentuk.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG ADAB KEPADA GURU — QS. AL-HUJURAT: 2</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا لَا تُقَدِّمُوا بَيْنَ يَدَيِ اللَّهِ وَرَسُولِهِ وَاتَّقُوا اللَّهَ إِنَّ اللَّهَ سَمِيعٌ عَلِيمٌ
+</div>
+<div class="latin-text">
+Yā ayyuhallażīna āmanū lā tuqaddimū baina yadai Llāhi wa rasūlihī wattaqullāha innallāha samī‘un ‘alīm.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, janganlah kamu mendahului (keputusan) Allah dan Rasul-Nya, dan bertakwalah kepada Allah. Sesungguhnya Allah Maha Mendengar lagi Maha Mengetahui."
+<br>— QS. Al-Hujurat: 1. Ayat ini menjadi dasar adab menghormati ilmu dan pembawa ilmu.
+</div>
+</div>
+
+<h2>Pentingnya Guru dalam Perjalanan Keilmuan</h2>
+<p>
+Dalam tradisi Islam, ilmu tidak diambil dari buku semata, melainkan dari guru yang memiliki <em>sanad</em> — rangkaian sambungan keilmuan yang menyambung kepada Rasulullah SAW. Sanad inilah yang menjaga kemurnian ajaran dari generasi ke generasi. Syeikh Abdul Qadir Al-Jilani memahami prinsip ini dengan sangat baik, sehingga beliau tidak pernah mengklaim ilmu yang beliau miliki sebagai hasil otodidak semata.
+</p>
+<p>
+Beliau belajar dari banyak guru dengan adab yang tinggi, melayani mereka dengan penuh kerendahan hati, dan tidak pernah merasa lebih pintar meskipun kecerdasan beliau luar biasa. Dari setiap guru, beliau mengambil satu atau beberapa dimensi ilmu, lalu merangkainya menjadi kepribadian keilmuan yang utuh.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH ABDUL QADIR AL-JILANI TENTANG GURU</div>
+<div class="arabic-text">
+مَنْ لَمْ يَكُنْ لَهُ شَيْخٌ فَشَيْخُهُ الشَّيْطَانُ
+</div>
+<div class="latin-text">
+Man lam yakun lahu syaikhun fa syaikhuhusy-syaithān.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Barangsiapa yang tidak memiliki guru, maka gurunya adalah setan."
+<br>— Perkataan yang dinisbatkan kepada Syeikh Abdul Qadir Al-Jilani, menekankan pentingnya bimbingan guru dalam perjalanan spiritual.
+</div>
+</div>
+
+<h2>Daftar Para Guru Syeikh Abdul Qadir Al-Jilani</h2>
+<p>
+Berikut adalah nama-nama para guru beliau yang paling dikenal dalam riwayat-riwayat yang masyhur, baik guru dalam bidang fiqih, hadis, maupun tasawuf:
+</p>
+
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Ayahanda — Abu Shalih Abdullah</span>
+<div class="karomah-arabic">أَبُو صَالِحٍ عَبْدُ اللَّهِ</div>
+<div class="latin-text" style="text-align:right;">Abū Ṣāliḥ ‘Abdullāh</div>
+<p>
+Guru pertama beliau adalah keluarga sendiri. Dari ayahnya beliau menerima pengenalan tauhid, adab, kecintaan kepada ahlul bait, dan ketatnya sikap wara' dalam urusan rezeki. Pendidikan rumah ini menjadi dasar mengapa beliau kelak sangat keras terhadap makanan haram dan penghasilan yang bercampur riba atau suap.
+</p>
+<p>
+Ayahnya wafat ketika beliau masih kecil — sebagian riwayat menyebut usia sekitar sepuluh tahun — sehingga pendidikan lanjutan diserahkan kepada ibunya dan para ulama di Jilan. Namun bekal dari ayahnya tetap hidup dalam hati beliau sepanjang hayat.
+</p>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Para Ulama Jilan dan Daylam</span>
+<div class="karomah-arabic">عُلَمَاءُ جِيلَانَ وَالدَّيْلَمِ</div>
+<div class="latin-text" style="text-align:right;">‘Ulamā’ Jīlāna wa d-Dailami</div>
+<p>
+Sebelum berangkat ke Baghdad, beliau belajar di lingkaran ulama tanah kelahirannya: menghafal Al-Qur'an, mempelajari dasar nahwu, membaca teks fiqih awal, dan membiasakan shalat malam. Nama-nama guru tahap ini tidak seluruhnya tercatat dalam sumber awal, sehingga lebih tepat disebut sebagai <em>lingkaran pendidikan Jilan</em> daripada menetapkan satu nama secara pasti.
+</p>
+<p>
+Di Jilan inilah beliau menunjukkan kecerdasan yang luar biasa. Beliau menghafal Al-Qur'an sebelum usia baligh, menguasai dasar-dasar fiqih mazhab Hanbali, dan mulai dikenal sebagai pemuda yang shaleh dan berakhlak mulia.
+</p>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Syeikh Abu Ghalib al-Baqillani</span>
+<div class="karomah-arabic">أَبُو غَالِبٍ مُحَمَّدُ بْنُ الْحَسَنِ الْبَقَّالَانِيُّ</div>
+<div class="latin-text" style="text-align:right;">Abū Ghālib Muḥammad ibn al-Ḥasan al-Baqqālānī (wafat sekitar 500 H / 1107 M)</div>
+<p>
+Salah satu rujukan utama beliau dalam <strong>fiqih Hanbali dan periwayatan hadis</strong> di Baghdad. Melalui lingkungan beliau, Abdul Qadir terbiasa dengan metode istimbath hukum, pembacaan teks mazhab, dan penghormatan kepada riwayat yang sahih. Kehadiran guru ini menjelaskan mengapa bahasa fiqih dalam karya-karya beliau begitu kuat.
+</p>
+<p>
+Al-Baqillani dikenal sebagai ulama yang wara' dan ketat dalam menjaga sanad periwayatan. Dari beliau, Abdul Qadir belajar bahwa ilmu bukan hanya tentang hafalan, melainkan tentang kejujuran dalam meriwayatkan dan kehati-hatian dalam berfatwa.
+</p>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Syeikh Abu Sa'id al-Mukharrimi — Guru Utama Fiqih Hanbali</span>
+<div class="karomah-arabic">أَبُو سَعِيدٍ الْمُخَرِّمِيُّ</div>
+<div class="latin-text" style="text-align:right;">Abū Sa‘īd al-Mukharrimī (wafat 524 H / 1130 M)</div>
+<p>
+Nama yang paling sering disebut dalam biografi beliau sebagai <strong>guru utama fiqih mazhab Hanbali</strong>. Al-Mukharrimi merupakan salah satu tokoh terkemuka Hanbaliyah Baghdad pada masanya. Dari beliau, Abdul Qadir mendalami furu' fiqih, usul, dan praktik fatwa. Penguasaan ini kelak membuat majelis beliau bukan sekadar panggung nasihat, tetapi juga rujukan hukum bagi masyarakat.
+</p>
+<p>
+Syeikh Abu Sa'id al-Mukharrimi adalah pendiri Ribath al-Mukharrimi di Baghdad, yang kemudian menjadi pusat pengajaran Hanbaliyah. Ribath inilah yang menjadi salah satu tempat Syeikh Abdul Qadir belajar dan kemudian mengajar setelah beliau matang secara keilmuan.
+</p>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Syeikh Abu al-Fath an-Nahrawani</span>
+<div class="karomah-arabic">أَبُو الْفَتْحِ نَصْرُ بْنُ الْحَسَنِ النَّهْرَوَانِيُّ</div>
+<div class="latin-text" style="text-align:right;">Abū al-Fatḥ Naṣr ibn al-Ḥasan an-Nahrawānī (wafat sekitar 522 H / 1128 M)</div>
+<p>
+Ulama Hanbali yang dikenal sebagai faqih sekaligus khatib dan pemberi nasihat. Dari lingkaran beliau, Abdul Qadir memperoleh <strong>ushul fiqih, seni khutbah, dan kekuatan maw'izah</strong>. Pengaruh ini tampak pada gaya ceramah beliau yang menggabungkan argumentasi hukum, gambaran hari kiamat, dan sentuhan emosional yang menggugah taubat.
+</p>
+<p>
+An-Nahrawani dikenal sebagai khatib yang mampu menggerakkan hati pendengarnya. Dari beliau, Abdul Qadir belajar bahwa dakwah bukan hanya tentang kebenaran yang disampaikan, melainkan tentang cara menyampaikannya sehingga menyentuh hati dan mengubah perilaku.
+</p>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">6</span>
+<span class="karomah-title">Syeikh Abu Muhammad al-Jauhari dan Syeikh Yusuf an-Nasih</span>
+<div class="karomah-arabic">أَبُو مُحَمَّدٍ الْجَوْهَرِيُّ ۝ يُوسُفُ النَّاسِحُ</div>
+<div class="latin-text" style="text-align:right;">Abū Muḥammad al-Jauharī ۝ Yūsuf an-Nāsiḥ</div>
+<p>
+Nama al-Jauhari dinukil dalam sebagian tarikh sebagai guru dalam <strong>hadis dan bahasa</strong>, sedangkan Yusuf an-Nasih dikenal sebagai tokoh zuhud dan nasihat yang memengaruhi orientasi spiritual beliau. Kedua figur ini mewakili transisi dari kecakapan akademis menuju kesadaran batin: bahwa ilmu yang banyak tidak otomatis membuat hati bersih.
+</p>
+<p>
+Dari Yusuf an-Nasih, beliau belajar bahwa zuhud bukan tentang meninggalkan dunia, melainkan tentang tidak membiarkan dunia menguasai hati. Pelajaran ini kelak menjadi dasar pandangan beliau tentang tasawuf yang seimbang — tidak menolak dunia, tetapi tidak pula diperbudak olehnya.
+</p>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">7</span>
+<span class="karomah-title">Syeikh Abu al-Khair Hammad ad-Dabbas — Mursyid Utama</span>
+<div class="karomah-arabic">أَبُو الْخَيْرِ حَمَّادُ بْنُ مُوسَى الدَّبَّاسُ</div>
+<div class="latin-text" style="text-align:right;">Abū al-Khair Ḥammād ibn Mūsā ad-Dabbās (wafat sekitar 525 H / 1131 M)</div>
+<p>
+Inilah nama yang paling menentukan dalam <strong>perjalanan tasawuf</strong> beliau. Hammad ad-Dabbas adalah mursyid sufi Baghdad yang membimbing Abdul Qadir dalam suluk, mujahadah, dan dzikir, serta memberikan <em>khirqah</em> — simbol penerimaan dalam jalur pembinaan spiritual. Melalui beliau, silsilah Qadiriyah tersambung kepada rantai para wali Baghdad dan selanjutnya kepada generasi awal Islam.
+</p>
+<p>
+Dari gurunya inilah muncul wasiat spiritual yang sangat terkenal dalam tradisi Qadiriyah: perintah untuk bangkit mengamalkan kebenaran tanpa menggantungkan tanggung jawab kepada figur siapa pun. Wasiat itu kelak menjadi dasar kemandirian rohani para murid Qadiriyah.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">WASIAT SULUK YANG DINISBATKAN KEPADA GURUNYA</div>
+<div class="arabic-text">
+قُمْ بِأَمْرِي وَلَا تَنْظُرْ إِلَى مَنْ قَلَّدْتَنِيهِ
+</div>
+<div class="latin-text">
+Qum bi-amrī wa lā tanẓur ilā man qalladtanīhi.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Bangkitlah menjalankan perintahku, dan jangan engkau terpaku kepada siapa yang memberiku kewenangan."
+<br>— Wasiat yang dinisbatkan kepada Syeikh Hammad ad-Dabbas dalam tradisi Qadiriyah. Maknanya: tanggung jawab amal tetap berada pada diri sendiri, bukan pada nama besar guru.
+</div>
+</div>
+
+<h2>Silsilah Spiritual Tarekat Qadiriyah</h2>
+<p>
+Dalam susunan silsilah yang masyhur, jalur beliau berjalan demikian: <strong>Syeikh Abdul Qadir Al-Jilani ← Syeikh Hammad ad-Dabbas ← Syeikh Abu Bakr an-Nasrabadhi</strong>, kemudian berlanjut melalui para imam tasawuf Baghdad hingga <strong>Syeikh Junayd al-Baghdadi ← Sirri as-Saqati ← Ma'ruf al-Karkhi ← Dawud at-Ta'i ← Habib al-Ajami ← Hasan al-Bashri ← Sayyidina Ali bin Abi Thalib</strong>. Sebagian susunan Qadiriyah juga mencantumkan jalur melalui Sayyidina Abu Bakar ash-Shiddiq.
+</p>
+<p>
+Perlu dicatat bahwa penulisan silsilah sering mengalami variasi antar thabaqat dan antar cabang tarekat. Yang penting secara substansi adalah kesinambungan ajaran: pembersihan tauhid, pengamalan syariat, pembinaan hati, dan adab kepada guru — bukan sekadar kebanggaan atas panjangnya daftar nama.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">SILSILAH TASAWUF QADIRIYAH</div>
+<div class="arabic-text">
+الْغَوْثُ عَبْدُ الْقَادِرِ الْجِيلَانِيُّ ← الْحَمَّادُ الدَّبَّاسُ ← الْبَكْرُ النَّسْرَابَذِيُّ ← الْجُنَيْدُ الْبَغْدَادِيُّ ← السِّرِّيُّ السَّقَاطِيُّ ← مَعْرُوفٌ الْكَرْخِيُّ ← دَاوُدُ الطَّائِيُّ ← حَبِيبٌ الْعَجَمِيُّ ← الْحَسَنُ الْبَصْرِيُّ ← سَيِّدُنَا عَلِيُّ بْنُ أَبِي طَالِبٍ رَضِيَ اللَّهُ عَنْهُمْ
+</div>
+<div class="latin-text">
+Al-Ghauts ‘Abdul Qādir al-Jīlānī ← al-Ḥammād ad-Dabbās ← al-Bakr an-Nasrābadhī ← al-Junaid al-Baghdādī ← as-Sirriy as-Saqāṭī ← Ma‘rūf al-Karkhī ← Dāwūd aṭ-Ṭā'ī ← Ḥabīb al-‘Ajamī ← al-Ḥasan al-Baṣrī ← Sayyidunā ‘Aliyy ibn Abī Ṭālib raḍiya Allāhu ‘anhum.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Al-Ghauts Abdul Qadir al-Jilani ← al-Hammad ad-Dabbas ← al-Bakr an-Nasrabadhi ← al-Junaid al-Baghdadi ← as-Sirriy as-Saqati ← Ma'ruf al-Karkhi ← Dawud at-Ta'i ← Habib al-Ajami ← al-Hasan al-Bashri ← Sayyidina Ali bin Abi Thalib, semoga Allah meridai mereka semua."
+</div>
+</div>
+
+<h2>Adab Beliau kepada Para Guru</h2>
+<p>
+Syeikh Abdul Qadir Al-Jilani dikenal sangat menghormati para gurunya, meskipun beliau sendiri telah menjadi ulama besar. Beberapa adab yang beliau tunjukkan kepada para guru antara lain:
+</p>
+<ul>
+<li><strong>Tawadhu' (rendah hati):</strong> beliau tidak pernah merasa lebih pintar dari gurunya, meskipun kecerdasan beliau luar biasa.</li>
+<li><strong>Khidmah (melayani):</strong> beliau melayani guru-gurunya dengan penuh kerendahan hati, termasuk menyiapkan keperluan mereka.</li>
+<li><strong>Tidak mendahului guru:</strong> beliau tidak pernah berbicara sebelum guru berbicara, dan tidak pernah memberikan fatwa di hadapan guru.</li>
+<li><strong>Mendoakan guru:</strong> beliau senantiasa mendoakan para gurunya, baik yang masih hidup maupun yang telah wafat.</li>
+<li><strong>Menyambung silaturahmi:</strong> beliau menjaga hubungan baik dengan keluarga para guru bahkan setelah mereka wafat.</li>
+<li><strong>Tidak mencela guru lain:</strong> meskipun ada perbedaan pendapat, beliau tidak pernah mencela guru-guru beliau yang lain.</li>
+</ul>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG ADAB KEPADA GURU — QS. AL-HUJURAT: 2</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا لَا تَرْفَعُوا أَصْوَاتَكُمْ فَوْقَ صَوْتِ النَّبِيِّ وَلَا تَجْهَرُوا لَهُ بِالْقَوْلِ كَجَهْرِ بَعْضِكُمْ لِبَعْضٍ
+</div>
+<div class="latin-text">
+Yā ayyuhallażīna āmanū lā tarfa‘ū aṣwātakum fawqa ṣauti n-nabiyyi wa lā tajharū lahu bil-qauli ka-jahri ba‘ḍikum liba‘ḍ.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, janganlah kamu meninggikan suaramu melebihi suara Nabi, dan janganlah kamu berkata kepadanya dengan suara keras sebagaimana kerasnya (suara) sebagian kamu terhadap yang lain."
+<br>— QS. Al-Hujurat: 2 (potongan ayat). Para ulama mengambil darinya adab menghormati ilmu dan pembawa ilmu.
+</div>
+</div>
+
+<h2>Pengaruh Para Guru terhadap Kepribadian Beliau</h2>
+<p>
+Setiap guru memberikan pengaruh yang berbeda terhadap pembentukan kepribadian keilmuan dan spiritual Syeikh Abdul Qadir Al-Jilani:
+</p>
+<ul>
+<li><strong>Dari ayahnya:</strong> ketegasan dalam menjaga halal-haram dan wara' dalam rezeki.</li>
+<li><strong>Dari ulama Jilan:</strong> pondasi hafalan Al-Qur'an dan dasar-dasar fiqih.</li>
+<li><strong>Dari al-Baqillani:</strong> ketelitian dalam periwayatan hadis dan istimbath hukum.</li>
+<li><strong>Dari al-Mukharrimi:</strong> penguasaan fiqih Hanbali yang mendalam dan praktik fatwa.</li>
+<li><strong>Dari an-Nahrawani:</strong> seni khutbah, ushul fiqih, dan kekuatan maw'izah.</li>
+<li><strong>Dari al-Jauhari dan Yusuf an-Nasih:</strong> transisi dari ilmu akademis menuju kesadaran batin.</li>
+<li><strong>Dari Hammad ad-Dabbas:</strong> bimbingan suluk, khirqah, dan kemandirian rohani.</li>
+</ul>
+
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Halaman 4</strong>
+<ul>
+<li>Guru fiqih utama beliau berada dalam lingkaran Hanbaliyah Baghdad: al-Baqillani, al-Mukharrimi, dan an-Nahrawani.</li>
+<li>Guru spiritual utama beliau adalah Syeikh Hammad ad-Dabbas, yang memberikan khirqah dan membimbing suluk.</li>
+<li>Silsilah Qadiriyah tersambung kepada para imam tasawuf awal, dengan variasi redaksi antar sumber.</li>
+<li>Kombinasi guru fiqih dan guru tasawuf menjelaskan mengapa ajaran beliau selalu menyeimbangkan hukum dan hati.</li>
+<li>Adab beliau kepada para guru menjadi teladan bagi para penuntut ilmu di setiap zaman.</li>
+</ul>
+</div>
+
+<h2>Doa Memohon Berkah Ilmu dan Guru</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA UNTUK PARA GURU</div>
+<div class="arabic-text">
+اللَّهُمَّ ارْحَمْ مَشَائِخَنَا، وَارْزُقْنَا بَرَكَةَ عِلْمِهِمْ، وَاجْعَلْنَا مِنْ تَلَامِيذِهِمُ الصَّالِحِينَ، وَاجْمَعْ بَيْنَنَا وَبَيْنَهُمْ فِي جَنَّاتِ النَّعِيمِ
+</div>
+<div class="latin-text">
+Allāhummarḥam masyāikhana, warzuqnā barakata ‘ilmihim, waj‘alnā min talāmīżihimiṣ-ṣāliḥīn, wajma‘ bainanā wa bainahum fī jannātin-na‘īm.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, rahmatilah guru-guru kami, anugerahkanlah kepada kami berkah ilmu mereka, jadikanlah kami termasuk murid-murid mereka yang shaleh, dan kumpulkanlah kami bersama mereka di surga kenikmatan."
+</div>
+</div>
+
+<h2>Penutup Halaman 4</h2>
+<p>
+Demikianlah pembahasan tentang nama-nama para guru Syeikh Abdul Qadir Al-Jilani dalam menuntut ilmu — mulai dari ayahanda beliau, para ulama Jilan, guru-guru fiqih di Baghdad seperti al-Baqillani, al-Mukharrimi, dan an-Nahrawani, hingga mursyid utama beliau, Syeikh Hammad ad-Dabbas. Melalui tangan-tangan para gurulah, cahaya ilmu dan spiritualitas beliau terbentuk, sehingga beliau mampu menjadi salah satu ulama terbesar dalam sejarah Islam.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas perjalanan spiritual beliau — jalur umum yang wajib ditempuh setiap Muslim, dan jalur khusus berupa pembinaan suluk dalam bimbingan mursyid.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-text">
+رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً إِنَّكَ أَنْتَ الْوَهَّابُ
+</div>
+<div class="latin-text">
+Rabbanā lā tuzigh qulūbanā ba‘da iż hadaitanā wa hab lanā min ladunka raḥmah innaka anta al-Wahhāb.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Tuhan kami, janganlah Engkau jadikan hati kami condong kepada kesesatan sesudah Engkau beri petunjuk kepada kami, dan karuniakanlah kepada kami rahmat dari sisi-Mu; sesungguhnya Engkau-lah Maha Pemberi (karunia)."
+<br>— QS. Ali Imran: 8
+</div>
+</div>
+
+</div>
+
+<!-- NAVIGASI 9 TOMBOL — DIATUR AGAR ELEGAN -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="jilani1.html" class="article-nav-btn" title="Halaman 1">1</a>
+<div class="nav-btn-label">Halaman 1</div>
+</div>
+<div class="nav-group">
+<a href="jilani2.html" class="article-nav-btn" title="Halaman 2">2</a>
+<div class="nav-btn-label">Halaman 2</div>
+</div>
+<div class="nav-group">
+<a href="jilani3.html" class="article-nav-btn" title="Halaman 3">3</a>
+<div class="nav-btn-label">Halaman 3</div>
+</div>
+<div class="nav-group">
+<a href="jilani4.html" class="article-nav-btn active" title="Halaman 4">4</a>
+<div class="nav-btn-label">Halaman 4</div>
+</div>
+<div class="nav-group">
+<a href="jilani5.html" class="article-nav-btn" title="Halaman 5">5</a>
+<div class="nav-btn-label">Halaman 5</div>
+</div>
+<div class="nav-group">
+<a href="jilani6.html" class="article-nav-btn" title="Halaman 6">6</a>
+<div class="nav-btn-label">Halaman 6</div>
+</div>
+<div class="nav-group">
+<a href="jilani7.html" class="article-nav-btn" title="Halaman 7">7</a>
+<div class="nav-btn-label">Halaman 7</div>
+</div>
+<div class="nav-group">
+<a href="jilani8.html" class="article-nav-btn" title="Halaman 8">8</a>
+<div class="nav-btn-label">Halaman 8</div>
+</div>
+<div class="nav-group">
+<a href="jilani9.html" class="article-nav-btn" title="Halaman 9">9</a>
+<div class="nav-btn-label">Halaman 9</div>
+</div>
+</div>
+
+</div>
+
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

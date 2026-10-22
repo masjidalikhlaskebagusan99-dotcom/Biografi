@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halaman 2 — Nasab Lengkap, Keluarga, Tempat & Tanggal Lahir Syeikh Abdul Qadir Al-Jilani - KALAM</title>
+
+<!-- FONT NASKHI: AMIRI / NOTO NASKH ARABIC / SCHEHERAZADE -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+/* 1. RESET & DASAR */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+/* 2. MEDIA QUERY TABLET */
+@media (max-width: 768px) {
+.article-container {
+max-width: 100%;
+padding: 20px;
+}
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+/* 3. HEADER & NAVIGASI ATAS */
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+/* 4. BREADCRUMB & CONTAINER */
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+/* 5. ARTICLE HEADER & META */
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+/* 6. GAMBAR & SHARE BAR */
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+/* 7. KONTEN ARTIKEL */
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+.article-content ol {
+margin: 15px 0 20px 30px;
+}
+.article-content ol li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 8. KOTAK ARAB & KAROMAH */
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Amiri', 'Noto Naskh Arabic', 'Scheherazade New', 'Traditional Arabic', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+/* FONT NASKHI + HARAKAT */
+.arabic-text,
+.karomah-arabic,
+.naskh {
+font-family: 'Amiri', 'Noto Naskh Arabic', 'Scheherazade New', 'Traditional Arabic', 'Scheherazade', serif;
+direction: rtl;
+unicode-bidi: isolate;
+}
+.arabic-text {
+font-size: 1.9rem;
+line-height: 2.8;
+color: #1a1a2e;
+margin: 15px 0;
+}
+/* TRANSPARANSI LATIN */
+.latin-text {
+direction: ltr;
+text-align: center;
+font-style: italic;
+color: #8a6d2f;
+font-size: 0.95rem;
+line-height: 1.9;
+margin: 12px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+text-align: center;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.karomah-arabic {
+font-size: 1.7rem;
+line-height: 2.4;
+color: #d4af37;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 9. NAVIGASI HALAMAN (9 TOMBOL — DIATUR AGAR ELEGAN) */
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* 10. TOMBOL KEMBALI & FOOTER */
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+/* 11. MEDIA QUERY MOBILE */
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+/* PATCH UNIVERSAL v2.0 */
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="artikelwali2.html">Artikel</a>
+</nav>
+</header>
+
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Abdul Qadir Al-Jilani — Halaman 2
+</div>
+
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Abdul Qadir Al-Jilani Sulthanul Awliya'</h1>
+<div class="subtitle">Halaman 2 dari 9 — Pendahuluan: Nasab Lengkap, Keluarga, Tempat &amp; Tanggal Lahir</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Kamis, 22 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Abdul_Qadir_Jilani.jpg/440px-Abdul_Qadir_Jilani.jpg"
+alt="Syeikh Abdul Qadir Al-Jilani"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Cairo_-_Islamic_district_-_Gate_of_Bab_Zuweila.jpg/440px-Cairo_-_Islamic_district_-_Gate_of_Bab_Zuweila.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Ilustrasi Syeikh Abdul Qadir Al-Jilani, Sulthanul Awliya', ulama mazhab Hanbali dan pendiri Tarekat Qadiriyah yang makamnya di Baghdad hingga kini menjadi tujuan ziarah.</div>
+</div>
+
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb" title="Bagikan ke Facebook">f</a>
+<a href="#" class="share-btn tw" title="Bagikan ke Twitter / X">t</a>
+<a href="#" class="share-btn wa" title="Bagikan ke WhatsApp">W</a>
+<a href="#" class="share-btn tg" title="Bagikan ke Telegram">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+
+<div class="article-content" id="articleContent">
+
+<p class="lead">
+Tempat lahir, garis keturunan, dan lingkungan keluarga adalah tiga pintu masuk untuk memahami pembentukan kepribadian Syeikh Abdul Qadir Al-Jilani. Dari Jilan beliau membawa ketegasan dan ketekunan; dari keluarga sayyid beliau membawa kesadaran akan amanah kehormatan; dan dari didikan ibunya beliau membawa satu modal yang lebih berharga daripada harta: kejujuran yang tidak bisa dibeli bahkan oleh ancaman kematian.
+</p>
+
+<h2>Tempat dan Tanggal Lahir</h2>
+<p>
+Menurut riwayat yang paling masyhur, beliau lahir di <strong>desa Na'if (Na'if / Naif), wilayah Jilan atau Gilan</strong>, sebuah kawasan pegunungan dan pesisir di selatan Laut Kaspia, kini berada di wilayah utara Iran. Sebagian sumber menyebut nama tempat lahirnya sebagai <em>Jilan</em> secara umum, sementara riwayat lain menyebut desa kecil di sekitarnya. Perbedaan penamaan ini wajar karena perubahan ejaan Persia–Arab dan penyalinan naskah selama berabad-abad.
+</p>
+<p>
+Tahun kelahirannya ditetapkan pada <strong>470 H / 1077 M</strong>, meskipun beberapa tarikh mencatat <strong>471 H / 1078 M</strong>. Beliau wafat di <strong>Baghdad pada 561 H / 1166 M</strong>; sebagian riwayat menentukan hari wafatnya pada 7 Ramadan, sementara yang lain tidak menyebut tanggal pasti. Dengan rentang tersebut, usia beliau sekitar 90 tahun (91 tahun menurut perhitungan tahun Hijriah).
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">KELAHIRAN &amp; KEWAFATAN</div>
+<div class="arabic-text">
+وُلِدَ بِقَرْيَةِ نَائِفَ مِنْ أَرْضِ جِيلَانَ سَنَةَ سَبْعِينَ وَأَرْبَعِمِائَةٍ لِلْهِجْرَةِ ۝ وَتُوُفِّيَ بِبَغْدَادَ سَنَةَ إِحْدَى وَسِتِّينَ وَخَمْسِمِائَةٍ لِلْهِجْرَةِ
+</div>
+<div class="latin-text">
+Wulida bi-qaryati Nā'ifa min arḍi Jīlāna sanata sab‘īna wa arba‘i mi'atin lil-hijrah. Wa tuwuffiya bi-Baghdāda sanata iḥdā wa sittīna wa khamsi mi'atin lil-hijrah.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Beliau lahir di desa Na'if, tanah Jilan, pada tahun 470 Hijriah, dan wafat di Baghdad pada tahun 561 Hijriah."
+</div>
+</div>
+
+<h2>Nasab Lengkap Syeikh Abdul Qadir Al-Jilani</h2>
+<p>
+Susunan nasab yang sering dicantumkan pada pembukaan silsilah Tarekat Qadiriyah adalah sebagai berikut. Ejaan nama <em>Janki Dust</em> juga ditulis <em>Yanki Dust</em>, <em>Jangi Dost</em>, atau <em>Zangi Dast</em> dalam berbagai naskah karena nama tersebut berakar bahasa Persia, bukan Arab.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">SILSILAH NASAB — MELALUI IMAM HUSAIN RADHIYALLAHU 'ANHU</div>
+<div class="arabic-text">
+عَبْدُ الْقَادِرِ بْنُ أَبِي صَالِحٍ عَبْدِ اللَّهِ بْنِ يَنْكِي دُوسْتَ بْنِ عَبْدِ اللَّهِ بْنِ مُوسَى بْنِ عَبْدِ اللَّهِ بْنِ مُوسَى الثَّانِي بْنِ إِبْرَاهِيمَ الْمُرْتَضَى بْنِ مُوسَى الْكَاظِمِ بْنِ جَعْفَرٍ الصَّادِقِ بْنِ مُحَمَّدٍ الْبَاقِرِ بْنِ عَلِيٍّ زَيْنِ الْعَابِدِينَ بْنِ الْحُسَيْنِ بْنِ عَلِيِّ بْنِ أَبِي طَالِبٍ رَضِيَ اللَّهُ عَنْهُمْ أَجْمَعِينَ
+</div>
+<div class="latin-text">
+‘Abdul Qādir ibn Abī Ṣāli ‘Abdullāh ibn Yankī Dūst ibn ‘Abdullāh ibn Mūsā ibn ‘Abdullāh ibn Mūsā aṡ-ṡānī ibn Ibrāhīm al-Murtaḍā ibn Mūsā al-Kāẓim ibn Ja‘far aṣ-Ṣādiq ibn Muḥammad al-Bāqir ibn ‘Aliyy Zaini al-‘Ābidīn ibn al-Ḥusain ibn ‘Aliyy ibn Abī Ṭālib raḍiya Allāhu ‘anhum ajma‘īn.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Abdul Qadir bin Abu Shalih Abdullah bin Janki Dust bin Abdullah bin Musa bin Abdullah bin Musa ats-Tsani bin Ibrahim al-Murtada bin Musa al-Kazim bin Ja'far ash-Shadiq bin Muhammad al-Baqir bin Ali Zainal Abidin bin Husain bin Ali bin Abi Thalib, semoga Allah meridai mereka semua."
+</div>
+</div>
+
+<p>
+Agar lebih mudah dibaca, urutan generasi tersebut dapat diringkas sebagai berikut:
+</p>
+<ol>
+<li>Abdul Qadir Al-Jilani</li>
+<li>Abu Shalih Abdullah</li>
+<li>Janki Dust (Yanki Dust)</li>
+<li>Abdullah</li>
+<li>Musa</li>
+<li>Abdullah</li>
+<li>Musa ats-Tsani (Musa kedua)</li>
+<li>Ibrahim al-Murtada</li>
+<li>Imam Musa al-Kazim</li>
+<li>Imam Ja'far ash-Shadiq</li>
+<li>Imam Muhammad al-Baqir</li>
+<li>Imam Ali Zainal Abidin</li>
+<li>Imam Husain bin Ali</li>
+<li>Sayyidina Ali bin Abi Thalib dan Sayyidatina Fatimah az-Zahra, puteri Rasulullah SAW</li>
+</ol>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL KEMULIAAN AHLUL BAIT — QS. AL-AHZAB: 33</div>
+<div class="arabic-text">
+إِنَّمَا يُرِيدُ اللَّهُ لِيُذْهِبَ عَنْكُمُ الرِّجْسَ أَهْلَ الْبَيْتِ وَيُطَهِّرَكُمْ تَطْهِيرًا
+</div>
+<div class="latin-text">
+Innamā yurīdu Allāhu li-yużhiba ‘ankum ar-rijsa ahlal-bayti wa yuthahhirakum tathhīrā.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sesungguhnya Allah bermaksud hendak menghilangkan dosa dari kamu, hai ahlul bait, dan membersihkan kamu sebersih-bersihnya."
+<br>— QS. Al-Ahzab: 33
+</div>
+</div>
+
+<h2>Ibu, Ayah, dan Didikan Rumah</h2>
+<p>
+Ayahnya, Abu Shalih Abdullah, digambarkan dalam manaqib sebagai ulama yang meninggalkan penghasilan yang samar dan sangat ketat dalam memilih makanan halal. Ibunya menjadi figur sentral setelah ayahnya wafat ketika beliau masih kecil — sebagian riwayat menyebut usia sekitar sepuluh tahun. Dari ibunya beliau menerima tiga bekal pokok: hafalan Al-Qur'an, adab pergaulan, dan wasiat kejujuran mutlak.
+</p>
+<p>
+Wasiat ibu beliau yang paling terkenal adalah perintah agar tidak berdusta dalam keadaan apa pun, termasuk ketika nyawa terancam. Wasiat inilah yang dalam riwayat masyhur menjadi kunci peristiwa pertaubatan seorang kepala perampok di perjalanan menuju Baghdad. Kisah tersebut akan dibahas pada Bagian 2 sebagai pintu masuk perjalanan menuntut ilmu beliau.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG DIDIKAN IBU — QS. LUQMAN: 14</div>
+<div class="arabic-text">
+وَوَصَّيْنَا الْإِنْسَانَ بِوَالِدَيْهِ حَمَلَتْهُ أُمُّهُ وَهْنًا عَلَىٰ وَهْنٍ
+</div>
+<div class="latin-text">
+Wa waṣṣainal-insāna biwālidaīhi ḥamalathu ummuhu wahnān ‘alā wahn.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan Kami perintahkan kepada manusia (berbuat baik) kepada dua orang ibu-bapaknya; ibunya telah mengandungnya dalam keadaan lemah yang bertambah-tambah."
+<br>— QS. Luqman: 14
+</div>
+</div>
+
+<h2>Keluarga dan Keturunan</h2>
+<p>
+Setelah menetap di Baghdad, beliau membangun rumah tangga dan memiliki keturunan. Sumber awal tidak selalu konsisten menyebut nama seluruh istri dan anak beliau, sehingga sikap paling aman adalah tidak menetapkan rincian yang tidak dipastikan. Yang cukup jelas dalam tradisi Qadiriyah adalah bahwa putranya, <strong>Syeikh Abdul Razaq</strong>, turut memelihara ribat dan melanjutkan pengajaran ayahanda beliau setelah wafat.
+</p>
+<p>
+Keturunan beliau kemudian dikenal dengan berbagai bentuk nama keluarga seperti <em>al-Kailani</em>, <em>al-Jilani</em>, <em>Gilani</em>, <em>Kelani</em>, hingga <em>Jaelani</em> di Nusantara. Mereka tersebar di Irak, Syam, Hijaz, Afrika Utara, India, dan Asia Tenggara. Di Baghdad, keluarga al-Kailani menjadi penjaga tradisi keilmuan dan ziarah makam beliau selama berabad-abad.
+</p>
+
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Catatan Kritis tentang Nasab dan Keluarga</strong>
+<ul>
+<li>Perbedaan jalur Hasan dan Husain perlu disebut secara jujur, bukan ditutup-tutupi.</li>
+<li>Ejaan Persia seperti "Janki Dust" memiliki banyak varian dalam naskah Arab.</li>
+<li>Nama ibu dan rincian rumah tangga sebagian besar bersumber dari manaqib kemudian, sehingga penggunaannya perlu berhati-hati.</li>
+<li>Kemuliaan nasab dalam ajaran beliau selalu dikaitkan dengan amanah amal shaleh, bukan kebanggaan keturunan semata.</li>
+</ul>
+</div>
+
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Halaman 2</strong>
+<ul>
+<li>Lahir di Na'if, Jilan (kini Iran), sekitar 470 H / 1077 M; wafat di Baghdad 561 H / 1166 M.</li>
+<li>Nasab tersambung kepada Rasulullah SAW melalui Fatimah–Ali, dengan jalur paling masyhur melalui Imam Husain.</li>
+<li>Didikan ibu yang shalehah merupakan fondasi pembentukan akhlak dan keberanian moral beliau.</li>
+</ul>
+</div>
+
+<h2>Doa Memohon Berkah Nasab dan Keluarga</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA BAGI AHLUL BAIT &amp; KETURUNAN</div>
+<div class="arabic-text">
+اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ، وَاجْعَلْنَا مِنْ مُحِبِّيهِمْ وَالتَّابِعِينَ لَهُمْ فِي الْإِحْسَانِ
+</div>
+<div class="latin-text">
+Allāhumma ṣalli ‘alā sayyidinā Muḥammadin wa ‘alā āli sayyidinā Muḥammad, waj‘alnā min muḥibbīhim wat-tābi‘īna lahum fil-iḥsān.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, limpahkanlah rahmat kepada junjungan kami Nabi Muhammad dan kepada keluarga junjungan kami Nabi Muhammad, dan jadikanlah kami termasuk orang-orang yang mencintai mereka serta mengikuti mereka dalam kebaikan."
+</div>
+</div>
+
+<h2>Penutup Halaman 2</h2>
+<p>
+Demikianlah pembahasan tentang nasab lengkap, keluarga, tempat dan tanggal lahir Syeikh Abdul Qadir Al-Jilani. Kemuliaan nasab, didikan ibu yang shalehah, dan kelahiran di tanah Jilan menjadi fondasi yang mempersiapkan beliau untuk perjalanan panjang menuntut ilmu ke Baghdad. Pada halaman berikutnya, kita akan membahas perjalanan beliau menuntut ilmu di Baghdad, bidang-bidang ilmu yang dipelajari, dan lingkungan akademik yang membentuk kepribadian keilmuan beliau.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-text">
+رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا
+</div>
+<div class="latin-text">
+Rabbanā hab lanā min azwājinā wa żurriyyātinā qurrata a‘yun waj‘alnā lil-muttaqīna imāmā.
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Tuhan kami, anugerahkanlah kepada kami istri-istri dan keturunan kami sebagai penyejuk hati (kami), dan jadikanlah kami imam bagi orang-orang yang bertakwa."
+<br>— QS. Al-Furqan: 74
+</div>
+</div>
+
+</div>
+
+<!-- NAVIGASI 9 TOMBOL — DIATUR AGAR ELEGAN -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="jilani1.html" class="article-nav-btn" title="Halaman 1">1</a>
+<div class="nav-btn-label">Halaman 1</div>
+</div>
+<div class="nav-group">
+<a href="jilani2.html" class="article-nav-btn active" title="Halaman 2">2</a>
+<div class="nav-btn-label">Halaman 2</div>
+</div>
+<div class="nav-group">
+<a href="jilani3.html" class="article-nav-btn" title="Halaman 3">3</a>
+<div class="nav-btn-label">Halaman 3</div>
+</div>
+<div class="nav-group">
+<a href="jilani4.html" class="article-nav-btn" title="Halaman 4">4</a>
+<div class="nav-btn-label">Halaman 4</div>
+</div>
+<div class="nav-group">
+<a href="jilani5.html" class="article-nav-btn" title="Halaman 5">5</a>
+<div class="nav-btn-label">Halaman 5</div>
+</div>
+<div class="nav-group">
+<a href="jilani6.html" class="article-nav-btn" title="Halaman 6">6</a>
+<div class="nav-btn-label">Halaman 6</div>
+</div>
+<div class="nav-group">
+<a href="jilani7.html" class="article-nav-btn" title="Halaman 7">7</a>
+<div class="nav-btn-label">Halaman 7</div>
+</div>
+<div class="nav-group">
+<a href="jilani8.html" class="article-nav-btn" title="Halaman 8">8</a>
+<div class="nav-btn-label">Halaman 8</div>
+</div>
+<div class="nav-group">
+<a href="jilani9.html" class="article-nav-btn" title="Halaman 9">9</a>
+<div class="nav-btn-label">Halaman 9</div>
+</div>
+</div>
+
+</div>
+
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+
+<script>
+/* KONTROL UKURAN HURUF — SAMA DENGAN contoh.txt */
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+
+/* TOMBOL BAGIKAN */
+document.querySelector('.share-btn.fb').addEventListener('click', function (e) {
+e.preventDefault();
+window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(location.href), '_blank', 'noopener,noreferrer');
+});
+document.querySelector('.share-btn.tw').addEventListener('click', function (e) {
+e.preventDefault();
+window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(location.href) + '&text=' + encodeURIComponent(document.title), '_blank', 'noopener,noreferrer');
+});
+document.querySelector('.share-btn.wa').addEventListener('click', function (e) {
+e.preventDefault();
+window.open('https://wa.me/?text=' + encodeURIComponent(document.title + ' — ' + location.href), '_blank', 'noopener,noreferrer');
+});
+document.querySelector('.share-btn.tg').addEventListener('click', function (e) {
+e.preventDefault();
+window.open('https://t.me/share/url?url=' + encodeURIComponent(location.href) + '&text=' + encodeURIComponent(document.title), '_blank', 'noopener,noreferrer');
+});
+</script>
+</body>
+</html>
