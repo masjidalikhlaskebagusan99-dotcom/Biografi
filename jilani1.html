@@ -542,6 +542,61 @@ header, .breadcrumb, .share-bar, .article-nav, .kalam-back-btn { display: none !
 body { background: #fff; }
 }
 </style>
+<!-- ═══════ INSTANT PAGE JUMP (tanpa smooth, tanpa fade) ═══════ -->
+<style>html{scroll-behavior:auto!important;}</style>
+<script>
+(function(){
+  // 1. Matikan scroll restoration browser
+  try{history.scrollRestoration='manual';}catch(e){}
+
+  // 2. PAKSA scroll ke 0 SEGERA (sebelum render)
+  function top(){try{window.scrollTo(0,0);}catch(e){}
+    document.documentElement.scrollTop=0;
+    if(document.body)document.body.scrollTop=0;}
+  top();
+
+  // 3. Tangkap klik tombol navigasi → pindah halaman INSTANT
+  document.addEventListener('click',function(e){
+    var t=e.target;
+    if(!t||!t.closest)return;
+    // Cari tombol nav (6 tombol atau 9 tombol)
+    var a=t.closest('.article-nav-btn[href],.article-nav a[href]');
+    if(!a)return;
+    // Abaikan: header, breadcrumb, tombol KALAM
+    if(t.closest('header')||t.closest('.breadcrumb'))return;
+    if(a.classList.contains('kalam-back-btn'))return;
+    // Abaikan klik kanan / Ctrl+klik
+    if(e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+
+    var href=a.getAttribute('href');
+    if(!href||href[0]==='#')return;
+    // Hanya tangani file .html di domain yang sama
+    try{
+      var u=new URL(href,location.href);
+      if(u.origin!==location.origin)return;
+      if(!/\.html?$/i.test(u.pathname))return;
+    }catch(err){return;}
+
+    e.preventDefault();
+    e.stopPropagation();
+
+    // Klik halaman aktif → cukup scroll ke atas
+    if(u.pathname===location.pathname){top();return;}
+
+    // Pindah halaman → INSTANT
+    location.href=href;
+  },true);
+
+  // 4. Pastikan scroll ke 0 saat halaman siap
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded',top,{once:true});
+  }
+  window.addEventListener('load',top,{once:true});
+  window.addEventListener('pageshow',function(e){top();});
+})();
+</script>
+<!-- ═══════ END INSTANT PAGE JUMP ═══════ -->
+
 </head>
 <body>
 <header>
