@@ -1,100 +1,12 @@
 <!DOCTYPE html>
+<html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- ═══════ INSTANT JUMP v5.0 — HASH UNIK + INLINE ═══════ -->
 <script>
-(function(){
-  // 1. Matikan scroll restoration SECEPAT MUNGKIN
-  try{history.scrollRestoration='manual';}catch(e){}
-
-  // 2. PAKSA scroll ke 0 SEGERA (sebelum render apapun)
-  function forceTop(){
-    try{window.scrollTo(0,0);}catch(e){}
-    document.documentElement.scrollTop=0;
-    if(document.body)document.body.scrollTop=0;
-  }
-  forceTop();
-
-  // 3. Hapus hash unik dari URL (tanpa reload)
-  if(location.hash && /^#_\d+$/.test(location.hash)){
-    try{
-      history.replaceState(null,'',location.pathname+location.search);
-    }catch(e){}
-  }
-
-  // 4. Jalankan forceTop di SEMUA event penting
-  if(document.readyState==='loading'){
-    document.addEventListener('DOMContentLoaded',forceTop,{once:true});
-  }
-  window.addEventListener('load',forceTop,{once:true});
-  window.addEventListener('pageshow',forceTop);
-  window.addEventListener('popstate',forceTop);
-
-  // 5. Tangkap klik tombol navigasi
-  document.addEventListener('click',function(e){
-    if(e.defaultPrevented||e.button!==0)return;
-    if(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
-
-    var t=e.target;
-    if(!t||!t.closest)return;
-    var a=t.closest('.article-nav-btn[href],.article-nav a[href]');
-    if(!a)return;
-    if(t.closest('header')||t.closest('.breadcrumb'))return;
-    if(a.classList.contains('kalam-back-btn'))return;
-
-    var href=a.getAttribute('href');
-    if(!href||href[0]==='#')return;
-
-    try{
-      var u=new URL(href,location.href);
-      if(u.origin!==location.origin)return;
-      if(!/\.html?$/i.test(u.pathname))return;
-    }catch(err){return;}
-
-    e.preventDefault();
-    e.stopPropagation();
-
-    // 6. KUNCI: Tambah hash unik untuk bypass browser cache
-    var cleanUrl=href.split('#')[0];
-    var newUrl=cleanUrl+'#_'+Date.now();
-
-    // Paksa scroll ke 0 SEBELUM pindah
-    forceTop();
-
-    // Pindah halaman dengan hash unik
-    try{location.assign(newUrl);}
-    catch(err){location.href=newUrl;}
-  },true);
-
-  // 7. Sinkron tombol .active
-  function syncActive(){
-    var list=document.querySelectorAll('.article-nav-btn[href],.article-nav a[href]');
-    var here=location.pathname+location.search;
-    for(var i=0;i<list.length;i++){
-      var a=list[i];
-      if(!a.classList.contains('article-nav-btn'))continue;
-      var on=false;
-      try{
-        var u=new URL(a.getAttribute('href'),location.href);
-        on=(u.pathname+u.search)===here;
-      }catch(e){}
-      a.classList.toggle('active',on);
-    }
-  }
-  if(document.readyState==='complete'||document.readyState==='interactive'){
-    syncActive();
-  }else{
-    document.addEventListener('DOMContentLoaded',syncActive,{once:true});
-  }
-})();
+  if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+  window.scrollTo(0, 0);
 </script>
-<style>
-html{scroll-behavior:auto!important;scroll-padding-top:0!important;}
-html *{scroll-behavior:auto!important;}
-</style>
-<!-- ═══════ END INSTANT JUMP v5.0 ═══════ -->
 <title>Biografi Syeikh Abdul Qadir Al-Jilani Sulthanul Awliya' - KALAM</title>
 
 <!-- FONT NASKHI: AMIRI / NOTO NASKH ARABIC / SCHEHERAZADE -->
@@ -103,6 +15,7 @@ html *{scroll-behavior:auto!important;}
 <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
+html { scroll-behavior: auto !important; }
 /* 1. RESET & DASAR */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
@@ -635,14 +548,14 @@ body { background: #fff; }
 }
 </style>
 </head>
-<body>
+<body onload="window.scrollTo(0,0)">
 <header>
 <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
 <span>K</span>ALAM
 </a>
 <nav>
 <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
-<a href="biografi.html">Artikel</a>
+<a href="artikelwali2.html">Artikel</a>
 </nav>
 </header>
 
