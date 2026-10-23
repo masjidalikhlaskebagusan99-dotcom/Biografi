@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Imam Al-Ghazali - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+/* 1. RESET & DASAR */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+/* 2. MEDIA QUERY TABLET */
+@media (max-width: 768px) {
+.article-container { max-width: 100%; padding: 20px; }
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+/* 3. HEADER & NAVIGASI ATAS */
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+/* 4. BREADCRUMB & CONTAINER */
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+/* 5. ARTICLE HEADER & META */
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+/* 6. GAMBAR & SHARE BAR */
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+/* 7. KONTEN ARTIKEL */
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 8. KOTAK ARAB & BIOGRAFI */
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 9. NAVIGASI HALAMAN (9 TOMBOL) */
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* 10. TOMBOL KEMBALI & FOOTER */
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+/* 11. MEDIA QUERY MOBILE */
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+/* PATCH UNIVERSAL v2.0 */
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="biografi.html">Artikel</a> &raquo; Biografi Imam Al-Ghazali — Perjalanan Spiritual
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Imam Al-Ghazali</h1>
+<div class="subtitle">Halaman 4 dari 9 — Krisis Spiritual, Pengembaraan 11 Tahun, dan Kelahiran Kembali Sang Hujjatul Islam</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Kamis, 22 Oktober 2026, 21:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Umayyad_Mosque_Damascus.jpg/440px-Umayyad_Mosque_Damascus.jpg"
+alt="Masjid Umayyah Damaskus tempat Imam Al-Ghazali berkhalwat"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Al-Ghazali.jpg/440px-Al-Ghazali.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Masjid Umayyah di Damaskus, Suriah — tempat Imam Al-Ghazali berkhalwat di menara baratnya selama pengembaraan spiritual beliau yang berlangsung sekitar 11 tahun (488-499 H)</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Perjalanan spiritual Imam Al-Ghazali adalah salah satu kisah paling mengagumkan dan paling berpengaruh dalam sejarah intelektual Islam. Pada puncak kejayaannya sebagai pengajar termasyhur di Madrasah Nizhamiyah Baghdad — dengan ratusan murid, gaji yang besar, dan kedudukan yang sangat terhormat — beliau tiba-tiba dilanda <strong>krisis spiritual yang dahsyat</strong> pada tahun 488 H (1095 M). Beliau menyadari bahwa seluruh ilmu dan jabatan yang beliau miliki belum mampu mengantarkan beliau kepada keikhlasan yang murni dan kedekatan sejati dengan Allah. Maka beliau mengambil keputusan yang sangat mengejutkan dunia Islam pada zamannya: <strong>meninggalkan seluruh jabatan, harta, dan ketenaran</strong>, lalu mengembara selama sekitar 11 tahun ke Damaskus, Yerusalem, Hebron, Makkah, dan Madinah. Dalam pengembaraan inilah beliau mengalami "kelahiran kembali" secara spiritual, dan dari pengalaman inilah lahir karya-karya besarnya — terutama <em>Ihya' Ulumiddin</em> — yang mengubah wajah pemikiran Islam hingga hari ini. Kisah ini beliau tulis sendiri dengan sangat jujur dan mendalam dalam kitabnya <em>Al-Munqidz min adh-Dhalal</em> (Penyelamat dari Kesesatan).
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG TUJUAN PENCIPTAAN MANUSIA — QS. ADZ-DZARIYAT: 56</div>
+<div class="arabic-text">
+وَمَا خَلَقْتُ الْجِنَّ وَالْإِنسَ إِلَّا لِيَعْبُدُونِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa mā khalaqtul-jinna wal-insa illā liya'budūn."
+<br><br>
+<strong>Artinya:</strong> "Dan Aku tidak menciptakan jin dan manusia melainkan agar mereka beribadah kepada-Ku."
+<br>— QS. Adz-Dzariyat: 56
+</div>
+</div>
+<h2>Puncak Kejayaan Duniawi — dan Kekosongan Batin yang Menyertainya</h2>
+<p>
+Untuk memahami kedalaman krisis spiritual Imam Al-Ghazali, kita perlu terlebih dahulu melihat betapa tingginya posisi beliau sebelum krisis itu terjadi. Sejak tahun <strong>484 H (1091 M)</strong>, ketika beliau baru berusia sekitar 34 tahun, Imam Al-Ghazali telah menjabat sebagai pengajar utama di <strong>Madrasah Nizhamiyah Baghdad</strong> — universitas paling bergengsi di dunia Islam pada zamannya. Jabatan ini beliau peroleh atas undangan Wazir Nizam al-Mulk sendiri, yang sangat terkesan dengan kecerdasan dan keilmuan beliau.
+</p>
+<p>
+Selama kurang lebih empat tahun (484-488 H), Imam Al-Ghazali berada di puncak kejayaan duniawi:
+</p>
+<ul>
+<li><strong>Mengajar ratusan murid</strong> — lebih dari 300 murid hadir di majelis beliau setiap hari, dari berbagai penjuru dunia Islam.</li>
+<li><strong>Dihormati oleh penguasa</strong> — beliau menjadi penasihat tidak resmi para penguasa Seljuk, dan pendapatnya sangat diperhitungkan.</li>
+<li><strong>Dikenal di seluruh dunia Islam</strong> — nama beliau disebut dari Baghdad hingga Andalusia, dari Yaman hingga Transoxiana.</li>
+<li><strong>Mendapat gaji dan fasilitas yang besar</strong> — jabatan di Madrasah Nizhamiyah adalah salah satu posisi paling bergengsi dan paling baik penghasilannya pada masa itu.</li>
+<li><strong>Menulis karya-karya penting</strong> — dalam periode ini beliau menulis <em>Maqashid al-Falasifah</em>, <em>Tahafut al-Falasifah</em>, <em>Al-Iqtishad fi al-I'tiqad</em>, dan <em>Fada'ih al-Bathiniyyah</em>.</li>
+</ul>
+<p>
+Namun di balik semua kejayaan ini, Imam Al-Ghazali merasakan <strong>kekosongan batin yang semakin hari semakin dalam</strong>. Beliau mulai bertanya kepada dirinya sendiri: <em>"Untuk apa semua ini? Apakah aku mengajar karena Allah, atau karena jabatan dan ketenaran? Apakah ilmuku telah memperbaiki hatiku, atau hanya menambah kesombonganku?"</em> Pertanyaan-pertanyaan ini terus menghantui beliau, hingga akhirnya meledak menjadi krisis spiritual yang mengubah seluruh arah hidupnya.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN IMAM AL-GHAZALI TENTANG KEKOSONGAN BATIN — DARI AL-MUNQIDZ MIN ADH-DHALAL</div>
+<div class="arabic-text">
+فَلَمَّا رَأَيْتُ نَفْسِي مَائِلَةً إِلَى الْجَاهِ وَالشُّهْرَةِ، وَأَنَّ مَقْصُودِي مِنَ التَّعْلِيمِ هُوَ الْجَاهُ وَالشُّهْرَةُ، عَلِمْتُ أَنِّي عَلَى شَفَا جُرُفٍ هَارٍ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Fa lammā ra'aitu nafsī mā'ilatan ilal-jāhi wasy-syuhrah, wa anna maqṣūdī minat-ta'līmi huwal-jāhu wasy-syuhrah, 'alimtu annī 'alā syafā jurufin hār."
+<br><br>
+<strong>Artinya:</strong> "Maka ketika aku melihat diriku condong kepada kedudukan dan ketenaran, dan bahwa tujuanku dari mengajar adalah kedudukan dan ketenaran, aku sadar bahwa aku berada di tepi juruf (tepi jurang) yang longsor."
+<br>— Imam Al-Ghazali, Al-Munqidz min adh-Dhalal
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Krisis Spiritual yang Dahsyat — Rajab hingga Dzulqa'dah 488 H</span>
+<div class="karomah-arabic">الْأَزْمَةُ الرُّوحِيَّةُ الْعَنِيفَةُ — رَجَب إِلَى ذِي الْقَعْدَةِ 488 هـ</div>
+<p>
+Krisis spiritual Imam Al-Ghazali dimulai sekitar bulan <strong>Rajab 488 H (Juli 1095 M)</strong> dan memuncak pada <strong>Dzulqa'dah 488 H (November 1095 M)</strong> — berlangsung selama hampir enam bulan. Beliau menceritakan sendiri krisis ini dengan sangat jujur dan mendalam dalam kitabnya <em>Al-Munqidz min adh-Dhalal</em>, sebuah autobiografi intelektual yang menjadi salah satu karya paling jujur dalam sejarah sastra Islam.
+</p>
+<p>
+Gejala-gejala krisis yang beliau alami sangat berat:
+</p>
+<ul>
+<li><strong>Keraguan mendalam tentang niat</strong> — Beliau terus-menerus mempertanyakan niatnya dalam mengajar: apakah benar-benar karena Allah, atau karena jabatan dan ketenaran. Setiap kali beliau ingin mengajar, beliau teringat bahwa motivasinya mungkin tidak murni, sehingga beliau tidak jadi mengajar.</li>
+<li><strong>Terkuncinya lisan</strong> — Pada puncaknya, lisan beliau benar-benar terkunci. Beliau tidak mampu berbicara satu kata pun di majelis. Ketika beliau mencoba memaksakan diri untuk mengajar, lisan beliau terasa kaku dan tidak mampu mengeluarkan suara. Ini adalah gejala fisik yang sangat nyata dari krisis spiritual beliau.</li>
+<li><strong>Penyakit fisik</strong> — Krisis spiritual ini berdampak pada tubuh beliau. Beliau mengalami gangguan pencernaan, tubuh yang lemah, dan jantung yang berdebar-debar. Para tabib Baghdad dipanggil untuk mengobati beliau, tetapi mereka berkata: <em>"Ini bukan penyakit yang dapat diobati dengan obat. Ini adalah penyakit hati, dan hanya dapat disembuhkan dengan memperbaiki hubunganmu dengan Allah."</em></li>
+<li><strong>Kegelisahan jiwa yang ekstrem</strong> — Beliau merasa terjepit antara dua pilihan: tetap mengajar dengan hati yang gelisah, atau meninggalkan segalanya demi keselamatan akhiratnya. Beliau berkata bahwa setiap pagi beliau bangun dengan kegelisahan yang luar biasa, dan setiap malam beliau tidur dengan pikiran yang berkecamuk.</li>
+<li><strong>Doa yang terus-menerus</strong> — Selama enam bulan krisis ini, beliau terus berdoa kepada Allah: <em>"Ya Allah, tunjukkanlah aku jalan yang paling benar. Ya Allah, janganlah Engkau biarkan aku dalam kebingungan ini. Ya Allah, bimbinglah aku kepada jalan-Mu."</em></li>
+</ul>
+<p>
+Beliau menceritakan: <em>"Selama hampir enam bulan, aku berada di antara dua pilihan — mengajar di Baghdad atau meninggalkannya. Setiap kali aku berniat untuk tetap mengajar, kegelisahan kembali menyerangku. Dan setiap kali aku berniat untuk meninggalkannya, nafsu duniawi menarikku kembali. Hingga akhirnya Allah memudahkan bagiku untuk memilih jalan yang benar."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEGELISAHAN JIWA TANPA DZIKIR — QS. AR-RA'D: 28</div>
+<div class="arabic-text">
+الَّذِينَ آمَنُوا وَتَطْمَئِنُّ قُلُوبُهُم بِذِكْرِ اللَّهِ ۗ أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Allażīna āmanū wa taṭma'innu qulūbuhum biżikrillāh. Alā biżikrillāhi taṭma'innul-qulūb."
+<br><br>
+<strong>Artinya:</strong> "(Yaitu) orang-orang yang beriman dan hati mereka menjadi tenteram dengan mengingat Allah. Ingatlah, hanya dengan mengingat Allah hati menjadi tenteram."
+<br>— QS. Ar-Ra'd: 28
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Keputusan Besar — Meninggalkan Baghdad pada Dzulqa'dah 488 H</span>
+<div class="karomah-arabic">الْقَرَارُ الْكَبِيرُ — مُغَادَرَةُ بَغْدَاد فِي ذِي الْقَعْدَةِ 488 هـ</div>
+<p>
+Pada bulan <strong>Dzulqa'dah 488 H (November 1095 M)</strong>, Imam Al-Ghazali akhirnya mengambil keputusan besar yang mengubah seluruh arah hidupnya: <strong>meninggalkan Baghdad</strong> beserta seluruh jabatan, harta, dan ketenaran yang beliau miliki. Keputusan ini sangat mengejutkan seluruh dunia Islam pada zamannya, karena beliau meninggalkan posisi yang diidam-idamkan oleh hampir setiap ulama pada masa itu.
+</p>
+<p>
+Imam Al-Ghazali mempersiapkan keberangkatannya dengan sangat hati-hati:
+</p>
+<ul>
+<li><strong>Menyerahkan jabatan</strong> — Beliau menyerahkan jabatan pengajar di Madrasah Nizhamiyah Baghdad kepada adiknya, <strong>Ahmad Al-Ghazali</strong> (Abul Futuh), yang juga seorang ulama besar.</li>
+<li><strong>Membagi harta</strong> — Beliau membagi hartanya menjadi tiga bagian: sebagian untuk keluarganya, sebagian untuk kebutuhan perjalanan beliau, dan sebagian besar disedekahkan kepada fakir miskin dan para penuntut ilmu.</li>
+<li><strong>Menitipkan keluarga</strong> — Beliau menitipkan istri dan anak-anak beliau kepada sahabat-sahabatnya yang terpercaya di Baghdad, dengan pesan agar mereka dididik dengan pendidikan agama yang baik.</li>
+<li><strong>Memilih alasan yang bijaksana</strong> — Secara publik, beliau mengumumkan bahwa kepergiannya adalah untuk menunaikan <strong>haji ke Makkah</strong>, bukan untuk mengasingkan diri secara permanen. Ini dilakukan agar tidak menimbulkan gejolak politik atau keresahan di kalangan murid dan penguasa.</li>
+</ul>
+<p>
+Pada hari keberangkatan, Imam Al-Ghazali meninggalkan Baghdad secara diam-diam agar tidak diiringi oleh murid-murid dan pengagumnya. Beliau keluar dari kota dengan pakaian seorang musafir biasa, tanpa tanda-tanda kebesaran, dan tanpa pengawalan. Beliau berkata tentang momen itu:
+</p>
+<blockquote>
+<em>"Aku meninggalkan Baghdad dengan harta yang hanya cukup untuk perjalanan. Aku tidak membawa apa-apa dari jabatan dan ketenaran yang selama ini menyertainya. Aku hanya membawa satu harapan: semoga Allah menerima pengorbanan ini dan menjadikannya sebagai jalan bagiku untuk mendekat kepada-Nya."</em>
+</blockquote>
+<p>
+Kepergian Imam Al-Ghazali dari Baghdad menimbulkan kegemparan di seluruh dunia Islam. Para murid beliau sangat terkejut, para penguasa Seljuk berusaha membujuk beliau untuk kembali, dan berbagai spekulasi beredar tentang alasan kepergian beliau. Namun Imam Al-Ghazali tetap teguh pada keputusannya, dan memulai perjalanan spiritual yang akan berlangsung selama sekitar <strong>11 tahun</strong>.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENINGGALKAN DUNIA UNTUK ALLAH — QS. AL-A'LA: 16-17</div>
+<div class="arabic-text">
+بَلْ تُؤْثِرُونَ الْحَيَاةَ الدُّنْيَا ۝ وَالْآخِرَةُ خَيْرٌ وَأَبْقَىٰ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Bal tu'tsirūnal-ḥayāta ad-dunyā. Wal-ākhiratu khairun wa abqā."
+<br><br>
+<strong>Artinya:</strong> "Tetapi kamu (orang-orang kafir) memilih kehidupan duniawi. Padahal kehidupan akhirat itu lebih baik dan lebih kekal."
+<br>— QS. Al-A'la: 16-17
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Pengembaraan ke Syam — Damaskus, Yerusalem, dan Hebron</span>
+<div class="karomah-arabic">الرِّحْلَةُ إِلَى الشَّامِ — دِمَشْق وَالْقُدْس وَالْخَلِيل</div>
+<p>
+Setelah meninggalkan Baghdad, tujuan pertama Imam Al-Ghazali adalah wilayah <strong>Syam</strong> (kini meliputi Suriah, Palestina, Lebanon, dan Yordania). Beliau memilih Syam karena wilayah ini penuh dengan keberkahan — tanah para nabi, tempat banyak sahabat dan tabi'in, serta pusat spiritualitas Islam yang sangat kaya.
+</p>
+<p>
+Perjalanan beliau di Syam meliputi beberapa kota penting:
+</p>
+<ul>
+<li><strong>Damaskus (Dimasyq)</strong> — kota pertama yang beliau kunjungi di Syam. Di sini beliau berkhalwat selama beberapa tahun, terutama di <strong>menara barat Masjid Umayyah</strong> (Al-Manarah al-Gharbiyyah). Masjid Umayyah adalah salah satu masjid tertua dan paling bersejarah dalam Islam, dibangun pada masa Khalifah Al-Walid bin Abdul Malik (705-715 M).</li>
+<li><strong>Yerusalem (Baitul Maqdis)</strong> — kota suci ketiga dalam Islam, tempat Masjid Al-Aqsha dan Kubah Ash-Shakhrah (Dome of the Rock). Di sini beliau berkhalwat di sekitar Masjid Al-Aqsha, merenungkan kebesaran Allah di tempat Isra' Mi'raj Rasulullah SAW.</li>
+<li><strong>Hebron (Al-Khalil)</strong> — kota tempat makam Nabi Ibrahim 'alaihissalam, bapak para nabi. Di sini beliau berziarah ke Masjid Al-Ibrahimi dan merenungkan kisah keteguhan tauhid Nabi Ibrahim.</li>
+</ul>
+<p>
+Selama di Syam, Imam Al-Ghazali menjalani kehidupan yang sangat sederhana. Beliau tidak tinggal di rumah-rumah mewah atau madrasah-madrasah besar, melainkan di sudut-sudut masjid, di gua-gua kecil, atau di tempat-tempat sunyi yang jauh dari keramaian. Beliau menghabiskan waktunya untuk:
+</p>
+<ul>
+<li><strong>Dzikir dan muraqabah</strong> — mengingat Allah dengan hati yang hadir, dan mengawasi setiap gerakan hati.</li>
+<li><strong>Membaca Al-Qur'an</strong> — dengan tartil dan perenungan mendalam.</li>
+<li><strong>Muhasabah</strong> — mengintrospeksi diri setiap hari, menghitung amal-amalnya, dan memperbaiki kekurangan.</li>
+<li><strong>Tafakkur</strong> — merenungkan kebesaran Allah melalui ciptaan-Nya.</li>
+<li><strong>Menulis</strong> — dalam periode inilah beliau mulai menulis karya-karya besarnya, termasuk bagian-bagian awal <em>Ihya' Ulumiddin</em>.</li>
+</ul>
+<p>
+Beliau berkata tentang periode ini: <em>"Aku menyendiri di menara Masjid Umayyah di Damaskus. Aku menutup pintu di belakangku, dan aku menghabiskan seluruh waktuku untuk dzikir, muraqabah, dan muhasabah. Di sanalah Allah membuka pintu-pintu ma'rifat yang selama ini tertutup bagiku."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEBERKAHAN TANAH SYAM — QS. AL-ISRA: 1</div>
+<div class="arabic-text">
+سُبْحَانَ الَّذِي أَسْرَىٰ بِعَبْدِهِ لَيْلًا مِّنَ الْمَسْجِدِ الْحَرَامِ إِلَى الْمَسْجِدِ الْأَقْصَى الَّذِي بَارَكْنَا حَوْلَهُ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Subḥānal-lażī asrā bi'abdihī lailan minal-masjidil-ḥarāmi ilal-masjidil-aqṣal-lażī bāraknā ḥaulah."
+<br><br>
+<strong>Artinya:</strong> "Mahasuci (Allah), yang telah memperjalankan hamba-Nya (Muhammad) pada malam hari dari Masjid Al-Haram ke Masjid Al-Aqsha yang telah Kami berkahi sekelilingnya."
+<br>— QS. Al-Isra: 1
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Khalwat di Menara Masjid Umayyah Damaskus</span>
+<div class="karomah-arabic">الْخَلْوَةُ فِي مَنَارَةِ الْمَسْجِدِ الْأُمَوِيِّ بِدِمَشْق</div>
+<p>
+Salah satu episode paling penting dalam pengembaraan spiritual Imam Al-Ghazali adalah <strong>khalwat beliau di menara barat Masjid Umayyah Damaskus</strong> (Al-Manarah al-Gharbiyyah). Khalwat ini berlangsung selama beberapa tahun, dan menjadi salah satu periode paling menentukan dalam pembentukan spiritualitas beliau.
+</p>
+<p>
+Dalam khalwat ini, Imam Al-Ghazali menjalani rutinitas yang sangat ketat:
+</p>
+<ul>
+<li><strong>Mengunci pintu</strong> — Beliau mengunci pintu menara dari dalam, dan tidak membukanya kecuali untuk kebutuhan yang sangat mendesak.</li>
+<li><strong>Meminimalkan makan</strong> — Beliau makan hanya sekali sehari, dengan makanan yang sangat sederhana: roti kering, kurma, dan air.</li>
+<li><strong>Meminimalkan tidur</strong> — Beliau tidur hanya sedikit di malam hari, dan menghabiskan sebagian besar malam untuk shalat, dzikir, dan munajat.</li>
+<li><strong>Meminimalkan bicara</strong> — Beliau hampir tidak berbicara dengan siapa pun selama khalwat, kecuali jika benar-benar diperlukan.</li>
+<li><strong>Dzikir terus-menerus</strong> — Lisan dan hati beliau senantiasa basah dengan dzikir kepada Allah, hingga dzikir itu menyatu dengan setiap tarikan napas beliau.</li>
+</ul>
+<p>
+Dari khalwat inilah Imam Al-Ghazali mendapatkan pengalaman-pengalaman spiritual yang sangat mendalam. Beliau mengalami <strong>kasyf</strong> (penyingkapan tabir gaib) yang memungkinkan beliau memahami hakikat-hakikat spiritual yang selama ini hanya beliau ketahui secara teoritis. Beliau berkata tentang pengalaman ini:
+</p>
+<blockquote>
+<em>"Aku menyadari bahwa jalan para sufi adalah satu-satunya jalan yang benar. Seluruh ilmu yang kupelajari sebelumnya hanyalah kulit luar. Hakikat ilmu baru dapat dicapai melalui penyucian jiwa dan kedekatan dengan Allah. Dan apa yang kurasakan dalam khalwat ini tidak dapat diungkapkan dengan kata-kata — ia hanya dapat dirasakan oleh siapa yang mengalaminya."</em>
+</blockquote>
+<p>
+Pengalaman khalwat di Damaskus inilah yang kemudian menjadi fondasi dari seluruh pemikiran tasawuf Imam Al-Ghazali. Beliau membuktikan secara langsung bahwa tasawuf yang benar bukanlah sekadar teori atau klaim, melainkan <strong>pengalaman spiritual nyata</strong> yang dapat dicapai oleh siapa pun yang bersungguh-sungguh menempuh jalannya.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN IMAM AL-GHAZALI TENTANG PENGALAMAN SPIRITUAL — DARI AL-MUNQIDZ</div>
+<div class="arabic-text">
+مَنْ لَمْ يَذُقْ لَمْ يَعْلَمْ، وَمَا ذَاقَ مَنْ لَمْ يَسْلُكْ طَرِيقَ الْقَوْمِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Man lam yadzuq lam ya'lam, wa mā dzāqa man lam yasluk ṭarīqal-qaum."
+<br><br>
+<strong>Artinya:</strong> "Barangsiapa yang tidak merasakan, maka ia tidak akan mengetahui. Dan tidak akan merasakan siapa yang tidak menempuh jalan kaum (sufi)."
+<br>— Imam Al-Ghazali, Al-Munqidz min adh-Dhalal
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Haji ke Makkah dan Ziarah ke Madinah</span>
+<div class="karomah-arabic">الْحَجُّ إِلَى مَكَّة وَزِيَارَةُ الْمَدِينَةِ الْمُنَوَّرَة</div>
+<p>
+Setelah beberapa tahun berkhalwat di Syam, Imam Al-Ghazali melanjutkan perjalanan spiritualnya ke <strong>Tanah Haram</strong> — Makkah Al-Mukarramah dan Madinah Al-Munawwarah. Ini adalah puncak dari perjalanan spiritual beliau, karena di dua kota inilah terdapat tempat-tempat paling suci dalam Islam: <strong>Ka'bah</strong> di Makkah dan <strong>Masjid Nabawi</strong> di Madinah.
+</p>
+<p>
+Di Makkah, Imam Al-Ghazali:
+</p>
+<ul>
+<li><strong>Menunaikan haji</strong> — dengan penuh kekhusyukan dan perenungan mendalam tentang hakikat ibadah haji.</li>
+<li><strong>Berkhalwat di sekitar Ka'bah</strong> — merenungkan kebesaran Allah di tempat yang paling suci di muka bumi.</li>
+<li><strong>Beribadah di Gua Hira</strong> — tempat Rasulullah SAW menerima wahyu pertama.</li>
+<li><strong>Beribadah di Arafah, Muzdalifah, dan Mina</strong> — tempat-tempat manasik haji yang penuh dengan pelajaran spiritual.</li>
+</ul>
+<p>
+Di Madinah, Imam Al-Ghazali:
+</p>
+<ul>
+<li><strong>Berziarah ke Masjid Nabawi</strong> — dan bershalawat kepada Rasulullah SAW di Raudhah yang mulia.</li>
+<li><strong>Berziarah ke makam Rasulullah SAW</strong> — serta makam Abu Bakar Ash-Shiddiq dan Umar bin Al-Khattab radhiyallahu 'anhuma.</li>
+<li><strong>Berziarah ke Pemakaman Baqi'</strong> — tempat dimakamkan banyak sahabat Nabi dan keluarga Rasulullah SAW.</li>
+<li><strong>Berziarah ke Masjid Quba</strong> — masjid pertama yang dibangun oleh Rasulullah SAW di Madinah.</li>
+<li><strong>Berziarah ke Jabal Uhud</strong> — tempat pertempuran Uhud yang bersejarah.</li>
+</ul>
+<p>
+Pengalaman di Makkah dan Madinah sangat mendalam bagi Imam Al-Ghazali. Beliau berkata bahwa di dua kota inilah beliau merasakan kedekatan paling intim dengan Rasulullah SAW, dan paling memahami makna sejati dari <em>ittiba' sunnah</em> (mengikuti sunnah Nabi). Dari pengalaman inilah lahir penekanan beliau yang sangat kuat dalam <em>Ihya' Ulumiddin</em> tentang pentingnya mengikuti Rasulullah SAW dalam seluruh aspek kehidupan — lahir dan batin.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEWAJIBAN HAJI — QS. ALI 'IMRAN: 97</div>
+<div class="arabic-text">
+وَلِلَّهِ عَلَى النَّاسِ حِجُّ الْبَيْتِ مَنِ اسْتَطَاعَ إِلَيْهِ سَبِيلًا ۚ وَمَن كَفَرَ فَإِنَّ اللَّهَ غَنِيٌّ عَنِ الْعَالَمِينَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa lillāhi 'alan-nāsi ḥijjul-baiti manistaṭā'a ilaihi sabīlā. Wa man kafara fa innallāha ghaniyyun 'anil-'ālamīn."
+<br><br>
+<strong>Artinya:</strong> "Dan (di antara) kewajiban manusia terhadap Allah adalah melaksanakan ibadah haji ke Baitullah, (yaitu bagi) orang yang mampu mengadakan perjalanan ke sana. Barangsiapa mengingkari (kewajiban haji), maka sesungguhnya Allah Mahakaya (tidak memerlukan sesuatu) dari seluruh alam."
+<br>— QS. Ali 'Imran: 97
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">6</span>
+<span class="karomah-title">Kembali ke Nishapur dan Thus — 499 H</span>
+<div class="karomah-arabic">الرُّجُوعُ إِلَى نَيْسَابُور وَطُوس — 499 هـ</div>
+<p>
+Setelah sekitar 11 tahun mengembara, Imam Al-Ghazali akhirnya kembali ke dunia keilmuan. Pada tahun <strong>499 H (1106 M)</strong>, atas desakan para ulama, penguasa, dan umat Islam yang sangat merindukan ajaran beliau, Imam Al-Ghazali kembali mengajar di <strong>Madrasah Nizhamiyah Nishapur</strong>.
+</p>
+<p>
+Kembali ini bukanlah kembali yang biasa. Imam Al-Ghazali kembali dengan kondisi yang sangat berbeda dari ketika beliau meninggalkan Baghdad 11 tahun sebelumnya:
+</p>
+<ul>
+<li><strong>Kembali dengan hati yang bersih</strong> — Beliau tidak lagi mengajar demi jabatan atau ketenaran, melainkan murni karena Allah dan demi kebaikan umat.</li>
+<li><strong>Kembali dengan ilmu yang lebih mendalam</strong> — Beliau tidak hanya menguasai ilmu secara teoritis, tetapi juga telah mengalami hakikat-hakikat spiritual secara langsung.</li>
+<li><strong>Kembali dengan karya-karya besar</strong> — Selama pengembaraannya, beliau telah menulis karya-karya monumental, termasuk sebagian besar <em>Ihya' Ulumiddin</em>.</li>
+<li><strong>Kembali dengan sikap yang lebih rendah hati</strong> — Beliau tidak lagi mencari popularitas, melainkan fokus pada apa yang bermanfaat bagi umat.</li>
+</ul>
+<p>
+Namun, masa mengajar di Nishapur ini tidak berlangsung lama. Imam Al-Ghazali merasakan bahwa tugas utamanya bukanlah mengajar di madrasah formal, melainkan membimbing para penuntut ilmu secara lebih personal dan mendalam. Maka setelah sekitar dua tahun di Nishapur, beliau memutuskan untuk <strong>kembali ke kampung halamannya di Thus</strong> — kota tempat beliau dilahirkan dan dibesarkan.
+</p>
+<p>
+Di Thus, Imam Al-Ghazali menghabiskan sisa hidupnya dengan cara yang sangat berbeda dari sebelumnya. Beliau tidak lagi mengejar jabatan atau ketenaran, melainkan fokus pada tiga hal utama:
+</p>
+<ul>
+<li><strong>Ibadah</strong> — Beliau menghabiskan sebagian besar waktunya untuk shalat, puasa, dzikir, dan membaca Al-Qur'an.</li>
+<li><strong>Mengajar</strong> — Beliau mendirikan sebuah <strong>khanaqah</strong> (pondok sufi) untuk para penuntut tasawuf, dan sebuah <strong>madrasah</strong> untuk para penuntut ilmu fikih.</li>
+<li><strong>Menulis</strong> — Beliau terus menulis karya-karya penting hingga akhir hayatnya.</li>
+</ul>
+<p>
+Beliau berkata tentang periode terakhir hidupnya: <em>"Aku telah kembali ke Thus bukan untuk menjadi orang besar, melainkan untuk menjadi hamba Allah yang biasa. Aku ingin menghabiskan sisa hidupku dalam ibadah, mengajarkan ilmu yang bermanfaat, dan mempersiapkan diri untuk pertemuan dengan Allah."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEMBALI KEPADA ALLAH — QS. AL-FURQAN: 63-64</div>
+<div class="arabic-text">
+وَعِبَادُ الرَّحْمَٰنِ الَّذِينَ يَمْشُونَ عَلَى الْأَرْضِ هَوْنًا وَإِذَا خَاطَبَهُمُ الْجَاهِلُونَ قَالُوا سَلَامًا ۝ وَالَّذِينَ يَبِيتُونَ لِرَبِّهِمْ سُجَّدًا وَقِيَامًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa 'ibādur-Raḥmānil-lażīna yamsyūna 'alal-arḍi hawnā, wa iżā khāṭabahumul-jāhilūna qālū salāmā. Wal-lażīna yabītūna li-Rabbihim sujjadan wa qiyāmā."
+<br><br>
+<strong>Artinya:</strong> "Adapun hamba-hamba Tuhan Yang Maha Pengasih itu adalah orang-orang yang berjalan di bumi dengan rendah hati, dan apabila orang-orang bodoh menyapa mereka (dengan kata-kata yang menghina), mereka mengucapkan 'salam.' Dan orang-orang yang menghabiskan waktu malam untuk beribadah kepada Tuhan mereka dengan bersujud dan berdiri."
+<br>— QS. Al-Furqan: 63-64
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">7</span>
+<span class="karomah-title">Buah Perjalanan Spiritual — Lahirnya Ihya' Ulumiddin</span>
+<div class="karomah-arabic">ثَمَرَةُ الرِّحْلَةِ الرُّوحِيَّةِ — مِيلَادُ إِحْيَاءِ عُلُومِ الدِّينِ</div>
+<p>
+Buah paling agung dari perjalanan spiritual Imam Al-Ghazali adalah lahirnya karya monumental <strong>Ihya' Ulumiddin</strong> (إحياء علوم الدين — Menghidupkan Ilmu-Ilmu Agama). Kitab ini merupakan hasil perenungan, pengalaman, dan penelitian beliau selama pengembaraan 11 tahun, dan menjadi salah satu kitab paling berpengaruh dalam sejarah Islam.
+</p>
+<p>
+Kitab <em>Ihya' Ulumiddin</em> terdiri dari empat bagian utama (rub'):
+</p>
+<ul>
+<li><strong>Rub' al-'Ibadat</strong> (Seperempat Ibadah) — membahas rahasia dan hakikat ibadah: thaharah (bersuci), shalat, zakat, puasa, dan haji. Beliau tidak hanya membahas aspek fikih lahiriah, tetapi juga rahasia batin di balik setiap ibadah.</li>
+<li><strong>Rub' al-'Adat</strong> (Seperempat Kebiasaan) — membahas adab dan akhlak sehari-hari: adab makan, adab menikah, adab bekerja, adab bersosialisasi, dan sebagainya. Beliau mengajarkan bahwa setiap aktivitas duniawi dapat menjadi ibadah jika dilakukan dengan niat dan adab yang benar.</li>
+<li><strong>Rub' al-Muhlikat</strong> (Seperempat yang Membinasakan) — membahas penyakit-penyakit hati yang membinasakan: marah, dengki, sombong, riya', cinta dunia, dan sebagainya. Beliau menjelaskan akar dari setiap penyakit, tanda-tandanya, dan cara mengobatinya.</li>
+<li><strong>Rub' al-Munjiyat</strong> (Seperempat yang Menyelamatkan) — membahas sifat-sifat terpuji yang menyelamatkan: taubat, sabar, syukur, tawakkal, cinta kepada Allah, dan sebagainya. Beliau menjelaskan cara mencapai setiap sifat ini dan buahnya dalam kehidupan spiritual.</li>
+</ul>
+<p>
+Selain <em>Ihya' Ulumiddin</em>, perjalanan spiritual Imam Al-Ghazali juga melahirkan karya-karya penting lainnya, antara lain:
+</p>
+<ul>
+<li><strong>Al-Munqidz min adh-Dhalal</strong> — autobiografi intelektual yang menceritakan perjalanan beliau mencari kebenaran.</li>
+<li><strong>Minhaj al-'Abidin</strong> — kitab tentang jalan para ahli ibadah, yang merupakan salah satu kitab terakhir beliau.</li>
+<li><strong>Al-Arba'in fi Ushul ad-Din</strong> — kitab tentang empat puluh prinsip agama.</li>
+<li><strong>Bidayat al-Hidayah</strong> — kitab pengantar tentang petunjuk bagi para pemula dalam perjalanan spiritual.</li>
+<li><strong>Ayyuhal-Walad</strong> — kitab nasihat yang ditujukan kepada seorang murid beliau.</li>
+<li><strong>Al-Maqshad al-Asna</strong> — kitab tentang nama-nama Allah yang indah (Asma'ul Husna).</li>
+</ul>
+<p>
+Karya-karya inilah yang kemudian mengubah wajah pemikiran Islam. Beliau berhasil <strong>mendamaikan fikih dengan tasawuf</strong>, <strong>mendamaikan ilmu kalam dengan filsafat</strong>, dan <strong>mendamaikan syariat dengan hakikat</strong> — sesuatu yang belum pernah dilakukan oleh ulama sebelumnya dengan begitu sempurna.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN IMAM AL-GHAZALI TENTANG ILMU DAN AMAL — DARI IHYA' ULUMIDDIN</div>
+<div class="arabic-text">
+الْعِلْمُ بِغَيْرِ عَمَلٍ جُنُونٌ، وَالْعَمَلُ بِغَيْرِ عِلْمٍ لَا يَكُونُ، وَاعْلَمْ أَنَّ الْعِلْمَ لَا يُبَاعِدُكَ عَنِ الْمَعْصِيَةِ إِلَّا إِذَا عَمِلْتَ بِهِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Al-'ilmu bi-ghayri 'amalin junūn, wal-'amalu bi-ghayri 'ilmin lā yakūn, wa 'lam annal-'ilma lā yubā'iduka 'anil-ma'ṣiyati illā idzā 'amilta bih."
+<br><br>
+<strong>Artinya:</strong> "Ilmu tanpa amal adalah kegilaan, dan amal tanpa ilmu tidak akan terjadi. Ketahuilah bahwa ilmu tidak akan menjauhkanmu dari maksiat kecuali jika engkau mengamalkannya."
+<br>— Imam Al-Ghazali, Ihya' Ulumiddin
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">8</span>
+<span class="karomah-title">Pelajaran dari Perjalanan Spiritual Imam Al-Ghazali</span>
+<div class="karomah-arabic">دُرُوسٌ مِنَ الرِّحْلَةِ الرُّوحِيَّةِ لِلْإِمَامِ الْغَزَالِيِّ</div>
+<p>
+Perjalanan spiritual Imam Al-Ghazali mengandung banyak pelajaran berharga yang dapat kita ambil untuk kehidupan kita sendiri. Di antara pelajaran-pelajaran tersebut adalah:
+</p>
+<ul>
+<li><strong>Keberanian untuk mengintrospeksi diri</strong> — Imam Al-Ghazali berani mempertanyakan seluruh niat dan motivasinya, meskipun itu menyakitkan. Ini mengajarkan kita untuk tidak takut mengintrospeksi diri sendiri, meskipun hasilnya tidak menyenangkan.</li>
+<li><strong>Keberanian untuk meninggalkan kenyamanan duniawi</strong> — Beliau meninggalkan jabatan, harta, dan ketenaran demi mencari kedekatan dengan Allah. Ini mengajarkan kita bahwa kadang-kadang kita harus berani mengorbankan kenyamanan duniawi demi kebaikan spiritual.</li>
+<li><strong>Pentingnya pengalaman langsung</strong> — Ilmu tanpa pengalaman hanyalah teori. Imam Al-Ghazali tidak puas dengan ilmu teoritis, melainkan mencari pengalaman spiritual langsung. Ini mengajarkan kita untuk tidak berhenti pada teori, tetapi juga mengamalkan ilmu yang kita ketahui.</li>
+<li><strong>Keseimbangan antara khalwat dan jalwat</strong> — Imam Al-Ghazali menjalani khalwat selama beberapa tahun, tetapi kemudian kembali ke masyarakat untuk mengajar. Ini mengajarkan kita pentingnya keseimbangan antara waktu menyendiri dengan Allah dan waktu berkhidmat kepada sesama.</li>
+<li><strong>Kerendahan hati setelah mencapai puncak</strong> — Setelah mencapai puncak keilmuan, Imam Al-Ghazali tetap rendah hati dan terus belajar. Ini mengajarkan kita bahwa puncak keilmuan bukanlah akhir dari perjalanan, melainkan awal dari perjalanan yang lebih mendalam.</li>
+<li><strong>Kejujuran dalam menceritakan pengalaman</strong> — Imam Al-Ghazali menceritakan pengalamannya dengan sangat jujur dalam <em>Al-Munqidz</em>, termasuk keraguan dan kebingungan beliau. Ini mengajarkan kita untuk jujur dengan diri sendiri dan dengan orang lain tentang perjalanan spiritual kita.</li>
+<li><strong>Pentingnya bimbingan guru</strong> — Meskipun beliau seorang ulama besar, Imam Al-Ghazali tetap membutuhkan bimbingan guru tasawuf (Abu Ali Al-Farmadzi). Ini mengajarkan kita bahwa dalam perjalanan spiritual, kita membutuhkan bimbingan dari orang-orang yang telah lebih dulu menempuh jalan tersebut.</li>
+<li><strong>Buah dari kesungguhan adalah ma'rifat</strong> — Semua pengorbanan Imam Al-Ghazali akhirnya membuahkan ma'rifat (pengenalan mendalam kepada Allah) dan karya-karya yang bermanfaat bagi seluruh umat Islam hingga hari ini. Ini mengajarkan kita bahwa kesungguhan dalam mencari kebenaran pasti akan membuahkan hasil.</li>
+</ul>
+<p>
+Pelajaran-pelajaran inilah yang menjadikan kisah perjalanan spiritual Imam Al-Ghazali tetap relevan dan menginspirasi umat Islam hingga hari ini, lebih dari 900 tahun setelah wafatnya beliau.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KESUNGGUHAN DAN HIDAYAH — QS. AL-'ANKABUT: 69</div>
+<div class="arabic-text">
+وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا ۚ وَإِنَّ اللَّهَ لَمَعَ الْمُحْسِنِينَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wal-lażīna jāhadū fīnā lanahdiyannahum subulanā. Wa innallāha lama'al-muḥsinīn."
+<br><br>
+<strong>Artinya:</strong> "Dan orang-orang yang berjihad (bersungguh-sungguh) untuk (mencari keridhaan) Kami, benar-benar akan Kami tunjukkan kepada mereka jalan-jalan Kami. Dan sesungguhnya Allah benar-benar beserta orang-orang yang berbuat baik."
+<br>— QS. Al-'Ankabut: 69
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Perjalanan Spiritual Imam Al-Ghazali:</strong>
+<ul>
+<li><strong>Puncak kejayaan duniawi:</strong> 484-488 H — pengajar di Madrasah Nizhamiyah Baghdad, lebih dari 300 murid</li>
+<li><strong>Awal krisis spiritual:</strong> Rajab 488 H (Juli 1095 M) — keraguan mendalam tentang niat mengajar</li>
+<li><strong>Puncak krisis:</strong> Terkuncinya lisan, penyakit fisik, kegelisahan jiwa yang ekstrem</li>
+<li><strong>Keputusan besar:</strong> Dzulqa'dah 488 H (November 1095 M) — meninggalkan Baghdad</li>
+<li><strong>Pengembaraan:</strong> Sekitar 11 tahun (488-499 H) ke Damaskus, Yerusalem, Hebron, Makkah, Madinah</li>
+<li><strong>Khalwat utama:</strong> Di menara barat Masjid Umayyah Damaskus</li>
+<li><strong>Ziarah:</strong> Ka'bah di Makkah, Masjid Nabawi di Madinah, Masjid Al-Aqsha di Yerusalem</li>
+<li><strong>Kembali ke Nishapur:</strong> 499 H — mengajar kembali selama sekitar dua tahun</li>
+<li><strong>Kembali ke Thus:</strong> Mendirikan khanaqah (pondok sufi) dan madrasah</li>
+<li><strong>Buah pengembaraan:</strong> Ihya' Ulumiddin, Al-Munqidz min adh-Dhalal, Minhaj al-'Abidin, Bidayat al-Hidayah</li>
+<li><strong>Ciri khas pasca-pengembaraan:</strong> Paduan fikih-tasawuf, ilmu kalam-filsafat, syariat-hakikat</li>
+<li><strong>Pelajaran utama:</strong> Keberanian introspeksi, pengalaman langsung, keseimbangan khalwat-jalwat, kejujuran spiritual</li>
+</ul>
+</div>
+<h2>Doa Memohon Keteguhan dan Keikhlasan</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON HATI YANG BERSIH DAN NIAT YANG IKHLAS</div>
+<div class="arabic-text">
+اللَّهُمَّ طَهِّرْ قَلْبِي مِنَ النِّفَاقِ، وَعَمَلِي مِنَ الرِّيَاءِ، وَلِسَانِي مِنَ الْكَذِبِ، وَعَيْنِي مِنَ الْخِيَانَةِ، فَإِنَّكَ تَعْلَمُ خَائِنَةَ الْأَعْيُنِ وَمَا تُخْفِي الصُّدُورُ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Allāhumma ṭahhir qalbī minan-nifāq, wa 'amalī minar-riyā', wa lisānī minal-kadzib, wa 'aynī minal-khiyānah, fa innaka ta'lamu khā'inatal-a'yuni wa mā tukhfiṣ-ṣudūr."
+<br><br>
+<strong>Artinya:</strong> "Ya Allah, sucikanlah hatiku dari kemunafikan, amalku dari riya', lisanku dari dusta, dan mataku dari khianat. Sesungguhnya Engkau mengetahui pengkhianatan mata dan apa yang disembunyikan oleh dada."
+</div>
+</div>
+<h2>Penutup Halaman 4</h2>
+<p>
+Demikianlah perjalanan spiritual Imam Al-Ghazali — sebuah perjalanan yang penuh dengan keberanian, pengorbanan, dan keberkahan. Dari puncak kejayaan duniawi di Madrasah Nizhamiyah Baghdad, beliau berani mengambil keputusan besar untuk meninggalkan segalanya demi mencari kedekatan sejati dengan Allah. Selama sekitar 11 tahun beliau mengembara ke Syam, Makkah, dan Madinah, menjalani khalwat dan mujahadah yang sangat ketat, hingga akhirnya kembali dengan hati yang bersih, ilmu yang lebih mendalam, dan karya-karya monumental yang mengubah wajah pemikiran Islam.
+</p>
+<p>
+Perjalanan ini bukanlah perjalanan yang mudah. Beliau harus menghadapi keraguan, kegelisahan, penyakit fisik, dan bahkan cercaan dari sebagian orang yang tidak memahami keputusannya. Namun semua ujian itu beliau lalui dengan sabar dan tawakkal, hingga akhirnya Allah menganugerahkan kepadanya ma'rifat yang mendalam dan karya-karya yang bermanfaat bagi seluruh umat Islam hingga hari ini.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas <strong>tantangan dan konflik</strong> yang dihadapi Imam Al-Ghazali dalam mengamalkan hasil pemahaman keilmuannya — baik konflik dengan para filosof, aliran Batiniyah, maupun dengan sebagian ulama yang tidak setuju dengan pendekatan beliau. Kita akan melihat bagaimana beliau menghadapi semua tantangan ini dengan hikmah, kesabaran, dan keteguhan.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+وَقُل رَّبِّ زِدْنِي عِلْمًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa qur-Rabbi zidnī 'ilmā."
+<br><br>
+<strong>Artinya:</strong> "Dan katakanlah: 'Ya Tuhanku, tambahkanlah kepadaku ilmu pengetahuan.'"
+<br>— QS. Thaha: 114
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="ghazali1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="ghazali2.html" class="article-nav-btn" title="Halaman 2: Perjalanan Menuntut Ilmu">2</a>
+<div class="nav-btn-label">Menuntut Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="ghazali3.html" class="article-nav-btn" title="Halaman 3: Bidang Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="ghazali4.html" class="article-nav-btn active" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="ghazali5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="ghazali6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="ghazali7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="ghazali8.html" class="article-nav-btn" title="Halaman 8: Warisan & Karya">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="ghazali9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

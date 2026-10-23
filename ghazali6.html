@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Imam Al-Ghazali - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+@media (max-width: 768px) {
+.article-container { max-width: 100%; padding: 20px; }
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="biografi.html">Artikel</a> &raquo; Biografi Imam Al-Ghazali — Pro/Kontra Masyarakat & Ulama
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Imam Al-Ghazali</h1>
+<div class="subtitle">Halaman 6 dari 9 — Tanggapan Pro/Kontra Masyarakat, Ulama, Penguasa, dan Sikap Sang Hujjatul Islam</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Kamis, 22 Oktober 2026, 21:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Al-Ghazali.jpg/440px-Al-Ghazali.jpg"
+alt="Imam Al-Ghazali dalam majelis ilmu"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Al-Ghazali_Ihya_Ulum_al-Din.jpg/440px-Al-Ghazali_Ihya_Ulum_al-Din.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Imam Al-Ghazali dalam majelis ilmu — sosok yang sekaligus dicintai dan dicela, dihormati dan dikritik, namun tetap istiqamah di atas kebenaran</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Setiap pembaharu pemikiran yang tampil dengan keberanian intelektual pasti akan menghadapi dua reaksi sekaligus: <strong>cinta yang mendalam</strong> dan <strong>penentangan yang keras</strong>. Begitulah sunnatullah yang berlaku atas para nabi, ulama, dan mujaddid. Imam Al-Ghazali tidak terkecuali. Selama hidupnya, beliau menjadi figur yang paling dicintai oleh sebagian besar umat Islam, sekaligus paling dicela oleh sebagian lainnya. Para ulama terbelah: ada yang membela beliau sebagai <em>Hujjatul Islam</em> (Bukti Islam), ada yang mencela sebagai pembawa bid'ah dalam tasawuf. Para penguasa pun terbagi: ada yang menghormati beliau sebagai pembela akidah, ada yang mencurigai beliau sebagai ancaman politik. Yang paling menakjubkan adalah <strong>sikap beliau sendiri</strong> — beliau tidak pernah terpengaruh oleh pujian maupun celaan, tidak pernah membalas kebencian dengan kebencian, dan tidak pernah menutup diri dari kritik yang konstruktif. Beliau justru mengakui kesalahan-kesalahannya sendiri secara terbuka, sebuah kejujuran intelektual yang sangat langka di zamannya.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG PERBEDAAN TANGGAPAN MANUSIA — QS. FUSSILAT: 34-35</div>
+<div class="arabic-text">
+وَلَا تَسْتَوِي الْحَسَنَةُ وَلَا السَّيِّئَةُ ۚ ادْفَعْ بِالَّتِي هِيَ أَحْسَنُ فَإِذَا الَّذِي بَيْنَكَ وَبَيْنَهُ عَدَاوَةٌ كَأَنَّهُ وَلِيٌّ حَمِيمٌ ۝ وَمَا يُلَقَّاهَا إِلَّا الَّذِينَ صَبَرُوا وَمَا يُلَقَّاهَا إِلَّا ذُو حَظٍّ عَظِيمٍ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa lā tastawil-ḥasanatu wa lās-sayyi'ah; idfa' billatī hiya aḥsanu fa iżal-lażī baynaka wa baynahū 'adāwatun ka'annahū waliyyun ḥamīm. Wa mā yulaqqāhā illal-lażīna ṣabarū wa mā yulaqqāhā illā żū ḥaẓẓin 'aẓīm."
+<br><br>
+<strong>Artinya:</strong> "Dan tidaklah sama kebaikan dengan kejahatan. Tolaklah (kejahatan itu) dengan cara yang lebih baik, maka tiba-tiba orang yang antaramu dan antara dia ada permusuhan seolah-olah telah menjadi teman yang sangat dekat. Sifat itu tidak dianugerahkan melainkan kepada orang-orang yang sabar dan tidak dianugerahkan melainkan kepada orang-orang yang mempunyai keberuntungan yang besar."
+<br>— QS. Fussilat: 34-35
+</div>
+</div>
+<h2>Peta Reaksi: Siapa yang Pro, Siapa yang Kontra?</h2>
+<p>
+Sebelum membahas satu per satu, penting untuk memahami bahwa reaksi terhadap Imam Al-Ghazali tidak pernah hitam-putih. Ada yang pro di satu sisi namun kontra di sisi lain. Ada ulama fikih yang mencela tasawufnya tetapi mengakui kejeniusan intelektualnya. Ada penguasa yang menghormati beliau sebagai pembela akidah tetapi merasa terancam oleh kemandirian beliau. Ada rakyat kecil yang mencintainya tetapi juga para filosof yang membencinya karena bantahan-bantahan beliau. Peta reaksi ini mencerminkan kompleksitas zaman beliau — zaman di mana berbagai aliran pemikiran saling bertabrakan, dan di mana Imam Al-Ghazali berdiri di persimpangan semua aliran itu.
+</p>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Tanggapan Pro Masyarakat — Rakyat Kecil, Penuntut Ilmu, dan Para Murid</span>
+<div class="karomah-arabic">تَأْيِيدُ الْعَامَّةِ — فُقَرَاءُ بَغْدَادَ وَطَالِبُو الْعِلْمِ وَالتَّلَامِيذُ</div>
+<p>
+Kelompok masyarakat yang paling besar dan paling tulus mendukung Imam Al-Ghazali adalah <strong>rakyat kecil Baghdad</strong> — para pedagang kecil, buruh, petani, pengrajin, dan kaum fakir. Mengapa mereka mencintainya? Karena beliau adalah satu-satunya ulama besar yang <em>benar-benar hadir</em> untuk mereka. Beliau tidak hanya mengajar di madrasah elit, tetapi juga berbicara dengan bahasa yang mereka pahami, memberikan nasihat yang menyentuh hati, dan menunjukkan kepedulian yang tulus terhadap penderitaan mereka.
+</p>
+<p>
+Di antara bentuk dukungan masyarakat yang pro terhadap beliau:
+</p>
+<ul>
+<li><strong>Kesaksian para penuntut ilmu</strong> — Ribuan orang datang dari berbagai negeri untuk mendengarkan ceramah beliau di Madrasah Nizhamiyah. Majelis beliau selalu penuh sesak, dan banyak yang menangis karena tersentuh oleh nasihat-nasihat beliau.</li>
+<li><strong>Kesaksian orang-orang yang bertaubat</strong> — Banyak orang yang setelah mendengarkan ceramah beliau, bertaubat dari dosa-dosa mereka, meninggalkan kebiasaan buruk, dan memulai hidup baru yang lebih shaleh.</li>
+<li><strong>Kesaksian para murid</strong> — Murid-murid beliau seperti Abu Bakar Ibn al-'Arabi, Al-Bajji, dan banyak lainnya, menjadi ulama-ulama besar yang menyebarkan ajaran beliau ke seluruh penjuru dunia Islam.</li>
+<li><strong>Kesaksian para pedagang</strong> — Banyak pedagang yang setelah mendengarkan nasihat beliau, meninggalkan praktik riba, menipu timbangan, dan menjual barang haram. Pasar Baghdad menjadi lebih bersih berkat pengaruh dakwah beliau.</li>
+</ul>
+<p>
+Beliau berkata tentang rakyat kecil: <em>"Janganlah engkau meremehkan orang-orang miskin, karena di antara mereka ada orang-orang yang jika mereka bersumpah atas nama Allah, niscaya Allah akan memenuhi sumpah mereka."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG CINTA ALLAH KEPADA ORANG SHALIH — QS. AL-MA'IDAH: 54</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا مَن يَرْتَدَّ مِنكُمْ عَن دِينِهِ فَسَوْفَ يَأْتِي اللَّهُ بِقَوْمٍ يُحِبُّهُمْ وَيُحِبُّونَهُ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Yā ayyuhallażīna āmanū man yartadda minkum 'an dīnihī fa sawfa ya'tīllāhu biqaumin yuḥibbuhum wa yuḥibbūnah."
+<br><br>
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, barangsiapa di antara kamu murtad dari agamanya, maka kelak Allah akan mendatangkan suatu kaum yang Allah mencintai mereka dan mereka pun mencintai-Nya."
+<br>— QS. Al-Ma'idah: 54
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Tanggapan Kontra Masyarakat — Para Filosof, Kaum Batiniyah, dan Pendengki</span>
+<div class="karomah-arabic">مُعَارَضَةُ بَعْضِ الْعَامَّةِ — الْفَلَاسِفَةُ وَالْبَاطِنِيَّةُ وَالْحُسَّادُ</div>
+<p>
+Namun tidak semua masyarakat Baghdad menerima beliau dengan tangan terbuka. Ada kelompok masyarakat yang menentang beliau karena berbagai alasan — ada yang karena <strong>terganggu oleh bantahan beliau</strong>, ada yang karena <strong>dengki terhadap popularitas beliau</strong>, dan ada yang karena <strong>tidak siap menerima kebenaran</strong> yang beliau sampaikan.
+</p>
+<p>
+Di antara bentuk penentangan masyarakat terhadap beliau:
+</p>
+<ul>
+<li><strong>Para filosof dan pengikut mereka</strong> — Setelah beliau menulis <em>Tahafut al-Falasifah</em> yang membantah 20 kesalahan para filosof, banyak pengikut Ibnu Sina dan Al-Farabi yang marah dan berusaha membantah beliau. Ibnu Rusyd (Averroes) dari Andalusia menulis <em>Tahafut at-Tahafut</em> sebagai bantahan terhadap beliau.</li>
+<li><strong>Kaum Batiniyah</strong> — Setelah beliau menulis <em>Fada'ih al-Bathiniyyah</em> yang membongkar kesesatan kaum Isma'iliyyah, kelompok ini menjadikan beliau target pembunuhan. Beliau harus berhati-hati dalam perjalanannya dan sering kali menyamar untuk menghindari ancaman.</li>
+<li><strong>Para pendengki</strong> — Popularitas beliau yang luar besar menimbulkan kedengkian di hati sebagian orang. Mereka tidak dapat menerima bahwa seorang anak pemintal wool dari kota kecil bisa lebih dihormati daripada ulama-ulama Baghdad yang sudah lama menetap di kota itu.</li>
+<li><strong>Orang-orang yang tidak siap menerima kebenaran</strong> — Sebagian masyarakat sudah terbiasa dengan kemaksiatan dan tidak ingin diingatkan. Ketika nasihat beliau menyentuh hati mereka, mereka memilih untuk menolak daripada berubah.</li>
+</ul>
+<p>
+Namun menariknya, banyak dari penentang ini akhirnya menjadi pendukung setelah menyaksikan akhlak beliau yang mulia, kejujuran intelektual beliau, atau setelah bertaubat dan merasakan sendiri keberkahan nasihat beliau.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG SIKAP TERHADAP ORANG JAHIL — QS. AL-FURQAN: 63</div>
+<div class="arabic-text">
+وَعِبَادُ الرَّحْمَٰنِ الَّذِينَ يَمْشُونَ عَلَى الْأَرْضِ هَوْنًا وَإِذَا خَاطَبَهُمُ الْجَاهِلُونَ قَالُوا سَلَامًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa 'ibādur-Raḥmānil-lażīna yamsyūna 'alal-arḍi hawnā, wa iżā khāṭabahumul-jāhilūna qālū salāmā."
+<br><br>
+<strong>Artinya:</strong> "Dan hamba-hamba Tuhan Yang Maha Penyayang itu (ialah) orang-orang yang berjalan di atas bumi dengan rendah hati dan apabila orang-orang jahil menyapa mereka, mereka mengucapkan kata-kata yang baik."
+<br>— QS. Al-Furqan: 63
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Tanggapan Pro Ulama — Fuqaha Syafi'iyah, Asy'ariyah, dan Sufi Moderat</span>
+<div class="karomah-arabic">تَأْيِيدُ الْعُلَمَاءِ — الْفُقَهَاءُ الشَّافِعِيَّةُ وَالْأَشَاعِرَةُ وَالصُّوفِيَّةُ الْمُعْتَدِلُونَ</div>
+<p>
+Di kalangan ulama, Imam Al-Ghazali memiliki banyak pembela yang sangat berpengaruh. Mereka datang dari berbagai mazhab dan aliran, dan mereka membela beliau bukan karena fanatisme, melainkan karena mereka sendiri telah menyaksikan kebenaran ajaran beliau.
+</p>
+<p>
+Di antara ulama yang pro dan membela beliau:
+</p>
+<ul>
+<li><strong>Para ulama Syafi'iyah</strong> — Sebagai faqih Syafi'i yang sangat mendalam, beliau dihormati oleh mayoritas ulama Syafi'iyah di zamannya. Mereka melihat bahwa karya-karya beliau dalam bidang ushul fikih seperti <em>Al-Mustashfa</em> menjadi rujukan utama yang tidak bisa diabaikan.</li>
+<li><strong>Para ulama Asy'ariyah</strong> — Sebagai teolog Asy'ari yang berhasil membela akidah Ahlussunnah dengan argumen-argumen yang tak terbantahkan, beliau diakui sebagai salah satu pembela terbesar madzhab Asy'ari.</li>
+<li><strong>Para sufi moderat</strong> — Para sufi yang berpegang teguh pada syariat — seperti para pengikut Tarekat Junaid Al-Baghdadi dan tradisi tasawuf yang sehat — mengakui bahwa tasawuf beliau adalah kelanjutan yang sah dari tradisi tasawuf Ahlussunnah.</li>
+<li><strong>Murid-murid beliau sendiri</strong> — Abu Bakar Ibn al-'Arabi, Al-Bajji, dan banyak murid lainnya yang menjadi ulama besar dan menyebarkan ajaran beliau ke seluruh dunia Islam.</li>
+<li><strong>Ulama generasi berikutnya</strong> — Imam An-Nawawi, Imam As-Suyuthi, Ibnu Hajar Al-'Asqalani, dan banyak ulama besar setelah beliau yang menghormati dan mengutip karya-karya beliau.</li>
+</ul>
+<p>
+Mereka membela beliau dengan berbagai cara: menulis syarah (komentar) atas karya-karya beliau, membantah tuduhan-tuduhan yang dilancarkan terhadap beliau, dan menyebarkan nasihat-nasihat beliau ke berbagai penjuru negeri.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENOLAK FITNAH — QS. AL-AHZAB: 58</div>
+<div class="arabic-text">
+وَالَّذِينَ يُؤْذُونَ الْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ بِغَيْرِ مَا اكْتَسَبُوا فَقَدِ احْتَمَلُوا بُهْتَانًا وَإِثْمًا مُّبِينًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wallazīna yu'dżūnal-mu'minīna wal-mu'mināti bigayri maktasabun faqad-tamalū buhtānan wa iṡman mubīnā."
+<br><br>
+<strong>Artinya:</strong> "Dan orang-orang yang menyakiti orang-orang mukmin dan orang-orang mukminat tanpa kesalahan yang mereka perbuat, maka sesungguhnya mereka telah memikul kebohongan dan dosa yang nyata."
+<br>— QS. Al-Ahzab: 58
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Tanggapan Kontra Ulama — Tuduhan Bid'ah, Kritik terhadap Tasawuf, dan Persepsi Keliru</span>
+<div class="karomah-arabic">مُعَارَضَةُ بَعْضِ الْعُلَمَاءِ — تُهَمُ الْبِدْعَةِ وَنَقْدُ التَّصَوُّفِ</div>
+<p>
+Namun demikian, tidak semua ulama mendukung beliau. Ada kelompok ulama yang <strong>menentang beliau dengan keras</strong>, terutama dari kalangan yang sangat ketat dalam memahami agama secara lahiriah dan tidak memahami bahasa-bahasa tasawuf. Penentangan ini datang dari berbagai sudut:
+</p>
+<ul>
+<li><strong>Tuduhan bid'ah dalam tasawuf</strong> — Sebagian ulama fikih menganggap praktik-praktik tasawuf yang dibahas dalam <em>Ihya' Ulumiddin</em> sebagai bid'ah yang tidak ada contoh dari Rasulullah SAW. Mereka mencurigai bahwa Imam Al-Ghazali terlalu banyak memasukkan unsur-unsur asing ke dalam Islam.</li>
+<li><strong>Kritik terhadap penggunaan hadis dha'if</strong> — Sebagian ahli hadis mencela bahwa Imam Al-Ghazali terlalu banyak menggunakan hadis-hadis dha'if (lemah) atau bahkan maudhu' (palsu) dalam <em>Ihya' Ulumiddin</em>. Kritik ini memiliki dasar yang valid, dan Imam Al-Ghazali sendiri mengakui kelemahan ini dalam beberapa kesempatan.</li>
+<li><strong>Kecurigaan terhadap pengaruh filsafat</strong> — Sebagian ulama mencurigai bahwa meskipun Imam Al-Ghazali membantah para filosof, beliau tetap terpengaruh oleh metode dan istilah-istilah filsafat dalam karya-karya beliau.</li>
+<li><strong>Penolakan terhadap metode syak manhaji</strong> — Sebagian ulama tidak memahami metode keraguan metodologis yang beliau terapkan dalam <em>Al-Munqidz min adh-Dhalal</em>, dan menganggapnya sebagai bentuk keraguan terhadap agama.</li>
+<li><strong>Persaingan pengaruh</strong> — Harus diakui bahwa sebagian penentangan didorong oleh persaingan pengaruh. Popularitas beliau yang luar besar membuat sebagian ulama merasa tersaingi.</li>
+</ul>
+<p>
+Namun yang penting dicatat: <strong>penentangan ini tidak pernah sampai pada tahap pengkafiran atau pemboikotan total</strong>. Para ulama yang menentang beliau tetap mengakui kejeniusan intelektual beliau, keilmuan beliau yang luas, dan kontribusi beliau terhadap peradaban Islam. Mereka hanya berbeda dalam menilai sebagian ajaran dan metode beliau.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG BERPEGANG TEGUH PADA JAMA'AH — QS. ALI 'IMRAN: 103</div>
+<div class="arabic-text">
+وَاعْتَصِمُوا بِحَبْلِ اللَّهِ جَمِيعًا وَلَا تَفَرَّقُوا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa'taṣimū biḥablillāhi jamī'aw wa lā tafarraqū."
+<br><br>
+<strong>Artinya:</strong> "Dan berpegangteguhlah kamu semuanya pada tali (agama) Allah, dan janganlah kamu bercerai berai."
+<br>— QS. Ali 'Imran: 103
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Tanggapan Pro Penguasa — Khalifah, Wazir, dan Penguasa Seljuk</span>
+<div class="karomah-arabic">تَأْيِيدُ الْوُلَاةِ — الْخُلَفَاءُ وَالْوُزَرَاءُ وَالسَّلَاجِقَةُ</div>
+<p>
+Di kalangan penguasa, Imam Al-Ghazali juga mendapatkan banyak penghormatan. Meskipun beliau akhirnya meninggalkan jabatan di Madrasah Nizhamiyah untuk menjaga kemandirian, para penguasa tetap menghormati beliau sebagai ulama besar dan pembela akidah.
+</p>
+<p>
+Di antara penguasa yang menghormati beliau:
+</p>
+<ul>
+<li><strong>Khalifah Al-Mustazhhir Billah</strong> — Khalifah Abbasiyah yang meminta beliau menulis <em>Fada'ih al-Bathiniyyah</em> untuk membantah kaum Batiniyah. Khalifah sangat menghargai kontribusi beliau dalam membela akidah Ahlussunnah.</li>
+<li><strong>Wazir Nizam al-Mulk</strong> — Pendiri Madrasah Nizhamiyah yang mengangkat beliau sebagai pengajar di madrasah tersebut pada usia 34 tahun. Nizam al-Mulk sangat terkesan dengan kecerdasan dan keilmuan beliau.</li>
+<li><strong>Penguasa Seljuk</strong> — Para sultan Seljuk secara umum menghormati beliau sebagai ulama besar yang membela madzhab Asy'ari-Syafi'i yang menjadi madzhab resmi Dinasti Seljuk.</li>
+<li><strong>Penguasa di Damaskus dan Mesir</strong> — Ketika beliau mengembara ke Damaskus dan Mesir, para penguasa di sana menghormati beliau dan menawarkan jabatan, meskipun beliau menolaknya untuk menjaga kemandirian.</li>
+</ul>
+<p>
+Penghormatan penguasa ini bukan berarti bahwa beliau menjadi "ulama istana". Beliau tetap menjaga kemandirian beliau, dan tidak pernah ragu untuk menegur penguasa yang zalim — bahkan ketika teguran itu bisa membahayakan keselamatan beliau.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEADILAN PENGUASA — QS. AN-NISA: 58</div>
+<div class="arabic-text">
+إِنَّ اللَّهَ يَأْمُرُكُمْ أَن تُؤَدُّوا الْأَمَانَاتِ إِلَىٰ أَهْلِهَا وَإِذَا حَكَمْتُم بَيْنَ النَّاسِ أَن تَحْكُمُوا بِالْعَدْلِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Innallāha ya'murukum an tu'addul-amānāti ilā ahlihā wa iżā ḥakamtum baynan-nāsi an taḥkumū bil-'adl."
+<br><br>
+<strong>Artinya:</strong> "Sesungguhnya Allah menyuruh kamu menyampaikan amanat kepada yang berhak menerimanya, dan (menyuruh kamu) apabila menetapkan hukum di antara manusia supaya kamu menetapkan dengan adil."
+<br>— QS. An-Nisa': 58
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">6</span>
+<span class="karomah-title">Tanggapan Kontra Penguasa — Kecurigaan, Tekanan, dan Ancaman Tersembunyi</span>
+<div class="karomah-arabic">مَخَاوِفُ الْوُلَاةِ — التُّهَمُ وَالضُّغُوطُ وَالْتَّهْدِيدَاتُ الْخَفِيَّةُ</div>
+<p>
+Namun demikian, tidak semua penguasa menyambut baik pengaruh beliau. Ada sebagian penguasa dan pejabat yang <strong>merasa terancam</strong> oleh popularitas beliau, dan mereka berusaha dengan berbagai cara untuk mengontrol atau melemahkan pengaruh beliau.
+</p>
+<p>
+Di antara bentuk tekanan dari penguasa:
+</p>
+<ul>
+<li><strong>Kecurigaan politik</strong> — Karena majelis beliau dihadiri oleh ribuan orang dari berbagai lapisan masyarakat, sebagian penguasa mencurigai bahwa beliau bisa menjadi pusat gerakan politik yang bisa menggulingkan kekuasaan. Kekhawatiran ini tidak sepenuhnya tanpa dasar — seorang ulama dengan pengaruh sebesar beliau memang memiliki potensi politik yang besar.</li>
+<li><strong>Tekanan untuk mendukung rezim</strong> — Sebagai pengajar di Madrasah Nizhamiyah yang digaji oleh negara, beliau diharapkan untuk mendukung kebijakan penguasa, bahkan ketika kebijakan itu tidak sepenuhnya sesuai dengan prinsip keilmuan. Beliau menolak tekanan ini, dan ini menjadi salah satu alasan beliau meninggalkan Baghdad.</li>
+<li><strong>Pemantauan oleh intelijen</strong> — Dalam tradisi politik Baghdad abad ke-5 H, para ulama populer sering dipantau oleh mata-mata penguasa. Imam Al-Ghazali tidak terkecuali — majelis beliau kadang-kadang dihadiri oleh orang-orang yang ditugaskan untuk melaporkan apa yang beliau katakan.</li>
+<li><strong>Ancaman dari kaum Batiniyah</strong> — Setelah beliau menulis <em>Fada'ih al-Bathiniyyah</em>, kelompok Assassin yang dipimpin oleh Hasan-i Sabbah menjadikan beliau target pembunuhan. Beliau harus berhati-hati dalam perjalanannya dan sering kali menyamar untuk menghindari ancaman.</li>
+</ul>
+<p>
+Namun yang penting dicatat: <strong>tidak pernah ada konfrontasi terbuka antara beliau dan penguasa</strong>. Beliau terlalu bijaksana untuk memprovokasi, dan para penguasa terlalu hati-hati untuk berurusan dengan seorang ulama sekelas beliau. Hubungan ini tetap dalam batas saling menghormati — meskipun di bawah permukaan ada ketegangan yang tidak pernah meledak.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEBERANIAN MENGHADAPI PENGUASA — QS. AL-AHZAB: 39</div>
+<div class="arabic-text">
+الَّذِينَ يُبَلِّغُونَ رِسَالَاتِ اللَّهِ وَيَخْشَوْنَهُ وَلَا يَخْشَوْنَ أَحَدًا إِلَّا اللَّهَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Allażīna yuballigūna risālātillāhi wa yakhsyaw-nahū wa lā yakh-syawna aḥadan illallāh."
+<br><br>
+<strong>Artinya:</strong> "(Yaitu) orang-orang yang menyampaikan risalah-risalah Allah. Mereka takut kepada-Nya dan mereka tidak takut kepada seorang (pun) selain kepada Allah."
+<br>— QS. Al-Ahzab: 39
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">7</span>
+<span class="karomah-title">Sikap Imam Al-Ghazali terhadap Pujian — Rendah Hati dan Tidak Terpedaya</span>
+<div class="karomah-arabic">مَوْقِفُهُ مِنَ الْمَدْحِ — التَّوَاضُعُ وَلَا يَغْتَرُّ بِالشُّهْرَةِ</div>
+<p>
+Bagaimana Imam Al-Ghazali menyikapi seluruh tanggapan ini? Sikap beliau sangat konsisten dan sangat mendalam — beliau <strong>tidak terpengaruh oleh pujian maupun celaan</strong>. Beliau memahami bahwa keduanya adalah ujian dari Allah: pujian adalah ujian syukur, dan celaan adalah ujian sabar.
+</p>
+<p>
+Terhadap pujian, beliau bersikap:
+</p>
+<ul>
+<li><strong>Tidak pernah mengklaim keutamaan untuk dirinya sendiri</strong> — Ketika dipuji sebagai Hujjatul Islam, beliau selalu berkata: <em>"Ini adalah karunia Allah, bukan karena amalanku. Aku hanyalah hamba yang lemah yang berusaha memahami agama-Nya."</em></li>
+<li><strong>Melarang para murid memuji beliau secara berlebihan</strong> — Beliau tidak suka jika para murid menyebut-nyebut keutamaan beliau di hadapan orang lain. Beliau berkata: <em>"Janganlah kalian membuatku menjadi berhala. Aku hanyalah manusia yang memiliki kekurangan dan kesalahan."</em></li>
+<li><strong>Tetap hidup sederhana</strong> — Meskipun ribuan orang mencintainya, beliau tetap hidup sederhana, bahkan setelah meninggalkan Baghdad beliau hidup sebagai musafir miskin yang bergantung pada sedekah.</li>
+<li><strong>Menggunakan popularitas untuk dakwah, bukan untuk kepentingan pribadi</strong> — Beliau memanfaatkan popularitas beliau untuk menegakkan kebenaran, membela orang-orang yang dizalimi, dan membimbing orang-orang yang tersesat.</li>
+</ul>
+<p>
+Beliau berkata tentang pujian: <em>"Pujian manusia adalah racun yang manis. Barangsiapa yang meminumnya, maka ia akan mati secara spiritual. Maka janganlah engkau mencari pujian, dan janganlah engkau bersedih karena celaan."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN IMAM AL-GHAZALI TENTANG PUJIAN DAN CELAAN</div>
+<div class="arabic-text">
+مَدْحُ النَّاسِ سَمٌّ حُلْوٌ، مَنْ شَرِبَهُ مَاتَ رُوحِيًّا، فَلَا تَطْلُبِ الْمَدْحَ وَلَا تَحْزَنْ مِنَ الذَّمِّ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Madḥun-nāsi sammun ḥulw, man syaribahū māta rūḥiyyā, fa lā ṭlubil-madḥa wa lā taḥzan minaż-żamm."
+<br><br>
+<strong>Artinya:</strong> "Pujian manusia adalah racun yang manis. Barangsiapa yang meminumnya, maka ia akan mati secara spiritual. Maka janganlah engkau mencari pujian, dan janganlah engkau bersedih karena celaan."
+<br>— Imam Al-Ghazali, Ihya' Ulumiddin
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">8</span>
+<span class="karomah-title">Sikap Imam Al-Ghazali terhadap Celaan — Sabar, Memaafkan, dan Introspeksi</span>
+<div class="karomah-arabic">مَوْقِفُهُ مِنَ الذَّمِّ — الصَّبْرُ وَالْمَغْفِرَةُ وَالْمُحَاسَبَةُ</div>
+<p>
+Terhadap celaan, sikap beliau bahkan lebih menakjubkan. Beliau <strong>tidak pernah membalas celaan dengan celaan</strong>, tidak pernah membongkar aib penentangnya, dan tidak pernah menggunakan pengaruhnya untuk menekan orang-orang yang mencelanya.
+</p>
+<p>
+Terhadap celaan, beliau bersikap:
+</p>
+<ul>
+<li><strong>Sabar dan memaafkan</strong> — Ketika dicela, beliau diam dan memaafkan. Beliau berkata: <em>"Jika mereka mencelaku karena kesalahan yang ada padaku, maka aku memohon ampun kepada Allah. Dan jika mereka mencelaku karena kesalahan yang tidak ada padaku, maka aku berharap Allah akan mengampuni mereka."</em></li>
+<li><strong>Mendoakan penentangnya</strong> — Dalam riwayat disebutkan bahwa beliau mendoakan orang-orang yang mencelanya, agar Allah memberi mereka hidayah dan memperbaiki hati mereka. Banyak dari penentang beliau yang akhirnya bertaubat dan menjadi murid beliau setelah merasakan kelembutan doa beliau.</li>
+<li><strong>Tidak membela diri secara berlebihan</strong> — Beliau tidak pernah menulis kitab untuk membela diri dari tuduhan-tuduhan. Beliau membiarkan amal dan akhlak beliau yang berbicara. Beliau berkata: <em>"Kebenaran akan tampak dengan sendirinya, dan kebatilan akan hancur dengan sendirinya."</em></li>
+<li><strong>Mengintrospeksi diri</strong> — Ketika dicela, beliau selalu mengintrospeksi diri: apakah ada kebenaran dalam celaan itu? Jika ada, beliau segera memperbaikinya. Jika tidak ada, beliau bersabar dan menyerahkan urusan kepada Allah.</li>
+<li><strong>Mengakui kesalahan sendiri</strong> — Inilah yang paling menakjubkan: beliau secara terbuka mengakui kesalahan-kesalahannya sendiri dalam <em>Al-Munqidz min adh-Dhalal</em>. Beliau mengakui bahwa selama di Baghdad, niatnya telah tercampur dengan cinta jabatan dan popularitas. Kejujuran ini sangat langka di zamannya, dan menjadikan beliau dicintai bahkan oleh sebagian orang yang semula mencelanya.</li>
+</ul>
+<p>
+Sikap inilah yang menjadikan beliau dicintai bahkan oleh sebagian orang yang semula mencelanya. Ketulusan, kesabaran, dan kejujuran intelektual beliau lebih kuat daripada segala bentuk penentangan.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MEMAAFKAN ORANG YANG MENZALIMI — QS. FUSSILAT: 34</div>
+<div class="arabic-text">
+ادْفَعْ بِالَّتِي هِيَ أَحْسَنُ فَإِذَا الَّذِي بَيْنَكَ وَبَيْنَهُ عَدَاوَةٌ كَأَنَّهُ وَلِيٌّ حَمِيمٌ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Idfa' billatī hiya aḥsanu fa iżal-lażī baynaka wa baynahū 'adāwatun ka'annahū waliyyun ḥamīm."
+<br><br>
+<strong>Artinya:</strong> "Tolaklah (kejahatan itu) dengan cara yang lebih baik, maka tiba-tiba orang yang antaramu dan antara dia ada permusuhan seolah-olah telah menjadi teman yang sangat dekat."
+<br>— QS. Fussilat: 34
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">9</span>
+<span class="karomah-title">Sikap Imam Al-Ghazali terhadap Kritik Ilmiah — Terbuka dan Jujur</span>
+<div class="karomah-arabic">مَوْقِفُهُ مِنَ النَّقْدِ الْعِلْمِيِّ — انْفِتَاحٌ وَصِدْقٌ</div>
+<p>
+Salah satu aspek paling menakjubkan dari kejujuran intelektual Imam Al-Ghazali adalah <strong>sikap beliau terhadap kritik ilmiah</strong>. Beliau tidak menutup diri dari kritik, melainkan menerimanya dengan lapang dada dan bahkan mengakui kesalahan-kesalahannya sendiri.
+</p>
+<p>
+Terhadap kritik ilmiah, beliau bersikap:
+</p>
+<ul>
+<li><strong>Mengakui penggunaan hadis dha'if</strong> — Ketika dikritik karena menggunakan hadis-hadis dha'if dalam <em>Ihya' Ulumiddin</em>, beliau mengakui kelemahan ini. Beliau menjelaskan bahwa beliau menggunakan hadis-hadis tersebut bukan untuk menetapkan hukum, melainkan untuk mendorong amal shaleh dan tazkiyatun nafs, di mana para ulama memperbolehkan penggunaan hadis dha'if.</li>
+<li><strong>Mengakui pengaruh filsafat</strong> — Beliau mengakui bahwa meskipun beliau membantah metafisika para filosof, beliau tetap menggunakan logika mereka sebagai alat berpikir. Beliau menjelaskan bahwa logika adalah alat netral yang bisa digunakan untuk membela kebenaran maupun kebatilan.</li>
+<li><strong>Terbuka terhadap koreksi</strong> — Beliau tidak pernah mengklaim bahwa karya-karya beliau sempurna dan tidak bisa dikoreksi. Beliau mengundang para ulama lain untuk mengkritik dan memperbaiki karya-karya beliau.</li>
+<li><strong>Membedakan antara kritik konstruktif dan destruktif</strong> — Beliau menerima kritik yang bertujuan untuk mencari kebenaran, tetapi menolak kritik yang bertujuan untuk menjatuhkan reputasi beliau tanpa dasar yang jelas.</li>
+</ul>
+<p>
+Sikap ini menjadikan beliau <strong>teladan dalam kejujuran intelektual</strong>. Beliau membuktikan bahwa seorang ulama besar tidak harus merasa sempurna, dan tidak harus takut mengakui kesalahan. Justru kejujuran inilah yang menjadikan karya-karya beliau begitu berpengaruh — karena mereka ditulis oleh seorang yang jujur, bukan oleh seorang yang mengklaim kesempurnaan.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN IMAM AL-GHAZALI TENTANG KEJUJURAN INTELEKTUAL</div>
+<div class="arabic-text">
+مَنْ لَمْ يَعْتَرِفْ بِخَطَئِهِ لَمْ يَصِلْ إِلَى الْحَقِّ، وَمَنْ لَمْ يَصِلْ إِلَى الْحَقِّ بَقِيَ فِي الضَّلَالِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Man lam ya'tarif bi-khaṭ'ihi lam yaṣil ilal-ḥaqq, wa man lam yaṣil ilal-ḥaqq baqiya fidh-ḍalāl."
+<br><br>
+<strong>Artinya:</strong> "Barangsiapa yang tidak mengakui kesalahannya, maka ia tidak akan sampai kepada kebenaran. Dan barangsiapa yang tidak sampai kepada kebenaran, maka ia akan tetap dalam kesesatan."
+<br>— Imam Al-Ghazali, Al-Munqidz min adh-Dhalal
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">10</span>
+<span class="karomah-title">Hasil Akhir: Pengakuan Universal dan Pengaruh Lintas Zaman</span>
+<div class="karomah-arabic">النَّتِيجَةُ النِّهَائِيَّةُ — الِاعْتِرَافُ الْعَامُّ وَالتَّأْثِيرُ عَبْرَ الْعُصُورِ</div>
+<p>
+Pada akhirnya, kebenaran menang. Setelah wafatnya beliau pada tahun <strong>505 H (1111 M)</strong>, pengaruh beliau justru semakin meluas. Para ulama yang semula mencela beliau, satu per satu mengakui keutamaan beliau. Para penguasa yang semula mencurigai beliau, satu per satu menghormati beliau. Rakyat kecil yang semula mencintai beliau, tetap mencintai beliau dan menjadikan karya-karya beliau sebagai pedoman hidup.
+</p>
+<p>
+Bukti kemenangan beliau:
+</p>
+<ul>
+<li><strong>Karya-karya beliau menjadi rujukan universal</strong> — <em>Ihya' Ulumiddin</em> menjadi salah satu kitab paling berpengaruh dalam sejarah Islam, dipelajari di pesantren-pesantren, madrasah-madrasah, dan universitas-universitas di seluruh dunia Islam.</li>
+<li><strong>Gelar Hujjatul Islam diakui secara universal</strong> — Hampir seluruh ulama Ahlussunnah mengakui beliau sebagai <em>Hujjatul Islam</em> (Bukti Islam) dan <em>Zainuddin</em> (Perhiasan Agama).</li>
+<li><strong>Pengaruh beliau melampaui batas mazhab</strong> — Bukan hanya ulama Syafi'i dan Asy'ari yang menghormati beliau, tetapi juga ulama dari berbagai mazhab dan aliran.</li>
+<li><strong>Pengaruh beliau melampaui batas zaman</strong> — Lebih dari 900 tahun setelah wafatnya, karya-karya beliau masih dipelajari, dikaji, dan dijadikan rujukan oleh para ulama dan intelektual di seluruh dunia.</li>
+<li><strong>Pengaruh beliau melampaui batas geografi</strong> — Dari Maroko hingga Indonesia, dari Turki hingga Afrika, karya-karya beliau diterjemahkan ke dalam berbagai bahasa dan dipelajari oleh jutaan umat Islam.</li>
+<li><strong>Pengaruh beliau melampaui batas agama</strong> — Bahkan para intelektual non-Muslim seperti Descartes, Pascal, dan William James mengakui pengaruh pemikiran beliau dalam perkembangan filsafat dan psikologi modern.</li>
+</ul>
+<p>
+Beliau berkata tentang kemenangan kebenaran: <em>"Kebenaran tidak membutuhkan pembela, karena ia akan membela dirinya sendiri. Yang dibutuhkan hanyalah orang-orang yang istiqamah di atasnya, dan bersabar atas ujian yang datang karenanya."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEMENANGAN KEBENARAN — QS. AL-ISRA: 81</div>
+<div class="arabic-text">
+وَقُلْ جَاءَ الْحَقُّ وَزَهَقَ الْبَاطِلُ ۚ إِنَّ الْبَاطِلَ كَانَ زَهُوقًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa qul jā'al-ḥaqqu wa zahaqal-bāṭil, innal-bāṭila kāna zahūqā."
+<br><br>
+<strong>Artinya:</strong> "Dan katakanlah: 'Yang benar telah datang dan yang batil telah lenyap.' Sesungguhnya yang batil itu adalah sesuatu yang pasti lenyap."
+<br>— QS. Al-Isra': 81
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Tanggapan Pro/Kontra dan Sikap Imam Al-Ghazali:</strong>
+<ul>
+<li><strong>Masyarakat pro:</strong> Rakyat kecil, penuntut ilmu, para murid, pedagang yang jujur</li>
+<li><strong>Masyarakat kontra:</strong> Para filosof, kaum Batiniyah, pendengki, orang-orang yang tidak siap menerima kebenaran</li>
+<li><strong>Ulama pro:</strong> Fuqaha Syafi'iyah, ulama Asy'ariyah, sufi moderat, murid-murid beliau, ulama generasi berikutnya</li>
+<li><strong>Ulama kontra:</strong> Sebagian fuqaha zhahiriyah, sebagian muhaddits, penentang tasawuf, pendengki popularitas</li>
+<li><strong>Penguasa pro:</strong> Khalifah Al-Mustazhhir, Wazir Nizam al-Mulk, penguasa Seljuk</li>
+<li><strong>Penguasa kontra:</strong> Sebagian pejabat yang merasa terancam, intelijen penguasa, kaum Batiniyah</li>
+<li><strong>Sikap terhadap pujian:</strong> Rendah hati, tidak terpedaya, melarang pujian berlebihan, tetap hidup sederhana</li>
+<li><strong>Sikap terhadap celaan:</strong> Sabar, memaafkan, mendoakan penentang, introspeksi, mengakui kesalahan sendiri</li>
+<li><strong>Sikap terhadap kritik ilmiah:</strong> Terbuka, jujur, mengakui penggunaan hadis dha'if, mengakui pengaruh filsafat</li>
+<li><strong>Hasil akhir:</strong> Pengakuan universal, pengaruh lintas mazhab, lintas zaman, lintas geografi, bahkan lintas agama</li>
+<li><strong>Prinsip utama:</strong> "Kebenaran tidak membutuhkan pembela, yang dibutuhkan hanyalah orang-orang yang istiqamah di atasnya"</li>
+</ul>
+</div>
+<h2>Doa Memohon Keteguhan di Tengah Perbedaan Pendapat</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON HIKMAH DAN KETAHANAN</div>
+<div class="arabic-text">
+اللَّهُمَّ إِنِّي أَسْأَلُكَ الثَّبَاتَ فِي الْأَمْرِ، وَالْعَزِيمَةَ عَلَى الرُّشْدِ، وَأَسْأَلُكَ شُكْرَ نِعْمَتِكَ، وَحُسْنَ عِبَادَتِكَ، وَأَسْأَلُكَ قَلْبًا سَلِيمًا، وَلِسَانًا صَادِقًا، وَاجْعَلْنِي مِمَّنْ يَسْتَمِعُونَ الْقَوْلَ فَيَتَّبِعُونَ أَحْسَنَهُ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Allāhumma innī as'alukat-ṡabāta fil-amr, wal-'azīmata 'ar-rusyd, wa as'aluka syukra ni'matik, wa ḥusna 'ibādatik, wa as'aluka qalban salīman, wa lisānan ṣādiqā, waj'alnī mimmay yastami'ūnal-qawla fayattabi'ūna aḥsanah."
+<br><br>
+<strong>Artinya:</strong> "Ya Allah, sesungguhnya aku memohon kepada-Mu keteguhan dalam urusan (agama), dan kebulatan tekad atas petunjuk, dan aku memohon kepada-Mu syukur atas nikmat-Mu, dan kebaikan ibadah kepada-Mu, dan aku memohon kepada-Mu hati yang selamat, dan lisan yang jujur, dan jadikanlah aku termasuk orang-orang yang mendengarkan perkataan lalu mengikuti yang terbaik darinya."
+<br>— Doa yang diajarkan Rasulullah SAW
+</div>
+</div>
+<h2>Penutup Halaman 6</h2>
+<p>
+Demikianlah peta tanggapan pro dan kontra terhadap Imam Al-Ghazali dari berbagai kalangan — masyarakat, ulama, dan penguasa — serta bagaimana sang Hujjatul Islam menyikapi seluruh tanggapan itu dengan hikmah, kesabaran, dan kejujuran intelektual yang luar biasa. Beliau tidak pernah terpengaruh oleh pujian, tidak pernah tergoncang oleh celaan, dan tidak pernah menutup diri dari kritik yang konstruktif. Beliau bahkan mengakui kesalahan-kesalahannya sendiri secara terbuka — sebuah kejujuran yang sangat langka di zamannya, dan yang menjadikan beliau begitu dicintai oleh generasi-generasi berikutnya.
+</p>
+<p>
+Pelajaran terbesar dari sikap beliau adalah: <em>seorang pembawa kebenaran tidak boleh mengukur keberhasilannya dari banyaknya pujian atau sedikitnya celaan, melainkan dari istiqamahnya di atas kebenaran dan ketulusannya dalam niat</em>. Jika ia istiqamah dan tulus, maka kemenangan — baik di dunia maupun di akhirat — pasti akan datang, meskipun harus menunggu waktu yang lama. Imam Al-Ghazali membuktikan hal ini dengan hidupnya sendiri: beliau dicela di zamannya, tetapi dihormati selama lebih dari 900 tahun setelah wafatnya.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas secara lebih rinci <strong>sikap Imam Al-Ghazali terhadap penguasa</strong> — bagaimana beliau berinteraksi dengan khalifah, wazir, dan para sultan, bagaimana beliau menegakkan kemandirian ulama, dan bagaimana beliau menjaga agar dakwah beliau tidak tercemar oleh kepentingan politik.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ الْوَهَّابُ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Rabbanā lā tuzig qulūbanā ba'da iż hadaytanā wa hab lanā mil-ladunka raḥmah, innaka antal-wahhāb."
+<br><br>
+<strong>Artinya:</strong> "Ya Tuhan kami, janganlah Engkau jadikan hati kami condong kepada kesesatan sesudah Engkau beri petunjuk kepada kami, dan karuniakanlah kepada kami rahmat dari sisi-Mu; sesungguhnya Engkau Maha Pemberi."
+<br>— QS. Ali 'Imran: 8
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="ghazali1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="ghazali2.html" class="article-nav-btn" title="Halaman 2: Perjalanan Menuntut Ilmu">2</a>
+<div class="nav-btn-label">Menuntut Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="ghazali3.html" class="article-nav-btn" title="Halaman 3: Bidang Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="ghazali4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="ghazali5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="ghazali6.html" class="article-nav-btn active" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="ghazali7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="ghazali8.html" class="article-nav-btn" title="Halaman 8: Warisan & Karya">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="ghazali9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>
