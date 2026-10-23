@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Imam Al-Ghazali - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+/* 1. RESET & DASAR */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+/* 2. MEDIA QUERY TABLET */
+@media (max-width: 768px) {
+.article-container {
+max-width: 100%;
+padding: 20px;
+}
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+/* 3. HEADER & NAVIGASI ATAS */
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+/* 4. BREADCRUMB & CONTAINER */
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+/* 5. ARTICLE HEADER & META */
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+/* 6. GAMBAR & SHARE BAR */
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+/* 7. KONTEN ARTIKEL */
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 8. KOTAK ARAB & BIOGRAFI */
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 9. NAVIGASI HALAMAN (9 TOMBOL) */
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* 10. TOMBOL KEMBALI & FOOTER */
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+/* 11. MEDIA QUERY MOBILE */
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+/* PATCH UNIVERSAL v2.0 */
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="biografi.html">Artikel</a> &raquo; Biografi Imam Al-Ghazali — Perjalanan Menuntut Ilmu
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Imam Al-Ghazali</h1>
+<div class="subtitle">Halaman 2 dari 9 — Masa Kecil, Pendidikan Awal, dan Perjalanan Menuntut Ilmu hingga Madrasah Nizhamiyah</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Kamis, 22 Oktober 2026, 21:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nishapur_-_Iran.jpg/440px-Nishapur_-_Iran.jpg"
+alt="Nishapur - Pusat keilmuan tempat Imam Al-Ghazali menuntut ilmu"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mashhad_Imam_Reza_Mosque_1.jpg/440px-Mashhad_Imam_Reza_Mosque_1.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Nishapur, Khurasan — kota tempat Imam Al-Ghazali menuntut ilmu di Madrasah Nizhamiyah di bawah bimbingan Imam Al-Haramain Al-Juwaini</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Perjalanan menuntut ilmu Imam Al-Ghazali adalah perjalanan yang penuh dengan ujian, kesungguhan, dan keberkahan. Dimulai dari masa kecilnya di kota Thus, Khurasan — di mana beliau kehilangan ayahanda pada usia yang sangat muda — hingga perjalanannya ke Nishapur untuk menimba ilmu di Madrasah Nizhamiyah di bawah bimbingan ulama besar Imam Al-Haramain Al-Juwaini. Perjalanan ini bukan sekadar perjalanan fisik dari satu kota ke kota lain, melainkan perjalanan intelektual dan spiritual yang membentuk beliau menjadi salah satu pemikir terbesar dalam sejarah Islam. Madrasah Nizhamiyah, yang didirikan oleh Wazir Nizam al-Mulk, adalah universitas terkemuka pada zamannya — tempat berkumpulnya para ulama besar dari berbagai disiplin ilmu. Di madrasah inilah Imam Al-Ghazali mengasah kecerdasannya yang luar biasa, hingga akhirnya beliau sendiri menjadi pengajar di Madrasah Nizhamiyah Baghdad pada usia yang sangat muda — 34 tahun.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENUNTUT ILMU — QS. AT-TAUBAH: 122</div>
+<div class="arabic-text">
+وَمَا كَانَ الْمُؤْمِنُونَ لِيَنفِرُوا كَافَّةً ۚ فَلَوْلَا نَفَرَ مِن كُلِّ فِرْقَةٍ مِّنْهُمْ طَائِفَةٌ لِّيَتَفَقَّهُوا فِي الدِّينِ وَلِيُنذِرُوا قَوْمَهُمْ إِذَا رَجَعُوا إِلَيْهِمْ لَعَلَّهُمْ يَحْذَرُونَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa ma kanal-mu'minuna liyanfiru kaffah. Falaw la nafara min kulli firqatin minhum tha'ifatun liyatafaqqahu fid-dini wa liyunziru qawmahum idza raja'u ilayhim la'allahum yahzarun."
+<br><br>
+<strong>Artinya:</strong> "Tidak sepatutnya bagi mukminin itu pergi semuanya (ke medan perang). Mengapa tidak pergi dari tiap-tiap golongan di antara mereka beberapa orang untuk memperdalam pengetahuan mereka tentang agama dan untuk memberi peringatan kepada kaumnya apabila mereka telah kembali kepadanya, supaya mereka itu dapat menjaga dirinya."
+<br>— QS. At-Taubah: 122
+</div>
+</div>
+<h2>Masa Kecil di Thus — Tumbuh dalam Kesederhanaan dan Kecintaan kepada Ilmu</h2>
+<p>
+Imam Al-Ghazali tumbuh di kota Thus, Khurasan, dalam lingkungan keluarga yang sederhana namun sangat religius. Ayahnya, <em>Muhammad bin Muhammad</em>, adalah seorang pemintal wool (<em>ghazzal</em>) yang saleh dan sangat mencintai ilmu. Meskipun hidup dalam kesederhanaan, ayahnya memiliki cita-cita yang sangat tinggi untuk kedua putranya: ia ingin mereka menjadi ulama besar yang bermanfaat bagi umat.
+</p>
+<p>
+Sejak usia sangat muda, Imam Al-Ghazali sudah menunjukkan kecerdasan yang luar biasa dan kecintaan yang mendalam terhadap ilmu. Beliau menghafal Al-Qur'an di usia yang sangat muda, dan mulai mempelajari dasar-dasar ilmu agama dari para ulama di kota Thus. Beliau mempelajari bahasa Arab, nahwu, sharaf, fikih dasar, dan ilmu-ilmu keislaman lainnya. Para ulama yang mengajarnya sangat terkesan dengan kecerdasan dan ketekunannya.
+</p>
+<p>
+Namun, kebahagiaan masa kecil Imam Al-Ghazali tidak berlangsung lama. Ketika beliau masih sangat muda, ayahnya jatuh sakit dan meninggal dunia. Sebelum wafat, ayahnya menitipkan kedua putranya — Muhammad (Al-Ghazali) dan Ahmad (adiknya) — kepada seorang sahabatnya yang saleh. Ia berpesan dengan penuh harap: <em>"Sesungguhnya aku menyesal karena tidak sempat belajar. Maka ajarkanlah kedua anakku ilmu, dan jadikanlah mereka orang-orang yang berilmu."</em>
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEUTAMAAN ILMU — QS. AL-MUJADILAH: 11</div>
+<div class="arabic-text">
+يَرْفَعِ اللَّهُ الَّذِينَ آمَنُوا مِنكُمْ وَالَّذِينَ أُوتُوا الْعِلْمَ دَرَجَاتٍ ۚ وَاللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Yarfa'illahul-ladzina amanu minkum walladzina utul-'ilma darajat. Wallahu bima ta'maluna khabir."
+<br><br>
+<strong>Artinya:</strong> "Allah akan mengangkat (derajat) orang-orang yang beriman di antaramu dan orang-orang yang diberi ilmu beberapa derajat. Dan Allah Mahateliti apa yang kamu kerjakan."
+<br>— QS. Al-Mujadilah: 11
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Wafatnya Ayahanda — Wasiat yang Mengubah Sejarah</span>
+<div class="karomah-arabic">وَفَاةُ وَالِدِهِ — الْوَصِيَّةُ الَّتِي غَيَّرَتِ التَّارِيخَ</div>
+<p>
+Ketika Imam Al-Ghazali masih sangat muda — sekitar usia 10 tahun — ayahandanya, <em>Muhammad bin Muhammad</em>, jatuh sakit dan meninggal dunia. Ini adalah ujian pertama yang sangat berat bagi beliau dan adiknya, Ahmad. Kehilangan ayah di usia yang masih sangat muda tentu merupakan duka yang mendalam, namun Allah SWT telah mempersiapkan beliau untuk menghadapi ujian-ujian besar di kemudian hari.
+</p>
+<p>
+Sebelum wafat, ayahnya memanggil sahabatnya yang paling terpercaya — seorang laki-laki saleh yang juga pecinta ilmu — dan berpesan:
+</p>
+<blockquote>
+<em>"Wahai sahabatku, sesungguhnya aku akan meninggalkan dunia ini. Aku tidak memiliki harta yang banyak untuk kutinggalkan bagi kedua anakku. Namun aku memiliki satu wasiat yang sangat penting: ajarkanlah mereka ilmu. Jadikanlah mereka orang-orang yang berilmu. Sesungguhnya aku menyesal karena tidak sempat belajar di masa mudaku. Maka janganlah kedua anakku mengalami penyesalan yang sama."</em>
+</blockquote>
+<p>
+Sahabatnya itu menerima wasiat tersebut dengan penuh tanggung jawab. Ia mengasuh kedua putra Al-Ghazali dengan penuh kasih sayang, dan memasukkan mereka ke madrasah untuk menuntut ilmu. Ia menggunakan harta peninggalan ayah mereka — yang sangat sedikit — untuk membiayai pendidikan mereka. Ketika harta itu habis, ia terus mengasuh mereka dengan penuh kesabaran, hingga keduanya tumbuh menjadi ulama besar.
+</p>
+<p>
+Wasiat inilah yang kemudian mengubah sejarah Islam. Seandainya ayah Imam Al-Ghazali tidak menitipkan wasiat tersebut, mungkin Imam Al-Ghazali tidak akan pernah menjadi ulama besar yang kita kenal hari ini. Namun Allah telah menetapkan bahwa melalui wasiat seorang ayah yang sederhana, lahirlah salah satu pemikir terbesar dalam sejarah Islam.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG WASIAT DAN AMANAH — QS. AN-NISA: 58</div>
+<div class="arabic-text">
+إِنَّ اللَّهَ يَأْمُرُكُمْ أَن تُؤَدُّوا الْأَمَانَاتِ إِلَىٰ أَهْلِهَا وَإِذَا حَكَمْتُم بَيْنَ النَّاسِ أَن تَحْكُمُوا بِالْعَدْلِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Innallaha ya'murukum an tu'addul-amanati ila ahliha wa idza hakamtum baynan-nasi an tahkumu bil-'adl."
+<br><br>
+<strong>Artinya:</strong> "Sesungguhnya Allah menyuruh kamu menyampaikan amanat kepada yang berhak menerimanya, dan (menyuruh kamu) apabila menetapkan hukum di antara manusia supaya kamu menetapkan dengan adil."
+<br>— QS. An-Nisa': 58
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Pendidikan Awal di Thus — Fondasi Keilmuan yang Kokoh</span>
+<div class="karomah-arabic">التَّعْلِيمُ الْأَوَّلِيُّ فِي طُوس — الْأَسَاسُ الْمَتِينُ</div>
+<p>
+Di kota Thus, Imam Al-Ghazali mendapatkan pendidikan dasar yang sangat kokoh. Beliau mempelajari berbagai ilmu keislaman dari para ulama setempat, di antaranya:
+</p>
+<ul>
+<li><strong>Al-Qur'an dan Tajwid</strong> — Beliau menghafal Al-Qur'an secara sempurna di usia yang sangat muda, dengan bacaan yang benar dan tartil yang indah.</li>
+<li><strong>Bahasa Arab</strong> — Beliau mempelajari nahwu (tata bahasa), sharaf (morfologi), dan balaghah (sastra) dari para ahli bahasa di Thus. Penguasaan bahasa Arab yang sangat baik inilah yang kelak menjadikan karya-karyanya sangat indah dan mendalam.</li>
+<li><strong>Fikih Dasar</strong> — Beliau mempelajari fikih madzhab Syafi'i dari para fuqaha di Thus, yang kemudian menjadi madzhab yang beliau ikuti sepanjang hidupnya.</li>
+<li><strong>Hadis</strong> — Beliau mempelajari dasar-dasar ilmu hadis dan menghafal banyak hadis Nabi SAW.</li>
+<li><strong>Akidah</strong> — Beliau mempelajari dasar-dasar akidah Ahlussunnah wal Jama'ah, yang kemudian menjadi landasan pemikirannya.</li>
+</ul>
+<p>
+Para guru Imam Al-Ghazali di Thus sangat terkesan dengan kecerdasan dan ketekunannya. Beliau mampu menghafal pelajaran dengan sangat cepat, memahami makna-makna yang rumit dengan mudah, dan mengajukan pertanyaan-pertanyaan yang menunjukkan kedalaman pemikirannya. Salah satu guru beliau pernah berkata: <em>"Anak ini akan menjadi ulama besar di zamannya. Aku melihat padanya tanda-tanda kebesaran yang tidak pernah kulihat pada anak seusianya."</em>
+</p>
+<p>
+Namun, Imam Al-Ghazali merasa bahwa ilmu yang beliau dapatkan di Thus belum cukup. Beliau memiliki dahaga ilmu yang sangat besar, dan menyadari bahwa untuk menjadi ulama yang benar-benar mendalam, beliau harus pergi ke pusat-pusat keilmuan yang lebih besar. Maka beliau memutuskan untuk meninggalkan Thus dan pergi ke Nishapur — kota terdekat yang memiliki madrasah besar dan ulama-ulama terkemuka.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG PERJALANAN MENUNTUT ILMU — HR. MUSLIM</div>
+<div class="arabic-text">
+مَنْ سَلَكَ طَرِيقًا يَلْتَمِسُ فِيهِ عِلْمًا سَهَّلَ اللَّهُ لَهُ بِهِ طَرِيقًا إِلَى الْجَنَّةِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Man salaka thariqan yaltamisu fihi 'ilman sahhala Allahu lahu bihi thariqan ila al-jannah."
+<br><br>
+<strong>Artinya:</strong> "Barangsiapa yang menempuh suatu jalan untuk mencari ilmu, maka Allah akan memudahkan baginya jalan menuju surga."
+<br>— HR. Muslim, no. 2699
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Perjalanan ke Nishapur — Menuju Pusat Keilmuan Khurasan</span>
+<div class="karomah-arabic">الرِّحْلَةُ إِلَى نَيْسَابُور — نَحْوَ مَرْكَزِ الْعِلْمِ فِي خُرَاسَانَ</div>
+<p>
+Nishapur adalah salah satu kota terpenting di wilayah Khurasan pada abad ke-5 Hijriah. Kota ini merupakan pusat keilmuan yang sangat terkenal, dengan madrasah-madrasah besar, perpustakaan-perpustakaan yang lengkap, dan ulama-ulama terkemuka dari berbagai disiplin ilmu. Di Nishapur terdapat cabang <strong>Madrasah Nizhamiyah</strong> — universitas yang didirikan oleh Wazir Nizam al-Mulk, yang merupakan pusat pendidikan tertinggi pada zamannya.
+</p>
+<p>
+Imam Al-Ghazali tiba di Nishapur pada usia sekitar 15-18 tahun (sekitar 465-468 H). Beliau masuk ke Madrasah Nizhamiyah Nishapur dan mulai menuntut ilmu dengan sungguh-sungguh. Di madrasah ini, beliau bertemu dengan <strong>Imam Al-Haramain Al-Juwaini</strong> (419-478 H / 1028-1085 M) — salah satu ulama terbesar pada zamannya, yang merupakan ahli fikih Syafi'i, ahli ushul fikih, ahli ilmu kalam, dan ahli logika yang sangat terkenal.
+</p>
+<p>
+Imam Al-Haramain Al-Juwaini, yang nama lengkapnya adalah <em>Abdul Malik bin Abdullah bin Yusuf bin Muhammad Al-Juwaini</em>, adalah seorang ulama yang sangat dihormati di seluruh dunia Islam. Beliau dijuluki <em>Imam Al-Haramain</em> (Imam Dua Tanah Suci) karena beliau pernah mengajar di Makkah dan Madinah selama beberapa tahun. Beliau adalah guru besar di Madrasah Nizhamiyah Nishapur, dan merupakan salah satu ulama Asy'ariyah terkemuka.
+</p>
+<p>
+Ketika Imam Al-Ghazali pertama kali bertemu dengan Imam Al-Juwaini, sang guru segera menyadari kecerdasan luar biasa muridnya. Beliau berkata kepada para muridnya yang lain: <em>"Anak ini adalah lautan yang tidak ada dasarnya. Ia akan menjadi ulama besar yang akan menghidupkan kembali ilmu-ilmu agama."</em> Sejak saat itu, Imam Al-Juwaini memberikan perhatian khusus kepada Imam Al-Ghazali, dan membimbingnya dengan penuh kesabaran.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG GURU DAN MURID — QS. AL-KAHF: 66</div>
+<div class="arabic-text">
+قَالَ لَهُ مُوسَىٰ هَلْ أَتَّبِعُكَ عَلَىٰ أَن تُعَلِّمَنِ مِمَّا عُلِّمْتَ رُشْدًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Qala lahu Musa hal attabi'uka 'ala an tu'allimani mimma 'ullimta rusyda."
+<br><br>
+<strong>Artinya:</strong> "Musa berkata kepada Khidr: 'Bolehkah aku mengikutimu supaya kamu mengajarkan kepadaku ilmu yang benar di antara ilmu-ilmu yang telah diajarkan kepadamu?'"
+<br>— QS. Al-Kahf: 66
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Belajar di Bawah Bimbingan Imam Al-Haramain Al-Juwaini</span>
+<div class="karomah-arabic">التَّلَمُّذُ عَلَى يَدِ إِمَامِ الْحَرَمَيْنِ الْجُوَيْنِيِّ</div>
+<p>
+Selama belajar di bawah bimbingan Imam Al-Haramain Al-Juwaini, Imam Al-Ghazali mempelajari berbagai disiplin ilmu dengan sangat mendalam. Di antara bidang ilmu yang beliau pelajari dari Imam Al-Juwaini adalah:
+</p>
+<ul>
+<li><strong>Fikih Syafi'i</strong> — Beliau mempelajari fikih madzhab Syafi'i secara mendalam, dari dasar-dasarnya hingga masalah-masalahnya yang paling rumit. Imam Al-Juwaini adalah salah satu ahli fikih Syafi'i terbesar pada zamannya, dan beliau mewariskan ilmu fikihnya kepada Imam Al-Ghazali dengan sangat sempurna.</li>
+<li><strong>Ushul Fikih</strong> — Beliau mempelajari ushul fikih (metodologi hukum Islam) dari Imam Al-Juwaini, yang merupakan penulis kitab <em>Al-Waraqat</em> dan <em>Al-Burhan fi Ushul al-Fiqh</em> — dua kitab ushul fikih yang sangat terkenal. Ilmu ini kemudian menjadi salah satu bidang keahlian utama Imam Al-Ghazali, dan beliau menulis kitab <em>Al-Mustashfa min 'Ilm al-Ushul</em> yang menjadi rujukan utama dalam ushul fikih.</li>
+<li><strong>Ilmu Kalam</strong> — Beliau mempelajari ilmu kalam (teologi Islam) dari Imam Al-Juwaini, yang merupakan salah satu ahli kalam Asy'ariyah terkemuka. Imam Al-Juwaini adalah penulis kitab <em>Al-Irsyad</em> dan <em>Al-Aqidah An-Nizhamiyyah</em> — dua kitab kalam yang sangat berpengaruh. Dari sinilah Imam Al-Ghazali mempelajari metode argumentasi teologis yang kemudian beliau gunakan untuk membela akidah Ahlussunnah.</li>
+<li><strong>Logika (Mantiq)</strong> — Imam Al-Juwaini juga mengajarkan logika kepada Imam Al-Ghazali, meskipun pada masa itu logika masih dianggap kontroversial di kalangan sebagian ulama. Imam Al-Ghazali kemudian menjadi salah satu ulama pertama yang berhasil memadukan logika dengan ilmu-ilmu keislaman secara harmonis.</li>
+<li><strong>Ilmu Debat (Jadal)</strong> — Beliau mempelajari seni berdebat dan berargumentasi dari Imam Al-Juwaini, yang merupakan seorang debat ulung pada zamannya. Ilmu ini kemudian sangat bermanfaat bagi Imam Al-Ghazali dalam membela kebenaran dan membantah aliran-aliran yang menyimpang.</li>
+</ul>
+<p>
+Selama belajar di bawah bimbingan Imam Al-Juwaini, Imam Al-Ghazali menunjukkan prestasi yang sangat luar biasa. Beliau mampu menguasai berbagai disiplin ilmu dengan sangat cepat, dan seringkali mengajukan pertanyaan-pertanyaan yang membuat gurunya terkesan. Imam Al-Juwaini pernah berkata tentang muridnya ini: <em>"Al-Ghazali adalah murid yang paling cerdas yang pernah kuajar. Ia tidak hanya memahami apa yang kuajarkan, tetapi juga mampu mengembangkan dan memperdalamnya."</em>
+</p>
+<p>
+Namun, Imam Al-Ghazali tidak hanya belajar dari Imam Al-Juwaini. Beliau juga belajar dari ulama-ulama lain di Nishapur, dan membaca banyak kitab secara mandiri. Beliau memiliki kemampuan membaca yang sangat cepat dan daya ingat yang sangat kuat, sehingga beliau mampu menguasai banyak kitab dalam waktu yang singkat.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEUTAMAAN BELAJAR DAN MENGAJAR — HR. BUKHARI</div>
+<div class="arabic-text">
+خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Khairukum man ta'allamal-Qur'ana wa 'allamah."
+<br><br>
+<strong>Artinya:</strong> "Sebaik-baik kalian adalah orang yang belajar Al-Qur'an dan mengajarkannya."
+<br>— HR. Bukhari, no. 5027
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Wafatnya Imam Al-Juwaini — Ujian Besar bagi Al-Ghazali</span>
+<div class="karomah-arabic">وَفَاةُ إِمَامِ الْحَرَمَيْنِ — الْابْتِلَاءُ الْكَبِيرُ لِلْغَزَالِيِّ</div>
+<p>
+Pada tahun <strong>478 H (1085 M)</strong>, Imam Al-Haramain Al-Juwaini wafat di Nishapur. Wafatnya Imam Al-Juwaini merupakan kehilangan yang sangat besar bagi dunia Islam, dan terutama bagi Imam Al-Ghazali yang telah belajar di bawah bimbingannya selama bertahun-tahun. Imam Al-Ghazali sangat berduka atas wafatnya gurunya, dan beliau menulis dalam kitabnya <em>Al-Munqidz min adh-Dhalal</em> tentang betapa besarnya pengaruh Imam Al-Juwaini terhadap pembentukan pemikiran dan keilmuannya.
+</p>
+<p>
+Setelah wafatnya Imam Al-Juwaini, Imam Al-Ghazali merasa bahwa beliau telah menyelesaikan pendidikan formalnya di Nishapur. Namun, beliau menyadari bahwa ilmu yang beliau miliki masih perlu diuji dan dikembangkan. Maka beliau memutuskan untuk meninggalkan Nishapur dan pergi ke <strong>Baghdad</strong> — pusat peradaban Islam dan kota terbesar pada zamannya.
+</p>
+<p>
+Di Baghdad, Imam Al-Ghazali bertemu dengan <strong>Wazir Nizam al-Mulk</strong> — pendiri Madrasah Nizhamiyah dan salah satu negarawan terbesar dalam sejarah Islam. Nizam al-Mulk sangat terkesan dengan kecerdasan dan keilmuan Imam Al-Ghazali, dan beliau mengangkatnya sebagai pengajar di <strong>Madrasah Nizhamiyah Baghdad</strong> — posisi yang sangat bergengsi dan hanya diberikan kepada ulama-ulama terkemuka.
+</p>
+<p>
+Imam Al-Ghazali menerima jabatan tersebut pada tahun <strong>484 H (1091 M)</strong>, ketika beliau baru berusia sekitar <strong>34 tahun</strong>. Pada usia yang sangat muda itu, beliau menjadi pengajar di universitas terkemuka di dunia Islam, dengan ratusan murid yang belajar di bawah bimbingannya. Ini adalah bukti nyata bahwa kecerdasan dan keilmuan Imam Al-Ghazali diakui oleh seluruh ulama dan penguasa pada zamannya.
+</p>
+<p>
+Namun, jabatan yang bergengsi ini justru menjadi awal dari krisis spiritual yang sangat besar dalam kehidupan Imam Al-Ghazali — krisis yang kemudian mengubah arah hidupnya secara total, dan menjadikannya bukan hanya seorang ulama besar, tetapi juga seorang sufi yang mendalam. Kisah krisis spiritual ini akan kita bahas pada halaman-halaman berikutnya.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KESABARAN DALAM MENUNTUT ILMU — QS. AL-'ASHR: 1-3</div>
+<div class="arabic-text">
+وَالْعَصْرِ ۝ إِنَّ الْإِنسَانَ لَفِي خُسْرٍ ۝ إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wal-'ashr. Innal-insana lafi khusr. Illal-ladzina amanu wa 'amilus-salihati wa tawashaw bil-haqqi wa tawashaw bis-sabr."
+<br><br>
+<strong>Artinya:</strong> "Demi masa. Sesungguhnya manusia benar-benar berada dalam kerugian, kecuali orang-orang yang beriman dan mengerjakan amal saleh, dan saling menasihati supaya mentaati kebenaran, dan saling menasihati supaya menetapi kesabaran."
+<br>— QS. Al-'Ashr: 1-3
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Perjalanan Menuntut Ilmu Imam Al-Ghazali:</strong>
+<ul>
+<li><strong>Masa kecil:</strong> Tumbuh di kota Thus, Khurasan, dalam keluarga sederhana namun religius</li>
+<li><strong>Ayah:</strong> Muhammad bin Muhammad — pemintal wool yang saleh, wafat ketika Al-Ghazali masih muda</li>
+<li><strong>Wasiat ayah:</strong> "Ajarkanlah kedua anakku ilmu, dan jadikanlah mereka orang-orang yang berilmu"</li>
+<li><strong>Pendidikan awal di Thus:</strong> Al-Qur'an, bahasa Arab, fikih dasar, hadis, akidah</li>
+<li><strong>Perjalanan ke Nishapur:</strong> Sekitar usia 15-18 tahun, masuk Madrasah Nizhamiyah</li>
+<li><strong>Guru utama:</strong> Imam Al-Haramain Al-Juwaini (419-478 H) — ahli fikih, ushul fikih, ilmu kalam, logika</li>
+<li><strong>Bidang ilmu yang dipelajari:</strong> Fikih Syafi'i, ushul fikih, ilmu kalam Asy'ari, logika, ilmu debat</li>
+<li><strong>Wafatnya Imam Al-Juwaini:</strong> 478 H — ujian besar bagi Al-Ghazali</li>
+<li><strong>Perjalanan ke Baghdad:</strong> Bertemu Wazir Nizam al-Mulk</li>
+<li><strong>Menjadi pengajar:</strong> Diangkat sebagai pengajar di Madrasah Nizhamiyah Baghdad pada 484 H, usia 34 tahun</li>
+<li><strong>Ciri khas belajar:</strong> Kecerdasan luar biasa, daya ingat kuat, kemampuan membaca cepat, ketekunan tinggi</li>
+</ul>
+</div>
+<h2>Doa Memohon Keberkahan dalam Menuntut Ilmu</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON ILMU YANG BERMANFAAT</div>
+<div class="arabic-text">
+اللَّهُمَّ انْفَعْنِي بِمَا عَلَّمْتَنِي، وَعَلِّمْنِي مَا يَنْفَعُنِي، وَزِدْنِي عِلْمًا، وَارْزُقْنِي الْإِخْلَاصَ فِي الطَّلَبِ، وَالصَّبْرَ عَلَى التَّعْلِيمِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Allahumma-nfa'ni bima 'allamtani, wa 'allimni ma yanfa'uni, wa zidni 'ilman, war-zuqni al-ikhlasha fi ath-thalab, wash-shabra 'ala at-ta'lim."
+<br><br>
+<strong>Artinya:</strong> "Ya Allah, berilah manfaat kepadaku dengan ilmu yang telah Engkau ajarkan kepadaku, ajarkanlah kepadaku ilmu yang bermanfaat bagiku, tambahkanlah ilmu kepadaku, dan anugerahkanlah kepadaku keikhlasan dalam mencari ilmu, dan kesabaran dalam belajar."
+</div>
+</div>
+<h2>Penutup Halaman 2</h2>
+<p>
+Demikianlah perjalanan awal menuntut ilmu Imam Al-Ghazali — dari masa kecilnya di kota Thus yang penuh kesederhanaan, melalui ujian wafatnya ayahanda, wasiat ayah yang mengubah sejarah, pendidikan awal yang kokoh, hingga perjalanannya ke Nishapur dan pertemuannya dengan Imam Al-Haramain Al-Juwaini. Perjalanan ini bukan sekadar perjalanan fisik dari satu kota ke kota lain, melainkan perjalanan intelektual dan spiritual yang membentuk beliau menjadi salah satu pemikir terbesar dalam sejarah Islam.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas secara lebih rinci bidang-bidang ilmu yang dipelajari oleh Imam Al-Ghazali selama di Nishapur dan Baghdad, serta nama-nama guru beliau yang sangat berpengaruh dalam pembentukan keilmuan dan pemikiran beliau. Kita akan melihat bagaimana beliau menimba ilmu dari para ulama besar di zamannya, dan bagaimana ilmu-ilmu tersebut membentuk beliau menjadi seorang ulama yang sempurna — mampu memadukan fikih dengan tasawuf, ilmu kalam dengan filsafat, dan syariat dengan hakikat.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+وَقُل رَّبِّ زِدْنِي عِلْمًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa qur-rabbi zidni 'ilma."
+<br><br>
+<strong>Artinya:</strong> "Dan katakanlah: 'Ya Tuhanku, tambahkanlah kepadaku ilmu pengetahuan.'"
+<br>— QS. Thaha: 114
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="ghazali1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="ghazali2.html" class="article-nav-btn active" title="Halaman 2: Perjalanan Menuntut Ilmu">2</a>
+<div class="nav-btn-label">Menuntut Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="ghazali3.html" class="article-nav-btn" title="Halaman 3: Bidang Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="ghazali4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="ghazali5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="ghazali6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="ghazali7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="ghazali8.html" class="article-nav-btn" title="Halaman 8: Warisan & Karya">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="ghazali9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

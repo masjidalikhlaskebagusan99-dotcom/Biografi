@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Imam Al-Ghazali - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+@media (max-width: 768px) {
+.article-container { max-width: 100%; padding: 20px; }
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="biografi.html">Artikel</a> &raquo; Biografi Imam Al-Ghazali
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Imam Al-Ghazali</h1>
+<div class="subtitle">Halaman 1 dari 9 — Pendahuluan: Pengenalan, Nasab, Kelahiran, dan Keagungan Hujjatul Islam</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Kamis, 22 Oktober 2026, 21:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Al-Ghazali.jpg/440px-Al-Ghazali.jpg"
+alt="Imam Al-Ghazali"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mashhad_Imam_Reza_Mosque_1.jpg/440px-Mashhad_Imam_Reza_Mosque_1.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Kota Thus di Khurasan, Iran — tanah kelahiran Imam Al-Ghazali, tempat Hujjatul Islam dilahirkan, menuntut ilmu, dan dikebumikan</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Abu Hamid Muhammad bin Muhammad bin Muhammad Al-Ghazali Ath-Thusi Asy-Syafi'i (450-505 H / 1058-1111 M) adalah seorang ulama besar, teolog, filosof, sufi, dan pembaharu pemikiran Islam yang paling berpengaruh dalam sejarah peradaban Islam. Beliau dikenal dengan gelar <em>Hujjatul Islam</em> (Bukti Islam) dan <em>Zainuddin</em> (Perhiasan Agama) karena karya-karyanya yang monumental berhasil memadukan ilmu kalam, filsafat, fikih, dan tasawuf dalam satu kesatuan yang utuh. Kitabnya yang paling masyhur, <em>Ihya' Ulumiddin</em> (Menghidupkan Ilmu-Ilmu Agama), menjadi rujukan utama umat Islam di seluruh dunia selama lebih dari sembilan abad. Beliau lahir di kota Thus, Khurasan, Persia (kini Iran), dan menghabiskan hidupnya di berbagai pusat peradaban Islam — Baghdad, Nishapur, Damaskus, Yerusalem, Makkah, Madinah — sebelum kembali ke tanah kelahirannya dan wafat di sana. Pengaruh beliau terhadap pemikiran Islam sangat besar, sehingga banyak ulama yang menyebutnya sebagai <em>mujaddid</em> (pembaharu) abad ke-5 Hijriah.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEUTAMAAN ILMU — QS. AL-MUJADILAH: 11</div>
+<div class="arabic-text">
+يَرْفَعِ اللَّهُ الَّذِينَ آمَنُوا مِنكُمْ وَالَّذِينَ أُوتُوا الْعِلْمَ دَرَجَاتٍ ۚ وَاللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Yarfa'illahul-ladzina amanu minkum walladzina utul-'ilma darajat. Wallahu bima ta'maluna khabir."
+<br><br>
+<strong>Artinya:</strong> "Allah akan mengangkat (derajat) orang-orang yang beriman di antaramu dan orang-orang yang diberi ilmu beberapa derajat. Dan Allah Mahateliti apa yang kamu kerjakan."
+<br>— QS. Al-Mujadilah: 11
+</div>
+</div>
+<h2>Hujjatul Islam — Sang Pembela dan Bukti Kebenaran Islam</h2>
+<p>
+Imam Al-Ghazali mendapatkan gelar <em>Hujjatul Islam</em> — yang secara harfiah berarti "Bukti Islam" atau "Argumen Islam" — karena beliau berhasil membela kebenaran Islam dengan argumen-argumen yang sangat kuat dan tak terbantahkan. Pada zamannya, umat Islam menghadapi berbagai tantangan pemikiran: serangan dari para filosof yang menolak beberapa ajaran agama, penyebaran paham Batiniyah (esoterisme ekstrem) yang merusak akidah, serta perdebatan antara berbagai aliran kalam. Imam Al-Ghazali menjawab semua tantangan itu dengan karya-karyanya yang mendalam, terutama <em>Tahafut al-Falasifah</em> (Kerancuan Para Filosof) yang membantah 20 kesalahan para filosof, dan <em>Fada'ih al-Bathiniyyah</em> (Keburukan Kaum Batiniyah) yang membongkar kesesatan paham Batiniyah.
+</p>
+<p>
+Selain gelar Hujjatul Islam, beliau juga dikenal dengan beberapa gelar lainnya: <em>Zainuddin</em> (Perhiasan Agama), <em>Al-Imam Al-Kabir</em> (Imam Besar), <em>Al-Faqih Al-Ushuli</em> (Ahli Fikih dan Ushul), <em>Al-Mutakallim</em> (Ahli Kalam), <em>Al-Failasuf</em> (Filosof), dan <em>Al-Shufi</em> (Sufi). Keistimewaan Imam Al-Ghazali yang paling utama adalah kemampuannya <strong>mempadukan berbagai disiplin ilmu</strong> yang pada zamannya sering dianggap bertentangan: fikih dengan tasawuf, ilmu kalam dengan filsafat, dan syariat dengan hakikat. Beliau membuktikan bahwa semua ilmu ini — jika dipahami dengan benar — tidak saling bertentangan, melainkan saling melengkapi.
+</p>
+<p>
+Metode pemikiran Imam Al-Ghazali memiliki ciri khas yang sangat unik. Di antaranya adalah: <em>syak manjahi</em> (keraguan metodologis) — yaitu meragukan segala sesuatu terlebih dahulu sebelum sampai kepada keyakinan yang pasti, yang kemudian menjadi cikal bakal metode ilmiah modern; <em>tawazun</em> (keseimbangan) — yaitu menjaga keseimbangan antara akal dan wahyu, antara zhahir dan batin, antara dunia dan akhirat; serta <em>tajdid</em> (pembaruan) — yaitu memperbarui pemahaman agama tanpa meninggalkan prinsip-prinsip dasarnya. Metode inilah yang menjadikan karya-karyanya tetap relevan hingga hari ini.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN IMAM AL-GHAZALI TENTANG ILMU DAN AMAL</div>
+<div class="arabic-text">
+الْعِلْمُ بِغَيْرِ عَمَلٍ جُنُونٌ، وَالْعَمَلُ بِغَيْرِ عِلْمٍ لَا يَكُونُ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Al-'ilmu bi-ghayri 'amalin junun, wal-'amalu bi-ghayri 'ilmin la yakun."
+<br><br>
+<strong>Artinya:</strong> "Ilmu tanpa amal adalah kegilaan, dan amal tanpa ilmu tidak akan terjadi (tidak akan benar)."
+<br>— Imam Al-Ghazali, Ihya' Ulumiddin
+</div>
+</div>
+<h2>Nasab dan Keluarga — Keluarga Pemintal Wool dari Thus</h2>
+<p>
+Imam Al-Ghazali lahir dari keluarga yang sederhana namun sangat religius di kota Thus, Khurasan. Beliau bukan berasal dari keluarga bangsawan atau keluarga ulama besar, melainkan dari keluarga pemintal wool (dalam bahasa Arab: <em>ghazzal</em>, dari sinilah nama Al-Ghazali berasal). Ayahnya, <em>Muhammad bin Muhammad</em>, adalah seorang pemintal wool yang saleh dan sangat mencintai ilmu. Meskipun hidup dalam kesederhanaan, ayahnya memiliki cita-cita yang sangat tinggi untuk kedua putranya: ia ingin mereka menjadi ulama besar.
+</p>
+<p>
+Ketika ayahnya merasa ajalnya sudah dekat, ia menitipkan kedua putranya — Muhammad (yang kelak menjadi Imam Al-Ghazali) dan Ahmad (yang kelak menjadi ulama sufi) — kepada seorang sahabatnya yang saleh. Ia berpesan: <em>"Sesungguhnya aku menyesal karena tidak sempat belajar. Maka ajarkanlah kedua anakku ilmu, dan jadikanlah mereka orang-orang yang berilmu."</em> Sahabatnya itu menepati wasiat tersebut, dan dengan izin Allah, kedua putra Al-Ghazali tumbuh menjadi ulama besar yang harum namanya sepanjang sejarah Islam.
+</p>
+<p>
+Dari nasab ini kita dapat mengambil pelajaran yang sangat berharga: <strong>kemuliaan seseorang di sisi Allah tidak ditentukan oleh nasab, harta, atau jabatan, melainkan oleh ilmu dan amal</strong>. Imam Al-Ghazali membuktikan bahwa seorang anak pemintal wool dari kota kecil bisa menjadi salah satu ulama terbesar dalam sejarah Islam, jika ia bersungguh-sungguh dalam menuntut ilmu dan beramal.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEMULIAAN DI SISI ALLAH — QS. AL-HUJURAT: 13</div>
+<div class="arabic-text">
+يَا أَيُّهَا النَّاسُ إِنَّا خَلَقْنَاكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَاكُمْ شُعُوبًا وَقَبَائِلَ لِتَعَارَفُوا ۚ إِنَّ أَكْرَمَكُمْ عِندَ اللَّهِ أَتْقَاكُمْ ۚ إِنَّ اللَّهَ عَلِيمٌ خَبِيرٌ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Ya ayyuhan-nasu inna khalaqnakum min dzakarin wa untsa wa ja'alnakum syu'uban wa qaba'ila lita'arafu. Inna akramakum 'indallahi atqakum. Innallaha 'alimun khabir."
+<br><br>
+<strong>Artinya:</strong> "Wahai manusia, sesungguhnya Kami telah menciptakan kamu dari laki-laki dan perempuan, kemudian Kami jadikan kamu berbangsa-bangsa dan bersuku-suku agar kamu saling mengenal. Sesungguhnya yang paling mulia di antara kamu di sisi Allah ialah orang yang paling bertakwa. Sesungguhnya Allah Maha Mengetahui lagi Mahateliti."
+<br>— QS. Al-Hujurat: 13
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Silsilah Nasab Imam Al-Ghazali</span>
+<div class="karomah-arabic">نَسَبُهُ الشَّرِيفُ — أَبُو حَامِدٍ الْغَزَالِيُّ</div>
+<p>
+Silsilah lengkap nasab Imam Al-Ghazali adalah sebagai berikut:
+</p>
+<ul>
+<li><strong>Abu Hamid Muhammad</strong> bin <strong>Muhammad</strong> bin <strong>Muhammad</strong></li>
+<li><strong>Al-Ghazali</strong> — dinisbatkan kepada profesi ayahnya sebagai pemintal wool (<em>ghazzal</em>)</li>
+<li><strong>Ath-Thusi</strong> — dinisbatkan kepada kota Thus, tempat kelahiran beliau</li>
+<li><strong>Asy-Syafi'i</strong> — mazhab fikih yang beliau ikuti</li>
+<li><strong>Al-Asy'ari</strong> — mazhab akidah yang beliau ikuti</li>
+</ul>
+<p>
+Ayah beliau, <em>Muhammad bin Muhammad</em>, adalah seorang pemintal wool yang saleh. Kakek beliau juga bernama Muhammad. Beliau memiliki seorang adik laki-laki bernama <em>Abul Futuh Ahmad bin Muhammad Al-Ghazali</em>, yang juga menjadi ulama besar dan penulis kitab <em>Asrar at-Tauhid</em> serta kitab-kitab tasawuf lainnya.
+</p>
+<p>
+Meskipun bukan berasal dari keluarga ulama besar atau bangsawan, Imam Al-Ghazali tumbuh dalam lingkungan yang sangat religius. Ayahnya adalah seorang sufi yang saleh, dan sahabat ayahnya yang dititipi wasiat juga seorang yang saleh. Lingkungan inilah yang menanamkan benih-benih kecintaan kepada ilmu dan ketakwaan kepada Allah dalam jiwa Imam Al-Ghazali sejak usia dini.
+</p>
+<p>
+Beliau pernah berkata tentang masa kecilnya: <em>"Aku tumbuh dalam keluarga yang sederhana, namun ayahku sangat mencintai ilmu dan ulama. Ia sering mengundang para ulama ke rumahnya, mendengarkan nasihat mereka, dan mendoakan agar kedua putranya menjadi orang-orang yang berilmu. Doa ayahku itulah yang menjadi sebab keberkahan ilmuku."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG DOA ORANG TUA — QS. AL-ISRA: 24</div>
+<div class="arabic-text">
+وَاخْفِضْ لَهُمَا جَنَاحَ الذُّلِّ مِنَ الرَّحْمَةِ وَقُل رَّبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wakhfidh lahuma janahadz-dzulli minar-rahmati wa qur-rabbir-hamhuma kama rabbayani shaghira."
+<br><br>
+<strong>Artinya:</strong> "Dan rendahkanlah dirimu terhadap mereka berdua dengan penuh kesayangan, dan ucapkanlah: 'Wahai Tuhanku, kasihilah mereka keduanya, sebagaimana mereka berdua telah mendidik aku waktu kecil.'"
+<br>— QS. Al-Isra': 24
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Latar Belakang Keluarga — Keluarga Sederhana yang Mencintai Ilmu</span>
+<div class="karomah-arabic">خَلْفِيَّةُ عَائِلَتِهِ — أُسْرَةٌ بَسِيطَةٌ تُحِبُّ الْعِلْمَ</div>
+<p>
+Imam Al-Ghazali lahir dari keluarga yang sangat sederhana di kota Thus. Ayahnya bekerja sebagai <em>ghazzal</em> — pemintal wool — yaitu orang yang memintal serat wool menjadi benang. Pekerjaan ini adalah pekerjaan yang halal namun tidak menghasilkan banyak harta. Keluarga Al-Ghazali hidup dalam kesederhanaan, namun mereka kaya dengan ketakwaan dan kecintaan kepada ilmu.
+</p>
+<p>
+Ayah Imam Al-Ghazali adalah seorang yang sangat religius. Ia sering menghadiri majelis-majelis ilmu, mendengarkan ceramah para ulama, dan menangis karena takut kepada Allah. Meskipun ia sendiri tidak sempat menjadi ulama karena keterbatasan ekonomi, ia memiliki cita-cita yang sangat tinggi untuk kedua putranya. Ia ingin mereka menjadi ulama besar yang bermanfaat bagi umat.
+</p>
+<p>
+Ketika ayahnya sakit dan merasa ajalnya sudah dekat, ia menitipkan kedua putranya kepada seorang sahabatnya yang saleh dan terpercaya. Ia berpesan: <em>"Wahai sahabatku, sesungguhnya aku akan meninggal dunia. Aku titipkan kedua anakku ini kepadamu. Ajarkanlah mereka ilmu, dan jadikanlah mereka orang-orang yang berilmu. Sesungguhnya aku menyesal karena tidak sempat belajar."</em>
+</p>
+<p>
+Sahabatnya itu menepati wasiat tersebut. Ia mengasuh kedua putra Al-Ghazali dengan penuh kasih sayang, dan memasukkan mereka ke madrasah untuk menuntut ilmu. Dengan izin Allah, kedua putra itu tumbuh menjadi ulama besar: Muhammad menjadi Imam Al-Ghazali yang terkenal dengan gelar Hujjatul Islam, dan Ahmad menjadi ulama sufi yang terkenal dengan kitab-kitab tasawufnya.
+</p>
+<p>
+Kisah keluarga Al-Ghazali mengajarkan kepada kita bahwa <strong>kesederhanaan bukanlah penghalang untuk meraih kemuliaan</strong>. Yang penting adalah ketakwaan, kecintaan kepada ilmu, dan kesungguhan dalam belajar. Allah tidak melihat harta atau jabatan seseorang, melainkan melihat ketakwaannya.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEUTAMAAN MENUNTUT ILMU — HR. BUKHARI DAN MUSLIM</div>
+<div class="arabic-text">
+مَنْ سَلَكَ طَرِيقًا يَلْتَمِسُ فِيهِ عِلْمًا سَهَّلَ اللَّهُ لَهُ بِهِ طَرِيقًا إِلَى الْجَنَّةِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Man salaka thariqan yaltamisu fihi 'ilman sahhala Allahu lahu bihi thariqan ila al-jannah."
+<br><br>
+<strong>Artinya:</strong> "Barangsiapa yang menempuh suatu jalan untuk mencari ilmu, maka Allah akan memudahkan baginya jalan menuju surga."
+<br>— HR. Bukhari dan Muslim
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Tempat dan Tanggal Lahir — Kota Thus, Khurasan, 450 H</span>
+<div class="karomah-arabic">مَكَانُ وَتَارِيخُ وِلَادَتِهِ — طُوس خُرَاسَان 450 هـ</div>
+<p>
+Imam Al-Ghazali lahir pada tahun <strong>450 H (1058 M)</strong> di kota <strong>Thus</strong>, sebuah kota penting di wilayah <strong>Khurasan</strong>, Persia (kini bagian dari Iran). Kota Thus terletak di dekat kota Masyhad, di kaki pegunungan Binalud, dan pada masa itu merupakan salah satu pusat peradaban Islam di wilayah timur dunia Islam.
+</p>
+<p>
+Khurasan pada abad ke-5 H adalah wilayah yang sangat penting dalam sejarah Islam. Wilayah ini melahirkan banyak ulama besar, teolog, filosof, dan sastrawan. Di Khurasan terdapat kota-kota besar seperti Nishapur, Herat, Balkh, dan Merv yang menjadi pusat-pusat keilmuan. Madrasah Nizhamiyah yang didirikan oleh Wazir Nizam al-Mulk memiliki cabang di Nishapur dan Baghdad, dan menjadi pusat pendidikan tertinggi pada zamannya.
+</p>
+<p>
+Kota Thus sendiri adalah kota yang tenang dan religius, dikelilingi oleh pegunungan dan kebun-kebun yang hijau. Di kota inilah Imam Al-Ghazali menghabiskan masa kecilnya, menuntut ilmu dasar, dan kemudian setelah mengembara ke berbagai penjuru dunia Islam, kembali ke kota ini untuk menghabiskan sisa hidupnya dan dikebumikan di sana.
+</p>
+<p>
+Makam Imam Al-Ghazali di Thus hingga hari ini masih diziarahi oleh umat Islam dari berbagai penjuru dunia, meskipun kondisi makamnya telah mengalami perubahan karena berbagai peristiwa sejarah. Nama beliau tetap harum dan dikenang sebagai salah satu ulama terbesar dalam sejarah Islam.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG PERJALANAN MENUNTUT ILMU — QS. AL-'ANKABUT: 69</div>
+<div class="arabic-text">
+وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا ۚ وَإِنَّ اللَّهَ لَمَعَ الْمُحْسِنِينَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Walladzina jahadu fina lanahdiannahum subulana. Wa innallaha lama'al-muhsinin."
+<br><br>
+<strong>Artinya:</strong> "Dan orang-orang yang berjihad untuk (mencari keridhaan) Kami, benar-benar akan Kami tunjukkan kepada mereka jalan-jalan Kami. Dan sesungguhnya Allah benar-benar beserta orang-orang yang berbuat baik."
+<br>— QS. Al-'Ankabut: 69
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Makna Gelar Hujjatul Islam — Bukti dan Pembela Kebenaran</span>
+<div class="karomah-arabic">مَعْنَى لَقَبِ حُجَّةِ الْإِسْلَامِ — الْبُرْهَانُ وَالْمُدَافِعُ عَنِ الْحَقِّ</div>
+<p>
+Gelar <em>Hujjatul Islam</em> yang disandang oleh Imam Al-Ghazali memiliki makna yang sangat dalam. Kata <em>hujjah</em> (حُجَّة) berarti "bukti", "argumen", atau "dalil yang kuat". Ketika digabungkan dengan <em>Al-Islam</em>, gelar ini berarti "Bukti Islam" atau "Argumen Islam" — yaitu orang yang menjadi bukti kebenaran Islam melalui ilmu, amal, dan karya-karyanya.
+</p>
+<p>
+Imam Al-Ghazali mendapatkan gelar ini karena beberapa alasan:
+</p>
+<ul>
+<li><strong>Membela Islam dengan argumen yang kuat</strong> — Melalui karya-karyanya seperti <em>Tahafut al-Falasifah</em> dan <em>Fada'ih al-Bathiniyyah</em>, beliau berhasil membantah berbagai aliran yang menyimpang dengan argumen-argumen yang tak terbantahkan.</li>
+<li><strong>Mempadukan berbagai disiplin ilmu</strong> — Beliau berhasil menunjukkan bahwa fikih, ilmu kalam, filsafat, dan tasawuf tidak saling bertentangan, melainkan saling melengkapi. Ini menjadi bukti bahwa Islam adalah agama yang komprehensif.</li>
+<li><strong>Menghidupkan ilmu-ilmu agama</strong> — Melalui kitab <em>Ihya' Ulumiddin</em>, beliau menghidupkan kembali semangat keagamaan yang mulai redup, dan menunjukkan bahwa agama bukan hanya ritual lahiriah, melainkan juga penyucian jiwa.</li>
+<li><strong>Menjadi rujukan utama umat</strong> — Karya-karyanya menjadi rujukan utama bagi umat Islam di seluruh dunia selama lebih dari sembilan abad, dari Maroko hingga Indonesia.</li>
+</ul>
+<p>
+Selain Hujjatul Islam, beliau juga dikenal dengan gelar:
+</p>
+<ul>
+<li><strong>Zainuddin</strong> (زَيْنُ الدِّين) — "Perhiasan Agama" — karena ilmunya memperindah dan memperkaya pemahaman agama.</li>
+<li><strong>Al-Imam Al-Kabir</strong> (الإِمَامُ الْكَبِيرُ) — "Imam Besar" — karena kebesarannya dalam ilmu dan pengaruhnya.</li>
+<li><strong>Al-Mujaddid</strong> (الْمُجَدِّدُ) — "Pembaharu" — karena beliau memperbarui pemahaman agama pada abad ke-5 Hijriah.</li>
+<li><strong>Al-Shafi'i Al-Ash'ari</strong> — karena beliau mengikuti mazhab Syafi'i dalam fikih dan mazhab Asy'ari dalam akidah.</li>
+</ul>
+<p>
+Beliau sendiri pernah berkata tentang hakikat ilmu: <em>"Ilmu yang paling mulia adalah ilmu yang mendekatkan dirimu kepada Allah, dan ilmu yang paling bermanfaat adalah ilmu yang memperbaiki akhlakmu dan amal-amalmu."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN IMAM AL-GHAZALI TENTANG HAKIKAT ILMU</div>
+<div class="arabic-text">
+أَشْرَفُ الْعُلُومِ عِلْمٌ يُقَرِّبُكَ إِلَى اللَّهِ، وَأَنْفَعُ الْعُلُومِ عِلْمٌ يُصْلِحُ أَخْلَاقَكَ وَأَعْمَالَكَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Ashraful-'ulumi 'ilmun yuqarribuka ila Allah, wa anfa'ul-'ulumi 'ilmun yushlihu akhlaqaka wa a'malaka."
+<br><br>
+<strong>Artinya:</strong> "Ilmu yang paling mulia adalah ilmu yang mendekatkan dirimu kepada Allah, dan ilmu yang paling bermanfaat adalah ilmu yang memperbaiki akhlakmu dan amal-amalmu."
+<br>— Imam Al-Ghazali
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Keistimewaan Pemikiran dan Metode Imam Al-Ghazali</span>
+<div class="karomah-arabic">مُمَيِّزَاتُ فِكْرِ الْإِمَامِ الْغَزَالِيِّ وَمَنْهَجِهِ</div>
+<p>
+Pemikiran dan metode Imam Al-Ghazali memiliki beberapa keistimewaan yang menjadikannya unik di antara para ulama lainnya:
+</p>
+<ul>
+<li><strong>Syak Manhaji (Keraguan Metodologis)</strong> — Imam Al-Ghazali adalah salah satu ulama pertama yang menerapkan metode keraguan sistematis untuk mencapai keyakinan. Dalam kitabnya <em>Al-Munqidz min adh-Dhalal</em> (Penyelamat dari Kesesatan), beliau menceritakan bagaimana beliau meragukan segala sesuatu — bahkan indra dan akal — sampai akhirnya beliau mencapai keyakinan yang pasti melalui cahaya yang Allah lemparkan ke dalam hatinya. Metode ini mendahului metode keraguan Descartes (1596-1650 M) lebih dari lima abad.</li>
+<li><strong>Tawazun (Keseimbangan)</strong> — Beliau menjaga keseimbangan antara akal dan wahyu, antara zhahir dan batin, antara dunia dan akhirat. Beliau tidak ekstrem ke satu sisi, melainkan mengambil jalan tengah yang moderat.</li>
+<li><strong>Takamul (Integrasi)</strong> — Beliau berhasil memadukan berbagai disiplin ilmu yang pada zamannya dianggap bertentangan: fikih dengan tasawuf, ilmu kalam dengan filsafat, dan syariat dengan hakikat. Beliau membuktikan bahwa semua ilmu ini saling melengkapi.</li>
+<li><strong>Tajdid (Pembaruan)</strong> — Beliau memperbarui pemahaman agama tanpa meninggalkan prinsip-prinsip dasarnya. Beliau mengkritik pemahaman yang kaku dan formalistik, dan mengajak umat untuk memahami hakikat agama.</li>
+<li><strong>Ijtihad dan Taqlid</strong> — Meskipun beliau seorang mujtahid yang mampu berijtihad, beliau tetap menghormati mazhab-mazhab yang ada dan tidak memaksakan pendapatnya kepada orang lain.</li>
+<li><strong>Pengaruh lintas mazhab dan lintas zaman</strong> — Karya-karyanya dipelajari dan dihormati oleh ulama dari berbagai mazhab: Syafi'i, Hanafi, Maliki, Hambali, bahkan Syiah. Pengaruhnya melintasi batas-batas mazhab, zaman, dan geografi.</li>
+</ul>
+<p>
+Keistimewaan-keistimewaan inilah yang menjadikan Imam Al-Ghazali sebagai salah satu ulama paling berpengaruh dalam sejarah Islam. Karya-karyanya terus dipelajari, dikaji, dan dijadikan rujukan hingga hari ini, lebih dari 900 tahun setelah wafatnya.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KESEIMBANGAN — QS. AL-BAQARAH: 143</div>
+<div class="arabic-text">
+وَكَذَٰلِكَ جَعَلْنَاكُمْ أُمَّةً وَسَطًا لِّتَكُونُوا شُهَدَاءَ عَلَى النَّاسِ وَيَكُونَ الرَّسُولُ عَلَيْكُمْ شَهِيدًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa kadzalika ja'alnakum ummatan wasathan litakunu syuhada'a 'alan-nasi wa yakuna ar-rasulu 'alaykum syahida."
+<br><br>
+<strong>Artinya:</strong> "Dan demikianlah Kami telah menjadikan kamu (umat Islam) umat pertengahan, agar kamu menjadi saksi atas (perbuatan) manusia dan agar Rasul (Muhammad) menjadi saksi atas (perbuatan) kamu."
+<br>— QS. Al-Baqarah: 143
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Pendahuluan Biografi Imam Al-Ghazali:</strong>
+<ul>
+<li><strong>Nama lengkap:</strong> Abu Hamid Muhammad bin Muhammad bin Muhammad Al-Ghazali Ath-Thusi Asy-Syafi'i</li>
+<li><strong>Gelar:</strong> Hujjatul Islam, Zainuddin, Al-Imam Al-Kabir, Al-Mujaddid</li>
+<li><strong>Nasab:</strong> Keluarga pemintal wool (ghazzal) dari Thus — keluarga sederhana namun religius</li>
+<li><strong>Ayah:</strong> Muhammad bin Muhammad — pemintal wool yang saleh, mewasiatkan kedua putranya untuk menuntut ilmu</li>
+<li><strong>Adik:</strong> Abul Futuh Ahmad bin Muhammad Al-Ghazali — ulama sufi dan penulis</li>
+<li><strong>Tempat lahir:</strong> Kota Thus, Khurasan, Persia (kini Iran)</li>
+<li><strong>Tanggal lahir:</strong> Tahun 450 H (1058 M)</li>
+<li><strong>Wafat:</strong> Tahun 505 H (1111 M) di Thus</li>
+<li><strong>Mazhab:</strong> Syafi'i dalam fikih, Asy'ari dalam akidah</li>
+<li><strong>Ciri khas pemikiran:</strong> Syak manhaji (keraguan metodologis), tawazun (keseimbangan), takamul (integrasi), tajdid (pembaruan)</li>
+<li><strong>Karya utama:</strong> Ihya' Ulumiddin, Tahafut al-Falasifah, Al-Munqidz min adh-Dhalal, Al-Mustashfa, Fada'ih al-Bathiniyyah</li>
+<li><strong>Pengaruh:</strong> Lintas mazhab, lintas zaman, lintas geografi — dari Maroko hingga Indonesia</li>
+</ul>
+</div>
+<h2>Doa Memohon Keberkahan Ilmu dan Pemahaman</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON ILMU YANG BERMANFAAT</div>
+<div class="arabic-text">
+اللَّهُمَّ انْفَعْنِي بِمَا عَلَّمْتَنِي، وَعَلِّمْنِي مَا يَنْفَعُنِي، وَزِدْنِي عِلْمًا، وَاجْعَلْ عِلْمِي نُورًا وَهُدًى وَرَحْمَةً
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Allahumma-nfa'ni bima 'allamtani, wa 'allimni ma yanfa'uni, wa zidni 'ilman, waj'al 'ilmi nuran wa hudan wa rahmah."
+<br><br>
+<strong>Artinya:</strong> "Ya Allah, berilah manfaat kepadaku dengan ilmu yang telah Engkau ajarkan kepadaku, ajarkanlah kepadaku ilmu yang bermanfaat bagiku, tambahkanlah ilmu kepadaku, dan jadikanlah ilmuku sebagai cahaya, petunjuk, dan rahmat."
+</div>
+</div>
+<h2>Penutup Halaman 1</h2>
+<p>
+Demikianlah pengantar biografi Imam Al-Ghazali — sang Hujjatul Islam, Zainuddin, dan pembaharu pemikiran Islam yang paling berpengaruh dalam sejarah. Beliau lahir dari keluarga sederhana di kota Thus, Khurasan, pada tahun 450 H, namun berhasil meraih puncak keilmuan dan menjadi salah satu ulama terbesar dalam sejarah Islam. Kelahiran beliau adalah bukti bahwa kemuliaan di sisi Allah tidak ditentukan oleh nasab atau harta, melainkan oleh ilmu, amal, dan ketakwaan.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas perjalanan Imam Al-Ghazali dalam menuntut ilmu — dari madrasah-madrasah di Thus dan Nishapur, hingga Madrasah Nizhamiyah di Baghdad, serta bidang-bidang ilmu yang beliau pelajari dan para guru yang membimbingnya.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+وَقُل رَّبِّ زِدْنِي عِلْمًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa qur-rabbi zidni 'ilma."
+<br><br>
+<strong>Artinya:</strong> "Dan katakanlah: 'Ya Tuhanku, tambahkanlah kepadaku ilmu pengetahuan.'"
+<br>— QS. Thaha: 114
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="ghazali1.html" class="article-nav-btn active" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="ghazali2.html" class="article-nav-btn" title="Halaman 2: Perjalanan Menuntut Ilmu">2</a>
+<div class="nav-btn-label">Menuntut Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="ghazali3.html" class="article-nav-btn" title="Halaman 3: Bidang Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="ghazali4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="ghazali5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="ghazali6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="ghazali7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="ghazali8.html" class="article-nav-btn" title="Halaman 8: Warisan & Karya">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="ghazali9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

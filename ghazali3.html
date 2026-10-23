@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Imam Al-Ghazali - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+@media (max-width: 768px) {
+.article-container { max-width: 100%; padding: 20px; }
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="biografi.html">Artikel</a> &raquo; Biografi Imam Al-Ghazali — Bidang Ilmu & Para Guru
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Imam Al-Ghazali</h1>
+<div class="subtitle">Halaman 3 dari 9 — Bidang-Bidang Ilmu yang Dipelajari dan Para Guru Beliau yang Berpengaruh</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Kamis, 22 Oktober 2026, 21:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Al-Ghazali_Ihya_Ulum_al-Din.jpg/440px-Al-Ghazali_Ihya_Ulum_al-Din.jpg"
+alt="Kitab Ihya Ulumiddin karya Imam Al-Ghazali"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Al-Ghazali.jpg/440px-Al-Ghazali.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Manuskrip kitab Ihya' Ulumiddin karya Imam Al-Ghazali — kitab monumental yang memadukan fikih, ilmu kalam, filsafat, dan tasawuf dalam satu kesatuan yang utuh</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Imam Al-Ghazali adalah salah satu ulama paling multidisiplin dalam sejarah Islam. Beliau tidak hanya menguasai satu bidang ilmu, melainkan mendalami hampir seluruh cabang keilmuan Islam pada zamannya: <strong>fikih dan ushul fikih</strong>, <strong>ilmu kalam dan teologi</strong>, <strong>filsafat dan logika</strong>, <strong>tasawuf dan spiritualitas</strong>, serta <strong>ilmu Al-Qur'an dan hadis</strong>. Yang lebih menakjubkan, beliau tidak sekadar mempelajari ilmu-ilmu ini secara terpisah, melainkan berhasil <strong>memadukannya</strong> menjadi satu kesatuan yang utuh dan saling melengkapi. Keistimewaan inilah yang menjadikan beliau mendapat gelar <em>Hujjatul Islam</em> — Bukti Islam — karena karya-karyanya berhasil menunjukkan bahwa seluruh cabang keilmuan Islam, jika dipahami dengan benar, tidak saling bertentangan melainkan saling menguatkan. Di balik pencapaian intelektual yang luar biasa ini terdapat para guru besar yang membimbingnya: Imam Al-Haramain Al-Juwaini dalam fikih dan ilmu kalam, Abu Ali Al-Farmadzi dalam tasawuf, serta banyak ulama lain yang masing-masing memberikan kontribusi unik dalam pembentukan pemikiran beliau.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG BERBAGAI CABANG ILMU — QS. AL-ALAQ: 1-5</div>
+<div class="arabic-text">
+اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ ۝ خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ ۝ اقْرَأْ وَرَبُّكَ الْأَكْرَمُ ۝ الَّذِي عَلَّمَ بِالْقَلَمِ ۝ عَلَّمَ الْإِنسَانَ مَا لَمْ يَعْلَمْ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Iqra' bismi Rabbikal-ladzî khalaq. Khalaqal-insâna min 'alaq. Iqra' wa Rabbukal-akram. Alladzî 'allama bil-qalam. 'Allamal-insâna mâ lam ya'lam."
+<br><br>
+<strong>Artinya:</strong> "Bacalah dengan (menyebut) nama Tuhanmu yang menciptakan. Dia telah menciptakan manusia dari segumpal darah. Bacalah, dan Tuhanmulah Yang Maha Mulia. Yang mengajar (manusia) dengan pena. Dia mengajarkan manusia apa yang tidak diketahuinya."
+<br>— QS. Al-'Alaq: 1-5
+</div>
+</div>
+<h2>Keunikan Metode Keilmuan Imam Al-Ghazali</h2>
+<p>
+Sebelum membahas bidang-bidang ilmu secara rinci, penting untuk memahami <strong>keunikan metode keilmuan</strong> Imam Al-Ghazali. Beliau dikenal dengan metode <em>syak manhaji</em> (keraguan metodologis) — yaitu meragukan segala bentuk pengetahuan terlebih dahulu sebelum menerima sesuatu sebagai kebenaran yang pasti. Metode ini beliau terapkan bukan karena skeptisisme atau keraguan terhadap agama, melainkan karena keinginan yang sangat kuat untuk mencapai <em>yaqin</em> (keyakinan) yang tidak tergoyahkan.
+</p>
+<p>
+Dalam kitabnya <em>Al-Munqidz min adh-Dhalal</em> (Penyelamat dari Kesesatan), Imam Al-Ghazali menceritakan pengalaman intelektualnya secara jujur dan terbuka. Beliau menulis bahwa beliau sempat meragukan pengetahuan indrawi, kemudian meragukan pengetahuan akal, hingga akhirnya beliau mencapai keyakinan yang pasti melalui <em>nur ilahi</em> — cahaya yang Allah lemparkan ke dalam hatinya. Pengalaman ini menjadikan beliau sangat berhati-hati dalam menerima atau menolak suatu klaim pengetahuan, dan selalu mencari dasar yang paling kokoh untuk setiap keyakinan.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN IMAM AL-GHAZALI TENTANG KERAGUAN METODOLOGIS</div>
+<div class="arabic-text">
+مَنْ لَمْ يَشُكَّ لَمْ يَنْظُرْ، وَمَنْ لَمْ يَنْظُرْ لَمْ يُبْصِرْ، وَمَنْ لَمْ يُبْصِرْ بَقِيَ فِي الْعَمَى وَالضَّلَالِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Man lam yasyukka lam yanzhur, wa man lam yanzhur lam yubshir, wa man lam yubshir baqiya fil-'ama wad-dhalal."
+<br><br>
+<strong>Artinya:</strong> "Barangsiapa yang tidak meragukan (menguji), maka ia tidak akan meneliti. Barangsiapa yang tidak meneliti, maka ia tidak akan melihat (kebenaran). Dan barangsiapa yang tidak melihat, maka ia akan tetap dalam kebutaan dan kesesatan."
+<br>— Imam Al-Ghazali, Al-Munqidz min adh-Dhalal
+</div>
+</div>
+<h2>Bidang-Bidang Ilmu yang Dipelajari Imam Al-Ghazali</h2>
+<p>
+Imam Al-Ghazali mendalami berbagai bidang ilmu yang pada zamannya sering dianggap terpisah atau bahkan bertentangan. Beliau justru membuktikan bahwa semua bidang ini saling melengkapi dan membentuk satu bangunan pengetahuan yang utuh. Berikut adalah bidang-bidang ilmu utama yang beliau kuasai:
+</p>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Fikih dan Ushul Fikih — Madzhab Syafi'i</span>
+<div class="karomah-arabic">الْفِقْهُ وَأُصُولُهُ — الْمَذْهَبُ الشَّافِعِيُّ</div>
+<p>
+Bidang ilmu pertama dan paling dasar yang dipelajari Imam Al-Ghazali adalah <strong>fikih</strong> (hukum Islam) dan <strong>ushul fikih</strong> (metodologi hukum Islam). Beliau mengikuti <strong>madzhab Syafi'i</strong>, yang merupakan salah satu dari empat madzhab fikih utama dalam Ahlussunnah wal Jama'ah.
+</p>
+<p>
+Imam Al-Ghazali mempelajari fikih Syafi'i sejak masa kecilnya di Thus, kemudian memperdalamnya di Nishapur di bawah bimbingan Imam Al-Haramain Al-Juwaini, dan terus mengembangkannya hingga beliau sendiri menjadi salah satu ahli fikih Syafi'i terbesar sepanjang sejarah. Karya beliau dalam bidang fikih antara lain:
+</p>
+<ul>
+<li><strong>Al-Wasith fi al-Madzhab</strong> — kitab fikih Syafi'i yang komprehensif</li>
+<li><strong>Al-Wajiz fi Fiqh al-Imam asy-Syafi'i</strong> — ringkasan fikih Syafi'i</li>
+<li><strong>Al-Basith</strong> — kitab fikih yang sangat luas dan mendalam</li>
+<li><strong>Al-Mustashfa min 'Ilm al-Ushul</strong> — salah satu kitab ushul fikih paling berpengaruh sepanjang sejarah Islam, yang menjadi rujukan utama bagi ulama dari berbagai madzhab</li>
+</ul>
+<p>
+Dalam bidang ushul fikih, Imam Al-Ghazali memberikan kontribusi yang sangat besar. Beliau berhasil memadukan metode <em>mutakallimin</em> (ahli kalam) dengan metode <em>fuqaha</em> (ahli fikih) dalam ushul fikih, sehingga menghasilkan pendekatan yang lebih komprehensif dan mendalam. Kitab <em>Al-Mustashfa</em> menjadi salah satu dari empat kitab ushul fikih paling penting dalam tradisi Syafi'i, bersama dengan <em>Al-Umm</em> karya Imam Syafi'i, <em>Al-Burhan</em> karya Imam Al-Juwaini, dan <em>Al-Ihkam</em> karya Al-Amidi.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG HUKUM DAN KEADILAN — QS. AN-NISA: 59</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا أَطِيعُوا اللَّهَ وَأَطِيعُوا الرَّسُولَ وَأُولِي الْأَمْرِ مِنكُمْ ۖ فَإِن تَنَازَعْتُمْ فِي شَيْءٍ فَرُدُّوهُ إِلَى اللَّهِ وَالرَّسُولِ إِن كُنتُمْ تُؤْمِنُونَ بِاللَّهِ وَالْيَوْمِ الْآخِرِ ۚ ذَٰلِكَ خَيْرٌ وَأَحْسَنُ تَأْوِيلًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Yâ ayyuhalladzîna âmanû athî'ullâha wa athî'ur-Rasûla wa ulil-amri minkum. Fa in tanâza'tum fî syai'in fa ruddûhu ilallâhi war-Rasûli in kuntum tu'minûna billâhi wal-yaumil-âkhir. Dzâlika khairun wa ahsanu ta'wîlâ."
+<br><br>
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, taatilah Allah dan taatilah Rasul (Nya), serta ulil amri di antara kamu. Kemudian jika kamu berlainan pendapat tentang sesuatu, maka kembalikanlah ia kepada Allah (Al-Qur'an) dan Rasul (sunnahnya), jika kamu benar-benar beriman kepada Allah dan hari kemudian. Yang demikian itu lebih utama (bagimu) dan lebih baik akibatnya."
+<br>— QS. An-Nisa': 59
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Ilmu Kalam dan Teologi — Madzhab Asy'ari</span>
+<div class="karomah-arabic">عِلْمُ الْكَلَامِ وَالْعَقِيدَةِ — الْمَذْهَبُ الْأَشْعَرِيُّ</div>
+<p>
+Bidang ilmu kedua yang sangat dikuasai oleh Imam Al-Ghazali adalah <strong>ilmu kalam</strong> (teologi Islam) dan <strong>akidah</strong>. Dalam bidang ini, beliau mengikuti <strong>madzhab Asy'ari</strong>, yang merupakan salah satu dari dua madzhab teologi utama dalam Ahlussunnah wal Jama'ah (bersama madzhab Maturidi).
+</p>
+<p>
+Imam Al-Ghazali mempelajari ilmu kalam dari Imam Al-Haramain Al-Juwaini, yang merupakan salah satu teolog Asy'ari terbesar pada zamannya. Beliau kemudian mengembangkan dan memperdalam ilmu kalam ini hingga menjadi salah satu pembela utama akidah Asy'ari. Karya-karya beliau dalam bidang ilmu kalam antara lain:
+</p>
+<ul>
+<li><strong>Al-Iqtishad fi al-I'tiqad</strong> — kitab teologi yang membahas akidah Asy'ari secara sistematis</li>
+<li><strong>Al-Iqtishad fi al-I'tiqad</strong> — penjelasan tentang jalan tengah dalam akidah</li>
+<li><strong>Fada'ih al-Bathiniyyah wa Fadhail al-Mustazhhiriyyah</strong> — bantahan terhadap paham Batiniyah yang menyimpang</li>
+<li><strong>Al-Munqidz min adh-Dhalal</strong> — autobiografi intelektual yang menjelaskan perjalanan beliau mencari kebenaran</li>
+</ul>
+<p>
+Kontribusi terbesar Imam Al-Ghazali dalam ilmu kalam adalah kemampuannya untuk <strong>mempertahankan akidah Ahlussunnah</strong> dengan argumen-argumen yang sangat kuat, sambil sekaligus <strong>membantah aliran-aliran yang menyimpang</strong> seperti Batiniyah, filosof yang menolak ajaran agama, dan aliran-aliran ekstrem lainnya. Beliau berhasil menunjukkan bahwa akidah Ahlussunnah adalah akidah yang paling seimbang, moderat, dan sesuai dengan Al-Qur'an dan Sunnah.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG TAUHID — QS. AL-IKHLAS: 1-4</div>
+<div class="arabic-text">
+قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Qul huwallâhu ahad. Allâhush-shamad. Lam yalid wa lam yûlad. Wa lam yakul-lahû kufuwan ahad."
+<br><br>
+<strong>Artinya:</strong> "Katakanlah: Dialah Allah, Yang Maha Esa. Allah adalah Tuhan yang bergantung kepada-Nya segala sesuatu. Dia tidak beranak dan tidak pula diperanakkan. Dan tidak ada seorang pun yang setara dengan Dia."
+<br>— QS. Al-Ikhlas: 1-4
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Filsafat dan Logika — Menguasai untuk Mengkritik</span>
+<div class="karomah-arabic">الْفَلْسَفَةُ وَالْمَنْطِقُ — التَّمَكُّنُ لِلنَّقْدِ</div>
+<p>
+Salah satu aspek paling unik dari keilmuan Imam Al-Ghazali adalah penguasaan beliau terhadap <strong>filsafat</strong> dan <strong>logika</strong>. Pada zamannya, filsafat sering dianggap bertentangan dengan agama, dan banyak ulama yang menolak mempelajarinya. Namun Imam Al-Ghazali mengambil pendekatan yang berbeda: beliau mempelajari filsafat secara mendalam <strong>bukan untuk mengikutinya</strong>, melainkan untuk <strong>memahami dan mengkritiknya</strong> dengan tepat.
+</p>
+<p>
+Imam Al-Ghazali mempelajari filsafat Yunani — khususnya pemikiran Aristoteles, Plato, Al-Farabi, dan Ibnu Sina — selama sekitar dua tahun. Beliau membaca dan memahami karya-karya para filosof ini dengan sangat mendalam, hingga beliau mampu menulis kitab yang membantah kesalahan-kesalahan mereka dengan argumen yang sangat kuat. Karya-karya beliau dalam bidang ini antara lain:
+</p>
+<ul>
+<li><strong>Maqashid al-Falasifah</strong> — ringkasan pemikiran para filosof yang sangat akurat dan objektif</li>
+<li><strong>Tahafut al-Falasifah</strong> — bantahan terhadap 20 kesalahan para filosof, yang menjadi salah satu kitab paling berpengaruh dalam sejarah pemikiran Islam</li>
+<li><strong>Al-Qistas al-Mustaqim</strong> — kitab tentang logika yang menjelaskan metode berpikir yang benar</li>
+<li><strong>Mi'yar al-'Ilm</strong> — kitab tentang standar dan kriteria pengetahuan</li>
+</ul>
+<p>
+Kontribusi Imam Al-Ghazali dalam bidang filsafat dan logika sangat besar. Beliau berhasil menunjukkan bahwa <strong>logika</strong> sebagai alat berpikir tidak bertentangan dengan agama, dan bahkan dapat digunakan untuk memperkuat argumen-argumen keagamaan. Namun beliau juga berhasil menunjukkan bahwa <strong>filsafat metafisika</strong> yang melampaui batas akal dapat menyesatkan, dan harus dikoreksi dengan wahyu. Pendekatan yang seimbang ini menjadikan beliau sebagai salah satu pemikir paling berpengaruh dalam sejarah filsafat Islam.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG PENGGUNAAN AKAL DAN WAHYU — QS. AL-MULK: 10</div>
+<div class="arabic-text">
+وَقَالُوا لَوْ كُنَّا نَسْمَعُ أَوْ نَعْقِلُ مَا كُنَّا فِي أَصْحَابِ السَّعِيرِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa qâlû law kunnâ nasma'u aw na'qilu mâ kunnâ fî ash-hâbis-sa'îr."
+<br><br>
+<strong>Artinya:</strong> "Dan mereka berkata: 'Sekiranya kami mendengarkan atau memikirkan (peringatan itu), niscaya tidaklah kami termasuk penghuni neraka yang menyala-nyala.'"
+<br>— QS. Al-Mulk: 10
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Tasawuf dan Spiritualitas — Dimensi Batin Islam</span>
+<div class="karomah-arabic">التَّصَوُّفُ وَالرُّوحَانِيَّاتُ — الْبُعْدُ الْبَاطِنِيُّ لِلْإِسْلَامِ</div>
+<p>
+Bidang ilmu yang paling mengubah kehidupan Imam Al-Ghazali adalah <strong>tasawuf</strong> (spiritualitas Islam). Meskipun beliau sudah menguasai fikih, ilmu kalam, dan filsafat, beliau merasakan ada sesuatu yang kurang dalam hidupnya — yaitu <strong>pengalaman spiritual langsung</strong> dan <strong>keikhlasan yang murni</strong>. Kekosongan ini mendorong beliau untuk mendalami tasawuf secara serius.
+</p>
+<p>
+Imam Al-Ghazali mempelajari tasawuf dari dua sumber: <strong>kitab-kitab tasawuf</strong> dan <strong>bimbingan langsung dari guru tasawuf</strong>. Beliau membaca karya-karya sufi besar seperti Al-Harits Al-Muhasibi, Abu Thalib Al-Makki, dan Abu Yazid Al-Busthami. Namun yang paling berpengaruh adalah bimbingan langsung dari <strong>Abu Ali Al-Farmadzi</strong>, seorang guru tasawuf besar di Thus.
+</p>
+<p>
+Hasil dari pendalaman tasawuf ini adalah kitab monumental <strong>Ihya' Ulumiddin</strong> (Menghidupkan Ilmu-Ilmu Agama), yang terdiri dari empat bagian:
+</p>
+<ul>
+<li><strong>Rub' al-'Ibadat</strong> (Seperempat Ibadah) — membahas rahasia dan hakikat ibadah</li>
+<li><strong>Rub' al-'Adat</strong> (Seperempat Kebiasaan) — membahas adab dan akhlak sehari-hari</li>
+<li><strong>Rub' al-Muhlikat</strong> (Seperempat yang Membinasakan) — membahas penyakit-penyakit hati</li>
+<li><strong>Rub' al-Munjiyat</strong> (Seperempat yang Menyelamatkan) — membahas sifat-sifat terpuji</li>
+</ul>
+<p>
+Kitab <em>Ihya' Ulumiddin</em> menjadi salah satu kitab paling berpengaruh dalam sejarah Islam, dan telah diterjemahkan ke dalam hampir semua bahasa utama dunia Islam. Melalui kitab ini, Imam Al-Ghazali berhasil <strong>mendamaikan tasawuf dengan syariat</strong>, dan menunjukkan bahwa tasawuf yang benar tidak bertentangan dengan fikih, melainkan justru melengkapi dan memperdalamnya.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN IMAM AL-GHAZALI TENTANG TASAWUF — DARI IHYA' ULUMIDDIN</div>
+<div class="arabic-text">
+التَّصَوُّفُ الْحَقِيقِيُّ هُوَ تَصْفِيَةُ الْقَلْبِ عَنْ كُلِّ مَا سِوَى اللَّهِ، وَتَزْيِينُ الظَّاهِرِ وَالْبَاطِنِ بِأَخْلَاقِ رَسُولِ اللَّهِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "At-tashawwuf al-haqîqi huwa tashfiyatul-qalbi 'an kulli mâ siwallâh, wa tazyînuzh-zhâhiri wal-bâthini bi akhlâqi Rasûlillâh."
+<br><br>
+<strong>Artinya:</strong> "Tasawuf yang hakiki adalah menyucikan hati dari segala sesuatu selain Allah, dan menghiasi lahir dan batin dengan akhlak Rasulullah."
+<br>— Imam Al-Ghazali, Ihya' Ulumiddin
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Ilmu Al-Qur'an, Tafsir, dan Hadis</span>
+<div class="karomah-arabic">عُلُومُ الْقُرْآنِ وَالتَّفْسِيرُ وَالْحَدِيثُ</div>
+<p>
+Selain bidang-bidang ilmu yang telah disebutkan, Imam Al-Ghazali juga mendalami <strong>ilmu Al-Qur'an</strong>, <strong>tafsir</strong>, dan <strong>hadis</strong>. Meskipun beliau tidak menulis kitab tafsir lengkap atau kitab hadis besar seperti ulama-ulama lain yang khusus di bidang tersebut, pemahaman beliau terhadap Al-Qur'an dan hadis sangat mendalam dan tercermin dalam seluruh karya-karyanya.
+</p>
+<p>
+Dalam bidang ilmu Al-Qur'an, Imam Al-Ghazali menulis <strong>Al-Jawahir al-Qur'aniyyah</strong> — kitab yang membahas rahasia-rahasia dan permata-permata makna Al-Qur'an. Beliau juga menulis <strong>Al-Mustashfa</strong> yang banyak membahas tentang metode istinbath (pengambilan hukum) dari Al-Qur'an. Dalam kitab <em>Ihya' Ulumiddin</em>, beliau juga membahas tentang adab membaca Al-Qur'an, rahasia-rahasia ayat-ayat tertentu, dan cara mentadabburi Al-Qur'an dengan benar.
+</p>
+<p>
+Dalam bidang hadis, meskipun Imam Al-Ghazali bukan seorang muhaddits (ahli hadis) dalam arti teknis yang mengumpulkan sanad dan meriwayatkan hadis, beliau sangat memahami makna-makna hadis dan menggunakannya sebagai dasar argumentasi dalam karya-karyanya. Beliau juga sangat menekankan pentingnya <strong>mengamalkan hadis</strong> dalam kehidupan sehari-hari, bukan sekadar menghafalnya secara tekstual.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG AL-QUR'AN DAN HADIS — QS. AN-NAHL: 44</div>
+<div class="arabic-text">
+وَأَنزَلْنَا إِلَيْكَ الذِّكْرَ لِتُبَيِّنَ لِلنَّاسِ مَا نُزِّلَ إِلَيْهِمْ وَلَعَلَّهُمْ يَتَفَكَّرُونَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa anzalnâ ilaika adz-dzikra li tubayyina lin-nâsi mâ nuzzila ilayhim wa la'allahum yatafakkarûn."
+<br><br>
+<strong>Artinya:</strong> "Dan Kami turunkan kepadamu Al-Qur'an agar kamu menerangkan kepada umat manusia apa yang telah diturunkan kepada mereka dan supaya mereka memikirkan."
+<br>— QS. An-Nahl: 44
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">6</span>
+<span class="karomah-title">Integrasi Ilmu — Ciri Khas Keilmuan Al-Ghazali</span>
+<div class="karomah-arabic">تَكَامُلُ الْعُلُومِ — السِّمَةُ الْمُمَيِّزَةُ لِلْغَزَالِيِّ</div>
+<p>
+Yang paling menakjubkan dari keilmuan Imam Al-Ghazali bukanlah keluasan bidang-bidang yang beliau kuasai, melainkan <strong>kemampuannya untuk memadukan</strong> bidang-bidang yang pada zamannya sering dianggap terpisah atau bahkan bertentangan. Beliau berhasil menunjukkan bahwa:
+</p>
+<ul>
+<li><strong>Fikih dan tasawuf</strong> saling melengkapi — fikih mengatur aspek lahir ibadah, sedangkan tasawuf memperdalam aspek batinnya.</li>
+<li><strong>Ilmu kalam dan filsafat</strong> dapat berdialog — akal dapat digunakan untuk memperkuat argumen keagamaan, namun harus tetap tunduk pada wahyu dalam hal-hal yang melampaui jangkauannya.</li>
+<li><strong>Syariat dan hakikat</strong> adalah dua sisi dari satu koin — syariat tanpa hakikat akan kering dan formalistik, sedangkan hakikat tanpa syariat akan menyesatkan.</li>
+<li><strong>Akal dan wahyu</strong> tidak bertentangan — akal adalah alat untuk memahami wahyu, dan wahyu adalah panduan bagi akal agar tidak tersesat.</li>
+</ul>
+<p>
+Integrasi inilah yang menjadikan karya-karya Imam Al-Ghazali begitu komprehensif dan berpengaruh. Beliau tidak menulis kitab fikih murni, kitab tasawuf murni, atau kitab filsafat murni, melainkan menulis karya-karya yang memadukan semua dimensi ini. Kitab <em>Ihya' Ulumiddin</em> adalah contoh terbaik dari integrasi ini — sebuah kitab yang membahas fikih ibadah, namun dengan kedalaman spiritual tasawuf dan ketajaman analisis filsafat.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KESEIMBANGAN — QS. AL-BAQARAH: 201</div>
+<div class="arabic-text">
+رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Rabbanâ âtinâ fid-dunyâ hasanatan wa fil-âkhirati hasanatan wa qinâ 'adzâban-nâr."
+<br><br>
+<strong>Artinya:</strong> "Ya Tuhan kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, dan peliharalah kami dari siksa neraka."
+<br>— QS. Al-Baqarah: 201
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">7</span>
+<span class="karomah-title">Imam Al-Haramain Al-Juwaini — Guru Utama dalam Fikih dan Ilmu Kalam</span>
+<div class="karomah-arabic">إِمَامُ الْحَرَمَيْنِ الْجُوَيْنِيُّ — الشَّيْخُ الْأَوَّلُ فِي الْفِقْهِ وَالْكَلَامِ</div>
+<p>
+Di antara semua guru Imam Al-Ghazali, <strong>Imam Al-Haramain Al-Juwaini</strong> (419-478 H / 1028-1085 M) adalah yang paling berpengaruh dalam pembentukan keilmuan beliau. Nama lengkapnya adalah <em>Abdul Malik bin Abdullah bin Yusuf bin Muhammad Al-Juwaini</em>, dan beliau dikenal dengan gelar <em>Imam Al-Haramain</em> (Imam Dua Tanah Suci) karena beliau pernah mengajar di Makkah dan Madinah.
+</p>
+<p>
+Imam Al-Juwaini adalah salah satu ulama terbesar pada zamannya. Beliau menguasai berbagai bidang ilmu: fikih Syafi'i, ushul fikih, ilmu kalam Asy'ari, logika, dan ilmu debat. Beliau adalah pengajar utama di <strong>Madrasah Nizhamiyah Nishapur</strong>, dan merupakan guru dari banyak ulama besar, termasuk Imam Al-Ghazali.
+</p>
+<p>
+Dari Imam Al-Juwaini, Imam Al-Ghazali mempelajari:
+</p>
+<ul>
+<li><strong>Fikih Syafi'i</strong> secara mendalam, dari dasar-dasarnya hingga masalah-masalahnya yang paling rumit</li>
+<li><strong>Ushul fikih</strong>, yang kemudian menjadi salah satu bidang keahlian utama beliau</li>
+<li><strong>Ilmu kalam Asy'ari</strong>, yang menjadi landasan akidah beliau sepanjang hayat</li>
+<li><strong>Logika dan ilmu debat</strong>, yang sangat bermanfaat dalam karya-karya beliau kemudian</li>
+</ul>
+<p>
+Imam Al-Juwaini sangat terkesan dengan kecerdasan Imam Al-Ghazali. Beliau pernah berkata tentang muridnya ini: <em>"Al-Ghazali adalah murid yang paling cerdas yang pernah kuajar. Ia tidak hanya memahami apa yang kuajarkan, tetapi juga mampu mengembangkan dan memperdalamnya hingga melampaui apa yang kusampaikan."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG ADAB KEPADA GURU — QS. AL-KAHF: 66</div>
+<div class="arabic-text">
+قَالَ لَهُ مُوسَىٰ هَلْ أَتَّبِعُكَ عَلَىٰ أَن تُعَلِّمَنِ مِمَّا عُلِّمْتَ رُشْدًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Qâla lahû Mûsâ hal attabi'uka 'alâ an tu'allimani mimmâ 'ullimta rusydâ."
+<br><br>
+<strong>Artinya:</strong> "Musa berkata kepadanya (Khidhr): 'Bolehkah aku mengikutimu supaya kamu mengajarkan kepadaku ilmu yang benar di antara ilmu-ilmu yang telah diajarkan kepadamu?'"
+<br>— QS. Al-Kahf: 66
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">8</span>
+<span class="karomah-title">Abu Ali Al-Farmadzi — Guru Tasawuf yang Mengubah Hidup Al-Ghazali</span>
+<div class="karomah-arabic">أَبُو عَلِي الْفَرْمَذِيُّ — شَيْخُ التَّصَوُّفِ الَّذِي غَيَّرَ حَيَاةَ الْغَزَالِيِّ</div>
+<p>
+Selain Imam Al-Juwaini, guru yang sangat berpengaruh dalam kehidupan Imam Al-Ghazali adalah <strong>Abu Ali Al-Farmadzi</strong> (wafat 477 H / 1084 M). Beliau adalah seorang guru tasawuf besar yang tinggal di desa Farmadz, dekat Thus. Abu Ali Al-Farmadzi adalah murid dari <strong>Abu al-Hasan Al-Kharqani</strong>, yang merupakan murid dari <strong>Abu Yazid Al-Busthami</strong> — salah satu sufi terbesar dalam sejarah Islam.
+</p>
+<p>
+Pertemuan Imam Al-Ghazali dengan Abu Ali Al-Farmadzi terjadi ketika beliau sedang mengalami <strong>krisis spiritual</strong> yang sangat berat. Meskipun sudah menjadi ulama besar dan pengajar di Madrasah Nizhamiyah Baghdad, beliau merasakan ada kekosongan dalam jiwanya. Beliau menyadari bahwa ilmu-ilmu yang beliau miliki belum menghasilkan <strong>keikhlasan yang murni</strong> dan <strong>pengalaman spiritual langsung</strong> dengan Allah.
+</p>
+<p>
+Di bawah bimbingan Abu Ali Al-Farmadzi, Imam Al-Ghazali mempelajari:
+</p>
+<ul>
+<li><strong>Tazkiyatun nafs</strong> (penyucian jiwa) — metode membersihkan hati dari penyakit-penyakit spiritual</li>
+<li><strong>Muraqabah</strong> — pengawasan hati yang konstan terhadap kehadiran Allah</li>
+<li><strong>Dzikir dan wirid</strong> — metode berdzikir yang mendalam dan khusyuk</li>
+<li><strong>Adab dan akhlak</strong> — pembentukan karakter spiritual yang luhur</li>
+</ul>
+<p>
+Bimbingan Abu Ali Al-Farmadzi inilah yang kemudian mendorong Imam Al-Ghazali untuk meninggalkan jabatan bergengsinya di Madrasah Nizhamiyah Baghdad dan memulai <strong>pengembaraan spiritual</strong> selama sekitar 11 tahun. Pengalaman ini menjadi titik balik dalam kehidupan beliau, dan mengubahnya dari seorang ulama intelektual menjadi seorang ulama spiritual yang utuh.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN ABU ALI AL-FARMADZI TENTANG TASAWUF</div>
+<div class="arabic-text">
+مَنْ لَمْ يَذُقْ لَمْ يَعْلَمْ، وَمَنْ لَمْ يَعْلَمْ لَمْ يَعْمَلْ، وَمَنْ لَمْ يَعْمَلْ لَمْ يَصِلْ إِلَى اللَّهِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Man lam yadzuq lam ya'lam, wa man lam ya'lam lam ya'mal, wa man lam ya'mal lam yashil ilallâh."
+<br><br>
+<strong>Artinya:</strong> "Barangsiapa yang tidak merasakan (pengalaman spiritual), maka ia tidak akan mengetahui. Barangsiapa yang tidak mengetahui, maka ia tidak akan beramal. Dan barangsiapa yang tidak beramal, maka ia tidak akan sampai kepada Allah."
+<br>— Abu Ali Al-Farmadzi
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">9</span>
+<span class="karomah-title">Guru-Guru Lain dan Pengaruh Mereka</span>
+<div class="karomah-arabic">مَشَايِخُهُ الْآخَرُونَ وَتَأْثِيرُهُمْ</div>
+<p>
+Selain Imam Al-Juwaini dan Abu Ali Al-Farmadzi, Imam Al-Ghazali juga belajar dari banyak ulama lain, baik secara langsung maupun melalui kitab-kitab mereka. Di antara guru-guru beliau yang lain adalah:
+</p>
+<ul>
+<li><strong>Abu Nashr Al-Isma'ili</strong> — seorang ulama fikih di Thus yang menjadi guru pertama Imam Al-Ghazali dalam bidang fikih</li>
+<li><strong>Abu al-Hasan Al-Kharqani</strong> (melalui karya-karyanya) — seorang sufi besar yang pengaruhnya terasa dalam pemikiran tasawuf Al-Ghazali</li>
+<li><strong>Abu Yazid Al-Busthami</strong> (melalui karya-karyanya) — sufi besar yang ucapan-ucapannya banyak dikutip dalam Ihya' Ulumiddin</li>
+<li><strong>Al-Harits Al-Muhasibi</strong> (melalui karya-karyanya) — penulis kitab <em>Ar-Ri'ayah li Huquqillah</em> yang sangat mempengaruhi pemikiran tasawuf Al-Ghazali</li>
+<li><strong>Abu Thalib Al-Makki</strong> (melalui karya-karyanya) — penulis kitab <em>Qut al-Qulub</em> yang menjadi salah satu sumber utama Ihya' Ulumiddin</li>
+</ul>
+<p>
+Imam Al-Ghazali juga banyak belajar secara mandiri dengan membaca dan mengkaji karya-karya ulama terdahulu. Beliau memiliki kemampuan membaca yang sangat cepat dan daya ingat yang sangat kuat, sehingga beliau mampu menguasai banyak kitab dalam waktu yang singkat. Metode belajar mandiri ini melengkapi pendidikan formal yang beliau terima dari para guru.
+</p>
+<p>
+Yang menarik, Imam Al-Ghazali tidak pernah merasa cukup dengan ilmu yang telah beliau miliki. Beliau terus belajar dan mengembangkan pemikirannya hingga akhir hayatnya. Bahkan setelah menulis <em>Ihya' Ulumiddin</em>, beliau masih terus menulis dan memperdalam berbagai bidang ilmu. Ini menunjukkan bahwa bagi beliau, <strong>menuntut ilmu adalah perjalanan seumur hidup</strong>, bukan sekadar tahap yang harus diselesaikan.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KESUNGGUHAN DALAM MENUNTUT ILMU — QS. AL-'ANKABUT: 69</div>
+<div class="arabic-text">
+وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا ۚ وَإِنَّ اللَّهَ لَمَعَ الْمُحْسِنِينَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Walladzîna jâhadû fînâ lanahdiyannahum subulanâ. Wa innallâha lama'al-muhsinîn."
+<br><br>
+<strong>Artinya:</strong> "Dan orang-orang yang berjihad untuk (mencari keridhaan) Kami, benar-benar akan Kami tunjukkan kepada mereka jalan-jalan Kami. Dan sesungguhnya Allah benar-benar beserta orang-orang yang berbuat baik."
+<br>— QS. Al-'Ankabut: 69
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">10</span>
+<span class="karomah-title">Silsilah Keilmuan Imam Al-Ghazali</span>
+<div class="karomah-arabic">السِّلْسِلَةُ الْعِلْمِيَّةُ لِلْإِمَامِ الْغَزَالِيِّ</div>
+<p>
+Untuk memahami posisi Imam Al-Ghazali dalam sejarah keilmuan Islam, penting untuk melihat <strong>silsilah keilmuan</strong> beliau. Melalui guru-gurunya, beliau terhubung dengan tradisi keilmuan Islam yang panjang dan mulia:
+</p>
+<ul>
+<li><strong>Dalam bidang fikih Syafi'i:</strong> Imam Al-Ghazali ← Imam Al-Juwaini ← ulama-ulama Syafi'iyyah ← Imam Asy-Syafi'i (150-204 H) ← Imam Malik dan ulama Madinah ← tabi'in ← sahabat ← Rasulullah SAW</li>
+<li><strong>Dalam bidang ilmu kalam Asy'ari:</strong> Imam Al-Ghazali ← Imam Al-Juwaini ← ulama-ulama Asy'ariyyah ← Imam Abu al-Hasan Al-Asy'ari (260-324 H) ← Imam Abu Ishaq Al-Marwazi ← ulama-ulama Ahlussunnah ← sahabat ← Rasulullah SAW</li>
+<li><strong>Dalam bidang tasawuf:</strong> Imam Al-Ghazali ← Abu Ali Al-Farmadzi ← Abu al-Hasan Al-Kharqani ← Abu Yazid Al-Busthami ← Imam Ja'far Ash-Shadiq ← Imam Muhammad Al-Baqir ← Imam Ali Zainal Abidin ← Sayyidina Husain ← Sayyidina Ali dan Sayyidah Fathimah ← Rasulullah SAW</li>
+</ul>
+<p>
+Silsilah ini menunjukkan bahwa Imam Al-Ghazali bukan hanya seorang pemikir independen, melainkan juga pewaris tradisi keilmuan Islam yang panjang. Beliau menerima ilmu dari para ulama yang bersambung kepada Rasulullah SAW, kemudian mengembangkannya dan menyampaikannya kepada generasi berikutnya. Melalui murid-muridnya seperti Abu Bakar Ibn al-'Arabi dan Abu al-Walid al-Baji, pemikiran Imam Al-Ghazali menyebar ke seluruh dunia Islam dan terus berpengaruh hingga hari ini.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG WARISAN ILMU — HR. ABU DAWUD DAN AT-TIRMIDZI</div>
+<div class="arabic-text">
+الْعُلَمَاءُ وَرَثَةُ الْأَنْبِيَاءِ، وَإِنَّ الْأَنْبِيَاءَ لَمْ يُوَرِّثُوا دِينَارًا وَلَا دِرْهَمًا، وَإِنَّمَا وَرَّثُوا الْعِلْمَ، فَمَنْ أَخَذَهُ أَخَذَ بِحَظٍّ وَافِرٍ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Al-'ulamâ'u waratsatul-anbiyâ', wa inna al-anbiyâ'a lam yûritsû dînâran wa lâ dirhaman, wa innamâ warritsûl-'ilma, fa man akhadzahu akhadza bi hazhzhin wâfir."
+<br><br>
+<strong>Artinya:</strong> "Para ulama adalah pewaris para nabi. Sesungguhnya para nabi tidak mewariskan dinar maupun dirham, melainkan mewariskan ilmu. Maka barangsiapa yang mengambilnya, ia telah mengambil bagian yang banyak."
+<br>— HR. Abu Dawud, at-Tirmidzi, dan Ibnu Majah
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Bidang Ilmu dan Para Guru Imam Al-Ghazali:</strong>
+<ul>
+<li><strong>Fikih Syafi'i:</strong> Al-Wasith, Al-Wajiz, Al-Basith, Al-Mustashfa</li>
+<li><strong>Ushul Fikih:</strong> Al-Mustashfa min 'Ilm al-Ushul — salah satu kitab ushul fikih paling berpengaruh</li>
+<li><strong>Ilmu Kalam Asy'ari:</strong> Al-Iqtishad fi al-I'tiqad, Fada'ih al-Bathiniyyah</li>
+<li><strong>Filsafat dan Logika:</strong> Maqashid al-Falasifah, Tahafut al-Falasifah, Al-Qistas al-Mustaqim</li>
+<li><strong>Tasawuf:</strong> Ihya' Ulumiddin, Minhaj al-'Abidin, Al-Munqidz min adh-Dhalal</li>
+<li><strong>Ilmu Al-Qur'an:</strong> Al-Jawahir al-Qur'aniyyah</li>
+<li><strong>Guru utama fikih & kalam:</strong> Imam Al-Haramain Al-Juwaini (419-478 H)</li>
+<li><strong>Guru tasawuf:</strong> Abu Ali Al-Farmadzi (wafat 477 H)</li>
+<li><strong>Guru pertama:</strong> Abu Nashr Al-Isma'ili di Thus</li>
+<li><strong>Metode khas:</strong> Syak manhaji (keraguan metodologis) untuk mencapai yaqin (keyakinan pasti)</li>
+<li><strong>Keistimewaan utama:</strong> Integrasi fikih, kalam, filsafat, dan tasawuf dalam satu kesatuan</li>
+<li><strong>Silsilah keilmuan:</strong> Bersambung kepada Rasulullah SAW melalui fikih Syafi'i, kalam Asy'ari, dan tasawuf</li>
+</ul>
+</div>
+<h2>Doa Memohon Pemahaman Ilmu yang Mendalam</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON ILMU YANG BERMANFAAT DAN AMAL YANG DITERIMA</div>
+<div class="arabic-text">
+اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلًا مُتَقَبَّلًا، وَارْزُقْنِي فَهْمَ عُلُومِ الدِّينِ وَالتَّوْفِيقَ لِلْعَمَلِ بِهَا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Allâhumma innî as'aluka 'ilman nâfi'an, wa rizqan thayyiban, wa 'amalan mutaqabbalan, war-zuqnî fahma 'ulûmid-dîni wat-taufîqa lil-'amali bihâ."
+<br><br>
+<strong>Artinya:</strong> "Ya Allah, sesungguhnya aku memohon kepada-Mu ilmu yang bermanfaat, rezeki yang baik, dan amal yang diterima. Dan anugerahkanlah kepadaku pemahaman ilmu-ilmu agama serta taufik untuk mengamalkannya."
+</div>
+</div>
+<h2>Penutup Halaman 3</h2>
+<p>
+Demikianlah bidang-bidang ilmu yang dipelajari dan para guru yang membimbing Imam Al-Ghazali. Dari fikih Syafi'i hingga tasawuf, dari ilmu kalam hingga filsafat, beliau berhasil menguasai hampir seluruh cabang keilmuan Islam pada zamannya. Yang lebih menakjubkan, beliau tidak sekadar mempelajari ilmu-ilmu ini secara terpisah, melainkan berhasil memadukannya menjadi satu kesatuan yang utuh dan saling melengkapi.
+</p>
+<p>
+Di balik pencapaian intelektual yang luar biasa ini terdapat para guru besar yang membimbingnya: Imam Al-Haramain Al-Juwaini dalam fikih dan ilmu kalam, Abu Ali Al-Farmadzi dalam tasawuf, serta banyak ulama lain yang masing-masing memberikan kontribusi unik dalam pembentukan pemikiran beliau. Melalui guru-guru inilah, Imam Al-Ghazali terhubung dengan tradisi keilmuan Islam yang panjang dan mulia, yang bersambung kepada Rasulullah SAW.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas <strong>perjalanan spiritual</strong> Imam Al-Ghazali — krisis spiritual yang mengubah hidupnya, pengembaraan selama 11 tahun meninggalkan jabatan bergengsinya di Madrasah Nizhamiyah Baghdad, serta pengalaman-pengalaman spiritual yang membentuk beliau menjadi ulama yang utuh, memadukan kedalaman intelektual dengan kekayaan spiritual.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+وَقُل رَّبِّ زِدْنِي عِلْمًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa qur-Rabbi zidnî 'ilmâ."
+<br><br>
+<strong>Artinya:</strong> "Dan katakanlah: 'Ya Tuhanku, tambahkanlah kepadaku ilmu pengetahuan.'"
+<br>— QS. Thaha: 114
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="ghazali1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="ghazali2.html" class="article-nav-btn" title="Halaman 2: Perjalanan Menuntut Ilmu">2</a>
+<div class="nav-btn-label">Menuntut Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="ghazali3.html" class="article-nav-btn active" title="Halaman 3: Bidang Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="ghazali4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="ghazali5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="ghazali6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="ghazali7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="ghazali8.html" class="article-nav-btn" title="Halaman 8: Warisan & Karya">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="ghazali9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>
