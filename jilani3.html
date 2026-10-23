@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Halaman 3 — Perjalanan Menuntut Ilmu &amp; Bidang Ilmu yang Dipelajari Syeikh Abdul Qadir Al-Jilani - KALAM</title>
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Abdul Qadir Al-Jilani - KALAM</title>
 <style>
-/* 1. RESET & DASAR */
+html { scroll-behavior: auto !important; }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
 font-family: 'Georgia', serif;
@@ -14,16 +17,11 @@ color: #333;
 min-height: 100vh;
 line-height: 1.8;
 }
-/* 2. MEDIA QUERY TABLET */
 @media (max-width: 768px) {
-.article-container {
-max-width: 100%;
-padding: 20px;
-}
+.article-container { max-width: 100%; padding: 20px; }
 h1 { font-size: 26px; }
 .featured-img { max-width: 100%; }
 }
-/* 3. HEADER & NAVIGASI ATAS */
 header {
 background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
 padding: 20px 40px;
@@ -61,7 +59,6 @@ transition: all 0.3s ease;
 font-size: 0.95rem;
 }
 nav a:hover { background: #e94560; color: #fff; }
-/* 4. BREADCRUMB & CONTAINER */
 .breadcrumb {
 padding: 15px 40px;
 background: #eee;
@@ -75,7 +72,6 @@ max-width: 800px;
 margin: 40px auto;
 padding: 0 20px;
 }
-/* 5. ARTICLE HEADER & META */
 .article-header { margin-bottom: 30px; }
 .article-header h1 {
 font-size: 2.2rem;
@@ -114,7 +110,6 @@ font-size: 0.85rem;
 }
 .author-name { font-weight: bold; color: #333; }
 .meta-date { color: #999; }
-/* 6. GAMBAR & SHARE BAR */
 .article-image-wrapper {
 margin: 25px 0;
 border-radius: 12px;
@@ -183,7 +178,6 @@ background: #e94560;
 color: #fff;
 border-color: #e94560;
 }
-/* 7. KONTEN ARTIKEL */
 .article-content {
 font-size: 1.05rem;
 line-height: 1.9;
@@ -229,14 +223,6 @@ margin: 15px 0 20px 30px;
 margin-bottom: 10px;
 line-height: 1.7;
 }
-.article-content ol {
-margin: 15px 0 20px 30px;
-}
-.article-content ol li {
-margin-bottom: 10px;
-line-height: 1.7;
-}
-/* 8. KOTAK ARAB & KAROMAH */
 .arabic-box {
 background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
 border: 2px solid #d4af37;
@@ -263,21 +249,12 @@ line-height: 1.4;
 z-index: 2;
 }
 .arabic-text {
-font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
 font-size: 1.8rem;
 line-height: 2.8;
 color: #1a1a2e;
 direction: rtl;
 margin: 15px 0;
-}
-.latin-text {
-direction: ltr;
-text-align: center;
-font-style: italic;
-color: #8a6d2f;
-font-size: 0.95rem;
-line-height: 1.9;
-margin: 12px 0;
 }
 .arabic-translation {
 font-size: 0.95rem;
@@ -327,7 +304,7 @@ font-weight: bold;
 display: inline;
 }
 .karomah-arabic {
-font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
 font-size: 1.6rem;
 color: #d4af37;
 direction: rtl;
@@ -350,7 +327,6 @@ margin: 15px 0 0 30px;
 margin-bottom: 10px;
 line-height: 1.7;
 }
-/* 9. NAVIGASI HALAMAN (9 TOMBOL — DIATUR AGAR ELEGAN) */
 .article-nav {
 display: flex;
 justify-content: center;
@@ -397,7 +373,6 @@ display: flex;
 flex-direction: column;
 align-items: center;
 }
-/* 10. TOMBOL KEMBALI & FOOTER */
 .kalam-back-btn {
 display: block;
 text-align: center;
@@ -437,7 +412,6 @@ font-size: 0.9rem;
 margin-top: 40px;
 }
 footer span { color: #e94560; }
-/* 11. MEDIA QUERY MOBILE */
 @media (max-width: 600px) {
 body { font-size: 14px; }
 h1 { font-size: 1.5rem; }
@@ -468,7 +442,6 @@ font-size: 1rem;
 }
 .nav-btn-label { font-size: 0.65rem; }
 }
-/* PATCH UNIVERSAL v2.0 */
 @media (max-width: 600px) {
 header {
 flex-direction: column !important;
@@ -515,45 +488,41 @@ font-size: 0.9rem;
 }
 </style>
 </head>
-<body>
+<body onload="window.scrollTo(0,0)">
 <header>
 <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
 <span>K</span>ALAM
 </a>
 <nav>
 <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
-<a href="artikelwali2.html">Artikel</a>
+<a href="biografi.html.html">Artikel</a>
 </nav>
 </header>
-
 <div class="breadcrumb">
-<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Abdul Qadir Al-Jilani — Halaman 3
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Abdul Qadir Al-Jilani — Bidang Ilmu & Para Guru
 </div>
-
 <div class="article-container">
 <div class="article-header">
-<h1>Biografi Syeikh Abdul Qadir Al-Jilani Sulthanul Awliya'</h1>
-<div class="subtitle">Halaman 3 dari 9 — Bagian 2: Perjalanan Menuntut Ilmu &amp; Bidang Ilmu yang Dipelajari</div>
+<h1>Biografi Syeikh Abdul Qadir Al-Jilani</h1>
+<div class="subtitle">Halaman 3 dari 9 — Bidang Ilmu yang Dipelajari dan Para Guru Beliau di Baghdad</div>
 <div class="article-meta">
 <div class="author">
 <div class="author-avatar">MY</div>
 <div>
 <div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
-<div class="meta-date">Kamis, 22 Oktober 2026, 08:00 WIB</div>
+<div class="meta-date">Jumat, 23 Oktober 2026, 08:00 WIB</div>
 </div>
 </div>
 </div>
 </div>
-
 <div class="article-image-wrapper">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Abdul_Qadir_Jilani.jpg/440px-Abdul_Qadir_Jilani.jpg"
-alt="Syeikh Abdul Qadir Al-Jilani"
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Al-Mustansiriya_Madrasah_2.jpg/440px-Al-Mustansiriya_Madrasah_2.jpg"
+alt="Madrasah di Baghdad tempat Syeikh Abdul Qadir menuntut ilmu"
 loading="eager"
 decoding="async"
-onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Cairo_-_Islamic_district_-_Gate_of_Bab_Zuweila.jpg/440px-Cairo_-_Islamic_district_-_Gate_of_Bab_Zuweila.jpg';">
-<div class="image-caption">Sumber: kalam.web.id — Ilustrasi Syeikh Abdul Qadir Al-Jilani, Sulthanul Awliya', ulama mazhab Hanbali dan pendiri Tarekat Qadiriyah yang makamnya di Baghdad hingga kini menjadi tujuan ziarah.</div>
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Baghdad_-_Al-Mustansiriya_University_01.jpg/440px-Baghdad_-_Al-Mustansiriya_University_01.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Madrasah Al-Mustansyiriyah di Baghdad — salah satu pusat ilmu tempat Syeikh Abdul Qadir Al-Jilani menimba ilmu dari para ulama besar di zamannya</div>
 </div>
-
 <div class="share-bar">
 <span>Bagikan:</span>
 <a href="#" class="share-btn fb">f</a>
@@ -565,295 +534,388 @@ onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/com
 <button class="font-btn" onclick="changeFontSize(1)">A+</button>
 </div>
 </div>
-
 <div class="article-content" id="articleContent">
-
 <p class="lead">
-Perjalanan Syeikh Abdul Qadir Al-Jilani dari Jilan ke Baghdad bukan sekadar perpindahan geografis, melainkan perpindahan dari dunia pelajaran lokal menuju pusat peradaban keilmuan Islam. Beliau berangkat sebagai pemuda yang membawa hafalan Al-Qur'an dan bekal secukupnya, lalu kembali dalam pengertian batin sebagai seorang faqih, muhaddits, dan mursyid yang mampu menyatukan ketelitian fiqih dengan kedalaman tazkiyatun nafs.
+Selama lebih dari dua puluh lima tahun di Baghdad dan sekitarnya, Syeikh Abdul Qadir Al-Jilani menimba ilmu dari berbagai disiplin keislaman dengan kesungguhan yang luar biasa. Beliau tidak hanya mempelajari ilmu-ilmu zhahir (fikih, hadis, tafsir, nahwu-sharaf, tauhid), melainkan juga mendalami ilmu-ilmu batin (tasawuf, tazkiyatun nafs, hakikat) dari para guru besar di zamannya. Perpaduan antara ilmu zhahir dan ilmu batin inilah yang kelak menjadikan beliau seorang ulama yang sempurna — seorang faqih yang juga sufi, seorang muhaddits yang juga wali, seorang alim yang juga zahid. Beliau belajar dari puluhan guru besar, masing-masing memberikan kontribusi yang berbeda dalam pembentukan keilmuan dan spiritualitas beliau.
 </p>
-
-<h2>Keberangkatan dari Jilan ke Baghdad</h2>
-<p>
-Menurut riwayat yang masyhur, beliau meninggalkan tanah kelahirannya pada usia sekitar delapan belas hingga dua puluh tahun, kira-kira antara 488–490 H / 1095–1097 M, menuju Baghdad untuk menuntut ilmu. Ibunya membekali beliau dengan <strong>empat puluh dinar</strong> yang dijahitkan di dalam pakaian, disertai pesan yang menjadi prinsip seumur hidup: <em>jagalah kejujuran dalam setiap keadaan</em>.
-</p>
-<p>
-Dalam perjalanan itu, kafilah beliau dihadang sekelompok perampok. Ketika ditanya apakah membawa harta, beliau menjawab jujur bahwa ada empat puluh dinar yang dijahit di bajunya. Para perampok awalnya menyangka jawaban itu sindiran atau keberanian kosong. Namun ketika kepala perampok menanyakan alasan kejujuran tersebut, beliau menjawab bahwa beliau telah berjanji kepada ibunya untuk tidak berdusta.
-</p>
-<p>
-Mendengar jawaban itu, kepala perampok menangis dan berkata — menurut riwayat — bahwa seorang pemuda masih menjaga janji kepada ibunya, sementara dirinya setiap hari mengingkari janji kepada Allah. Ia lalu bertaubat dan membujuk kelompoknya untuk mengembalikan harta yang telah dirampas. Kisah ini dikenal luas sebagai <em>karomah kejujuran</em>; secara historis ia juga berfungsi sebagai cerita edukatif tentang kekuatan akhlak dalam dakwah.
-</p>
-
 <div class="arabic-box">
-<div class="arabic-label">DALIL KEJUJURAN — QS. AT-TAUBAH: 119</div>
+<div class="arabic-label">DALIL TENTANG KEUTAMAAN ILMU — QS. AL-MUJADILAH: 11</div>
 <div class="arabic-text">
-يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ وَكُونُوا مَعَ الصَّادِقِينَ
-</div>
-<div class="latin-text">
-Yā ayyuhallażīna āmanuttaqullāha wa kūnū ma‘aṣ-ṣādiqīn.
+يَرْفَعِ اللَّهُ الَّذِينَ آمَنُوا مِنكُمْ وَالَّذِينَ أُوتُوا الْعِلْمَ دَرَجَاتٍ ۚ وَاللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ
 </div>
 <div class="arabic-translation">
-<strong>Artinya:</strong> "Wahai orang-orang yang beriman, bertakwalah kepada Allah, dan hendaklah kamu bersama orang-orang yang benar (jujur)."
-<br>— QS. At-Taubah: 119
+<strong>Artinya:</strong> "Allah akan mengangkat orang-orang yang beriman di antaramu dan orang-orang yang diberi ilmu pengetahuan beberapa derajat. Dan Allah Maha Mengetahui apa yang kamu kerjakan."
+<br>— QS. Al-Mujadilah: 11
 </div>
 </div>
-
-<h2>Baghdad: Lingkungan Akademik yang Membentuk Beliau</h2>
+<h2>Bidang-Bidang Ilmu yang Dipelajari di Baghdad</h2>
 <p>
-Pada akhir abad ke-5 dan awal abad ke-6 H, Baghdad memiliki madrasah, majelis hadis, perpustakaan, ribat sufi, dan lingkaran fatwa mazhab yang hidup berdampingan. Madrasah Nizamiyah yang didirikan Nizam al-Mulk telah menjadi pusat pendidikan Syafi'i–Asy'ari, sedangkan lingkungan Hanbali memiliki majelis dan circles keilmuan sendiri. Pendidikan Abdul Qadir lebih dekat kepada <strong>lingkungan fiqih Hanbali dan majelis hadis Baghdad</strong> daripada sebuah kurikulum formal tunggal seperti yang dipahami universitas modern.
+Baghdad pada abad ke-5 dan ke-6 H adalah pusat peradaban Islam dunia, tempat berkumpulnya para ulama dari berbagai disiplin ilmu. Syeikh Abdul Qadir memanfaatkan kesempatan ini dengan sebaik-baiknya untuk mempelajari berbagai cabang ilmu keislaman. Beliau tidak membatasi diri pada satu bidang saja, melainkan mempelajari ilmu secara komprehensif — zhahir dan batin, syariat dan hakikat, aqli dan naqli. Berikut adalah bidang-bidang ilmu yang beliau pelajari secara mendalam selama di Baghdad:
+</p>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Ilmu Fikih — Madzhab Hambali</span>
+<div class="karomah-arabic">عِلْمُ الْفِقْهِ — الْمَذْهَبُ الْحَنْبَلِيُّ</div>
+<p>
+Syeikh Abdul Qadir mempelajari ilmu fikih menurut <strong>madzhab Hambali</strong> — madzhab yang didirikan oleh Imam Ahmad bin Hambal (wafat 241 H). Beliau memilih madzhab ini karena berasal dari keluarga yang mengikuti madzhab Hambali, dan karena madzhab ini dikenal dengan kedekatannya yang kuat pada nash-nash (Al-Qur'an dan Sunnah) serta minimnya penggunaan ra'yu (logika) yang berlebihan. Di Baghdad, beliau mempelajari kitab-kitab fikih Hambali seperti <em>Al-Mukhtashar</em> karya Al-Khiraqi, <em>Al-Mughni</em> karya Ibnu Qudamah, dan berbagai kitab fikih Hambali lainnya.
 </p>
 <p>
-Beliau belajar dari mulut ke mulut, membaca naskah, menyimak fatwa, berdebat dalam majelis, dan mengulang pelajaran. Pada masa itu seorang penuntut ilmu tidak cukup pandai berbicara; ia harus memiliki <em>sanad</em>, yakni rangkaian guru yang menyambungkan ilmu kepada sumbernya. Karena itu, nama para guru menjadi bagian penting dari biografi seorang ulama, termasuk biografi beliau.
+Beliau mempelajari fikih tidak hanya sebagai ilmu teoritis, melainkan sebagai panduan praktis untuk beribadah kepada Allah. Beliau memahami bahwa fikih adalah tulang punggung syariat — tanpa fikih yang benar, ibadah tidak akan sah dan amal tidak akan diterima. Beliau berkata: <em>"Barangsiapa yang beramal tanpa ilmu, maka amalnya tertolak. Dan barangsiapa yang berilmu tanpa amal, maka ilmunya menjadi hujjah (dalil) atas dirinya."</em>
 </p>
-
+</div>
 <div class="arabic-box">
-<div class="arabic-label">DALIL TENTANG SANAD &amp; AMANAH ILMU — QS. AL-HASYR: 7</div>
+<div class="arabic-label">DALIL TENTANG MENGIKUTI SUNNAH — QS. AL-HASYR: 7</div>
 <div class="arabic-text">
 وَمَا آتَاكُمُ الرَّسُولُ فَخُذُوهُ وَمَا نَهَاكُمْ عَنْهُ فَانتَهُوا
 </div>
-<div class="latin-text">
-Wa mā ātākumur-rasūlu fa khużūhu wa mā nahākum ‘anhu fantahū.
-</div>
 <div class="arabic-translation">
-<strong>Artinya:</strong> "Apa yang diberikan Rasul kepadamu, maka terimalah. Dan apa yang dilarangnya bagimu, maka tinggalkanlah."
-<br>— QS. Al-Hasyr: 7. Ayat ini menjadi dasar pentingnya menerima ilmu melalui jalur yang sahih dari Rasulullah SAW.
+<strong>Artinya:</strong> "Apa yang diberikan Rasul kepadamu, maka terimalah. Dan apa yang dilarang bagimu, maka tinggalkanlah."
+<br>— QS. Al-Hasyr: 7
 </div>
 </div>
-
-<h2>Bidang-Bidang Ilmu yang Dipelajari</h2>
-<p>
-Syeikh Abdul Qadir Al-Jilani mempelajari berbagai cabang ilmu agama secara mendalam. Berikut adalah bidang-bidang ilmu yang beliau kuasai selama masa menuntut ilmu di Baghdad:
-</p>
-
-<div class="karomah-card">
-<span class="karomah-number">1</span>
-<span class="karomah-title">Al-Qur'an dan Qira'at</span>
-<div class="karomah-arabic">الْقُرْآنُ الْكَرِيمُ وَالْقِرَاءَاتُ</div>
-<p>
-Beliau telah menghafal Al-Qur'an sejak di Jilan, lalu di Baghdad beliau memperdalam <em>qira'at</em> (variasi bacaan Al-Qur'an yang mutawatir), <em>tartil</em> (membaca dengan perlahan dan penuh perenungan), serta <em>adab tilawah</em> (adab membaca Al-Qur'an). Beliau tidak hanya menghafal lafazh-lafazh Al-Qur'an, melainkan juga memahami makna-maknanya dan mengamalkannya dalam kehidupan sehari-hari.
-</p>
-</div>
-
 <div class="karomah-card">
 <span class="karomah-number">2</span>
-<span class="karomah-title">Tafsir Al-Qur'an</span>
-<div class="karomah-arabic">عِلْمُ التَّفْسِيرِ</div>
+<span class="karomah-title">Ilmu Hadis — Riwayah dan Dirayah</span>
+<div class="karomah-arabic">عِلْمُ الْحَدِيثِ — الرِّوَايَةُ وَالدِّرَايَةُ</div>
 <p>
-Beliau mempelajari tafsir Al-Qur'an, baik <em>tafsir bil-ma'tsur</em> (tafsir dengan riwayat dari Nabi SAW dan para sahabat) maupun <em>tafsir bir-ra'yi</em> (tafsir dengan ijtihad yang terikat kaidah bahasa). Beliau mengkaji makna ayat-ayat hukum, ayat-ayat akhlak, dan ayat-ayat tasawuf dengan tetap berpegang pada kaidah bahasa Arab dan riwayat yang sahih.
+Syeikh Abdul Qadir mempelajari ilmu hadis secara mendalam — baik dari segi <em>riwayah</em> (periwayatan) maupun <em>dirayah</em> (pemahaman dan kritik hadis). Beliau mempelajari kitab-kitab hadis utama seperti <em>Shahih Al-Bukhari</em>, <em>Shahih Muslim</em>, <em>Sunan Abu Dawud</em>, <em>Sunan At-Tirmidzi</em>, <em>Sunan An-Nasa'i</em>, <em>Sunan Ibnu Majah</em>, dan <em>Musnad Ahmad bin Hambal</em>. Beliau juga mempelajari ilmu <em>musthalah al-hadis</em> (ilmu tentang kaidah-kaidah hadis), <em>jarh wa ta'dil</em> (ilmu tentang kritik perawi), dan <em>asbabul wurud</em> (sebab-sebab kedatangan hadis).
+</p>
+<p>
+Beliau mendapatkan sanad-sanad hadis yang bersambung kepada Rasulullah SAW melalui para guru beliau di Baghdad. Sanad-sanad ini menjadi harta spiritual yang sangat berharga bagi beliau, karena menjadi sarana untuk menghubungkan diri dengan Rasulullah SAW melalui rantai periwayatan yang tidak terputus. Beliau berkata: <em>"Hadis adalah warisan Rasulullah SAW. Barangsiapa yang menjaganya, maka ia telah menjaga warisan kekasih Allah. Dan barangsiapa yang menyia-nyiakannya, maka ia telah mengkhianati amanah kenabian."</em>
 </p>
 </div>
-
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENGIKUTI RASUL — QS. AN-NISA: 59</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا أَطِيعُوا اللَّهَ وَأَطِيعُوا الرَّسُولَ وَأُولِي الْأَمْرِ مِنكُمْ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, taatilah Allah dan taatilah Rasul (Nya), dan ulil amri di antara kamu."
+<br>— QS. An-Nisa: 59
+</div>
+</div>
 <div class="karomah-card">
 <span class="karomah-number">3</span>
-<span class="karomah-title">Hadis dan Mustalah Hadis</span>
-<div class="karomah-arabic">عِلْمُ الْحَدِيثِ وَمُصْطَلَحُهُ</div>
+<span class="karomah-title">Ilmu Tafsir — Penafsiran Al-Qur'an</span>
+<div class="karomah-arabic">عِلْمُ التَّفْسِيرِ — تَفْسِيرُ الْقُرْآنِ الْكَرِيمِ</div>
 <p>
-Beliau mempelajari <em>riwayat hadis</em>, <em>dirayah hadis</em>, dan <em>mustalah hadis</em> (ilmu tentang klasifikasi dan penilaian hadis). Beliau menyimak hadis dari para muhaddits Baghdad, menghafal matan dan sanad, serta mempelajari cara menggunakan hadis dalam penetapan amal. Penguasaan hadis inilah yang membuat beliau selalu merujuk kepada sunnah dalam setiap fatwa dan nasihat.
+Syeikh Abdul Qadir mempelajari ilmu tafsir Al-Qur'an dari para mufassirin di Baghdad. Beliau mempelajari tafsir <em>riwayah</em> (tafsir yang bersumber dari Rasulullah SAW, para sahabat, dan tabi'in) serta tafsir <em>dirayah</em> (tafsir yang menggunakan ijtihad dan pemahaman para ulama). Beliau mempelajari kitab-kitab tafsir seperti <em>Tafsir Ath-Thabari</em> (Jami' al-Bayan), <em>Tafsir Az-Zamakhsyari</em> (Al-Kasyaf), <em>Tafsir Ar-Razi</em> (Mafatih al-Ghaib), dan <em>Tafsir Al-Qurthubi</em> (Al-Jami' li Ahkam Al-Qur'an).
+</p>
+<p>
+Namun demikian, tafsir yang paling berpengaruh bagi Syeikh Abdul Qadir adalah tafsir isyari (tafsir spiritual) — tafsir yang menggali makna-makna batin di balik ayat-ayat Al-Qur'an. Beliau memahami bahwa Al-Qur'an memiliki empat tingkatan makna: <em>ibarah</em> (makna zhahir), <em>isyarah</em> (makna isyarat), <em>lathaif</em> (makna-makna halus), dan <em>haqa'iq</em> (makna-makna hakiki). Beliau berkata: <em>"Al-Qur'an adalah lautan yang tidak ada dasarnya. Barangsiapa yang menyelam di dalamnya, maka ia akan mendapatkan mutiara-mutiara hikmah yang tidak akan ditemukan di tempat lain."</em>
 </p>
 </div>
-
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG AL-QUR'AN — QS. AN-NISA: 82</div>
+<div class="arabic-text">
+أَفَلَا يَتَدَبَّرُونَ الْقُرْآنَ ۚ وَلَوْ كَانَ مِنْ عِندِ غَيْرِ اللَّهِ لَوَجَدُوا فِيهِ اخْتِلَافًا كَثِيرًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Maka apakah mereka tidak memperhatikan Al-Qur'an? Seandainya Al-Qur'an itu dari selain Allah, tentulah mereka mendapat pertentangan yang banyak di dalamnya."
+<br>— QS. An-Nisa: 82
+</div>
+</div>
 <div class="karomah-card">
 <span class="karomah-number">4</span>
-<span class="karomah-title">Fiqih Mazhab Hanbali</span>
-<div class="karomah-arabic">فِقْهُ الْمَذْهَبِ الْحَنْبَلِيِّ</div>
+<span class="karomah-title">Ilmu Nahwu, Sharaf, dan Bahasa Arab</span>
+<div class="karomah-arabic">عِلْمُ النَّحْوِ وَالصَّرْفِ وَاللُّغَةِ الْعَرَبِيَّةِ</div>
 <p>
-Beliau adalah seorang faqih mazhab Hanbali yang mendalam. Beliau mempelajari <em>furu' fiqih</em> (cabang-cabang fiqih) meliputi ibadah, muamalah, jual beli, utang-piutang, waris, nikah, peradilan, dan tindak pidana. Beliau juga mempelajari <em>ushul fiqih</em> (dasar-dasar istimbath hukum) seperti Al-Qur'an, sunnah, ijma', qiyas, serta kaidah-kaidah pengambilan hukum.
+Syeikh Abdul Qadir mempelajari ilmu nahwu (tata bahasa Arab), sharaf (morfologi Arab), dan balaghah (sastra Arab) secara mendalam. Beliau memahami bahwa bahasa Arab adalah kunci untuk memahami Al-Qur'an dan Sunnah — tanpa penguasaan bahasa Arab yang baik, seseorang tidak akan mampu memahami makna-makna yang terkandung di dalam nash-nash syariat. Beliau mempelajari kitab-kitab nahwu seperti <em>Al-Ajrumiyyah</em>, <em>Alfiyyah Ibnu Malik</em>, <em>Kitab Sibawaih</em>, dan berbagai kitab nahwu lainnya.
+</p>
+<p>
+Penguasaan bahasa Arab yang mendalam inilah yang kelak menjadikan Syeikh Abdul Qadir seorang khatib (penceramah) yang sangat fasih dan berpengaruh. Ceramah-ceramah beliau dikenal dengan keindahan bahasa, kedalaman makna, dan kekuatan retorisnya. Beliau mampu menyampaikan makna-makna spiritual yang sangat dalam dengan bahasa yang indah dan mudah dipahami. Beliau berkata: <em>"Bahasa Arab adalah bahasa Al-Qur'an. Barangsiapa yang menguasai bahasa Arab, maka ia telah menguasai kunci perbendaharaan ilmu Islam."</em>
 </p>
 </div>
-
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG AL-QUR'AN ARAB — QS. YUSUF: 2</div>
+<div class="arabic-text">
+إِنَّا أَنزَلْنَاهُ قُرْآنًا عَرَبِيًّا لَّعَلَّكُمْ تَعْقِلُونَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sesungguhnya Kami menurunkannya berupa Al-Qur'an dengan bahasa Arab, agar kamu memahaminya."
+<br>— QS. Yusuf: 2
+</div>
+</div>
 <div class="karomah-card">
 <span class="karomah-number">5</span>
-<span class="karomah-title">Nahwu, Sharaf, dan Balaghah</span>
-<div class="karomah-arabic">النَّحْوُ وَالصَّرْفُ وَالْبَلَاغَةُ</div>
+<span class="karomah-title">Ilmu Tauhid dan Kalam</span>
+<div class="karomah-arabic">عِلْمُ التَّوْحِيدِ وَالْكَلَامِ</div>
 <p>
-Untuk memahami teks wahyu secara presisi dan menyampaikan dakwah dengan bahasa yang kuat, beliau mempelajari <em>nahwu</em> (tata bahasa Arab), <em>sharaf</em> (morfologi Arab), dan <em>balaghah</em> (retorika Arab). Penguasaan bahasa inilah yang membuat ungkapan-ungkapan beliau dalam kitab dan majelis begitu kuat, indah, dan menyentuh hati.
+Syeikh Abdul Qadir mempelajari ilmu tauhid (akidah) dan ilmu kalam (teologi Islam) untuk memahami akidah Islam secara mendalam dan mampu berdebat dengan para filosof dan ahli kalam dari berbagai aliran. Beliau mempelajari akidah <em>Ahlus Sunnah wal Jama'ah</em> menurut madzhab Imam Ahmad bin Hambal, serta mempelajari berbagai aliran kalam seperti <em>Mu'tazilah</em>, <em>Asy'ariyah</em>, <em>Maturidiyah</em>, dan lainnya — bukan untuk mengikuti aliran-aliran tersebut, melainkan untuk memahami kelemahan-kelemahan argumen mereka dan mampu membantahnya dengan argumen yang lebih kuat.
+</p>
+<p>
+Beliau memahami bahwa ilmu tauhid adalah fondasi dari seluruh ilmu Islam — tanpa tauhid yang benar, seluruh amal tidak akan diterima oleh Allah. Beliau berkata: <em>"Tauhid adalah pokok dari seluruh agama. Barangsiapa yang kehilangan tauhid, maka ia telah kehilangan segala-galanya. Dan barangsiapa yang memiliki tauhid, maka ia telah memiliki segala-galanya."</em>
 </p>
 </div>
-
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG TAUHID — QS. AL-IKHLAS: 1-4</div>
+<div class="arabic-text">
+قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Katakanlah: 'Dialah Allah, Yang Maha Esa. Allah adalah Tuhan yang bergantung kepada-Nya segala sesuatu. Dia tiada beranak dan tidak pula diperanakkan, dan tidak ada seorang pun yang setara dengan Dia.'"
+<br>— QS. Al-Ikhlas: 1-4
+</div>
+</div>
 <div class="karomah-card">
 <span class="karomah-number">6</span>
-<span class="karomah-title">Akidah dan Ilmu Kalam Dasar</span>
-<div class="karomah-arabic">الْعَقِيدَةُ وَعِلْمُ الْكَلَامِ</div>
+<span class="karomah-title">Ilmu Tasawuf dan Tazkiyatun Nafs</span>
+<div class="karomah-arabic">عِلْمُ التَّصَوُّفِ وَتَزْكِيَةِ النَّفْسِ</div>
 <p>
-Beliau mempelajari <em>tauhid</em>, <em>sifat-sifat Allah</em>, <em>kenabian</em>, dan <em>hari akhir</em> sesuai jalan Ahlussunnah wal Jama'ah. Beliau juga mempelajari dasar-dasar <em>ilmu kalam</em> untuk memahami perdebatan teologis pada masanya, meskipun beliau tidak menjadikan ilmu kalam sebagai pusat perhatian — fokus beliau tetap pada tauhid yang murni dan amal yang shaleh.
+Selain ilmu-ilmu zhahir, Syeikh Abdul Qadir juga mendalami ilmu-ilmu batin — tasawuf dan tazkiyatun nafs (penyucian jiwa). Beliau mempelajari tasawuf dari para sufi besar di Baghdad, dan memahami bahwa ilmu zhahir saja tidak cukup untuk mencapai maqam kewalian — diperlukan juga ilmu batin yang mampu membersihkan hati dari penyakit-penyakit spiritual seperti sombong, riya', hasad, cinta dunia, dan lain-lain.
+</p>
+<p>
+Beliau mempelajari kitab-kitab tasawuf seperti <em>Qut al-Qulub</em> karya Abu Thalib Al-Makki, <em>Ihya' 'Ulumiddin</em> karya Imam Al-Ghazali, <em>Ar-Risalah al-Qusyairiyyah</em> karya Imam Al-Qusyairi, <em>At-Ta'arruf li Madzhab Ahl at-Tasawwuf</em> karya Al-Kalabadzi, dan berbagai kitab tasawuf lainnya. Namun demikian, beliau tidak hanya mempelajari tasawuf secara teoritis, melainkan juga mempraktikkannya melalui riyadhah (latihan spiritual), mujahadah (perjuangan melawan hawa nafsu), dan khalwat (menyepi) yang mendalam.
+</p>
+<p>
+Beliau berkata: <em>"Tasawuf bukanlah ilmu yang bisa dipelajari dari buku-buku saja, melainkan harus dipraktikkan melalui riyadhah dan mujahadah. Barangsiapa yang hanya mempelajari tasawuf secara teoritis tanpa mempraktikkannya, maka ia seperti orang yang mempelajari renang dari buku — ia tidak akan pernah bisa berenang sebelum ia masuk ke dalam air."</em>
 </p>
 </div>
-
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG TAZKIYATUN NAFS — QS. ASY-SYAMS: 9-10</div>
+<div class="arabic-text">
+قَدْ أَفْلَحَ مَن زَكَّاهَا ۝ وَقَدْ خَابَ مَن دَسَّاهَا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sesungguhnya beruntunglah orang yang mensucikan jiwa itu, dan sesungguhnya merugilah orang yang mengotorinya."
+<br>— QS. Asy-Syams: 9-10
+</div>
+</div>
+<h2>Para Guru Syeikh Abdul Qadir Al-Jilani di Baghdad</h2>
+<p>
+Selama menuntut ilmu di Baghdad dan sekitarnya, Syeikh Abdul Qadir belajar dari puluhan guru besar — masing-masing memberikan kontribusi yang berbeda dalam pembentukan keilmuan dan spiritualitas beliau. Berikut adalah beberapa guru beliau yang paling berpengaruh:
+</p>
 <div class="karomah-card">
 <span class="karomah-number">7</span>
-<span class="karomah-title">Tasawuf dan Tazkiyatun Nafs</span>
-<div class="karomah-arabic">التَّصَوُّفُ وَتَزْكِيَةُ النَّفْسِ</div>
+<span class="karomah-title">Syeikh Abu Sa'id Al-Makhzumi (Guru Fikih dan Tasawuf)</span>
+<div class="karomah-arabic">الشَّيْخُ أَبُو سَعِيدٍ الْمَخْزُومِيُّ — مُعَلِّمُ الْفِقْهِ وَالتَّصَوُّفِ</div>
 <p>
-Beliau mempelajari <em>tasawuf</em> (ilmu penyucian jiwa) dan <em>tazkiyatun nafs</em> (pembersian hati) melalui bimbingan mursyid. Beliau mengkaji tahapan-tahapan perjalanan spiritual seperti <em>taubat</em>, <em>muhasabah</em>, <em>mujahadah</em>, <em>dzikir</em>, <em>zuhud</em>, <em>ikhlas</em>, <em>sabar</em>, <em>ridha</em>, dan <em>muraqabah</em>. Penguasaan tasawuf inilah yang membuat beliau mampu membimbing ribuan orang dalam perjalanan rohani mereka.
+<strong>Syeikh Abu Sa'id Mubarak bin Ali Al-Makhzumi</strong> (wafat 505 H) adalah salah satu guru Syeikh Abdul Qadir yang paling berpengaruh. Beliau adalah seorang ulama besar dalam bidang fikih madzhab Hambali dan juga seorang sufi terkemuka di Baghdad. Syeikh Abdul Qadir mempelajari fikih Hambali dari beliau selama bertahun-tahun, dan juga mendapatkan bimbingan spiritual darinya.
+</p>
+<p>
+Syeikh Abu Sa'id Al-Makhzumi dikenal sebagai ulama yang sangat wara', zuhud, dan memiliki karomah yang luar biasa. Beliau adalah orang yang pertama kali memperkenalkan Syeikh Abdul Qadir kepada dunia tasawuf, dan membimbing beliau dalam perjalanan spiritual di awal-awal masa beliau di Baghdad. Beliau berkata kepada Syeikh Abdul Qadir: <em>"Wahai anakku, ilmu zhahir tanpa ilmu batin seperti tubuh tanpa ruh. Dan ilmu batin tanpa ilmu zhahir seperti ruh tanpa tubuh. Keduanya harus berjalan bersama agar engkau menjadi manusia yang sempurna."</em>
 </p>
 </div>
-
 <div class="arabic-box">
-<div class="arabic-label">DALIL KEDUDUKAN ORANG BERILMU — QS. AL-MUJADALAH: 11</div>
+<div class="arabic-label">PERKATAAN SYEIKH ABU SA'ID AL-MAKHZUMI</div>
 <div class="arabic-text">
-يَرْفَعِ اللَّهُ الَّذِينَ آمَنُوا مِنْكُمْ وَالَّذِينَ أُوتُوا الْعِلْمَ دَرَجَاتٍ
-</div>
-<div class="latin-text">
-Yarfa‘illahullażīna āmanū minkum walladzīna ūtul-‘ilma darajāt.
+الْعِلْمُ الظَّاهِرُ بِدُونِ الْعِلْمِ الْبَاطِنِ كَالْجَسَدِ بِدُونِ الرُّوحِ، وَالْعِلْمُ الْبَاطِنُ بِدُونِ الْعِلْمِ الظَّاهِرِ كَالرُّوحِ بِدُونِ الْجَسَدِ
 </div>
 <div class="arabic-translation">
-<strong>Artinya:</strong> "Allah akan meninggikan orang-orang yang beriman di antaramu dan orang-orang yang diberi ilmu pengetahuan beberapa derajat."
-<br>— QS. Al-Mujadalah: 11 (potongan ayat)
+<strong>Artinya:</strong> "Ilmu zhahir tanpa ilmu batin seperti tubuh tanpa ruh. Dan ilmu batin tanpa ilmu zhahir seperti ruh tanpa tubuh."
+<br>— Syeikh Abu Sa'id Al-Makhzumi
 </div>
 </div>
-
-<h2>Corak Keilmuan: Fiqih dan Tasawuf dalam Satu Napas</h2>
+<div class="karomah-card">
+<span class="karomah-number">8</span>
+<span class="karomah-title">Syeikh Abu Muhammad Ja'far As-Sarraj (Guru Hadis)</span>
+<div class="karomah-arabic">الشَّيْخُ أَبُو مُحَمَّدٍ جَعْفَرٌ السَّرَّاجُ — مُعَلِّمُ الْحَدِيثِ</div>
 <p>
-Ciri paling khas keilmuan beliau adalah <strong>penolakan terhadap pemisahan syariat dan hakikat</strong>. Dalam pandangannya, seseorang tidak dapat mengklaim cinta kepada Allah sementara meninggalkan shalat, menolak membayar hak orang lain, atau meremehkan hukum fiqih. Sebaliknya, fiqih tanpa keikhlasan dan kehadiran hati berpotensi menjadi formalitas kering. Karena itu beliau menuntut keduanya secara bersamaan.
+<strong>Syeikh Abu Muhammad Ja'far bin Ahmad As-Sarraj</strong> (wafat 503 H) adalah seorang muhaddits (ahli hadis) besar di Baghdad. Syeikh Abdul Qadir mempelajari ilmu hadis dari beliau, dan mendapatkan sanad-sanad hadis yang bersambung kepada Rasulullah SAW melalui rantai periwayatan yang tidak terputus.
 </p>
 <p>
-Corak ini terlihat jelas dalam kitab <em>Al-Ghunyah li Thalibi Tariq al-Haqq</em>, yang memuat bahasan tauhid, fiqih ibadah, halal-haram, adab pergaulan, sekaligus tahapan perjalanan spiritual. Buku semacam ini tidak mungkin ditulis oleh seseorang yang hanya menguasai pengalaman batin tanpa penguasaan teks dan hukum.
+Syeikh Abu Muhammad As-Sarraj dikenal sebagai ulama yang sangat teliti dalam periwayatan hadis, dan sangat ketat dalam menyeleksi perawi-perawi hadis. Beliau mengajarkan kepada Syeikh Abdul Qadir tentang pentingnya menjaga kemurnian hadis dari segala bentuk pemalsuan dan perubahan. Beliau berkata: <em>"Hadis adalah warisan Rasulullah SAW. Barangsiapa yang menambah atau mengurangi dari hadis, maka ia telah mengkhianati amanah kenabian."</em>
 </p>
-
+</div>
+<div class="karomah-card">
+<span class="karomah-number">9</span>
+<span class="karomah-title">Syeikh Abu Zakariya At-Tabrizi (Guru Nahwu dan Bahasa)</span>
+<div class="karomah-arabic">الشَّيْخُ أَبُو زَكَرِيَّا التَّبْرِيزِيُّ — مُعَلِّمُ النَّحْوِ وَاللُّغَةِ</div>
+<p>
+<strong>Syeikh Abu Zakariya Yahya bin Ali At-Tabrizi</strong> adalah seorang ulama besar dalam bidang nahwu (tata bahasa Arab) dan bahasa Arab. Syeikh Abdul Qadir mempelajari ilmu nahwu dan sharaf dari beliau, dan mendapatkan penguasaan bahasa Arab yang mendalam yang kelak menjadi salah satu kekuatan utama beliau dalam berdakwah dan berceramah.
+</p>
+<p>
+Syeikh Abu Zakariya dikenal sebagai ulama yang sangat fasih dalam berbahasa Arab, dan mampu menyampaikan makna-makna yang kompleks dengan bahasa yang indah dan mudah dipahami. Beliau mengajarkan kepada Syeikh Abdul Qadir tentang keindahan bahasa Arab dan pentingnya menguasai bahasa ini untuk memahami Al-Qur'an dan Sunnah.
+</p>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">10</span>
+<span class="karomah-title">Syeikh Abu al-Khair Hammad Ad-Dabbas (Guru Spiritual Utama)</span>
+<div class="karomah-arabic">الشَّيْخُ أَبُو الْخَيْرِ حَمَّادٌ الدَّبَّاسُ — الْمُرْشِدُ الرُّوحِيُّ الرَّئِيسِيُّ</div>
+<p>
+<strong>Syeikh Abu al-Khair Hammad bin Muslim Ad-Dabbas</strong> (wafat 503 H) adalah guru spiritual utama Syeikh Abdul Qadir yang paling berpengaruh dalam pembentukan karakter spiritual beliau. Beliau adalah seorang sufi besar yang dikenal dengan kewara'an, zuhud, dan ketatnya beliau dalam membimbing para murid.
+</p>
+<p>
+Syeikh Hammad Ad-Dabbas adalah murid dari <strong>Syeikh Abu al-Faraj At-Tartusi</strong>, yang merupakan murid dari <strong>Syeikh Abu Sa'id Al-Mubarak Al-Makhzumi</strong> (yang berbeda dengan Syeikh Abu Sa'id Al-Makhzumi yang disebut di atas) — sehingga melalui beliau, Syeikh Abdul Qadir mendapatkan silsilah spiritual yang bersambung kepada para sufi besar di Baghdad.
+</p>
+<p>
+Syeikh Hammad Ad-Dabbas dikenal sangat ketat dalam membimbing para muridnya. Beliau tidak memberikan izin kepada Syeikh Abdul Qadir untuk mengajar atau membimbing orang lain sebelum beliau yakin bahwa Syeikh Abdul Qadir telah mencapai maqam spiritual yang tinggi. Beliau pernah berkata kepada Syeikh Abdul Qadir: <em>"Wahai Abdul Qadir, janganlah engkau terburu-buru untuk mengajar orang lain. Tunggulah hingga Allah memberimu izin dan kekuatan untuk memikul beban dakwah."</em>
+</p>
+<p>
+Di bawah bimbingan Syeikh Hammad Ad-Dabbas, Syeikh Abdul Qadir menjalani riyadhah dan mujahadah yang sangat ketat selama bertahun-tahun. Beliau berpuasa berhari-hari, shalat malam berjam-jam, dan berdzikir terus-menerus. Beliau berkata tentang gurunya: <em>"Syeikh Hammad adalah orang yang membentuk jiwaku dengan api riyadhah dan air mujahadah. Tanpanya, aku tidak akan pernah mencapai maqam yang Allah anugerahkan kepadaku."</em>
+</p>
+</div>
 <div class="arabic-box">
-<div class="arabic-label">PERKATAAN SYEIKH ABDUL QADIR AL-JILANI</div>
+<div class="arabic-label">DALIL TENTANG TAAT KEPADA GURU — QS. AL-HUJURAT: 1</div>
 <div class="arabic-text">
-مَنْ عَمِلَ بِمَا عَلِمَ وَرِثَهُ اللَّهُ عِلْمَ مَا لَمْ يَعْلَمْ
-</div>
-<div class="latin-text">
-Man ‘amila bimā ‘alima waritsahullāhu ‘ilma mā lam ya‘lam.
+يَا أَيُّهَا الَّذِينَ آمَنُوا لَا تُقَدِّمُوا بَيْنَ يَدَيِ اللَّهِ وَرَسُولِهِ ۖ وَاتَّقُوا اللَّهَ ۚ إِنَّ اللَّهَ سَمِيعٌ عَلِيمٌ
 </div>
 <div class="arabic-translation">
-<strong>Artinya:</strong> "Barangsiapa mengamalkan apa yang ia ketahui, maka Allah akan mewariskan kepadanya ilmu tentang apa yang belum ia ketahui."
-<br>— Syeikh Abdul Qadir Al-Jilani, dalam kitab <em>Al-Futuh al-Ghaib</em>
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, janganlah kamu mendahului Allah dan Rasul-Nya, dan bertakwalah kepada Allah. Sesungguhnya Allah Maha Mendengar lagi Maha Mengetahui."
+<br>— QS. Al-Hujurat: 1
 </div>
 </div>
-
-<h2>Prinsip Belajar yang Dijalankan Beliau</h2>
+<div class="karomah-card">
+<span class="karomah-number">11</span>
+<span class="karomah-title">Syeikh Abu Bakr Az-Zarrad dan Guru-Guru Lainnya</span>
+<div class="karomah-arabic">الشَّيْخُ أَبُو بَكْرٍ الزَّرَّادُ وَمَشَايِخُ آخَرُونَ</div>
 <p>
-Selama masa menuntut ilmu, Syeikh Abdul Qadir Al-Jilani menjalankan beberapa prinsip yang menjadi pondasi keberhasilan beliau:
+Selain guru-guru yang telah disebutkan di atas, Syeikh Abdul Qadir juga belajar dari banyak guru lainnya, di antaranya:
 </p>
 <ul>
-<li><strong>Ilmu harus disertai adab:</strong> tanpa adab, ilmu menjadi alat kebanggaan dan kesesatan.</li>
-<li><strong>Amal adalah buah ilmu:</strong> ilmu yang tidak diamalkan tidak mengubah pemiliknya, bahkan bisa menjadi hujjah atas dirinya.</li>
-<li><strong>Syariat adalah ukuran:</strong> semua pengalaman spiritual harus diuji dengan Al-Qur'an dan sunnah, bukan dengan perasaan semata.</li>
-<li><strong>Dakwah harus menyentuh muamalah nyata:</strong> kejujuran berdagang, kebersihan penghasilan, dan keadilan sosial adalah bagian integral dari agama.</li>
-<li><strong>Tawadhu' kepada guru:</strong> beliau senantiasa rendah hati di hadapan para guru, melayani mereka, dan tidak merasa lebih pintar meskipun memiliki kecerdasan yang luar biasa.</li>
-<li><strong>Mujahadah dalam belajar:</strong> beliau tidak hanya belajar dengan akal, melainkan juga dengan hati — shalat malam, puasa, dan dzikir menjadi bagian dari proses menuntut ilmu.</li>
+<li><strong>Syeikh Abu Bakr Az-Zarrad</strong> — seorang sufi besar yang membimbing beliau dalam aspek-aspek tertentu dari tasawuf.</li>
+<li><strong>Syeikh Ali bin Yusuf Al-Hakim</strong> — seorang ulama fikih yang membimbing beliau dalam masalah-masalah fikih yang rumit.</li>
+<li><strong>Syeikh Muhammad bin Abdillah Al-Khabbaz</strong> — seorang muhaddits yang membimbing beliau dalam periwayatan hadis.</li>
+<li><strong>Syeikh Abu al-Fath Nasr ibn Ibrahim Al-Mausili</strong> — seorang ulama yang membimbing beliau dalam ilmu kalam dan tauhid.</li>
+<li><strong>Syeikh Abu al-Faraj Ali bin Ubaidillah At-Tabari</strong> — seorang faqih Hambali yang membimbing beliau dalam fikih madzhab Hambali.</li>
+<li><strong>Syeikh Abu al-Husain Muhammad bin Abi Ya'la</strong> — seorang ulama Hambali yang membimbing beliau dalam berbagai aspek keilmuan.</li>
+<li><strong>Syeikh Abu Sa'id Al-Banna</strong> — seorang sufi yang membimbing beliau dalam aspek-aspek tertentu dari tazkiyatun nafs.</li>
+<li><strong>Syeikh Abu al-Fadl Al-Qadi Abu Sa'd Al-Mukharrimi</strong> — seorang qadhi (hakim) yang membimbing beliau dalam ilmu faraidh (hukum waris) dan ilmu qadha (peradilan).</li>
 </ul>
-
-<div class="arabic-box">
-<div class="arabic-label">DOA PENUNTUT ILMU — QS. THAHA: 114</div>
-<div class="arabic-text">
-وَقُلْ رَبِّ زِدْنِي عِلْمًا
+<p>
+Dengan belajar dari begitu banyak guru, Syeikh Abdul Qadir mendapatkan ilmu yang sangat luas dan komprehensif — mencakup hampir seluruh cabang ilmu keislaman yang ada pada masa itu. Beliau menjadi seorang ulama yang sempurna dalam zhahir dan batin, syariat dan hakikat, ilmu dan amal.
+</p>
 </div>
-<div class="latin-text">
-Wa qul rabbi zidnī ‘ilmā.
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON BERKAH PARA GURU</div>
+<div class="arabic-text">
+اللَّهُمَّ ارْحَمْ مَشَايِخَنَا وَارْفَعْ دَرَجَاتِهِمْ، وَاجْزِهِمْ عَنَّا خَيْرَ الْجَزَاءِ، وَاجْعَلْنَا مِنْ تَلَامِيذِهِمُ الصَّالِحِينَ
 </div>
 <div class="arabic-translation">
-<strong>Artinya:</strong> "Dan katakanlah, 'Ya Tuhanku, tambahkanlah kepadaku ilmu pengetahuan.'"
-<br>— QS. Thaha: 114 (potongan ayat)
+<strong>Artinya:</strong> "Ya Allah, rahmatilah guru-guru kami, tinggikanlah derajat mereka, berilah mereka balasan yang terbaik atas jasa-jasa mereka kepada kami, dan jadikanlah kami termasuk murid-murid mereka yang shaleh."
 </div>
 </div>
-
+<div class="karomah-card">
+<span class="karomah-number">12</span>
+<span class="karomah-title">Silsilah Spiritual Syeikh Abdul Qadir Al-Jilani</span>
+<div class="karomah-arabic">السِّلْسِلَةُ الرُّوحِيَّةُ لِلشَّيْخِ عَبْدِ الْقَادِرِ الْجِيلَانِيِّ</div>
+<p>
+Silsilah spiritual Tarekat Qadiriyah bersambung kepada Rasulullah SAW melalui dua jalur utama — melalui Sayyidina Ali bin Abi Thalib dan melalui Sayyidina Abu Bakar Ash-Shiddiq. Silsilah melalui Sayyidina Ali adalah sebagai berikut:
+</p>
+<ul>
+<li><strong>Rasulullah SAW</strong></li>
+<li><strong>Sayyidina Ali bin Abi Thalib</strong> (k.w.)</li>
+<li><strong>Sayyidina Hasan</strong> / <strong>Sayyidina Husain</strong> (cucu Rasulullah SAW)</li>
+<li>... bersambung melalui para sufi besar ...</li>
+<li><strong>Syeikh Abu Sa'id Al-Makhzumi</strong></li>
+<li><strong>Syeikh Abu al-Faraj At-Tartusi</strong></li>
+<li><strong>Syeikh Abu al-Khair Hammad Ad-Dabbas</strong></li>
+<li><strong>Syeikh Abdul Qadir Al-Jilani</strong> (q.s.)</li>
+</ul>
+<p>
+Silsilah ini disebut <em>Adz-Dzahabiyyah</em> (silsilah emas) karena keagungannya dan karena bersambung kepada Rasulullah SAW melalui keturunan beliau. Silsilah ini menjadi salah satu keistimewaan Tarekat Qadiriyah yang membedakannya dari tarekat-tarekat lainnya.
+</p>
+<p>
+Syeikh Abdul Qadir senantiasa menjaga kehormatan silsilah ini dengan mengamalkan ajaran-ajaran yang beliau terima dari para guru beliau, dan menyampaikannya kepada para murid beliau dengan penuh amanah. Beliau berkata: <em>"Silsilah spiritual adalah amanah yang harus dijaga. Barangsiapa yang memutus silsilah, maka ia telah memutus hubungan dengan Rasulullah SAW. Dan barangsiapa yang menjaga silsilah, maka ia telah menjaga hubungan dengan kekasih Allah."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG SILSILAH KASIH SAYANG — QS. AL-ANFAL: 1</div>
+<div class="arabic-text">
+يَسْأَلُونَكَ عَنِ الْأَنفَالِ ۖ قُلِ الْأَنفَالُ لِلَّهِ وَالرَّسُولِ ۖ فَاتَّقُوا اللَّهَ وَأَصْلِحُوا ذَاتَ بَيْنِكُمْ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Mereka menanyakan kepadamu tentang (pembagian) harta rampasan perang. Katakanlah: 'Harta rampasan perang kepunyaan Allah dan Rasul.'"
+<br>— QS. Al-Anfal: 1
+</div>
+</div>
 <div class="highlight-box">
-<strong style="color: #d4af37; font-size: 1.1rem;">Ciri-ciri Perjalanan Menuntut Ilmu Syeikh Abdul Qadir Al-Jilani:</strong>
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Bidang Ilmu dan Para Guru Syeikh Abdul Qadir Al-Jilani:</strong>
 <ul>
-<li><strong>Keberangkatan dari Jilan ke Baghdad</strong> — Pada usia 18–20 tahun dengan bekal kejujuran dan hafalan Al-Qur'an</li>
-<li><strong>Peristiwa dengan perampok</strong> — Kejujuran yang mengubah hati kepala perampok</li>
-<li><strong>Lingkungan akademik Baghdad</strong> — Madrasah, majelis hadis, ribat sufi, dan lingkaran fatwa mazhab</li>
-<li><strong>Bidang ilmu yang dipelajari</strong> — Qur'an, tafsir, hadis, fiqih Hanbali, ushul fiqih, nahwu, sharaf, balaghah, akidah, dan tasawuf</li>
-<li><strong>Corak keilmuan</strong> — Menyatukan ketelitian syariat dengan kedalaman penyucian jiwa</li>
-<li><strong>Prinsip belajar</strong> — Adab, amal, syariat, muamalah, tawadhu', dan mujahadah</li>
+<li><strong>Bidang ilmu yang dipelajari:</strong> Fikih Hambali, Hadis, Tafsir, Nahwu-Sharaf, Tauhid-Kalam, Tasawuf-Tazkiyatun Nafs</li>
+<li><strong>Durasi menuntut ilmu:</strong> Lebih dari 25 tahun di Baghdad dan sekitarnya</li>
+<li><strong>Guru fikih utama:</strong> Syeikh Abu Sa'id Al-Makhzumi</li>
+<li><strong>Guru hadis:</strong> Syeikh Abu Muhammad Ja'far As-Sarraj</li>
+<li><strong>Guru nahwu:</strong> Syeikh Abu Zakariya At-Tabrizi</li>
+<li><strong>Guru spiritual utama:</strong> Syeikh Abu al-Khair Hammad Ad-Dabbas</li>
+<li><strong>Guru-guru lainnya:</strong> Syeikh Abu Bakr Az-Zarrad, Syeikh Ali Al-Hakim, Syeikh Muhammad Al-Khabbaz, Syeikh Abu al-Fath Al-Mausili, Syeikh Abu al-Faraj At-Tabari, Syeikh Abu al-Husain bin Abi Ya'la</li>
+<li><strong>Silsilah spiritual:</strong> Melalui Sayyidina Ali bin Abi Thalib — bersambung kepada Rasulullah SAW</li>
+<li><strong>Prinsip keilmuan:</strong> Perpaduan ilmu zhahir dan batin, syariat dan hakikat</li>
+<li><strong>Ciri khas:</strong> Ulama yang sempurna — faqih sekaligus sufi, muhaddits sekaligus wali</li>
 </ul>
 </div>
-
-<h2>Doa Memohon Ilmu yang Bermanfaat</h2>
+<h2>Doa Memohon Keberkahan Ilmu dan Para Guru</h2>
 <div class="arabic-box">
 <div class="arabic-label">DOA MEMOHON ILMU YANG BERMANFAAT</div>
 <div class="arabic-text">
-اللَّهُمَّ انْفَعْنِي بِمَا عَلَّمْتَنِي، وَعَلِّمْنِي مَا يَنْفَعُنِي، وَزِدْنِي عِلْمًا
-</div>
-<div class="latin-text">
-Allāhummānfa‘nī bimā ‘allamtanī, wa ‘allimnī mā yanfa‘unī, wa zidnī ‘ilmā.
+اللَّهُمَّ انْفَعْنِي بِمَا عَلَّمْتَنِي، وَعَلِّمْنِي مَا يَنْفَعُنِي، وَزِدْنِي عِلْمًا، وَاجْعَلْ عِلْمِي حُجَّةً لِي وَلَا تَجْعَلْهُ حُجَّةً عَلَيَّ
 </div>
 <div class="arabic-translation">
-<strong>Artinya:</strong> "Ya Allah, berilah manfaat kepadaku atas apa yang telah Engkau ajarkan kepadaku, ajarkanlah kepadaku apa yang bermanfaat bagiku, dan tambahkanlah kepadaku ilmu."
-<br>— Doa yang diajarkan Rasulullah SAW (HR. Ibnu Majah)
+<strong>Artinya:</strong> "Ya Allah, berilah manfaat kepadaku dengan apa yang telah Engkau ajarkan kepadaku, ajarkanlah kepadaku apa yang bermanfaat bagiku, tambahkanlah ilmu kepadaku, dan jadikanlah ilmuku sebagai hujjah (pembela) bagiku, bukan sebagai hujjah atasku."
+<br>— Doa Syeikh Abdul Qadir Al-Jilani
 </div>
 </div>
-
 <h2>Penutup Halaman 3</h2>
 <p>
-Demikianlah pembahasan tentang perjalanan menuntut ilmu Syeikh Abdul Qadir Al-Jilani — mulai dari keberangkatan dari Jilan ke Baghdad, lingkungan akademik yang membentuk beliau, bidang-bidang ilmu yang dipelajari, corak keilmuan beliau, hingga prinsip-prinsip belajar yang beliau jalankan. Perjalanan keilmuan beliau bukanlah perjalanan biasa, melainkan perjalanan seorang pemuda yang membawa bekal kejujuran dan hafalan Al-Qur'an, lalu pulang sebagai seorang faqih, muhaddits, dan mursyid yang mampu menyatukan ketelitian fiqih dengan kedalaman tazkiyatun nafs.
+Demikianlah bidang-bidang ilmu yang dipelajari dan para guru yang membimbing Syeikh Abdul Qadir Al-Jilani selama lebih dari dua puluh lima tahun di Baghdad dan sekitarnya. Perpaduan antara ilmu zhahir (fikih, hadis, tafsir, nahwu, tauhid) dan ilmu batin (tasawuf, tazkiyatun nafs) inilah yang kelak menjadikan beliau seorang ulama yang sempurna — seorang faqih yang juga sufi, seorang muhaddits yang juga wali, seorang alim yang juga zahid.
 </p>
 <p>
-Pada halaman berikutnya, kita akan membahas nama-nama para guru beliau dalam menuntut ilmu — baik guru fiqih, guru hadis, maupun guru tasawuf — yang membentuk kepribadian keilmuan dan spiritual beliau.
+Para guru beliau — Syeikh Abu Sa'id Al-Makhzumi, Syeikh Abu Muhammad As-Sarraj, Syeikh Abu Zakariya At-Tabrizi, Syeikh Abu al-Khair Hammad Ad-Dabbas, dan banyak guru lainnya — masing-masing memberikan kontribusi yang berbeda dalam pembentukan keilmuan dan spiritualitas beliau. Tanpa bimbingan mereka, Syeikh Abdul Qadir tidak akan pernah mencapai maqam kewalian yang tinggi dan pengaruh spiritual yang luas ke seluruh penjuru dunia Islam.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas perjalanan spiritual Syeikh Abdul Qadir Al-Jilani — bagaimana beliau menjalani riyadhah dan mujahadah yang sangat ketat di bawah bimbingan Syeikh Hammad Ad-Dabbas, hingga mencapai maqam kewalian yang tinggi dan mendapatkan izin dari gurunya untuk mengajar dan membimbing para murid.
 </p>
 <p>
 <em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
 </p>
-
 <div class="arabic-box">
 <div class="arabic-text">
-رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً إِنَّكَ أَنْتَ الْوَهَّابُ
-</div>
-<div class="latin-text">
-Rabbanā lā tuzigh qulūbanā ba‘da iż hadaitanā wa hab lanā min ladunka raḥmah innaka anta al-Wahhāb.
+وَقُل رَّبِّ زِدْنِي عِلْمًا
 </div>
 <div class="arabic-translation">
-<strong>Artinya:</strong> "Ya Tuhan kami, janganlah Engkau jadikan hati kami condong kepada kesesatan sesudah Engkau beri petunjuk kepada kami, dan karuniakanlah kepada kami rahmat dari sisi-Mu; sesungguhnya Engkau-lah Maha Pemberi (karunia)."
-<br>— QS. Ali Imran: 8
+<strong>Artinya:</strong> "Dan katakanlah: 'Ya Tuhanku, tambahkanlah kepadaku ilmu pengetahuan.'"
+<br>— QS. Thaha: 114
 </div>
 </div>
-
 </div>
-
-<!-- NAVIGASI 9 TOMBOL — DIATUR AGAR ELEGAN -->
+<!-- NAVIGASI 9 TOMBOL -->
 <div class="article-nav">
 <div class="nav-group">
-<a href="jilani1.html" class="article-nav-btn" title="Halaman 1">1</a>
-<div class="nav-btn-label">Halaman 1</div>
+<a href="jilani1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
 </div>
 <div class="nav-group">
-<a href="jilani2.html" class="article-nav-btn" title="Halaman 2">2</a>
-<div class="nav-btn-label">Halaman 2</div>
+<a href="jilani2.html" class="article-nav-btn" title="Halaman 2: Perjalanan Menuntut Ilmu">2</a>
+<div class="nav-btn-label">Menuntut Ilmu</div>
 </div>
 <div class="nav-group">
-<a href="jilani3.html" class="article-nav-btn active" title="Halaman 3">3</a>
-<div class="nav-btn-label">Halaman 3</div>
+<a href="jilani3.html" class="article-nav-btn active" title="Halaman 3: Bidang Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
 </div>
 <div class="nav-group">
-<a href="jilani4.html" class="article-nav-btn" title="Halaman 4">4</a>
-<div class="nav-btn-label">Halaman 4</div>
+<a href="jilani4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
 </div>
 <div class="nav-group">
-<a href="jilani5.html" class="article-nav-btn" title="Halaman 5">5</a>
-<div class="nav-btn-label">Halaman 5</div>
+<a href="jilani5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
 </div>
 <div class="nav-group">
-<a href="jilani6.html" class="article-nav-btn" title="Halaman 6">6</a>
-<div class="nav-btn-label">Halaman 6</div>
+<a href="jilani6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
 </div>
 <div class="nav-group">
-<a href="jilani7.html" class="article-nav-btn" title="Halaman 7">7</a>
-<div class="nav-btn-label">Halaman 7</div>
+<a href="jilani7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
 </div>
 <div class="nav-group">
-<a href="jilani8.html" class="article-nav-btn" title="Halaman 8">8</a>
-<div class="nav-btn-label">Halaman 8</div>
+<a href="jilani8.html" class="article-nav-btn" title="Halaman 8: Warisan Tarekat">8</a>
+<div class="nav-btn-label">Warisan</div>
 </div>
 <div class="nav-group">
-<a href="jilani9.html" class="article-nav-btn" title="Halaman 9">9</a>
-<div class="nav-btn-label">Halaman 9</div>
+<a href="jilani9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
 </div>
 </div>
-
 </div>
-
 <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
 KALAM
 <span class="btn-sub">← Kembali ke Beranda</span>
 </a>
-
+</div>
 <footer>
 <p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
 </footer>
-
 <script>
 let currentFontSize = 1.05;
 function changeFontSize(delta) {
