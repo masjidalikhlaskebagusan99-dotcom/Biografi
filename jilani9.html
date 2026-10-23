@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Halaman 9 — Penutup: Intisari, Warisan &amp; Pelajaran Syeikh Abdul Qadir Al-Jilani - KALAM</title>
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Abdul Qadir Al-Jilani - KALAM</title>
 <style>
-/* 1. RESET & DASAR */
+html { scroll-behavior: auto !important; }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
 font-family: 'Georgia', serif;
@@ -14,16 +17,11 @@ color: #333;
 min-height: 100vh;
 line-height: 1.8;
 }
-/* 2. MEDIA QUERY TABLET */
 @media (max-width: 768px) {
-.article-container {
-max-width: 100%;
-padding: 20px;
-}
+.article-container { max-width: 100%; padding: 20px; }
 h1 { font-size: 26px; }
 .featured-img { max-width: 100%; }
 }
-/* 3. HEADER & NAVIGASI ATAS */
 header {
 background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
 padding: 20px 40px;
@@ -61,7 +59,6 @@ transition: all 0.3s ease;
 font-size: 0.95rem;
 }
 nav a:hover { background: #e94560; color: #fff; }
-/* 4. BREADCRUMB & CONTAINER */
 .breadcrumb {
 padding: 15px 40px;
 background: #eee;
@@ -75,7 +72,6 @@ max-width: 800px;
 margin: 40px auto;
 padding: 0 20px;
 }
-/* 5. ARTICLE HEADER & META */
 .article-header { margin-bottom: 30px; }
 .article-header h1 {
 font-size: 2.2rem;
@@ -114,7 +110,6 @@ font-size: 0.85rem;
 }
 .author-name { font-weight: bold; color: #333; }
 .meta-date { color: #999; }
-/* 6. GAMBAR & SHARE BAR */
 .article-image-wrapper {
 margin: 25px 0;
 border-radius: 12px;
@@ -183,7 +178,6 @@ background: #e94560;
 color: #fff;
 border-color: #e94560;
 }
-/* 7. KONTEN ARTIKEL */
 .article-content {
 font-size: 1.05rem;
 line-height: 1.9;
@@ -229,14 +223,6 @@ margin: 15px 0 20px 30px;
 margin-bottom: 10px;
 line-height: 1.7;
 }
-.article-content ol {
-margin: 15px 0 20px 30px;
-}
-.article-content ol li {
-margin-bottom: 10px;
-line-height: 1.7;
-}
-/* 8. KOTAK ARAB & KAROMAH */
 .arabic-box {
 background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
 border: 2px solid #d4af37;
@@ -263,21 +249,12 @@ line-height: 1.4;
 z-index: 2;
 }
 .arabic-text {
-font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
 font-size: 1.8rem;
 line-height: 2.8;
 color: #1a1a2e;
 direction: rtl;
 margin: 15px 0;
-}
-.latin-text {
-direction: ltr;
-text-align: center;
-font-style: italic;
-color: #8a6d2f;
-font-size: 0.95rem;
-line-height: 1.9;
-margin: 12px 0;
 }
 .arabic-translation {
 font-size: 0.95rem;
@@ -327,7 +304,7 @@ font-weight: bold;
 display: inline;
 }
 .karomah-arabic {
-font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
 font-size: 1.6rem;
 color: #d4af37;
 direction: rtl;
@@ -350,7 +327,6 @@ margin: 15px 0 0 30px;
 margin-bottom: 10px;
 line-height: 1.7;
 }
-/* 9. NAVIGASI HALAMAN (9 TOMBOL — DIATUR AGAR ELEGAN) */
 .article-nav {
 display: flex;
 justify-content: center;
@@ -397,7 +373,6 @@ display: flex;
 flex-direction: column;
 align-items: center;
 }
-/* 10. TOMBOL KEMBALI & FOOTER */
 .kalam-back-btn {
 display: block;
 text-align: center;
@@ -437,7 +412,6 @@ font-size: 0.9rem;
 margin-top: 40px;
 }
 footer span { color: #e94560; }
-/* 11. MEDIA QUERY MOBILE */
 @media (max-width: 600px) {
 body { font-size: 14px; }
 h1 { font-size: 1.5rem; }
@@ -468,7 +442,6 @@ font-size: 1rem;
 }
 .nav-btn-label { font-size: 0.65rem; }
 }
-/* PATCH UNIVERSAL v2.0 */
 @media (max-width: 600px) {
 header {
 flex-direction: column !important;
@@ -515,45 +488,41 @@ font-size: 0.9rem;
 }
 </style>
 </head>
-<body>
+<body onload="window.scrollTo(0,0)">
 <header>
 <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
 <span>K</span>ALAM
 </a>
 <nav>
 <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
-<a href="artikelwali2.html">Artikel</a>
+<a href="biografi.html.html">Artikel</a>
 </nav>
 </header>
-
 <div class="breadcrumb">
-<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Abdul Qadir Al-Jilani — Halaman 9
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Abdul Qadir Al-Jilani — Penutup & Intisari
 </div>
-
 <div class="article-container">
 <div class="article-header">
-<h1>Biografi Syeikh Abdul Qadir Al-Jilani Sulthanul Awliya'</h1>
-<div class="subtitle">Halaman 9 dari 9 — Penutup: Intisari, Warisan &amp; Pelajaran</div>
+<h1>Biografi Syeikh Abdul Qadir Al-Jilani</h1>
+<div class="subtitle">Halaman 9 dari 9 — Penutup, Wafat, Wasiat, dan Intisari Kehidupan Sang Sulthonul Awliya</div>
 <div class="article-meta">
 <div class="author">
 <div class="author-avatar">MY</div>
 <div>
 <div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
-<div class="meta-date">Kamis, 22 Oktober 2026, 08:00 WIB</div>
+<div class="meta-date">Jumat, 23 Oktober 2026, 08:00 WIB</div>
 </div>
 </div>
 </div>
 </div>
-
 <div class="article-image-wrapper">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Abdul_Qadir_Jilani.jpg/440px-Abdul_Qadir_Jilani.jpg"
-alt="Syeikh Abdul Qadir Al-Jilani"
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Abdul_Qadir_Gilani_Tomb.jpg/440px-Abdul_Qadir_Gilani_Tomb.jpg"
+alt="Makam Syeikh Abdul Qadir Al-Jilani di Baghdad"
 loading="eager"
 decoding="async"
-onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Cairo_-_Islamic_district_-_Gate_of_Bab_Zuweila.jpg/440px-Cairo_-_Islamic_district_-_Gate_of_Bab_Zuweila.jpg';">
-<div class="image-caption">Sumber: kalam.web.id — Ilustrasi Syeikh Abdul Qadir Al-Jilani, Sulthanul Awliya', ulama mazhab Hanbali dan pendiri Tarekat Qadiriyah yang makamnya di Baghdad hingga kini menjadi tujuan ziarah.</div>
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Baghdad_-_Al-Mustansiriya_University_01.jpg/440px-Baghdad_-_Al-Mustansiriya_University_01.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Makam Syeikh Abdul Qadir Al-Jilani di Baghdad, Irak — tempat peristirahatan terakhir sang Sulthonul Awliya yang telah wafat pada 11 Rabiul Akhir 561 H (1166 M), dan hingga hari ini terus diziarahi oleh jutaan umat Islam dari seluruh penjuru dunia</div>
 </div>
-
 <div class="share-bar">
 <span>Bagikan:</span>
 <a href="#" class="share-btn fb">f</a>
@@ -565,385 +534,499 @@ onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/com
 <button class="font-btn" onclick="changeFontSize(1)">A+</button>
 </div>
 </div>
-
 <div class="article-content" id="articleContent">
-
 <p class="lead">
-Dari nasab yang mulia hingga majelis yang mengguncang Baghdad, dari kesunyian khalwat hingga keberanian menghadapi penguasa, seluruh perjalanan Syeikh Abdul Qadir Al-Jilani bermuara pada satu pesan yang abadi: <strong>kedekatan kepada Allah dibuktikan dengan istiqamah, bukan dengan pencarian kehebatan</strong>. Inilah intisari yang paling layak diwariskan dari seorang Sulthanul Awliya' — bukan gelar, bukan karomah, melainkan hati yang tidak berubah ketika dipuji dan tidak goyah ketika dicaci, karena hanya Allah yang dijadikan tujuan.
+Perjalanan panjang biografi Syeikh Abdul Qadir Al-Jilani — sang <em>Muhyiddin</em>, sang <em>Sulthonul Awliya</em>, sang <em>Al-Ghawts al-A'zam</em> — kini tiba di halaman terakhir. Dari kelahirannya di desa Na'if, Jilan, pada tahun 470 H, hingga wafatnya di Baghdad pada 11 Rabiul Akhir 561 H, beliau telah menapaki jalan panjang yang penuh dengan ujian, perjuangan, karomah, dan keberkahan. Beliau telah menjadi salah satu pilar peradaban spiritual Islam yang paling kokoh, dan warisannya terus mengalir seperti sungai yang tidak pernah kering selama lebih dari 850 tahun. Pada halaman terakhir ini, kita akan merenungkan akhir perjalanan beliau di dunia, wasiat-wasiat terakhir beliau, serta intisari kehidupan yang dapat kita jadikan pedoman dalam perjalanan kita sendiri menuju Allah. Semoga Allah menjadikan kita termasuk orang-orang yang mengambil manfaat dari kisah para wali-Nya.
 </p>
-
 <div class="arabic-box">
-<div class="arabic-label">DALIL PENUTUP — QS. AL-ASHR: 1–3</div>
+<div class="arabic-label">DALIL TENTANG AKHIR PERJALANAN — QS. AL-FAJR: 27-30</div>
 <div class="arabic-text">
-وَالْعَصْرِ ۝ إِنَّ الْإِنْسَانَ لَفِي خُسْرٍ ۝ إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ
-</div>
-<div class="latin-text">
-Wal-‘aṣr. Innal-insāna la-fī khusr. Illallażīna āmanū wa ‘amiluṣ-ṣāliḥāti wa tawāṣau bil-ḥaqqi wa tawāṣau biṣ-ṣabr.
+يَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ ۝ ارْجِعِي إِلَىٰ رَبِّكِ رَاضِيَةً مَّرْضِيَّةً ۝ فَادْخُلِي فِي عِبَادِي ۝ وَادْخُلِي جَنَّتِي
 </div>
 <div class="arabic-translation">
-<strong>Artinya:</strong> "Demi masa. Sesungguhnya manusia itu benar-benar dalam kerugian, kecuali orang-orang yang beriman dan mengerjakan amal shaleh dan nasihat-menasihati supaya mentaati kebenaran dan nasihat-menasihati supaya menetapi kesabaran."
-<br>— QS. Al-Ashr: 1–3. Empat unsur ini — iman, amal shaleh, pesan kebenaran, dan kesabaran — menggambarkan seluruh perjalanan beliau.
+<strong>Latin:</strong> "Yā ayyatuhan-nafsul-muṭma'innah, irji‘ī ilā rabbiki rāḍiyatan marḍiyyah, fadkhulī fī ‘ibādī, wadkhulī jannatī."
+<br><br>
+<strong>Artinya:</strong> "Wahai jiwa yang tenang! Kembalilah kepada Tuhanmu dengan hati yang ridha lagi diridhai-Nya. Maka masuklah ke dalam golongan hamba-hamba-Ku, dan masuklah ke dalam surga-Ku."
+<br>— QS. Al-Fajr: 27-30
 </div>
 </div>
-
-<h2>Intisari Lima Bagian Biografi</h2>
+<h2>Wafat Sang Sulthonul Awliya — 11 Rabiul Akhir 561 H</h2>
 <p>
-Setelah menempuh sembilan halaman pembahasan, tiba saatnya kita merangkum inti dari seluruh perjalanan hidup Syeikh Abdul Qadir Al-Jilani. Lima bagian utama biografi beliau dapat diringkas sebagai berikut:
+Setelah lebih dari empat puluh tahun berdakwah di Baghdad — mendidik ribuan murid, membimbing jutaan umat, dan menghidupkan kembali semangat keagamaan di tengah masyarakat yang telah lama kehilangan arah — Syeikh Abdul Qadir Al-Jilani wafat pada hari <strong>Senin, 11 Rabiul Akhir 561 H</strong>, bertepatan dengan <strong>21 Februari 1166 M</strong>, di kota Baghdad, dalam usia sekitar <strong>91 tahun</strong>. Wafat beliau merupakan salah satu peristiwa paling mengharukan dalam sejarah Islam abad ke-6 H, karena beliau adalah tokoh yang sangat dicintai oleh seluruh lapisan masyarakat — dari rakyat kecil hingga para penguasa.
 </p>
-
-<div class="karomah-card">
-<span class="karomah-number">1</span>
-<span class="karomah-title">Bagian 1: Pendahuluan — Pengenalan, Nasab &amp; Kelahiran</span>
-<div class="karomah-arabic">الْمُقَدِّمَةُ: التَّعْرِيفُ وَالنَّسَبُ وَالْمِيلَادُ</div>
 <p>
-Beliau adalah ulama Hanbali, mursyid tasawuf, dan keturunan Rasulullah SAW yang lahir di desa Na'if, wilayah Jilan (kini Iran) sekitar tahun 470 H / 1077 M, dan wafat di Baghdad pada 561 H / 1166 M. Nasab beliau tersambung kepada Rasulullah SAW melalui Sayyidatina Fatimah az-Zahra dan Sayyidina Ali bin Abi Thalib, dengan jalur yang paling masyhur melalui Imam Husain. Didikan ibu yang shalehah merupakan fondasi pembentukan akhlak dan keberanian moral beliau sejak kecil.
+Dalam riwayat-riwayat yang sampai kepada kita, sebelum wafat beliau sempat berkata kepada anak-anak beliau:
 </p>
-</div>
-
-<div class="karomah-card">
-<span class="karomah-number">2</span>
-<span class="karomah-title">Bagian 2: Perjalanan Menuntut Ilmu &amp; Para Guru</span>
-<div class="karomah-arabic">رِحْلَةُ طَلَبِ الْعِلْمِ وَالْمَشَائِخُ</div>
+<blockquote>
+<em>"Wahai anak-anakku, keluarlah kalian dariku, karena sesungguhnya aku sedang bersama Dzat yang tidak kalian lihat. Sesungguhnya Allah telah mengampuni aku, maka janganlah kalian bersedih. Sesungguhnya kematian adalah pertemuan dengan Allah, dan aku bergembira karenanya."</em>
+</blockquote>
 <p>
-Beliau berangkat muda ke Baghdad dengan bekal kejujuran dan hafalan Al-Qur'an, mempelajari Al-Qur'an, tafsir, hadis, fiqih Hanbali, ushul fiqih, nahwu, sharaf, balaghah, akidah, dan tasawuf dari para guru besar seperti Syeikh Abu Sa'id al-Mukharrimi, Syeikh Abu al-Fath an-Nahrawani, dan mursyid utama beliau Syeikh Abu al-Khair Hammad ad-Dabbas. Kekhasan beliau adalah menyatukan ketelitian syariat dengan kedalaman penyucian jiwa.
+Beliau juga berpesan kepada anak-anak beliau untuk senantiasa bertakwa kepada Allah, menjaga shalat, dan tidak terikat kepada dunia. Kemudian beliau mengucapkan kalimat syahadat dan membaca firman Allah:
 </p>
-</div>
-
-<div class="karomah-card">
-<span class="karomah-number">3</span>
-<span class="karomah-title">Bagian 3: Perjalanan Spiritual — Jalur Umum &amp; Khusus</span>
-<div class="karomah-arabic">الرِّحْلَةُ الرُّوحِيَّةُ: الْمَسْلَكُ الْعَامُّ وَالْخَاصُّ</div>
-<p>
-Beliau menggabungkan jalur umum berupa ketaatan syariat (taubat, istiqamah, ikhlas, muhasabah, dzikir) dengan jalur khusus berupa mujahadah, khalwat selama 25 tahun, dzikir yang dibimbing, dan bimbingan mursyid. Setelah masa penyendirian, beliau kembali ke masyarakat pada sekitar 521 H / 1127 M untuk melayani umat, mengajar, dan mengajak bertaubat.
-</p>
-</div>
-
-<div class="karomah-card">
-<span class="karomah-number">4</span>
-<span class="karomah-title">Bagian 4: Tantangan dan Konflik dalam Mengamalkan Keilmuan</span>
-<div class="karomah-arabic">التَّحَدِّيَاتُ وَالصِّرَاعَاتُ فِي تَطْبِيقِ الْعِلْمِ</div>
-<p>
-Beliau menghadapi tiga medan konflik sekaligus: konflik internal melawan hawa nafsu dan godaan popularitas, konflik dengan penyakit sosial Baghdad seperti riba, suap, manipulasi timbangan, dan kezaliman, serta ketegangan dalam dunia keilmuan dan tasawuf. Strategi beliau adalah kembali kepada sumber, menulis untuk meluruskan, tidak membalas cacian, memisahkan figur dari ajaran, menolak instrumentalisme politik, dan menjaga adab berbeda.
-</p>
-</div>
-
-<div class="karomah-card">
-<span class="karomah-number">5</span>
-<span class="karomah-title">Bagian 5: Pro Kontra Masyarakat, Ulama, dan Penguasa</span>
-<div class="karomah-arabic">مَوَاقِفُ الْعَامَّةِ وَالْعُلَمَاءِ وَالسَّلَاطِينِ</div>
-<p>
-Beliau dicintai rakyat kecil sebagai pelita dan penolong, dihormati banyak ulama besar seperti Ibnu Arabi dan Ibnu Hajar al-Haitami, dikritik sebagian ulama seperti Ibnu Taimiyah atas ucapan yang dinisbatkan kepadanya, serta direspons penguasa antara penghormatan dan kecurigaan. Sikap beliau: tidak mencari jabatan, menolak hadiah yang merusak kemerdekaan dakwah, menerima wakaf untuk kepentingan umum, menghormati penguasa tanpa membungkuk pada kezaliman, menegaskan tauhid di tengah pujian berlebihan, dan menyerahkan penilaian kepada Allah.
-</p>
-</div>
-
 <div class="arabic-box">
-<div class="arabic-label">RINGKASAN KEHIDUPAN YANG SEIMBANG — QS. AL-QASHASH: 77</div>
+<div class="arabic-label">KALIMAT TERAKHIR YANG DIUCAPKAN BELIAU — QS. AL-ANFAL: 53 (TERPILIH)</div>
 <div class="arabic-text">
-وَابْتَغِ فِيمَا آتَاكَ اللَّهُ الدَّارَ الْآخِرَةَ وَلَا تَنْسَ نَصِيبَكَ مِنَ الدُّنْيَا وَأَحْسِنْ كَمَا أَحْسَنَ اللَّهُ إِلَيْكَ وَلَا تَبْغِ الْفَسَادَ فِي الْأَرْضِ
-</div>
-<div class="latin-text">
-Wabtaghi fīmā ātākallāhud-dāral-ākhirata wa lā tansa naṣībaka minad-dunyā, wa aḥsin kamā aḥsanallāhu ilaik, wa lā tabghil-fasāda fil-arḍ.
+إِنَّ اللَّهَ لَا يُغَيِّرُ مَا بِقَوْمٍ حَتَّىٰ يُغَيِّرُوا مَا بِأَنفُسِهِمْ
 </div>
 <div class="arabic-translation">
-<strong>Artinya:</strong> "Dan carilah pada apa yang telah dianugerahkan Allah kepadamu (kebahagiaan) negeri akhirat, dan janganlah kamu melupakan bahagianmu dari (kenikmatan) duniawi dan berbuat baiklah (kepada orang lain) sebagaimana Allah telah berbuat baik kepadamu, dan janganlah kamu berbuat kerusakan di (muka) bumi."
-<br>— QS. Al-Qashash: 77. Prinsip keseimbangan antara dunia dan akhirat inilah yang dihidupkan beliau.
+<strong>Latin:</strong> "Innallāha lā yughayyiru mā biqaumin ḥattā yughayyirū mā bi-anfusihim."
+<br><br>
+<strong>Artinya:</strong> "Sesungguhnya Allah tidak akan mengubah keadaan suatu kaum sebelum mereka mengubah keadaan diri mereka sendiri."
+<br>— QS. Ar-Ra'd: 11
 </div>
 </div>
-
-<h2>Warisan yang Hidup hingga Hari Ini</h2>
 <p>
-Hampir sembilan abad telah berlalu sejak Syeikh Abdul Qadir Al-Jilani wafat pada 561 H / 1166 M, namun warisan beliau tetap hidup dan berkembang di berbagai penjuru dunia Islam. Berikut adalah empat warisan utama beliau yang masih dirasakan hingga hari ini:
+Kemudian beliau mengucapkan kalimat <em>Lā ilāha illallāh Muhammadur-Rasūlullāh</em> untuk terakhir kalinya, dan ruh beliau yang suci kembali ke hadirat Allah SWT. Inna lillahi wa inna ilaihi raji'un.
 </p>
-
+<p>
+Jenazah beliau dishalati oleh ribuan umat Islam di Baghdad, dan dimakamkan di kawasan kediaman beliau yang kemudian dibangun menjadi kompleks makam dan masjid yang megah. Hingga hari ini, makam beliau menjadi salah satu pusat ziarah terbesar di dunia Islam, dan tidak pernah sepi dari para peziarah yang datang dari berbagai penjuru dunia.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEMBALI KEPADA ALLAH — QS. AL-BAQARAH: 156</div>
+<div class="arabic-text">
+الَّذِينَ إِذَا أَصَابَتْهُم مُّصِيبَةٌ قَالُوا إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Allażīna iżā aṣābat-hum muṣībatun qālū innā lillāhi wa innā ilaihi rāji‘ūn."
+<br><br>
+<strong>Artinya:</strong> "(Yaitu) orang-orang yang apabila ditimpa musibah, mereka mengucapkan: 'Sesungguhnya kami milik Allah, dan kepada-Nyalah kami kembali.'"
+<br>— QS. Al-Baqarah: 156
+</div>
+</div>
 <div class="karomah-card">
 <span class="karomah-number">1</span>
-<span class="karomah-title">Tarekat Qadiriyah — Salah Satu Tarekat Terbesar di Dunia</span>
-<div class="karomah-arabic">الطَّرِيقَةُ الْقَادِرِيَّةُ</div>
+<span class="karomah-title">Intisari Kehidupan — Timeline Perjalanan Sang Sulthonul Awliya</span>
+<div class="karomah-arabic">خُلَاصَةُ الْحَيَاةِ — الْمَسِيرَةُ الزَّمَنِيَّةُ</div>
 <p>
-Tarekat Qadiriyah yang lahir dari bimbingan beliau berkembang menjadi salah satu jalur tasawuf paling tersebar di dunia Islam. Di Nusantara, tarekat ini masuk melalui para ulama yang belajar di Timur Tengah, terutama dari Hadhramaut, Makkah, dan Madinah. Di pesantren-pesantren Jawa, tarekat ini berkembang dalam berbagai bentuk, termasuk perpaduannya dengan Naqsyabandiyah dalam <em>Tarekat Qadiriyah wa Naqsyabandiyah</em> yang dipopulerkan oleh Syeikh Ahmad Khatib Sambas.
-</p>
-<p>
-Tarekat Qadiriyah menekankan tauhid, syariat, akhlak, dzikir, dan khidmah kepada masyarakat. Ia tidak menolak dunia, tetapi juga tidak diperbudak olehnya. Inilah wajah tarekat yang paling indah — tarekat yang hadir di tengah masyarakat dengan rahmat, bukan tarekat yang lari dari tanggung jawab.
-</p>
-</div>
-
-<div class="karomah-card">
-<span class="karomah-number">2</span>
-<span class="karomah-title">Karya Tulis yang Menjadi Rujukan Abadi</span>
-<div class="karomah-arabic">الْمُصَنَّفَاتُ الَّتِي أَصْبَحَتْ مَرْجِعًا</div>
-<p>
-Karya-karya beliau menjadi rujukan bagi para penuntut ilmu hingga hari ini:
+Berikut adalah rangkuman perjalanan kehidupan Syeikh Abdul Qadir Al-Jilani dari lahir hingga wafat:
 </p>
 <ul>
-<li><strong>Al-Futuh al-Ghaib (الْفُتُوحُ الْغَيْبِيَّةُ):</strong> kumpulan majelis yang menggugah taubat, berisi nasihat-nasihat spiritual yang disampaikan dalam bahasa yang menyentuh hati.</li>
-<li><strong>Al-Fath ar-Rabbani (الْفَتْحُ الرَّبَّانِيُّ):</strong> kumpulan nasihat rohani yang menjelaskan tahapan perjalanan spiritual dan adab seorang murid.</li>
-<li><strong>Al-Ghunyah li Thalibi Tariq al-Haqq (الْغُنْيَةُ لِطَالِبِي طَرِيقِ الْحَقِّ):</strong> pegangan komprehensif yang memuat akidah, fiqih, adab, dan tasawuf dalam satu kitab yang utuh.</li>
-<li><strong>Sirr al-Asrar (سِرُّ الْأَسْرَارِ):</strong> pedoman kewajiban lahir dan batin bagi seorang murid, menjelaskan adab-adab yang harus dijaga dalam perjalanan spiritual.</li>
+<li><strong>470 H / 1077 M</strong> — Lahir di desa Na'if, wilayah Jilan (Gilan), pesisir Laut Kaspia, Iran utara. Putra dari Abu Shalih Abdullah (keturunan Sayyidina Hasan) dan Ummul Khair Fatimah (keturunan Sayyidina Husain).</li>
+<li><strong>± 478-480 H</strong> — Menghafal Al-Qur'an dan menimba ilmu dasar dari ayahandanya.</li>
+<li><strong>± 480 H</strong> — Ayahanda wafat, beliau diasuh oleh ibu dan kakeknya, Abdullah As-Suma'i.</li>
+<li><strong>488 H / 1095 M</strong> — Berangkat ke Baghdad pada usia 18 tahun. Di perjalanan, terjadi peristiwa 60 perampok bertaubat karena kejujuran beliau.</li>
+<li><strong>488-510 H</strong> — Menuntut ilmu di Baghdad selama ± 25 tahun: fikih Hambali, hadis, tafsir, nahwu-sharaf, tauhid, dan tasawuf dari para guru besar seperti Abu Sa'id Al-Makhzumi, Abu Muhammad As-Sarraj, Abu Zakariya At-Tabrizi, dan Abu al-Khair Hammad Ad-Dabbas.</li>
+<li><strong>± 510-521 H</strong> — Berkhalwat di padang pasir Irak selama ± 11-25 tahun. Menjalani riyadhah, mujahadah, kasyf, mukasyafah, dan pertemuan dengan Khidr AS. Mencapai maqam Sulthonul Awliya.</li>
+<li><strong>521 H / 1127 M</strong> — Kembali ke Baghdad dan mulai membuka majelis ilmu. Mengajar dan membimbing para murid.</li>
+<li><strong>521-561 H</strong> — Masa dakwah selama ± 40 tahun. Membina ribuan murid, menulis kitab-kitab besar, menghadapi berbagai tantangan dan penentangan.</li>
+<li><strong>± 550 H</strong> — Tarekat Qadiriyah mulai menyebar ke berbagai wilayah di luar Baghdad.</li>
+<li><strong>11 Rabiul Akhir 561 H / 21 Februari 1166 M</strong> — Wafat di Baghdad dalam usia ± 91 tahun. Dimakamkan di Baghdad.</li>
+<li><strong>561 H - kini</strong> — Tarekat Qadiriyah menyebar ke seluruh dunia Islam, dari Afrika Utara hingga Indonesia. Makam beliau menjadi pusat ziarah jutaan umat.</li>
 </ul>
-<p>
-Sebagian redaksi karya ini merupakan catatan murid dan kompilasi kemudian, sehingga penelitian naskah tetap diperlukan untuk memastikan otentisitasnya. Namun secara substansi, karya-karya ini mencerminkan corak keilmuan beliau yang menyeimbangkan syariat dan hakikat.
-</p>
 </div>
-
-<div class="karomah-card">
-<span class="karomah-number">3</span>
-<span class="karomah-title">Tradisi Khidmah Sosial yang Menginspirasi</span>
-<div class="karomah-arabic">تَقْلِيدُ الْخِدْمَةِ الِاجْتِمَاعِيَّةِ</div>
-<p>
-Model ribat yang beliau bangun di Baghdad menjadi contoh bahwa tasawuf bukan pelarian dari persoalan sosial. Ribat beliau menerima orang miskin, membebaskan orang terlilit utang, mendidik anak yatim, dan membuka pintu taubat bagi siapa pun — termasuk pecandu, pedagang curang, dan pejabat yang ingin memperbaiki diri.
-</p>
-<p>
-Tradisi khidmah sosial ini terus hidup dalam berbagai bentuk di kalangan pengikut beliau: bantuan kepada fakir miskin, pembebasan orang terlilit utang, pendirian madrasah dan pesantren, serta pelayanan kepada masyarakat yang terzalimi. Inilah wajah Islam yang rahmatan lil-'alamin — rahmat bagi seluruh alam — yang dihidupkan beliau dalam praktik nyata.
-</p>
-</div>
-
-<div class="karomah-card">
-<span class="karomah-number">4</span>
-<span class="karomah-title">Ziarah dan Peringatan yang Menjadi Tradisi Umat</span>
-<div class="karomah-arabic">الزِّيَارَةُ وَالذِّكْرَى السَّنَوِيَّةُ</div>
-<p>
-Makam beliau di Baghdad tetap menjadi tujuan ziarah, dengan peringatan tahunan (<em>urs</em>) yang menarik peziarah dari berbagai negara. Tradisi ini hidup berdampingan dengan perbedaan pendapat fikih mengenai ziarah, istighatsah, dan tawasul — perbedaan yang sebaiknya dihadapi dengan ilmu dan adab, bukan saling menghina.
-</p>
-<p>
-Yang penting secara substansi adalah bahwa ziarah kepada para wali bukan untuk menyembah mereka, melainkan untuk mengingat Allah melalui kisah hidup mereka. Ketika seorang peziarah datang ke makam Syeikh Abdul Qadir, ia tidak datang untuk meminta kepada beliau, melainkan untuk berdoa kepada Allah dengan wasilah kecintaan kepada hamba-Nya yang shaleh. Inilah adab ziarah yang benar sesuai ajaran Ahlussunnah wal Jama'ah.
-</p>
-</div>
-
 <div class="arabic-box">
-<div class="arabic-label">DALIL TENTANG WASILAH DAN KECINTAAN KEPADA ORANG SHALIH — QS. AL-MAIDAH: 35</div>
+<div class="arabic-label">DALIL TENTANG WAKTU — QS. AL-'ASHR: 1-3</div>
 <div class="arabic-text">
-يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ وَابْتَغُوا إِلَيْهِ الْوَسِيلَةَ وَجَاهِدُوا فِي سَبِيلِهِ لَعَلَّكُمْ تُفْلِحُونَ
-</div>
-<div class="latin-text">
-Yā ayyuhallażīna āmanuttaqullāha wabtagū ilaihil-wasīlata wa jāhidū fī sabīlihī la‘allakum tufliḥūn.
+وَالْعَصْرِ ۝ إِنَّ الْإِنسَانَ لَفِي خُسْرٍ ۝ إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ
 </div>
 <div class="arabic-translation">
-<strong>Artinya:</strong> "Wahai orang-orang yang beriman, bertakwalah kepada Allah dan carilah jalan yang mendekatkan diri kepada-Nya, dan berjihadlah pada jalan-Nya, supaya kamu mendapat keberuntungan."
-<br>— QS. Al-Ma'idah: 35. Wasilah (perantara) yang paling utama adalah amal shaleh dan kecintaan kepada orang-orang shaleh.
+<strong>Latin:</strong> "Wal-‘aṣr. Innal-insāna lafī khusr. Illal-lażīna āmanū wa ‘amiluṣ-ṣāliḥāti wa tawāṣaw bil-ḥaqqi wa tawāṣaw biṣ-ṣabr."
+<br><br>
+<strong>Artinya:</strong> "Demi masa. Sesungguhnya manusia benar-benar berada dalam kerugian, kecuali orang-orang yang beriman dan mengerjakan amal saleh, dan saling menasihati supaya mentaati kebenaran, dan saling menasihati supaya menetapi kesabaran."
+<br>— QS. Al-'Ashr: 1-3
 </div>
 </div>
-
-<h2>Pelajaran untuk Kita di Masa Kini</h2>
-<p>
-Dari seluruh perjalanan hidup Syeikh Abdul Qadir Al-Jilani, kita dapat mengambil tujuh pelajaran utama yang relevan untuk diterapkan dalam kehidupan kita di masa kini:
-</p>
-
-<div class="karomah-card">
-<span class="karomah-number">1</span>
-<span class="karomah-title">Istiqamah Lebih Tinggi daripada Kehebatan</span>
-<div class="karomah-arabic">الِاسْتِقَامَةُ أَرْفَعُ مِنَ الْخَوَارِقِ</div>
-<p>
-Konsisten dalam shalat, kejujuran, dan amanah lebih bernilai daripada mengejar pengalaman luar biasa. Karomah yang paling agung menurut beliau bukanlah berjalan di atas air atau terbang di udara, melainkan istiqamah di atas syariat dan mengikuti sunnah Rasulullah SAW dalam setiap keadaan.
-</p>
-</div>
-
 <div class="karomah-card">
 <span class="karomah-number">2</span>
-<span class="karomah-title">Ilmu Sebelum Pengalaman</span>
-<div class="karomah-arabic">الْعِلْمُ قَبْلَ الذَّوْقِ</div>
+<span class="karomah-title">Intisari Ilmu dan Akhlak — Ulama yang Sempurna Zhahir dan Batin</span>
+<div class="karomah-arabic">خُلَاصَةُ الْعِلْمِ وَالْأَخْلَاقِ — عَالِمٌ كَامِلٌ ظَاهِرًا وَبَاطِنًا</div>
 <p>
-Jangan menempuh jalan rohani tanpa pegangan fiqih dan akidah yang jelas. Pengalaman spiritual yang tidak diuji dengan syariat berpotensi menjadi kesesatan. Beliau mengajarkan bahwa syariat adalah ukuran, dan semua pengalaman batin harus dikembalikan kepada Al-Qur'an dan sunnah.
+Syeikh Abdul Qadir Al-Jilani adalah sosok ulama yang sangat langka dalam sejarah Islam — seorang ulama yang menyempurnakan kedua sayap keilmuan: <strong>zhahir dan batin</strong>. Beliau bukan hanya seorang faqih yang memahami hukum-hukum Islam secara mendalam, bukan hanya seorang muhaddits yang hafal ribuan hadis, bukan hanya seorang mufassir yang memahami makna-makna Al-Qur'an, melainkan juga seorang sufi yang telah mencapai puncak maqam kewalian.
+</p>
+<p>
+Keilmuan beliau tercermin dalam:
+</p>
+<ul>
+<li><strong>Penguasaan fikih Hambali yang sangat mendalam</strong> — Beliau adalah salah satu ulama Hambali terbesar di zamannya, yang mampu menjawab berbagai permasalahan fikih yang rumit.</li>
+<li><strong>Penguasaan hadis dan sanadnya</strong> — Beliau memiliki sanad-sanad hadis yang bersambung kepada Rasulullah SAW, dan dikenal sangat teliti dalam periwayatan.</li>
+<li><strong>Penguasaan tafsir isyari</strong> — Beliau mampu menggali makna-makna spiritual yang tersembunyi di balik ayat-ayat Al-Qur'an.</li>
+<li><strong>Penguasaan bahasa Arab yang sempurna</strong> — Ceramah-ceramah beliau dikenal dengan keindahan bahasa dan kedalaman maknanya.</li>
+<li><strong>Penguasaan tauhid dan ilmu kalam</strong> — Beliau mampu berdebat dengan para filosof dan ahli kalam dengan argumen yang kuat.</li>
+</ul>
+<p>
+Akhlak beliau tercermin dalam:
+</p>
+<ul>
+<li><strong>Kerendahan hati yang luar biasa</strong> — Meskipun telah mencapai maqam Sulthonul Awliya, beliau tidak pernah menyombongkan diri.</li>
+<li><strong>Kelembutan dan kasih sayang</strong> — Beliau sangat lembut terhadap murid-murid beliau, dan sangat menyayangi fakir miskin.</li>
+<li><strong>Keberanian menegakkan kebenaran</strong> — Beliau tidak takut menegur penguasa yang zalim, meskipun berisiko.</li>
+<li><strong>Kemandirian dan kehormatan diri</strong> — Beliau menolak hadiah yang meragukan, dan tidak pernah menjual agama untuk dunia.</li>
+<li><strong>Keikhlasan yang murni</strong> — Seluruh amal beliau hanya untuk Allah, bukan untuk pujian manusia.</li>
+</ul>
+<p>
+Inilah yang menjadikan beliau sebagai teladan sempurna bagi umat Islam di setiap zaman — seorang ulama yang tidak hanya berilmu, tetapi juga berakhlak; tidak hanya beribadah, tetapi juga berdakwah; tidak hanya memikirkan akhirat, tetapi juga memperbaiki dunia.
 </p>
 </div>
-
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KESEMPURNAAN IMAN — QS. AL-BAQARAH: 208</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا ادْخُلُوا فِي السِّلْمِ كَافَّةً وَلَا تَتَّبِعُوا خُطُوَاتِ الشَّيْطَانِ ۚ إِنَّهُ لَكُمْ عَدُوٌّ مُّبِينٌ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Yā ayyuhallażīna āmanūdkhulū fis-silmi kāffah, wa lā tattabi‘ū khuṭuwātisy-syayṭān, innahū lakum ‘aduwwun mubīn."
+<br><br>
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, masuklah kamu ke dalam Islam secara keseluruhan, dan janganlah kamu mengikuti langkah-langkah setan. Sesungguhnya setan itu musuh yang nyata bagimu."
+<br>— QS. Al-Baqarah: 208
+</div>
+</div>
 <div class="karomah-card">
 <span class="karomah-number">3</span>
-<span class="karomah-title">Akhlak adalah Bukti</span>
-<div class="karomah-arabic">الْخُلُقُ بُرْهَانُ الْحَالِ</div>
+<span class="karomah-title">Intisari Perjalanan Spiritual — Dari Jilan Menuju Maqam Tertinggi</span>
+<div class="karomah-arabic">خُلَاصَةُ الرِّحْلَةِ الرُّوحِيَّةِ — مِنْ جِيلَانَ إِلَىٰ أَعْلَى الْمَقَامَاتِ</div>
 <p>
-Bila ilmu bertambah tetapi kesombongan juga bertambah, yang tumbuh bukan ma'rifah melainkan hawa nafsu. Akhlak yang mulia — rendah hati, jujur, amanah, penyayang — adalah bukti nyata dari perjalanan spiritual yang sehat. Tanpa akhlak, ilmu dan pengalaman spiritual menjadi alat kebanggaan yang merusak.
+Perjalanan spiritual Syeikh Abdul Qadir Al-Jilani adalah salah satu perjalanan spiritual paling mengagumkan dalam sejarah tasawuf Islam. Dari seorang anak desa di Jilan, beliau menapaki jalan spiritual yang sangat panjang hingga mencapai maqam Sulthonul Awliya — maqam kewalian tertinggi yang hanya dicapai oleh segelintir wali pilihan Allah di setiap zaman.
+</p>
+<p>
+Intisari perjalanan spiritual beliau:
+</p>
+<ul>
+<li><strong>Dasar yang kuat</strong> — Perjalanan beliau dimulai dengan dasar yang sangat kuat: nasab mulia, didikan keluarga shaleh, hafalan Al-Qur'an sejak muda, dan wasiat ibu untuk menjaga kebenaran.</li>
+<li><strong>Ilmu sebagai fondasi</strong> — Sebelum memasuki jalan spiritual, beliau menghabiskan lebih dari 25 tahun untuk menuntut ilmu zhahir. Ini menunjukkan bahwa tasawuf yang sejati harus dibangun di atas fondasi ilmu yang kuat.</li>
+<li><strong>Riyadhah dan mujahadah</strong> — Beliau menjalani riyadhah (latihan spiritual) dan mujahadah (perjuangan melawan nafsu) dengan sangat ketat selama masa khalwatnya. Puasa, shalat malam, dzikir, muhasabah, dan tafakkur adalah senjata utama beliau.</li>
+<li><strong>Bimbingan mursyid</strong> — Beliau tidak menempuh jalan spiritual sendirian, melainkan di bawah bimbingan seorang mursyid yang sempurna (Syeikh Hammad Ad-Dabbas). Ini menunjukkan pentingnya guru dalam perjalanan spiritual.</li>
+<li><strong>Ujian demi ujian</strong> — Beliau diuji dengan berbagai ujian: fitnah kasyf, godaan cahaya palsu, penentangan fuqaha, tuduhan bid'ah, tekanan politik, godaan harta, dan fitnah popularitas. Semua ujian itu beliau lewati dengan sabar dan tawakkal.</li>
+<li><strong>Pencapaian maqam tertinggi</strong> — Setelah melewati seluruh ujian, beliau mencapai maqam Sulthonul Awliya dan Al-Ghawts al-A'zam — maqam kewalian tertinggi yang menjadikannya sebagai pusat spiritual umat Islam di zamannya.</li>
+<li><strong>Kembali kepada masyarakat</strong> — Setelah mencapai puncak, beliau tidak menetap di puncak, melainkan kembali kepada masyarakat untuk membimbing mereka. Inilah keseimbangan antara khalwat dan jalwat yang menjadi ciri khas tasawuf Qadiri.</li>
+</ul>
+<p>
+Pelajaran terbesar dari perjalanan spiritual beliau: <em>tidak ada jalan pintas menuju Allah. Setiap maqam harus ditempuh dengan kesungguhan, kesabaran, dan keikhlasan. Dan setiap pencapaian harus diikuti dengan pengabdian yang lebih besar kepada sesama.</em>
 </p>
 </div>
-
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG PERJALANAN MENUJU ALLAH — QS. AL-'ANKABUT: 69</div>
+<div class="arabic-text">
+وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا ۚ وَإِنَّ اللَّهَ لَمَعَ الْمُحْسِنِينَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wallażīna jāhadū fīnā lanahdiannahum subulanā, wa innallāha lama‘al-muḥsinīn."
+<br><br>
+<strong>Artinya:</strong> "Dan orang-orang yang berjihad (bersungguh-sungguh) di jalan Kami, pasti Kami akan tunjukkan kepada mereka jalan-jalan Kami. Dan sesungguhnya Allah benar-benar beserta orang-orang yang berbuat baik."
+<br>— QS. Al-'Ankabut: 69
+</div>
+</div>
 <div class="karomah-card">
 <span class="karomah-number">4</span>
-<span class="karomah-title">Bersikap Tabayyun terhadap Riwayat</span>
-<div class="karomah-arabic">التَّبَيُّنُ فِي نَقْلِ الرِّوَايَاتِ</div>
+<span class="karomah-title">Wasiat-Wasiat Terakhir Sang Sulthonul Awliya</span>
+<div class="karomah-arabic">وَصَايَا الشَّيْخِ عَبْدِ الْقَادِرِ الْأَخِيرَةُ</div>
 <p>
-Tidak setiap kisah yang populer otomatis sahih; tidak setiap kritik otomatis permusuhan. Kita harus memeriksa sumber riwayat dengan teliti, membedakan antara teks yang benar-benar terbukti berasal dari beliau dan ucapan yang dinisbatkan kepadanya, serta menjaga adab dalam berbeda pendapat.
+Sebelum wafat, Syeikh Abdul Qadir Al-Jilani memberikan wasiat-wasiat yang sangat berharga kepada anak-anak, murid-murid, dan seluruh umat Islam. Wasiat-wasiat ini merupakan intisari dari seluruh ajaran beliau selama lebih dari empat puluh tahun berdakwah. Di antara wasiat-wasiat beliau yang paling penting adalah:
+</p>
+<ul>
+<li><strong>Wasiat Tauhid</strong> — "Wahai anak-anakku, jagalah tauhid kalian. Janganlah kalian menyekutukan Allah dengan sesuatu apa pun. Tauhid adalah fondasi segala kebaikan, dan syirik adalah kehancuran segala kebaikan."</li>
+<li><strong>Wasiat Shalat</strong> — "Jagalah shalat kalian, karena shalat adalah tiang agama. Barangsiapa yang meninggalkan shalat, maka ia telah meruntuhkan agamanya."</li>
+<li><strong>Wasiat Zuhud</strong> — "Janganlah kalian terikat kepada dunia. Dunia adalah ladang akhirat, maka tanamlah kebaikan di dalamnya untuk kalian petik di akhirat."</li>
+<li><strong>Wasiat Akhlak</strong> — "Berakhlaklah dengan akhlak Rasulullah SAW. Jadilah lembut terhadap sesama, pemaaf, penyayang, dan suka membantu."</li>
+<li><strong>Wasiat Silsilah</strong> — "Jagalah silsilah tarekat ini. Janganlah kalian memutusnya, karena silsilah adalah penghubung kalian kepada Rasulullah SAW."</li>
+<li><strong>Wasiat Ikhlas</strong> — "Jadikanlah seluruh amal kalian hanya untuk Allah. Janganlah kalian mencari pujian manusia, karena pujian manusia tidak akan bermanfaat bagi kalian di akhirat."</li>
+<li><strong>Wasiat Sabar</strong> — "Bersabarlah dalam menghadapi ujian. Setiap ujian yang datang adalah tanda cinta Allah kepada kalian. Maka bersyukurlah dengan sabar, dan bersabarlah dengan syukur."</li>
+<li><strong>Wasiat Doa</strong> — "Doakanlah aku setelah wafatku. Karena doa anak shaleh adalah salah satu amal yang tidak terputus."</li>
+</ul>
+<p>
+Wasiat-wasiat ini mencerminkan seluruh prinsip ajaran Syeikh Abdul Qadir: tauhid yang murni, syariat yang tegak, akhlak yang mulia, zuhud yang mendalam, dan cinta kepada Allah dan Rasul-Nya.
 </p>
 </div>
-
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN TERAKHIR SYEIKH ABDUL QADIR</div>
+<div class="arabic-text">
+أُوصِيكُمْ بِتَقْوَى اللَّهِ، فَإِنَّهَا جِمَاعُ كُلِّ خَيْرٍ، وَأُوصِيكُمْ بِطَاعَةِ اللَّهِ وَرَسُولِهِ، فَإِنَّهَا سَبِيلُ النَّجَاةِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Ūṣīkum bi-taqwallāh, fa-innahā jimā‘u kulli khayr, wa ūṣīkum bi-ṭā‘atillāhi wa rasūlih, fa-innahā sabīlun-najāh."
+<br><br>
+<strong>Artinya:</strong> "Aku wasiatkan kepada kalian dengan takwa kepada Allah, karena sesungguhnya takwa adalah induk segala kebaikan. Dan aku wasiatkan kepada kalian dengan taat kepada Allah dan Rasul-Nya, karena sesungguhnya itu adalah jalan keselamatan."
+<br>— Syeikh Abdul Qadir Al-Jilani, wasiat terakhir
+</div>
+</div>
 <div class="karomah-card">
 <span class="karomah-number">5</span>
-<span class="karomah-title">Kemandirian dari Kekuasaan</span>
-<div class="karomah-arabic">الِاسْتِقْلَالُ عَنِ السُّلْطَةِ</div>
+<span class="karomah-title">Sepuluh Pelajaran Utama dari Kehidupan Sang Sulthonul Awliya</span>
+<div class="karomah-arabic">عَشَرَةُ دُرُوسٍ رَئِيسِيَّةٍ مِنْ حَيَاةِ سُلْطَانِ الْأَوْلِيَاءِ</div>
 <p>
-Dakwah kehilangan kekuatannya ketika ia hanya menjadi pelengkap legitimasi penguasa. Beliau menolak menjual kedudukan agama kepada kekuasaan, menolak hadiah yang disertai syarat, dan tetap mengkritik kezaliman meskipun berisiko. Inilah prinsip yang membuat dakwah beliau tetap murni selama hampir sembilan abad.
+Dari perjalanan panjang kehidupan Syeikh Abdul Qadir Al-Jilani, kita dapat mengambil sepuluh pelajaran utama yang sangat berharga:
 </p>
+<ul>
+<li><strong>1. Kejujuran adalah kunci keberkahan</strong> — Wasiat ibu beliau untuk menjaga kebenaran menjadi pedoman hidupnya. Kejujuran beliau yang menyelamatkan beliau dari perampok, dan kejujuran beliau yang menjadikan dakwahnya diterima.</li>
+<li><strong>2. Ilmu adalah fondasi segala kebaikan</strong> — Sebelum menempuh jalan spiritual, beliau menghabiskan lebih dari 25 tahun untuk menuntut ilmu. Ini mengajarkan bahwa tasawuf tanpa ilmu akan tersesat, dan ilmu tanpa tasawuf akan kering.</li>
+<li><strong>3. Bimbingan guru adalah kebutuhan</strong> — Beliau tidak menempuh jalan spiritual sendirian, melainkan di bawah bimbingan Syeikh Hammad Ad-Dabbas. Ini mengajarkan bahwa kita membutuhkan guru yang membimbing kita menuju Allah.</li>
+<li><strong>4. Sabar adalah kunci segala keberhasilan</strong> — Beliau menjalani khalwat selama belasan hingga puluhan tahun, menghadapi berbagai ujian dengan sabar. Ini mengajarkan bahwa tidak ada keberhasilan tanpa kesabaran.</li>
+<li><strong>5. Syariat adalah pagar hakikat</strong> — Beliau senantiasa menekankan bahwa tasawuf tidak boleh keluar dari syariat. Ini mengajarkan bahwa hakikat tanpa syariat adalah kesesatan.</li>
+<li><strong>6. Keberanian adalah sifat para pejuang</strong> — Beliau tidak takut menegur penguasa yang zalim, tidak takut menentang pendapat yang salah, dan tidak takut menghadapi ujian. Ini mengajarkan bahwa kebenaran membutuhkan keberanian.</li>
+<li><strong>7. Kemandirian adalah kehormatan</strong> — Beliau menolak hadiah yang meragukan, tidak menjadi "ulama istana", dan menjaga kehormatan dirinya dari ketergantungan kepada manusia. Ini mengajarkan bahwa kemandirian adalah kehormatan seorang ulama.</li>
+<li><strong>8. Kasih sayang adalah bahasa dakwah</strong> — Beliau sangat lembut terhadap murid-murid beliau, sangat menyayangi fakir miskin, dan sangat peduli terhadap umat. Ini mengajarkan bahwa dakwah yang efektif adalah dakwah yang dilandasi kasih sayang.</li>
+<li><strong>9. Istiqamah adalah kunci kewalian</strong> — Beliau istiqamah dalam beribadah, istiqamah dalam berdakwah, dan istiqamah dalam menjaga prinsip-prinsipnya. Ini mengajarkan bahwa istiqamah adalah kunci segala pencapaian spiritual.</li>
+<li><strong>10. Warisan sejati adalah ilmu dan amal jariyah</strong> — Beliau tidak meninggalkan harta yang banyak, tetapi beliau meninggalkan ilmu yang bermanfaat, tarekat yang hidup, dan keturunan yang shaleh. Ini mengajarkan bahwa warisan sejati bukanlah harta, melainkan amal yang terus mengalir.</li>
+</ul>
 </div>
-
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG AMAL JARIYAH — HR. MUSLIM</div>
+<div class="arabic-text">
+إِذَا مَاتَ ابْنُ آدَمَ انْقَطَعَ عَمَلُهُ إِلَّا مِنْ ثَلَاثٍ: صَدَقَةٍ جَارِيَةٍ، وَعِلْمٍ يُنْتَفَعُ بِهِ، وَوَلَدٍ صَالِحٍ يَدْعُو لَهُ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Iżā māta ibnu Ādama inqaṭa‘a ‘amaluhū illā min ṡalāṡ: ṣadaqatin jāriyah, wa ‘ilmin yuntafa‘u bih, wa waladin ṣāliḥin yad‘ū lah."
+<br><br>
+<strong>Artinya:</strong> "Apabila anak Adam meninggal dunia, maka terputuslah amalannya kecuali dari tiga hal: sedekah jariyah, ilmu yang bermanfaat, dan anak shaleh yang mendoakannya."
+<br>— HR. Muslim, no. 1631
+</div>
+</div>
 <div class="karomah-card">
 <span class="karomah-number">6</span>
-<span class="karomah-title">Harapan untuk Semua Orang</span>
-<div class="karomah-arabic">الْرَّجَاءُ لِجَمِيعِ النَّاسِ</div>
+<span class="karomah-title">Pengaruh Syeikh Abdul Qadir Hingga Hari Ini — Warisan yang Tidak Pernah Mati</span>
+<div class="karomah-arabic">تَأْثِيرُ الشَّيْخِ عَبْدِ الْقَادِرِ إِلَىٰ يَوْمِنَا هَذَا</div>
 <p>
-Sebesar apa pun dosa seorang hamba, pintu taubat Allah tidak pernah ditutup. Beliau menyambut pecandu, pedagang curang, dan pejabat yang ingin memperbaiki diri dengan pintu harapan, bukan pintu keputusasaan. Inilah rahmat Allah yang luas — rahmat yang tidak dibatasi oleh dosa masa lalu.
-</p>
-</div>
-
-<div class="karomah-card">
-<span class="karomah-number">7</span>
-<span class="karomah-title">Hormati Wali tanpa Menuhankan Wali</span>
-<div class="karomah-arabic">تَوْقِيرُ الْأَوْلِيَاءِ دُونَ تَأْلِيهِهِمْ</div>
-<p>
-Cinta kepada orang shaleh harus memperkuat tauhid, bukan menggesernya. Menghormati Syeikh Abdul Qadir Al-Jilani berarti mengikuti ajaran beliau tentang keesaan Allah, bukan menjadikan beliau sebagai perantara yang menggantikan Allah. Inilah adab mencintai wali yang benar sesuai ajaran Ahlussunnah wal Jama'ah.
-</p>
-</div>
-
-<div class="arabic-box">
-<div class="arabic-label">DALIL TENTANG HARAPAN DAN TAUBAT — QS. AZ-ZUMAR: 53</div>
-<div class="arabic-text">
-قُلْ يَا عِبَادِيَ الَّذِينَ أَسْرَفُوا عَلَىٰ أَنْفُسِهِمْ لَا تَقْنَطُوا مِنْ رَحْمَةِ اللَّهِ إِنَّ اللَّهَ يَغْفِرُ الذُّنُوبَ جَمِيعًا إِنَّهُ هُوَ الْغَفُورُ الرَّحِيمُ
-</div>
-<div class="latin-text">
-Qul yā ‘ibādiyallażīna asrafū ‘alā anfusihim lā taqnaṭū min raḥmatillāh, innallāha yagfiruż-żunūba jamī‘ā, innahū huwal-Ghafūrur-Raḥīm.
-</div>
-<div class="arabic-translation">
-<strong>Artinya:</strong> "Katakanlah: 'Wahai hamba-hamba-Ku yang melampaui batas terhadap diri mereka sendiri, janganlah kamu berputus asa dari rahmat Allah. Sesungguhnya Allah mengampuni dosa-dosa semuanya. Sesungguhnya Dialah Yang Maha Pengampun lagi Maha Penyayang.'"
-<br>— QS. Az-Zumar: 53. Ayat ini menjadi dasar dakwah beliau yang selalu membuka pintu harapan bagi para pendosa.
-</div>
-</div>
-
-<h2>Rujukan untuk Pembacaan Lanjut</h2>
-<p>
-Bagi pembaca yang ingin mendalami lebih lanjut tentang Syeikh Abdul Qadir Al-Jilani dan ajarannya, berikut adalah beberapa rujukan yang dapat dijadikan referensi:
+Meskipun telah wafat lebih dari 850 tahun yang lalu, pengaruh Syeikh Abdul Qadir Al-Jilani terus hidup dan berkembang hingga hari ini. Di antara bukti nyata pengaruh beliau adalah:
 </p>
 <ul>
-<li><strong>Al-Ghunyah li Thalibi Tariq al-Haqq (الْغُنْيَةُ لِطَالِبِي طَرِيقِ الْحَقِّ)</strong> — karya Syeikh Abdul Qadir Al-Jilani sendiri, pegangan komprehensif akidah, fiqih, dan adab.</li>
-<li><strong>Al-Futuh al-Ghaib (الْفُتُوحُ الْغَيْبِيَّةُ)</strong> dan <strong>Al-Fath ar-Rabbani (الْفَتْحُ الرَّبَّانِيُّ)</strong> — kumpulan majelis yang dinisbatkan kepada beliau.</li>
-<li><strong>Sirr al-Asrar (سِرُّ الْأَسْرَارِ)</strong> — pedoman kewajiban lahir dan batin bagi murid.</li>
-<li><strong>Siyar A'lam an-Nubala (سِيَرُ أَعْلَامِ النُّبَلَاءِ)</strong> dan <strong>Tarikh al-Islam (تَارِيخُ الْإِسْلَامِ)</strong> — karya Imam adz-Dzahabi, sumber tarikh yang terpercaya.</li>
-<li><strong>Al-Bidayah wa an-Nihayah (الْبِدَايَةُ وَالنِّهَايَةُ)</strong> — karya Ibnu Katsir, bagian peristiwa tahun 561 H.</li>
-<li><strong>Abdul Qadir al-Jilani: Man and Sanctity</strong> — kajian modern oleh Lamya Ansab al-Jilani tentang sosok dan kewalian beliau.</li>
-<li><strong>Entri "'Abd al-Qādir al-Jīlānī"</strong> dalam <em>Encyclopaedia of Islam</em> — kajian historis akademik yang komprehensif.</li>
+<li><strong>Tarekat Qadiriyah yang tersebar di seluruh dunia</strong> — Dari Afrika Utara hingga Indonesia, dari Turki hingga Cina, jutaan umat Islam mengikuti Tarekat Qadiriyah. Di Indonesia saja, Tarekat Qadiriyah wa Naqsyabandiyah memiliki jutaan pengikut.</li>
+<li><strong>Karya-karya yang terus dipelajari</strong> — Kitab-kitab beliau seperti Al-Ghunya, Futuh al-Ghaib, dan Al-Fath ar-Rabbani terus dipelajari di pesantren-pesantren, madrasah-madrasah, dan majelis-majelis ilmu di seluruh dunia.</li>
+<li><strong>Makam yang terus diziarahi</strong> — Makam beliau di Baghdad tidak pernah sepi dari peziarah, meskipun Irak telah mengalami berbagai konflik.</li>
+<li><strong>Gelar yang diakui universal</strong> — Gelar Sulthonul Awliya, Muhyiddin, dan Al-Ghawts al-A'zam diakui oleh hampir seluruh ulama Ahlussunnah.</li>
+<li><strong>Pengaruh terhadap tarekat lain</strong> — Banyak tarekat lain yang mengambil inspirasi dari ajaran beliau, seperti Tarekat Qadiriyah wa Naqsyabandiyah, Qadiriyah wa Syadziliyyah, dan lain-lain.</li>
+<li><strong>Pengaruh terhadap peradaban Islam</strong> — Nilai-nilai yang beliau ajarkan (tauhid, syariat, akhlak, zuhud) telah membentuk wajah Islam yang moderat, penuh kasih sayang, dan berakar pada syariat.</li>
+<li><strong>Pengaruh terhadap Nusantara</strong> — Di Indonesia, ajaran beliau sangat berpengaruh melalui Tarekat Qadiriyah wa Naqsyabandiyah yang didirikan oleh Syeikh Ahmad Khatib as-Sambasi. Banyak ulama besar Indonesia yang merupakan pengikut tarekat ini.</li>
 </ul>
-
-<div class="highlight-box">
-<strong style="color: #d4af37; font-size: 1.1rem;">Penutup: Satu Kalimat yang Layak Dibawa Pulang</strong>
-<p style="margin-top:15px;">
-Beliau tidak mengajarkan manusia mengejar kemampuan berjalan di atas air; beliau mengajarkan manusia berjalan di atas kebenaran. Beliau tidak mengajak orang mengejar pujian para wali; beliau mengajak orang menjadi hamba yang istiqamah. Dan di situlah letak karomah yang paling abadi: <strong>hati yang tidak berubah ketika dipuji, dan tidak goyah ketika dicaci, karena hanya Allah yang dijadikan tujuan</strong>.
+<p>
+Pengaruh yang begitu luas dan bertahan selama lebih dari 850 tahun ini adalah bukti nyata bahwa Syeikh Abdul Qadir adalah seorang wali Allah yang sejati, yang telah mencapai maqam kewalian tertinggi, dan yang warisannya akan terus mengalir hingga hari kiamat.
 </p>
 </div>
-
-<h2>Doa Penutup</h2>
 <div class="arabic-box">
-<div class="arabic-label">DOA PENUTUP — QS. AL-BAQARAH: 201</div>
+<div class="arabic-label">DALIL TENTANG KEMENANGAN KEBENARAN — QS. AL-ISRA: 81</div>
+<div class="arabic-text">
+وَقُلْ جَاءَ الْحَقُّ وَزَهَقَ الْبَاطِلُ ۚ إِنَّ الْبَاطِلَ كَانَ زَهُوقًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa qul jā'al-ḥaqqu wa zahaqal-bāṭil, innal-bāṭila kāna zahūqā."
+<br><br>
+<strong>Artinya:</strong> "Dan katakanlah: 'Yang benar telah datang dan yang batil telah lenyap.' Sesungguhnya yang batil itu adalah sesuatu yang pasti lenyap."
+<br>— QS. Al-Isra': 81
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">7</span>
+<span class="karomah-title">Pesan untuk Generasi Sekarang — Meneladani Sang Sulthonul Awliya di Era Modern</span>
+<div class="karomah-arabic">رِسَالَةٌ لِلْجِيلِ الْحَاضِرِ — الِاقْتِدَاءُ بِسُلْطَانِ الْأَوْلِيَاءِ فِي الْعَصْرِ الْحَدِيثِ</div>
+<p>
+Di era modern ini, ketika umat Islam menghadapi berbagai tantangan baru — globalisasi, sekularisasi, materialisme, dan krisis moral — ajaran Syeikh Abdul Qadir Al-Jilani menjadi semakin relevan. Berikut adalah beberapa pesan beliau yang sangat penting untuk generasi sekarang:
+</p>
+<ul>
+<li><strong>Jangan terikat kepada dunia</strong> — Di era materialisme, ajaran zuhud beliau menjadi sangat penting. Bukan berarti kita harus menjadi miskin, tetapi kita harus menjadikan dunia sebagai sarana, bukan tujuan.</li>
+<li><strong>Jaga syariat dengan sempurna</strong> — Di era liberalisme, ajaran beliau tentang pentingnya menjaga syariat menjadi sangat penting. Syariat adalah pagar yang melindungi kita dari kesesatan.</li>
+<li><strong>Tuntut ilmu dengan sungguh-sungguh</strong> — Di era informasi, ilmu menjadi semakin penting. Namun ilmu harus dicari dengan sungguh-sungguh, bukan sekadar dari media sosial.</li>
+<li><strong>Carilah guru yang membimbing</strong> — Di era individualisme, kita membutuhkan guru yang membimbing kita menuju Allah. Jangan menempuh jalan spiritual sendirian.</li>
+<li><strong>Berakhlaklah dengan akhlak Rasulullah</strong> — Di era krisis moral, akhlak mulia menjadi semakin langka dan semakin berharga. Jadilah teladan dalam akhlak.</li>
+<li><strong>Berda'wah dengan hikmah dan kasih sayang</strong> — Di era konflik, dakwah harus dilakukan dengan hikmah, bukan dengan kekerasan.</li>
+<li><strong>Bersabarlah dalam menghadapi ujian</strong> — Di era yang penuh ketidakpastian, sabar menjadi kunci keberhasilan.</li>
+<li><strong>Jadilah bermanfaat bagi sesama</strong> — Di era egoisme, menjadi bermanfaat bagi sesama adalah salah satu bentuk ibadah yang paling utama.</li>
+</ul>
+<p>
+Dengan meneladani ajaran Syeikh Abdul Qadir Al-Jilani, kita dapat menjalani kehidupan modern dengan tetap berakar pada nilai-nilai Islam yang autentik. Beliau telah membuktikan bahwa tasawuf yang sejati bukan berarti lari dari dunia, melainkan menghadapi dunia dengan hati yang bersih dan niat yang tulus.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEBERKAHAN DI DUNIA DAN AKHIRAT — QS. AL-BAQARAH: 201</div>
 <div class="arabic-text">
 رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ
 </div>
-<div class="latin-text">
-Rabbanā ātinā fid-dunyā ḥasanatan wa fil-ākhirati ḥasanatan wa qinā ‘ażāban-nār.
-</div>
 <div class="arabic-translation">
+<strong>Latin:</strong> "Rabbanā ātinā fid-dunyā ḥasanah, wa fil-ākhirati ḥasanah, wa qinā ‘ażāban-nār."
+<br><br>
 <strong>Artinya:</strong> "Ya Tuhan kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, dan peliharalah kami dari siksa neraka."
 <br>— QS. Al-Baqarah: 201
 </div>
 </div>
-
-<div class="arabic-box">
-<div class="arabic-label">DOA MEMOHON ISTIQAMAH DAN SYAFAAT</div>
-<div class="arabic-text">
-اللَّهُمَّ اجْعَلْنَا مِنَ الْمُتَّبِعِينَ لِسُنَّةِ نَبِيِّكَ مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ، وَارْزُقْنَا الِاسْتِقَامَةَ عَلَى دِينِكَ حَتَّى نَلْقَاكَ، وَاجْعَلْ سَيِّدَنَا عَبْدَ الْقَادِرِ الْجِيلَانِيَّ شَفِيعَنَا يَوْمَ الْقِيَامَةِ، وَاجْمَعْ بَيْنَنَا وَبَيْنَهُ فِي جَنَّاتِ النَّعِيمِ مَعَ الَّذِينَ أَنْعَمَ اللَّهُ عَلَيْهِمْ مِنَ النَّبِيِّينَ وَالصِّدِّيقِينَ وَالشُّهَدَاءِ وَالصَّالِحِينَ
+<div class="karomah-card">
+<span class="karomah-number">8</span>
+<span class="karomah-title">Doa dan Tawassul kepada Syeikh Abdul Qadir — Adab Ziarah Spiritual</span>
+<div class="karomah-arabic">الدُّعَاءُ وَالتَّوَسُّلُ بِالشَّيْخِ عَبْدِ الْقَادِرِ</div>
+<p>
+Sebagai penutup perjalanan biografi ini, marilah kita memanjatkan doa dan bertawassul melalui Syeikh Abdul Qadir Al-Jilani, dengan adab yang benar sesuai ajaran Ahlussunnah wal Jamaah:
+</p>
+<ul>
+<li><strong>Tawassul adalah adab, bukan ibadah</strong> — Bertawassul melalui seorang wali berarti memohon kepada Allah dengan menyebut nama atau kedudukan wali tersebut sebagai perantara. Ini adalah adab yang diperbolehkan dalam madzhab Ahlussunnah, selama tidak disertai keyakinan bahwa wali tersebut memiliki kuasa independen.</li>
+<li><strong>Istighatsah hanya kepada Allah</strong> — Memohon pertolongan (istighatsah) dalam arti yang sesungguhnya hanya boleh ditujukan kepada Allah. Wali hanyalah perantara, bukan sumber pertolongan.</li>
+<li><strong>Mengambil berkah, bukan menyembah</strong> — Mengambil berkah dari wali (tabarruk) adalah bentuk penghormatan, bukan penyembahan. Kita menghormati wali karena mereka adalah kekasih Allah.</li>
+</ul>
+<p>
+Berikut adalah doa tawassul yang umum dibaca oleh para pengikut Tarekat Qadiriyah:
+</p>
+<blockquote>
+<em>"Ya Allah, dengan keberkahan wali-Mu yang agung, Syeikh Abdul Qadir Al-Jilani, aku memohon kepada-Mu ampunan, rahmat, hidayah, dan pertolongan. Jadikanlah beliau sebagai perantara antara aku dan Engkau, dan jadikanlah aku termasuk pengikut beliau yang shaleh, yang memperoleh syafaatnya pada hari kiamat. Amin."</em>
+</blockquote>
+<p>
+Semoga Allah menerima doa kita, dan menjadikan kita termasuk orang-orang yang mengambil manfaat dari kisah para wali-Nya.
+</p>
 </div>
-<div class="latin-text">
-Allāhummāj‘alnā minal-muttabi‘īna lisunnati nabiyyika Muḥammadin ṣallallāhu ‘alaihi wa sallam, warzuqnal-istiqāmata ‘alā dīnika ḥattā nalqāk, waj‘al sayyidanā ‘Abdul Qādiril-Jīlāniyya syafī‘anā yaumal-qiyāmah, wajma‘ bainanā wa bainahū fī jannātin-na‘īmi ma‘allażīna an‘amallāhu ‘alaihim minan-nabiyyīna waṣ-ṣiddīqīna wasy-syuhadā'i waṣ-ṣāliḥīn.
+<div class="arabic-box">
+<div class="arabic-label">DOA TAWASSUL LENGKAP</div>
+<div class="arabic-text">
+اللَّهُمَّ إِنِّي أَسْأَلُكَ وَأَتَوَجَّهُ إِلَيْكَ بِسَيِّدِنَا مُحَمَّدٍ نَبِيِّكَ وَرَسُولِكَ، وَبِسَيِّدِنَا عَبْدِ الْقَادِرِ الْجِيلَانِيِّ وَلِيِّكَ وَصَفِيِّكَ، أَنْ تَرْزُقَنِي مَحَبَّتَكَ وَمَحَبَّتَهُمَا، وَأَنْ تَحْشُرَنِي فِي زُمْرَتِهِمَا يَوْمَ الْقِيَامَةِ
 </div>
 <div class="arabic-translation">
-<strong>Artinya:</strong> "Ya Allah, jadikanlah kami termasuk orang-orang yang mengikuti sunnah Nabi-Mu Muhammad shallallahu 'alaihi wa sallam, anugerahkanlah kepada kami istiqamah di atas agama-Mu hingga kami menemui-Mu, jadikanlah Sayyidina Abdul Qadir Al-Jilani sebagai pemberi syafaat bagi kami pada hari kiamat, dan kumpulkanlah kami bersama beliau di surga kenikmatan bersama orang-orang yang Engkau beri nikmat kepada mereka dari kalangan para nabi, shiddiqin, syuhada, dan orang-orang shaleh."
+<strong>Latin:</strong> "Allāhumma innī as'aluka wa atawajjahu ilaika bi-sayyidinā Muḥammadin nabiyyika wa rasūlik, wa bi-sayyidinā ‘Abdil-Qādir al-Jīlānī waliyyika wa ṣafiyyik, an tarzuqanī maḥabbataka wa maḥabbatahumā, wa an taḥsyuranī fī zumratihimā yawmal-qiyāmah."
+<br><br>
+<strong>Artinya:</strong> "Ya Allah, sesungguhnya aku memohon kepada-Mu dan menghadap kepada-Mu melalui junjungan kami Muhammad, nabi dan rasul-Mu, dan melalui junjungan kami Abdul Qadir Al-Jilani, wali dan pilihan-Mu, agar Engkau menganugerahkan kepadaku cinta kepada-Mu dan cinta kepada keduanya, dan agar Engkau mengumpulkan aku dalam kelompok keduanya pada hari kiamat."
 </div>
 </div>
-
+<div class="karomah-card">
+<span class="karomah-number">9</span>
+<span class="karomah-title">Renungan Akhir — Apa yang Tersisa dari Kita?</span>
+<div class="karomah-arabic">تَأَمُّلٌ أَخِيرٌ — مَاذَا يَبْقَىٰ مِنَّا؟</div>
+<p>
+Sebagai renungan akhir dari perjalanan biografi ini, marilah kita bertanya kepada diri sendiri: <strong>apa yang akan tersisa dari kita ketika kita meninggal dunia nanti?</strong>
+</p>
+<p>
+Syeikh Abdul Qadir Al-Jilani telah wafat lebih dari 850 tahun yang lalu, tetapi namanya masih hidup, ajarannya masih diikuti, dan pengaruhnya masih terasa hingga hari ini. Ini karena beliau telah meninggalkan tiga perkara yang tidak pernah terputus: sedekah jariyah (tarekat yang terus membimbing umat), ilmu yang bermanfaat (kitab-kitab yang terus dipelajari), dan anak shaleh yang mendoakan (keturunan dan pengikut yang terus mendoakan beliau).
+</p>
+<p>
+Sementara kita, apa yang akan kita tinggalkan? Harta kita akan ditinggalkan, jabatan kita akan ditinggalkan, popularitas kita akan dilupakan. Yang akan tersisa hanyalah <strong>amal shaleh</strong> yang kita lakukan dengan ikhlas karena Allah.
+</p>
+<p>
+Marilah kita menjadikan kisah Syeikh Abdul Qadir Al-Jilani sebagai cermin:
+</p>
+<ul>
+<li><strong>Sudahkah kita menuntut ilmu dengan sungguh-sungguh?</strong></li>
+<li><strong>Sudahkah kita memperbaiki akhlak kita?</strong></li>
+<li><strong>Sudahkah kita menjaga syariat dengan sempurna?</strong></li>
+<li><strong>Sudahkah kita berbuat baik kepada sesama?</strong></li>
+<li><strong>Sudahkah kita meninggalkan warisan yang bermanfaat untuk generasi setelah kita?</strong></li>
+</ul>
+<p>
+Semoga Allah menjadikan kita termasuk orang-orang yang mengambil manfaat dari kisah para wali-Nya, dan menjadikan akhir perjalanan kita seperti akhir perjalanan Syeikh Abdul Qadir Al-Jilani: kembali kepada Allah dengan jiwa yang tenang, ridha, dan diridhai.
+</p>
+</div>
 <div class="arabic-box">
-<div class="arabic-label">SELAWAT PENUTUP</div>
+<div class="arabic-label">DALIL TENTANG JIWA YANG TENANG — QS. AL-FAJR: 27-30</div>
 <div class="arabic-text">
-اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى سَيِّدِنَا إِبْرَاهِيمَ وَعَلَى آلِ سَيِّدِنَا إِبْرَاهِيمَ، وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى سَيِّدِنَا إِبْرَاهِيمَ وَعَلَى آلِ سَيِّدِنَا إِبْرَاهِيمَ، فِي الْعَالَمِينَ إِنَّكَ حَمِيدٌ مَجِيدٌ
-</div>
-<div class="latin-text">
-Allāhumma ṣalli ‘alā sayyidinā Muḥammadin wa ‘alā āli sayyidinā Muḥammad, kamā ṣallaita ‘alā sayyidinā Ibrāhīma wa ‘alā āli sayyidinā Ibrāhīm, wa bārik ‘alā sayyidinā Muḥammadin wa ‘alā āli sayyidinā Muḥammad, kamā bārakta ‘alā sayyidinā Ibrāhīma wa ‘alā āli sayyidinā Ibrāhīm, fil-‘ālamīna innaka Ḥamīdun Majīd.
+يَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ ۝ ارْجِعِي إِلَىٰ رَبِّكِ رَاضِيَةً مَّرْضِيَّةً ۝ فَادْخُلِي فِي عِبَادِي ۝ وَادْخُلِي جَنَّتِي
 </div>
 <div class="arabic-translation">
-<strong>Artinya:</strong> "Ya Allah, limpahkanlah rahmat kepada junjungan kami Nabi Muhammad dan kepada keluarga junjungan kami Nabi Muhammad, sebagaimana Engkau telah melimpahkan rahmat kepada junjungan kami Nabi Ibrahim dan kepada keluarga junjungan kami Nabi Ibrahim, dan berkahilah junjungan kami Nabi Muhammad dan keluarga junjungan kami Nabi Muhammad, sebagaimana Engkau telah memberkahi junjungan kami Nabi Ibrahim dan keluarga junjungan kami Nabi Ibrahim, di seluruh alam sesungguhnya Engkau Maha Terpuji lagi Maha Mulia."
+<strong>Latin:</strong> "Yā ayyatuhan-nafsul-muṭma'innah, irji‘ī ilā rabbiki rāḍiyatan marḍiyyah, fadkhulī fī ‘ibādī, wadkhulī jannatī."
+<br><br>
+<strong>Artinya:</strong> "Wahai jiwa yang tenang! Kembalilah kepada Tuhanmu dengan hati yang ridha lagi diridhai-Nya. Maka masuklah ke dalam golongan hamba-hamba-Ku, dan masuklah ke dalam surga-Ku."
+<br>— QS. Al-Fajr: 27-30
 </div>
 </div>
-
-<h2>Kata Penutup</h2>
+<div class="karomah-card">
+<span class="karomah-number">10</span>
+<span class="karomah-title">Shalawat dan Salam untuk Rasulullah, Keluarga, dan Para Wali</span>
+<div class="karomah-arabic">الصَّلَاةُ وَالسَّلَامُ عَلَىٰ رَسُولِ اللَّهِ وَآلِهِ وَالْأَوْلِيَاءِ</div>
 <p>
-Demikianlah rangkaian biografi Syeikh Abdul Qadir Al-Jilani Sulthanul Awliya' yang telah kita tempuh bersama selama sembilan halaman. Dari pendahuluan tentang pengenalan, nasab, dan kelahiran, perjalanan menuntut ilmu dan para guru, perjalanan spiritual jalur umum dan khusus, tantangan dan konflik dalam mengamalkan keilmuan, hingga tanggapan pro dan kontra masyarakat, ulama, dan penguasa — seluruhnya bermuara pada satu pesan abadi: <strong>istiqamah di atas syariat dan mengikuti sunnah Rasulullah SAW</strong>.
+Sebagai penutup seluruh perjalanan biografi ini, marilah kita memanjatkan shalawat dan salam kepada Rasulullah SAW, keluarga beliau, para sahabat beliau, dan seluruh wali Allah — termasuk Syeikh Abdul Qadir Al-Jilani:
 </p>
-<p>
-Semoga Allah menerima setiap kebenaran dalam tulisan ini, mengampuni kekeliruannya, dan menganugerahkan kepada kita istiqamah sebagaimana yang dicontohkan para wali dan ulama-Nya. Semoga kita dijadikan termasuk orang-orang yang mencintai beliau dengan cinta yang benar — cinta yang membawa kita lebih dekat kepada Allah, bukan cinta yang menjauhkan kita dari-Nya.
-</p>
-<p>
-<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam. Shalawat dan salam semoga tercurah kepada junjungan kita Nabi Muhammad, kepada keluarga beliau, kepada para sahabat beliau, dan kepada orang-orang yang mengikuti beliau dengan baik hingga hari kiamat.
-</p>
-
 <div class="arabic-box">
+<div class="arabic-label">SHALAWAT PENUTUP</div>
 <div class="arabic-text">
-سُبْحَانَ رَبِّكَ رَبِّ الْعِزَّةِ عَمَّا يَصِفُونَ وَسَلَامٌ عَلَى الْمُرْسَلِينَ وَالْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ
-</div>
-<div class="latin-text">
-Subḥāna rabbika rabbil-‘izzati ‘ammā yaṣifūn, wa salām ‘alal-mursalīn, wal-ḥamdu lillāhi rabbil-‘ālamīn.
+اللَّهُمَّ صَلِّ عَلَىٰ سَيِّدِنَا مُحَمَّدٍ وَعَلَىٰ آلِ سَيِّدِنَا مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَىٰ سَيِّدِنَا إِبْرَاهِيمَ وَعَلَىٰ آلِ سَيِّدِنَا إِبْرَاهِيمَ، وَبَارِكْ عَلَىٰ سَيِّدِنَا مُحَمَّدٍ وَعَلَىٰ آلِ سَيِّدِنَا مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَىٰ سَيِّدِنَا إِبْرَاهِيمَ وَعَلَىٰ آلِ سَيِّدِنَا إِبْرَاهِيمَ، فِي الْعَالَمِينَ إِنَّكَ حَمِيدٌ مَجِيدٌ
 </div>
 <div class="arabic-translation">
-<strong>Artinya:</strong> "Maha Suci Tuhanmu Yang mempunyai keperkasaan dari apa yang mereka sifatkan, dan kesejahteraan atas para rasul, dan segala puji bagi Allah Tuhan semesta alam."
-<br>— QS. Ash-Shaffat: 180–182
+<strong>Latin:</strong> "Allāhumma ṣalli ‘alā sayyidinā Muḥammadin wa ‘alā āli sayyidinā Muḥammad, kamā ṣallaita ‘alā sayyidinā Ibrāhīma wa ‘alā āli sayyidinā Ibrāhīm, wa bārik ‘alā sayyidinā Muḥammadin wa ‘alā āli sayyidinā Muḥammad, kamā bārakta ‘alā sayyidinā Ibrāhīma wa ‘alā āli sayyidinā Ibrāhīm, fil-‘ālamīna innaka ḥamīdun majīd."
+<br><br>
+<strong>Artinya:</strong> "Ya Allah, limpahkanlah shalawat kepada junjungan kami Muhammad dan kepada keluarga junjungan kami Muhammad, sebagaimana Engkau telah melimpahkan shalawat kepada junjungan kami Ibrahim dan kepada keluarga junjungan kami Ibrahim. Dan berkahilah junjungan kami Muhammad dan keluarga junjungan kami Muhammad, sebagaimana Engkau telah memberkahi junjungan kami Ibrahim dan keluarga junjungan kami Ibrahim, di seluruh alam. Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia."
 </div>
 </div>
-
+<p>
+Semoga shalawat ini menjadi jembatan cinta kita kepada Rasulullah SAW, kepada keluarga beliau, kepada para sahabat beliau, dan kepada seluruh wali Allah — termasuk Syeikh Abdul Qadir Al-Jilani. Semoga kita dikumpulkan bersama mereka pada hari kiamat, di bawah panji Rasulullah SAW, di surga yang penuh dengan kenikmatan.
+</p>
+<p>
+Amin, amin, ya Rabbal-'alamin.
+</p>
 </div>
-
-<!-- NAVIGASI 9 TOMBOL — DIATUR AGAR ELEGAN -->
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">INTISARI LENGKAP BIOGRAFI SYEIKH ABDUL QADIR AL-JILANI:</strong>
+<ul>
+<li><strong>Nama lengkap:</strong> Abdul Qadir ibn Abi Shalih Abdullah ibn Fatimah Al-Jilani Al-Hasani wal-Husaini</li>
+<li><strong>Gelar:</strong> Muhyiddin (Penghidup Agama), Sulthonul Awliya (Sultan para Wali), Al-Ghawts al-A'zam (Pertolongan Agung)</li>
+<li><strong>Lahir:</strong> 470 H / 1077 M di desa Na'if, Jilan (Gilan), Iran utara</li>
+<li><strong>Wafat:</strong> 11 Rabiul Akhir 561 H / 21 Februari 1166 M di Baghdad, usia ± 91 tahun</li>
+<li><strong>Nasab:</strong> Keturunan Rasulullah SAW melalui Sayyidina Hasan (ayah) dan Sayyidina Husain (ibu)</li>
+<li><strong>Pendidikan:</strong> Hafal Al-Qur'an sejak muda, menuntut ilmu di Baghdad selama 25+ tahun</li>
+<li><strong>Guru utama:</strong> Abu Sa'id Al-Makhzumi, Abu Muhammad As-Sarraj, Abu Zakariya At-Tabrizi, Abu al-Khair Hammad Ad-Dabbas</li>
+<li><strong>Bidang ilmu:</strong> Fikih Hambali, hadis, tafsir, nahwu-sharaf, tauhid, tasawuf</li>
+<li><strong>Khalwat:</strong> 11-25 tahun di padang pasir Irak, mencapai maqam Sulthonul Awliya</li>
+<li><strong>Dakwah:</strong> ± 40 tahun di Baghdad, membina ribuan murid</li>
+<li><strong>Kitab utama:</strong> Al-Ghunya li-Thalibi Thariq al-Haqq, Futuh al-Ghaib, Al-Fath ar-Rabbani</li>
+<li><strong>Tarekat:</strong> Qadiriyah — tersebar dari Afrika Utara hingga Indonesia</li>
+<li><strong>Di Nusantara:</strong> Tarekat Qadiriyah wa Naqsyabandiyah melalui Syeikh Ahmad Khatib as-Sambasi</li>
+<li><strong>Keturunan:</strong> Syeikh Abdul Wahhab, Abdul Aziz, Abdul Razzaq, Musa, Ibrahim, Yahya, Muhammad, Fathimah</li>
+<li><strong>Wasiat utama:</strong> Takwa kepada Allah, taat kepada Allah dan Rasul-Nya, menjaga shalat, zuhud, akhlak mulia, silsilah, ikhlas, sabar, doa</li>
+<li><strong>Pelajaran utama:</strong> Kejujuran, ilmu, bimbingan guru, sabar, syariat, keberanian, kemandirian, kasih sayang, istiqamah, amal jariyah</li>
+<li><strong>Warisan abadi:</strong> Tarekat yang hidup, kitab yang dipelajari, makam yang diziarahi, pengaruh peradaban</li>
+<li><strong>Pesan untuk kita:</strong> Jangan terikat dunia, jaga syariat, tuntut ilmu, cari guru, berakhlak mulia, berdakwah dengan hikmah, bersabar, bermanfaat bagi sesama</li>
+</ul>
+</div>
+<h2>Penutup Akhir — Segala Puji bagi Allah</h2>
+<p>
+Demikianlah perjalanan panjang biografi Syeikh Abdul Qadir Al-Jilani — sang Muhyiddin, sang Sulthonul Awliya, sang Al-Ghawts al-A'zam. Dari kelahirannya di desa Na'if, Jilan, pada tahun 470 H, hingga wafatnya di Baghdad pada 11 Rabiul Akhir 561 H, beliau telah menapaki jalan panjang yang penuh dengan ujian, perjuangan, karomah, dan keberkahan.
+</p>
+<p>
+Beliau telah menjadi salah satu pilar peradaban spiritual Islam yang paling kokoh. Warisannya terus mengalir seperti sungai yang tidak pernah kering selama lebih dari 850 tahun — dari Baghdad hingga Maroko, dari Turki hingga Indonesia, dari generasi ke generasi. Tarekat Qadiriyah yang beliau dirikan telah membimbing jutaan umat Islam menuju Allah, kitab-kitab beliau terus dipelajari di pesantren-pesantren dan madrasah-madrasah, dan makam beliau terus diziarahi oleh jutaan umat Islam setiap tahunnya.
+</p>
+<p>
+Semoga Allah menerima amal beliau, melipatgandakan pahalanya, dan menjadikannya sebagai syafaat bagi kita semua pada hari kiamat. Semoga kita dijadikan termasuk orang-orang yang mengambil manfaat dari kisah beliau, dan semoga kita dikumpulkan bersama beliau di surga-Nya yang penuh dengan kenikmatan.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam. Shalawat dan salam semoga tercurah kepada junjungan kita Muhammad SAW, kepada keluarga beliau, kepada para sahabat beliau, dan kepada seluruh wali Allah hingga hari kiamat.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+وَقُل رَّبِّ زِدْنِي عِلْمًا ۝ رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الْحِسَابُ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa qul Rabbi zidnī ‘ilmā. Rabbighfir lī wa liwālidayya wa lil-mu'minīna yawma yaqūmul-ḥisāb."
+<br><br>
+<strong>Artinya:</strong> "Dan katakanlah: 'Ya Tuhanku, tambahkanlah kepadaku ilmu pengetahuan.' Ya Tuhanku, ampunilah aku, kedua orang tuaku, dan seluruh orang mukmin pada hari perhitungan."
+<br>— QS. Thaha: 114 & QS. Ibrahim: 41
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
 <div class="article-nav">
 <div class="nav-group">
-<a href="jilani1.html" class="article-nav-btn" title="Halaman 1">1</a>
-<div class="nav-btn-label">Halaman 1</div>
+<a href="jilani1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
 </div>
 <div class="nav-group">
-<a href="jilani2.html" class="article-nav-btn" title="Halaman 2">2</a>
-<div class="nav-btn-label">Halaman 2</div>
+<a href="jilani2.html" class="article-nav-btn" title="Halaman 2: Perjalanan Menuntut Ilmu">2</a>
+<div class="nav-btn-label">Menuntut Ilmu</div>
 </div>
 <div class="nav-group">
-<a href="jilani3.html" class="article-nav-btn" title="Halaman 3">3</a>
-<div class="nav-btn-label">Halaman 3</div>
+<a href="jilani3.html" class="article-nav-btn" title="Halaman 3: Bidang Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
 </div>
 <div class="nav-group">
-<a href="jilani4.html" class="article-nav-btn" title="Halaman 4">4</a>
-<div class="nav-btn-label">Halaman 4</div>
+<a href="jilani4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
 </div>
 <div class="nav-group">
-<a href="jilani5.html" class="article-nav-btn" title="Halaman 5">5</a>
-<div class="nav-btn-label">Halaman 5</div>
+<a href="jilani5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
 </div>
 <div class="nav-group">
-<a href="jilani6.html" class="article-nav-btn" title="Halaman 6">6</a>
-<div class="nav-btn-label">Halaman 6</div>
+<a href="jilani6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
 </div>
 <div class="nav-group">
-<a href="jilani7.html" class="article-nav-btn" title="Halaman 7">7</a>
-<div class="nav-btn-label">Halaman 7</div>
+<a href="jilani7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
 </div>
 <div class="nav-group">
-<a href="jilani8.html" class="article-nav-btn" title="Halaman 8">8</a>
-<div class="nav-btn-label">Halaman 8</div>
+<a href="jilani8.html" class="article-nav-btn" title="Halaman 8: Warisan Tarekat">8</a>
+<div class="nav-btn-label">Warisan</div>
 </div>
 <div class="nav-group">
-<a href="jilani9.html" class="article-nav-btn active" title="Halaman 9">9</a>
-<div class="nav-btn-label">Halaman 9</div>
+<a href="jilani9.html" class="article-nav-btn active" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
 </div>
 </div>
-
 </div>
-
 <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
 KALAM
 <span class="btn-sub">← Kembali ke Beranda</span>
 </a>
-
+</div>
 <footer>
 <p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
 </footer>
-
 <script>
 let currentFontSize = 1.05;
 function changeFontSize(delta) {
