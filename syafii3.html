@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+  window.scrollTo(0, 0);
+</script>
+<title>Biografi Imam As-Syafi'i — Perjalanan Menuntut Ilmu - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+/* 1. RESET & DASAR */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+/* 2. MEDIA QUERY TABLET */
+@media (max-width: 768px) {
+.article-container {
+max-width: 100%;
+padding: 20px;
+}
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+/* 3. HEADER & NAVIGASI ATAS */
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+/* 4. BREADCRUMB & CONTAINER */
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+/* 5. ARTICLE HEADER & META */
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+/* 6. GAMBAR & SHARE BAR */
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+/* 7. KONTEN ARTIKEL */
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 8. KOTAK ARAB & BIOGRAFI */
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.bio-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.bio-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.bio-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.bio-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 9. NAVIGASI HALAMAN (9 TOMBOL) */
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* 10. TOMBOL KEMBALI & FOOTER */
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+/* 11. MEDIA QUERY MOBILE */
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.bio-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+/* PATCH UNIVERSAL v2.0 */
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Imam As-Syafi'i — Perjalanan Menuntut Ilmu
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Imam As-Syafi'i — Perjalanan Menuntut Ilmu</h1>
+<div class="subtitle">Halaman 3 dari 9 — Dari Mekkah, Madinah, Yaman, Baghdad, hingga Mesir</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Kamis, 22 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Khalili_Mosque_2.jpg/640px-Khalili_Mosque_2.jpg"
+alt="Peta perjalanan Imam As-Syafi'i menuntut ilmu"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Masjid_An_Nabawi.jpg/640px-Masjid_An_Nabawi.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Ilustrasi perjalanan keilmuan Imam As-Syafi'i melintasi berbagai negeri Islam — Mekkah, Madinah, Yaman, Baghdad, dan Mesir — untuk mengumpulkan ilmu dari para ulama besar zamannya</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Perjalanan keilmuan Imam As-Syafi'i adalah salah satu perjalanan intelektual paling agung dalam sejarah Islam. Beliau tidak tinggal diam di satu negeri, melainkan berkelana dari Mekkah ke Madinah, dari Madinah ke Yaman, dari Yaman ke Baghdad (Irak), dan akhirnya ke Mesir — mengumpulkan ilmu dari para imam besar di setiap negeri yang beliau kunjungi. Di Mekkah beliau belajar hadits dan fiqih, di Madinah beliau berguru kepada Imam Malik bin Anas, di Yaman beliau mengasah kemampuan peradilan dan pemerintahan, di Baghdad beliau berdiskusi dengan para ulama Hanafi dan menulis kitab pertamanya, dan di Mesir beliau menyempurnakan mazhabnya yang dikenal sebagai <em>Mazhab Jadid</em> (mazhab baru).
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG PERJALANAN MENCARI ILMU — QS. AT-TAUBAH: 122</div>
+<div class="arabic-text">
+وَمَا كَانَ الْمُؤْمِنُونَ لِيَنفِرُوا كَافَّةً ۚ فَلَوْلَا نَفَرَ مِن كُلِّ فِرْقَةٍ مِّنْهُمْ طَائِفَةٌ لِّيَتَفَقَّهُوا فِي الدِّينِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Tidak sepatutnya bagi orang-orang yang mukmin itu pergi semuanya (ke medan perang). Mengapa tidak pergi dari tiap-tiap golongan di antara mereka beberapa orang untuk memperdalam pengetahuan mereka tentang agama."
+<br>— QS. At-Taubah: 122
+</div>
+</div>
+
+<h2>Fase Pertama: Mekkah Al-Mukarramah — Madrasah Pertama</h2>
+<p>
+Setelah tumbuh sebagai anak yatim di Mekkah dan menghafal Al-Qur'an di usia muda, Imam As-Syafi'i memulai perjalanan keilmuan formalnya di tanah kelahirannya sendiri — Mekkah Al-Mukarramah. Pada fase ini (sekitar usia 10-15 tahun), beliau belajar kepada para ulama besar Mekkah yang menjadi madrasah pertamanya.
+</p>
+<p>
+Di Mekkah, beliau belajar fiqih kepada <em>Muslim bin Khalid Az-Zanji</em> — mufti Mekkah pada masa itu — yang memberikan izin kepadanya untuk berfatwa ketika usia beliau baru lima belas tahun. Beliau juga belajar hadits kepada <em>Sufyan bin Uyainah</em> — salah satu imam hadits terbesar di zamannya — dari siapa beliau mengambil sanad-sanad hadits yang bersambung hingga kepada Rasulullah SAW. Selain itu, beliau juga belajar kepada <em>Abdurrahman bin Abi Bakr Al-Mulaiki</em> dalam bidang fiqih dan qira'at.
+</p>
+<p>
+Fase Mekkah ini sangat penting karena di sinilah Imam As-Syafi'i mendapatkan pondasi keilmuan yang kuat — penguasaan bahasa Arab yang mendalam, hafalan Al-Qur'an yang sempurna, dan pemahaman hadits yang luas. Semua ini menjadi bekal beliau dalam menempuh perjalanan keilmuan yang lebih luas di negeri-negeri Islam lainnya.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN IMAM AS-SYAFI'I TENTANG PERJALANAN ILMU</div>
+<div class="arabic-text">
+تَغَرَّبْ عَنِ الْأَوْطَانِ فِي طَلَبِ الْعُلَى وَسَافِرْ فَفِي الْأَسْفَارِ خَمْسُ فَوَائِدَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Merantaulah engkau dari tanah air untuk meraih keutamaan, dan bepergianlah, karena dalam perjalanan ada lima manfaat: menghilangkan kesedihan, mencari penghidupan, menuntut ilmu, meraih adab, dan bergaul dengan orang-orang mulia."
+<br>— Imam As-Syafi'i (dalam bait syairnya yang masyhur)
+</div>
+</div>
+
+<div class="bio-card">
+<span class="bio-number">1</span>
+<span class="bio-title">Fase Madinah — Berguru kepada Imam Malik bin Anas</span>
+<div class="bio-arabic">رِحْلَتُهُ إِلَى الْمَدِينَةِ وَلِقَاءُ الْإِمَامِ مَالِكٍ</div>
+<p>
+Setelah matang di Mekkah, Imam As-Syafi'i memutuskan untuk pergi ke Madinah Al-Munawwarah — kota Rasulullah SAW — untuk berguru kepada <em>Imam Malik bin Anas</em> (93-179 H), pendiri Mazhab Maliki dan penulis kitab <em>Al-Muwaththa'</em>. Ini adalah keputusan yang sangat penting dalam perjalanan keilmuan beliau, karena Imam Malik adalah imam hadits dan fiqih terbesar di Hijaz pada masa itu.
+</p>
+<p>
+Ketika Imam As-Syafi'i datang kepada Imam Malik, beliau membawa hafalan Al-Qur'an yang sempurna, penguasaan bahasa Arab yang mendalam, dan pemahaman fiqih yang luas. Imam Malik sangat terkesan dengan kecerdasan dan adab beliau, sehingga beliau menerima beliau sebagai murid istimewa. Imam As-Syafi'i belajar <em>Al-Muwaththa'</em> secara langsung dari Imam Malik, dan beliau menghafalnya dengan sempurna.
+</p>
+<p>
+Imam As-Syafi'i berkata tentang Imam Malik dengan penuh takzhim: <em>"Jika bukan karena Allah, kemudian Imam Malik, niscaya aku telah tersesat dari jalan kebenaran. Malik adalah hujjah Allah atas makhluk-Nya setelah ilmu fiqih hilang dari negeri Hijaz."</em> Dari Imam Malik inilah Imam As-Syafi'i mempelajari fiqih Ahlul Hadits, kaidah-kaidah istinbath hukum, dan adab seorang faqih dalam berfatwa.
+</p>
+<p>
+Imam Malik wafat pada tahun 179 H, ketika Imam As-Syafi'i berusia sekitar 29 tahun. Setelah wafatnya Imam Malik, Imam As-Syafi'i kembali ke Mekkah untuk mengajar dan menulis, sebelum kemudian melanjutkan perjalanan ke Yaman.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENGIKUTI PETUNJUK — QS. AN-NISA': 115</div>
+<div class="arabic-text">
+وَمَن يُشَاقِقِ الرَّسُولَ مِن بَعْدِ مَا تَبَيَّنَ لَهُ الْهُدَىٰ وَيَتَّبِعْ غَيْرَ سَبِيلِ الْمُؤْمِنِينَ نُوَلِّهِ مَا تَوَلَّىٰ وَنُصْلِهِ جَهَنَّمَ ۖ وَسَاءَتْ مَصِيرًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan barangsiapa yang menentang Rasul sesudah jelas kebenaran baginya, dan mengikuti jalan yang bukan jalan orang-orang mukmin, Kami biarkan ia berkuasa terhadap kesesatan yang telah dikuasainya itu dan Kami masukkan ia ke dalam Jahannam, dan Jahannam itu seburuk-buruk tempat kembali."
+<br>— QS. An-Nisa': 115
+</div>
+</div>
+
+<div class="bio-card">
+<span class="bio-number">2</span>
+<span class="bio-title">Fase Yaman — Menjadi Qadhi dan Pengalaman Pemerintahan</span>
+<div class="bio-arabic">مَرْحَلَةُ الْيَمَنِ — الْقَضَاءُ وَالْحُكْمُ</div>
+<p>
+Setelah wafatnya Imam Malik pada tahun 179 H, Imam As-Syafi'i kembali ke Mekkah untuk mengajar dan menulis. Pada fase ini (usia 29-35 tahun), beliau mengajar di Mekkah dan sesekali pergi ke Yaman. Di Yaman, beliau diangkat sebagai <em>qadhi</em> (hakim) oleh gubernur Yaman atas permintaan penduduk setempat yang mengenal keilmuan dan kejujuran beliau.
+</p>
+<p>
+Masa menjadi qadhi di Yaman adalah fase yang sangat penting dalam perjalanan hidup Imam As-Syafi'i. Di sinilah beliau mendapatkan pengalaman praktis dalam bidang peradilan, pemerintahan, dan pengambilan keputusan yang berdampak langsung kepada masyarakat. Beliau menghadapi berbagai kasus yang rumit — mulai dari sengketa harta, kasus pidana, hingga pemberontakan kelompok-kelompok yang menyimpang dari jalan Ahlussunnah.
+</p>
+<p>
+Salah satu ujian terbesar di Yaman adalah ketika terjadi pemberontakan kelompok yang menyimpang. Imam As-Syafi'i dituduh oleh sebagian orang sebagai pendukung pemberontakan tersebut, sehingga beliau sempat dipenjara dan kemudian dibebaskan setelah terbukti tidak bersalah. Peristiwa ini menjadi pelajaran berharga bagi beliau tentang fitnah yang bisa menimpa seorang ulama, dan tentang pentingnya kehati-hatian dalam bersikap di tengah konflik politik.
+</p>
+<p>
+Setelah dibebaskan, Imam As-Syafi'i kembali ke Mekkah dan memutuskan untuk meninggalkan dunia politik dan pemerintahan, serta memusatkan seluruh perhatiannya kepada ilmu dan dakwah. Pengalaman di Yaman inilah yang kemudian memperkaya pemikiran fiqih beliau, karena beliau memahami bagaimana hukum-hukum syariat diterapkan dalam kehidupan nyata masyarakat.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEADILAN — QS. AN-NISA': 58</div>
+<div class="arabic-text">
+إِنَّ اللَّهَ يَأْمُرُكُمْ أَن تُؤَدُّوا الْأَمَانَاتِ إِلَىٰ أَهْلِهَا وَإِذَا حَكَمْتُم بَيْنَ النَّاسِ أَن تَحْكُمُوا بِالْعَدْلِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sesungguhnya Allah menyuruh kamu menyampaikan amanat kepada yang berhak menerimanya, dan (menyuruh kamu) apabila menetapkan hukum di antara manusia supaya kamu menetapkan dengan adil."
+<br>— QS. An-Nisa': 58
+</div>
+</div>
+
+<div class="bio-card">
+<span class="bio-number">3</span>
+<span class="bio-title">Fase Baghdad (Irak) — Mazhab Qadim dan Dialog dengan Ulama Hanafi</span>
+<div class="bio-arabic">رِحْلَةُ بَغْدَادَ — الْمَذْهَبُ الْقَدِيمُ وَالْحِوَارُ مَعَ أَصْحَابِ أَبِي حَنِيفَةَ</div>
+<p>
+Pada tahun 184 H (usia sekitar 34 tahun), Imam As-Syafi'i melakukan perjalanan besar ke <strong>Baghdad</strong> — ibu kota Kekhalifahan Abbasiyah dan pusat peradaban Islam pada masa itu. Di Baghdad, beliau bertemu dengan para ulama besar dari berbagai mazhab, terutama para ulama <em>Ahlu Ra'yi</em> (ahli logika) dari mazhab Hanafi — murid-murid Imam Abu Hanifah yang pada masa itu dipimpin oleh <em>Muhammad bin Hasan Asy-Syaibani</em>.
+</p>
+<p>
+Di Baghdad inilah terjadi dialog intelektual yang sangat produktif antara Imam As-Syafi'i dan para ulama Hanafi. Beliau mempelajari kitab-kitab <em>Muhammad bin Hasan Asy-Syaibani</em> — seperti <em>Al-Asl</em> (Al-Mabsuth), <em>Az-Ziyadat</em>, dan <em>As-Siyar Al-Kabir</em> — yang berisi pandangan-pandangan fiqih mazhab Hanafi. Beliau kemudian membantah banyak pandangan mereka dalam kitabnya yang masyhur, <em>Ar-Radd 'ala Siyar Al-Auza'i</em> dan kitab-kitab lainnya.
+</p>
+<p>
+Di Baghdad pula Imam As-Syafi'i mengembangkan apa yang kemudian dikenal sebagai <strong>Mazhab Qadim</strong> (mazhab lama) — yaitu pandangan-pandangan fiqih beliau yang dirumuskan selama periode Irak. Beliau menulis kitab <em>Al-Hujjah</em> yang kemudian menjadi dasar bagi mazhab beliau. Di Baghdad, beliau juga mulai merumuskan kaidah-kaidah ushul fiqih yang kelak akan dibukukan dalam kitab <em>Ar-Risalah</em>.
+</p>
+<p>
+Periode Baghdad berlangsung selama sekitar 10 tahun (184-195 H), dan menjadi fase paling produktif dalam perjalanan intelektual Imam As-Syafi'i. Di sinilah beliau bertemu dengan murid-murid beliau yang kelak menjadi perawi mazhab beliau, seperti <em>Abu Tsaur</em>, <em>Al-Karabisi</em>, dan <em>Abu Ibrahim Al-Muzani</em>.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG HIWAR (DIALOG) DENGAN BAIK — QS. AN-NAHL: 125</div>
+<div class="arabic-text">
+ادْعُ إِلَىٰ سَبِيلِ رَبِّكَ بِالْحِكْمَةِ وَالْمَوْعِظَةِ الْحَسَنَةِ ۖ وَجَادِلْهُم بِالَّتِي هِيَ أَحْسَنُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Serulah (manusia) kepada jalan Tuhan-mu dengan hikmah dan pelajaran yang baik, dan bantahlah mereka dengan cara yang baik."
+<br>— QS. An-Nahl: 125
+</div>
+</div>
+
+<div class="bio-card">
+<span class="bio-number">4</span>
+<span class="bio-title">Fase Mesir — Mazhab Jadid dan Penyempurnaan Fiqih</span>
+<div class="bio-arabic">رِحْلَةُ مِصْرَ — الْمَذْهَبُ الْجَدِيدُ وَتَتْمِيمُ الْفِقْه</div>
+<p>
+Pada tahun 199 H (usia sekitar 49 tahun), Imam As-Syafi'i melakukan perjalanan terakhir dan terpenting dalam hidupnya ke <strong>Mesir</strong> — negeri yang akan menjadi tempat beliau menghabiskan sisa hidupnya dan menyempurnakan mazhab fiqihnya. Di Mesir, beliau disambut dengan penuh penghormatan oleh gubernur Mesir dan para ulama setempat.
+</p>
+<p>
+Di Mesir inilah Imam As-Syafi'i merevisi banyak pendapat yang beliau rumuskan di Baghdad (Mazhab Qadim), dan merumuskan pendapat-pendapat baru yang dikenal sebagai <strong>Mazhab Jadid</strong> (mazhab baru). Revisi ini bukan karena beliau mengikuti hawa nafsu atau tekanan politik, melainkan karena beliau menemukan hadits-hadits baru, kondisi masyarakat yang berbeda, dan ijtihad yang lebih matang. Inilah ciri khas seorang mujtahid sejati — senantiasa terbuka terhadap kebenaran, meskipun harus merevisi pendapatnya sendiri.
+</p>
+<p>
+Di Mesir pula Imam As-Syafi'i menulis kitab-kitab beliau yang paling masyhur, di antaranya:
+</p>
+<ul>
+<li><strong>Ar-Risalah</strong> — kitab pertama dalam sejarah Islam yang membahas ushul fiqih secara sistematis</li>
+<li><strong>Al-Umm</strong> — kitab induk fiqih mazhab Syafi'i yang berisi fatwa-fatwa beliau</li>
+<li><strong>Kitab Al-Hujjah</strong> (versi Mesir) — kitab bantahan terhadap pandangan-pandangan yang menyimpang</li>
+</ul>
+<p>
+Di Mesir pula beliau bertemu dengan murid-murid beliau yang paling setia — <em>Ar-Rabi' bin Sulaiman Al-Muradi</em> dan <em>Al-Muzani</em> — yang kelak menjadi perawi utama mazhab beliau. Ar-Rabi' adalah orang yang meriwayatkan kitab <em>Al-Umm</em> dan <em>Ar-Risalah</em> dalam bentuk yang kita kenal hari ini.
+</p>
+<p>
+Imam As-Syafi'i wafat di Mesir pada malam terakhir bulan Rajab tahun 204 H (19 Januari 820 M) dalam usia 54 tahun, dan dimakamkan di Al-Qarafa, Kairo. Makam beliau hingga hari ini diziarahi oleh jutaan umat Islam dari seluruh penjuru dunia.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEBENARAN YANG BERKELANJUTAN — QS. AL-ANKABUT: 29</div>
+<div class="arabic-text">
+بَلْ اتَّبَعَ الَّذِينَ ظَلَمُوا أَهْوَاءَهُم بِغَيْرِ عِلْمٍ ۖ فَمَن يَهْدِي مَنْ أَضَلَّ اللَّهُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sebenarnya orang-orang yang zalim itu mengikuti hawa nafsunya tanpa ilmu pengetahuan; maka siapakah yang akan memberi petunjuk kepada orang yang telah disesatkan Allah?"
+<br>— QS. Al-Ankabut: 29
+</div>
+</div>
+
+<h2>Peta Perjalanan Keilmuan Imam As-Syafi'i</h2>
+<p>
+Berikut adalah ringkasan perjalanan keilmuan Imam As-Syafi'i melintasi berbagai negeri Islam:
+</p>
+<ul>
+<li><strong>Mekkah (150-164 H / 767-780 M)</strong> — Masa kecil, menghafal Al-Qur'an, belajar bahasa Arab di pedalaman bersama Suku Hudzail, belajar fiqih kepada Muslim bin Khalid Az-Zanji dan hadits kepada Sufyan bin Uyainah</li>
+<li><strong>Madinah (164-179 H / 780-795 M)</strong> — Berguru kepada Imam Malik bin Anas, menghafal Al-Muwaththa', mempelajari fiqih Ahlul Hadits</li>
+<li><strong>Mekkah kembali (179-184 H / 795-800 M)</strong> — Mengajar dan menulis, sesekali pergi ke Yaman</li>
+<li><strong>Yaman (beberapa periode antara 180-195 H)</strong> — Menjadi qadhi, menghadapi pemberontakan, sempat dipenjara, mendapatkan pengalaman praktis dalam peradilan</li>
+<li><strong>Baghdad/Irak (184-195 H / 800-810 M)</strong> — Dialog dengan ulama Hanafi, merumuskan Mazhab Qadim, menulis kitab-kitab awal, bertemu Muhammad bin Hasan Asy-Syaibani</li>
+<li><strong>Kembali ke Baghdad (195-198 H)</strong> — Melanjutkan pengajaran dan penulisan</li>
+<li><strong>Mesir (199-204 H / 815-820 M)</strong> — Merumuskan Mazhab Jadid, menulis Ar-Risalah dan Al-Umm, wafat dan dimakamkan di Al-Qarafa</li>
+</ul>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG HIJRAH (PERPINDAHAN) DI JALAN ALLAH — QS. AN-NISA': 100</div>
+<div class="arabic-text">
+وَمَن يُهَاجِرْ فِي سَبِيلِ اللَّهِ يَجِدْ فِي الْأَرْضِ مُرَاغَمًا كَثِيرًا وَسَعَةً
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Barangsiapa berhijrah di jalan Allah, niscaya mereka mendapati di muka bumi ini tempat hijrah yang luas dan rezeki yang banyak."
+<br>— QS. An-Nisa': 100
+</div>
+</div>
+
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Perjalanan Menuntut Ilmu Imam As-Syafi'i:</strong>
+<ul>
+<li><strong>Fase Mekkah</strong> — Madrasah pertama: menghafal Al-Qur'an, belajar bahasa Arab, belajar fiqih dan hadits dari ulama Mekkah</li>
+<li><strong>Fase Madinah</strong> — Berguru kepada Imam Malik bin Anas, menghafal Al-Muwaththa', mempelajari fiqih Ahlul Hadits</li>
+<li><strong>Fase Yaman</strong> — Pengalaman praktis sebagai qadhi, menghadapi pemberontakan, sempat dipenjara</li>
+<li><strong>Fase Baghdad</strong> — Dialog dengan ulama Hanafi, merumuskan Mazhab Qadim, menulis kitab-kitab awal</li>
+<li><strong>Fase Mesir</strong> — Merumuskan Mazhab Jadid, menulis Ar-Risalah dan Al-Umm, wafat di Al-Qarafa</li>
+<li><strong>Prinsip perjalanan</strong> — "Merantaulah engkau dari tanah air untuk meraih keutamaan" (bait syair Imam As-Syafi'i)</li>
+<li><strong>Karakteristik</strong> — Terbuka terhadap kebenaran, siap merevisi pendapat sendiri, memadukan fiqih Hijaz dan fiqih Irak</li>
+<li><strong>Warisan</strong> — Mazhab Syafi'i menjadi salah satu dari empat mazhab yang diikuti oleh ratusan juta umat Islam hingga hari ini</li>
+</ul>
+</div>
+
+<h2>Doa Memohon Keberkahan dalam Menuntut Ilmu</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON KAROMAH ILMU</div>
+<div class="arabic-text">
+اللَّهُمَّ ارْزُقْنِي عِلْمًا نَافِعًا وَعَمَلًا مُتَقَبَّلًا، وَاجْعَلْ سَيِّدَنَا مُحَمَّدَ بْنَ إِدْرِيسَ الشَّافِعِيَّ شَفِيعِي يَوْمَ الْقِيَامَةِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, anugerahkanlah kepadaku ilmu yang bermanfaat dan amal yang diterima, dan jadikanlah Sayyidina Muhammad bin Idris As-Syafi'i sebagai pemberi syafaat bagiku pada hari kiamat."
+</div>
+</div>
+
+<h2>Penutup Halaman 3</h2>
+<p>
+Demikianlah perjalanan menuntut ilmu Imam As-Syafi'i yang melintasi berbagai negeri Islam — dari Mekkah ke Madinah, dari Madinah ke Yaman, dari Yaman ke Baghdad, dan akhirnya ke Mesir. Di setiap negeri, beliau mengumpulkan ilmu dari para imam besar, berdialog dengan para ulama, dan merumuskan pandangan-pandangan fiqih yang kelak menjadi mazhab yang diikuti oleh ratusan juta umat Islam.
+</p>
+<p>
+Perjalanan keilmuan beliau mengajarkan kita bahwa ilmu tidak datang dengan sendirinya, melainkan harus dikejar dengan perjuangan, pengorbanan, dan kesabaran. Beliau rela meninggalkan tanah air, menghadapi berbagai ujian — mulai dari kemiskinan, fitnah, penjara, hingga dialog intelektual yang melelahkan — demi mendapatkan ilmu yang bermanfaat bagi umat.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas secara lebih rinci para guru-guru Imam As-Syafi'i dan bidang-bidang ilmu yang beliau kuasai — sebuah khazanah keilmuan yang sangat luas yang menjadikan beliau sebagai salah satu ulama paling komprehensif dalam sejarah Islam.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-text">
+وَقُل رَّبِّ زِدْنِي عِلْمًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan katakanlah: 'Ya Tuhanku, tambahkanlah kepadaku ilmu pengetahuan.'"
+<br>— QS. Thaha: 114
+</div>
+</div>
+</div>
+
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="syafii1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="syafii2.html" class="article-nav-btn" title="Halaman 2: Masa Kecil di Mekkah">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="syafii3.html" class="article-nav-btn active" title="Halaman 3: Perjalanan Menuntut Ilmu">3</a>
+<div class="nav-btn-label">Menuntut Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="syafii4.html" class="article-nav-btn" title="Halaman 4: Para Guru & Bidang Ilmu">4</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="syafii5.html" class="article-nav-btn" title="Halaman 5: Perjalanan Spiritual">5</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="syafii6.html" class="article-nav-btn" title="Halaman 6: Tantangan & Konflik">6</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="syafii7.html" class="article-nav-btn" title="Halaman 7: Pro/Kontra Masyarakat & Ulama">7</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="syafii8.html" class="article-nav-btn" title="Halaman 8: Sikap terhadap Penguasa">8</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="syafii9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

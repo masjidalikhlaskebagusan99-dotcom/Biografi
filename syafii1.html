@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+  window.scrollTo(0, 0);
+</script>
+<title>Biografi Imam As-Syafi'i Sulthanul Fuqaha - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+/* 1. RESET & DASAR */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+/* 2. MEDIA QUERY TABLET */
+@media (max-width: 768px) {
+.article-container {
+max-width: 100%;
+padding: 20px;
+}
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+/* 3. HEADER & NAVIGASI ATAS */
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+/* 4. BREADCRUMB & CONTAINER */
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+/* 5. ARTICLE HEADER & META */
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+/* 6. GAMBAR & SHARE BAR */
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+/* 7. KONTEN ARTIKEL */
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 8. KOTAK ARAB & BIOGRAFI */
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.bio-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.bio-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.bio-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.bio-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 9. NAVIGASI HALAMAN (9 TOMBOL) */
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* 10. TOMBOL KEMBALI & FOOTER */
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+/* 11. MEDIA QUERY MOBILE */
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.bio-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Imam As-Syafi'i Sulthanul Fuqaha
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Imam As-Syafi'i — Sulthanul Fuqaha</h1>
+<div class="subtitle">Halaman 1 dari 9 — Pendahuluan, Nasab Mulia, dan Kelahiran Sang Pembela Sunnah</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Kamis, 22 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Imam_Shafi%27i.jpg/440px-Imam_Shafi%27i.jpg"
+alt="Imam Muhammad bin Idris As-Syafi'i"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Al-Shafi%27i_Mosque_1.jpg/440px-Al-Shafi%27i_Mosque_1.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Makam dan Masjid Imam As-Syafi'i di Al-Qarafa, Kairo, Mesir — tempat sang Sulthanul Fuqaha dikebumikan dan diziarahi hingga hari ini</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Imam Muhammad bin Idris bin Al-Abbas bin Utsman bin Syafi' bin As-Sa'ib bin Ubaid bin Abdi Yazid bin Hasyim bin Al-Muththalib bin Abdi Manaf (150–204 H / 767–820 M) adalah seorang imam besar, mujtahid mutlak, pendiri Mazhab Syafi'i, dan peletak dasar ilmu Ushul Fiqih. Beliau dijuluki <em>Sulthanul Fuqaha</em> (Sultan Para Ahli Fiqih), <em>Nashir As-Sunnah</em> (Pembela Sunnah), dan <em>Waliyullah</em> di zamannya. Beliau lahir di Gaza, Palestina, pada tahun 150 H — tahun yang sama dengan wafatnya Imam Abu Hanifah — seolah-olah Allah telah menakdirkan: ketika seorang imam fiqih pergi, imam fiqih yang lain datang untuk meneruskan estafet penegakan syariat di muka bumi.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG ILMU — QS. AL-MUJADALAH: 11</div>
+<div class="arabic-text">
+يَرْفَعِ اللَّهُ الَّذِينَ آمَنُوا مِنكُمْ وَالَّذِينَ أُوتُوا الْعِلْمَ دَرَجَاتٍ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Allah akan meninggikan orang-orang yang beriman di antaramu dan orang-orang yang diberi ilmu pengetahuan beberapa derajat."
+<br>— QS. Al-Mujadalah: 11
+</div>
+</div>
+
+<h2>Sulthanul Fuqaha — Sultan Para Ahli Fiqih</h2>
+<p>
+Imam As-Syafi'i mendapatkan gelar <em>Sulthanul Fuqaha</em> bukan karena klaim diri atau pengakuan manusia semata, melainkan karena ketinggian ilmunya, ketajaman pemikirannya, dan kedalaman pemahamannya terhadap Al-Qur'an dan As-Sunnah. Para ulama sepakat bahwa beliau adalah sosok yang pertama kali membukukan ilmu Ushul Fiqih secara sistematis melalui kitabnya yang masyhur, <em>Ar-Risalah</em> — kitab pertama dalam sejarah Islam yang membahas kaidah-kaidah istinbath hukum syar'i.
+</p>
+<p>
+Beliau juga dikenal sebagai <em>Nashir As-Sunnah</em> (Pembela Sunnah) karena pada masanya, banyak aliran yang mulai menyimpang dari manhaj Ahlussunnah wal Jama'ah, baik dari kalangan ahli ra'yi yang berlebihan dalam menggunakan logika, maupun dari kalangan ahli hadits yang terpaku pada zhahir nash tanpa memahami maqashid syari'ah. Imam As-Syafi'i hadir sebagai penengah yang memadukan kedalaman ilmu hadits dengan ketajaman nalar fiqih, sehingga lahirlah manhaj yang moderat, seimbang, dan menjadi rujukan umat hingga hari kiamat.
+</p>
+<p>
+Imam Ahmad bin Hanbal — murid beliau — pernah berkata tentang Imam As-Syafi'i dengan penuh takzhim:
+</p>
+<blockquote>
+"Beliau adalah seperti matahari bagi dunia dan seperti kesehatan bagi manusia."
+<br>— Imam Ahmad bin Hanbal
+</blockquote>
+
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN IMAM AHMAD TENTANG IMAM AS-SYAFI'I</div>
+<div class="arabic-text">
+كَانَ الشَّافِعِيُّ مِثْلَ الشَّمْسِ لِلدُّنْيَا وَمِثْلَ الصِّحَّةِ لِلنَّاسِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "As-Syafi'i itu seperti matahari bagi dunia, dan seperti kesehatan bagi manusia."
+<br>— Imam Ahmad bin Hanbal, sebagaimana diriwayatkan oleh Al-Baihaqi dalam <em>Manaqib As-Syafi'i</em>
+</div>
+</div>
+
+<h2>Nasab Mulia — Keturunan Abdul Manaf bin Qushay</h2>
+<p>
+Salah satu karunia terbesar yang Allah anugerahkan kepada Imam As-Syafi'i adalah kemuliaan nasab yang bersambung kepada <em>Abdul Manaf bin Qushay</em> — kakek buyut Rasulullah SAW. Artinya, nasab Imam As-Syafi'i bertemu dengan nasab Rasulullah SAW pada kakek kelima beliau, yaitu Abdul Manaf. Beliau bukan termasuk Ahlul Bait secara khusus (karena bukan keturunan Ali bin Abi Thalib atau Fatimah Az-Zahra), namun beliau adalah kerabat dekat Rasulullah SAW dari Bani Muththalib — kabilah yang senantiasa membela Nabi SAW sejak masa Jahiliyah hingga Islam tegak.
+</p>
+<p>
+Nasab lengkap beliau adalah: <em>Muhammad bin Idris bin Al-Abbas bin Utsman bin Syafi' bin As-Sa'ib bin Ubaid bin Abdi Yazid bin Hasyim bin Al-Muththalib bin Abdi Manaf bin Qushay bin Kilab bin Murrah bin Ka'b bin Lu'ay bin Ghalib bin Fihr (Quraisy) bin Malik bin An-Nadhr bin Kinanah bin Khuzaimah bin Mudrikah bin Ilyas bin Mudhar bin Nizar bin Ma'add bin 'Adnan</em>.
+</p>
+<p>
+Gelar <em>As-Syafi'i</em> diambil dari nama kakek buyut beliau, yaitu <em>Syafi' bin As-Sa'ib</em>. Ada yang mengatakan bahwa Syafi' adalah seorang yang shaleh dan dikenal luas di kalangan Quraisy, sehingga nama beliau diabadikan menjadi nisbah keturunan. Imam As-Syafi'i senantiasa bangga dengan nasab beliau dan menjadikannya sebagai motivasi untuk menjaga kehormatan keluarga besar Bani Muththalib dengan ilmu, amal, dan akhlak yang mulia.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KERABAT NABI — QS. ASY-SYURA: 23</div>
+<div class="arabic-text">
+قُلْ لَا أَسْأَلُكُمْ عَلَيْهِ أَجْرًا إِلَّا الْمَوَدَّةَ فِي الْقُرْبَىٰ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Katakanlah: 'Aku tidak meminta kepadamu sesuatu upah pun atas dakwahku kecuali kasih sayang dalam kekeluargaan (qurba).'"
+<br>— QS. Asy-Syura: 23
+</div>
+</div>
+
+<div class="bio-card">
+<span class="bio-number">1</span>
+<span class="bio-title">Silsilah Nasab Imam As-Syafi'i dari Bani Muththalib</span>
+<div class="bio-arabic">نَسَبُهُ الشَّرِيفُ مِنْ بَنِي الْمُطَّلِبِ بْنِ عَبْدِ مَنَافٍ</div>
+<p>
+Imam As-Syafi'i berasal dari keluarga Bani Muththalib bin Abdi Manaf, kabilah Quraisy yang memiliki kedudukan mulia di sisi Rasulullah SAW. Bani Muththalib dan Bani Hasyim adalah dua saudara kandung yang sama-sama keturunan Abdi Manaf bin Qushay. Ketika Bani Hasyim dimusuhi dan diboikot oleh kaum Quraisy, Bani Muththalib adalah satu-satunya kabilah yang setia membela dan ikut serta dalam pemboikotan tersebut hingga titik darah penghabisan.
+</p>
+<p>
+Rasulullah SAW sendiri pernah bersabda tentang kedekatan Bani Muththalib dengan beliau:
+</p>
+<blockquote>
+"Sesungguhnya Bani Muththalib dan Bani Hasyim itu adalah satu (kesatuan)."
+<br>— HR. Al-Bukhari
+</blockquote>
+<p>
+Dari keluarga inilah lahir sosok Imam As-Syafi'i — seorang alim yang memadukan kemuliaan nasab dengan ketinggian ilmu, sehingga beliau menjadi cahaya yang menerangi dunia Islam selama berabad-abad.
+</p>
+</div>
+
+<h2>Kelahiran di Gaza — Tahun Wafatnya Imam Abu Hanifah</h2>
+<p>
+Imam As-Syafi'i lahir di <strong>Gaza, Palestina</strong>, pada bulan <strong>Rajab tahun 150 H</strong> (Agustus 767 M). Gaza pada masa itu adalah sebuah kota pesisir yang strategis di tepi Laut Tengah, merupakan pusat pertemuan antara Syam (Suriah-Palestina) dan Mesir, serta menjadi tempat persinggahan para pedagang, ulama, dan musafir.
+</p>
+<p>
+Ada sebuah isyarat ilahiah yang sangat agung pada tahun kelahiran beliau: <strong>tahun 150 H adalah tahun yang sama dengan wafatnya Imam Abu Hanifah</strong> — pendiri Mazhab Hanafi dan imam ahli ra'yi terbesar di zamannya. Seolah-olah Allah SWT hendak menunjukkan kepada umat ini bahwa ketika satu bintang keilmuan terbenam, bintang keilmuan yang lain segera terbit untuk menerangi jalan syariat. Imam As-Syafi'i lahir untuk menyempurnakan apa yang telah dimulai oleh para imam sebelumnya, dan untuk meletakkan kaidah-kaidah fiqih yang akan menjadi pedoman umat hingga hari kiamat.
+</p>
+<p>
+Ayah beliau, <em>Idris bin Al-Abbas</em>, adalah seorang yang shaleh dan berilmu, namun beliau wafat ketika Imam As-Syafi'i masih berusia sangat muda — ada yang mengatakan baru berusia dua tahun, ada yang mengatakan masih dalam kandungan ibunya. Setelah ayahnya wafat, ibunya membawa beliau pindah ke <strong>Mekkah Al-Mukarramah</strong> — tanah suci yang akan menjadi tempat tumbuh kembangnya sang imam besar.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KETENTUAN ALLAH — QS. AL-HADID: 22</div>
+<div class="arabic-text">
+مَا أَصَابَ مِن مُّصِيبَةٍ فِي الْأَرْضِ وَلَا فِي أَنفُسِكُمْ إِلَّا فِي كِتَابٍ مِّن قَبْلِ أَن نَّبْرَأَهَا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Tiada suatu bencanapun yang menimpa di bumi dan tidak pula pada dirimu sendiri melainkan telah tertulis dalam kitab (Lauh Mahfuzh) sebelum Kami menciptakannya."
+<br>— QS. Al-Hadid: 22
+</div>
+</div>
+
+<div class="bio-card">
+<span class="bio-number">2</span>
+<span class="bio-title">Ibunda yang Shalehah — Pembawa Amanah Ilmu</span>
+<div class="bio-arabic">أُمُّهُ الصَّالِحَةُ حَامِلَةُ الْأَمَانَةِ</div>
+<p>
+Ibunda Imam As-Syafi'i — yang dalam beberapa riwayat disebutkan berasal dari kabilah Azd di Yaman — adalah seorang wanita yang sangat shalehah, wara', dan penuh tawakkal kepada Allah. Setelah suaminya wafat, beliau membawa putranya yang masih kecil dari Gaza ke Mekkah dengan membawa harta yang sangat sedikit, namun dengan iman yang sangat besar.
+</p>
+<p>
+Di Mekkah, ibunda Imam As-Syafi'i bekerja keras untuk menghidupi putranya. Beliau dikenal sebagai wanita yang sangat menjaga kehormatan diri dan sangat perhatian terhadap pendidikan agama putranya. Beliau mendaftarkan Imam As-Syafi'i kecil di kuttab (tempat belajar Al-Qur'an) sejak usia dini, dan senantiasa mengawasi perkembangan hafalan dan akhlak putranya.
+</p>
+<p>
+Ketika Imam As-Syafi'i mulai menunjukkan kecerdasan yang luar biasa, ibundalah yang menjadi pendukung utama beliau untuk terus menuntut ilmu. Beliau pernah berkata kepada putranya: <em>"Wahai anakku, pergilah engkau ke majelis-majelis ilmu, karena aku tidak mampu membiayaimu dengan harta, namun aku akan mendoakanmu dengan air mataku di sepertiga malam."</em> Doa ibundalah yang menjadi bahan bakar spiritual bagi Imam As-Syafi'i dalam menempuh perjalanan keilmuan yang panjang dan melelahkan.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG BERBAKTI KEPADA IBU — QS. LUQMAN: 14</div>
+<div class="arabic-text">
+وَوَصَّيْنَا الْإِنسَانَ بِوَالِدَيْهِ حَمَلَتْهُ أُمُّهُ وَهْنًا عَلَىٰ وَهْنٍ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan Kami perintahkan kepada manusia (berbuat baik) kepada dua orang ibu-bapaknya; ibunya telah mengandungnya dalam keadaan lemah yang bertambah-tambah."
+<br>— QS. Luqman: 14
+</div>
+</div>
+
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Pendahuluan Biografi Imam As-Syafi'i:</strong>
+<ul>
+<li><strong>Nama lengkap:</strong> Muhammad bin Idris bin Al-Abbas bin Utsman bin Syafi' bin As-Sa'ib bin Ubaid bin Abdi Yazid bin Hasyim bin Al-Muththalib bin Abdi Manaf bin Qushay</li>
+<li><strong>Gelar:</strong> Sulthanul Fuqaha (Sultan Para Ahli Fiqih), Nashir As-Sunnah (Pembela Sunnah)</li>
+<li><strong>Nasab mulia:</strong> Keturunan Bani Muththalib bin Abdi Manaf — kerabat dekat Rasulullah SAW</li>
+<li><strong>Tempat lahir:</strong> Gaza, Palestina</li>
+<li><strong>Tanggal lahir:</strong> Bulan Rajab 150 H (Agustus 767 M)</li>
+<li><strong>Isyarat ilahiah:</strong> Lahir pada tahun yang sama dengan wafatnya Imam Abu Hanifah</li>
+<li><strong>Yatim sejak kecil:</strong> Ayah beliau wafat ketika beliau masih balita</li>
+<li><strong>Dibesarkan di Mekkah:</strong> Dibawa ibunda yang shalehah ke tanah suci</li>
+</ul>
+</div>
+
+<h2>Doa Memohon Keberkahan Ilmu</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON KAROMAH ILMU</div>
+<div class="arabic-text">
+اللَّهُمَّ ارْزُقْنِي عِلْمًا نَافِعًا وَعَمَلًا مُتَقَبَّلًا، وَاجْعَلْ سَيِّدَنَا مُحَمَّدَ بْنَ إِدْرِيسَ الشَّافِعِيَّ شَفِيعِي يَوْمَ الْقِيَامَةِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, anugerahkanlah kepadaku ilmu yang bermanfaat dan amal yang diterima, dan jadikanlah Sayyidina Muhammad bin Idris As-Syafi'i sebagai pemberi syafaat bagiku pada hari kiamat."
+</div>
+</div>
+
+<h2>Penutup Halaman 1</h2>
+<p>
+Demikianlah pengantar biografi Imam As-Syafi'i — sang Sulthanul Fuqaha yang lahir di Gaza pada tahun 150 H, dari nasab mulia Bani Muththalib, dan dibesarkan oleh ibunda yang shalehah di tanah suci Mekkah. Kelahiran beliau adalah isyarat ilahiah bahwa Allah tidak akan membiarkan umat ini tanpa seorang imam yang membimbing mereka kepada jalan syariat yang lurus.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas masa kecil Imam As-Syafi'i di Mekkah — bagaimana beliau tumbuh dalam keadaan yatim dan fakir, namun dengan kecerdasan yang luar biasa, serta bagaimana beliau mulai menapaki jalan menuntut ilmu di tengah-tengah lingkungan Masjidil Haram yang penuh berkah.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-text">
+وَقُل رَّبِّ زِدْنِي عِلْمًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan katakanlah: 'Ya Tuhanku, tambahkanlah kepadaku ilmu pengetahuan.'"
+<br>— QS. Thaha: 114
+</div>
+</div>
+</div>
+
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="syafii1.html" class="article-nav-btn active" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="syafii2.html" class="article-nav-btn" title="Halaman 2: Masa Kecil di Mekkah">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="syafii3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu">3</a>
+<div class="nav-btn-label">Menuntut Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="syafii4.html" class="article-nav-btn" title="Halaman 4: Para Guru & Bidang Ilmu">4</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="syafii5.html" class="article-nav-btn" title="Halaman 5: Perjalanan Spiritual">5</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="syafii6.html" class="article-nav-btn" title="Halaman 6: Tantangan & Konflik">6</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="syafii7.html" class="article-nav-btn" title="Halaman 7: Pro/Kontra Masyarakat & Ulama">7</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="syafii8.html" class="article-nav-btn" title="Halaman 8: Sikap terhadap Penguasa">8</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="syafii9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

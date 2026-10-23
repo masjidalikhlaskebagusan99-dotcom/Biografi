@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+  window.scrollTo(0, 0);
+</script>
+<title>Biografi Imam As-Syafi'i — Pro/Kontra Masyarakat & Ulama - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+/* 1. RESET & DASAR */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+/* 2. MEDIA QUERY TABLET */
+@media (max-width: 768px) {
+.article-container {
+max-width: 100%;
+padding: 20px;
+}
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+/* 3. HEADER & NAVIGASI ATAS */
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+/* 4. BREADCRUMB & CONTAINER */
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+/* 5. ARTICLE HEADER & META */
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+/* 6. GAMBAR & SHARE BAR */
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+/* 7. KONTEN ARTIKEL */
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 8. KOTAK ARAB & BIOGRAFI */
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.bio-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.bio-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.bio-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.bio-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 9. NAVIGASI HALAMAN (9 TOMBOL) */
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* 10. TOMBOL KEMBALI & FOOTER */
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+/* 11. MEDIA QUERY MOBILE */
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.bio-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+/* PATCH UNIVERSAL v2.0 */
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Imam As-Syafi'i — Pro/Kontra Masyarakat & Ulama
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Imam As-Syafi'i — Pro/Kontra Masyarakat & Ulama</h1>
+<div class="subtitle">Halaman 7 dari 9 — Pujian, Kritik, dan Sikap Sang Sulthanul Fuqaha terhadap Perbedaan</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Kamis, 22 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Al-Shafi%27i_Mosque_1.jpg/640px-Al-Shafi%27i_Mosque_1.jpg"
+alt="Masjid Imam As-Syafi'i di Kairo — simbol pengakuan umat terhadap keagungan beliau"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Cairo_-_Islamic_district_-_Gate_of_Bab_Zuweila.jpg/440px-Cairo_-_Islamic_district_-_Gate_of_Bab_Zuweila.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Masjid Imam As-Syafi'i di Al-Qarafa, Kairo — simbol pengakuan umat Islam sepanjang masa terhadap keagungan ilmu dan akhlak sang Sulthanul Fuqaha</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Seperti halnya para nabi dan ulama besar, Imam As-Syafi'i tidak luput dari dinamika pro dan kontra di tengah masyarakat dan para ulama sezaman beliau. Ada yang memuji beliau dengan pujian yang melangit, ada yang mengkritik beliau dengan kritik yang tajam, ada yang menentang beliau dengan penentangan yang keras, dan ada pula yang menerima beliau dengan penuh cinta dan takzhim. Namun, yang paling mengagumkan dari seluruh dinamika ini adalah sikap Imam As-Syafi'i sendiri — beliau senantiasa menerima kebenaran dari siapapun datangnya, tidak pernah membalas celaan dengan celaan, dan senantiasa mendoakan kebaikan bagi mereka yang menentangnya. Inilah adab para ulama rabbaniyyin yang menjadi teladan bagi umat hingga hari kiamat.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG PERBEDAAN PENDAPAT — QS. HUUD: 118-119</div>
+<div class="arabic-text">
+وَلَوْ شَاءَ رَبُّكَ لَجَعَلَ النَّاسَ أُمَّةً وَاحِدَةً ۖ وَلَا يَزَالُونَ مُخْتَلِفِينَ ۝ إِلَّا مَن رَّحِمَ رَبُّكَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Jikalau Tuhanmu menghendaki, tentu Dia menjadikan manusia umat yang satu, tetapi mereka senantiasa berselisih pendapat. Kecuali orang-orang yang dirahmati oleh Tuhanmu."
+<br>— QS. Huud: 118-119
+</div>
+</div>
+
+<h2>Sikap Pro Masyarakat Umum terhadap Imam As-Syafi'i</h2>
+<p>
+Masyarakat umum pada masa Imam As-Syafi'i — baik di Mekkah, Madinah, Baghdad, maupun Mesir — secara umum menerima beliau dengan penuh cinta dan takzhim. Hal ini karena beberapa faktor: keadilan beliau dalam memberikan fatwa, kedalaman ilmu beliau yang tampak dalam setiap diskusi, akhlak beliau yang mulia terhadap siapa saja, dan zuhud beliau yang tidak tergiur dengan harta dan kedudukan penguasa.
+</p>
+
+<div class="bio-card">
+<span class="bio-number">1</span>
+<span class="bio-title">Pujian Masyarakat Mekkah dan Madinah</span>
+<div class="bio-arabic">ثَنَاءُ أَهْلِ مَكَّةَ وَالْمَدِينَةِ</div>
+<p>
+Masyarakat Mekkah dan Madinah — tanah tempat Imam As-Syafi'i tumbuh dan belajar — sangat mencintai beliau. Mereka mengenal beliau sejak kecil sebagai anak yatim yang cerdas, shaleh, dan sangat menghormati para ulama. Ketika beliau mulai memberikan fatwa di usia lima belas tahun, masyarakat Mekkah langsung menerimanya dengan penuh kepercayaan, karena mereka tahu bahwa beliau adalah murid dari Muslim bin Khalid Az-Zanji (mufti Mekkah) dan Sufyan bin Uyainah (imam hadits Hijaz).
+</p>
+<p>
+Di Madinah, masyarakat juga menerima beliau dengan penuh takzhim, terutama setelah beliau berguru kepada Imam Malik bin Anas selama sembilan tahun. Mereka melihat beliau sebagai penerus sah dari fiqih Ahlul Hadits yang diajarkan oleh Imam Malik. Para ulama Madinah berkata: <em>"Muhammad bin Idris adalah orang yang paling mirip dengan Imam Malik dalam hal fiqih, zuhud, dan akhlak."</em>
+</p>
+<p>
+Masyarakat umum di kedua tanah suci ini menerima fatwa-fatwa Imam As-Syafi'i karena beliau selalu berpegang teguh pada Al-Qur'an dan As-Sunnah, tidak pernah memberikan fatwa yang bertentangan dengan kemaslahatan umat, dan senantiasa bersikap adil terhadap siapa saja — baik kaya maupun miskin, penguasa maupun rakyat jelata.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEADILAN — QS. AL-MA'IDAH: 8</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا كُونُوا قَوَّامِينَ لِلَّهِ شُهَدَاءَ بِالْقِسْطِ ۖ وَلَا يَجْرِمَنَّكُمْ شَنَآنُ قَوْمٍ عَلَىٰ أَلَّا تَعْدِلُوا ۚ اعْدِلُوا هُوَ أَقْرَبُ لِلتَّقْوَىٰ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, hendaklah kamu jadi orang-orang yang selalu menegakkan (kebenaran) karena Allah, menjadi saksi dengan adil. Dan janganlah sekali-kali kebencianmu terhadap sesuatu kaum, mendorong kamu untuk berlaku tidak adil. Berlaku adillah, karena adil itu lebih dekat kepada takwa."
+<br>— QS. Al-Ma'idah: 8
+</div>
+</div>
+
+<div class="bio-card">
+<span class="bio-number">2</span>
+<span class="bio-title">Pujian Masyarakat Baghdad dan Mesir</span>
+<div class="bio-arabic">ثَنَاءُ أَهْلِ بَغْدَادَ وَمِصْرَ</div>
+<p>
+Di Baghdad, meskipun Imam As-Syafi'i menghadapi perdebatan sengit dengan para ulama Hanafi, masyarakat umum Baghdad justru sangat menghormati beliau. Mereka kagum dengan kefasihan lisan beliau, kedalaman ilmu beliau, dan keberanian beliau dalam membela kebenaran. Banyak penduduk Baghdad yang datang ke halaqah beliau untuk mendengarkan fatwa-fatwa dan diskusi-diskusi ilmiah beliau.
+</p>
+<p>
+Di Mesir, penerimaan masyarakat terhadap Imam As-Syafi'i bahkan lebih besar. Ketika beliau tiba di Mesir pada tahun 199 H, beliau disambut dengan penuh penghormatan oleh gubernur Mesir dan para ulama setempat. Halaqah beliau di Masjid Amr bin Ash selalu penuh sesak dengan para penuntut ilmu dari berbagai lapisan masyarakat. Masyarakat Mesir mencintai beliau karena beliau mengajarkan ilmu dengan cuma-cuma, tidak menerima upah dari mengajar, dan senantiasa membantu orang-orang miskin dengan fatwa-fatwa yang meringankan beban mereka.
+</p>
+<p>
+Ar-Rabi' bin Sulaiman menceritakan: <em>"Ketika Imam As-Syafi'i mengajar di Mesir, halaqah beliau selalu dipenuhi oleh ratusan orang. Ada yang datang dari jauh hanya untuk mendengar satu masalah fiqih dari beliau. Masyarakat Mesir sangat mencintai beliau karena keikhlasan dan kedalaman ilmu beliau."</em>
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENGAJAR DENGAN IKHLAS — QS. AL-INSAN: 8-9</div>
+<div class="arabic-text">
+وَيُطْعِمُونَ الطَّعَامَ عَلَىٰ حُبِّهِ مِسْكِينًا وَيَتِيمًا وَأَسِيرًا ۝ إِنَّمَا نُطْعِمُكُمْ لِوَجْهِ اللَّهِ لَا نُرِيدُ مِنكُمْ جَزَاءً وَلَا شُكُورًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan mereka memberikan makanan yang disukainya kepada orang miskin, anak yatim dan orang yang ditawan. (Mereka berkata): 'Sesungguhnya kami memberi makanan kepadamu hanyalah untuk mengharapkan keridhaan Allah, kami tidak menghendaki balasan dari kamu dan tidak pula (ucapan) terima kasih.'"
+<br>— QS. Al-Insan: 8-9
+</div>
+</div>
+
+<h2>Sikap Pro dan Kontra Ulama Sezaman</h2>
+<p>
+Para ulama sezaman Imam As-Syafi'i terbagi menjadi beberapa kelompok dalam memandang beliau. Ada yang memuji beliau dengan pujian yang sangat tinggi, ada yang mengkritik beliau dengan kritik yang tajam, dan ada pula yang menentang beliau dengan penentangan yang keras. Namun, yang menarik adalah bahwa bahkan para ulama yang menentang beliau pun mengakui keagungan ilmu dan akhlak beliau.
+</p>
+
+<div class="bio-card">
+<span class="bio-number">3</span>
+<span class="bio-title">Pujian dari Ulama Ahlul Hadits</span>
+<div class="bio-arabic">ثَنَاءُ عُلَمَاءِ أَهْلِ الْحَدِيثِ</div>
+<p>
+Para ulama Ahlul Hadits — yang menjadi kelompok terbesar di Hijaz dan Baghdad — memuji Imam As-Syafi'i dengan pujian yang sangat tinggi. Di antara pujian-pujian tersebut adalah:
+</p>
+<ul>
+<li><strong>Imam Ahmad bin Hanbal</strong> berkata: <em>"As-Syafi'i itu seperti matahari bagi dunia, dan seperti kesehatan bagi manusia."</em> Beliau juga berkata: <em>"Aku tidak pernah melihat orang yang lebih faqih dalam masalah halal dan haram, dan lebih memahami sunnah daripada As-Syafi'i."</em></li>
+<li><strong>Sufyan bin Uyainah</strong> berkata: <em>"Muhammad bin Idris adalah orang yang paling mirip dengan Imam Syafi'i (dalam hal keilmuan) di zamannya."</em> (Maksudnya, beliau adalah ulama terbesar di zamannya).</li>
+<li><strong>Abu Tsaur Al-Kalbi</strong> — salah satu murid utama Imam As-Syafi'i di Baghdad — berkata: <em>"Aku tidak pernah melihat orang yang lebih faqih, lebih wara', dan lebih zuhud daripada As-Syafi'i."</em></li>
+<li><strong>Al-Humaidi</strong> — ulama hadits besar — berkata: <em>"As-Syafi'i adalah imam dalam bidang fiqih, hadits, bahasa Arab, dan zuhud. Beliau adalah ulama yang sempurna di zamannya."</em></li>
+</ul>
+<p>
+Pujian-pujian ini bukanlah pujian yang berlebihan, melainkan pengakuan tulus dari para ulama yang mengenal Imam As-Syafi'i secara langsung dan menyaksikan keagungan ilmu dan akhlak beliau.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN IMAM AHMAD TENTANG IMAM AS-SYAFI'I</div>
+<div class="arabic-text">
+الشَّافِعِيُّ مِثْلُ الشَّمْسِ لِلدُّنْيَا وَمِثْلُ الصِّحَّةِ لِلنَّاسِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "As-Syafi'i itu seperti matahari bagi dunia, dan seperti kesehatan bagi manusia."
+<br>— Imam Ahmad bin Hanbal, sebagaimana diriwayatkan oleh Al-Baihaqi dalam <em>Manaqib As-Syafi'i</em>
+</div>
+</div>
+
+<div class="bio-card">
+<span class="bio-number">4</span>
+<span class="bio-title">Kritik dari Sebagian Ulama Hanafi dan Ahli Ra'yi</span>
+<div class="bio-arabic">نَقْدُ بَعْضِ عُلَمَاءِ الْحَنَفِيَّةِ وَأَهْلِ الرَّأْيِ</div>
+<p>
+Sebagian ulama Hanafi dan ahli ra'yi — terutama di Baghdad — memberikan kritik yang tajam terhadap Imam As-Syafi'i, terutama terkait dengan penolakan beliau terhadap metode istihsan dan kedekatan beliau dengan mazhab Ahlul Hadits. Di antara kritik-kritik tersebut adalah:
+</p>
+<ul>
+<li><strong>Abu Sulaiman Al-Juzjani</strong> — seorang ulama Hanafi — pernah mengkritik Imam As-Syafi'i karena dianggap terlalu keras dalam menolak istihsan. Namun, kritik ini bukan karena kebencian pribadi, melainkan karena perbedaan metodologis dalam berijtihad.</li>
+<li><strong>Sebagian ulama Kufah</strong> menganggap Imam As-Syafi'i terlalu mengandalkan hadits ahad (hadits yang diriwayatkan oleh satu atau beberapa orang saja) dalam menetapkan hukum, padahal menurut mereka, hadits ahad tidak bisa dijadikan hujjah dalam masalah akidah dan hukum.</li>
+<li><strong>Sebagian ulama Mu'tazilah</strong> menentang Imam As-Syafi'i karena beliau menolak metode ta'wil yang mereka gunakan dalam memahami ayat-ayat dan hadits-hadits yang tampak bertentangan dengan akal.</li>
+</ul>
+<p>
+Namun, yang perlu dicatat adalah bahwa kritik-kritik ini senantiasa dilakukan dalam koridor adab ilmiah. Imam As-Syafi'i sendiri senantiasa menghormati para ulama yang mengkritik beliau, dan beliau tidak pernah membalas kritik dengan celaan atau ghibah. Beliau berkata: <em>"Setiap orang yang menasihatiku dengan kebenaran, maka aku akan menerimanya, meskipun ia adalah musuhku."</em>
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN IMAM AS-SYAFI'I TENTANG KRITIK</div>
+<div class="arabic-text">
+مَنْ نَصَحَنِي بِالْحَقِّ فَقَدْ أَرَادَنِي بِخَيْرٍ، وَلَوْ كَانَ عَدُوِّي
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Barangsiapa yang menasihatiku dengan kebenaran, maka ia telah menginginkan kebaikan bagiku, meskipun ia adalah musuhku."
+<br>— Imam As-Syafi'i
+</div>
+</div>
+
+<div class="bio-card">
+<span class="bio-number">5</span>
+<span class="bio-title">Penentangan dari Sebagian Ulama yang Menuduh Bid'ah</span>
+<div class="bio-arabic">مُعَارَضَةُ بَعْضِ الْعُلَمَاءِ الَّذِينَ اتَّهَمُوهُ بِالْبِدْعَةِ</div>
+<p>
+Sebagian ulama — terutama dari kalangan yang tidak memahami kaidah-kaidah ushul fiqih — menentang Imam As-Syafi'i karena beliau meletakkan kaidah-kaidah ushul fiqih yang belum pernah dibukukan secara sistematis oleh ulama sebelumnya. Mereka menuduh beliau sebagai pembuat bid'ah karena dianggap "mengada-ada" ilmu baru yang tidak ada di masa salaf.
+</p>
+<p>
+Namun, tuduhan ini sama sekali tidak berdasar, karena Imam As-Syafi'i sendiri menjelaskan bahwa kaidah-kaidah yang beliau bukukan dalam kitab <em>Ar-Risalah</em> sebenarnya telah diamalkan oleh para salaf, hanya saja mereka tidak membukukannya secara sistematis. Beliau berkata: <em>"Aku tidak membuat ilmu baru, melainkan aku hanya merumuskan kaidah-kaidah yang sudah ada dalam Al-Qur'an dan As-Sunnah agar bisa menjadi pedoman bagi umat setelah para salaf."</em>
+</p>
+<p>
+Para ulama besar sezaman beliau — seperti Imam Ahmad bin Hanbal, Ishaq bin Rahawaih, dan Abu Ubaid Al-Qasim bin Salam — membantah tuduhan bid'ah ini dan menegaskan bahwa ilmu ushul fiqih yang diletakkan oleh Imam As-Syafi'i adalah ilmu yang sangat dibutuhkan oleh umat Islam untuk memahami Al-Qur'an dan As-Sunnah dengan benar.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG TABAYYUN — QS. AL-HUJURAT: 6</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا إِن جَاءَكُمْ فَاسِقٌ بِنَبَإٍ فَتَبَيَّنُوا أَن تُصِيبُوا قَوْمًا بِجَهَالَةٍ فَتُصْبِحُوا عَلَىٰ مَا فَعَلْتُمْ نَادِمِينَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, jika datang kepadamu orang fasik membawa suatu berita, maka periksalah dengan teliti agar kamu tidak menimpakan suatu musibah kepada seseorang dalam ketidaktahuan sehingga kamu menjadi menyesal atas perbuatanmu itu."
+<br>— QS. Al-Hujurat: 6
+</div>
+</div>
+
+<h2>Sikap Penguasa terhadap Imam As-Syafi'i</h2>
+<p>
+Para penguasa pada masa Imam As-Syafi'i — baik khalifah Abbasiyah di Baghdad maupun gubernur-gubernur di berbagai negeri — umumnya menghormati beliau dengan penuh takzhim. Meskipun mereka sering kali berbeda pendapat dengan beliau dalam beberapa masalah, mereka tidak pernah memaksa beliau untuk mengikuti pendapat mereka, dan tidak pernah mengganggu dakwah dan pengajaran beliau.
+</p>
+
+<div class="bio-card">
+<span class="bio-number">6</span>
+<span class="bio-title">Penghormatan Khalifah dan Para Gubernur</span>
+<div class="bio-arabic">تَوْقِيرُ الْخُلَفَاءِ وَالْوُلَاةِ</div>
+<p>
+Khalifah Harun Ar-Rasyid dan putranya Al-Amin sangat menghormati Imam As-Syafi'i, meskipun beliau tidak pernah mau diangkat menjadi qadhi resmi negara atau pejabat istana. Ketika Imam As-Syafi'i difitnah di Yaman, Khalifah Al-Amin memerintahkan untuk memeriksa kasus beliau secara adil, dan ketika terbukti beliau tidak bersalah, beliau dibebaskan dan nama baik beliau dipulihkan.
+</p>
+<p>
+Khalifah Al-Ma'mun — yang dikenal sebagai khalifah yang sangat cinta ilmu — juga sangat menghormati Imam As-Syafi'i. Meskipun Al-Ma'mun memiliki pandangan Mu'tazilah yang berbeda dengan pandangan Ahlussunnah yang dipegang oleh Imam As-Syafi'i, beliau tidak pernah memaksa Imam As-Syafi'i untuk mengikuti pandangannya. Beliau bahkan sering mengundang Imam As-Syafi'i ke istana untuk berdiskusi tentang berbagai masalah keilmuan.
+</p>
+<p>
+Di Mesir, gubernur Mesir — Abdullah bin Abdul Hakim — sangat menghormati Imam As-Syafi'i dan memberikan beliau kebebasan penuh untuk mengajar dan berfatwa di Masjid Amr bin Ash. Beliau juga menawarkan harta dan kedudukan kepada Imam As-Syafi'i, namun ditolak dengan halus oleh beliau.
+</p>
+<p>
+Sikap para penguasa ini menunjukkan bahwa Imam As-Syafi'i adalah sosok yang sangat dihormati oleh semua lapisan masyarakat — mulai dari rakyat jelata hingga para khalifah. Penghormatan ini bukan karena beliau mencari kedudukan, melainkan karena keagungan ilmu dan akhlak beliau yang diakui oleh semua orang.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG PENGHORMATAN KEPADA ULAMA — QS. AL-MUJADALAH: 11</div>
+<div class="arabic-text">
+يَرْفَعِ اللَّهُ الَّذِينَ آمَنُوا مِنكُمْ وَالَّذِينَ أُوتُوا الْعِلْمَ دَرَجَاتٍ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Allah akan meninggikan orang-orang yang beriman di antaramu dan orang-orang yang diberi ilmu pengetahuan beberapa derajat."
+<br>— QS. Al-Mujadalah: 11
+</div>
+</div>
+
+<h2>Sikap Imam As-Syafi'i terhadap Pro dan Kontra</h2>
+<p>
+Yang paling mengagumkan dari seluruh dinamika pro dan kontra ini adalah sikap Imam As-Syafi'i sendiri. Beliau senantiasa bersikap tawadhu' (rendah hati), menerima kebenaran dari siapapun datangnya, tidak pernah membalas celaan dengan celaan, dan senantiasa mendoakan kebaikan bagi mereka yang menentangnya. Inilah adab para ulama rabbaniyyin yang menjadi teladan bagi umat hingga hari kiamat.
+</p>
+
+<div class="bio-card">
+<span class="bio-number">7</span>
+<span class="bio-title">Tawadhu' dan Menerima Kebenaran dari Siapapun</span>
+<div class="bio-arabic">التَّوَاضُعُ وَقُبُولُ الْحَقِّ مِنْ كُلِّ أَحَدٍ</div>
+<p>
+Imam As-Syafi'i dikenal sebagai ulama yang sangat tawadhu'. Beliau tidak pernah merasa dirinya paling benar, dan senantiasa terbuka terhadap kebenaran dari siapapun datangnya. Beliau berkata: <em>"Setiap perkataan (ulama) bisa diterima dan bisa ditolak, kecuali perkataan Rasulullah SAW. Dan jika telah shahih suatu hadits, maka itulah mazhabku. Maka janganlah kalian mengikuti pendapatku secara taklid, melainkan ambillah dari mana aku mengambil (yaitu Al-Qur'an dan As-Sunnah)."</em>
+</p>
+<p>
+Sikap tawadhu' ini juga tampak dalam cara beliau menerima kritik dari para ulama yang menentangnya. Beliau tidak pernah marah ketika dikritik, dan tidak pernah membalas kritik dengan celaan. Beliau berkata: <em>"Barangsiapa yang menasihatiku dengan kebenaran di hadapan wajahku, maka ia telah memulyaakanku. Dan barangsiapa yang menasihatiku dengan kebenaran di belakang punggungku, maka ia telah menasihatiku dengan kejujuran."</em>
+</p>
+<p>
+Beliau juga senantiasa mendoakan kebaikan bagi para ulama yang menentangnya. Ketika ada ulama Hanafi yang mengkritik beliau dengan keras, beliau berkata: <em>"Aku mendoakan kebaikan bagi mereka, karena mereka telah membantu aku untuk menemukan kesalahan-kesalahanku dan memperbaikinya."</em>
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN IMAM AS-SYAFI'I TENTANG TAKWALID</div>
+<div class="arabic-text">
+كُلُّ قَوْلٍ يُؤْخَذُ وَيُتْرَكُ إِلَّا قَوْلَ رَسُولِ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ، وَلَا تَقَلِّدُونِي وَلَا تَقَلِّدُوا مَالِكًا وَلَا الثَّوْرِيَّ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Setiap perkataan (ulama) bisa diterima dan bisa ditolak, kecuali perkataan Rasulullah SAW. Maka janganlah kalian bertaklid kepadaku, dan jangan pula bertaklid kepada Malik, atau As-Sauri (Imam Tsauri)."
+<br>— Imam As-Syafi'i, kaidah utama dalam mazhab beliau
+</div>
+</div>
+
+<div class="bio-card">
+<span class="bio-number">8</span>
+<span class="bio-title">Tidak Membalas Celaan dengan Celaan</span>
+<div class="bio-arabic">عَدَمُ مُقَابَلَةِ الشَّتْمِ بِالشَّتْمِ</div>
+<p>
+Salah satu sikap paling mulia Imam As-Syafi'i adalah bahwa beliau tidak pernah membalas celaan dengan celaan, meskipun beliau sering kali dicela dan difitnah oleh orang-orang yang tidak senang dengan beliau. Beliau senantiasa bersabar dan mendoakan kebaikan bagi mereka yang mencelanya.
+</p>
+<p>
+Salah satu kisah yang masyhur adalah ketika ada seorang ulama yang mengkritik beliau dengan sangat keras di hadapan orang banyak. Para murid Imam As-Syafi'i marah dan ingin membalas kritik tersebut, namun Imam As-Syafi'i melarang mereka dan berkata: <em>"Janganlah kalian membalasnya, karena jika ia benar, maka itu adalah nasihat bagiku. Dan jika ia salah, maka itu adalah dosa baginya, dan aku tidak ingin dosanya itu menjadi beban bagiku di hari kiamat."</em>
+</p>
+<p>
+Beliau juga pernah berkata: <em>"Aku tidak pernah membalas celaan seseorang dengan celaan, karena aku tahu bahwa celaan itu akan kembali kepada orang yang mencela, bukan kepada orang yang dicela. Dan aku tidak ingin dosaku bertambah karena membalas celaan."</em>
+</p>
+<p>
+Sikap inilah yang menjadikan Imam As-Syafi'i dicintai oleh semua orang — bahkan oleh mereka yang pada awalnya menentang beliau. Banyak ulama yang pada awalnya mengkritik beliau, kemudian menjadi pendukung setia beliau setelah menyaksikan akhlak mulia beliau.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MEMAAFKAN — QS. ALI 'IMRAN: 134</div>
+<div class="arabic-text">
+الَّذِينَ يُنفِقُونَ فِي السَّرَّاءِ وَالضَّرَّاءِ وَالْكَاظِمِينَ الْغَيْظَ وَالْعَافِينَ عَنِ النَّاسِ ۗ وَاللَّهُ يُحِبُّ الْمُحْسِنِينَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "(Yaitu) orang-orang yang menafkahkan (hartanya), baik di waktu lapang maupun sempit, dan orang-orang yang menahan amarahnya dan memaafkan (kesalahan) orang. Allah menyukai orang-orang yang berbuat kebajikan."
+<br>— QS. Ali 'Imran: 134
+</div>
+</div>
+
+<div class="bio-card">
+<span class="bio-number">9</span>
+<span class="bio-title">Mendoakan Kebaikan bagi Musuh</span>
+<div class="bio-arabic">الدُّعَاءُ بِالْخَيْرِ لِلْأَعْدَاءِ</div>
+<p>
+Sikap paling mulia Imam As-Syafi'i adalah bahwa beliau senantiasa mendoakan kebaikan bagi mereka yang menentangnya, bahkan bagi mereka yang memusuhi beliau. Beliau berkata: <em>"Aku mendoakan kebaikan bagi setiap orang yang menasihatiku dengan kebenaran, meskipun ia adalah musuhku. Dan aku mendoakan ampunan bagi setiap orang yang menzalimiku, karena aku tahu bahwa Allah akan membalas zalimnya dengan keadilan-Nya."</em>
+</p>
+<p>
+Salah satu kisah yang masyhur adalah ketika ada seorang ulama yang sangat memusuhi Imam As-Syafi'i dan senantiasa mencelanya di mana-mana. Ketika ulama tersebut wafat, Imam As-Syafi'i datang ke pemakamannya dan mendoakan ampunan bagi beliau. Para murid beliau bertanya: <em>"Wahai guru, mengapa engkau mendoakan orang yang sangat memusuhi engkau?"</em> Imam As-Syafi'i menjawab: <em>"Karena aku tahu bahwa ia telah berbuat dosa dengan memusuhiku, dan aku tidak ingin dosanya itu menjadi beban bagiku di hari kiamat. Maka aku mendoakan ampunan baginya, agar Allah mengampuninya dan mengampuniku."</em>
+</p>
+<p>
+Sikap inilah yang menjadi ciri khas para ulama rabbaniyyin — mereka tidak membalas kejahatan dengan kejahatan, melainkan membalasnya dengan kebaikan dan doa. Inilah adab yang diajarkan oleh Rasulullah SAW dan diamalkan oleh para imam besar seperti Imam As-Syafi'i.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MEMBALAS KEBAIKAN — QS. FUSSILAT: 34</div>
+<div class="arabic-text">
+وَلَا تَسْتَوِي الْحَسَنَةُ وَلَا السَّيِّئَةُ ۚ ادْفَعْ بِالَّتِي هِيَ أَحْسَنُ فَإِذَا الَّذِي بَيْنَكَ وَبَيْنَهُ عَدَاوَةٌ كَأَنَّهُ وَلِيٌّ حَمِيمٌ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan tidaklah sama kebaikan dan kejahatan. Tolaklah (kejahatan itu) dengan cara yang lebih baik, maka tiba-tiba orang yang antaramu dan antara dia ada permusuhan seolah-olah telah menjadi teman yang sangat setia."
+<br>— QS. Fussilat: 34
+</div>
+</div>
+
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Pro/Kontra terhadap Imam As-Syafi'i:</strong>
+<ul>
+<li><strong>Masyarakat umum</strong> — Menerima beliau dengan penuh cinta dan takzhim karena keadilan dan kedalaman ilmu beliau</li>
+<li><strong>Ulama Ahlul Hadits</strong> — Memuji beliau dengan pujian yang sangat tinggi (Imam Ahmad: "seperti matahari bagi dunia")</li>
+<li><strong>Ulama Hanafi & Ahli Ra'yi</strong> — Mengkritik metodologi beliau (terkait istihsan dan hadits ahad), namun tetap dalam koridor adab ilmiah</li>
+<li><strong>Sebagian ulama</strong> — Menuduh bid'ah karena meletakkan kaidah ushul fiqih, namun tuduhan ini dibantah oleh para ulama besar sezaman</li>
+<li><strong>Penguasa</strong> — Khalifah dan gubernur menghormati beliau dengan penuh takzhim, meskipun berbeda pandangan</li>
+<li><strong>Sikap Imam As-Syafi'i</strong> — Tawadhu', menerima kebenaran dari siapapun, tidak membalas celaan, mendoakan kebaikan bagi musuh</li>
+<li><strong>Prinsip utama</strong> — "Setiap perkataan bisa diterima dan ditolak kecuali perkataan Rasulullah SAW"</li>
+<li><strong>Warisan</strong> — Teladan adab ilmiah bagi para ulama hingga hari kiamat</li>
+</ul>
+</div>
+
+<h2>Doa Memohon Adab dalam Perbedaan</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON ADAB DALAM PERBEDAAN</div>
+<div class="arabic-text">
+اللَّهُمَّ ارْزُقْنِي قَبُولَ الْحَقِّ مِنْ كُلِّ أَحَدٍ، وَالتَّوَاضُعَ لِعِبَادِكَ الصَّالِحِينَ، وَاجْعَلْنِي مِمَّنْ يَسْتَمِعُونَ الْقَوْلَ فَيَتَّبِعُونَ أَحْسَنَهُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, anugerahkanlah kepadaku kemampuan menerima kebenaran dari siapapun, kerendahan hati terhadap hamba-hamba-Mu yang shaleh, dan jadikanlah aku termasuk orang-orang yang mendengarkan perkataan lalu mengikuti yang terbaik darinya."
+</div>
+</div>
+
+<h2>Penutup Halaman 7</h2>
+<p>
+Demikianlah dinamika pro dan kontra yang dihadapi Imam As-Syafi'i di tengah masyarakat dan para ulama sezaman beliau. Dari pujian yang melangit dari para ulama Ahlul Hadits, kritik yang tajam dari para ulama Hanafi, tuduhan bid'ah dari sebagian ulama, hingga penghormatan dari para khalifah dan gubernur — semua ini beliau hadapi dengan sikap tawadhu', kesabaran, dan keikhlasan yang luar biasa.
+</p>
+<p>
+Yang paling mengagumkan dari seluruh dinamika ini adalah sikap Imam As-Syafi'i sendiri — beliau senantiasa menerima kebenaran dari siapapun datangnya, tidak pernah membalas celaan dengan celaan, dan senantiasa mendoakan kebaikan bagi mereka yang menentangnya. Inilah adab para ulama rabbaniyyin yang menjadi teladan bagi umat hingga hari kiamat.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas secara lebih rinci sikap Imam As-Syafi'i terhadap para penguasa — bagaimana beliau bersikap tegas terhadap kezaliman, namun tetap menjaga adab dalam berinteraksi dengan mereka.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-text">
+إِنَّمَا يَخْشَى اللَّهَ مِنْ عِبَادِهِ الْعُلَمَاءُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sesungguhnya yang takut kepada Allah di antara hamba-hamba-Nya, hanyalah ulama."
+<br>— QS. Fathir: 28
+</div>
+</div>
+</div>
+
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="syafii1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="syafii2.html" class="article-nav-btn" title="Halaman 2: Masa Kecil di Mekkah">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="syafii3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu">3</a>
+<div class="nav-btn-label">Menuntut Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="syafii4.html" class="article-nav-btn" title="Halaman 4: Para Guru & Bidang Ilmu">4</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="syafii5.html" class="article-nav-btn" title="Halaman 5: Perjalanan Spiritual">5</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="syafii6.html" class="article-nav-btn" title="Halaman 6: Tantangan & Konflik">6</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="syafii7.html" class="article-nav-btn active" title="Halaman 7: Pro/Kontra Masyarakat & Ulama">7</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="syafii8.html" class="article-nav-btn" title="Halaman 8: Sikap terhadap Penguasa">8</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="syafii9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

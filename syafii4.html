@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+  window.scrollTo(0, 0);
+</script>
+<title>Biografi Imam As-Syafi'i — Para Guru & Bidang Ilmu - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+/* 1. RESET & DASAR */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+/* 2. MEDIA QUERY TABLET */
+@media (max-width: 768px) {
+.article-container {
+max-width: 100%;
+padding: 20px;
+}
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+/* 3. HEADER & NAVIGASI ATAS */
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+/* 4. BREADCRUMB & CONTAINER */
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+/* 5. ARTICLE HEADER & META */
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+/* 6. GAMBAR & SHARE BAR */
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+/* 7. KONTEN ARTIKEL */
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 8. KOTAK ARAB & BIOGRAFI */
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.bio-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.bio-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.bio-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.bio-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 9. NAVIGASI HALAMAN (9 TOMBOL) */
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* 10. TOMBOL KEMBALI & FOOTER */
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+/* 11. MEDIA QUERY MOBILE */
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.bio-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+/* PATCH UNIVERSAL v2.0 */
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Imam As-Syafi'i — Para Guru & Bidang Ilmu
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Imam As-Syafi'i — Para Guru & Bidang Ilmu</h1>
+<div class="subtitle">Halaman 4 dari 9 — Silsilah Keilmuan dan Khazanah Ilmu Sang Sulthanul Fuqaha</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Kamis, 22 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Al-Muwatta_manuscript.jpg/640px-Al-Muwatta_manuscript.jpg"
+alt="Manuskrip Al-Muwaththa' karya Imam Malik yang dipelajari Imam As-Syafi'i"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Manuscript_Quran.jpg/640px-Manuscript_Quran.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Ilustrasi manuskrip klasik karya para ulama besar — di antaranya Al-Muwaththa' Imam Malik yang dipelajari langsung oleh Imam As-Syafi'i — sebagai simbol silsilah keilmuan yang agung</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Keagungan keilmuan Imam As-Syafi'i tidak lahir dari ruang hampa, melainkan dari silsilah keilmuan yang sangat mulia — beliau belajar langsung dari para imam terbesar di zamannya, dari Mekkah hingga Madinah, dari Kufah hingga Baghdad, dan akhirnya di Mesir. Setiap guru yang beliau temui memberikan kontribusi unik yang membentuk keutuhan pemikiran beliau. Dari Imam Malik beliau mengambil fiqih Ahlul Hadits, dari Muhammad bin Hasan Asy-Syaibani beliau mengambil fiqih Ahlur Ra'yi, dari Sufyan bin Uyainah dan Waki' bin Al-Jarrah beliau mengambil sanad-sanad hadits, dan dari para ulama bahasa Arab beliau mengambil lisanul arab yang fasih. Perpaduan semua ini menjadikan beliau sebagai satu-satunya ulama yang mampu memadukan fiqih Hijaz dan fiqih Irak dalam satu manhaj yang seimbang dan komprehensif.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENGIKUTI ULAMA — QS. AN-NISA': 59</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا أَطِيعُوا اللَّهَ وَأَطِيعُوا الرَّسُولَ وَأُولِي الْأَمْرِ مِنكُمْ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, taatilah Allah dan taatilah Rasul (Nya), dan ulil amri di antara kamu."
+<br>— QS. An-Nisa': 59
+</div>
+</div>
+
+<h2>Prinsip Imam As-Syafi'i dalam Menuntut Ilmu</h2>
+<p>
+Imam As-Syafi'i memiliki prinsip yang sangat tegas dalam menuntut ilmu: <em>"Ilmu itu adalah perburuan, dan tulisan adalah talinya."</em> Beliau tidak pernah puas dengan sedikit ilmu, dan senantiasa bepergian dari satu negeri ke negeri lain untuk mendapatkan ilmu dari para ahlinya. Beliau juga memiliki adab yang sangat tinggi terhadap para gurunya — tidak pernah mengghibah guru, tidak pernah menampakkan aib mereka, dan senantiasa mendoakan mereka dengan kebaikan.
+</p>
+<p>
+Beliau pernah berkata tentang adab terhadap guru:
+</p>
+<blockquote>
+"Barangsiapa yang mempelajari ilmu kemudian tidak mengamalkannya, maka ilmunya akan menjadi hujjah (bukti kesalahan) atasnya pada hari kiamat. Dan barangsiapa yang mempelajari ilmu kemudian mengamalkannya dan mengajarkannya, maka ia akan disebut besar di kerajaan langit."
+<br>— Imam As-Syafi'i
+</blockquote>
+
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN IMAM AS-SYAFI'I TENTANG ILMU</div>
+<div class="arabic-text">
+مَنْ طَلَبَ الْعِلْمَ لِلدُّنْيَا لَمْ يَجِدْ رِيحَ الْجَنَّةِ يَوْمَ الْقِيَامَةِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Barangsiapa yang menuntut ilmu karena dunia, maka ia tidak akan mencium bau surga pada hari kiamat."
+<br>— Imam As-Syafi'i, sebagaimana diriwayatkan oleh Al-Baihaqi dalam <em>Manaqib As-Syafi'i</em>
+</div>
+</div>
+
+<div class="bio-card">
+<span class="bio-number">1</span>
+<span class="bio-title">Para Guru di Mekkah dan Madinah (Fase Hijaz)</span>
+<div class="bio-arabic">مَشَايِخُهُ فِي مَكَّةَ وَالْمَدِينَةِ — الْمَرْحَلَةُ الْحِجَازِيَّةُ</div>
+<p>
+Fase Hijaz (Mekkah dan Madinah) adalah fase pertama dan paling mendasar dalam perjalanan keilmuan Imam As-Syafi'i. Di sinilah beliau mendapatkan pondasi keilmuan yang kokoh — terutama dalam bidang hadits, fiqih, dan bahasa Arab. Para guru beliau di fase ini adalah:
+</p>
+<ul>
+<li><strong>Muslim bin Khalid Az-Zanji</strong> (wafat 180 H) — Mufti Mekkah, guru utama beliau dalam bidang fiqih. Beliau yang memberikan izin fatwa kepada Imam As-Syafi'i ketika berusia 15 tahun.</li>
+<li><strong>Sufyan bin Uyainah</strong> (107-198 H) — Imam hadits besar Hijaz, guru utama beliau dalam bidang hadits. Dari beliau Imam As-Syafi'i mengambil sanad-sanad hadits yang bersambung hingga Rasulullah SAW.</li>
+<li><strong>Imam Malik bin Anas</strong> (93-179 H) — Imam Darul Hijrah, pendiri Mazhab Maliki, penulis kitab Al-Muwaththa'. Imam As-Syafi'i belajar Al-Muwaththa' langsung dari beliau selama sembilan tahun.</li>
+<li><strong>Ismail bin Ja'far Al-Anshari</strong> (wafat 180 H) — Ulama hadits Madinah, dari siapa beliau mengambil banyak hadits.</li>
+<li><strong>Ibrahim bin Sa'ad Al-Anshari</strong> (wafat 184 H) — Ulama fiqih Madinah, murid Imam Malik yang mengajarkan fiqih kepada Imam As-Syafi'i.</li>
+<li><strong>Abdurrahman bin Abi Bakr Al-Mulaiki</strong> — Ulama Mekkah yang mengajarkan fiqih dan qira'at.</li>
+<li><strong>Muhammad bin Ali bin Abi Thalib (Al-Husaini)</strong> — Dari keluarga Ahlul Bait, dari siapa beliau mengambil banyak ilmu dan adab.</li>
+<li><strong>Abdullah bin Nafi' As-Sa'igh</strong> — Ulama Madinah, murid Imam Malik yang mengajarkan Al-Muwaththa' kepada Imam As-Syafi'i.</li>
+</ul>
+<p>
+Dari para guru inilah Imam As-Syafi'i mendapatkan pondasi keilmuan yang kokoh. Beliau sendiri berkata tentang Imam Malik: <em>"Jika bukan karena Allah, kemudian Imam Malik, niscaya aku telah tersesat. Malik adalah hujjah Allah atas makhluk-Nya."</em>
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN IMAM AS-SYAFI'I TENTANG IMAM MALIK</div>
+<div class="arabic-text">
+لَوْلَا مَالِكٌ لَضَلَلْنَا، مَالِكٌ حُجَّةُ اللَّهِ عَلَى خَلْقِهِ بَعْدَ ذَهَابِ الْفِقْهِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Jika bukan karena Malik, niscaya kami telah tersesat. Malik adalah hujjah Allah atas makhluk-Nya setelah hilangnya fiqih."
+<br>— Imam As-Syafi'i, dalam <em>Manaqib As-Syafi'i</em> karya Al-Baihaqi
+</div>
+</div>
+
+<div class="bio-card">
+<span class="bio-number">2</span>
+<span class="bio-title">Para Guru di Irak (Fase Baghdad dan Kufah)</span>
+<div class="bio-arabic">مَشَايِخُهُ فِي الْعِرَاقِ — مَرْحَلَةُ بَغْدَادَ وَالْكُوفَةِ</div>
+<p>
+Fase Irak adalah fase yang sangat penting dalam perjalanan keilmuan Imam As-Syafi'i, karena di sinilah beliau bertemu dengan para ulama <em>Ahlu Ra'yi</em> (ahli logika) dari mazhab Hanafi. Dari merekalah beliau mempelajari metode istinbath hukum yang menggunakan logika (qiyas, istihsan, istishlah) secara mendalam. Para guru beliau di Irak adalah:
+</p>
+<ul>
+<li><strong>Muhammad bin Hasan Asy-Syaibani</strong> (wafat 189 H) — Murid utama Imam Abu Hanifah, penulis kitab-kitab fiqih Hanafi seperti Al-Asl, Az-Ziyadat, dan As-Siyar Al-Kabir. Imam As-Syafi'i mempelajari kitab-kitab beliau secara mendalam dan kemudian membantah banyak pandangan beliau dalam kitab Ar-Radd 'ala Siyar Al-Auza'i.</li>
+<li><strong>Waki' bin Al-Jarrah</strong> (wafat 197 H) — Imam hadits Kufah, guru utama beliau dalam bidang hadits di Irak. Dari beliau Imam As-Syafi'i mengambil banyak sanad hadits.</li>
+<li><strong>Al-Fadhl bin Dukain</strong> (wafat 219 H) — Ulama hadits dan tsaqafah, dari siapa beliau mengambil banyak riwayat.</li>
+<li><strong>Abu Muawiyah Adh-Dharir</strong> (wafat 193 H) — Muhaddits Kufah yang terkenal, guru hadits yang dipercaya.</li>
+<li><strong>Isa bin Aban</strong> — Ulama Hanafi yang berdiskusi dengan Imam As-Syafi'i tentang berbagai masalah fiqih.</li>
+<li><strong>Abu Yusuf Al-Qadhi</strong> (wafat 182 H) — Murid utama Imam Abu Hanifah, Qadhi Al-Qudhat Baghdad. Meskipun wafat sebelum Imam As-Syafi'i tiba di Baghdad, kitab-kitab beliau dipelajari dengan seksama.</li>
+</ul>
+<p>
+Dari para guru Irak inilah Imam As-Syafi'i mendapatkan pemahaman yang mendalam tentang fiqih Ahlur Ra'yi, sehingga beliau mampu memadukan kekuatan fiqih Hijaz (yang berbasis hadits) dengan kekuatan fiqih Irak (yang berbasis logika) dalam manhaj beliau yang seimbang. Beliau berkata: <em>"Aku datang ke Irak, dan aku tidak pernah melihat orang-orang yang lebih berakal, lebih sopan, dan lebih dalam pemahamannya daripada mereka."</em>
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN IMAM AS-SYAFI'I TENTANG ULAMA IRAK</div>
+<div class="arabic-text">
+قَدِمْتُ الْعِرَاقَ فَمَا رَأَيْتُ أَحَدًا أَعْقَلَ وَلَا أَلْطَفَ وَلَا أَفْقَهَ مِنْهُمْ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Aku datang ke Irak, maka aku tidak pernah melihat seorang pun yang lebih berakal, lebih halus (sopan), dan lebih dalam pemahamannya daripada mereka."
+<br>— Imam As-Syafi'i, sebagaimana diriwayatkan oleh Al-Khatib Al-Baghdadi
+</div>
+</div>
+
+<div class="bio-card">
+<span class="bio-number">3</span>
+<span class="bio-title">Para Guru dan Murid di Mesir (Fase Akhir)</span>
+<div class="bio-arabic">مَشَايِخُهُ وَتَلَامِيذُهُ فِي مِصْرَ — الْمَرْحَلَةُ الْأَخِيرَةُ</div>
+<p>
+Fase Mesir adalah fase terakhir dan paling matang dalam perjalanan keilmuan Imam As-Syafi'i. Di sinilah beliau merevisi banyak pendapat beliau (Mazhab Qadim menjadi Mazhab Jadid) dan menulis kitab-kitab beliau yang paling masyhur. Para guru dan murid beliau di Mesir adalah:
+</p>
+<ul>
+<li><strong>Abdullah bin Wahb Al-Mishri</strong> (wafat 197 H) — Ulama hadits Mesir, murid Imam Malik, dari siapa beliau mengambil hadits-hadits baru yang menjadi dasar revisi pendapat beliau.</li>
+<li><strong>Abdurrahman bin Al-Qasim Al-'Ataqi</strong> (wafat 191 H) — Murid utama Imam Malik, dari siapa beliau mengambil banyak riwayat fiqih Maliki.</li>
+<li><strong>Yunus bin Abdul A'la</strong> (wafat 264 H) — Murid utama Imam As-Syafi'i di Mesir, perawi mazhab beliau yang paling masyhur bersama Ar-Rabi'.</li>
+<li><strong>Ar-Rabi' bin Sulaiman Al-Muradi</strong> (wafat 270 H) — Murid paling setia Imam As-Syafi'i, perawi kitab Al-Umm dan Ar-Risalah dalam bentuk yang kita kenal hari ini.</li>
+<li><strong>Al-Muzani</strong> (wafat 264 H) — Murid Imam As-Syafi'i yang menulis kitab Mukhtashar Al-Muzani — ringkasan mazhab Syafi'i yang sangat masyhur.</li>
+<li><strong>Abu Ibrahim Ismail bin Yahya Al-Muzani</strong> — Ulama besar yang membantah pandangan-pandangan yang menyimpang dari mazhab Syafi'i.</li>
+</ul>
+<p>
+Di Mesir pula Imam As-Syafi'i mendapatkan banyak hadits baru dari para ulama setempat, yang menjadi dasar revisi pendapat-pendapat beliau. Inilah yang membedakan Mazhab Jadid dari Mazhab Qadim — adanya hadits-hadits baru yang sampai kepada beliau di Mesir, serta kondisi masyarakat Mesir yang berbeda dengan masyarakat Irak.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENYAMPAIKAN ILMU — QS. AL-MA'IDAH: 67</div>
+<div class="arabic-text">
+يَا أَيُّهَا الرَّسُولُ بَلِّغْ مَا أُنزِلَ إِلَيْكَ مِن رَّبِّكَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Wahai Rasul, sampaikanlah apa yang diturunkan kepadamu dari Tuhanmu."
+<br>— QS. Al-Ma'idah: 67
+</div>
+</div>
+
+<div class="bio-card">
+<span class="bio-number">4</span>
+<span class="bio-title">Bidang-Bidang Ilmu yang Dikuasai Imam As-Syafi'i</span>
+<div class="bio-arabic">الْعُلُومُ الَّتِي أَتْقَنَهَا الْإِمَامُ الشَّافِعِيُّ</div>
+<p>
+Imam As-Syafi'i adalah salah satu ulama paling komprehensif dalam sejarah Islam. Beliau menguasai berbagai bidang ilmu dengan kedalaman yang luar biasa. Di antara bidang-bidang ilmu yang beliau kuasai adalah:
+</p>
+<ul>
+<li><strong>Al-Qur'an dan Tafsir</strong> — Beliau menghafal Al-Qur'an sejak kecil dan memahami tafsirnya dengan mendalam, termasuk asbabun nuzul, nasikh-mansukh, dan muhkam-mutasyabih.</li>
+<li><strong>Hadits dan Musthalah Hadits</strong> — Beliau menguasai ribuan hadits dengan sanadnya, memahami illat-illat hadits, dan mampu membedakan antara hadits shahih, hasan, dhaif, dan maudhu'. Beliau sendiri berkata: <em>"Jika ada hadits shahih yang bertentangan dengan pendapatku, maka tinggalkan pendapatku dan ambillah hadits tersebut."</em></li>
+<li><strong>Fiqih dan Ushul Fiqih</strong> — Beliau adalah peletak dasar ilmu Ushul Fiqih melalui kitab Ar-Risalah — kitab pertama dalam sejarah Islam yang membahas kaidah-kaidah istinbath hukum secara sistematis.</li>
+<li><strong>Bahasa Arab (Nahwu, Sharaf, Balaghah)</strong> — Beliau belajar bahasa Arab langsung dari Suku Hudzail di pedalaman, menguasai nahwu, sharaf, dan balaghah dengan sempurna. Beliau juga menghafal Diwanul Hudzail dan syair-syair Arab kuno.</li>
+<li><strong>Syair Arab dan Adab</strong> — Beliau adalah seorang penyair yang handal, banyak bait syair beliau yang menjadi mutiara hikmah hingga hari ini.</li>
+<li><strong>Sirah dan Tarikh</strong> — Beliau menguasai sejarah Rasulullah SAW dan sejarah umat Islam dengan mendalam, sehingga mampu memahami konteks historis dari setiap ayat dan hadits.</li>
+<li><strong>Peradilan (Qadha)</strong> — Pengalaman beliau sebagai qadhi di Yaman memberikan pemahaman praktis tentang bagaimana hukum-hukum syariat diterapkan dalam kehidupan nyata.</li>
+<li><strong>Zuhud dan Tasawuf</strong> — Meskipun lebih dikenal sebagai faqih, Imam As-Syafi'i juga memiliki maqam spiritual yang tinggi. Beliau berguru kepada para sufi besar dan memiliki banyak perkataan hikmah tentang zuhud dan tasawuf.</li>
+</ul>
+<p>
+Perpaduan semua bidang ilmu inilah yang menjadikan Imam As-Syafi'i sebagai ulama yang sangat komprehensif — beliau tidak hanya menguasai ilmu zhahir (fiqih, hadits), tetapi juga ilmu batin (zuhud, tasawuf), serta ilmu alat (bahasa Arab, nahwu, sharaf) yang menjadi kunci untuk memahami nash-nash syar'i.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN IMAM AS-SYAFI'I TENTANG HADITS</div>
+<div class="arabic-text">
+إِذَا صَحَّ الْحَدِيثُ فَهُوَ مَذْهَبِي
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Apabila telah shahih suatu hadits, maka itulah mazhabku (pendapatku)."
+<br>— Imam As-Syafi'i, kaidah utama dalam mazhab beliau
+</div>
+</div>
+
+<h2>Silsilah Keilmuan Imam As-Syafi'i</h2>
+<p>
+Untuk lebih memahami keagungan keilmuan Imam As-Syafi'i, berikut adalah silsilah keilmuan beliau yang bersambung hingga kepada Rasulullah SAW melalui para guru beliau:
+</p>
+<ul>
+<li><strong>Dalam bidang hadits:</strong> Rasulullah SAW → para Sahabat → Tabi'in → Sufyan bin Uyainah → Imam As-Syafi'i</li>
+<li><strong>Dalam bidang fiqih Hijaz:</strong> Rasulullah SAW → para Sahabat → Tabi'in → Imam Malik → Imam As-Syafi'i</li>
+<li><strong>Dalam bidang fiqih Irak:</strong> Rasulullah SAW → para Sahabat → Tabi'in → Imam Abu Hanifah → Muhammad bin Hasan Asy-Syaibani → Imam As-Syafi'i</li>
+<li><strong>Dalam bidang bahasa Arab:</strong> Suku Hudzail → para ulama bahasa → Imam As-Syafi'i</li>
+</ul>
+<p>
+Silsilah keilmuan yang sangat mulia inilah yang menjadikan Imam As-Syafi'i sebagai ulama yang memiliki otoritas keilmuan yang sangat tinggi. Beliau bukan hanya seorang mujtahid, melainkan juga seorang muhaddits, seorang faqih, seorang ahli bahasa, dan seorang sufi — semua dalam satu pribadi yang utuh dan seimbang.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG SILSILAH KEILMUAN — QS. AT-TAUBAH: 122</div>
+<div class="arabic-text">
+وَمَا كَانَ الْمُؤْمِنُونَ لِيَنفِرُوا كَافَّةً ۚ فَلَوْلَا نَفَرَ مِن كُلِّ فِرْقَةٍ مِّنْهُمْ طَائِفَةٌ لِّيَتَفَقَّهُوا فِي الدِّينِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Tidak sepatutnya bagi orang-orang yang mukmin itu pergi semuanya (ke medan perang). Mengapa tidak pergi dari tiap-tiap golongan di antara mereka beberapa orang untuk memperdalam pengetahuan mereka tentang agama."
+<br>— QS. At-Taubah: 122
+</div>
+</div>
+
+<h2>Kaidah-Kaidah Ijtihad Imam As-Syafi'i</h2>
+<p>
+Salah satu kontribusi terbesar Imam As-Syafi'i adalah peletakan kaidah-kaidah ijtihad yang sistematis dalam kitab <em>Ar-Risalah</em>. Di antara kaidah-kaidah tersebut adalah:
+</p>
+<ul>
+<li><strong>Al-Qur'an adalah sumber hukum pertama</strong> — Tidak ada hukum yang bisa ditetapkan tanpa dalil dari Al-Qur'an atau As-Sunnah.</li>
+<li><strong>As-Sunnah adalah penjelas Al-Qur'an</strong> — Hadits shahih harus diamalkan, meskipun bertentangan dengan qiyas atau pendapat ulama.</li>
+<li><strong>Ijma' adalah hujjah</strong> — Kesepakatan ulama seluruhnya dalam suatu masa adalah hujjah yang tidak boleh ditentang.</li>
+<li><strong>Qiyas adalah hujjah</strong> — Dengan syarat-syarat yang ketat, qiyas bisa digunakan untuk menetapkan hukum yang tidak disebutkan secara eksplisit dalam nash.</li>
+<li><strong>Istihsan ditolak</strong> — Imam As-Syafi'i menolak istihsan (menganggap baik sesuatu tanpa dalil) karena menurut beliau itu adalah membuat syariat berdasarkan hawa nafsu.</li>
+</ul>
+
+<div class="arabic-box">
+<div class="arabic-label">KAIDAH UTAMA MAZHAB SYAFI'I</div>
+<div class="arabic-text">
+الْقُرْآنُ وَالسُّنَّةُ هُمَا أَصْلُ الْأَحْكَامِ، وَالْإِجْمَاعُ حُجَّةٌ، وَالْقِيَاسُ حُجَّةٌ بِشُرُوطِهِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Al-Qur'an dan As-Sunnah adalah dua sumber hukum, Ijma' adalah hujjah, dan Qiyas adalah hujjah dengan syarat-syaratnya."
+<br>— Kaidah utama dalam Ushul Fiqih mazhab Syafi'i
+</div>
+</div>
+
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Para Guru & Bidang Ilmu Imam As-Syafi'i:</strong>
+<ul>
+<li><strong>Guru di Mekkah:</strong> Muslim bin Khalid Az-Zanji (fiqih), Sufyan bin Uyainah (hadits), Abdurrahman bin Abi Bakr Al-Mulaiki (fiqih & qira'at)</li>
+<li><strong>Guru di Madinah:</strong> Imam Malik bin Anas (fiqih & hadits, Al-Muwaththa'), Ismail bin Ja'far Al-Anshari (hadits), Ibrahim bin Sa'ad (fiqih)</li>
+<li><strong>Guru di Irak:</strong> Muhammad bin Hasan Asy-Syaibani (fiqih Hanafi), Waki' bin Al-Jarrah (hadits), Al-Fadhl bin Dukain (hadits)</li>
+<li><strong>Guru & Murid di Mesir:</strong> Abdullah bin Wahb (hadits), Ar-Rabi' bin Sulaiman (perawi Al-Umm), Al-Muzani (perawi mazhab)</li>
+<li><strong>Bidang ilmu yang dikuasai:</strong> Al-Qur'an & Tafsir, Hadits, Fiqih, Ushul Fiqih, Bahasa Arab, Syair, Sirah, Peradilan, Zuhud & Tasawuf</li>
+<li><strong>Kontribusi utama:</strong> Peletak dasar Ushul Fiqih melalui kitab Ar-Risalah</li>
+<li><strong>Kaidah utama:</strong> "Jika hadits shahih, maka itulah mazhabku"</li>
+<li><strong>Silsilah keilmuan:</strong> Bersambung hingga Rasulullah SAW melalui para imam besar</li>
+</ul>
+</div>
+
+<h2>Doa Memohon Keberkahan Ilmu</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON KAROMAH ILMU</div>
+<div class="arabic-text">
+اللَّهُمَّ ارْزُقْنِي عِلْمًا نَافِعًا وَعَمَلًا مُتَقَبَّلًا، وَاجْعَلْ سَيِّدَنَا مُحَمَّدَ بْنَ إِدْرِيسَ الشَّافِعِيَّ شَفِيعِي يَوْمَ الْقِيَامَةِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, anugerahkanlah kepadaku ilmu yang bermanfaat dan amal yang diterima, dan jadikanlah Sayyidina Muhammad bin Idris As-Syafi'i sebagai pemberi syafaat bagiku pada hari kiamat."
+</div>
+</div>
+
+<h2>Penutup Halaman 4</h2>
+<p>
+Demikianlah khazanah keilmuan Imam As-Syafi'i — seorang ulama yang belajar dari para imam terbesar di zamannya, menguasai berbagai bidang ilmu dengan kedalaman yang luar biasa, dan meletakkan kaidah-kaidah ijtihad yang sistematis dalam kitab Ar-Risalah. Silsilah keilmuan beliau yang bersambung hingga Rasulullah SAW melalui para guru beliau adalah bukti bahwa beliau bukan seorang yang berbicara tanpa ilmu, melainkan seorang yang berbicara berdasarkan wahyu, sunnah, dan ijtihad yang didasarkan pada dalil-dalil yang shahih.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas perjalanan spiritual Imam As-Syafi'i — sisi lain dari kehidupan beliau yang tidak banyak diketahui, yaitu sisi zuhud, tasawuf, dan kedekatan beliau dengan Allah SWT yang menjadi sumber berkah ilmu beliau.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-text">
+وَقُل رَّبِّ زِدْنِي عِلْمًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan katakanlah: 'Ya Tuhanku, tambahkanlah kepadaku ilmu pengetahuan.'"
+<br>— QS. Thaha: 114
+</div>
+</div>
+</div>
+
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="syafii1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="syafii2.html" class="article-nav-btn" title="Halaman 2: Masa Kecil di Mekkah">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="syafii3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu">3</a>
+<div class="nav-btn-label">Menuntut Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="syafii4.html" class="article-nav-btn active" title="Halaman 4: Para Guru & Bidang Ilmu">4</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="syafii5.html" class="article-nav-btn" title="Halaman 5: Perjalanan Spiritual">5</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="syafii6.html" class="article-nav-btn" title="Halaman 6: Tantangan & Konflik">6</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="syafii7.html" class="article-nav-btn" title="Halaman 7: Pro/Kontra Masyarakat & Ulama">7</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="syafii8.html" class="article-nav-btn" title="Halaman 8: Sikap terhadap Penguasa">8</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="syafii9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

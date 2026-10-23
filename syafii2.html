@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+  window.scrollTo(0, 0);
+</script>
+<title>Biografi Imam As-Syafi'i — Masa Kecil di Mekkah - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+/* 1. RESET & DASAR */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+/* 2. MEDIA QUERY TABLET */
+@media (max-width: 768px) {
+.article-container {
+max-width: 100%;
+padding: 20px;
+}
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+/* 3. HEADER & NAVIGASI ATAS */
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+/* 4. BREADCRUMB & CONTAINER */
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+/* 5. ARTICLE HEADER & META */
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+/* 6. GAMBAR & SHARE BAR */
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+/* 7. KONTEN ARTIKEL */
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 8. KOTAK ARAB & BIOGRAFI */
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.bio-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.bio-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.bio-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.bio-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 9. NAVIGASI HALAMAN (9 TOMBOL) */
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* 10. TOMBOL KEMBALI & FOOTER */
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+/* 11. MEDIA QUERY MOBILE */
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.bio-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+/* PATCH UNIVERSAL v2.0 */
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Imam As-Syafi'i — Masa Kecil di Mekkah
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Imam As-Syafi'i — Masa Kecil di Mekkah</h1>
+<div class="subtitle">Halaman 2 dari 9 — Yatim di Tanah Haram, Hafal Al-Qur'an, dan Belajar Bahasa Arab di Pedalaman</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Kamis, 22 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Masjid al-Haram_-_2.jpg/640px-Masjid_al-Haram_-_2.jpg"
+alt="Masjidil Haram Mekkah — tempat Imam As-Syafi'i kecil tumbuh"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Kaaba2.jpg/440px-Kaaba2.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Masjidil Haram, Mekkah Al-Mukarramah — tanah suci yang menjadi tempat tumbuh kembang Imam As-Syafi'i kecil, tempat beliau menghafal Al-Qur'an dan menimba ilmu pertama kali</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Setelah ayahnya wafat ketika beliau masih berusia dua tahun — ada pula riwayat yang mengatakan masih dalam kandungan — ibunda Imam As-Syafi'i membawa beliau dari Gaza menuju Mekkah Al-Mukarramah, tanah suci yang penuh berkah. Di sinilah sang sulthanul fuqaha tumbuh sebagai anak yatim yang fakir, namun dianugerahi kecerdasan yang luar biasa, hafalan Al-Qur'an yang kuat, dan kecintaan terhadap bahasa Arab yang kelak menjadi bekal beliau menjadi imam besar dalam bidang lisanul arab (bahasa Arab), balaghah, dan ushul fiqih.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEUTAMAAN MEKKAH — QS. AT-TIN: 1-3</div>
+<div class="arabic-text">
+وَالتِّينِ وَالزَّيْتُونِ ۝ وَطُورِ سِينِينَ ۝ وَهَٰذَا الْبَلَدِ الْأَمِينِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Demi (buah) Tin dan (buah) Zaitun. Dan demi bukit Sinai. Dan demi kota (Mekkah) yang aman ini."
+<br>— QS. At-Tin: 1-3
+</div>
+</div>
+
+<h2>Kehidupan Yatim di Tanah Haram</h2>
+<p>
+Imam As-Syafi'i tumbuh di Mekkah dalam keadaan yatim dan fakir. Ibunda beliau — yang dalam beberapa riwayat disebutkan bernama <em>Fathimah binti Abdullah Al-Azdiyyah</em> — adalah seorang wanita yang sangat shalehah, wara', dan tawakkal. Beliau membawa harta yang sangat sedikit dari Gaza, cukup hanya untuk bekal perjalanan dan beberapa hari pertama di Mekkah. Setelah itu, beliau harus bekerja keras untuk menghidupi putranya.
+</p>
+<p>
+Dalam kitab <em>Manaqib As-Syafi'i</em> karya Al-Baihaqi, diriwayatkan bahwa ibunda Imam As-Syafi'i pernah menceritakan: <em>"Dulu aku sangat fakir, sehingga aku harus bekerja memintal benang untuk mendapatkan beberapa dirham sebagai bekal bagi anakku Muhammad ketika ia pergi menuntut ilmu. Kadang-kadang aku tidak mendapatkan apa-apa, sehingga aku harus bersabar dengan lapar."</em> Kisah ini menunjukkan betapa beratnya perjuangan ibunda Imam As-Syafi'i dalam membesarkan putranya, namun dengan penuh keikhlasan dan tawakkal kepada Allah.
+</p>
+<p>
+Meskipun hidup dalam kemiskinan, ibunda Imam As-Syafi'i tidak pernah mengeluh di hadapan putranya. Beliau senantiasa menanamkan nilai-nilai kejujuran, kesabaran, zuhud, dan cinta kepada ilmu di dalam hati sang anak. Dari didikan ibundalah Imam As-Syafi'i mendapatkan pondasi akhlak yang mulia yang kemudian menjadi ciri khas beliau sepanjang hayatnya.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KESABARAN — QS. AZ-ZUMAR: 10</div>
+<div class="arabic-text">
+إِنَّمَا يُوَفَّى الصَّابِرُونَ أَجْرَهُم بِغَيْرِ حِسَابٍ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sesungguhnya hanya orang-orang yang bersabarlah yang dicukupkan pahala mereka tanpa batas."
+<br>— QS. Az-Zumar: 10
+</div>
+</div>
+
+<div class="bio-card">
+<span class="bio-number">1</span>
+<span class="bio-title">Lingkungan Masjidil Haram — Madrasah Pertama</span>
+<div class="bio-arabic">مَسْجِدُ الْحَرَامِ مَدْرَسَتُهُ الْأُولَى</div>
+<p>
+Mekkah pada abad kedua Hijriah adalah pusat pertemuan para ulama, ahli ibadah, dan penuntut ilmu dari berbagai penjuru dunia Islam. Setiap tahun, ribuan jamaah haji datang dari Irak, Syam, Mesir, Yaman, Khurasan, dan berbagai negeri lainnya. Mereka semua singgah di Mekkah untuk menunaikan ibadah haji, dan banyak di antara mereka yang kemudian menetap untuk menuntut ilmu di sekitar Masjidil Haram.
+</p>
+<p>
+Lingkungan inilah yang menjadi "madrasah pertama" bagi Imam As-Syafi'i kecil. Beliau tumbuh di tengah-tengah halaqah-halaqah ilmu di Masjidil Haram, mendengarkan para ulama berdiskusi tentang hadits, fiqih, tafsir, dan bahasa Arab. Meskipun masih kecil, beliau sudah menunjukkan ketertarikan yang luar biasa terhadap ilmu. Beliau sering duduk di sudut-sudut masjid, mendengarkan pembicaraan para ulama, dan menghafal apa yang beliau dengar.
+</p>
+<p>
+Para ulama Mekkah pada masa itu — seperti <em>Muslim bin Khalid Az-Zanji</em> (mufti Mekkah) dan <em>Sufyan bin Uyainah</em> (imam hadits) — kelak menjadi guru-guru beliau. Mereka semua mengenal Imam As-Syafi'i kecil sebagai anak yatim yang cerdas, sopan, dan sangat cinta ilmu.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MASJIDIL HARAM — QS. AL-ISRA': 1</div>
+<div class="arabic-text">
+سُبْحَانَ الَّذِي أَسْرَىٰ بِعَبْدِهِ لَيْلًا مِّنَ الْمَسْجِدِ الْحَرَامِ إِلَى الْمَسْجِدِ الْأَقْصَى
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Maha Suci Allah yang telah memperjalankan hamba-Nya pada suatu malam dari Al-Masjidil Haram ke Al-Masjidil Aqsha."
+<br>— QS. Al-Isra': 1
+</div>
+</div>
+
+<h2>Menghafal Al-Qur'an di Usia Muda</h2>
+<p>
+Salah satu karunia terbesar yang Allah anugerahkan kepada Imam As-Syafi'i kecil adalah kemampuan menghafal Al-Qur'an di usia yang sangat muda. Beliau menghafal Al-Qur'an seluruhnya sebelum mencapai usia baligh — ada riwayat yang mengatakan beliau menghafalnya pada usia tujuh tahun, ada yang mengatakan sembilan tahun, dan ada pula yang mengatakan sepuluh tahun.
+</p>
+<p>
+Ketika beliau membaca Al-Qur'an, suaranya sangat merdu dan penuh kekhusyukan. Orang-orang yang mendengarnya merasa takjub, karena meskipun masih kecil, bacaan beliau sudah menunjukkan kedalaman penghayatan terhadap ayat-ayat Allah. Beliau tidak hanya menghafal lafazh-lafazh Al-Qur'an, melainkan juga merenungkan makna-maknanya, sehingga sejak kecil beliau sudah memahami banyak masalah fiqih yang terkandung di dalam ayat-ayat ahkam.
+</p>
+<p>
+Imam As-Syafi'i sendiri kelak berkata tentang Al-Qur'an:
+</p>
+<blockquote>
+"Aku pernah duduk di hadapan Muslim bin Khalid (mufti Mekkah), lalu beliau berkata kepadaku: 'Fatwalah (berilah fatwa) wahai Muhammad!' Padahal saat itu aku masih berusia lima belas tahun. Maka aku pun memberikan fatwa, dan Muslim bin Khalid berkata kepadaku: 'Demi Allah, engkau telah layak memberikan fatwa di negeri ini (Mekkah).'"
+<br>— Imam As-Syafi'i, sebagaimana diriwayatkan oleh Al-Baihaqi
+</blockquote>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG AL-QUR'AN — QS. AL-QAMAR: 17</div>
+<div class="arabic-text">
+وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan sesungguhnya telah Kami mudahkan Al-Qur'an untuk pelajaran, maka adakah orang yang mengambil pelajaran?"
+<br>— QS. Al-Qamar: 17
+</div>
+</div>
+
+<div class="bio-card">
+<span class="bio-number">2</span>
+<span class="bio-title">Belajar Bahasa Arab di Pedalaman — Suku Hudzail</span>
+<div class="bio-arabic">تَعَلُّمُ اللُّغَةِ الْعَرَبِيَّةِ عِنْدَ هُذَيْلٍ</div>
+<p>
+Salah satu keputusan terpenting dalam perjalanan keilmuan Imam As-Syafi'i adalah ketika beliau memutuskan untuk pergi ke pedalaman Arab hidup bersama <em>Suku Hudzail</em> — salah satu suku Arab paling fasih dalam berbahasa Arab pada masa itu. Suku Hudzail dikenal sebagai suku yang masih menjaga kemurnian bahasa Arab dari pengaruh asing, dan syair-syair mereka menjadi rujukan utama dalam ilmu nahwu, sharaf, dan balaghah.
+</p>
+<p>
+Di pedalaman bersama Suku Hudzail inilah Imam As-Syafi'i mempelajari bahasa Arab dengan segala seluk-beluknya. Beliau belajar nahwu (tata bahasa), sharaf (morfologi), balaghah (retorika), dan syair-syair Arab kuno. Beliau menghafal <em>Diwanul Hudzail</em> (kumpulan syair Suku Hudzail) dan syair-syair Arab kuno lainnya dengan sempurna. Penguasaan bahasa Arab inilah yang kelak menjadi salah satu kekuatan utama beliau dalam berijtihad dan mengistinbath hukum dari Al-Qur'an dan As-Sunnah.
+</p>
+<p>
+Imam As-Syafi'i sendiri berkata tentang pentingnya penguasaan bahasa Arab:
+</p>
+<blockquote>
+"Barangsiapa yang mempelajari bahasa Arab, maka akalnya akan bertambah, dan barangsiapa yang mempelajari ilmu nahwu, maka kedudukannya akan meningkat."
+<br>— Imam As-Syafi'i
+</blockquote>
+<p>
+Penguasaan bahasa Arab yang mendalam inilah yang membedakan Imam As-Syafi'i dari para imam fiqih lainnya. Beliau tidak hanya memahami makna zhahir dari nash-nash syar'i, melainkan juga memahami nuansa-nuansa bahasa, asbabun nuzul, dan konteks historis dari setiap ayat dan hadits. Inilah yang menjadikan fiqih Imam As-Syafi'i sangat mendalam dan komprehensif.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG AL-QUR'AN ARAB — QS. YUSUF: 2</div>
+<div class="arabic-text">
+إِنَّا أَنزَلْنَاهُ قُرْآنًا عَرَبِيًّا لَّعَلَّكُمْ تَعْقِلُونَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sesungguhnya Kami menurunkannya berupa Al-Qur'an dengan berbahasa Arab, agar kamu memahaminya."
+<br>— QS. Yusuf: 2
+</div>
+</div>
+
+<h2>Kecerdasan Dini yang Mengagumkan</h2>
+<p>
+Sejak usia sangat muda, Imam As-Syafi'i telah menunjukkan kecerdasan yang luar biasa. Beliau tidak hanya cerdas dalam menghafal, tetapi juga cerdas dalam memahami, menganalisis, dan menyimpulkan. Para guru beliau di Mekkah takjub dengan kemampuan beliau memahami masalah-masalah yang rumit, meskipun usia beliau masih sangat muda.
+</p>
+<p>
+Salah satu kisah yang masyhur adalah ketika Imam As-Syafi'i masih berusia sekitar sepuluh tahun. Beliau sering duduk di halaqah para ulama untuk mendengarkan pelajaran. Suatu hari, seorang guru yang sedang mengajar melihat Imam As-Syafi'i kecil sedang menulis sesuatu di atas pasir. Ketika ditanya, ternyata beliau sedang menulis syair-syair yang beliau dengar dari para penyair yang lewat. Guru itu takjub dan berkata: <em>"Anak ini akan menjadi orang besar di zamannya."</em>
+</p>
+<p>
+Selain cerdas dalam ilmu agama dan bahasa Arab, Imam As-Syafi'i juga dikenal sebagai pemanah yang handal. Beliau sangat mahir memanah, hingga beliau sendiri berkata: <em>"Aku memanah hingga mengenai sasaran sepuluh kali dari sepuluh kali tembakan."</em> Keahlian memanah ini menunjukkan bahwa beliau adalah sosok yang seimbang — kuat dalam ilmu, kuat dalam fisik, dan kuat dalam spiritual.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEKUATAN — QS. AL-ANFAL: 60</div>
+<div class="arabic-text">
+وَأَعِدُّوا لَهُم مَّا اسْتَطَعْتُم مِّن قُوَّةٍ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan siapkanlah untuk menghadapi mereka kekuatan apa saja yang kamu sanggupi."
+<br>— QS. Al-Anfal: 60
+</div>
+</div>
+
+<div class="bio-card">
+<span class="bio-number">3</span>
+<span class="bio-title">Kecintaan terhadap Ilmu dan Zuhud sejak Dini</span>
+<div class="bio-arabic">حُبُّ الْعِلْمِ وَالزُّهْدُ مُنْذُ الصِّغَرِ</div>
+<p>
+Sejak kecil, Imam As-Syafi'i telah menunjukkan kecintaan yang luar biasa terhadap ilmu dan zuhud terhadap dunia. Beliau tidak tertarik dengan permainan anak-anak seusianya, melainkan lebih senang duduk di Masjidil Haram mendengarkan pelajaran para ulama. Beliau juga sangat zuhud — tidak pernah meminta-minta kepada orang lain, meskipun hidup dalam kemiskinan.
+</p>
+<p>
+Ibunda beliau pernah berkata: <em>"Wahai Muhammad, pergilah engkau menuntut ilmu, karena aku tidak mampu memberimu harta, namun aku akan mendoakanmu."</em> Dari sinilah Imam As-Syafi'i mendapatkan motivasi untuk terus menuntut ilmu, dengan keyakinan bahwa ilmu adalah warisan para nabi yang lebih berharga daripada harta dunia.
+</p>
+<p>
+Beliau juga dikenal sebagai anak yang sangat sopan dan hormat kepada para gurunya. Beliau tidak pernah memotong pembicaraan guru, tidak pernah bertanya dengan nada tinggi, dan selalu duduk dengan adab yang sempurna di hadapan para ulama. Adab inilah yang kemudian menjadi ciri khas beliau sepanjang hayatnya, dan menjadi salah satu sebab beliau mendapatkan berkah ilmu dari para gurunya.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG ADAB MENUNTUT ILMU — QS. AL-HUJURAT: 1-2</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا لَا تُقَدِّمُوا بَيْنَ يَدَيِ اللَّهِ وَرَسُولِهِ ۖ وَاتَّقُوا اللَّهَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, janganlah kamu mendahului Allah dan Rasul-Nya, dan bertakwalah kepada Allah."
+<br>— QS. Al-Hujurat: 1-2
+</div>
+</div>
+
+<h2>Awal Ketertarikan pada Fiqih</h2>
+<p>
+Ketika Imam As-Syafi'i berusia sekitar dua belas tahun, beliau mulai menunjukkan ketertarikan yang mendalam terhadap ilmu fiqih. Beliau sering duduk di halaqah <em>Muslim bin Khalid Az-Zanji</em> — mufti Mekkah pada masa itu — untuk mempelajari fiqih mazhab Syafi'i (dalam arti fiqih yang diajarkan di Mekkah saat itu, sebelum Imam As-Syafi'i sendiri membentuk mazhabnya).
+</p>
+<p>
+Muslim bin Khalid Az-Zanji adalah seorang ulama besar yang menguasai fiqih, hadits, dan fatwa. Beliau melihat kecerdasan Imam As-Syafi'i yang luar biasa, sehingga beliau memberikan izin kepada beliau untuk berfatwa meskipun usia beliau masih sangat muda — sekitar lima belas tahun. Ini adalah kejadian yang sangat langka, karena biasanya seseorang baru boleh berfatwa setelah berusia matang dan menguasai ilmu secara mendalam.
+</p>
+<p>
+Selain Muslim bin Khalid Az-Zanji, Imam As-Syafi'i kecil juga belajar kepada <em>Sufyan bin Uyainah</em> — imam hadits besar yang menjadi guru banyak ulama besar pada masa itu, termasuk Imam Ahmad bin Hanbal. Dari Sufyan bin Uyainah inilah Imam As-Syafi'i mempelajari ilmu hadits dengan sanad yang bersambung hingga kepada Rasulullah SAW.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENGIKUTI ULAMA — QS. AN-Nahl: 43</div>
+<div class="arabic-text">
+فَاسْأَلُوا أَهْلَ الذِّكْرِ إِن كُنتُمْ لَا تَعْلَمُونَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Maka bertanyalah kepada orang yang mempunyai pengetahuan jika kamu tidak mengetahui."
+<br>— QS. An-Nahl: 43
+</div>
+</div>
+
+<div class="bio-card">
+<span class="bio-number">4</span>
+<span class="bio-title">Isyarat Kebesaran di Masa Kecil</span>
+<div class="bio-arabic">إِشَارَاتُ الْعَظَمَةِ فِي طُفُولَتِهِ</div>
+<p>
+Para ulama yang mengenal Imam As-Syafi'i sejak kecil sepakat bahwa beliau telah menunjukkan isyarat-isyarat kebesaran sejak usia dini. Di antara isyarat-isyarat tersebut adalah:
+</p>
+<ul>
+<li><strong>Kecerdasan hafalan yang luar biasa</strong> — Beliau mampu menghafal Al-Qur'an dan ribuan syair Arab dalam waktu singkat</li>
+<li><strong>Kedalaman pemahaman</strong> — Beliau tidak hanya menghafal, tetapi juga memahami makna dan hikmah di balik setiap ilmu</li>
+<li><strong>Adab yang mulia</strong> — Beliau sangat sopan kepada guru, hormat kepada orang tua, dan penyayang kepada sesama</li>
+<li><strong>Zuhud terhadap dunia</strong> — Beliau tidak tergiur dengan harta dan kemewahan, meskipun hidup dalam kemiskinan</li>
+<li><strong>Kecintaan terhadap ilmu</strong> — Beliau lebih senang duduk di majelis ilmu daripada bermain dengan anak-anak seusianya</li>
+<li><strong>Kemampuan berfatwa di usia muda</strong> — Beliau telah memberikan fatwa di usia lima belas tahun</li>
+</ul>
+<p>
+Semua isyarat ini menunjukkan bahwa Imam As-Syafi'i memang telah ditakdirkan oleh Allah untuk menjadi salah satu imam terbesar dalam sejarah Islam. Beliau adalah pilihan Allah yang dipersiapkan sejak kecil untuk menghidupkan sunnah Rasulullah SAW dan meletakkan kaidah-kaidah fiqih yang akan menjadi pedoman umat hingga hari kiamat.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG PILIHAN ALLAH — QS. AL-HAJJ: 75</div>
+<div class="arabic-text">
+اللَّهُ يَصْطَفِي مِنَ الْمَلَائِكَةِ رُسُلًا وَمِنَ النَّاسِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Allah memilih utus-utusan-Nya dari malaikat dan dari manusia."
+<br>— QS. Al-Hajj: 75
+</div>
+</div>
+
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Masa Kecil Imam As-Syafi'i di Mekkah:</strong>
+<ul>
+<li><strong>Hidup yatim dan fakir</strong> — Dibesarkan oleh ibunda yang shalehah di Mekkah</li>
+<li><strong>Lingkungan Masjidil Haram</strong> — Tumbuh di tengah halaqah-halaqah ilmu para ulama</li>
+<li><strong>Menghafal Al-Qur'an di usia muda</strong> — Sebelum usia baligh, seluruh Al-Qur'an telah dihafal</li>
+<li><strong>Belajar bahasa Arab di pedalaman</strong> — Hidup bersama Suku Hudzail untuk mempelajari kemurnian bahasa Arab</li>
+<li><strong>Kecerdasan yang luar biasa</strong> — Mampu berfatwa di usia lima belas tahun</li>
+<li><strong>Adab dan zuhud sejak dini</strong> — Sopan kepada guru, zuhud terhadap dunia</li>
+<li><strong>Kecintaan terhadap ilmu</strong> — Lebih senang di majelis ilmu daripada bermain</li>
+<li><strong>Isyarat kebesaran</strong> — Ditakdirkan oleh Allah menjadi imam besar</li>
+</ul>
+</div>
+
+<h2>Doa Memohon Kecerdasan dan Keberkahan Ilmu</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON KAROMAH ILMU</div>
+<div class="arabic-text">
+اللَّهُمَّ ارْزُقْنِي عِلْمًا نَافِعًا وَعَمَلًا مُتَقَبَّلًا، وَاجْعَلْ سَيِّدَنَا مُحَمَّدَ بْنَ إِدْرِيسَ الشَّافِعِيَّ شَفِيعِي يَوْمَ الْقِيَامَةِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, anugerahkanlah kepadaku ilmu yang bermanfaat dan amal yang diterima, dan jadikanlah Sayyidina Muhammad bin Idris As-Syafi'i sebagai pemberi syafaat bagiku pada hari kiamat."
+</div>
+</div>
+
+<h2>Penutup Halaman 2</h2>
+<p>
+Demikianlah perjalanan masa kecil Imam As-Syafi'i di Mekkah — seorang anak yatim yang tumbuh di tanah suci, menghafal Al-Qur'an di usia muda, belajar bahasa Arab di pedalaman bersama Suku Hudzail, dan menunjukkan kecerdasan yang luar biasa sehingga mampu berfatwa di usia lima belas tahun. Semua ini adalah bekal yang Allah persiapkan untuk beliau dalam menempuh perjalanan keilmuan yang lebih luas di masa dewasa.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas perjalanan menuntut ilmu Imam As-Syafi'i ke berbagai negeri — mulai dari Mekkah, Madinah, Yaman, Irak, hingga Mesir — serta bagaimana beliau mengumpulkan ilmu dari para ulama besar di setiap negeri yang beliau kunjungi.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-text">
+وَقُل رَّبِّ زِدْنِي عِلْمًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan katakanlah: 'Ya Tuhanku, tambahkanlah kepadaku ilmu pengetahuan.'"
+<br>— QS. Thaha: 114
+</div>
+</div>
+</div>
+
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="syafii1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="syafii2.html" class="article-nav-btn active" title="Halaman 2: Masa Kecil di Mekkah">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="syafii3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu">3</a>
+<div class="nav-btn-label">Menuntut Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="syafii4.html" class="article-nav-btn" title="Halaman 4: Para Guru & Bidang Ilmu">4</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="syafii5.html" class="article-nav-btn" title="Halaman 5: Perjalanan Spiritual">5</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="syafii6.html" class="article-nav-btn" title="Halaman 6: Tantangan & Konflik">6</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="syafii7.html" class="article-nav-btn" title="Halaman 7: Pro/Kontra Masyarakat & Ulama">7</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="syafii8.html" class="article-nav-btn" title="Halaman 8: Sikap terhadap Penguasa">8</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="syafii9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

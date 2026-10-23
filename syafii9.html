@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+  window.scrollTo(0, 0);
+</script>
+<title>Biografi Imam As-Syafi'i — Penutup & Intisari - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+/* 1. RESET & DASAR */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+/* 2. MEDIA QUERY TABLET */
+@media (max-width: 768px) {
+.article-container {
+max-width: 100%;
+padding: 20px;
+}
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+/* 3. HEADER & NAVIGASI ATAS */
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+/* 4. BREADCRUMB & CONTAINER */
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+/* 5. ARTICLE HEADER & META */
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+/* 6. GAMBAR & SHARE BAR */
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+/* 7. KONTEN ARTIKEL */
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 8. KOTAK ARAB & BIOGRAFI */
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.bio-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.bio-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.bio-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.bio-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 9. NAVIGASI HALAMAN (9 TOMBOL) */
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* 10. TOMBOL KEMBALI & FOOTER */
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+/* 11. MEDIA QUERY MOBILE */
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.bio-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+/* PATCH UNIVERSAL v2.0 */
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Imam As-Syafi'i — Penutup & Intisari
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Imam As-Syafi'i — Penutup & Intisari</h1>
+<div class="subtitle">Halaman 9 dari 9 — Wafatnya Sang Sulthanul Fuqaha, Warisan Abadi, dan Pelajaran dari Sepanjang Hayat Beliau</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Kamis, 22 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Al-Shafi%27i_Mosque_1.jpg/640px-Al-Shafi%27i_Mosque_1.jpg"
+alt="Masjid Imam As-Syafi'i di Al-Qarafa, Kairo — tempat beliau dimakamkan"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Cairo_-_Islamic_district_-_Gate_of_Bab_Zuweila.jpg/440px-Cairo_-_Islamic_district_-_Gate_of_Bab_Zuweila.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Masjid Imam As-Syafi'i di Al-Qarafa, Kairo, Mesir — tempat sang Sulthanul Fuqaha dikebumikan pada malam terakhir bulan Rajab 204 H, dan diziarahi oleh jutaan umat Islam hingga hari ini</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Setelah lima puluh empat tahun perjalanan hidup yang penuh dengan ilmu, jihad, dakwah, zuhud, dan pengabdian kepada Allah, Imam Muhammad bin Idris As-Syafi'i — sang Sulthanul Fuqaha, Nashir As-Sunnah, dan peletak dasar ilmu Ushul Fiqih — kembali kepada Rabb-nya pada malam terakhir bulan Rajab tahun 204 H (19 Januari 820 M) di kota Mesir, dalam usia yang masih relatif muda. Beliau meninggalkan warisan keilmuan yang begitu agung — berupa kitab-kitab yang menjadi rujukan umat Islam hingga hari kiamat, mazhab fiqih yang diikuti oleh ratusan juta umat Islam, dan teladan akhlak yang menjadi cahaya bagi para ulama sepanjang masa. Seri biografi sembilan halaman ini kita tutup dengan merenungkan wafatnya beliau, warisan abadi yang beliau tinggalkan, serta intisari pelajaran dari seluruh perjalanan hidup beliau.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEMBALI KEPADA ALLAH — QS. AL-JUMU'AH: 8</div>
+<div class="arabic-text">
+يَا أَيُّهَا النَّاسُ اضْرِبُوا مَثَلًا لِّلَّذِينَ تَدْعُونَ مِن دُونِ اللَّهِ ۚ لَن يَخْلُقُوا ذُبَابًا وَلَوِ اجْتَمَعُوا لَهُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Wahai manusia, telah dibuat perumpamaan, maka dengarkanlah perumpamaan itu. Sesungguhnya orang-orang yang kamu seru selain Allah tidak akan dapat menciptakan seekor lalat pun, walaupun mereka berkumpul untuk membuatnya."
+<br>— QS. Al-Hajj: 73 (pengingat bahwa segala sesuatu kembali kepada Allah)
+</div>
+</div>
+
+<h2>Wafatnya Imam As-Syafi'i — Sang Sulthanul Fuqaha Pulang ke Rahmatullah</h2>
+
+<div class="bio-card">
+<span class="bio-number">1</span>
+<span class="bio-title">Akhir Hayat di Mesir — Malam Terakhir Rajab 204 H</span>
+<div class="bio-arabic">وَفَاتُهُ بِمِصْرَ فِي آخِرِ لَيْلَةٍ مِنْ رَجَبْ 204 هـ</div>
+<p>
+Imam As-Syafi'i wafat di Mesir pada <strong>malam terakhir bulan Rajab tahun 204 H</strong> (bertepatan dengan 19 Januari 820 M), dalam usia <strong>54 tahun</strong> (menurut hitungan Hijriyah) atau 53 tahun (menurut hitungan Masehi). Beliau wafat di kota Fusthath (Kairo lama), tidak jauh dari Masjid Amr bin Ash — tempat beliau selama ini mengajar dan berdakwah.
+</p>
+<p>
+Sebelum wafat, beliau mengalami sakit yang cukup lama. Ar-Rabi' bin Sulaiman — murid paling setia beliau — menceritakan: <em>"Imam As-Syafi'i menderita sakit perut (wasir/bawasir) yang sangat menyakitkan selama beberapa bulan menjelang wafatnya. Namun, meskipun dalam keadaan sakit, beliau tidak pernah meninggalkan shalat berjamaah di masjid, tidak pernah meninggalkan wirid dan dzikir, dan tidak pernah mengeluh dengan takdir Allah."</em>
+</p>
+<p>
+Menjelang wafatnya, beliau senantiasa membaca Al-Qur'an dengan suara yang lemah namun penuh kekhusyukan. Ketika ditanya tentang keadaan beliau, beliau berkata: <em>"Aku sedang bersiap untuk bertemu dengan Allah. Semoga Allah meridhaiku."</em>
+</p>
+<p>
+Beliau wafat dalam keadaan yang penuh ketenangan, diiringi oleh air mata para murid dan sahabat beliau. Kematian beliau menjadi duka yang mendalam bagi seluruh umat Islam di Mesir dan di seluruh penjuru dunia Islam pada masa itu.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEPASTIAN KEMATIAN — QS. AL-MULK: 2</div>
+<div class="arabic-text">
+الَّذِي خَلَقَ الْمَوْتَ وَالْحَيَاةَ لِيَبْلُوَكُمْ أَيُّكُمْ أَحْسَنُ عَمَلًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Yang menjadikan mati dan hidup, supaya Dia menguji kamu, siapa di antara kamu yang lebih baik amalnya."
+<br>— QS. Al-Mulk: 2
+</div>
+</div>
+
+<div class="bio-card">
+<span class="bio-number">2</span>
+<span class="bio-title">Peristiwa Pemakaman yang Menggetarkan</span>
+<div class="bio-arabic">مَرَاسِمُ الْجِنَازَةِ الَّتِي هَزَّتْ مِصْرَ</div>
+<p>
+Ketika kabar wafatnya Imam As-Syafi'i tersebar di seluruh Mesir, penduduk Kairo dan sekitarnya berduyun-duyun datang untuk menshalatkan jenazah beliau. Ar-Rabi' bin Sulaiman menceritakan: <em>"Aku belum pernah melihat jenazah yang dishalatkan oleh orang sebanyak itu, dan belum pernah melihat jenazah yang diikuti oleh orang sebanyak itu. Orang-orang datang dari segala penjuru, sehingga jalanan penuh sesak."</em>
+</p>
+<p>
+Jenazah beliau dishalatkan berkali-kali — ada yang mengatakan hingga <strong>dua puluh kali</strong> shalat jenazah — karena begitu banyaknya orang yang ingin menshalatkan beliau. Setiap kali jenazah hendak dibawa ke pemakaman, kelompok orang lain datang dan meminta untuk menshalatkannya terlebih dahulu.
+</p>
+<p>
+Beliau dimakamkan di <strong>Al-Qarafa</strong> (pemakaman umum di Kairo), di tempat yang kini dikenal sebagai <strong>Makam Imam As-Syafi'i</strong>. Makam beliau dibangun dengan megah oleh Sultan Shalahuddin Al-Ayyubi pada abad ke-12 M, dan hingga hari ini menjadi salah satu tempat ziarah paling ramai di Mesir — dikunjungi oleh jutaan umat Islam dari seluruh penjuru dunia.
+</p>
+<p>
+Ketika beliau wafat, banyak ulama dan penyair yang meratapi kepergian beliau. Di antaranya adalah perkataan seorang penyair yang berkata:
+</p>
+<blockquote>
+"Telah wafat hari ini orang yang paling faqih di muka bumi,
+yang ilmunya menjadi cahaya bagi manusia di segala tempat.
+Wahai As-Syafi'i, engkau telah pergi, namun ilmumu tetap hidup,
+dan mazhabmu akan terus diikuti hingga hari kiamat."
+</blockquote>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEMATIAN — QS. AL-ANBIYA': 35</div>
+<div class="arabic-text">
+كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Tiap-tiap yang berjiwa akan merasakan mati."
+<br>— QS. Al-Anbiya': 35
+</div>
+</div>
+
+<h2>Warisan Abadi Imam As-Syafi'i</h2>
+
+<div class="bio-card">
+<span class="bio-number">3</span>
+<span class="bio-title">Kitab-Kitab Agung yang Menjadi Rujukan Umat</span>
+<div class="bio-arabic">مُؤَلَّفَاتُهُ الْخَالِدَةُ الَّتِي صَارَتْ مَرْجِعًا لِلْأُمَّةِ</div>
+<p>
+Imam As-Syafi'i meninggalkan warisan keilmuan yang begitu agung dalam bentuk kitab-kitab yang menjadi rujukan umat Islam hingga hari kiamat. Di antara kitab-kitab beliau yang paling masyhur adalah:
+</p>
+<ul>
+<li><strong>Ar-Risalah</strong> — Kitab pertama dalam sejarah Islam yang membahas ilmu Ushul Fiqih secara sistematis. Kitab ini menjadi pondasi bagi seluruh ilmu ushul fiqih setelahnya, dan menjadi rujukan utama bagi para mujtahid dalam beristinbath hukum dari Al-Qur'an dan As-Sunnah.</li>
+<li><strong>Al-Umm</strong> — Kitab induk fiqih mazhab Syafi'i yang berisi fatwa-fatwa dan pandangan-pandangan fiqih beliau. Kitab ini diriwatkan oleh murid beliau, Ar-Rabi' bin Sulaiman Al-Muradi, dan menjadi rujukan utama bagi para fuqaha mazhab Syafi'i.</li>
+<li><strong>Al-Hujjah</strong> — Kitab bantahan terhadap pandangan-pandangan yang menyimpang dari Ahlussunnah wal Jama'ah, yang ditulis dalam dua versi (versi Baghdad dan versi Mesir).</li>
+<li><strong>Musnad As-Syafi'i</strong> — Kumpulan hadits-hadits yang menjadi sandaran fiqih beliau, yang dikumpulkan oleh para murid beliau.</li>
+<li><strong>Diwan Asy-Syafi'i</strong> — Kumpulan bait-bait syair beliau yang penuh dengan hikmah, nasihat, dan renungan spiritual.</li>
+</ul>
+<p>
+Kitab-kitab ini bukan hanya menjadi warisan bagi mazhab Syafi'i, melainkan menjadi warisan bagi seluruh umat Islam. Bahkan para ulama dari mazhab lain — seperti Imam Ahmad bin Hanbal, Ishaq bin Rahawaih, dan Abu Ubaid Al-Qasim bin Salam — senantiasa merujuk kepada kitab-kitab beliau dalam berbagai masalah keilmuan.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG ILMU YANG BERMANFAAT — HADITS NABAWI</div>
+<div class="arabic-text">
+إِذَا مَاتَ ابْنُ آدَمَ انْقَطَعَ عَمَلُهُ إِلَّا مِنْ ثَلَاثٍ: صَدَقَةٍ جَارِيَةٍ، أَوْ عِلْمٍ يُنْتَفَعُ بِهِ، أَوْ وَلَدٍ صَالِحٍ يَدْعُو لَهُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Apabila anak Adam wafat, maka terputuslah amalnya kecuali dari tiga perkara: sedekah jariyah, ilmu yang bermanfaat, atau anak shaleh yang mendoakannya."
+<br>— HR. Muslim
+</div>
+</div>
+
+<div class="bio-card">
+<span class="bio-number">4</span>
+<span class="bio-title">Mazhab Syafi'i — Diikuti Ratusan Juta Umat Islam</span>
+<div class="bio-arabic">الْمَذْهَبُ الشَّافِعِيُّ — يَتَّبِعُهُ مِائَاتُ الْمَلَايِينِ</div>
+<p>
+Warisan terbesar Imam As-Syafi'i adalah <strong>Mazhab Syafi'i</strong> — salah satu dari empat mazhab fiqih Ahlussunnah wal Jama'ah yang diakui oleh seluruh umat Islam. Mazhab ini diikuti oleh ratusan juta umat Islam di seluruh dunia, terutama di:
+</p>
+<ul>
+<li><strong>Indonesia</strong> — Mayoritas umat Islam Indonesia mengikuti mazhab Syafi'i</li>
+<li><strong>Mesir</strong> — Tempat beliau wafat dan dimakamkan</li>
+<li><strong>Yaman</strong> — Sebagian besar penduduk Yaman</li>
+<li><strong>Somaliland & Somalia</strong> — Kawasan Tanduk Afrika</li>
+<li><strong>Malaysia, Brunei, Singapura</strong> — Asia Tenggara</li>
+<li><strong>Bagian dari Irak, Suriah, Palestina, dan Hijaz</strong></li>
+<li><strong>Kurdistan, Thailand Selatan, Filipina Selatan</strong></li>
+</ul>
+<p>
+Mazhab Syafi'i terus hidup dan berkembang hingga hari ini melalui ribuan kitab fiqih yang ditulis oleh para ulama mazhab ini, melalui madrasah-madrasah dan universitas-universitas Islam di seluruh dunia, dan melalui fatwa-fatwa para mufti yang mengikuti manhaj beliau. Inilah bukti bahwa warisan Imam As-Syafi'i bukanlah warisan yang mati, melainkan warisan yang terus hidup dan memberikan manfaat bagi umat Islam di setiap zaman.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG BERSATU DALAM KEBENARAN — QS. AL-ANBIYA': 92</div>
+<div class="arabic-text">
+إِنَّ هَٰذِهِ أُمَّتُكُمْ أُمَّةً وَاحِدَةً وَأَنَا رَبُّكُمْ فَاعْبُدُونِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sesungguhnya (agama tauhid) ini, adalah agama kamu semua, agama yang satu dan Aku adalah Tuhanmu, maka sembahlah Aku."
+<br>— QS. Al-Anbiya': 92
+</div>
+</div>
+
+<h2>Intisari Perjalanan Hidup Imam As-Syafi'i</h2>
+
+<div class="bio-card">
+<span class="bio-number">5</span>
+<span class="bio-title">Pelajaran dari Sepanjang Hayat Beliau</span>
+<div class="bio-arabic">دُرُوسٌ مِنْ حَيَاةِ الْإِمَامِ الشَّافِعِيِّ</div>
+<p>
+Dari sembilan halaman biografi yang telah kita bahas, kita bisa mengambil banyak pelajaran berharga dari perjalanan hidup Imam As-Syafi'i. Di antaranya:
+</p>
+<ul>
+<li><strong>Kemiskinan bukanlah penghalang untuk menjadi besar</strong> — Beliau tumbuh sebagai anak yatim yang fakir, namun dengan keikhlasan dan kesabaran, beliau menjadi salah satu ulama terbesar dalam sejarah Islam.</li>
+<li><strong>Ilmu harus dicari dengan perjuangan</strong> — Beliau rela meninggalkan tanah air, bepergian dari Mekkah ke Madinah, ke Yaman, ke Baghdad, hingga ke Mesir, demi mendapatkan ilmu dari para ahlinya.</li>
+<li><strong>Adab lebih penting daripada ilmu</strong> — Adab beliau terhadap para guru, terhadap para murid, terhadap para ulama yang menentangnya, dan terhadap para penguasa, menjadi teladan bagi setiap penuntut ilmu.</li>
+<li><strong>Kebenaran harus di atas segalanya</strong> — Beliau tidak pernah takut menyatakan kebenaran, meskipun kebenaran itu bertentangan dengan pendapatnya sendiri, dengan keinginan penguasa, atau dengan mayoritas orang.</li>
+<li><strong>Zuhud dan wara' adalah pondasi keberkahan ilmu</strong> — Ilmu beliau bercahaya dan bermanfaat karena beliau meninggalkan maksiat, zuhud terhadap dunia, dan senantiasa wara' dalam urusan harta.</li>
+<li><strong>Spiritualitas adalah nyawa dari ilmu</strong> — Tahajud, puasa, khatam Al-Qur'an, dan khalwat beliau menjadi sumber cahaya yang menerangi hati beliau dalam memahami ilmu.</li>
+<li><strong>Sabar dalam menghadapi ujian</strong> — Fitnah, penjara, godaan harta, dan tuduhan bid'ah beliau hadapi dengan kesabaran dan keteguhan iman.</li>
+<li><strong>Tawadhu' dan menerima kebenaran dari siapapun</strong> — Beliau tidak pernah sombong, dan senantiasa terbuka terhadap kebenaran meskipun datang dari orang yang menentangnya.</li>
+<li><strong>Menjaga adab terhadap penguasa</strong> — Beliau menasehati penguasa dengan rahasia, mendoakan kebaikan bagi mereka, namun tetap independen dalam memberikan fatwa.</li>
+<li><strong>Ilmu yang bermanfaat adalah sedekah jariyah</strong> — Warisan beliau terus hidup hingga hari kiamat, menjadi sumber pahala yang tidak terputus meskipun beliau telah wafat lebih dari seribu dua ratus tahun yang lalu.</li>
+</ul>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">BAIT SYAIR IMAM AS-SYAFI'I YANG MAHSYUR</div>
+<div class="arabic-text">
+تَغَرَّبْ عَنِ الْأَوْطَانِ فِي طَلَبِ الْعُلَا ۞ وَسَافِرْ فَفِي الْأَسْفَارِ خَمْسُ فَوَائِدِ
+تَفَرُّجُ هَمٍّ وَاطِّلَابُ مَعِيشَةٍ ۞ وَعِلْمُ وَآدَابٍ وَصُحْبَةُ مَاجِدِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Merantaulah engkau dari tanah air untuk meraih keutamaan, dan bepergianlah, karena dalam perjalanan ada lima manfaat: menghilangkan kesedihan, mencari penghidupan, menuntut ilmu, meraih adab, dan bergaul dengan orang-orang mulia."
+<br>— Imam As-Syafi'i, bait syair yang masyhur tentang rihlah ilmiyyah
+</div>
+</div>
+
+<div class="bio-card">
+<span class="bio-number">6</span>
+<span class="bio-title">Mutiara Hikmah Imam As-Syafi'i yang Abadi</span>
+<div class="bio-arabic">دُرَرُ حِكَمِ الْإِمَامِ الشَّافِعِيِّ الْخَالِدَةِ</div>
+<p>
+Imam As-Syafi'i meninggalkan banyak mutiara hikmah yang menjadi pedoman bagi umat Islam hingga hari ini. Di antaranya:
+</p>
+<blockquote>
+"Waktu itu seperti pedang, jika engkau tidak memotongnya, maka ia akan memotongmu."
+<br>— Imam As-Syafi'i
+</blockquote>
+<blockquote>
+"Barangsiapa yang tidak memiliki guru, maka syetanlah yang menjadi gurunya."
+<br>— Imam As-Syafi'i
+</blockquote>
+<blockquote>
+"Orang yang paling berakal adalah orang yang paling banyak mengingat mati, dan orang yang paling mulia adalah orang yang paling bertakwa."
+<br>— Imam As-Syafi'i
+</blockquote>
+<blockquote>
+"Jika ada hadits shahih yang bertentangan dengan pendapatku, maka tinggalkan pendapatku dan ambillah hadits tersebut."
+<br>— Imam As-Syafi'i
+</blockquote>
+<blockquote>
+"Setiap perkataan (ulama) bisa diterima dan bisa ditolak, kecuali perkataan Rasulullah SAW."
+<br>— Imam As-Syafi'i
+</blockquote>
+<blockquote>
+"Barangsiapa yang menuntut ilmu karena dunia, maka ia tidak akan mencium bau surga pada hari kiamat."
+<br>— Imam As-Syafi'i
+</blockquote>
+<blockquote>
+"Barangsiapa yang mencari ridha Allah dengan membuat murka manusia, maka Allah akan meridhainya dan menjadikan manusia ridha kepadanya."
+<br>— Imam As-Syafi'i
+</blockquote>
+<blockquote>
+"Al-Qur'an adalah hayatul qulub (kehidupan hati), maka perbanyaklah membacanya dengan penuh penghayatan."
+<br>— Imam As-Syafi'i
+</blockquote>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">BAIT SYAIR IMAM AS-SYAFI'I TENTANG WAKTU</div>
+<div class="arabic-text">
+دَعِ الْأَيَّامَ تَفْعَلُ مَا تَشَاءُ ۞ وَطِبْ نَفْسًا إِذَا حَكَمَ الْقَضَاءُ
+وَلَا تَجْزَعْ لِحَادِثَةِ اللَّيَالِي ۞ فَلِأَحْدَاثِ اللَّيَالِي بَقِيَّةُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Biarkanlah hari-hari berbuat apa yang dikehendakinya, dan lapangkanlah hatimu ketika takdir telah ditetapkan. Dan janganlah engkau takut terhadap peristiwa-peristiwa malam, karena peristiwa-peristiwa malam masih memiliki kelanjutan."
+<br>— Imam As-Syafi'i, bait syair tentang tawakkal dan ridha terhadap takdir
+</div>
+</div>
+
+<div class="bio-card">
+<span class="bio-number">7</span>
+<span class="bio-title">Ringkasan 9 Halaman Biografi Imam As-Syafi'i</span>
+<div class="bio-arabic">خُلَاصَةُ تِسْعَةِ صَفَحَاتٍ مِنْ سِيرَتِهِ</div>
+<p>
+Sebagai penutup seri biografi sembilan halaman ini, berikut adalah ringkasan singkat dari seluruh perjalanan hidup Imam As-Syafi'i:
+</p>
+<ul>
+<li><strong>Halaman 1 — Pendahuluan, Nasab, Kelahiran:</strong> Lahir di Gaza tahun 150 H, dari nasab mulia Bani Muththalib, pada tahun yang sama dengan wafatnya Imam Abu Hanifah.</li>
+<li><strong>Halaman 2 — Masa Kecil di Mekkah:</strong> Tumbuh sebagai anak yatim, menghafal Al-Qur'an di usia muda, belajar bahasa Arab di pedalaman bersama Suku Hudzail, mampu berfatwa di usia 15 tahun.</li>
+<li><strong>Halaman 3 — Perjalanan Menuntut Ilmu:</strong> Dari Mekkah ke Madinah (berguru kepada Imam Malik), ke Yaman (menjadi qadhi), ke Baghdad (dialog dengan ulama Hanafi), hingga ke Mesir (menyempurnakan Mazhab Jadid).</li>
+<li><strong>Halaman 4 — Para Guru & Bidang Ilmu:</strong> Belajar dari Muslim bin Khalid, Sufyan bin Uyainah, Imam Malik, Muhammad bin Hasan Asy-Syaibani, Waki' bin Al-Jarrah, dan banyak ulama besar lainnya. Menguasai fiqih, hadits, ushul fiqih, bahasa Arab, syair, dan tasawuf.</li>
+<li><strong>Halaman 5 — Perjalanan Spiritual:</strong> Zuhud, wara', tahajud, puasa, khatam Al-Qur'an 60 kali di Ramadhan, pertemuan dengan Fudhail bin Iyadh, khalwat, dan mujahadah.</li>
+<li><strong>Halaman 6 — Tantangan & Konflik:</strong> Fitnah di Yaman yang berujung pada pemenjaraan, perdebatan dengan ulama Hanafi tentang istihsan, ujian revisi pendapat, godaan harta dari penguasa, dan tuduhan bid'ah.</li>
+<li><strong>Halaman 7 — Pro/Kontra Masyarakat & Ulama:</strong> Dipuji oleh Imam Ahmad ("seperti matahari bagi dunia"), dikritik oleh sebagian ulama Hanafi, ditentang oleh sebagian ulama yang menuduh bid'ah, namun beliau senantiasa tawadhu' dan mendoakan kebaikan bagi semua orang.</li>
+<li><strong>Halaman 8 — Sikap terhadap Penguasa:</strong> Menasehati dengan rahasia, mendoakan kebaikan bagi penguasa, menolak harta dan kedudukan agar fatwa tetap independen, bersabar terhadap kezaliman.</li>
+<li><strong>Halaman 9 — Penutup & Intisari:</strong> Wafat di Mesir tahun 204 H, meninggalkan warisan kitab-kitab agung (Ar-Risalah, Al-Umm), mazhab yang diikuti ratusan juta umat Islam, dan teladan akhlak yang abadi.</li>
+</ul>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG BALASAN KEBAIKAN — QS. AL-QAMAR: 54</div>
+<div class="arabic-text">
+إِنَّ الْمُتَّقِينَ فِي جَنَّاتٍ وَنَهَرٍ ۝ فِي مَقْعَدِ صِدْقٍ عِندَ مَلِيكٍ مُّقْتَدِرٍ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sesungguhnya orang-orang yang bertakwa itu berada dalam surga-surga (taman-taman) dan di sungai-sungai, di tempat yang disenangi di sisi Tuhan Yang Berkuasa."
+<br>— QS. Al-Qamar: 54-55 (harapan bahwa Imam As-Syafi'i termasuk orang-orang yang bertakwa)
+</div>
+</div>
+
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Akhir Biografi Imam As-Syafi'i:</strong>
+<ul>
+<li><strong>Nama lengkap:</strong> Muhammad bin Idris bin Al-Abbas bin Utsman bin Syafi' — dari Bani Muththalib bin Abdi Manaf</li>
+<li><strong>Gelar:</strong> Sulthanul Fuqaha, Nashir As-Sunnah, Waliyullah</li>
+<li><strong>Lahir:</strong> Gaza, Palestina — Rajab 150 H (Agustus 767 M)</li>
+<li><strong>Wafat:</strong> Mesir — malam terakhir Rajab 204 H (19 Januari 820 M), usia 54 tahun</li>
+<li><strong>Dimakamkan:</strong> Al-Qarafa, Kairo, Mesir — diziarahi hingga hari ini</li>
+<li><strong>Guru utama:</strong> Imam Malik bin Anas (Madinah), Sufyan bin Uyainah (hadits), Muslim bin Khalid (fiqih), Muhammad bin Hasan Asy-Syaibani (fiqih Irak)</li>
+<li><strong>Murid utama:</strong> Ar-Rabi' bin Sulaiman (perawi Al-Umm), Al-Muzani, Yunus bin Abdul A'la, Abu Tsaur</li>
+<li><strong>Kitab utama:</strong> Ar-Risalah (ushul fiqih), Al-Umm (fiqih), Musnad, Diwan Asy-Syafi'i</li>
+<li><strong>Kontribusi terbesar:</strong> Peletak dasar ilmu Ushul Fiqih, pendiri Mazhab Syafi'i</li>
+<li><strong>Warisan abadi:</strong> Mazhab diikuti ratusan juta umat Islam di Indonesia, Mesir, Yaman, Asia Tenggara, dan berbagai negeri lainnya</li>
+<li><strong>Prinsip utama:</strong> "Jika hadits shahih, maka itulah mazhabku"</li>
+<li><strong>Teladan akhlak:</strong> Tawadhu', zuhud, wara', sabar, pemaaf, mendoakan kebaikan bagi semua orang</li>
+</ul>
+</div>
+
+<h2>Doa Penutup — Memohon Syafaat dan Keberkahan</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA PENUTUP — MEMOHON SYAFA'AT IMAM AS-SYAFI'I</div>
+<div class="arabic-text">
+اللَّهُمَّ ارْحَمْ سَيِّدَنَا مُحَمَّدَ بْنَ إِدْرِيسَ الشَّافِعِيَّ رَحْمَةً وَاسِعَةً، وَاجْعَلْهُ شَفِيعًا لَنَا يَوْمَ الْقِيَامَةِ، وَارْزُقْنَا اتِّبَاعَ سُنَّتِهِ، وَالتَّمَسُّكَ بِمَذْهَبِهِ، وَاجْعَلْنَا مِمَّنْ يَنْتَفِعُونَ بِعِلْمِهِ وَيَهْتَدُونَ بِهُدَاهُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, rahmatilah Sayyidina Muhammad bin Idris As-Syafi'i dengan rahmat yang luas, jadikanlah beliau sebagai pemberi syafaat bagi kami pada hari kiamat, anugerahkanlah kepada kami kemampuan mengikuti sunnah beliau, berpegang teguh kepada mazhab beliau, dan jadikanlah kami termasuk orang-orang yang mengambil manfaat dari ilmu beliau dan mendapat petunjuk dengan petunjuk beliau."
+</div>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON ILMU YANG BERMANFAAT</div>
+<div class="arabic-text">
+اللَّهُمَّ انْفَعْنِي بِمَا عَلَّمْتَنِي، وَعَلِّمْنِي مَا يَنْفَعُنِي، وَزِدْنِي عِلْمًا، وَالْحَمْدُ لِلَّهِ عَلَى كُلِّ حَالٍ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, berilah manfaat kepadaku dengan apa yang telah Engkau ajarkan kepadaku, ajarkanlah kepadaku apa yang bermanfaat bagiku, tambahkanlah ilmu kepadaku, dan segala puji bagi Allah dalam setiap keadaan."
+</div>
+</div>
+
+<h2>Penutup Seri Biografi — Akhir dari Sebuah Perjalanan</h2>
+<p>
+Demikianlah seri biografi Imam As-Syafi'i — Sulthanul Fuqaha — yang telah kita bahas dalam sembilan halaman. Dari pendahuluan dan nasab mulia beliau, masa kecil di Mekkah, perjalanan menuntut ilmu ke berbagai negeri, para guru dan bidang ilmu yang beliau kuasai, perjalanan spiritual yang mendalam, tantangan dan konflik yang beliau hadapi, tanggapan pro dan kontra masyarakat dan ulama, sikap beliau terhadap penguasa, hingga wafatnya beliau dan warisan abadi yang beliau tinggalkan.
+</p>
+<p>
+Imam As-Syafi'i bukanlah sosok yang sempurna dalam arti tidak memiliki kekurangan — beliau adalah manusia biasa yang memiliki kelemahan dan khilaf. Namun, keagungan beliau terletak pada kesungguhan beliau dalam mencari kebenaran, pada keteguhan beliau dalam membela sunnah Rasulullah SAW, pada kedalaman zuhud dan spiritualitas beliau, dan pada keikhlasan beliau dalam mengabdikan seluruh hidup beliau untuk ilmu dan dakwah.
+</p>
+<p>
+Semoga Allah meridhai Imam As-Syafi'i, mengampuni dosa-dosanya, mengangkat derajatnya di surga, dan menjadikan beliau sebagai pemberi syafaat bagi kita semua pada hari kiamat. Dan semoga Allah memberikan kepada kita kemampuan untuk meneladani akhlak dan manhaj beliau, serta memberikan kepada kita ilmu yang bermanfaat dan amal yang diterima.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam. Shalawat dan salam semoga senantiasa tercurah kepada Nabi Muhammad SAW, beserta keluarga, sahabat, dan orang-orang yang mengikuti jejak beliau hingga hari kiamat.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-text">
+سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا أَنْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Maha Suci Engkau ya Allah, dan dengan memuji-Mu. Aku bersaksi bahwa tiada Tuhan selain Engkau. Aku memohon ampun kepada-Mu dan bertaubat kepada-Mu."
+<br>— Doa penutup majelis
+</div>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">SHALAWAT KEPADA NABI MUHAMMAD SAW</div>
+<div class="arabic-text">
+اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِينَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, limpahkanlah shalawat, salam, dan berkah kepada Sayyidina Muhammad beserta keluarga dan seluruh sahabatnya."
+</div>
+</div>
+</div>
+
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="syafii1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="syafii2.html" class="article-nav-btn" title="Halaman 2: Masa Kecil di Mekkah">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="syafii3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu">3</a>
+<div class="nav-btn-label">Menuntut Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="syafii4.html" class="article-nav-btn" title="Halaman 4: Para Guru & Bidang Ilmu">4</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="syafii5.html" class="article-nav-btn" title="Halaman 5: Perjalanan Spiritual">5</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="syafii6.html" class="article-nav-btn" title="Halaman 6: Tantangan & Konflik">6</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="syafii7.html" class="article-nav-btn" title="Halaman 7: Pro/Kontra Masyarakat & Ulama">7</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="syafii8.html" class="article-nav-btn" title="Halaman 8: Sikap terhadap Penguasa">8</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="syafii9.html" class="article-nav-btn active" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>
