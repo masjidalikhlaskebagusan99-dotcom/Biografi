@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+  window.scrollTo(0, 0);
+</script>
 <title>Halaman 2 — Nasab Lengkap, Keluarga, Tempat & Tanggal Lahir Syeikh Abdul Qadir Al-Jilani - KALAM</title>
 
 <!-- FONT NASKHI: AMIRI / NOTO NASKH ARABIC / SCHEHERAZADE -->
@@ -11,6 +15,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
+html { scroll-behavior: auto !important; }
 /* 1. RESET & DASAR */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
@@ -19,16 +24,6 @@ background-color: #f5f5f0;
 color: #333;
 min-height: 100vh;
 line-height: 1.8;
-}
-/* PENTING: Nonaktifkan smooth scroll global agar lompatan instan */
-html {
-    scroll-behavior: auto !important;
-}
-
-/* Cegah animasi scroll saat load halaman */
-html, body {
-    overflow-anchor: none;
-    -webkit-overflow-scrolling: auto;
 }
 /* 2. MEDIA QUERY TABLET */
 @media (max-width: 768px) {
@@ -538,7 +533,7 @@ font-size: 0.9rem;
 }
 </style>
 </head>
-<body>
+<body onload="window.scrollTo(0,0)">
 <header>
 <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
 <span>K</span>ALAM
@@ -806,105 +801,31 @@ KALAM
 </footer>
 
 <script>
-/* ============================================
-   PATCH UNIVERSAL v1.0 — SMOOTH PAGE JUMP
-   Mencegah scroll flicker saat pindah halaman
-   Berlaku untuk: jilani2.html - jilani9.html
-   ============================================ */
-
-// 1. NONAKTIFKAN SCROLL RESTORASI BROWSER
-// Mencegah browser mengingat posisi scroll halaman sebelumnya
-if ('scrollRestoration' in history) {
-    history.scrollRestoration = 'manual';
-}
-
-// 2. PASTIKAN POSISI SCROLL DI TOP SAAT HALAMAN DIMUAT
-// Ini dijalankan SEBELUM rendering konten untuk mencegah flicker
-window.addEventListener('pageshow', function(event) {
-    window.scrollTo(0, 0);
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
-});
-
-// 3. PAKSA SCROLL KE TOP SAAT DOM READY
-document.addEventListener('DOMContentLoaded', function() {
-    window.scrollTo(0, 0);
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
-});
-
-// 4. OVERRIDE KLIK TOMBOL NAVIGASI — JUMP LANGSUNG
-// Mencegah animasi scroll dan langsung lompat ke halaman tujuan
-document.addEventListener('click', function(e) {
-    const navBtn = e.target.closest('.article-nav-btn');
-    if (navBtn) {
-        const href = navBtn.getAttribute('href');
-        if (href && href.endsWith('.html')) {
-            e.preventDefault();
-            // Reset scroll position SEBELUM pindah halaman
-            window.scrollTo(0, 0);
-            // Langsung lompat ke halaman tujuan
-            window.location.href = href;
-        }
-    }
-    
-    // Override juga untuk tombol "Kembali ke Beranda"
-    const backBtn = e.target.closest('.kalam-back-btn');
-    if (backBtn) {
-        const href = backBtn.getAttribute('href');
-        if (href) {
-            e.preventDefault();
-            window.scrollTo(0, 0);
-            window.location.href = href;
-        }
-    }
-    
-    // Override untuk link navigasi di header
-    const navLink = e.target.closest('header nav a');
-    if (navLink) {
-        const href = navLink.getAttribute('href');
-        if (href && (href.endsWith('.html') || href.includes('github.io'))) {
-            e.preventDefault();
-            window.scrollTo(0, 0);
-            window.location.href = href;
-        }
-    }
-    
-    // Override untuk breadcrumb link
-    const breadcrumbLink = e.target.closest('.breadcrumb a');
-    if (breadcrumbLink) {
-        const href = breadcrumbLink.getAttribute('href');
-        if (href) {
-            e.preventDefault();
-            window.scrollTo(0, 0);
-            window.location.href = href;
-        }
-    }
-});
-
-// 5. FONTSIZE CONTROL — TETAP DI TOP SETELAH PERUBAHAN
-function changeFontSize(delta) {
-    currentFontSize += delta * 0.1;
-    if (currentFontSize < 0.8) currentFontSize = 0.8;
-    if (currentFontSize > 1.5) currentFontSize = 1.5;
-    document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
-    // Pastikan tetap di posisi semula, tidak scroll
-    const scrollPos = window.scrollY;
-    window.scrollTo(0, scrollPos);
-}
+/* KONTROL UKURAN HURUF — SAMA DENGAN contoh.txt */
 let currentFontSize = 1.05;
-
-// 6. CEGAH SCROLL OTOMATIS DARI HASH URL
-// Jika URL mengandung #, abaikan dan tetap di top
-if (window.location.hash) {
-    window.scrollTo(0, 0);
-    history.replaceState(null, null, window.location.pathname);
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
 }
 
-// 7. DETEKSI BACK/FORWARD BUTTON BROWSER
-// Pastikan saat user tekan back/forward, scroll tetap di top
-window.addEventListener('popstate', function() {
-    window.scrollTo(0, 0);
+/* TOMBOL BAGIKAN */
+document.querySelector('.share-btn.fb').addEventListener('click', function (e) {
+e.preventDefault();
+window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(location.href), '_blank', 'noopener,noreferrer');
+});
+document.querySelector('.share-btn.tw').addEventListener('click', function (e) {
+e.preventDefault();
+window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(location.href) + '&text=' + encodeURIComponent(document.title), '_blank', 'noopener,noreferrer');
+});
+document.querySelector('.share-btn.wa').addEventListener('click', function (e) {
+e.preventDefault();
+window.open('https://wa.me/?text=' + encodeURIComponent(document.title + ' — ' + location.href), '_blank', 'noopener,noreferrer');
+});
+document.querySelector('.share-btn.tg').addEventListener('click', function (e) {
+e.preventDefault();
+window.open('https://t.me/share/url?url=' + encodeURIComponent(location.href) + '&text=' + encodeURIComponent(document.title), '_blank', 'noopener,noreferrer');
 });
 </script>
 </body>
