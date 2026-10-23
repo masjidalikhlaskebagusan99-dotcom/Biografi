@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Halaman 7 — Tantangan dan Konflik dalam Mengamalkan Keilmuan - KALAM</title>
-
-<!-- FONT NASKHI UNTUK TEKS ARAB BERHARAKAT -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@400;600;700&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
-
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Abdul Qadir Al-Jilani - KALAM</title>
 <style>
-/* 1. RESET & DASAR */
+html { scroll-behavior: auto !important; }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
 font-family: 'Georgia', serif;
@@ -20,16 +17,11 @@ color: #333;
 min-height: 100vh;
 line-height: 1.8;
 }
-/* 2. MEDIA QUERY TABLET */
 @media (max-width: 768px) {
-.article-container {
-max-width: 100%;
-padding: 20px;
-}
+.article-container { max-width: 100%; padding: 20px; }
 h1 { font-size: 26px; }
 .featured-img { max-width: 100%; }
 }
-/* 3. HEADER & NAVIGASI ATAS */
 header {
 background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
 padding: 20px 40px;
@@ -67,7 +59,6 @@ transition: all 0.3s ease;
 font-size: 0.95rem;
 }
 nav a:hover { background: #e94560; color: #fff; }
-/* 4. BREADCRUMB & CONTAINER */
 .breadcrumb {
 padding: 15px 40px;
 background: #eee;
@@ -81,7 +72,6 @@ max-width: 800px;
 margin: 40px auto;
 padding: 0 20px;
 }
-/* 5. ARTICLE HEADER & META */
 .article-header { margin-bottom: 30px; }
 .article-header h1 {
 font-size: 2.2rem;
@@ -120,7 +110,6 @@ font-size: 0.85rem;
 }
 .author-name { font-weight: bold; color: #333; }
 .meta-date { color: #999; }
-/* 6. GAMBAR & SHARE BAR */
 .article-image-wrapper {
 margin: 25px 0;
 border-radius: 12px;
@@ -189,7 +178,6 @@ background: #e94560;
 color: #fff;
 border-color: #e94560;
 }
-/* 7. KONTEN ARTIKEL */
 .article-content {
 font-size: 1.05rem;
 line-height: 1.9;
@@ -235,14 +223,6 @@ margin: 15px 0 20px 30px;
 margin-bottom: 10px;
 line-height: 1.7;
 }
-.article-content ol {
-margin: 15px 0 20px 30px;
-}
-.article-content ol li {
-margin-bottom: 10px;
-line-height: 1.7;
-}
-/* 8. KOTAK ARAB & KAROMAH */
 .arabic-box {
 background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
 border: 2px solid #d4af37;
@@ -263,32 +243,18 @@ background: #f8f6f0;
 padding: 0 12px;
 font-size: 1.2rem;
 color: #d4af37;
-font-family: 'Amiri', 'Noto Naskh Arabic', 'Scheherazade New', 'Traditional Arabic', serif;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
 white-space: nowrap;
 line-height: 1.4;
 z-index: 2;
 }
-.arabic-text,
-.karomah-arabic,
-.naskh {
-font-family: 'Amiri', 'Noto Naskh Arabic', 'Scheherazade New', 'Traditional Arabic', serif;
-direction: rtl;
-unicode-bidi: isolate;
-}
 .arabic-text {
-font-size: 1.9rem;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
 line-height: 2.8;
 color: #1a1a2e;
+direction: rtl;
 margin: 15px 0;
-}
-.latin-text {
-direction: ltr;
-text-align: center;
-font-style: italic;
-color: #8a6d2f;
-font-size: 0.95rem;
-line-height: 1.9;
-margin: 12px 0;
 }
 .arabic-translation {
 font-size: 0.95rem;
@@ -297,7 +263,6 @@ font-style: italic;
 margin-top: 15px;
 padding-top: 15px;
 border-top: 1px dashed #d4af37;
-text-align: center;
 }
 .arabic-label {
 display: inline-block;
@@ -339,9 +304,10 @@ font-weight: bold;
 display: inline;
 }
 .karomah-arabic {
-font-size: 1.7rem;
-line-height: 2.4;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
 color: #d4af37;
+direction: rtl;
 margin: 10px 0;
 text-align: right;
 }
@@ -361,7 +327,6 @@ margin: 15px 0 0 30px;
 margin-bottom: 10px;
 line-height: 1.7;
 }
-/* 9. NAVIGASI HALAMAN (9 TOMBOL — DIATUR AGAR ELEGAN) */
 .article-nav {
 display: flex;
 justify-content: center;
@@ -408,7 +373,6 @@ display: flex;
 flex-direction: column;
 align-items: center;
 }
-/* 10. TOMBOL KEMBALI & FOOTER */
 .kalam-back-btn {
 display: block;
 text-align: center;
@@ -448,7 +412,6 @@ font-size: 0.9rem;
 margin-top: 40px;
 }
 footer span { color: #e94560; }
-/* 11. MEDIA QUERY MOBILE */
 @media (max-width: 600px) {
 body { font-size: 14px; }
 h1 { font-size: 1.5rem; }
@@ -479,7 +442,6 @@ font-size: 1rem;
 }
 .nav-btn-label { font-size: 0.65rem; }
 }
-/* PATCH UNIVERSAL v2.0 */
 @media (max-width: 600px) {
 header {
 flex-direction: column !important;
@@ -526,380 +488,496 @@ font-size: 0.9rem;
 }
 </style>
 </head>
-<body>
+<body onload="window.scrollTo(0,0)">
 <header>
 <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
 <span>K</span>ALAM
 </a>
 <nav>
 <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
-<a href="artikelwali2.html">Artikel</a>
+<a href="biografi.html.html">Artikel</a>
 </nav>
 </header>
-
 <div class="breadcrumb">
-<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Abdul Qadir Al-Jilani — Halaman 7
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Abdul Qadir Al-Jilani — Sikap terhadap Penguasa
 </div>
-
 <div class="article-container">
 <div class="article-header">
-<h1>Biografi Syeikh Abdul Qadir Al-Jilani Sulthanul Awliya'</h1>
-<div class="subtitle">Halaman 7 dari 9 — Bagian 4: Tantangan dan Konflik dalam Mengamalkan Keilmuan</div>
+<h1>Biografi Syeikh Abdul Qadir Al-Jilani</h1>
+<div class="subtitle">Halaman 7 dari 9 — Sikap terhadap Khalifah, Sultan, dan Para Penguasa di Zamannya</div>
 <div class="article-meta">
 <div class="author">
 <div class="author-avatar">MY</div>
 <div>
 <div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
-<div class="meta-date">Kamis, 22 Oktober 2026, 08:00 WIB</div>
+<div class="meta-date">Jumat, 23 Oktober 2026, 08:00 WIB</div>
 </div>
 </div>
 </div>
 </div>
-
 <div class="article-image-wrapper">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Abdul_Qadir_Jilani.jpg/440px-Abdul_Qadir_Jilani.jpg"
-alt="Syeikh Abdul Qadir Al-Jilani"
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Baghdad_-_Al-Mustansiriya_University_01.jpg/440px-Baghdad_-_Al-Mustansiriya_University_01.jpg"
+alt="Istana dan pusat kekuasaan di Baghdad masa Abbasiyah"
 loading="eager"
 decoding="async"
-onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Cairo_-_Islamic_district_-_Gate_of_Bab_Zuweila.jpg/440px-Cairo_-_Islamic_district_-_Gate_of_Bab_Zuweila.jpg';">
-<div class="image-caption">Sumber: kalam.web.id — Ilustrasi Syeikh Abdul Qadir Al-Jilani, Sulthanul Awliya', ulama mazhab Hanbali dan pendiri Tarekat Qadiriyah yang makamnya di Baghdad hingga kini menjadi tujuan ziarah.</div>
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Abdul_Qadir_Gilani_Tomb.jpg/440px-Abdul_Qadir_Gilani_Tomb.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Madrasah Al-Mustansyiriyah di Baghdad — simbol pusat ilmu dan kekuasaan Abbasiyah di masa Syeikh Abdul Qadir Al-Jilani, tempat beliau berinteraksi dengan para penguasa tanpa kehilangan kemandirian dakwah</div>
 </div>
-
 <div class="share-bar">
 <span>Bagikan:</span>
-<a href="#" class="share-btn fb" title="Bagikan ke Facebook">f</a>
-<a href="#" class="share-btn tw" title="Bagikan ke Twitter / X">t</a>
-<a href="#" class="share-btn wa" title="Bagikan ke WhatsApp">W</a>
-<a href="#" class="share-btn tg" title="Bagikan ke Telegram">T</a>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
 <div class="font-size-controls">
 <button class="font-btn" onclick="changeFontSize(-1)">A-</button>
 <button class="font-btn" onclick="changeFontSize(1)">A+</button>
 </div>
 </div>
-
 <div class="article-content" id="articleContent">
-
 <p class="lead">
-Semakin tinggi ilmu seseorang, semakin besar pula taruhannya. Syeikh Abdul Qadir Al-Jilani menghadapi tiga medan konflik sekaligus: <strong>konflik di dalam dirinya</strong> melawan hawa nafsu dan godaan popularitas, <strong>konflik dengan penyakit masyarakat</strong> Baghdad yang korup, dan <strong>konflik dengan kepentingan kelompok serta otoritas</strong> yang merasa terancam oleh dakwahnya. Karena itu, biografi beliau bukan hanya kisah cahaya, tetapi juga kisah keteguhan menjaga kebenaran di tengah tekanan yang berat.
+Salah satu ujian terberat bagi seorang ulama besar bukanlah menghadapi penentangan rakyat kecil atau persaingan dengan sesama ulama, melainkan <strong>menghadapi penguasa</strong> — mereka yang memegang pedang, harta, dan jabatan. Di sinilah banyak ulama besar sepanjang sejarah terjatuh: menjadi "ulama istana" yang melegitimasi kezaliman, menerima suap yang mengikat lidah, atau berkhutbah hanya untuk menyenangkan hati raja. Syeikh Abdul Qadir Al-Jilani menghadapi ujian ini dengan cara yang sangat khas: beliau <strong>tidak menolak penguasa, tetapi juga tidak tunduk kepada mereka</strong>. Beliau menghormati jabatan mereka selama mereka berlaku adil, tetapi tidak takut menegur mereka ketika mereka zalim. Beliau mendoakan mereka, tetapi tidak menjadi alat legitimasi kebijakan mereka yang batil. Beliau menerima hadiah yang halal, tetapi menolak pemberian yang meragukan sumbernya. Sikap inilah yang menjadikan beliau sebagai <em>Sulthonul Awliya</em> yang sejati — sultan para wali yang tidak dapat dibeli, tidak dapat diancam, dan tidak dapat dipaksa.
 </p>
-
 <div class="arabic-box">
-<div class="arabic-label">DALIL TENTANG UJIAN DALAM DAKWAH — QS. AL-ANKABUT: 2–3</div>
+<div class="arabic-label">DALIL TENTANG KEBERANIAN MENGHADAPI PENGUASA — QS. AL-AHZAB: 39</div>
 <div class="arabic-text">
-أَحَسِبَ النَّاسُ أَنْ يُتْرَكُوا أَنْ يَقُولُوا آمَنَّا وَهُمْ لَا يُفْتَنُونَ ۝ وَلَقَدْ فَتَنَّا الَّذِينَ مِنْ قَبْلِهِمْ
-</div>
-<div class="latin-text">
-Aḥasiban-nāsu an yutrakū an yaqūlū āmannā wa hum lā yuftanūn. Wa laqad fatanallażīna min qablihim.
+الَّذِينَ يُبَلِّغُونَ رِسَالَاتِ اللَّهِ وَيَخْشَوْنَهُ وَلَا يَخْشَوْنَ أَحَدًا إِلَّا اللَّهَ ۚ وَكَفَىٰ بِاللَّهِ حَسِيبًا
 </div>
 <div class="arabic-translation">
-<strong>Artinya:</strong> "Apakah manusia itu mengira bahwa mereka dibiarkan (saja) mengatakan: 'Kami telah beriman', sedang mereka tidak diuji lagi? Dan sesungguhnya Kami telah menguji orang-orang yang sebelum mereka."
-<br>— QS. Al-Ankabut: 2–3 (potongan ayat). Ujian dan konflik adalah bagian tak terpisahkan dari perjalanan dakwah.
+<strong>Latin:</strong> "Allażīna yuballigūna risālātillāhi wa yakhsyaw-nahū wa lā yakh-syawna aḥadan illallāh, wa kafā billāhi ḥasībā."
+<br><br>
+<strong>Artinya:</strong> "(Yaitu) orang-orang yang menyampaikan risalah-risalah Allah. Mereka takut kepada-Nya dan mereka tidak takut kepada seorang (pun) selain kepada Allah. Dan cukuplah Allah sebagai Pembuat Perhitungan."
+<br>— QS. Al-Ahzab: 39
 </div>
 </div>
-
-<h2>1. Tantangan Internal: Nafs, Ujub, dan Godaan Popularitas</h2>
+<h2>Peta Kekuasaan Baghdad di Masa Syeikh Abdul Qadir</h2>
 <p>
-Pertama-tama, musuh paling sulit beliau adalah dirinya sendiri. Dalam bahasa tasawuf, ini disebut <em>mujahadatun nafs</em> (perjuangan melawan hawa nafsu): melawan kecintaan kepada pujian, keinginan dipatuhi, rasa lebih suci dari orang lain, dan kepuasan atas pencapaian pribadi. Seorang guru yang didatangi ribuan orang sangat rentan terhadap <em>ujub</em> — kekaguman terhadap diri sendiri — yang oleh para sufi dianggap lebih halus dan lebih berbahaya daripada harta.
+Untuk memahami sikap Syeikh Abdul Qadir terhadap penguasa, kita perlu memahami peta kekuasaan Baghdad pada abad ke-6 H yang sangat kompleks. Secara formal, Baghdad masih merupakan pusat <strong>Kekhalifahan Abbasiyah</strong>, dengan khalifah sebagai simbol tertinggi umat Islam. Namun kekuasaan politik riil berada di tangan para <strong>Sultan Seljuk</strong> dan para <strong>amir militer</strong> yang saling berebut pengaruh. Di tengah pergulatan ini, para <strong>wazir</strong> (perdana menteri), <strong>qadhi</strong> (hakim), dan <strong>ulama besar</strong> memainkan peran penting sebagai penyeimbang.
 </p>
-
+<p>
+Dalam masa dakwah Syeikh Abdul Qadir (± 521-561 H / 1127-1166 M), beberapa penguasa penting yang beliau hadapi adalah:
+</p>
+<ul>
+<li><strong>Al-Mustarshid Billah</strong> (512-529 H / 1118-1135 M) — Khalifah Abbasiyah yang berusaha memulihkan kekuasaan riil khilafah</li>
+<li><strong>Ar-Rasyid Billah</strong> (529-532 H / 1135-1138 M) — Khalifah yang masa pemerintahannya singkat dan penuh pergolakan</li>
+<li><strong>Al-Muqtafi Li-Amrillah</strong> (532-555 H / 1138-1160 M) — Khalifah yang masa pemerintahannya berimpitan dengan puncak dakwah beliau</li>
+<li><strong>Al-Mustanjid Billah</strong> (555-566 H / 1160-1170 M) — Khalifah pada masa akhir hayat beliau</li>
+<li><strong>Sultan Mas'ud bin Muhammad Seljuk</strong> (529-547 H) — Sultan yang menguasai Irak dan Persia</li>
+<li><strong>Sultan Sulaiman Syah</strong> dan penerusnya — Sultan Seljuk yang berkuasa di masa akhir beliau</li>
+<li><strong>Berbagai wazir, amir, dan qadhi</strong> yang silih berganti di Baghdad</li>
+</ul>
+<p>
+Dalam suasana politik yang penuh intrik ini, Syeikh Abdul Qadir mengambil sikap yang sangat konsisten: <strong>hanya tunduk kepada Allah dan Rasul-Nya</strong>, menghormati penguasa yang adil, menegur penguasa yang zalim, dan menjaga kemandirian dakwah dari segala bentuk intervensi politik.
+</p>
 <div class="karomah-card">
 <span class="karomah-number">1</span>
-<span class="karomah-title">Bahaya Ujub dan Riya' dalam Dakwah</span>
-<div class="karomah-arabic">خَطَرُ الْعُجْبِ وَالرِّيَاءِ فِي الدَّعْوَةِ</div>
-<div class="latin-text" style="text-align:right;">Khaṭarul-‘ujbi war-riyā'i fid-da‘wah</div>
+<span class="karomah-title">Prinsip Dasar: Hanya Tunduk kepada Allah</span>
+<div class="karomah-arabic">الْمَبْدَأُ الْأَسَاسِيُّ: لَا طَاعَةَ إِلَّا لِلَّهِ</div>
 <p>
-Syeikh Abdul Qadir Al-Jilani sangat menyadari bahaya <em>ujub</em> (bangga diri) dan <em>riya'</em> (ingin dipuji) yang dapat merusak amal. Beliau pernah berkata:
+Sikap Syeikh Abdul Qadir terhadap penguasa berakar pada prinsip tauhid yang sangat mendalam: <strong>hanya Allah yang berhak ditaati secara mutlak</strong>. Penguasa, khalifah, sultan, atau siapa pun, hanya berhak ditaati selama mereka sendiri taat kepada Allah dan Rasul-Nya. Ketika mereka menyimpang dari jalan Allah, maka kewajiban seorang ulama adalah mengingatkan mereka — bukan mengikuti mereka.
+</p>
+<p>
+Beliau menegaskan prinsip ini dalam banyak nasihat beliau:
 </p>
 <blockquote>
-"Seorang hamba bisa saja beribadah selama tujuh puluh tahun, lalu pada hari kiamat Allah bertanya kepadanya: 'Untuk siapa engkau beribadah?' Jika ia menjawab: 'Untuk-Mu', maka Allah berfirman: 'Engkau berdusta. Engkau beribadah agar dikatakan sebagai ahli ibadah.' Maka ia dilemparkan ke neraka."
+<em>"Janganlah engkau takut kepada siapa pun selain Allah. Janganlah engkau mengharap dari siapa pun selain Allah. Janganlah engkau meminta dari siapa pun selain Allah. Jika engkau telah mencapai maqam ini, maka engkau adalah raja sejati — meskipun engkau tidak memiliki mahkota, tidak memiliki istana, dan tidak memiliki pasukan."</em>
 </blockquote>
 <p>
-Perkataan ini menunjukkan betapa ketatnya beliau memeriksa niatnya sendiri. Meskipun ribuan orang datang kepadanya untuk meminta nasihat dan doa, beliau tidak pernah menganggap dirinya sebagai "penyelamat" atau "sumber keberkahan" yang independen. Semua kebaikan adalah dari Allah, dan beliau hanyalah perantara yang tidak memiliki daya upaya apapun kecuali dengan izin-Nya.
+Prinsip inilah yang menjadi fondasi kemandirian beliau di hadapan penguasa. Beliau tidak membutuhkan pengakuan mereka, tidak membutuhkan harta mereka, dan tidak membutuhkan perlindungan mereka. Yang beliau butuhkan hanyalah ridha Allah. Dan karena itulah, beliau menjadi sosok yang <strong>tidak dapat dibeli, tidak dapat diancam, dan tidak dapat dipaksa</strong>.
 </p>
 </div>
-
 <div class="arabic-box">
-<div class="arabic-label">PERKATAAN SYEIKH ABDUL QADIR AL-JILANI TENTANG NIAT</div>
+<div class="arabic-label">DALIL TENTANG KETAATAN KEPADA ULIL AMRI — QS. AN-NISA: 59</div>
 <div class="arabic-text">
-النِّيَّةُ أَفْضَلُ مِنَ الْعَمَلِ، أَلَا وَإِنَّ كُلَّ عَامِلٍ يَعْمَلُ بِحَسَبِ نِيَّتِهِ
-</div>
-<div class="latin-text">
-An-niyyatu afḍalu minal-‘amal, alā wa inna kulla ‘āmilin ya‘malu biḥasbi niyyatih.
+يَا أَيُّهَا الَّذِينَ آمَنُوا أَطِيعُوا اللَّهَ وَأَطِيعُوا الرَّسُولَ وَأُولِي الْأَمْرِ مِنكُمْ ۖ فَإِن تَنَازَعْتُمْ فِي شَيْءٍ فَرُدُّوهُ إِلَى اللَّهِ وَالرَّسُولِ
 </div>
 <div class="arabic-translation">
-<strong>Artinya:</strong> "Niat lebih utama daripada amal, ketahuilah bahwa setiap orang beramal sesuai dengan niatnya."
-<br>— Syeikh Abdul Qadir Al-Jilani, dalam kitab <em>Al-Futuh al-Ghaib</em>
+<strong>Latin:</strong> "Yā ayyuhallażīna āmanū aṭī‘ullāha wa aṭī‘ur-Rasūla wa ulil-amri minkum, fa in tanāza‘tum fī syai'in faruddūhu ilallāhi war-Rasūl."
+<br><br>
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, taatilah Allah dan taatilah Rasul (Nya), dan ulil amri di antara kamu. Kemudian jika kamu berlainan pendapat tentang sesuatu, maka kembalikanlah ia kepada Allah (Al-Qur'an) dan Rasul (sunnahnya)."
+<br>— QS. An-Nisa': 59
 </div>
 </div>
-
-<p>
-Beliau menjawab godaan popularitas dengan muhasabah ketat, menolak kemewahan, hidup sederhana, dan terus menegaskan bahwa segala kebaikan hanyalah karunia Allah. Dalam majelisnya beliau sering membedakan antara <em>pemberi</em> dan <em>perantara</em>: manusia boleh menjadi sebab, tetapi yang memberi hidayah tetap Allah. Penegasan ini adalah benteng terhadap kultus individu.
-</p>
-
-<div class="arabic-box">
-<div class="arabic-label">DALIL TENTANG NAFSU — QS. YUSUF: 53</div>
-<div class="arabic-text">
-إِنَّ النَّفْسَ لَأَمَّارَةٌ بِالسُّوءِ إِلَّا مَا رَحِمَ رَبِّي
-</div>
-<div class="latin-text">
-Innan-nafsa la’ammāratun bis-sū’i illā mā raḥima rabbī.
-</div>
-<div class="arabic-translation">
-<strong>Artinya:</strong> "Sesungguhnya nafsu itu selalu menyuruh kepada kejahatan, kecuali nafsu yang diberi rahmat oleh Tuhanku."
-<br>— QS. Yusuf: 53 (potongan ayat). Pengakuan tentang kelemahan nafs adalah langkah pertama menuju pembersihannya.
-</div>
-</div>
-
-<h2>2. Konflik dengan Penyakit Sosial Baghdad</h2>
-<p>
-Baghdad abad ke-6 H adalah kota perdagangan yang makmur sekaligus rawan ketimpangan. Riba, manipulasi timbangan, suap dalam jabatan, konsumsi khamr, penyalahgunaan wakaf, dan kekerasan terhadap kaum lemah menjadi bagian dari kehidupan urban. Ketika beliau mengangkat isu-isu ini dari mimbar, yang beliau sentuh bukan hanya hati individu, tetapi juga <strong>struktur penghasilan banyak orang</strong>.
-</p>
-
 <div class="karomah-card">
 <span class="karomah-number">2</span>
-<span class="karomah-title">Penyakit Sosial yang Dihadapi Beliau</span>
-<div class="karomah-arabic">الْأَمْرَاضُ الِاجْتِمَاعِيَّةُ الَّتِي وَاجَهَهَا</div>
-<div class="latin-text" style="text-align:right;">Al-amrāḍul-ijtimā‘iyyatullatī wājahahā</div>
+<span class="karomah-title">Menghormati Khalifah Abbasiyah — Tanpa Menjadi Alat Legitimasi</span>
+<div class="karomah-arabic">احْتِرَامُ الْخَلِيفَةِ الْعَبَّاسِيِّ — دُونَ أَنْ يَكُونَ أَدَاةَ تَشْرِيعٍ</div>
 <p>
-Berikut adalah penyakit-penyakit sosial yang beliau kritik secara terbuka dalam majelis-majelisnya:
+Syeikh Abdul Qadir <strong>menghormati jabatan Khalifah Abbasiyah</strong> sebagai simbol persatuan umat Islam dan sebagai keturunan Quraisy yang oleh banyak ulama dianggap berhak atas jabatan khilafah. Beliau mendoakan para khalifah, mengakui kedudukan mereka, dan tidak pernah melibatkan diri dalam gerakan-gerakan politik yang bertujuan menggulingkan mereka.
 </p>
-<ul>
-<li><strong>Riba (الرِّبَا):</strong> praktik bunga yang menindas orang miskin dan memperkaya orang kaya. Beliau menyebut riba sebagai "perang terhadap Allah dan Rasul-Nya" berdasarkan QS. Al-Baqarah: 275.</li>
-<li><strong>Manipulasi timbangan (تَخْفِيفُ الْمِكْيَالِ):</strong> pedagang yang mengurangi takaran saat menjual, tetapi menambah saat membeli. Ini adalah bentuk kezaliman yang merusak kepercayaan dalam masyarakat.</li>
-<li><strong>Suap dalam jabatan (الرِّشْوَة):</strong> pejabat yang menerima uang untuk memutuskan perkara secara tidak adil. Beliau menyebut suap sebagai "api neraka yang dimakan dengan cara batil."</li>
-<li><strong>Konsumsi khamr (شُرْبُ الْخَمْرِ):</strong> minuman keras yang merusak akal dan menghancurkan keluarga. Beliau tidak hanya mengkritik peminum, tetapi juga produsen dan penjualnya.</li>
-<li><strong>Penyalahgunaan wakaf (اسْتِخْدَامُ الْأَوْقَافِ فِي غَيْرِ حَقِّهَا):</strong> harta wakaf yang seharusnya untuk kepentingan umum diselewengkan oleh pengurus yang tidak amanah.</li>
-<li><strong>Kekerasan terhadap kaum lemah (الظُّلْمُ):</strong> orang kaya dan berkuasa yang menindas fakir miskin, yatim, dan janda. Beliau membela mereka dengan keberanian yang luar biasa.</li>
-</ul>
+<p>
+Namun demikian, beliau <strong>tidak pernah menjadikan dirinya sebagai alat legitimasi</strong> bagi kebijakan-kebijakan khalifah yang tidak sesuai syariat. Ketika khalifah mengambil kebijakan yang zalim, beliau tidak diam — beliau menegur dengan hikmah, baik secara langsung maupun melalui nasihat-nasihat umum di majelis beliau. Beliau tidak takut kehilangan "akses" ke istana, karena beliau tidak pernah mencari akses itu sejak awal.
+</p>
+<p>
+Dalam riwayat-riwayat yang sampai kepada kita, tidak tercatat bahwa Syeikh Abdul Qadir pernah menerima jabatan resmi dari khalifah — tidak sebagai qadhi, tidak sebagai mufti, tidak sebagai pengajar resmi di madrasah istana. Beliau memilih untuk tetap menjadi <strong>ulama independen</strong> yang dakwahnya tidak terikat oleh kebijakan politik mana pun.
+</p>
+<p>
+Beliau berkata tentang sikap terhadap penguasa: <em>"Hormatilah mereka karena jabatan yang mereka emban, tetapi janganlah engkau memuji mereka kecuali dengan kebenaran. Jika mereka berbuat baik, doakanlah mereka. Jika mereka berbuat zalim, ingatkanlah mereka. Dan janganlah engkau menjadi penjilat yang memuji mereka dalam kezaliman mereka."</em>
+</p>
 </div>
-
-<p>
-Akibatnya, nasihat beliau menimbulkan ketegangan. Pedagang yang terbiasa curang merasa dipermalukan; pejabat yang hidup dari suap merasa terancam; pemilik hiburan terlarang kehilangan pelanggan; dan sebagian orang menganggap ceramah beliau terlalu keras. Di sinilah letaknya tantangan nyata mengamalkan ilmu: kebenaran yang disampaikan dengan benar tetap bisa menimbulkan permusuhan.
-</p>
-
 <div class="arabic-box">
-<div class="arabic-label">DALIL LARANGAN RIBA — QS. AL-BAQARAH: 275</div>
+<div class="arabic-label">DALIL TENTANG BERAMAL DENGAN ADIL — QS. AL-MA'IDAH: 8</div>
 <div class="arabic-text">
-وَأَحَلَّ اللَّهُ الْبَيْعَ وَحَرَّمَ الرِّبَا
-</div>
-<div class="latin-text">
-Wa aḥallallāhul-bai‘a wa ḥarramar-ribā.
+يَا أَيُّهَا الَّذِينَ آمَنُوا كُونُوا قَوَّامِينَ لِلَّهِ شُهَدَاءَ بِالْقِسْطِ ۖ وَلَا يَجْرِمَنَّكُمْ شَنَآنُ قَوْمٍ عَلَىٰ أَلَّا تَعْدِلُوا ۚ اعْدِلُوا هُوَ أَقْرَبُ لِلتَّقْوَىٰ
 </div>
 <div class="arabic-translation">
-<strong>Artinya:</strong> "Padahal Allah telah menghalalkan jual beli dan mengharamkan riba."
-<br>— QS. Al-Baqarah: 275 (potongan ayat). Kritik beliau terhadap riba didasarkan pada ayat ini.
+<strong>Latin:</strong> "Yā ayyuhallażīna āmanū kūnū qawwāmīna lillāhi syuhadā'a bil-qisṭ, wa lā yajrimannakum syan'ānu qaumin ‘alā allā ta‘dilū, i‘dilū huwa aqrabu lit-taqwā."
+<br><br>
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, jadilah kamu orang-orang yang selalu menegakkan (kebenaran) karena Allah, menjadi saksi dengan adil. Dan janganlah sekali-kali kebencianmu terhadap sesuatu kaum, mendorong kamu untuk berlaku tidak adil. Berlaku adillah, karena adil itu lebih dekat kepada takwa."
+<br>— QS. Al-Ma'idah: 8
 </div>
 </div>
-
-<h2>3. Ketegangan dalam Dunia Keilmuan dan Tasawuf</h2>
-<p>
-Medan konflik ketiga berada di internal umat Islam sendiri. Pada masa itu terdapat ketegangan antara kelompok tradisionalis Hanbali dan pengembang teologi rasional, antara fuqahā yang menekankan zahir hukum dan sufi yang berbicara tentang ma'rifah, serta antara masyarakat awam yang mudah terpukau dan ulama yang menuntut bukti.
-</p>
-
 <div class="karomah-card">
 <span class="karomah-number">3</span>
-<span class="karomah-title">Ketegangan Internal Umat Islam pada Masa Beliau</span>
-<div class="karomah-arabic">التَّوَتُّرُ الدَّاخِلِيُّ فِي صُفُوفِ الْأُمَّةِ</div>
-<div class="latin-text" style="text-align:right;">At-tawatturud-dākhlī fī ṣufūfil-ummah</div>
+<span class="karomah-title">Menegur Kezaliman Penguasa dengan Hikmah dan Keberanian</span>
+<div class="karomah-arabic">تَوْجِيهُ الظُّلْمِ بِالْحِكْمَةِ وَالشَّجَاعَةِ</div>
 <p>
-Berikut adalah ketegangan-ketegangan internal yang beliau hadapi:
+Salah satu ciri paling menonjol dari sikap Syeikh Abdul Qadir terhadap penguasa adalah <strong>keberanian beliau menegur kezaliman</strong> — baik kezaliman yang dilakukan oleh khalifah, sultan, wazir, amir, maupun pejabat-pejabat kecil. Beliau tidak memilih diam untuk menjaga keselamatan diri, dan tidak pula memilih konfrontasi terbuka yang bisa berujung pada pertumpahan darah. Beliau memilih jalan <em>nasihat dengan hikmah</em> — teguran yang tegas namun lembut, langsung namun tidak mempermalukan.
 </p>
-<ul>
-<li><strong>Tradisionalis vs Rasionalis:</strong> sebagian ulama Hanbali menolak penggunaan akal dalam memahami agama, sementara sebagian ulama lain (terutama dari kalangan Mu'tazilah dan Asy'ariyah) menggunakan pendekatan rasional yang kuat. Beliau berada di tengah-tengah, menggunakan akal tetapi tetap berpegang pada wahyu.</li>
-<li><strong>Fuqahā vs Sufi:</strong> sebagian fuqahā menganggap sufi sebagai orang-orang yang melalaikan syariat, sementara sebagian sufi menganggap fuqahā sebagai orang-orang yang kering rohaninya. Beliau menolak pemisahan ini dan menegaskan bahwa syariat dan hakikat adalah satu kesatuan.</li>
-<li><strong>Awam vs Khawash:</strong> masyarakat awam mudah terpukau oleh karomah dan kemampuan luar biasa, sementara ulama (khawash) menuntut bukti tekstual dan sanad yang sahih. Beliau menghormati keduanya tetapi tidak membiarkan yang awam menelan mentah-mentah setiap klaim karomah.</li>
-<li><strong>Perilaku murid yang menyimpang:</strong> sebagian pengikut beliau berlebihan dalam memuji, sebagian malas menuntut ilmu, dan sebagian menjadikan kedekatan dengan guru sebagai pengganti ketaatan. Beliau berulang kali menolak logika semacam itu dengan menegaskan bahwa wali tidak membebaskan siapa pun dari kewajiban syariat.</li>
-</ul>
+<p>
+Dalam majelis-majelis beliau yang dihadiri oleh ribuan orang — termasuk para pejabat dan penguasa — beliau sering kali menyampaikan nasihat-nasihat yang secara tidak langsung merupakan teguran terhadap kezaliman yang sedang terjadi. Beliau berkata:
+</p>
+<blockquote>
+<em>"Wahai para penguasa, ingatlah bahwa kalian hanyalah pengelola amanah. Rakyat adalah amanah Allah di tangan kalian. Jika kalian mengkhianati amanah ini, maka Allah akan meminta pertanggungjawaban dari kalian pada hari kiamat — dan tidak ada syafaat, tidak ada harta, tidak ada pasukan yang dapat menyelamatkan kalian dari siksa-Nya."</em>
+</blockquote>
+<p>
+Beliau juga sering menegur para pejabat yang mengambil harta rakyat secara tidak sah, para qadhi yang menerima suap dalam putusan mereka, dan para amir yang menggunakan kekuatan militer untuk menindas rakyat kecil. Teguran-teguran ini disampaikan dengan bahasa yang sangat tegas, sehingga banyak pejabat yang hadir di majelis beliau merasa "terbakar" oleh nasihat beliau — namun mereka tidak dapat membantah, karena nasihat itu disampaikan dengan dalil yang kuat dan akhlak yang mulia.
+</p>
+<p>
+Beliau berkata tentang keberanian menegur penguasa: <em>"Barangsiapa yang takut kepada Allah, maka ia tidak akan takut kepada siapa pun. Dan barangsiapa yang tidak takut kepada Allah, maka ia akan takut kepada setiap orang — termasuk kepada penguasa yang zalim. Maka takutilah Allah, dan berbicaralah dengan kebenaran meskipun pahit."</em>
+</p>
 </div>
-
-<p>
-Abdul Qadir secara fiqih berada dalam mazhab Hanbali, namun bahasa rohaninya menggunakan kosakata tasawuf seperti fana, baqa, mahabbah, dan ma'rifah. Kombinasi ini membuat beliau dipahami berbeda oleh kelompok berbeda: fuqahā melihat ketegasan syariatnya, sufi melihat kedalaman batinnya, sementara pihak yang curiga menangkap sebagian ungkapan beliau secara harfiah dan menuduhnya melampaui batas.
-</p>
-
 <div class="arabic-box">
-<div class="arabic-label">DALIL TENTANG KUALITAS DAKWAH — QS. FUSSILAT: 33</div>
+<div class="arabic-label">HADITS TENTANG MENYAMPAIKAN KEBENARAN DI HADAPAN PENGUASA</div>
 <div class="arabic-text">
-وَمَنْ أَحْسَنُ قَوْلًا مِمَّنْ دَعَا إِلَى اللَّهِ وَعَمِلَ صَالِحًا وَقَالَ إِنَّنِي مِنَ الْمُسْلِمِينَ
-</div>
-<div class="latin-text">
-Wa man aḥsanu qawlan mimman da‘ā ilallāhi wa ‘amila ṣāliḥan wa qāla innanī minal-muslimīn.
+سَيِّدُ الشُّهَدَاءِ حَمْزَةُ بْنُ عَبْدِ الْمُطَّلِبِ، وَرَجُلٌ قَامَ إِلَى إِمَامٍ جَائِرٍ فَأَمَرَهُ وَنَهَاهُ فَقَتَلَهُ
 </div>
 <div class="arabic-translation">
-<strong>Artinya:</strong> "Siapakah yang lebih baik perkataannya daripada orang yang menyeru kepada Allah, mengerjakan amal yang shaleh, dan berkata: 'Sesungguhnya aku termasuk orang-orang yang menyerah diri?'"
-<br>— QS. Fussilat: 33. Perhatikan: dakwah, amal shaleh, dan kerendahan diri harus hadir bersama.
+<strong>Latin:</strong> "Sayyidusy-syuhadā'i Ḥamzah bin ‘Abdil-Muṭṭalib, wa rajulun qāma ilā imāmin jā'irin fa amarahū wa nahāhu fa qatalah."
+<br><br>
+<strong>Artinya:</strong> "Penghulu para syuhada adalah Hamzah bin Abdul Muthalib, dan seorang laki-laki yang berdiri di hadapan imam (penguasa) yang zalim, lalu ia memerintahkannya (kepada kebaikan) dan melarangnya (dari kemungkaran), maka penguasa itu membunuhnya."
+<br>— HR. Abu Dawud dan Al-Hakim, dishahihkan oleh Al-Albani
 </div>
 </div>
-
-<h2>4. Strategi Beliau Menghadapi Konflik</h2>
-<p>
-Di tengah ketiga medan konflik tersebut, Syeikh Abdul Qadir Al-Jilani tidak memilih jalan kekerasan atau kompromi. Beliau mengembangkan strategi yang konsisten dan berprinsip:
-</p>
-
 <div class="karomah-card">
 <span class="karomah-number">4</span>
-<span class="karomah-title">Enam Strategi Menghadapi Konflik</span>
-<div class="karomah-arabic">سِتُّ اسْتِرَاتِيجِيَّاتٍ لِمُوَاجَهَةِ الصِّرَاعِ</div>
-<div class="latin-text" style="text-align:right;">Sittu istrātījiyyātin li-muwājahaṣ-ṣirā‘</div>
-<ul>
-<li><strong>Kembali kepada sumber:</strong> setiap tuduhan dan perdebatan dikembalikan kepada Al-Qur'an dan sunnah, bukan kepada emosi pendukung. Beliau tidak pernah berdebat hanya untuk menang, melainkan untuk menjelaskan kebenaran.</li>
-<li><strong>Menulis untuk meluruskan:</strong> karya seperti <em>Al-Ghunyah li Thalibi Tariq al-Haqq</em> memuat bab akidah, fiqih, dan adab yang berfungsi sebagai pegangan agar tarekat tidak menyimpang. Dengan menulis, beliau memastikan bahwa ajarannya tidak hanya bergantung pada ingatan murid.</li>
-<li><strong>Tidak membalas cacian dengan cacian:</strong> beliau memilih keteguhan dan doa, karena target dakwahnya adalah hidayah, bukan kemenangan debat. Ketika dicela, beliau diam dan menyerahkan urusan kepada Allah.</li>
-<li><strong>Memisahkan figur dari ajaran:</strong> mengikuti beliau berarti mengikuti kebenaran yang beliau sampaikan, bukan meniru hal-hal yang tidak bisa ditiru. Beliau tidak pernah mengklaim dirinya sebagai sumber kebenaran, melainkan sebagai penyampai kebenaran.</li>
-<li><strong>Menolak instrumentalisme politik:</strong> beliau tidak menjadikan majelisnya basis perebutan jabatan atau alat balas dendam terhadap kelompok tertentu. Ketika penguasa menawarkan posisi resmi, beliau menolaknya dengan hormat tetapi tegas.</li>
-<li><strong>Menjaga adab berbeda:</strong> perbedaan pendapat tidak boleh berubah menjadi saling mengkafirkan dan menghalalkan kehormatan. Beliau menghormati ulama-ulama yang berbeda pendapat dengannya, meskipun beliau tidak setuju dengan sebagian pandangan mereka.</li>
-</ul>
-</div>
-
-<div class="arabic-box">
-<div class="arabic-label">PERINTAH BERPEGANG TEGUH TANPA PERCERAIAN — QS. ALI IMRAN: 103</div>
-<div class="arabic-text">
-وَاعْتَصِمُوا بِحَبْلِ اللَّهِ جَمِيعًا وَلَا تَفَرَّقُوا
-</div>
-<div class="latin-text">
-Wa‘taṣimū bi-ḥablillāhi jamī‘an wa lā tafarraqū.
-</div>
-<div class="arabic-translation">
-<strong>Artinya:</strong> "Dan berpeganglah kamu semuanya kepada tali (agama) Allah, dan janganlah kamu bercerai-berai."
-<br>— QS. Ali Imran: 103 (potongan ayat). Prinsip persatuan dalam perbedaan adalah prinsip yang dipegang beliau.
-</div>
-</div>
-
-<div class="arabic-box">
-<div class="arabic-label">DALIL TENTANG SABAR DALAM DAKWAH — QS. AL-AHQAF: 35</div>
-<div class="arabic-text">
-فَاصْبِرْ كَمَا صَبَرَ أُولُو الْعَزْمِ مِنَ الرُّسُلِ
-</div>
-<div class="latin-text">
-Fāṣbir kamā ṣabara ulul-‘azmi minar-rusul.
-</div>
-<div class="arabic-translation">
-<strong>Artinya:</strong> "Maka bersabarlah kamu seperti orang-orang yang mempunyai keteguhan hati dari rasul-rasul telah bersabar."
-<br>— QS. Al-Ahqaf: 35 (potongan ayat). Kesabaran dalam menghadapi penolakan adalah sunnah para nabi.
-</div>
-</div>
-
-<h2>5. Pelajaran dari Medan Konflik Beliau</h2>
+<span class="karomah-title">Menolak Hadiah dan Pemberian yang Meragukan</span>
+<div class="karomah-arabic">رَفْضُ الْهَدَايَا وَالْعَطَايَا الْمُشْتَبِهَةِ</div>
 <p>
-Dari ketiga medan konflik yang beliau hadapi, kita dapat mengambil beberapa pelajaran penting yang relevan hingga hari ini:
+Salah satu senjata paling ampuh penguasa untuk "menjinakkan" ulama adalah <strong>hadiah dan pemberian</strong>. Ketika seorang ulama menerima hadiah dari penguasa, maka secara psikologis ia akan merasa "berhutang budi" dan sulit untuk menegur penguasa tersebut ketika berbuat zalim. Syeikh Abdul Qadir memahami hal ini dengan sangat tajam, dan beliau mengambil sikap yang sangat tegas: <strong>menolak setiap pemberian yang meragukan sumbernya</strong>.
 </p>
-
-<div class="highlight-box">
-<strong style="color: #d4af37; font-size: 1.1rem;">Pelajaran dari Medan Konflik Syeikh Abdul Qadir Al-Jilani:</strong>
-<ul>
-<li><strong>Ilmu yang diamalkan akan berhadapan dengan kepentingan;</strong> keteguhan dan adab harus berjalan bersama. Tidak ada dakwah tanpa konsekuensi.</li>
-<li><strong>Kritik terhadap masyarakat tidak boleh berubah menjadi kebencian kepada manusia.</strong> Beliau mengkritik perilaku, bukan membenci pelaku. Beliau berdoa untuk hidayah mereka, bukan kehancuran mereka.</li>
-<li><strong>Pengikut yang berlebihan dapat menjadi sumber masalah terbesar bagi nama seorang guru.</strong> Murid yang fanatik dan tidak berilmu lebih berbahaya daripada musuh yang terang-terangan.</li>
-<li><strong>Ukuran keberhasilan dakwah bukan banyaknya pendukung, melainkan berubahnya akhlak dan meningkatnya ketakwaan.</strong> Seribu orang yang bertaubat lebih berharga daripada seratus ribu orang yang hanya datang untuk melihat karomah.</li>
-<li><strong>Menulis dan mendokumentasikan ajaran adalah bentuk tanggung jawab.</strong> Dakwah lisan penting, tetapi dakwah tulisan lebih tahan lama dan lebih luas jangkauannya.</li>
-<li><strong>Menjaga persatuan umat adalah prioritas.</strong> Perbedaan furu' (cabang) tidak boleh merusak persatuan dalam ushul (pokok). Beliau menghormati perbedaan mazhab dan tidak memaksakan pandangannya kepada semua orang.</li>
-</ul>
+<p>
+Dalam tradisi manaqib disebutkan bahwa ketika para penguasa dan pejabat datang kepada beliau membawa hadiah-hadiah yang mewah, beliau sering kali menolak dengan halus namun tegas. Beliau berkata kepada mereka:
+</p>
+<blockquote>
+<em>"Wahai para penguasa, apakah engkau membawa hadiah untukku atau untuk Allah? Jika untukku, maka aku tidak membutuhkannya — Allah telah mencukupkan aku dengan rezeki-Nya. Jika untuk Allah, maka kembalikanlah kepada yang berhak — yaitu fakir miskin, anak yatim, dan orang-orang yang membutuhkan."</em>
+</blockquote>
+<p>
+Beliau hanya menerima pemberian yang <strong>jelas halal sumbernya</strong> dan <strong>tidak mengikat</strong>. Jika ada penguasa yang memberikan sesuatu dengan niat untuk "membeli" dukungan beliau, beliau akan menolaknya — bahkan jika pemberian itu berasal dari sumber yang halal. Beliau berkata: <em>"Aku tidak akan menjual agamaku dengan dunia, meskipun dunia itu seluruhnya diberikan kepadaku."</em>
+</p>
+<p>
+Sikap ini menjadikan beliau <strong>bebas dari segala bentuk intervensi penguasa</strong>. Beliau tidak dapat diancam dengan pemotongan bantuan, tidak dapat dibujuk dengan hadiah, dan tidak dapat dipaksa dengan janji jabatan. Kemandirian ekonomi inilah yang menjadi salah satu pilar kemandirian dakwah beliau.
+</p>
 </div>
-
 <div class="arabic-box">
-<div class="arabic-label">DOA MEMOHON KETEGUHAN DAN KEBIJAKSANAAN</div>
+<div class="arabic-label">DALIL TENTANG MAKANAN YANG HALAL — QS. AL-BAQARAH: 168</div>
 <div class="arabic-text">
-اللَّهُمَّ اجْعَلْنَا مِنَ الصَّابِرِينَ فِي دَعْوَتِكَ، الثَّابِتِينَ عَلَى الْحَقِّ، الْحُكَمَاءِ فِي مُعَامَلَةِ الْخَلْقِ
-</div>
-<div class="latin-text">
-Allāhummāj‘alnā minaṣ-ṣābirīna fī da‘watik, ṡ-ṡābitīna ‘alal-ḥaqq, al-ḥukamā'i fī mu‘āmalatil-khalq.
+يَا أَيُّهَا النَّاسُ كُلُوا مِمَّا فِي الْأَرْضِ حَلَالًا طَيِّبًا وَلَا تَتَّبِعُوا خُطُوَاتِ الشَّيْطَانِ ۚ إِنَّهُ لَكُمْ عَدُوٌّ مُّبِينٌ
 </div>
 <div class="arabic-translation">
-<strong>Artinya:</strong> "Ya Allah, jadikanlah kami termasuk orang-orang yang sabar dalam dakwah-Mu, yang teguh di atas kebenaran, dan yang bijaksana dalam pergaulan dengan makhluk."
+<strong>Latin:</strong> "Yā ayyuhan-nāsu kulū mimmā fil-arḍi ḥalālan ṭayyibaw wa lā tattabi‘u khuṭuwātisy-syayṭān, innahū lakum ‘aduwwun mubīn."
+<br><br>
+<strong>Artinya:</strong> "Wahai manusia, makanlah yang halal lagi baik dari apa yang terdapat di bumi, dan janganlah kamu mengikuti langkah-langkah setan; karena sesungguhnya setan itu adalah musuh nyata bagimu."
+<br>— QS. Al-Baqarah: 168
 </div>
 </div>
-
-<h2>6. Intisari Halaman 7</h2>
-<div class="highlight-box">
-<strong style="color: #d4af37; font-size: 1.1rem;">Ringkasan Tantangan dan Konflik:</strong>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Tidak Menjabat Posisi Resmi di Istana</span>
+<div class="karomah-arabic">لَا يَتَقَلَّدُ مَنْصِبًا رَسْمِيًّا فِي الْقَصْرِ</div>
+<p>
+Berbeda dengan banyak ulama besar di zamannya yang menerima jabatan resmi dari penguasa — sebagai qadhi al-qudhah (hakim agung), syaikhul madrasah (rektor madrasah istana), atau mufti negara — Syeikh Abdul Qadir <strong>tidak pernah menerima jabatan resmi apa pun dari penguasa</strong>. Beliau memilih untuk tetap menjadi ulama independen yang dakwahnya tidak terikat oleh kebijakan politik mana pun.
+</p>
+<p>
+Alasan beliau sangat dalam: beliau memahami bahwa ketika seorang ulama menerima jabatan resmi dari penguasa, maka secara struktural ia akan berada di bawah kendali penguasa tersebut. Ia akan sulit menegur penguasa ketika berbuat zalim, karena ia takut kehilangan jabatannya. Ia akan sulit menyampaikan kebenaran yang tidak disukai penguasa, karena ia takut dipecat dari jabatannya. Ia akan sulit membela rakyat kecil ketika penguasa menindas mereka, karena ia takut dimurkai oleh penguasa yang menjadi "atasannya".
+</p>
+<p>
+Beliau berkata tentang hal ini: <em>"Aku tidak ingin menjadi 'ulama istana' yang lidahnya terikat oleh gaji dan jabatannya. Aku ingin menjadi 'ulama rabbani' yang lidahnya hanya terikat oleh kebenaran dari Allah. Jika aku menerima jabatan dari penguasa, maka aku akan menjadi hamba penguasa. Dan jika aku menjadi hamba penguasa, maka aku tidak akan bisa menjadi hamba Allah yang sejati."</em>
+</p>
+<p>
+Pilihan ini bukanlah pilihan yang mudah. Dengan menolak jabatan resmi, beliau kehilangan akses langsung ke pusat kekuasaan, kehilangan sumber pendapatan yang stabil, dan membuka diri terhadap berbagai risiko. Namun beliau yakin bahwa <strong>kemandirian dakwah lebih berharga daripada segala kenyamanan duniawi</strong>.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG TIDAK MENJUAL AYAT-AYAT ALLAH — QS. AL-BAQARAH: 41</div>
+<div class="arabic-text">
+وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ وَارْكَعُوا مَعَ الرَّاكِعِينَ ۝ أَتَأْمُرُونَ النَّاسَ بِالْبِرِّ وَتَنسَوْنَ أَنفُسَكُمْ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa aqīmuṣ-ṣalāta wa ātuz-zakāta war-ka‘ū ma‘ar-rāki‘īn. A ta'murūnan-nāsa bil-birri wa tansawna anfusakum?"
+<br><br>
+<strong>Artinya:</strong> "Dan dirikanlah shalat dan tunaikanlah zakat dan rukuklah beserta orang-orang yang rukuk. Mengapa kamu menyuruh orang lain (mengerjakan) kebajikan, sedang kamu melupakan diri(mu) sendiri?"
+<br>— QS. Al-Baqarah: 41-44
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">6</span>
+<span class="karomah-title">Mendoakan Penguasa yang Adil, Mengingatkan Penguasa yang Zalim</span>
+<div class="karomah-arabic">الدُّعَاءُ لِلْعَادِلِ وَالتَّذْكِيرُ لِلظَّالِمِ</div>
+<p>
+Sikap Syeikh Abdul Qadir terhadap penguasa sangat <strong>berdasarkan pada keadilan mereka</strong>. Beliau tidak memusuhi penguasa secara otomatis, dan tidak pula membela mereka secara membabi buta. Beliau memperlakukan setiap penguasa sesuai dengan perbuatannya:
+</p>
 <ul>
-<li><strong>Tantangan internal:</strong> mujahadatun nafs melawan ujub, riya', dan godaan popularitas.</li>
-<li><strong>Konflik dengan penyakit sosial:</strong> kritik terhadap riba, suap, manipulasi timbangan, khamr, penyalahgunaan wakaf, dan kezaliman.</li>
-<li><strong>Ketegangan internal umat:</strong> perbedaan antara tradisionalis dan rasionalis, fuqahā dan sufi, awam dan khawash, serta perilaku murid yang menyimpang.</li>
-<li><strong>Strategi menghadapi konflik:</strong> kembali kepada sumber, menulis untuk meluruskan, tidak membalas cacian, memisahkan figur dari ajaran, menolak instrumentalisme politik, dan menjaga adab berbeda.</li>
-<li><strong>Pelajaran:</strong> ilmu yang diamalkan akan berhadapan dengan kepentingan; kritik tidak boleh menjadi kebencian; pengikut yang berlebihan adalah bahaya; ukuran keberhasilan adalah perubahan akhlak; menulis adalah tanggung jawab; persatuan adalah prioritas.</li>
+<li><strong>Terhadap penguasa yang adil</strong> — Beliau mendoakan mereka, mendukung kebijakan mereka yang sesuai syariat, dan mengajak rakyat untuk taat kepada mereka dalam kebaikan. Beliau berkata: <em>"Doakanlah penguasa kalian yang adil, karena keadilan mereka adalah rahmat bagi kalian."</em></li>
+<li><strong>Terhadap penguasa yang zalim</strong> — Beliau menegur mereka dengan hikmah, mengingatkan mereka akan tanggung jawab mereka di hadapan Allah, dan mengajak mereka untuk bertaubat. Beliau tidak mendoakan keburukan bagi mereka, tetapi beliau tidak pula mendoakan keberkahan bagi kezaliman mereka.</li>
+<li><strong>Terhadap penguasa yang bertaubat</strong> — Beliau menerima taubat mereka dengan lapang dada, mendoakan mereka, dan membimbing mereka untuk istiqamah di atas kebenaran. Banyak penguasa yang setelah bertaubat di tangan beliau, menjadi penguasa yang jauh lebih adil dan shaleh.</li>
+</ul>
+<p>
+Dalam doa-doa beliau di majelis, beliau sering mendoakan: <em>"Ya Allah, jika penguasa kami berbuat adil, maka berkahilah mereka dan kuatkanlah mereka. Dan jika penguasa kami berbuat zalim, maka perbaikilah keadaan mereka, atau gantilah mereka dengan yang lebih baik dari mereka."</em>
+</p>
+<p>
+Doa ini mencerminkan sikap beliau yang sangat bijaksana: beliau tidak mendoakan kehancuran penguasa, tetapi beliau juga tidak mendoakan keberkahan bagi kezaliman. Beliau menyerahkan urusan penguasa kepada Allah — Dzat yang Maha Mengadili dan Maha Bijaksana.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG DOA UNTUK PEMIMPIN — QS. AL-FURQAN: 74</div>
+<div class="arabic-text">
+وَالَّذِينَ يَقُولُونَ رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wallażīna yaqūlūna rabbanā hab lanā min azwājinā wa żurriyyātinā qurrata a‘yun waj‘alnā lil-muttaqīna imāmā."
+<br><br>
+<strong>Artinya:</strong> "Dan orang-orang yang berkata: 'Ya Tuhan kami, anugerahkanlah kepada kami istri-istri kami dan keturunan kami sebagai penyenang hati (kami), dan jadikanlah kami imam bagi orang-orang yang bertakwa.'"
+<br>— QS. Al-Furqan: 74
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">7</span>
+<span class="karomah-title">Kisah Keteguhan: Ketika Penguasa Mencoba Mengintimidasi Beliau</span>
+<div class="karomah-arabic">قِصَّةُ الصَّمْدِ: حِينَ حَاوَلَ السُّلْطَانُ تَرْهِيبَهُ</div>
+<p>
+Dalam tradisi manaqib Syeikh Abdul Qadir, terdapat beberapa kisah yang menggambarkan <strong>keteguhan beliau dalam menghadapi intimidasi penguasa</strong>. Salah satu kisah yang paling masyhur adalah ketika seorang amir (panglima) yang zalim mengirim utusan kepada beliau dengan ancaman terselubung — meminta beliau untuk berhenti menegur kezalimannya di majelis-majelis beliau, dengan iming-iming hadiah yang besar jika beliau bersedia diam.
+</p>
+<p>
+Syeikh Abdul Qadir menjawab utusan tersebut dengan sangat tegas:
+</p>
+<blockquote>
+<em>"Kembalikanlah hadiah ini kepada tuanmu, dan sampaikan kepadanya pesan dariku: Aku tidak takut kepada selain Allah. Dan aku tidak menjual agamaku dengan dunia. Jika engkau berbuat zalim, maka aku akan terus menegurkanmu — bukan karena aku membencimu, melainkan karena aku takut Allah jika aku diam terhadap kezalimanmu. Dan jika engkau membunuhku karena teguranku, maka itu adalah syahadah bagiku, dan kehinaan bagimu di hadapan Allah pada hari kiamat."</em>
+</blockquote>
+<p>
+Utusan itu kembali kepada amirnya dengan pesan tersebut. Sang amir terdiam sejenak, lalu — menurut riwayat — ia menangis dan bertaubat kepada Allah. Ia datang sendiri ke majelis Syeikh Abdul Qadir, meminta maaf, dan berjanji untuk memperbaiki keadaannya. Sejak saat itu, ia menjadi salah satu pendukung beliau yang paling setia.
+</p>
+<p>
+Kisah ini — meskipun perlu ditelaah sanadnya secara historis — mencerminkan <strong>prinsip utama</strong> yang dipegang oleh Syeikh Abdul Qadir: <em>kebenaran tidak dapat ditawar, dan ketakutan kepada Allah lebih besar daripada ketakutan kepada siapa pun</em>.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KETEGUHAN IMAN — QS. AL-AHZAB: 22-23</div>
+<div class="arabic-text">
+وَلَمَّا رَأَى الْمُؤْمِنُونَ الْأَحْزَابَ قَالُوا هَٰذَا مَا وَعَدَنَا اللَّهُ وَرَسُولُهُ وَصَدَقَ اللَّهُ وَرَسُولُهُ ۚ وَمَا زَادَهُمْ إِلَّا إِيمَانًا وَتَسْلِيمًا ۝ مِّنَ الْمُؤْمِنِينَ رِجَالٌ صَدَقُوا مَا عَاهَدُوا اللَّهَ عَلَيْهِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa lammā ra'al-mu'minūnal-aḥzāba qālū hāżā mā wa‘adanallāhu wa rasūluhū wa ṣadaqallāhu wa rasūluh, wa mā zādahum illā īmānaw wa taslīmā. Minal-mu'minīna rijālun ṣadaqū mā ‘āhadullāha ‘alaih."
+<br><br>
+<strong>Artinya:</strong> "Dan tatkala orang-orang mukmin melihat golongan-golongan yang bersekutu itu, mereka berkata: 'Inilah yang dijanjikan Allah dan Rasul-Nya kepada kita.' Dan benarlah Allah dan Rasul-Nya. Mereka tidak bertambah lain kecuali iman dan tunduk (kepada Allah). Di antara orang-orang mukmin itu ada orang-orang yang menepati apa yang telah mereka janjikan kepada Allah."
+<br>— QS. Al-Ahzab: 22-23
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">8</span>
+<span class="karomah-title">Membela Rakyat Kecil dari Kezaliman Penguasa</span>
+<div class="karomah-arabic">الدِّفَاعُ عَنِ الشَّعْبِ ضِدَّ ظُلْمِ الْحُكَّامِ</div>
+<p>
+Salah satu aspek paling mulia dari sikap Syeikh Abdul Qadir terhadap penguasa adalah <strong>keberanian beliau membela rakyat kecil</strong> dari kezaliman penguasa. Beliau memahami bahwa rakyat kecil adalah pihak yang paling lemah dalam struktur kekuasaan — mereka tidak memiliki suara, tidak memiliki kekuatan, dan tidak memiliki akses ke pusat kekuasaan. Oleh karena itu, mereka membutuhkan seseorang yang berani menyuarakan penderitaan mereka di hadapan penguasa.
+</p>
+<p>
+Dalam majelis-majelis beliau, beliau sering mengangkat suara untuk membela:
+</p>
+<ul>
+<li><strong>Rakyat yang dizalimi oleh para pemungut pajak</strong> — Beliau menegur para amil pajak yang mengambil lebih dari yang seharusnya, atau yang memungut pajak dari orang-orang yang tidak mampu.</li>
+<li><strong>Rakyat yang tanahnya dirampas oleh para pejabat</strong> — Beliau menegur para pejabat yang menggunakan kekuasaan mereka untuk merampas tanah rakyat secara tidak sah.</li>
+<li><strong>Rakyat yang diperlakukan tidak adil oleh para qadhi</strong> — Beliau menegur para qadhi yang menerima suap dalam putusan mereka, atau yang memihak kepada orang kaya dan berkuasa.</li>
+<li><strong>Rakyat yang dipaksa bekerja oleh para amir</strong> — Beliau menegur para amir yang memaksa rakyat bekerja untuk kepentingan pribadi mereka tanpa upah yang layak.</li>
+</ul>
+<p>
+Beliau berkata tentang pembelaan terhadap rakyat kecil: <em>"Barangsiapa yang melihat kezaliman terjadi, dan ia mampu untuk mengingkarinya dengan tangannya, maka lakukanlah. Jika tidak mampu, maka ingkarilah dengan lisannya. Dan jika tidak mampu, maka ingkarilah dengan hatinya — dan itu adalah selemah-lemah iman. Dan barangsiapa yang diam terhadap kezaliman karena takut kepada penguasa, maka Allah akan mengazabnya sebelum mengazab penguasa yang zalim itu."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MEMERINTAHKAN KEBAIKAN DAN MENCEGAH KEMUNKARAN — QS. ALI 'IMRAN: 104</div>
+<div class="arabic-text">
+وَلْتَكُن مِّنكُمْ أُمَّةٌ يَدْعُونَ إِلَى الْخَيْرِ وَيَأْمُرُونَ بِالْمَعْرُوفِ وَيَنْهَوْنَ عَنِ الْمُنكَرِ ۚ وَأُولَٰئِكَ هُمُ الْمُفْلِحُونَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Waltakum minkum ummatuy yad‘ūna ilal-khayri wa ya'murūna bil-ma‘rūfi wa yanhawna ‘anil-munkar, wa ulā'ika humul-mufliḥūn."
+<br><br>
+<strong>Artinya:</strong> "Dan hendaklah ada di antara kamu segolongan umat yang menyeru kepada kebajikan, menyuruh kepada yang ma'ruf dan mencegah dari yang munkar; merekalah orang-orang yang beruntung."
+<br>— QS. Ali 'Imran: 104
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">9</span>
+<span class="karomah-title">Menjaga Jarak yang Sehat — Tidak Dekat, Tidak Jauh</span>
+<div class="karomah-arabic">حِفْظُ الْمَسَافَةِ الصِّحِّيَّةِ — لَا قَرِيبٌ وَلَا بَعِيدٌ</div>
+<p>
+Salah satu hikmah terbesar dari sikap Syeikh Abdul Qadir terhadap penguasa adalah <strong>beliau menjaga jarak yang sehat</strong> — tidak terlalu dekat sehingga menjadi "ulama istana", dan tidak terlalu jauh sehingga kehilangan kesempatan untuk menasihati mereka. Beliau memahami bahwa kedua ekstrem ini sama-sama berbahaya:
+</p>
+<ul>
+<li><strong>Terlalu dekat dengan penguasa</strong> — Akan menyebabkan ulama kehilangan kemandirian, kehilangan kredibilitas di mata rakyat, dan sulit menegur penguasa ketika berbuat zalim. Ulama akan menjadi "penjilat" yang hanya memuji penguasa, meskipun penguasa itu zalim.</li>
+<li><strong>Terlalu jauh dari penguasa</strong> — Akan menyebabkan ulama kehilangan kesempatan untuk menasihati penguasa, kehilangan pengaruh untuk memperbaiki keadaan, dan pada akhirnya membiarkan kezaliman merajalela tanpa ada yang mengingatkannya.</li>
+</ul>
+<p>
+Syeikh Abdul Qadir memilih jalan tengah: beliau <strong>tersedia untuk ditemui oleh penguasa</strong> ketika mereka membutuhkan nasihat, tetapi beliau <strong>tidak mencari-cari pertemuan dengan mereka</strong>. Beliau <strong>mendoakan penguasa</strong> ketika mereka berbuat baik, tetapi <strong>menegur mereka</strong> ketika mereka berbuat zalim. Beliau <strong>menerima kunjungan mereka</strong> di majelis beliau, tetapi <strong>tidak datang ke istana mereka</strong> kecuali ketika sangat diperlukan.
+</p>
+<p>
+Beliau berkata tentang jarak ini: <em>"Jadilah seperti lebah — ia hinggap di bunga untuk mengambil madu, tetapi ia tidak tinggal di bunga. Ia bermanfaat bagi bunga dengan menyerbukannya, dan ia bermanfaat bagi dirinya sendiri dengan mengambil madunya. Demikian pula hendaknya ulama terhadap penguasa — ia memberi manfaat kepada penguasa dengan nasihatnya, dan ia mengambil manfaat dari penguasa dengan perlindungan yang diberikan kepada rakyat."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH ABDUL QADIR TENTANG SIKAP TERHADAP PENGUASA</div>
+<div class="arabic-text">
+كُنْ مَعَ السُّلْطَانِ كَالنَّحْلَةِ مَعَ الْوَرْدَةِ — تَنْتَفِعُ بِهَا وَتَنْفَعُهَا، وَلَا تَلْزَمْهَا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Kun ma‘as-sulṭāni kan-naḥlati ma‘al-wardah — tantafi‘u bihā wa tanfa‘uhā, wa lā talzamhā."
+<br><br>
+<strong>Artinya:</strong> "Jadilah bersama penguasa seperti lebah bersama bunga — engkau mengambil manfaat darinya dan memberi manfaat kepadanya, tetapi jangan melekat padanya."
+<br>— Syeikh Abdul Qadir Al-Jilani
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">10</span>
+<span class="karomah-title">Warisan Abadi: Model Hubungan Ulama-Penguasa yang Ideal</span>
+<div class="karomah-arabic">إِرْثٌ خَالِدٌ: نَمُوذَجُ الْعَلَاقَةِ الْمِثَالِيَّةِ بَيْنَ الْعَالِمِ وَالسُّلْطَانِ</div>
+<p>
+Sikap Syeikh Abdul Qadir terhadap penguasa telah menjadi <strong>model ideal</strong> bagi hubungan ulama-penguasa dalam tradisi Islam hingga hari ini. Model ini memiliki beberapa ciri utama yang dapat diteladani oleh para ulama dan da'i di setiap zaman:
+</p>
+<ul>
+<li><strong>Kemandirian</strong> — Ulama tidak boleh terikat secara struktural dengan penguasa. Ia harus tetap independen agar dapat menyampaikan kebenaran tanpa takut atau harap.</li>
+<li><strong>Keberanian</strong> — Ulama harus berani menegur penguasa ketika berbuat zalim, meskipun teguran itu berisiko bagi keselamatan dirinya.</li>
+<li><strong>Hikmah</strong> — Teguran harus disampaikan dengan hikmah, bukan dengan provokasi atau kekerasan. Tujuannya adalah memperbaiki penguasa, bukan menjatuhkannya.</li>
+<li><strong>Keadilan</strong> — Ulama harus bersikap adil terhadap penguasa — memuji ketika mereka berbuat baik, menegur ketika mereka berbuat zalim, dan mendoakan mereka secara keseluruhan.</li>
+<li><strong>Kemurnian niat</strong> — Segala sikap dan tindakan ulama terhadap penguasa harus didasarkan pada niat yang murni untuk mencari ridha Allah, bukan untuk mencari kepentingan pribadi.</li>
+<li><strong>Pembelaan terhadap rakyat</strong> — Ulama harus menjadi suara bagi rakyat yang tidak memiliki suara, dan menjadi pelindung bagi mereka yang tidak memiliki perlindungan.</li>
+</ul>
+<p>
+Model inilah yang kemudian diteladani oleh banyak ulama besar setelah beliau — dari Syeikh Bahauddin An-Naqsyabandi, Syeikh Ahmad Ar-Rifa'i, Syeikh Ahmad Al-Badawi, hingga para ulama besar Nusantara seperti Sunan Gresik, Sunan Ampel, dan para wali songo lainnya. Mereka semua mengambil pelajaran dari sikap Syeikh Abdul Qadir: <em>ulama adalah pewaris para nabi, dan tugas utama mereka adalah menyampaikan kebenaran kepada siapa pun — termasuk kepada penguasa</em>.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">HADITS TENTANG ULAMA SEBAGAI PEWARIS NABI</div>
+<div class="arabic-text">
+الْعُلَمَاءُ وَرَثَةُ الْأَنْبِيَاءِ، وَإِنَّ الْأَنْبِيَاءَ لَمْ يُوَرِّثُوا دِينَارًا وَلَا دِرْهَمًا، إِنَّمَا وَرَّثُوا الْعِلْمَ، فَمَنْ أَخَذَ بِهِ حَظِيَ بِحَظٍّ وَافِرٍ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Al-‘ulamā'u waraṡatul-anbiyā', wa innal-anbiyā'a lam yuwarritsū dīnāraw wa lā dirham, innamā warraṡūl-‘ilm, fa man akhażabihi ḥaẓiya biḥaẓẓin wāfir."
+<br><br>
+<strong>Artinya:</strong> "Ulama adalah pewaris para nabi. Dan sesungguhnya para nabi tidak mewariskan dinar maupun dirham, melainkan hanya mewariskan ilmu. Maka barangsiapa yang mengambilnya, ia telah meraih bagian yang sempurna."
+<br>— HR. Abu Dawud, At-Tirmidzi, dan Ibnu Majah
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Sikap Syeikh Abdul Qadir Al-Jilani terhadap Penguasa:</strong>
+<ul>
+<li><strong>Prinsip dasar:</strong> Hanya tunduk kepada Allah, tidak takut kepada siapa pun selain-Nya</li>
+<li><strong>Terhadap Khalifah:</strong> Menghormati jabatan, mendoakan, tetapi tidak menjadi alat legitimasi</li>
+<li><strong>Terhadap kezaliman:</strong> Menegur dengan hikmah dan keberanian, bukan dengan diam atau provokasi</li>
+<li><strong>Terhadap hadiah:</strong> Menolak yang meragukan, hanya menerima yang jelas halal dan tidak mengikat</li>
+<li><strong>Terhadap jabatan resmi:</strong> Menolak menjadi "ulama istana", memilih kemandirian dakwah</li>
+<li><strong>Terhadap penguasa adil:</strong> Mendoakan, mendukung, mengajak rakyat taat</li>
+<li><strong>Terhadap penguasa zalim:</strong> Mengingatkan, menegur, membela rakyat yang tertindas</li>
+<li><strong>Terhadap intimidasi:</strong> Tetap teguh, tidak takut, menyerahkan urusan kepada Allah</li>
+<li><strong>Terhadap rakyat kecil:</strong> Menjadi pembela, penyambung suara, pelindung dari kezaliman</li>
+<li><strong>Jarak dengan penguasa:</strong> Tidak terlalu dekat, tidak terlalu jauh — seperti lebah dengan bunga</li>
+<li><strong>Warisan:</strong> Model ideal hubungan ulama-penguasa yang diteladani generasi berikutnya</li>
+<li><strong>Prinsip utama:</strong> "Ulama adalah pewaris para nabi — tugas mereka menyampaikan kebenaran kepada siapa pun"</li>
 </ul>
 </div>
-
+<h2>Doa Memohon Keberanian dan Kemandirian di Hadapan Penguasa</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON KEBERANIAN DAN KEADILAN</div>
+<div class="arabic-text">
+اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ خَوْفِ الْمَخْلُوقِينَ، وَأَسْأَلُكَ شَجَاعَةَ الصَّادِقِينَ، اللَّهُمَّ ارْزُقْنِي قَوْلَ الْحَقِّ رَضِيتَ بِهِ، وَلَا تُرِنِي الْحَقَّ بَاطِلًا وَلَا الْبَاطِلَ حَقًّا، وَاجْعَلْنِي مِمَّنْ يَأْمُرُ بِالْمَعْرُوفِ وَيَنْهَىٰ عَنِ الْمُنكَرِ لَا يَخَافُ إِلَّا إِيَّاكَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Allāhumma innī a‘ūdzu bika min khaufil-makhlūqīn, wa as'aluka syajā‘ataṣ-ṣādiqīn. Allāhummar-zuqnī qawlal-ḥaqqi raḍīta bih, wa lā turinil-ḥaqqa bāṭilaw wa lal-bāṭila ḥaqqā, waj‘alnī mimmay ya'muru bil-ma‘rūfi wa yanhā ‘anil-munkar lā yakhāfu illā iyyāk."
+<br><br>
+<strong>Artinya:</strong> "Ya Allah, sesungguhnya aku berlindung kepada-Mu dari takut kepada makhluk, dan aku memohon kepada-Mu keberanian orang-orang yang jujur. Ya Allah, anugerahkanlah kepadaku kemampuan untuk mengucapkan kebenaran yang Engkau ridhai, dan janganlah Engkau perlihatkan kepadaku yang hak sebagai batil, dan yang batil sebagai hak. Dan jadikanlah aku termasuk orang-orang yang memerintahkan kebaikan dan mencegah kemungkaran, yang tidak takut kecuali kepada-Mu."
+</div>
+</div>
 <h2>Penutup Halaman 7</h2>
 <p>
-Demikianlah pembahasan tentang tantangan dan konflik yang dihadapi Syeikh Abdul Qadir Al-Jilani dalam mengamalkan hasil pemahaman keilmuan — mulai dari konflik internal melawan hawa nafsu dan godaan popularitas, konflik dengan penyakit sosial Baghdad yang korup, ketegangan dalam dunia keilmuan dan tasawuf, strategi beliau menghadapi konflik, hingga pelajaran yang dapat kita ambil dari pengalaman beliau.
+Demikianlah sikap Syeikh Abdul Qadir Al-Jilani terhadap penguasa di zamannya — sebuah sikap yang sangat konsisten, sangat bijaksana, dan sangat berani. Beliau tidak pernah menjadi "ulama istana" yang menjual agama demi jabatan dan harta. Beliau tidak pernah menjadi "ulama oposisi" yang menentang penguasa hanya untuk popularitas. Beliau adalah <strong>ulama rabbani</strong> — ulama yang hanya tunduk kepada Allah, yang menyampaikan kebenaran kepada siapa pun, yang membela rakyat kecil dari kezaliman penguasa, dan yang mendoakan keadilan bagi seluruh umat.
 </p>
 <p>
-Keteguhan beliau dalam menghadapi ketiga medan konflik tersebut menunjukkan bahwa dakwah yang benar tidak pernah bebas dari tekanan. Yang membedakan seorang wali sejati dari seorang penipu adalah bagaimana ia menghadapi tekanan itu: apakah ia mundur dan berkompromi, atau ia tetap teguh dengan adab dan hikmah. Syeikh Abdul Qadir Al-Jilani memilih jalan kedua, dan itulah yang membuat beliau dikenang selama hampir sembilan abad.
+Sikap beliau ini bukanlah sikap yang mudah untuk diteladani. Diperlukan <strong>keimanan yang sangat kuat</strong>, <strong>keberanian yang sangat besar</strong>, dan <strong>keikhlasan yang sangat mendalam</strong> untuk dapat berdiri di hadapan penguasa tanpa takut dan tanpa harap. Namun justru karena sikap inilah beliau diakui oleh seluruh umat Islam — dari kalangan awam hingga ulama, dari rakyat kecil hingga penguasa — sebagai <em>Sulthonul Awliya</em> yang sejati.
 </p>
 <p>
-Pada halaman berikutnya, kita akan membahas tanggapan pro dan kontra masyarakat, ulama, dan penguasa terhadap sepak terjang beliau di masanya — bagaimana beliau direspons oleh berbagai kalangan, dan bagaimana sikap beliau terhadap respons tersebut.
+Pada halaman berikutnya, kita akan membahas <strong>warisan terbesar Syeikh Abdul Qadir Al-Jilani</strong> — Tarekat Qadiriyah yang beliau dirikan, yang hingga hari ini menjadi salah satu tarekat sufi terbesar dan paling tersebar luas di dunia Islam, dari Maroko hingga Indonesia, dari Afrika Utara hingga Asia Tenggara.
 </p>
 <p>
 <em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
 </p>
-
 <div class="arabic-box">
 <div class="arabic-text">
-رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً إِنَّكَ أَنْتَ الْوَهَّابُ
-</div>
-<div class="latin-text">
-Rabbanā lā tuzigh qulūbanā ba‘da iż hadaitanā wa hab lanā min ladunka raḥmah innaka anta al-Wahhāb.
+حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ ۝ نِعْمَ الْمَوْلَىٰ وَنِعْمَ النَّصِيرُ
 </div>
 <div class="arabic-translation">
-<strong>Artinya:</strong> "Ya Tuhan kami, janganlah Engkau jadikan hati kami condong kepada kesesatan sesudah Engkau beri petunjuk kepada kami, dan karuniakanlah kepada kami rahmat dari sisi-Mu; sesungguhnya Engkau-lah Maha Pemberi (karunia)."
-<br>— QS. Ali Imran: 8
+<strong>Latin:</strong> "Ḥasbunallāhu wa ni‘mal-wakīl. Ni‘mal-mawlā wa ni‘man-naṣīr."
+<br><br>
+<strong>Artinya:</strong> "Cukuplah Allah bagi kami, dan Dia adalah sebaik-baik Pelindung. Dia adalah sebaik-baik Pelindung dan sebaik-baik Penolong."
+<br>— QS. Ali 'Imran: 173 & QS. Al-Anfal: 40
 </div>
 </div>
-
 </div>
-
-<!-- NAVIGASI 9 TOMBOL — DIATUR AGAR ELEGAN -->
+<!-- NAVIGASI 9 TOMBOL -->
 <div class="article-nav">
 <div class="nav-group">
-<a href="jilani1.html" class="article-nav-btn" title="Halaman 1">1</a>
-<div class="nav-btn-label">Halaman 1</div>
+<a href="jilani1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
 </div>
 <div class="nav-group">
-<a href="jilani2.html" class="article-nav-btn" title="Halaman 2">2</a>
-<div class="nav-btn-label">Halaman 2</div>
+<a href="jilani2.html" class="article-nav-btn" title="Halaman 2: Perjalanan Menuntut Ilmu">2</a>
+<div class="nav-btn-label">Menuntut Ilmu</div>
 </div>
 <div class="nav-group">
-<a href="jilani3.html" class="article-nav-btn" title="Halaman 3">3</a>
-<div class="nav-btn-label">Halaman 3</div>
+<a href="jilani3.html" class="article-nav-btn" title="Halaman 3: Bidang Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
 </div>
 <div class="nav-group">
-<a href="jilani4.html" class="article-nav-btn" title="Halaman 4">4</a>
-<div class="nav-btn-label">Halaman 4</div>
+<a href="jilani4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
 </div>
 <div class="nav-group">
-<a href="jilani5.html" class="article-nav-btn" title="Halaman 5">5</a>
-<div class="nav-btn-label">Halaman 5</div>
+<a href="jilani5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
 </div>
 <div class="nav-group">
-<a href="jilani6.html" class="article-nav-btn" title="Halaman 6">6</a>
-<div class="nav-btn-label">Halaman 6</div>
+<a href="jilani6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
 </div>
 <div class="nav-group">
-<a href="jilani7.html" class="article-nav-btn active" title="Halaman 7">7</a>
-<div class="nav-btn-label">Halaman 7</div>
+<a href="jilani7.html" class="article-nav-btn active" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
 </div>
 <div class="nav-group">
-<a href="jilani8.html" class="article-nav-btn" title="Halaman 8">8</a>
-<div class="nav-btn-label">Halaman 8</div>
+<a href="jilani8.html" class="article-nav-btn" title="Halaman 8: Warisan Tarekat">8</a>
+<div class="nav-btn-label">Warisan</div>
 </div>
 <div class="nav-group">
-<a href="jilani9.html" class="article-nav-btn" title="Halaman 9">9</a>
-<div class="nav-btn-label">Halaman 9</div>
+<a href="jilani9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
 </div>
 </div>
-
 </div>
-
 <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
 KALAM
 <span class="btn-sub">← Kembali ke Beranda</span>
 </a>
-
+</div>
 <footer>
 <p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
 </footer>
-
 <script>
 let currentFontSize = 1.05;
 function changeFontSize(delta) {
@@ -908,24 +986,6 @@ if (currentFontSize < 0.8) currentFontSize = 0.8;
 if (currentFontSize > 1.5) currentFontSize = 1.5;
 document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
 }
-
-/* TOMBOL BAGIKAN */
-document.querySelector('.share-btn.fb').addEventListener('click', function (e) {
-e.preventDefault();
-window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(location.href), '_blank', 'noopener,noreferrer');
-});
-document.querySelector('.share-btn.tw').addEventListener('click', function (e) {
-e.preventDefault();
-window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(location.href) + '&text=' + encodeURIComponent(document.title), '_blank', 'noopener,noreferrer');
-});
-document.querySelector('.share-btn.wa').addEventListener('click', function (e) {
-e.preventDefault();
-window.open('https://wa.me/?text=' + encodeURIComponent(document.title + ' — ' + location.href), '_blank', 'noopener,noreferrer');
-});
-document.querySelector('.share-btn.tg').addEventListener('click', function (e) {
-e.preventDefault();
-window.open('https://t.me/share/url?url=' + encodeURIComponent(location.href) + '&text=' + encodeURIComponent(document.title), '_blank', 'noopener,noreferrer');
-});
 </script>
 </body>
 </html>
