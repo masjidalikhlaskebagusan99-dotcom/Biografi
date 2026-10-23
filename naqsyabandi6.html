@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+  window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Bahauddin An-Naqsyabandi — Pro/Kontra - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+/* 1. RESET & DASAR */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+/* 2. MEDIA QUERY TABLET */
+@media (max-width: 768px) {
+.article-container {
+max-width: 100%;
+padding: 20px;
+}
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+/* 3. HEADER & NAVIGASI ATAS */
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+/* 4. BREADCRUMB & CONTAINER */
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+/* 5. ARTICLE HEADER & META */
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+/* 6. GAMBAR & SHARE BAR */
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+/* 7. KONTEN ARTIKEL */
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 8. KOTAK ARAB & KAROMAH */
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 9. NAVIGASI HALAMAN (9 TOMBOL) */
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* 10. TOMBOL KEMBALI & FOOTER */
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+/* 11. MEDIA QUERY MOBILE */
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+/* PATCH UNIVERSAL v2.0 */
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Bahauddin An-Naqsyabandi — Pro/Kontra
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Bahauddin An-Naqsyabandi — Pro/Kontra</h1>
+<div class="subtitle">Halaman 6 dari 9 — Tanggapan Masyarakat, Ulama, dan Penguasa terhadap Sepak Terjang Sang Pelukis Hati</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Kamis, 22 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Samarkand_-_Bibi_Khanym_Mosque_02.jpg/640px-Samarkand_-_Bibi_Khanym_Mosque_02.jpg"
+alt="Ilustrasi suasana Transoxiana pada abad ke-14 M"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Bukhara_Kalon_minor.jpg/640px-Bukhara_Kalon_minor.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Ilustrasi suasana Transoxiana pada abad ke-14 M — tanah tempat Syeikh Bahauddin An-Naqsyabandi diterima oleh mayoritas masyarakat dan ulama, namun juga menghadapi kritik dari sebagian kecil yang tidak memahami hakikat tarekat beliau</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Seperti halnya para nabi dan wali besar, Syeikh Bahauddin An-Naqsyabandi tidak luput dari dinamika pro dan kontra di tengah masyarakat dan para ulama sezaman beliau. Ada yang memuji beliau dengan pujian yang melangit, ada yang mengkritik beliau dengan kritik yang tajam, ada yang menentang beliau dengan penentangan yang keras, dan ada pula yang menerima beliau dengan penuh cinta dan takzhim. Namun, yang paling mengagumkan dari seluruh dinamika ini adalah sikap Syeikh Bahauddin sendiri — beliau senantiasa menerima kebenaran dari siapapun datangnya, tidak pernah membalas celaan dengan celaan, dan senantiasa mendoakan kebaikan bagi mereka yang menentangnya. Beliau berkata: <em>"Kebenaran itu seperti matahari, ia tidak membutuhkan saksi. Barangsiapa yang memiliki mata hati, maka ia akan melihatnya. Dan barangsiapa yang buta hatinya, maka seribu saksi pun tidak akan mampu membuatnya melihat."</em>
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG PERBEDAAN PENDAPAT — QS. HUUD: 118-119</div>
+<div class="arabic-text">
+وَلَوْ شَاءَ رَبُّكَ لَجَعَلَ النَّاسَ أُمَّةً وَاحِدَةً ۖ وَلَا يَزَالُونَ مُخْتَلِفِينَ ۝ إِلَّا مَن رَّحِمَ رَبُّكَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Jikalau Tuhanmu menghendaki, tentu Dia menjadikan manusia umat yang satu, tetapi mereka senantiasa berselisih pendapat. Kecuali orang-orang yang dirahmati oleh Tuhanmu."
+<br>— QS. Huud: 118-119
+</div>
+</div>
+
+<h2>Sikap Pro Masyarakat Umum terhadap Syeikh Bahauddin</h2>
+<p>
+Masyarakat umum di wilayah Transoxiana (Mawarannahr) — baik di Bukhara, Samarkand, maupun desa-desa sekitarnya — secara umum menerima Syeikh Bahauddin dengan penuh cinta dan takzhim. Hal ini karena beberapa faktor: akhlak beliau yang mulia, zuhud beliau yang mendalam, cara beliau bekerja dengan tangan sendiri tanpa menggantungkan diri pada orang lain, dan ajaran beliau yang memadukan syariat dengan hakikat secara seimbang.
+</p>
+
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Pujian Masyarakat Bukhara dan Desa Qasr-i-Hinduvan</span>
+<div class="karomah-arabic">ثَنَاءُ أَهْلِ بُخَارَا وَقَرْيَةِ قَصْرِ هِنْدُوَانْ</div>
+<p>
+Masyarakat Bukhara dan desa Qasr-i-Hinduvan — tanah tempat Syeikh Bahauddin lahir dan menghabiskan seluruh hidupnya — sangat mencintai beliau. Mereka mengenal beliau sejak kecil sebagai anak yatim yang cerdas, shaleh, dan sangat menghormati para guru. Ketika beliau mulai membimbing para murid dalam perjalanan spiritual, masyarakat langsung menerimanya dengan penuh kepercayaan, karena mereka tahu bahwa beliau adalah keturunan Rasulullah SAW yang senantiasa menjaga kehormatan nasabnya dengan akhlak yang mulia.
+</p>
+<p>
+Para petani, pedagang, dan pekerja di desa-desa sekitar Bukhara sangat menghormati Syeikh Bahauddin karena beliau tidak pernah memperlakukan diri beliau sebagai "orang suci" yang terpisah dari masyarakat. Beliau justru hidup bersama mereka — bertani seperti mereka, menggali sumur seperti mereka, dan bekerja dengan tangan beliau sendiri seperti mereka. Beliau berkata: <em>"Aku bukanlah orang yang berbeda dari kalian. Aku adalah salah satu dari kalian. Aku makan dari hasil kerja tanganku, dan aku minum dari air yang sama dengan yang kalian minum."</em>
+</p>
+<p>
+Masyarakat umum mencintai beliau karena beberapa alasan:
+</p>
+<ul>
+<li><strong>Kemandirian ekonomi</strong> — Beliau tidak pernah meminta-minta atau menerima pemberian dari orang lain, meskipun beliau adalah seorang syeikh besar</li>
+<li><strong>Keadilan dalam fatwa</strong> — Beliau senantiasa memberikan fatwa yang adil, tidak memihak siapapun, baik kaya maupun miskin</li>
+<li><strong>Kasih sayang kepada rakyat kecil</strong> — Beliau senantiasa membantu orang-orang miskin, menjenguk orang-orang sakit, dan menghibur orang-orang yang bersedih</li>
+<li><strong>Akhlak yang mulia</strong> — Beliau tidak pernah sombong, tidak pernah marah tanpa alasan, dan senantiasa tersenyum kepada siapa saja yang beliau temui</li>
+</ul>
+<p>
+Salah satu kisah yang masyhur adalah ketika seorang petani miskin datang kepada Syeikh Bahauddin untuk meminta nasihat. Petani itu berkata: <em>"Wahai Syeikh, aku adalah petani miskin yang tidak memiliki apapun kecuali sebidang tanah kecil. Apa yang harus aku lakukan agar Allah meridhaiku?"</em> Syeikh Bahauddin menjawab dengan lembut: <em>"Wahai saudaraku, engkau bukanlah orang miskin. Engkau memiliki tanah yang bisa engkau olah, engkau memiliki tangan yang bisa engkau gunakan untuk bekerja, dan engkau memiliki iman yang ada di dalam hatimu. Itu semua adalah kekayaan yang tidak dimiliki oleh banyak orang kaya. Maka bersyukurlah kepada Allah atas nikmat-nikmat itu, dan bekerja dengan jujur, maka Allah akan meridhaimu."</em> Petani itu pulang dengan hati yang penuh kebahagiaan, dan ia menjadi salah satu murid Syeikh Bahauddin yang paling setia.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KASIH SAYANG — QS. AL-MA'IDAH: 2</div>
+<div class="arabic-text">
+وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَىٰ ۖ وَلَا تَعَاوَنُوا عَلَى الْإِثْمِ وَالْعُدْوَانِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan tolong-menolonglah kamu dalam (mengerjakan) kebajikan dan takwa, dan jangan tolong-menolong dalam berbuat dosa dan pelanggaran."
+<br>— QS. Al-Ma'idah: 2
+</div>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Pujian Para Pedagang dan Pekerja di Transoxiana</span>
+<div class="karomah-arabic">ثَنَاءُ التُّجَّارِ وَالْعُمَّالِ فِي مَاوَرَاءَ النَّهْرِ</div>
+<p>
+Para pedagang dan pekerja di wilayah Transoxiana — yang pada masa itu merupakan pusat perdagangan antara Cina, India, Persia, dan Eropa — sangat menghormati Syeikh Bahauddin karena beliau mengajarkan kepada mereka bahwa pekerjaan duniawi yang dilakukan dengan ikhlas dan jujur adalah bagian dari ibadah. Beliau berkata: <em>"Barangsiapa yang bekerja dengan jujur untuk menghidupi keluarganya, maka ia seperti mujahid di jalan Allah. Dan barangsiapa yang bekerja dengan tangan sendiri untuk mencari nafkah yang halal, maka ia akan datang pada hari kiamat dengan wajah yang bercahaya seperti bulan purnama."</em>
+</p>
+<p>
+Ajaran inilah yang menjadikan Tarekat Naqsyabandiyah sangat populer di kalangan pedagang dan pekerja di Transoxiana, dan kemudian menyebar ke seluruh penjuru dunia Islam — dari Turki, India, Pakistan, Cina, hingga Nusantara. Para pedagang Muslim di seluruh dunia mencintai Tarekat Naqsyabandiyah karena tarekat ini tidak memisahkan antara dunia dan akhirat, antara pekerjaan dan ibadah, antara zhahir dan batin.
+</p>
+<p>
+Salah satu kisah yang masyhur adalah ketika seorang pedagang kaya datang kepada Syeikh Bahauddin dan berkata: <em>"Wahai Syeikh, aku adalah seorang pedagang yang sangat kaya. Apakah kekayaanku ini menjadi penghalang bagiku untuk mencapai maqam kewalian?"</em> Syeikh Bahauddin menjawab: <em>"Wahai saudaraku, kekayaan bukanlah penghalang, melainkan ujian. Jika engkau menggunakan kekayaanmu untuk berkhidmat kepada manusia dan mencari ridha Allah, maka kekayaanmu akan menjadi tangga bagimu untuk mencapai maqam kewalian. Dan jika engkau menggunakan kekayaanmu untuk bermaksiat dan melupakan Allah, maka kekayaanmu akan menjadi jurang yang menjatuhkanmu ke dalam neraka."</em> Pedagang itu menangis dan berkata: <em>"Wahai Syeikh, engkau telah membuka mata hatiku. Mulai hari ini, aku akan menggunakan kekayaanku untuk berkhidmat kepada manusia dan mencari ridha Allah."</em>
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG NIAT — HADITS NABAWI</div>
+<div class="arabic-text">
+إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَىٰ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sesungguhnya amal itu tergantung pada niat, dan sesungguhnya bagi setiap orang adalah apa yang ia niatkan."
+<br>— HR. Al-Bukhari dan Muslim (hadits pertama yang menjadi pondasi Islam)
+</div>
+</div>
+
+<h2>Sikap Pro dan Kontra Ulama Sezaman</h2>
+<p>
+Para ulama sezaman Syeikh Bahauddin terbagi menjadi beberapa kelompok dalam memandang beliau. Mayoritas ulama — terutama ulama-ulama yang memahami hakikat tasawuf — memuji beliau dengan pujian yang sangat tinggi. Namun, sebagian kecil ulama zhahir yang tidak memahami hakikat tasawuf mengkritik beliau dengan kritik yang tajam. Namun, yang menarik adalah bahwa bahkan para ulama yang mengkritik beliau pun mengakui keagungan ilmu dan akhlak beliau.
+</p>
+
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Pujian dari Para Ulama dan Wali Besar Sezaman</span>
+<div class="karomah-arabic">ثَنَاءُ الْعُلَمَاءِ وَالْأَوْلِيَاءِ الْمُعَاصِرِينَ</div>
+<p>
+Mayoritas ulama dan wali besar sezaman Syeikh Bahauddin memuji beliau dengan pujian yang sangat tinggi. Di antara pujian-pujian tersebut adalah:
+</p>
+<ul>
+<li><strong>Para ulama fiqih di Bukhara</strong> mengakui keagungan ilmu fiqih beliau dan menjadikannya sebagai rujukan dalam berbagai masalah fiqih. Mereka berkata: <em>"Syeikh Bahauddin adalah salah satu ulama fiqih terbesar di zamannya."</em></li>
+<li><strong>Para muhadditsin di Transoxiana</strong> mengakui keagungan ilmu hadits beliau dan mengambil sanad-sanad hadits dari beliau. Mereka berkata: <em>"Syeikh Bahauddin adalah salah satu muhadditsin terbesar di zamannya."</em></li>
+<li><strong>Para sufi besar di wilayah Islam</strong> mengakui keagungan maqam spiritual beliau dan menjadikannya sebagai teladan dalam perjalanan suluk. Mereka berkata: <em>"Syeikh Bahauddin adalah salah satu wali terbesar di zamannya."</em></li>
+<li><strong>Para ulama dari negeri-negeri jauh</strong> — seperti dari Turki, India, dan Mesir — datang kepada beliau untuk mengambil berkah dan belajar dari beliau. Mereka kembali ke negeri mereka dengan membawa ajaran Tarekat Naqsyabandiyah yang kemudian menyebar luas di negeri-negeri mereka.</li>
+</ul>
+<p>
+Salah satu pujian yang paling masyhur datang dari seorang ulama besar yang berkata: <em>"Syeikh Bahauddin adalah seperti matahari bagi wilayah Transoxiana, dan seperti kesehatan bagi jiwa. Barangsiapa yang mendekatinya, maka ia akan mendapatkan cahaya ilmu dan keberkahan spiritual."</em>
+</p>
+<p>
+Pujian-pujian ini bukanlah pujian yang berlebihan, melainkan pengakuan tulus dari para ulama yang mengenal Syeikh Bahauddin secara langsung dan menyaksikan keagungan ilmu dan akhlak beliau.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN ULAMA TENTANG SYEIKH BAHAUDDIN</div>
+<div class="arabic-text">
+الشَّيْخُ بَهَاءُ الدِّينِ شَمْسُ مَاوَرَاءَ النَّهْرِ وَصِحَّةُ الْأَرْوَاحِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Syeikh Bahauddin adalah matahari bagi wilayah Transoxiana, dan kesehatan bagi jiwa."
+<br>— Pujian dari seorang ulama besar sezaman beliau
+</div>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Kritik dari Sebagian Ulama Zhahir</span>
+<div class="karomah-arabic">نَقْدُ بَعْضِ عُلَمَاءِ الظَّاهِرِ</div>
+<p>
+Sebagian kecil ulama zhahir — yang tidak memahami hakikat tasawuf — memberikan kritik yang tajam terhadap Syeikh Bahauddin, terutama terkait dengan metode dzikir khafi dan prinsip khalwat dar anjuman yang beliau ajarkan. Di antara kritik-kritik tersebut adalah:
+</p>
+<ul>
+<li><strong>Kritik terhadap dzikir khafi</strong> — Sebagian ulama menganggap bahwa dzikir harus diucapkan dengan lisan, bukan hanya di dalam hati. Mereka menganggap bahwa dzikir dalam hati tanpa diucapkan dengan lisan adalah dzikir yang tidak sah.</li>
+<li><strong>Kritik terhadap khalwat dar anjuman</strong> — Sebagian ulama menganggap bahwa khalwat harus dilakukan dengan mengasingkan diri dari masyarakat, bukan dengan tetap berinteraksi dengan masyarakat.</li>
+<li><strong>Kritik terhadap rabithah</strong> — Sebagian ulama menganggap bahwa rabithah (menghubungkan hati dengan hati syeikh) adalah bid'ah yang tidak ada di masa Rasulullah SAW.</li>
+</ul>
+<p>
+Namun, yang perlu dicatat adalah bahwa kritik-kritik ini datang dari sebagian kecil ulama yang tidak memahami hakikat tasawuf. Mayoritas ulama — termasuk para ulama besar di Bukhara, Samarkand, dan negeri-negeri lainnya — menerima ajaran Syeikh Bahauddin dengan penuh takzhim dan menjadikannya sebagai teladan.
+</p>
+<p>
+Syeikh Bahauddin menghadapi kritik ini dengan penuh hikmah dan kesabaran. Beliau tidak pernah membalas kritik dengan celaan, melainkan hanya menjelaskan kebenaran dengan dalil-dalil yang kuat. Beliau berkata: <em>"Barangsiapa yang menasihatiku dengan kebenaran, maka ia telah menginginkan kebaikan bagiku, meskipun ia adalah musuhku. Dan barangsiapa yang mengkritikku dengan adab, maka aku akan menerimanya dengan penuh rasa syukur."</em>
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH BAHAUDDIN TENTANG KRITIK</div>
+<div class="arabic-text">
+مَنْ نَصَحَنِي بِالْحَقِّ فَقَدْ أَرَادَنِي بِخَيْرٍ، وَلَوْ كَانَ عَدُوِّي
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Barangsiapa yang menasihatiku dengan kebenaran, maka ia telah menginginkan kebaikan bagiku, meskipun ia adalah musuhku."
+<br>— Syeikh Bahauddin An-Naqsyabandi
+</div>
+</div>
+
+<h2>Sikap Penguasa terhadap Syeikh Bahauddin</h2>
+<p>
+Para penguasa pada masa Syeikh Bahauddin — baik penguasa lokal di Transoxiana maupun penguasa besar seperti Amir Timur (Tamerlane) — umumnya menghormati beliau dengan penuh takzhim. Meskipun mereka sering kali ingin memanfaatkan pengaruh beliau untuk kepentingan politik mereka, Syeikh Bahauddin senantiasa menjaga jarak dengan istana dan tidak pernah mau terlibat dalam urusan politik.
+</p>
+
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Penghormatan Amir Timur dan Para Penguasa</span>
+<div class="karomah-arabic">تَوْقِيرُ أَمِيرِ تَيْمُورَ وَالْحُكَّامِ</div>
+<p>
+Amir Timur (Tamerlane) — penguasa besar Transoxiana pada masa itu — sangat menghormati Syeikh Bahauddin. Meskipun Amir Timur dikenal sebagai penguasa yang sangat berkuasa dan ditakuti, beliau senantiasa menunjukkan rasa hormat yang tinggi kepada Syeikh Bahauddin. Beliau sering mengirim utusan kepada Syeikh Bahauddin untuk meminta nasihat dan doa, dan beliau tidak pernah memaksa Syeikh Bahauddin untuk datang ke istana.
+</p>
+<p>
+Syeikh Bahauddin senantiasa menjaga jarak dengan istana. Beliau tidak pernah mau menerima harta atau kedudukan dari penguasa, dan beliau tidak pernah mau terlibat dalam urusan politik. Beliau berkata: <em>"Aku adalah hamba Allah, bukan hamba penguasa. Maka aku tidak akan menjual agamaku dengan dunia, meskipun aku ditawari seluruh kerajaan di muka bumi."</em>
+</p>
+<p>
+Salah satu kisah yang masyhur adalah ketika Amir Timur mengirim utusan kepada Syeikh Bahauddin untuk meminta doa agar beliau berhasil dalam peperangan. Syeikh Bahauddin mendoakan beliau dengan penuh ikhlas, namun beliau tidak pernah memuji peperangan atau mendukung politik peperangan. Beliau hanya mendoakan agar Allah memberikan kemenangan yang membawa kedamaian dan keadilan, bukan kemenangan yang membawa kezaliman dan penindasan.
+</p>
+<p>
+Sikap inilah yang menjadikan Syeikh Bahauddin dihormati oleh semua penguasa — karena beliau tidak pernah memihak siapapun, dan tidak pernah menggunakan pengaruh spiritual beliau untuk kepentingan politik. Beliau senantiasa menjaga kemandirian beliau sebagai seorang wali, dan tidak pernah menggadaikan prinsip beliau demi harta atau kedudukan.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEMANDIRIAN ULAMA — QS. AL-BAQARAH: 41</div>
+<div class="arabic-text">
+وَلَا تَشْتَرُوا بِآيَاتِي ثَمَنًا قَلِيلًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan janganlah kamu menukar ayat-ayat-Ku dengan harga yang murah."
+<br>— QS. Al-Baqarah: 41
+</div>
+</div>
+
+<h2>Sikap Syeikh Bahauddin terhadap Pro dan Kontra</h2>
+<p>
+Yang paling mengagumkan dari seluruh dinamika pro dan kontra ini adalah sikap Syeikh Bahauddin sendiri. Beliau senantiasa bersikap tawadhu' (rendah hati), menerima kebenaran dari siapapun datangnya, tidak pernah membalas celaan dengan celaan, dan senantiasa mendoakan kebaikan bagi mereka yang menentangnya. Inilah adab para ulama rabbaniyyin yang menjadi teladan bagi umat hingga hari kiamat.
+</p>
+
+<div class="karomah-card">
+<span class="karomah-number">6</span>
+<span class="karomah-title">Tawadhu' dan Menerima Kebenaran dari Siapapun</span>
+<div class="karomah-arabic">التَّوَاضُعُ وَقُبُولُ الْحَقِّ مِنْ كُلِّ أَحَدٍ</div>
+<p>
+Syeikh Bahauddin dikenal sebagai syeikh yang sangat tawadhu'. Beliau tidak pernah merasa dirinya paling benar, dan senantiasa terbuka terhadap kebenaran dari siapapun datangnya. Beliau berkata: <em>"Aku bukanlah orang yang ma'shum (terjaga dari kesalahan). Aku adalah hamba yang lemah yang bisa saja salah. Maka barangsiapa yang melihat kesalahan padaku, hendaklah ia menasihatiku dengan adab, dan aku akan menerimanya dengan penuh rasa syukur."</em>
+</p>
+<p>
+Sikap tawadhu' ini juga tampak dalam cara beliau menerima kritik dari para ulama yang menentangnya. Beliau tidak pernah marah ketika dikritik, dan tidak pernah membalas kritik dengan celaan. Beliau berkata: <em>"Barangsiapa yang menasihatiku dengan kebenaran di hadapan wajahku, maka ia telah memulyaakanku. Dan barangsiapa yang menasihatiku dengan kebenaran di belakang punggungku, maka ia telah menasihatiku dengan kejujuran."</em>
+</p>
+<p>
+Beliau juga senantiasa mendoakan kebaikan bagi para ulama yang menentangnya. Ketika ada ulama yang mengkritik beliau dengan keras, beliau berkata: <em>"Aku mendoakan kebaikan bagi mereka, karena mereka telah membantu aku untuk menemukan kesalahan-kesalahanku dan memperbaikinya. Dan aku mendoakan ampunan bagi mereka, karena aku tahu bahwa kita semua adalah hamba-hamba Allah yang butuh ampunan-Nya."</em>
+</p>
+<p>
+Salah satu kisah yang masyhur adalah ketika seorang ulama datang kepada Syeikh Bahauddin untuk mengkritik beliau dengan sangat keras di hadapan para murid. Para murid Syeikh Bahauddin marah dan ingin mengusir ulama tersebut, namun Syeikh Bahauddin melarang mereka dan berkata: <em>"Biarkanlah ia berbicara, karena mungkin ada kebenaran di dalam kata-katanya. Dan jika tidak ada kebenaran, maka biarkanlah ia berbicara, karena ia adalah hamba Allah yang memiliki hak untuk berbicara."</em> Setelah ulama tersebut selesai berbicara, Syeikh Bahauddin menjawab dengan penuh kelembutan dan hikmah, sehingga ulama tersebut pulang dengan hati yang puas dan bahkan menjadi salah satu pendukung setia beliau setelahnya.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH BAHAUDDIN TENTANG TAWADHU'</div>
+<div class="arabic-text">
+مَا تَوَاضَعَ أَحَدٌ لِلَّهِ إِلَّا رَفَعَهُ اللَّهُ، وَمَنْ تَكَبَّرَ لِلَّهِ إِلَّا وَضَعَهُ اللَّهُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Tidaklah seseorang merendahkan diri karena Allah, kecuali Allah akan mengangkatnya. Dan tidaklah seseorang sombong karena Allah, kecuali Allah akan merendahkannya."
+<br>— Syeikh Bahauddin An-Naqsyabandi, mengutip hadits Rasulullah SAW
+</div>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">7</span>
+<span class="karomah-title">Tidak Membalas Celaan dengan Celaan</span>
+<div class="karomah-arabic">عَدَمُ مُقَابَلَةِ الشَّتْمِ بِالشَّتْمِ</div>
+<p>
+Salah satu sikap paling mulia Syeikh Bahauddin adalah bahwa beliau tidak pernah membalas celaan dengan celaan, meskipun beliau sering kali dicela dan difitnah oleh orang-orang yang tidak senang dengan beliau. Beliau senantiasa bersabar dan mendoakan kebaikan bagi mereka yang mencelanya.
+</p>
+<p>
+Salah satu kisah yang masyhur adalah ketika ada seorang ulama yang mengkritik beliau dengan sangat keras di hadapan orang banyak. Para murid Syeikh Bahauddin marah dan ingin membalas kritik tersebut, namun Syeikh Bahauddin melarang mereka dan berkata: <em>"Janganlah kalian membalasnya, karena jika ia benar, maka itu adalah nasihat bagiku. Dan jika ia salah, maka itu adalah dosa baginya, dan aku tidak ingin dosanya itu menjadi beban bagiku di hari kiamat."</em>
+</p>
+<p>
+Beliau juga pernah berkata: <em>"Aku tidak pernah membalas celaan seseorang dengan celaan, karena aku tahu bahwa celaan itu akan kembali kepada orang yang mencela, bukan kepada orang yang dicela. Dan aku tidak ingin dosaku bertambah karena membalas celaan."</em>
+</p>
+<p>
+Sikap inilah yang menjadikan Syeikh Bahauddin dicintai oleh semua orang — bahkan oleh mereka yang pada awalnya menentang beliau. Banyak ulama yang pada awalnya mengkritik beliau, kemudian menjadi pendukung setia beliau setelah menyaksikan akhlak mulia beliau.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MEMAAFKAN — QS. ALI 'IMRAN: 134</div>
+<div class="arabic-text">
+الَّذِينَ يُنفِقُونَ فِي السَّرَّاءِ وَالضَّرَّاءِ وَالْكَاظِمِينَ الْغَيْظَ وَالْعَافِينَ عَنِ النَّاسِ ۗ وَاللَّهُ يُحِبُّ الْمُحْسِنِينَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "(Yaitu) orang-orang yang menafkahkan (hartanya), baik di waktu lapang maupun sempit, dan orang-orang yang menahan amarahnya dan memaafkan (kesalahan) orang. Allah menyukai orang-orang yang berbuat kebajikan."
+<br>— QS. Ali 'Imran: 134
+</div>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">8</span>
+<span class="karomah-title">Mendoakan Kebaikan bagi Musuh</span>
+<div class="karomah-arabic">الدُّعَاءُ بِالْخَيْرِ لِلْأَعْدَاءِ</div>
+<p>
+Sikap paling mulia Syeikh Bahauddin adalah bahwa beliau senantiasa mendoakan kebaikan bagi mereka yang menentangnya, bahkan bagi mereka yang memusuhi beliau. Beliau berkata: <em>"Aku mendoakan kebaikan bagi setiap orang yang menasihatiku dengan kebenaran, meskipun ia adalah musuhku. Dan aku mendoakan ampunan bagi setiap orang yang menzalimiku, karena aku tahu bahwa Allah akan membalas zalimnya dengan keadilan-Nya."</em>
+</p>
+<p>
+Salah satu kisah yang masyhur adalah ketika ada seorang ulama yang sangat memusuhi Syeikh Bahauddin dan senantiasa mencelanya di mana-mana. Ketika ulama tersebut wafat, Syeikh Bahauddin datang ke pemakamannya dan mendoakan ampunan bagi beliau. Para murid beliau bertanya: <em>"Wahai guru, mengapa engkau mendoakan orang yang sangat memusuhi engkau?"</em> Syeikh Bahauddin menjawab: <em>"Karena aku tahu bahwa ia telah berbuat dosa dengan memusuhiku, dan aku tidak ingin dosanya itu menjadi beban bagiku di hari kiamat. Maka aku mendoakan ampunan baginya, agar Allah mengampuninya dan mengampuniku."</em>
+</p>
+<p>
+Sikap inilah yang menjadi ciri khas para ulama rabbaniyyin — mereka tidak membalas kejahatan dengan kejahatan, melainkan membalasnya dengan kebaikan dan doa. Inilah adab yang diajarkan oleh Rasulullah SAW dan diamalkan oleh para wali besar seperti Syeikh Bahauddin An-Naqsyabandi.
+</p>
+<p>
+Beliau juga mengajarkan kepada para murid beliau untuk senantiasa mendoakan kebaikan bagi semua orang — baik yang mencintai mereka maupun yang membenci mereka. Beliau berkata: <em>"Barangsiapa yang ingin hatinya hidup, maka hendaklah ia mendoakan kebaikan bagi semua orang, karena doa adalah ibadah yang paling mulia di sisi Allah."</em>
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MEMBALAS KEBAIKAN — QS. FUSSILAT: 34</div>
+<div class="arabic-text">
+وَلَا تَسْتَوِي الْحَسَنَةُ وَلَا السَّيِّئَةُ ۚ ادْفَعْ بِالَّتِي هِيَ أَحْسَنُ فَإِذَا الَّذِي بَيْنَكَ وَبَيْنَهُ عَدَاوَةٌ كَأَنَّهُ وَلِيٌّ حَمِيمٌ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan tidaklah sama kebaikan dan kejahatan. Tolaklah (kejahatan itu) dengan cara yang lebih baik, maka tiba-tiba orang yang antaramu dan antara dia ada permusuhan seolah-olah telah menjadi teman yang sangat setia."
+<br>— QS. Fussilat: 34
+</div>
+</div>
+
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Pro/Kontra terhadap Syeikh Bahauddin An-Naqsyabandi:</strong>
+<ul>
+<li><strong>Masyarakat umum</strong> — Menerima beliau dengan penuh cinta dan takzhim karena akhlak mulia dan kemandirian beliau</li>
+<li><strong>Para pedagang dan pekerja</strong> — Mencintai beliau karena ajaran beliau yang memadukan dunia dan akhirat</li>
+<li><strong>Para ulama dan wali sezaman</strong> — Mayoritas memuji beliau sebagai matahari Transoxiana dan kesehatan jiwa</li>
+<li><strong>Sebagian kecil ulama zhahir</strong> — Mengkritik metode dzikir khafi dan khalwat dar anjuman</li>
+<li><strong>Amir Timur dan para penguasa</strong> — Menghormati beliau dengan penuh takzhim, namun beliau menjaga jarak dengan istana</li>
+<li><strong>Sikap Syeikh Bahauddin</strong> — Tawadhu', menerima kebenaran dari siapapun, tidak membalas celaan, mendoakan kebaikan bagi musuh</li>
+<li><strong>Prinsip utama</strong> — "Barangsiapa yang menasihatiku dengan kebenaran, maka ia telah menginginkan kebaikan bagiku"</li>
+<li><strong>Warisan</strong> — Teladan adab bagi para ulama dan wali dalam menghadapi pro/kontra</li>
+</ul>
+</div>
+
+<h2>Doa Memohon Adab dalam Perbedaan</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON ADAB DALAM PERBEDAAN</div>
+<div class="arabic-text">
+اللَّهُمَّ ارْزُقْنِي قَبُولَ الْحَقِّ مِنْ كُلِّ أَحَدٍ، وَالتَّوَاضُعَ لِعِبَادِكَ الصَّالِحِينَ، وَاجْعَلْنِي مِمَّنْ يَسْتَمِعُونَ الْقَوْلَ فَيَتَّبِعُونَ أَحْسَنَهُ، وَاجْعَلْ سَيِّدَنَا بَهَاءُ الدِّينِ النَّقْشَبَنْدِيَّ شَفِيعِي يَوْمَ الْقِيَامَةِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, anugerahkanlah kepadaku kemampuan menerima kebenaran dari siapapun, kerendahan hati terhadap hamba-hamba-Mu yang shaleh, dan jadikanlah aku termasuk orang-orang yang mendengarkan perkataan lalu mengikuti yang terbaik darinya, dan jadikanlah Sayyidina Bahauddin An-Naqsyabandi sebagai pemberi syafaat bagiku pada hari kiamat."
+</div>
+</div>
+
+<h2>Penutup Halaman 6</h2>
+<p>
+Demikianlah dinamika pro dan kontra yang dihadapi Syeikh Bahauddin An-Naqsyabandi di tengah masyarakat, para ulama, dan penguasa sezaman beliau. Dari pujian yang melangit dari mayoritas masyarakat dan ulama, kritik yang tajam dari sebagian kecil ulama zhahir, hingga penghormatan dari para penguasa seperti Amir Timur — semua ini beliau hadapi dengan sikap tawadhu', kesabaran, dan keikhlasan yang luar biasa.
+</p>
+<p>
+Yang paling mengagumkan dari seluruh dinamika ini adalah sikap Syeikh Bahauddin sendiri — beliau senantiasa menerima kebenaran dari siapapun datangnya, tidak pernah membalas celaan dengan celaan, dan senantiasa mendoakan kebaikan bagi mereka yang menentangnya. Inilah adab para ulama rabbaniyyin yang menjadi teladan bagi umat hingga hari kiamat.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas secara lebih rinci sikap Syeikh Bahauddin terhadap para penguasa — bagaimana beliau bersikap tegas terhadap kezaliman, namun tetap menjaga adab dalam berinteraksi dengan mereka.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-text">
+إِنَّمَا يَخْشَى اللَّهَ مِنْ عِبَادِهِ الْعُلَمَاءُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sesungguhnya yang takut kepada Allah di antara hamba-hamba-Nya, hanyalah ulama."
+<br>— QS. Fathir: 28
+</div>
+</div>
+</div>
+
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="naqsyabandi1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="naqsyabandi2.html" class="article-nav-btn" title="Halaman 2: Masa Kecil & Pendidikan">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="naqsyabandi3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="naqsyabandi4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="naqsyabandi5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="naqsyabandi6.html" class="article-nav-btn active" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="naqsyabandi7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="naqsyabandi8.html" class="article-nav-btn" title="Halaman 8: Warisan Tarekat">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="naqsyabandi9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

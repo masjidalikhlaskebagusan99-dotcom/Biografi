@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+  window.scrollTo(0, 0);
+</script>
+<title>Karomah Syeikh Abdul Qadir Al-Jilani - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+/* 1. RESET & DASAR */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+/* 2. MEDIA QUERY TABLET */
+@media (max-width: 768px) {
+.article-container {
+max-width: 100%;
+padding: 20px;
+}
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+/* 3. HEADER & NAVIGASI ATAS */
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+/* 4. BREADCRUMB & CONTAINER */
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+/* 5. ARTICLE HEADER & META */
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+/* 6. GAMBAR & SHARE BAR */
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+/* 7. KONTEN ARTIKEL */
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 8. KOTAK ARAB & KAROMAH */
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 9. NAVIGASI HALAMAN (9 TOMBOL — DIATUR AGAR ELEGAN) */
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* 10. TOMBOL KEMBALI & FOOTER */
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+/* 11. MEDIA QUERY MOBILE */
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+/* PATCH UNIVERSAL v2.0 */
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Bahauddin An-Naqsyabandi — Masa Kecil
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Bahauddin An-Naqsyabandi — Masa Kecil</h1>
+<div class="subtitle">Halaman 2 dari 9 — Masa Kecil di Qasr-i-Hinduvan, Yatim, dan Pendidikan Awal Sang Pelukis Hati</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Kamis, 22 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Samarkand_-_Bibi_Khanym_Mosque_02.jpg/640px-Samarkand_-_Bibi_Khanym_Mosque_02.jpg"
+alt="Ilustrasi suasana Bukhara pada abad ke-14 M"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Bukhara_Kalon_minor.jpg/640px-Bukhara_Kalon_minor.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Ilustrasi suasana kota Bukhara pada abad ke-14 M — tanah tempat Syeikh Bahauddin An-Naqsyabandi tumbuh dan dibesarkan dalam lingkungan keilmuan yang agung</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Masa kecil Syeikh Bahauddin An-Naqsyabandi di desa Qasr-i-Hinduvan adalah masa yang penuh dengan berkah, ujian, dan tanda-tanda kewalian yang tampak sejak dini. Tumbuh sebagai anak yatim dalam keluarga Asyraf yang mulia, beliau dibesarkan oleh ibunda yang shalehah dengan didikan agama yang sangat ketat. Beliau menghafal Al-Qur'an sebelum usia baligh, menunjukkan kecerdasan spiritual yang luar biasa, dan mulai menapaki jalan suluk di bawah bimbingan para guru spiritual besar di wilayah Bukhara. Semua ini menjadi pondasi yang kokoh bagi perjalanan kewalian beliau yang kelak akan mengubah wajah tasawuf di seluruh dunia Islam.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG DIDIKAN IBU — QS. LUQMAN: 14</div>
+<div class="arabic-text">
+وَوَصَّيْنَا الْإِنسَانَ بِوَالِدَيْهِ حَمَلَتْهُ أُمُّهُ وَهْنًا عَلَىٰ وَهْنٍ ۖ وَفِصَالُهُ فِي عَامَيْنِ أَنِ اشْكُرْ لِي وَلِوَالِدَيْكَ إِلَيَّ الْمَصِيرُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan Kami perintahkan kepada manusia (berbuat baik) kepada dua orang ibu-bapaknya; ibunya telah mengandungnya dalam keadaan lemah yang bertambah-tambah, dan menyapihnya dalam dua tahun. Bersyukurlah kepada-Ku dan kepada dua orang ibu bapakmu, hanya kepada-Kulah kembalimu."
+<br>— QS. Luqman: 14
+</div>
+</div>
+
+<h2>Masa Kecil di Desa Qasr-i-Hinduvan</h2>
+<p>
+Syeikh Bahauddin tumbuh di desa Qasr-i-Hinduvan — sebuah desa kecil yang tenang di dekat Bukhara, dikelilingi oleh kebun-kebun hijau, sungai-sungai kecil, dan pegunungan yang indah. Desa ini pada masa itu dikenal sebagai desa yang penuh berkah, tempat berkumpulnya para ulama, ahli ibadah, dan orang-orang shaleh. Di desa inilah beliau menghabiskan masa kecilnya, belajar mengaji, bermain dengan anak-anak desa lainnya, dan menyerap nilai-nilai keislaman dari lingkungan sekitarnya.
+</p>
+<p>
+Meskipun hidup di desa yang sederhana, Syeikh Bahauddin kecil sudah menunjukkan tanda-tanda keistimewaan. Para tetangga dan kerabat beliau menceritakan bahwa beliau adalah anak yang sangat pendiam, suka menyendiri, dan lebih senang berada di masjid atau di tempat-tempat sunyi untuk berdzikir dan bermunajat kepada Allah. Beliau tidak seperti anak-anak seusianya yang suka bermain dan bersenang-senang, melainkan sudah menunjukkan kecenderungan spiritual yang mendalam sejak usia sangat muda.
+</p>
+
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Karomah Kehilangan Ayah di Usia Muda</span>
+<div class="karomah-arabic">فِقْدَانُ وَالِدِهِ فِي سِنٍّ مُبَكِّرَةٍ</div>
+<p>
+Salah satu ujian terbesar yang Allah timpakan kepada Syeikh Bahauddin kecil adalah kehilangan ayahanda beliau ketika beliau masih berusia sangat muda — ada riwayat yang mengatakan beliau baru berusia sekitar enam tahun, ada yang mengatakan tujuh tahun, dan ada pula yang mengatakan lebih muda lagi. Ayahanda beliau, <em>Muhammad bin Muhammad Al-Husaini</em>, wafat dan meninggalkan beliau beserta ibunda dalam keadaan yatim.
+</p>
+<p>
+Kehilangan ayah di usia muda bukanlah sesuatu yang mudah, terutama bagi seorang anak yang tumbuh di tengah keluarga yang sebelumnya hidup berkecukupan. Namun, di balik ujian ini, Allah menyimpan hikmah yang sangat besar. Dengan menjadi yatim, Syeikh Bahauddin belajar sejak dini tentang ketergantungan mutlak kepada Allah, tentang kesabaran dalam menghadapi kehilangan, dan tentang keikhlasan dalam menerima takdir. Semua ini menjadi pondasi spiritual yang sangat kuat bagi perjalanan kewalian beliau setelah dewasa.
+</p>
+<p>
+Para ulama berkata bahwa banyak wali-wali besar Allah yang mengalami ujian yatim sejak kecil — seperti Rasulullah SAW yang kehilangan ayahanda Abdullah bahkan sebelum beliau lahir, seperti Imam Ahmad bin Hanbal yang juga yatim sejak kecil, dan seperti Syeikh Abdul Qadir Al-Jilani yang kehilangan ayahanda beliau di usia sepuluh tahun. Ujian yatim ini adalah salah satu "madrasah ilahiyah" yang Allah gunakan untuk membentuk jiwa para wali-Nya menjadi jiwa yang kuat, sabar, dan tawakkal.
+</p>
+<p>
+Syeikh Bahauddin sendiri pernah berkata tentang ujian ini: <em>"Allah telah mengambil ayahku dari sisiku, namun Dia memberikan kepadaku pengganti yang lebih baik — yaitu Dia sendiri sebagai Pelindung, Penjaga, dan Pemelihara bagiku. Barangsiapa yang Allah menjadi walinya, maka ia tidak akan pernah kehilangan apapun."</em>
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG UJIAN — QS. AL-BAQARAH: 155-156</div>
+<div class="arabic-text">
+وَلَنَبْلُوَنَّكُم بِشَيْءٍ مِّنَ الْخَوْفِ وَالْجُوعِ وَنَقْصٍ مِّنَ الْأَمْوَالِ وَالْأَنفُسِ وَالثَّمَرَاتِ ۗ وَبَشِّرِ الصَّابِرِينَ ۝ الَّذِينَ إِذَا أَصَابَتْهُم مُّصِيبَةٌ قَالُوا إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan sungguh akan Kami berikan cobaan kepadamu, dengan sedikit ketakutan, kelaparan, kekurangan harta, jiwa dan buah-buahan. Dan berikanlah berita gembira kepada orang-orang yang sabar. (Yaitu) orang-orang yang apabila ditimpa musibah, mereka mengucapkan: 'Inna lillaahi wa innaa ilaihi raaji'uun'."
+<br>— QS. Al-Baqarah: 155-156
+</div>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Karomah Didikan Ibunda yang Shalehah</span>
+<div class="karomah-arabic">تَرْبِيَةُ أُمِّهِ الصَّالِحَةِ لَهُ</div>
+<p>
+Setelah ayahanda beliau wafat, ibunda Syeikh Bahauddin — yang dalam beberapa riwayat disebutkan sebagai wanita shalehah dari keluarga ulama — mengambil alih tanggung jawab mendidik putranya dengan penuh kasih sayang dan ketegasan. Beliau mendidik Syeikh Bahauddin dengan pendidikan agama yang sangat ketat, mengajarkan beliau Al-Qur'an, hadits, fiqih, akhlak, dan adab sejak usia sangat muda.
+</p>
+<p>
+Ibunda Syeikh Bahauddin adalah wanita yang sangat wara' dan tawakkal. Meskipun hidup dalam keadaan yatim dan kekurangan harta, beliau tidak pernah mengeluh dan tidak pernah meminta-minta kepada orang lain. Beliau bekerja keras untuk menghidupi putranya, sambil tetap menjaga ibadah dan dzikir beliau. Dari ibundalah Syeikh Bahauddin belajar tentang zuhud, wara', tawakkal, dan keikhlasan — nilai-nilai yang kemudian menjadi ciri khas ajaran beliau dalam Tarekat Naqsyabandiyah.
+</p>
+<p>
+Salah satu nasihat ibunda yang paling berkesan dalam hati Syeikh Bahauddin adalah: <em>"Wahai anakku, jagalah shalatmu, karena shalat adalah tiang agama. Jagalah lidahmu, karena lidahmu bisa menjerumuskanmu ke dalam neraka. Dan jagalah hatimu, karena di dalam hati itulah tempat bersemayamnya cahaya Allah."</em> Nasihat-nasihat ibundalah yang kemudian menjadi pondasi spiritual Syeikh Bahauddin dalam perjalanan suluk beliau.
+</p>
+<p>
+Ibunda Syeikh Bahauddin juga senantiasa mendoakan putranya di setiap sepertiga malam terakhir. Beliau berkata kepada putranya: <em>"Wahai anakku, aku tidak mampu memberimu harta yang banyak, namun aku akan mendoakanmu dengan air mataku di setiap sujudku. Doa ibunda adalah doa yang mustajab, maka janganlah engkau pernah meragukan keberkahan doaku untukmu."</em> Doa ibundalah yang menjadi salah satu sebab Allah menganugerahkan maqam kewalian yang tinggi kepada Syeikh Bahauddin.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG DOA IBU — HADITS NABAWI</div>
+<div class="arabic-text">
+ثَلَاثُ دَعَوَاتٍ مُسْتَجَابَاتٌ لَا شَكَّ فِيهِنَّ: دَعْوَةُ الْمَظْلُومِ، وَدَعْوَةُ الْمُسَافِرِ، وَدَعْوَةُ الْوَالِدِ لِوَلَدِهِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Tiga doa yang mustajab tidak diragukan lagi: doa orang yang terzalimi, doa orang yang bepergian (musafir), dan doa orang tua untuk anaknya."
+<br>— HR. Abu Daud dan At-Tirmidzi
+</div>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Karomah Menghafal Al-Qur'an Sebelum Usia Baligh</span>
+<div class="karomah-arabic">حِفْظُهُ لِلْقُرْآنِ قَبْلَ بُلُوغِهِ</div>
+<p>
+Salah satu karomah yang tampak sejak dini dalam kehidupan Syeikh Bahauddin adalah kemampuan beliau menghafal Al-Qur'an sebelum mencapai usia baligh. Beliau menghafal seluruh ayat Al-Qur'an dengan sempurna, termasuk tajwid dan qira'atnya, dalam usia yang masih sangat muda — sekitar sebelas atau dua belas tahun.
+</p>
+<p>
+Ketika beliau membaca Al-Qur'an, suaranya sangat merdu dan penuh kekhusyukan. Orang-orang yang mendengarnya merasakan ketenangan yang luar biasa, seolah-olah ayat-ayat Al-Qur'an itu turun dari langit langsung ke dalam hati mereka. Para guru beliau di desa takjub dengan kemampuan beliau memahami makna-makna Al-Qur'an yang dalam, meskipun usia beliau masih sangat muda.
+</p>
+<p>
+Syeikh Bahauddin tidak hanya menghafal lafazh-lafazh Al-Qur'an, melainkan juga mengamalkannya dalam kehidupan sehari-hari. Beliau senantiasa membaca Al-Qur'an di setiap waktu, terutama di sepertiga malam terakhir. Beliau berkata: <em>"Al-Qur'an adalah hayatul qulub (kehidupan hati). Barangsiapa yang ingin hatinya hidup, maka hendaklah ia banyak membaca Al-Qur'an dengan penuh penghayatan dan tadabbur."</em>
+</p>
+<p>
+Setelah menghafal Al-Qur'an, beliau kemudian mempelajari tafsir, hadits, fiqih, dan berbagai ilmu agama lainnya dari para ulama di Bukhara. Kecerdasan beliau begitu luar biasa sehingga para guru beliau sendiri takjub dengan kemampuan beliau memahami masalah-masalah yang rumit. Beliau menjadi rujukan bagi teman-teman seusianya dalam berbagai masalah keagamaan, meskipun usia beliau masih sangat muda.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG AL-QUR'AN — QS. AL-QAMAR: 17</div>
+<div class="arabic-text">
+وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan sesungguhnya telah Kami mudahkan Al-Qur'an untuk pelajaran, maka adakah orang yang mengambil pelajaran?"
+<br>— QS. Al-Qamar: 17
+</div>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Karomah Kecerdasan Spiritual Sejak Dini</span>
+<div class="karomah-arabic">ذَكَاؤُهُ الرُّوحَانِيُّ مُنْذُ الطُّفُولَةِ</div>
+<p>
+Selain kecerdasan intelektual, Syeikh Bahauddin juga menunjukkan kecerdasan spiritual yang luar biasa sejak usia dini. Beliau sudah memahami hakikat-hakikat spiritual yang biasanya hanya dipahami oleh orang-orang yang telah menempuh perjalanan spiritual selama puluhan tahun. Beliau sudah merasakan kehadiran Allah dalam setiap keadaan, sudah merasakan manisnya iman dan dzikir, dan sudah merasakan kerinduan yang mendalam kepada Allah.
+</p>
+<p>
+Para ulama menceritakan bahwa ketika Syeikh Bahauddin masih berusia sekitar sepuluh tahun, beliau sudah mulai melakukan shalat malam (tahajud) secara rutin. Beliau bangun di sepertiga malam terakhir, berwudhu dengan sempurna, lalu berdiri di hadapan Allah untuk bermunajat dengan penuh kekhusyukan. Air mata beliau senantiasa mengalir ketika membaca ayat-ayat Al-Qur'an, terutama ayat-ayat yang berbicara tentang surga, neraka, dan keagungan Allah.
+</p>
+<p>
+Salah satu kisah yang masyhur adalah ketika seorang ulama besar di Bukhara melihat Syeikh Bahauddin kecil sedang duduk di sudut masjid, berdzikir dengan penuh kekhusyukan. Ulama itu mendekat dan bertanya: <em>"Wahai anak muda, apa yang engkau lakukan?"</em> Syeikh Bahauddin menjawab dengan suara yang lembut: <em>"Aku sedang berbicara dengan Kekasihku."</em> Ulama itu takjub dan berkata: <em>"Sesungguhnya anak ini akan menjadi orang yang besar di zamannya."</em>
+</p>
+<p>
+Kecerdasan spiritual ini juga tampak dalam cara beliau memahami hakikat-hakikat ibadah. Beliau tidak hanya melaksanakan ibadah secara zhahir, melainkan juga memahami hakikat batin di balik setiap ibadah. Beliau berkata: <em>"Shalat bukanlah sekadar gerakan badan, melainkan pertemuan antara hamba dan Tuhannya. Puasa bukanlah sekadar menahan lapar, melainkan menahan hati dari selain Allah. Dan haji bukanlah sekadar perjalanan fisik, melainkan perjalanan hati menuju Allah."</em>
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KECERDASAN SPIRITUAL — QS. AL-HADID: 4</div>
+<div class="arabic-text">
+هُوَ الَّذِي خَلَقَ السَّمَاوَاتِ وَالْأَرْضَ فِي سِتَّةِ أَيَّامٍ ثُمَّ اسْتَوَىٰ عَلَى الْعَرْشِ ۚ يَعْلَمُ مَا يَلِجُ فِي الْأَرْضِ وَمَا يَخْرُجُ مِنْهَا وَمَا يَنزِلُ مِنَ السَّمَاءِ وَمَا يَعْرُجُ فِيهَا ۚ وَهُوَ مَعَكُمْ أَيْنَ مَا كُنتُمْ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dia-lah Allah yang menciptakan langit dan bumi dalam enam masa, kemudian Dia bersemayam di atas 'Arsy. Dia mengetahui apa yang masuk ke dalam bumi dan apa yang keluar daripadanya, apa yang turun dari langit dan apa yang naik kepada-Nya. Dan Dia bersama kamu di mana saja kamu berada."
+<br>— QS. Al-Hadid: 4
+</div>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Karomah Pertemuan Pertama dengan Syeikh Amir Kulal</span>
+<div class="karomah-arabic">أَوَّلُ لِقَائِهِ بِالشَّيْخِ أَمِيرٍ كُلَالٍ</div>
+<p>
+Salah satu peristiwa paling penting dalam masa kecil Syeikh Bahauddin adalah pertemuan pertama beliau dengan <em>Syeikh Amir Sayyid Amir Kulal</em> — seorang ulama besar dan wali Allah yang sangat dihormati di wilayah Bukhara, yang juga merupakan kerabat beliau (menurut beberapa riwayat, Amir Kulal adalah paman beliau dari pihak ayah). Pertemuan ini terjadi ketika Syeikh Bahauddin masih berusia sangat muda — sekitar dua belas atau tiga belas tahun.
+</p>
+<p>
+Ketika Syeikh Bahauddin pertama kali bertemu dengan Syeikh Amir Kulal, terjadi sesuatu yang luar biasa. Syeikh Amir Kulal — yang dikenal sebagai wali yang memiliki firasat tajam — langsung melihat tanda-tanda kewalian pada diri Syeikh Bahauddin kecil. Beliau memandang Syeikh Bahauddin dengan penuh kasih sayang, lalu meletakkan tangan beliau di atas dada Syeikh Bahauddin dan berkata: <em>"Wahai anakku, sesungguhnya Allah telah memilihmu untuk menjadi salah satu wali-Nya di zaman ini. Maka jagalah hatimu, jagalah lisanmu, dan jagalah rahasiamu."</em>
+</p>
+<p>
+Sejak pertemuan pertama itulah, Syeikh Bahauddin mulai menapaki jalan suluk di bawah bimbingan Syeikh Amir Kulal. Beliau belajar adab-adab suluk, dzikir-dzikir tertentu, dan cara-cara membersihkan hati dari penyakit-penyakit spiritual. Syeikh Amir Kulal membimbing beliau dengan penuh kasih sayang, seperti seorang ayah membimbing putranya. Beliau melihat dalam diri Syeikh Bahauddin potensi spiritual yang sangat besar yang perlu diasah dan dikembangkan.
+</p>
+<p>
+Syeikh Amir Kulal kemudian menjadi guru spiritual utama Syeikh Bahauddin, yang mengantarkan beliau kepada maqam-maqam kewalian yang tinggi. Dari beliaulah Syeikh Bahauddin menerima silsilah spiritual Tarekat Naqsyabandiyah yang bersambung hingga kepada Rasulullah SAW melalui Sayyidina Abu Bakar Ash-Shiddiq. Pertemuan ini menjadi titik awal perjalanan spiritual Syeikh Bahauddin yang kelak akan mengubah wajah tasawuf di seluruh dunia Islam.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG BIMBINGAN GURU — QS. AL-KAHF: 66</div>
+<div class="arabic-text">
+قَالَ لَهُ مُوسَىٰ لِهَلْ أَتَّبِعُكَ عَلَىٰ أَن تُعَلِّمَنِ مِمَّا عُلِّمْتَ رُشْدًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Musa berkata kepada Khidhr: 'Bolehkah aku mengikutimu supaya kamu mengajarkan kepadaku ilmu yang benar di antara ilmu-ilmu yang telah diajarkan kepadamu?'"
+<br>— QS. Al-Kahf: 66 (tentang adab menuntut ilmu kepada guru)
+</div>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">6</span>
+<span class="karomah-title">Karomah Tanda-Tanda Kewalian yang Tampak Sejak Dini</span>
+<div class="karomah-arabic">عَلَامَاتُ الْوِلَايَةِ الَّتِي ظَهَرَتْ مُنْذُ صِغَرِهِ</div>
+<p>
+Sejak usia sangat muda, Syeikh Bahauddin telah menunjukkan tanda-tanda kewalian yang tampak jelas bagi siapa saja yang mengenal beliau. Di antara tanda-tanda tersebut adalah:
+</p>
+<ul>
+<li><strong>Kecintaan terhadap kesunyian</strong> — Beliau lebih senang berada di tempat-tempat sunyi untuk berdzikir dan bermunajat kepada Allah, daripada bermain dengan anak-anak seusianya.</li>
+<li><strong>Kekhusyukan dalam ibadah</strong> — Ketika beliau shalat, beliau begitu khusyuk sehingga seolah-olah tidak sadar akan apa yang terjadi di sekelilingnya. Air mata beliau senantiasa mengalir ketika membaca ayat-ayat Al-Qur'an.</li>
+<li><strong>Zuhud terhadap dunia</strong> — Meskipun masih kecil, beliau sudah menunjukkan sikap zuhud terhadap dunia. Beliau tidak tertarik dengan mainan, permen, atau hal-hal duniawi lainnya yang biasanya disukai anak-anak.</li>
+<li><strong>Akhlak yang mulia</strong> — Beliau sangat sopan kepada orang tua, penyayang kepada teman-teman seusianya, dan senantiasa berlaku jujur dalam setiap keadaan.</li>
+<li><strong>Kemampuan memahami hakikat</strong> — Beliau sudah memahami hakikat-hakikat spiritual yang biasanya hanya dipahami oleh orang-orang yang telah menempuh perjalanan spiritual selama puluhan tahun.</li>
+<li><strong>Cahaya kewalian di wajah</strong> — Para ulama yang melihat beliau berkata bahwa ada cahaya kewalian yang tampak di wajah beliau, meskipun usia beliau masih sangat muda.</li>
+</ul>
+<p>
+Salah satu ulama besar di Bukhara pernah berkata tentang Syeikh Bahauddin kecil: <em>"Aku belum pernah melihat anak seumur beliau yang memiliki kecerdasan spiritual seperti ini. Sesungguhnya anak ini adalah pilihan Allah yang dipersiapkan untuk menjadi wali besar di zamannya."</em>
+</p>
+<p>
+Tanda-tanda kewalian ini semakin jelas tampak ketika Syeikh Bahauddin memasuki usia remaja. Beliau mulai melakukan riyadhah (latihan spiritual) yang lebih ketat, seperti puasa sunnah yang rutin, shalat malam yang panjang, dan dzikir yang berkelanjutan. Beliau juga mulai mengasingkan diri di tempat-tempat sunyi untuk bermunajat kepada Allah, seperti yang dilakukan oleh para sufi besar sebelum beliau.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG WALI ALLAH — QS. AL-ANFAL: 2-4</div>
+<div class="arabic-text">
+إِنَّمَا الْمُؤْمِنُونَ الَّذِينَ إِذَا ذُكِرَ اللَّهُ وَجِلَتْ قُلُوبُهُمْ وَإِذَا تُلِيَتْ عَلَيْهِمْ آيَاتُهُ زَادَتْهُمْ إِيمَانًا وَعَلَىٰ رَبِّهِمْ يَتَوَكَّلُونَ ۝ الَّذِينَ يُقِيمُونَ الصَّلَاةَ وَمِمَّا رَزَقْنَاهُمْ يُنفِقُونَ ۝ أُولَٰئِكَ هُمُ الْمُؤْمِنُونَ حَقًّا ۚ لَّهُمْ دَرَجَاتٌ عِندَ رَبِّهِمْ وَمَغْفِرَةٌ وَرِزْقٌ كَرِيمٌ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sesungguhnya orang-orang yang beriman ialah mereka yang bila disebut nama Allah gemetarlah hati mereka, dan apabila dibacakan ayat-ayat-Nya bertambahlah iman mereka (karenanya), dan kepada Tuhanlah mereka bertawakkal. (Yaitu) orang-orang yang mendirikan shalat dan yang menafkahkan sebagian dari rezeki yang Kami berikan kepada mereka. Itulah orang-orang yang beriman dengan sebenar-benarnya. Mereka akan memperoleh beberapa derajat kemuliaan di sisi Tuhannya dan ampunan serta rezeki (nikmat) yang mulia."
+<br>— QS. Al-Anfal: 2-4
+</div>
+</div>
+
+<h2>Pendidikan Formal di Bukhara</h2>
+<p>
+Setelah mencapai usia remaja, Syeikh Bahauddin mulai menempuh pendidikan formal di kota Bukhara — salah satu pusat peradaban Islam terpenting di wilayah Transoxiana pada masa itu. Bukhara pada abad ke-14 M masih merupakan kota yang penuh dengan madrasah-madrasah, masjid-masjid, dan halaqah-halaqah ilmu, meskipun telah mengalami kemunduran dibandingkan dengan masa keemasan di zaman Imam Al-Bukhari (abad ke-9 M).
+</p>
+<p>
+Di Bukhara, Syeikh Bahauddin belajar berbagai ilmu agama — tafsir, hadits, fiqih, ushul fiqih, nahwu, sharaf, dan balaghah — dari para ulama besar di kota tersebut. Beliau juga mempelajari ilmu-ilmu aqli (seperti logika, filsafat, dan matematika) yang menjadi bagian dari kurikulum pendidikan Islam pada masa itu. Kecerdasan beliau begitu luar biasa sehingga beliau mampu menguasai berbagai ilmu tersebut dalam waktu yang relatif singkat.
+</p>
+<p>
+Namun, meskipun beliau menguasai berbagai ilmu zhahir, hati beliau senantiasa condong kepada ilmu batin — ilmu tasawuf dan hakikat. Beliau merasa bahwa ilmu zhahir saja tidak cukup untuk mendekatkan diri kepada Allah, melainkan harus dilengkapi dengan ilmu batin yang mampu membersihkan hati dan mendekatkan hamba kepada Tuhannya. Oleh karena itu, selain menuntut ilmu zhahir di madrasah-madrasah Bukhara, beliau juga terus menempuh perjalanan spiritual di bawah bimbingan Syeikh Amir Kulal.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH BAHAUDDIN TENTANG ILMU</div>
+<div class="arabic-text">
+الْعِلْمُ الظَّاهِرُ نُورٌ، وَالْعِلْمُ الْبَاطِنُ نُورٌ عَلَىٰ نُورٍ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ilmu zhahir adalah cahaya, dan ilmu batin adalah cahaya di atas cahaya."
+<br>— Syeikh Bahauddin An-Naqsyabandi
+</div>
+</div>
+
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Masa Kecil & Pendidikan Awal Syeikh Bahauddin An-Naqsyabandi:</strong>
+<ul>
+<li><strong>Tumbuh di Qasr-i-Hinduvan</strong> — Desa penuh berkah dekat Bukhara, dikelilingi kebun dan pegunungan</li>
+<li><strong>Yatim sejak usia muda</strong> — Kehilangan ayahanda di usia sekitar 6-7 tahun, ujian yang membentuk jiwa</li>
+<li><strong>Didikan ibunda shalehah</strong> — Wanita wara' yang mengajarkan shalat, kejujuran, dan adab</li>
+<li><strong>Menghafal Al-Qur'an sebelum baligh</strong> — Kecerdasan spiritual yang luar biasa</li>
+<li><strong>Kecerdasan spiritual sejak dini</strong> — Sudah melakukan tahajud dan merasakan kehadiran Allah di usia muda</li>
+<li><strong>Pertemuan dengan Syeikh Amir Kulal</strong> — Guru spiritual utama yang membimbing beliau sejak usia 12-13 tahun</li>
+<li><strong>Tanda-tanda kewalian tampak sejak dini</strong> — Cinta kesunyian, khusyuk ibadah, zuhud, akhlak mulia</li>
+<li><strong>Pendidikan formal di Bukhara</strong> — Menguasai ilmu zhahir (fiqih, hadits, tafsir) dan ilmu batin (tasawuf)</li>
+<li><strong>Prinsip utama</strong> — "Ilmu zhahir adalah cahaya, dan ilmu batin adalah cahaya di atas cahaya"</li>
+<li><strong>Pondasi untuk masa depan</strong> — Semua ini menjadi bekal bagi perjalanan kewalian beliau yang agung</li>
+</ul>
+</div>
+
+<h2>Doa Memohon Keberkahan Masa Kecil dan Pendidikan</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON KAROMAH DAN ISTIQAMAH</div>
+<div class="arabic-text">
+اللَّهُمَّ اجْعَلْنِي مِنْ أَوْلِيَائِكَ الصَّالِحِينَ، وَارْزُقْنِي الذِّكْرَ الْخَفِيَّ وَالْمُرَاقَبَةَ الدَّائِمَةَ، وَاجْعَلْ سَيِّدَنَا بَهَاءُ الدِّينِ النَّقْشَبَنْدِيَّ شَفِيعِي يَوْمَ الْقِيَامَةِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, jadikanlah aku termasuk wali-wali-Mu yang shaleh, anugerahkanlah kepadaku dzikir khafi dan muraqabah yang senantiasa, dan jadikanlah Sayyidina Bahauddin An-Naqsyabandi sebagai pemberi syafaat bagiku pada hari kiamat."
+</div>
+</div>
+
+<h2>Penutup Halaman 2</h2>
+<p>
+Demikianlah masa kecil dan pendidikan awal Syeikh Bahauddin An-Naqsyabandi di desa Qasr-i-Hinduvan — masa yang penuh dengan berkah, ujian, dan tanda-tanda kewalian yang tampak sejak dini. Kehilangan ayahanda di usia muda, didikan ibunda yang shalehah, kemampuan menghafal Al-Qur'an sebelum baligh, kecerdasan spiritual yang luar biasa, pertemuan pertama dengan Syeikh Amir Kulal, dan tanda-tanda kewalian yang tampak sejak dini — semua ini menjadi pondasi yang kokoh bagi perjalanan kewalian beliau setelah dewasa.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas perjalanan menuntut ilmu Syeikh Bahauddin secara lebih rinci — bidang-bidang ilmu yang beliau pelajari, nama-nama guru beliau, dan bagaimana beliau memadukan ilmu zhahir dan ilmu batin dalam satu kesatuan yang utuh.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-text">
+وَقُل رَّبِّ زِدْنِي عِلْمًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan katakanlah: 'Ya Tuhanku, tambahkanlah kepadaku ilmu pengetahuan.'"
+<br>— QS. Thaha: 114
+</div>
+</div>
+</div>
+
+<!-- NAVIGASI 9 TOMBOL — DIATUR AGAR ELEGAN -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="naqsyabandi1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="naqsyabandi2.html" class="article-nav-btn active" title="Halaman 2: Masa Kecil & Pendidikan">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="naqsyabandi3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="naqsyabandi4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="naqsyabandi5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="naqsyabandi6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="naqsyabandi7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="naqsyabandi8.html" class="article-nav-btn" title="Halaman 8: Warisan Tarekat">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="naqsyabandi9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>
