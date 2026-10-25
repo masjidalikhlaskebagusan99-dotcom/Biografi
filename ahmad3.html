@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Ahmad Al-Ghazali - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+@media (max-width: 768px) {
+.article-container { max-width: 100%; padding: 20px; }
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover { background: rgba(233, 69, 96, 0.15); transform: scale(1.05); }
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover { background: #e94560; color: #fff; border-color: #e94560; }
+.article-content { font-size: 1.05rem; line-height: 1.9; color: #444; }
+.article-content p { margin-bottom: 20px; text-align: justify; }
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 { font-size: 1.2rem; color: #333; margin: 25px 0 10px; }
+.article-content ul { margin: 15px 0 20px 30px; }
+.article-content ul li { margin-bottom: 10px; line-height: 1.7; }
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title { font-size: 1.3rem; color: #1a1a2e; font-weight: bold; display: inline; }
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul { margin: 15px 0 0 30px; }
+.highlight-box ul li { margin-bottom: 10px; line-height: 1.7; }
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label { text-align: center; color: #aaa; font-size: 0.75rem; margin-top: 6px; }
+.nav-group { display: flex; flex-direction: column; align-items: center; }
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+nav { flex-direction: column; gap: 10px; width: 100%; justify-content: center; }
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav { gap: 6px; padding: 15px; }
+.article-nav-btn { width: 36px; height: 36px; font-size: 1rem; }
+.nav-btn-label { font-size: 0.65rem; }
+}
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam { font-size: 1.3rem !important; letter-spacing: 3px !important; }
+header nav a { padding: 6px 10px !important; font-size: 0.8rem !important; }
+.article-nav-btn { width: 32px; height: 32px; font-size: 0.9rem; }
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Ahmad Al-Ghazali
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Ahmad Al-Ghazali</h1>
+<div class="subtitle">Halaman 3 dari 9 — Perjalanan Menuntut Ilmu, Bidang Keilmuan, dan Para Guru Beliau</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Minggu, 25 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Nishapur_Iran.jpg/440px-Nishapur_Iran.jpg"
+alt="Kota Naisabur — tempat Syeikh Ahmad Al-Ghazali menuntut ilmu"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Baghdad_150px.jpg/440px-Baghdad_150px.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Kota Naisabur dan Baghdad — dua pusat peradaban Islam tempat Syeikh Ahmad Al-Ghazali menuntut ilmu, berguru kepada para ulama besar, dan menempa dirinya menjadi sang Sultan al-'Ussyaq</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Perjalanan menuntut ilmu Syeikh Ahmad Al-Ghazali adalah perjalanan seorang pencari kebenaran yang tidak pernah puas dengan permukaan ilmu, melainkan selalu menyelami samudra hakikat yang tersembunyi di balik setiap ayat, setiap hadits, dan setiap perkataan para ulama. Beliau menempuh perjalanan dari desa Ghazalah di pinggiran Tus ke kota Naisabur — pusat ilmu Khorasan — lalu ke Baghdad — ibu kota Kekhalifahan Abbasiyah — untuk berguru kepada para ulama terbesar di zamannya, termasuk kakaknya sendiri, Imam Abu Hamid Al-Ghazali. Di bawah bimbingan para guru besar inilah Ahmad muda menempa dirinya menjadi seorang alim yang memadukan kedalaman fikih, ketajaman kalam, keluasan filsafat, dan kelembutan tasawuf — sebuah perpaduan langka yang kelak menjadikannya salah satu tokoh paling berpengaruh dalam sejarah tasawuf Islam.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENUNTUT ILMU — QS. AL-MUJADILAH: 11</div>
+<div class="arabic-text">
+يَرْفَعِ اللَّهُ الَّذِينَ آمَنُوا مِنكُمْ وَالَّذِينَ أُوتُوا الْعِلْمَ دَرَجَاتٍ ۚ وَاللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Allah akan mengangkat orang-orang yang beriman di antaramu dan orang-orang yang diberi ilmu pengetahuan beberapa derajat. Dan Allah Maha Mengetahui apa yang kamu kerjakan."
+<br>— QS. Al-Mujadilah: 11
+</div>
+</div>
+<h2>Perjalanan Menuntut Ilmu — Dari Tus ke Naisabur, Lalu ke Baghdad</h2>
+<p>
+Perjalanan menuntut ilmu Syeikh Ahmad Al-Ghazali dimulai di desa kelahirannya, Ghazalah, di bawah bimbingan teman ayah beliau yang shaleh dan para ulama setempat di kota Tus. Namun, ketika kakaknya, Abu Hamid, mendapatkan jabatan sebagai guru di Madrasah Nizhamiyah Naisabur pada tahun 484 H (1091 M), Ahmad muda ikut bersamanya dan memulai fase baru dalam perjalanan keilmuannya. Naisabur pada masa itu adalah salah satu pusat peradaban Islam terpenting di wilayah timur dunia Islam — kota yang melahirkan para ulama besar seperti Imam Muslim (penulis Shahih Muslim), Al-Hakim An-Naisaburi, dan banyak lagi.
+</p>
+<p>
+Di Naisabur, Ahmad muda belajar di lingkungan Madrasah Nizhamiyah — madrasah terbesar dan paling prestisius di zamannya — di bawah bimbingan langsung kakaknya, Abu Hamid, yang saat itu menjadi guru besar di madrasah tersebut. Ahmad tidak hanya belajar ilmu-ilmu zhahir (fikih, ushul fikih, kalam, filsafat), melainkan juga mendalami ilmu-ilmu batin (tasawuf, akhlak, ma'rifatullah) dari kakaknya yang saat itu sedang mengalami transformasi spiritual yang mendalam.
+</p>
+<p>
+Setelah beberapa tahun di Naisabur, Ahmad mengikuti kakaknya ke Baghdad ketika Abu Hamid mendapatkan jabatan sebagai guru di Madrasah Nizhamiyah Baghdad pada tahun 484 H. Di Baghdad — ibu kota Kekhalifahan Abbasiyah dan pusat peradaban Islam dunia — Ahmad muda bertemu dengan para ulama terbesar di zamannya, belajar dari mereka, dan mulai menunjukkan kecerdasan serta kedalaman spiritualnya yang luar biasa. Di Baghdad inilah Ahmad mulai dikenal sebagai seorang ulama muda yang cerdas dan seorang sufi yang lembut hati.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH AHMAD TENTANG ILMU</div>
+<div class="arabic-text">
+الْعِلْمُ نُورٌ يَقْذِفُهُ اللَّهُ فِي قَلْبِ مَنْ يَشَاءُ، وَلَيْسَ بِكَثْرَةِ التَّحْصِيلِ بَلْ بِصَفَاءِ الْقَلْبِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ilmu adalah cahaya yang dilemparkan Allah ke dalam hati siapa yang Dia kehendaki, bukan dengan banyaknya pengumpulan (hafalan), melainkan dengan kebersihan hati."
+<br>— Syeikh Ahmad Al-Ghazali
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Bidang Ilmu yang Dipelajari — Perpaduan Zhahir dan Batin</span>
+<div class="karomah-arabic">الْعُلُومُ الَّتِي تَعَلَّمَهَا — الْجَمْعُ بَيْنَ الظَّاهِرِ وَالْبَاطِنِ</div>
+<p>
+Syeikh Ahmad Al-Ghazali mempelajari berbagai bidang ilmu yang sangat luas, mencakup ilmu-ilmu zhahir (lahir) dan ilmu-ilmu batin. Perpaduan antara kedua jenis ilmu inilah yang menjadikan beliau seorang ulama yang utuh — tidak hanya tajam akalnya, tetapi juga lembut hatinya. Di antara bidang-bidang ilmu yang beliau pelajari adalah:
+</p>
+<h3>A. Ilmu-Ilmu Zhahir (Lahir)</h3>
+<ul>
+<li><strong>Ilmu Fikih (Mazhab Syafi'i)</strong> — Beliau mempelajari fikih mazhab Syafi'i secara mendalam, termasuk cabang-cabang (furu') dan kaidah-kaidahnya. Fikih Syafi'i adalah mazhab yang dominan di wilayah Khorasan dan Irak pada masa itu, dan menjadi landasan hukum bagi mayoritas ulama di zamannya.</li>
+<li><strong>Ilmu Ushul Fikih</strong> — Ilmu tentang kaidah-kaidah pengambilan hukum dari Al-Qur'an dan Sunnah, yang beliau pelajari secara mendalam dari kakaknya, Abu Hamid, yang merupakan salah satu ahli ushul fikih terbesar di zamannya.</li>
+<li><strong>Ilmu Kalam (Teologi Islam)</strong> — Ilmu tentang aqidah dan pembelaan terhadap ajaran Islam dengan menggunakan dalil-dalil rasional. Beliau mempelajari kalam Asy'ari dari kakaknya, yang merupakan salah satu tokoh utama teologi Asy'ari.</li>
+<li><strong>Ilmu Filsafat dan Mantiq (Logika)</strong> — Beliau mempelajari filsafat Yunani (terutama Aristoteles) dan logika formal, yang pada masa itu menjadi bagian penting dari kurikulum pendidikan Islam. Meskipun beliau menguasai filsafat, beliau tidak terjebak dalam rasionalisme murni, melainkan menggunakannya sebagai alat untuk memahami hakikat.</li>
+<li><strong>Ilmu Tafsir</strong> — Ilmu tentang penafsiran Al-Qur'an, yang beliau pelajari dengan pendekatan zhahir (riwayat) dan batin (isyarah). Beliau sangat tertarik pada tafsir isyari — penafsiran yang menemukan makna-makna spiritual di balik ayat-ayat Al-Qur'an.</li>
+<li><strong>Ilmu Hadits</strong> — Ilmu tentang sabda-sabda Rasulullah SAW, sanad, dan matan. Beliau mempelajari hadits dari para muhadditsin besar di Baghdad dan Naisabur.</li>
+<li><strong>Ilmu Nahwu dan Sharaf</strong> — Ilmu tata bahasa Arab yang menjadi kunci untuk memahami Al-Qur'an, Hadits, dan karya-karya ulama lainnya.</li>
+<li><strong>Ilmu Sastra Persia dan Arab</strong> — Beliau menguasai sastra Persia dan Arab dengan sangat baik, yang kelak menjadi modal utama beliau dalam menulis karya-karya puitis tentang cinta ilahi.</li>
+</ul>
+<h3>B. Ilmu-Ilmu Batin (Tasawuf dan Akhlak)</h3>
+<ul>
+<li><strong>Ilmu Tasawuf</strong> — Ilmu tentang penyucian jiwa (tazkiyatun nafs) dan perjalanan spiritual menuju Allah. Inilah bidang ilmu yang paling beliau cintai dan kuasai, yang menjadi ciri khas ajaran beliau.</li>
+<li><strong>Ilmu Akhlak</strong> — Ilmu tentang pembentukan karakter mulia dan penghiasan jiwa dengan sifat-sifat terpuji.</li>
+<li><strong>Ilmu Mahabbah (Cinta Ilahi)</strong> — Ilmu tentang hakikat cinta kepada Allah dan Rasulullah, yang menjadi inti ajaran beliau. Beliau mengembangkan konsep <em>'isyq</em> (cinta yang membara) dan <em>mahabbah</em> (cinta yang lembut) sebagai jalan utama menuju Allah.</li>
+<li><strong>Ilmu Muraqabah dan Muhasabah</strong> — Ilmu tentang pengawasan hati dan introspeksi diri, yang beliau pelajari dari para sufi besar di zamannya.</li>
+<li><strong>Ilmu Suluk</strong> — Ilmu tentang tahapan-tahapan perjalanan spiritual (maqamat) dan keadaan-keadaan spiritual (ahwal) yang dilalui oleh seorang salik dalam perjalanannya menuju Allah.</li>
+</ul>
+<p>
+Perpaduan antara ilmu-ilmu zhahir dan batin inilah yang menjadikan Syeikh Ahmad Al-Ghazali sebagai seorang ulama yang langka di zamannya. Beliau tidak hanya menguasai fikih dan kalam seperti kakaknya, melainkan juga memiliki kedalaman spiritual yang luar biasa dalam bidang tasawuf dan mahabbah. Beliau pernah berkata: <em>"Ilmu tanpa rasa (dzauq) adalah kegelapan, dan rasa tanpa ilmu adalah kesesatan. Maka hendaklah engkau memadukan keduanya, niscaya engkau akan mendapatkan cahaya yang menerangi jalanmu menuju Allah."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENGIKUTI RASULULLAH — QS. ALI 'IMRAN: 31</div>
+<div class="arabic-text">
+قُلْ إِن كُنتُمْ تُحِبُّونَ اللَّهَ فَاتَّبِعُونِي يُحْبِبْكُمُ اللَّهُ وَيَغْفِرْ لَكُمْ ذُنُوبَكُمْ ۗ وَاللَّهُ غَفُورٌ رَّحِيمٌ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Katakanlah: 'Jika kamu (benar-benar) mencintai Allah, maka ikutilah aku (Rasulullah), niscaya Allah mengasihi dan mengampuni dosa-dosamu.' Dan Allah Maha Pengampun lagi Maha Penyayang."
+<br>— QS. Ali 'Imran: 31
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Para Guru Beliau — Mata Rantai Keilmuan dan Spiritual</span>
+<div class="karomah-arabic">مَشَايِخُهُ — سَلَاسِلُ الْعِلْمِ وَالرُّوحَانِيَّةِ</div>
+<p>
+Syeikh Ahmad Al-Ghazali berguru kepada banyak ulama besar di zamannya, baik dalam bidang ilmu-ilmu zhahir maupun ilmu-ilmu batin. Para guru beliau merupakan mata rantai keilmuan dan spiritual yang menghubungkan beliau dengan tradisi keilmuan Islam yang agung. Di antara para guru beliau yang paling berpengaruh adalah:
+</p>
+<h3>A. Guru Utama — Kakaknya Sendiri</h3>
+<ul>
+<li><strong>Imam Abu Hamid Al-Ghazali</strong> (450-505 H / 1058-1111 M) — Kakak kandung beliau sendiri, yang merupakan guru terbesar dan paling berpengaruh dalam hidupnya. Dari Abu Hamid, Ahmad mempelajari fikih Syafi'i, ushul fikih, kalam Asy'ari, filsafat, mantiq, dan tasawuf. Abu Hamid bukan hanya guru bagi Ahmad, melainkan juga teladan, pelindung, dan sahabat terdekatnya. Transformasi spiritual yang dialami Abu Hamid — ketika beliau meninggalkan jabatan guru di Nizhamiyah Baghdad dan mengembara selama sepuluh tahun — memberikan pengaruh yang sangat mendalam terhadap Ahmad, yang semakin mantap dalam jalan tasawuf setelah menyaksikan pengalaman spiritual kakaknya.</li>
+</ul>
+<h3>B. Guru-Guru di Naisabur</h3>
+<ul>
+<li><strong>Fakhrul Islam Muhammad bin Muhammad Al-Isfahani</strong> — Seorang ulama besar fikih Syafi'i di Naisabur, yang merupakan salah satu guru Abu Hamid Al-Ghazali. Ahmad mempelajari fikih Syafi'i secara mendalam dari beliau.</li>
+<li><strong>Abu Sa'id Al-Mutawalli</strong> — Seorang ahli ushul fikih dan fikih Syafi'i yang terkenal di Naisabur. Ahmad mempelajari ushul fikih dari beliau.</li>
+<li><strong>Abu'l-Ma'ali Al-Juwaini (Imam Haramain)</strong> — Meskipun Imam Haramain wafat pada tahun 478 H (sebelum Ahmad dewasa), pengaruh keilmuan beliau sampai kepada Ahmad melalui karya-karya beliau dan melalui ajaran Abu Hamid yang merupakan murid langsung Imam Haramain.</li>
+</ul>
+<h3>C. Guru-Guru di Baghdad</h3>
+<ul>
+<li><strong>Abu Bakr An-Nassaj Al-Isfahani</strong> — Seorang sufi besar di Baghdad yang menjadi guru spiritual Ahmad dalam bidang tasawuf. Dari beliau, Ahmad mempelajari adab-adab suluk dan muraqabah.</li>
+<li><strong>Abu'l-Qasim Al-Qusyairi</strong> (melalui karya <em>Ar-Risalah Al-Qusyairiyyah</em>) — Meskipun Al-Qusyairi wafat sebelum Ahmad lahir, karya monumental beliau tentang tasawuf menjadi salah satu rujukan utama Ahmad dalam mempelajari ilmu tasawuf.</li>
+<li><strong>Para Muhadditsin Baghdad</strong> — Ahmad mempelajari hadits dari beberapa muhadditsin besar di Baghdad, yang memberinya sanad keilmuan yang bersambung kepada Rasulullah SAW.</li>
+</ul>
+<h3>D. Guru-Guru Spiritual (Sufi)</h3>
+<ul>
+<li><strong>Teman ayah beliau yang shaleh</strong> — Sufi wara' yang mengasuh beliau dan kakaknya sejak kecil di desa Ghazalah, yang menjadi guru spiritual pertama beliau.</li>
+<li><strong>Para sufi di Tus dan Naisabur</strong> — Ahmad bergaul dengan para sufi di wilayah Khorasan dan mengambil manfaat dari kehadiran mereka.</li>
+<li><strong>Abu Hamid Al-Ghazali</strong> — Selain sebagai guru ilmu zhahir, Abu Hamid juga menjadi guru spiritual Ahmad dalam bidang tasawuf, terutama setelah transformasi spiritual yang dialami Abu Hamid.</li>
+</ul>
+<p>
+Para guru-guru inilah yang membentuk keilmuan dan spiritualitas Syeikh Ahmad Al-Ghazali. Beliau senantiasa menghormati para gurunya dengan penuh takzim, dan menyebut nama mereka dengan penuh rasa syukur dalam karya-karya beliau. Beliau pernah berkata: <em>"Barangsiapa yang tidak mengenal gurunya, maka ia tidak mengenal Tuhannya. Karena melalui gurulah Allah memberikan cahaya ilmu dan ma'rifat kepada hamba-Nya."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENGIKUTI ULAMA — QS. AN-NISA: 59</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا أَطِيعُوا اللَّهَ وَأَطِيعُوا الرَّسُولَ وَأُولِي الْأَمْرِ مِنكُمْ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, taatilah Allah dan taatilah Rasul (Nya), dan ulil amri di antara kamu."
+<br>— QS. An-Nisa: 59
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Pendidikan di Madrasah Nizhamiyah Naisabur</span>
+<div class="karomah-arabic">التَّعْلِيمُ فِي الْمَدْرَسَةِ النِّظَامِيَّةِ بِنَيْسَابُور</div>
+<p>
+Madrasah Nizhamiyah Naisabur adalah salah satu madrasah terbesar dan paling prestisius di dunia Islam pada masa itu. Didirikan oleh Nizhamul Mulk, wazir agung Dinasti Seljuk, madrasah ini menjadi pusat ilmu yang menarik para ulama dan mahasiswa dari seluruh penjuru dunia Islam. Ketika Abu Hamid Al-Ghazali mendapatkan jabatan sebagai guru di madrasah ini pada tahun 484 H (1091 M), Ahmad muda ikut bersamanya dan mulai belajar di lingkungan madrasah yang agung ini.
+</p>
+<p>
+Di Madrasah Nizhamiyah Naisabur, Ahmad mempelajari berbagai bidang ilmu di bawah bimbingan para guru besar. Kurikulum madrasah ini sangat komprehensif, mencakup ilmu-ilmu agama (fikih, ushul fikih, tafsir, hadits, kalam) dan ilmu-ilmu aqliyah (filsafat, mantiq, matematika, astronomi). Ahmad menunjukkan kecerdasan yang luar biasa dalam mempelajari semua bidang ilmu ini, sehingga para guru dan teman-temannya pun terkagum-kagum.
+</p>
+<p>
+Namun, di antara semua bidang ilmu yang dipelajarinya, Ahmad paling tertarik pada ilmu tasawuf dan akhlak. Beliau lebih suka duduk di majelis para sufi daripada di majelis para fuqaha. Beliau lebih tertarik pada pembahasan tentang cinta ilahi, ma'rifatullah, dan penyucian jiwa daripada pembahasan tentang hukum-hukum fikih yang rinci. Kecenderungan inilah yang kelak menjadikan beliau sebagai <em>Sultan al-‘Ussyaq</em> — Raja Para Pecinta Ilahi.
+</p>
+<p>
+Di Naisabur pula Ahmad mulai mengenal dunia sastra Persia — sastra yang kelak menjadi bahasa utama karya-karya beliau. Beliau mempelajari puisi-puisi para penyair sufi Persia seperti Sanai, Fariduddin Aththar (yang lahir setelah beliau wafat, namun karya-karya beliau dipengaruhi oleh Ahmad), dan para penyair lainnya. Dari sinilah Ahmad mengembangkan gaya bahasa puitis yang menjadi ciri khas karya-karya beliau.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH AHMAD TENTANG NORMATIF ILMU</div>
+<div class="arabic-text">
+الْعِلْمُ الَّذِي لَا يُورِثُ الْخَشْيَةَ وَالْمَحَبَّةَ فَهُوَ عِلْمٌ نَاقِصٌ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ilmu yang tidak melahirkan kekhusyukan dan cinta (kepada Allah) adalah ilmu yang tidak sempurna."
+<br>— Syeikh Ahmad Al-Ghazali
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Pendidikan di Madrasah Nizhamiyah Baghdad</span>
+<div class="karomah-arabic">التَّعْلِيمُ فِي الْمَدْرَسَةِ النِّظَامِيَّةِ بِبَغْدَاد</div>
+<p>
+Setelah beberapa tahun di Naisabur, Ahmad mengikuti kakaknya ke Baghdad ketika Abu Hamid mendapatkan jabatan sebagai guru di Madrasah Nizhamiyah Baghdad — madrasah terbesar di ibu kota Kekhalifahan Abbasiyah. Baghdad pada masa itu adalah pusat peradaban Islam dunia — kota yang menjadi tempat berkumpulnya para ulama, sastrawan, filsuf, dan sufi dari seluruh penjuru dunia Islam.
+</p>
+<p>
+Di Baghdad, Ahmad semakin memperdalam ilmu-ilmu yang telah beliau pelajari di Naisabur, dan mulai berkenalan dengan para ulama besar dari berbagai bidang. Beliau belajar hadits dari para muhadditsin Baghdad, belajar fikih dari para fuqaha Irak, dan belajar tasawuf dari para sufi besar di kota ini. Baghdad memberikan kepada Ahmad wawasan yang lebih luas tentang dunia Islam, dan mempertemukan beliau dengan berbagai aliran pemikiran dan tradisi spiritual.
+</p>
+<p>
+Di Baghdad pula Ahmad mulai menunjukkan bakatnya sebagai seorang penceramah (khatib) yang ulung. Beliau sering berceramah di Masjid Jami' Baghdad, dan setiap kali beliau berceramah, ribuan orang — dari kalangan ulama, saudagar, hingga rakyat biasa — berbondong-bondong mendengarkan. Gaya berceramah beliau sangat unik — beliau menggunakan bahasa yang puitis, penuh dengan ungkapan-ungkapan cinta ilahi, dan mampu menyentuh hati para pendengarnya dengan cara yang sangat mendalam. Banyak pendengar beliau yang menangis hingga pingsan karena terharu dengan ceramah-ceramah beliau.
+</p>
+<p>
+Dari sinilah beliau mendapatkan gelar <em>Khatib Baghdad</em> (Penceramah Agung Baghdad) — gelar yang melekat pada beliau hingga hari ini. Beliau pernah berkata tentang seni berceramah: <em>"Ceramah yang baik bukanlah ceramah yang membuat pendengarnya terkagum dengan kepandaian penceramah, melainkan ceramah yang membuat pendengarnya terkagum dengan kebesaran Allah dan rindu kepada Rasulullah."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG DAKWAH — QS. AN-NAHL: 125</div>
+<div class="arabic-text">
+ادْعُ إِلَىٰ سَبِيلِ رَبِّكَ بِالْحِكْمَةِ وَالْمَوْعِظَةِ الْحَسَنَةِ ۖ وَجَادِلْهُم بِالَّتِي هِيَ أَحْسَنُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Serulah (manusia) kepada jalan Tuhanmu dengan hikmah dan pelajaran yang baik, dan bantahlah mereka dengan cara yang baik."
+<br>— QS. An-Nahl: 125
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Sanad Keilmuan dan Spiritual yang Bersambung</span>
+<div class="karomah-arabic">الْإِجَازَةُ وَالسَّنَدُ الْمُتَّصِلُ</div>
+<p>
+Salah satu keistimewaan Syeikh Ahmad Al-Ghazali adalah beliau memiliki sanad keilmuan dan spiritual yang bersambung kepada Rasulullah SAW melalui para ulama dan sufi besar di zamannya. Sanad ini bukan hanya sanad keilmuan (ijazah untuk mengajarkan ilmu-ilmu zhahir), melainkan juga sanad spiritual (silsilah tarekat yang memberinya otoritas untuk membimbing para murid dalam perjalanan spiritual).
+</p>
+<p>
+Sanad keilmuan beliau bersambung melalui:
+</p>
+<ul>
+<li><strong>Imam Abu Hamid Al-Ghazali</strong> → <strong>Fakhrul Islam Al-Isfahani</strong> → <strong>Abu Ishaq Asy-Syirazi</strong> → <strong>Abu Hamid Al-Isfarayini</strong> → ... → <strong>Imam Asy-Syafi'i</strong> → ... → <strong>Rasulullah SAW</strong></li>
+</ul>
+<p>
+Sedangkan sanad spiritual beliau bersambung melalui:
+</p>
+<ul>
+<li><strong>Imam Abu Hamid Al-Ghazali</strong> → <strong>Fakhrul Islam Al-Isfahani</strong> → <strong>Abu Ali Ad-Daqqaq</strong> → <strong>Abu Utsman An-Naisaburi</strong> → <strong>Abu Bakar Asy-Syibli</strong> → <strong>Junaid Al-Baghdadi</strong> → <strong>Siri As-Saqathi</strong> → <strong>Ma'ruf Al-Karkhi</strong> → <strong>Daud Ath-Tha'i</strong> → <strong>Habib Al-'Ajami</strong> → <strong>Hasan Al-Bashri</strong> → <strong>Sayyidina Ali bin Abi Thalib</strong> dan <strong>Sayyidina Abu Bakar Ash-Shiddiq</strong> → <strong>Rasulullah SAW</strong></li>
+</ul>
+<p>
+Sanad yang bersambung inilah yang memberikan legitimasi keilmuan dan spiritual kepada Syeikh Ahmad Al-Ghazali, dan menjadikannya sebagai salah satu mata rantai penting dalam tradisi keilmuan dan spiritual Islam. Beliau senantiasa menjaga sanad ini dengan mengajarkan ilmu yang beliau terima dari para gurunya kepada para murid beliau, sehingga tradisi keilmuan dan spiritual ini terus bersambung hingga hari ini melalui tarekat-tarekat yang bersilsilah kepada beliau.
+</p>
+<p>
+Beliau pernah berkata tentang pentingnya sanad: <em>"Sanad adalah tali yang menghubungkan engkau dengan Rasulullah SAW. Barangsiapa yang memutuskan sanadnya, maka ia telah memutuskan hubungannya dengan Rasulullah. Dan barangsiapa yang menjaga sanadnya, maka ia telah menjaga hubungannya dengan Rasulullah."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENGIKUTI JALAN ORANG-ORANG SHALIH — QS. AT-TAUBAH: 100</div>
+<div class="arabic-text">
+وَالسَّابِقُونَ الْأَوَّلُونَ مِنَ الْمُهَاجِرِينَ وَالْأَنصَارِ وَالَّذِينَ اتَّبَعُوهُم بِإِحْسَانٍ رَّضِيَ اللَّهُ عَنْهُمْ وَرَضُوا عَنْهُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Orang-orang yang terdahulu lagi yang pertama-tama (masuk Islam) dari golongan muhajirin dan anshar dan orang-orang yang mengikuti mereka dengan baik, Allah ridha kepada mereka dan merekapun ridha kepada-Nya."
+<br>— QS. At-Taubah: 100
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Perjalanan Menuntut Ilmu Syeikh Ahmad Al-Ghazali:</strong>
+<ul>
+<li><strong>Pendidikan awal di Ghazalah dan Tus</strong> — menghafal Al-Qur'an dan mempelajari ilmu-ilmu dasar di bawah bimbingan teman ayah yang shaleh</li>
+<li><strong>Pendidikan di Naisabur</strong> — belajar di Madrasah Nizhamiyah di bawah bimbingan kakaknya, Abu Hamid, dan para guru besar lainnya</li>
+<li><strong>Pendidikan di Baghdad</strong> — memperdalam ilmu di ibu kota Kekhalifahan Abbasiyah, bertemu dengan para ulama besar dari berbagai bidang</li>
+<li><strong>Bidang ilmu zhahir</strong> — fikih Syafi'i, ushul fikih, kalam Asy'ari, filsafat, mantiq, tafsir, hadits, nahwu, sharaf, sastra Persia dan Arab</li>
+<li><strong>Bidang ilmu batin</strong> — tasawuf, akhlak, mahabbah, muraqabah, muhasabah, suluk</li>
+<li><strong>Guru utama</strong> — Imam Abu Hamid Al-Ghazali (kakak kandung)</li>
+<li><strong>Guru di Naisabur</strong> — Fakhrul Islam Al-Isfahani, Abu Sa'id Al-Mutawalli</li>
+<li><strong>Guru di Baghdad</strong> — Abu Bakr An-Nassaj Al-Isfahani, para muhadditsin Baghdad</li>
+<li><strong>Guru spiritual</strong> — teman ayah yang shaleh, para sufi di Khorasan dan Baghdad, Abu Hamid Al-Ghazali</li>
+<li><strong>Sanad keilmuan</strong> — bersambung kepada Imam Asy-Syafi'i dan Rasulullah SAW</li>
+<li><strong>Sanad spiritual</strong> — bersambung kepada Junaid Al-Baghdadi, Hasan Al-Bashri, Sayyidina Ali dan Abu Bakar, dan Rasulullah SAW</li>
+<li><strong>Gelar Khatib Baghdad</strong> — diperoleh karena kefasihan dan kedalaman ceramah-ceramah beliau di Masjid Jami' Baghdad</li>
+</ul>
+</div>
+<h2>Doa Memohon Keberkahan Ilmu dan Para Guru</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON ILMU YANG BERMANFAAT</div>
+<div class="arabic-text">
+اللَّهُمَّ انْفَعْنِي بِمَا عَلَّمْتَنِي، وَعَلِّمْنِي مَا يَنْفَعُنِي، وَزِدْنِي عِلْمًا، وَاجْعَلْ مَشَايِخَنَا مِنَ الصَّالِحِينَ الْمُفْلِحِينَ، وَارْزُقْنَا شَفَاعَةَ سَيِّدِنَا أَحْمَدَ الْغَزَّالِيِّ يَوْمَ الْقِيَامَةِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, berilah manfaat kepadaku dengan apa yang telah Engkau ajarkan kepadaku, ajarkanlah kepadaku apa yang bermanfaat bagiku, dan tambahkanlah ilmu kepadaku. Jadikanlah guru-guru kami termasuk orang-orang shaleh yang beruntung, dan anugerahkanlah kepada kami syafaat Sayyidina Ahmad Al-Ghazali pada hari kiamat."
+<br>— Doa terinspirasi dari hadits Rasulullah SAW
+</div>
+</div>
+<h2>Penutup Halaman 3</h2>
+<p>
+Demikianlah perjalanan menuntut ilmu Syeikh Ahmad Al-Ghazali — perjalanan seorang pencari kebenaran yang tidak pernah puas dengan permukaan ilmu, melainkan selalu menyelami samudra hakikat yang tersembunyi di balik setiap ayat dan hadits. Dari desa Ghazalah ke Naisabur, lalu ke Baghdad, beliau berguru kepada para ulama terbesar di zamannya, termasuk kakaknya sendiri, Imam Abu Hamid Al-Ghazali. Di bawah bimbingan para guru inilah beliau menempa dirinya menjadi seorang alim yang memadukan kedalaman fikih, ketajaman kalam, keluasan filsafat, dan kelembutan tasawuf — sebuah perpaduan langka yang menjadikannya salah satu tokoh paling berpengaruh dalam sejarah tasawuf Islam.
+</p>
+<p>
+Setelah menyelesaikan perjalanan menuntut ilmu, Syeikh Ahmad Al-Ghazali memasuki fase baru dalam hidupnya — fase perjalanan spiritual yang lebih mendalam, di mana beliau tidak hanya belajar ilmu tasawuf dari buku-buku dan para guru, melainkan mengalaminya secara langsung dalam perjalanan suluk beliau kepada Allah. Pada halaman berikutnya, kita akan membahas perjalanan spiritual beliau — baik aspek umum (suluk, riyadhah, muraqabah) maupun aspek khusus (kasyf, mukasyafah, dan pengalaman-pengalaman spiritual mendalam).
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+وَعَلَّمَ آدَمَ الْأَسْمَاءَ كُلَّهَا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan Allah mengajarkan kepada Adam nama-nama (seluruhnya)."
+<br>— QS. Al-Baqarah: 31
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="ahmad1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="ahmad2.html" class="article-nav-btn" title="Halaman 2: Masa Kecil & Pendidikan">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="ahmad3.html" class="article-nav-btn active" title="Halaman 3: Perjalanan Menuntut Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="ahmad4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="ahmad5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="ahmad6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="ahmad7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="ahmad8.html" class="article-nav-btn" title="Halaman 8: Warisan Tasawuf">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="ahmad9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

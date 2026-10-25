@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Ahmad Al-Ghazali - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+@media (max-width: 768px) {
+.article-container { max-width: 100%; padding: 20px; }
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover { background: rgba(233, 69, 96, 0.15); transform: scale(1.05); }
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover { background: #e94560; color: #fff; border-color: #e94560; }
+.article-content { font-size: 1.05rem; line-height: 1.9; color: #444; }
+.article-content p { margin-bottom: 20px; text-align: justify; }
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 { font-size: 1.2rem; color: #333; margin: 25px 0 10px; }
+.article-content ul { margin: 15px 0 20px 30px; }
+.article-content ul li { margin-bottom: 10px; line-height: 1.7; }
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title { font-size: 1.3rem; color: #1a1a2e; font-weight: bold; display: inline; }
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul { margin: 15px 0 0 30px; }
+.highlight-box ul li { margin-bottom: 10px; line-height: 1.7; }
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label { text-align: center; color: #aaa; font-size: 0.75rem; margin-top: 6px; }
+.nav-group { display: flex; flex-direction: column; align-items: center; }
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+nav { flex-direction: column; gap: 10px; width: 100%; justify-content: center; }
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav { gap: 6px; padding: 15px; }
+.article-nav-btn { width: 36px; height: 36px; font-size: 1rem; }
+.nav-btn-label { font-size: 0.65rem; }
+}
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam { font-size: 1.3rem !important; letter-spacing: 3px !important; }
+header nav a { padding: 6px 10px !important; font-size: 0.8rem !important; }
+.article-nav-btn { width: 32px; height: 32px; font-size: 0.9rem; }
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Ahmad Al-Ghazali
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Ahmad Al-Ghazali</h1>
+<div class="subtitle">Halaman 6 dari 9 — Tanggapan Pro dan Kontra Masyarakat, Ulama, dan Penguasa terhadap Sepak Terjang Beliau</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Minggu, 25 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Baghdad_-_150px.jpg/440px-Baghdad_-_150px.jpg"
+alt="Suasana Baghdad di abad ke-6 H — tempat Syeikh Ahmad Al-Ghazali berdakwah di tengah pro/kontra"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Nishapur_map.jpg/440px-Nishapur_map.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Baghdad di abad ke-6 H — kota tempat Syeikh Ahmad Al-Ghazali berdakwah dengan ceramah-ceramah yang memukau, sekaligus medan perdebatan antara para pendukung dan penentang ajaran cinta ilahi beliau</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Sepak terjang Syeikh Ahmad Al-Ghazali sebagai <em>Sultan al-'Ussyaq</em> (Raja Para Pecinta Ilahi) dan <em>Khatib Baghdad</em> (Penceramah Agung Baghdad) tidak pernah luput dari perhatian berbagai kalangan. Sebagai seorang pembaharu pemikiran tasawuf yang memperkenalkan bahasa cinta ilahi (<em>mahabbah</em> dan <em>'isyq</em>) dengan gaya puitis yang belum pernah ada sebelumnya, beliau menjadi tokoh yang sangat polarisasi di masanya — ada yang mencintainya dengan sepenuh hati, ada yang mencelanya dengan keras, dan ada yang bersikap netral menunggu kebenaran yang sejati. Tanggapan pro dan kontra ini datang dari tiga kalangan utama: masyarakat awam, para ulama, dan para penguasa. Namun di tengah semua ini, Syeikh Ahmad tetap istiqamah dengan prinsip beliau — tidak terpengaruh oleh pujian, tidak goyah oleh celaan, dan senantiasa kembali kepada Allah sebagai satu-satunya tujuan.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG UJIAN DENGAN PUJIAN DAN CELAAN — QS. AL-QASHASH: 45</div>
+<div class="arabic-text">
+وَلَا تُطِعْ مَنْ أَغْفَلْنَا قَلْبَهُ عَن ذِكْرِنَا وَاتَّبَعَ هَوَاهُ وَكَانَ أَمْرُهُ فُرُطًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan janganlah kamu mengikuti orang yang hatinya telah Kami lalaikan dari mengingati Kami, serta menuruti hawa nafsunya dan adalah keadaannya itu melewati batas."
+<br>— QS. Al-Kahfi: 28
+</div>
+</div>
+<h2>Enam Medan Reaksi — Peta Pro dan Kontra Sang Sultan al-'Ussyaq</h2>
+<p>
+Para ulama sejarah tasawuf mencatat bahwa reaksi terhadap Syeikh Ahmad Al-Ghazali dapat dipetakan ke dalam enam medan utama: (1) tanggapan pro dari masyarakat awam, (2) tanggapan kontra dari masyarakat awam, (3) sikap pro dari kalangan ulama, (4) sikap kontra dari kalangan ulama, (5) sikap penguasa Dinasti Seljuk dan Khalifah Abbasiyah, dan (6) tanggapan diri beliau sendiri terhadap semua pro dan kontra ini. Masing-masing medan ini memiliki dinamika yang unik, dan dari sinilah kita dapat memahami betapa kompleksnya posisi Syeikh Ahmad di masanya.
+</p>
+<p>
+Beliau pernah berkata: <em>"Manusia itu seperti obat — ada yang manis dan menyembuhkan, ada yang pahit namun menyembuhkan, dan ada yang manis namun mematikan. Maka janganlah engkau tertipu oleh manisnya pujian, dan janganlah engkau lari dari pahitnya celaan. Karena yang penting bukanlah apa yang dikatakan manusia tentangmu, melainkan apa yang dikatakan Allah tentangmu di dalam hatimu."</em>
+</p>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH AHMAD TENTANG PUJIAN DAN CELAAN</div>
+<div class="arabic-text">
+لَا تَفْرَحْ بِمَدْحِ النَّاسِ وَلَا تَحْزَنْ بِذَمِّهِمْ، فَإِنَّ الْمَدْحَ وَالذَّمَّ سَوَاءٌ عِنْدَ الْعَارِفِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Janganlah engkau gembira dengan pujian manusia, dan janganlah engkau bersedih dengan celaan mereka. Karena pujian dan celaan itu sama saja di sisi orang yang arif (mengenal Allah)."
+<br>— Syeikh Ahmad Al-Ghazali
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Tanggapan Pro dari Masyarakat — Ribuan Pendengar yang Terpesona</span>
+<div class="karomah-arabic">تَجَاوُبُ الْعَامَّةِ بِالْقَبُولِ — آَلَافُ الْمُصْغِينَ الْمُتَيَمِّمِينَ</div>
+<p>
+Di kalangan masyarakat awam Baghdad, Naisabur, dan wilayah Irak lainnya, Syeikh Ahmad Al-Ghazali mendapatkan sambutan yang sangat luar biasa. Ceramah-ceramah beliau di Masjid Jami' Baghdad dihadiri oleh ribuan orang dari berbagai lapisan masyarakat — dari para saudagar kaya, ulama, pejabat, hingga rakyat biasa, buruh, dan para budak yang baru masuk Islam. Semua datang untuk mendengarkan kata-kata beliau yang penuh dengan cinta ilahi dan menyentuh hati.
+</p>
+<p>
+Di antara bentuk-bentuk tanggapan pro dari masyarakat adalah:
+</p>
+<ul>
+<li><strong>Kehadiran Massal di Majelis Ceramah</strong> — Setiap kali Syeikh Ahmad berceramah, Masjid Jami' Baghdad penuh sesak oleh pendengar. Banyak yang datang sejak subuh untuk mendapatkan tempat di shaf depan. Para sejarawan mencatat bahwa tidak ada khatib di Baghdad pada masa itu yang mampu mengumpulkan massa sebanyak beliau, kecuali kakaknya, Imam Abu Hamid Al-Ghazali, sebelum mengundurkan diri.</li>
+<li><strong>Tangisan dan Pingsan karena Terharu</strong> — Banyak pendengar yang menangis tersedu-sedu, pingsan, atau bahkan mengalami <em>jadzbah</em> (tarik spiritual) ketika mendengarkan ceramah beliau. Kata-kata beliau tentang cinta ilahi seolah-olah membuka pintu-pintu hati yang selama ini terkunci, dan air mata pun mengalir tanpa bisa ditahan.</li>
+<li><strong>Taubat Massal</strong> — Banyak orang yang bertaubat setelah mendengarkan ceramah beliau — para pencuri yang mengembalikan barang curian, para peminum khamar yang menuangkan minuman mereka ke tanah, para pezina yang meninggalkan perbuatan mereka, dan para pedagang curang yang mengembalikan hak-hak orang yang mereka curangi.</li>
+<li><strong>Pembentukan Kelompok Pengajian</strong> — Setelah ceramah-ceramah beliau, banyak kelompok pengajian yang terbentuk di berbagai sudut Baghdad untuk mempelajari dan mengamalkan ajaran-ajaran beliau. Kata-kata beliau dicatat oleh para pendengar dan disebarkan dari mulut ke mulut.</li>
+<li><strong>Cinta dan Penghormatan yang Mendalam</strong> — Masyarakat Baghdad memberikan penghormatan yang sangat tinggi kepada Syeikh Ahmad. Mereka memanggil beliau dengan gelar-gelar mulia seperti <em>Sultan al-'Ussyaq</em>, <em>Khatib Baghdad</em>, dan <em>Muhyi al-Qulub</em> (Penghidup Hati). Banyak yang menganggap beliau sebagai wali Allah yang hidup di tengah mereka.</li>
+<li><strong>Permintaan Doa dan Barakah</strong> — Banyak orang yang datang kepada beliau untuk meminta doa, barakah, dan nasihat spiritual. Beliau senantiasa menerima mereka dengan ramah dan mendoakan mereka dengan tulus.</li>
+</ul>
+<p>
+Salah seorang murid beliau yang bernama Abu Ishaq Al-Kazruini berkata mengenang: <em>"Ketika Syeikh Ahmad berceramah, seolah-olah seluruh hadirat turun ke masjid. Kata-kata beliau bukan berasal dari otaknya, melainkan dari hatinya yang telah dipenuhi oleh cahaya Allah. Siapa pun yang mendengarnya, hatinya akan hidup kembali setelah mati."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG DAKWAH YANG MENYENTUH HATI — QS. MARYAM: 58</div>
+<div class="arabic-text">
+أُولَٰئِكَ الَّذِينَ أَنْعَمَ اللَّهُ عَلَيْهِم مِّنَ النَّبِيِّينَ مِن ذُرِّيَّةِ آدَمَ وَمِمَّنْ حَمَلْنَا مَعَ نُوحٍ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Mereka itu adalah orang-orang yang telah diberi nikmat oleh Allah, (yaitu) para nabi dari keturunan Adam, dan dari orang-orang yang Kami angkat bersama Nuh..."
+<br>— QS. Maryam: 58
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Tanggapan Kontra dari Masyarakat — Fitnah, Kecurigaan, dan Penolakan</span>
+<div class="karomah-arabic">تَجَاوُبُ الْعَامَّةِ بِالرَّفْضِ — التُّهَمُ وَالشُّبُهَاتُ وَالِانْكِارُ</div>
+<p>
+Di sisi lain, tidak sedikit pula masyarakat yang menanggapi Syeikh Ahmad dengan negatif. Penolakan ini datang dari berbagai kalangan — dari orang-orang awam yang tidak memahami tasawuf, dari para pendengki yang iri dengan popularitas beliau, dan dari orang-orang yang memang memiliki penyakit di hatinya.
+</p>
+<p>
+Di antara bentuk-bentuk tanggapan kontra dari masyarakat adalah:
+</p>
+<ul>
+<li><strong>Tuduhan Sebagai Penyair Cinta Profan</strong> — Sebagian orang awam yang tidak memahami konteks spiritual menganggap bahasa cinta ilahi yang digunakan Syeikh Ahmad sebagai bahasa cinta profan (duniawi) yang tidak pantas diucapkan oleh seorang ulama. Mereka menuduh beliau mengajarkan syair-syair cinta yang menyerupai syair-syair cinta duniawi yang diharamkan.</li>
+<li><strong>Tuduhan Sebagai Qalandar (Sufi Liar)</strong> — Sebagian orang menuduh beliau sebagai <em>qalandar</em> — sufi liar yang tidak terikat dengan syariat dan sunnah. Tuduhan ini sangat menyakitkan bagi beliau, karena beliau adalah orang yang sangat berpegang teguh pada syariat dan sunnah Nabi SAW.</li>
+<li><strong>Fitnah Sihir dan Pengaruh Jahat</strong> — Sebagian pendengki menyebarkan fitnah bahwa pengaruh ceramah beliau terhadap pendengar adalah akibat sihir atau pengaruh jahat, bukan karena kebenaran yang beliau sampaikan. Mereka berkata: <em>"Ia menyihir orang-orang dengan kata-katanya."</em></li>
+<li><strong>Kecurigaan terhadap Syathahāt</strong> — Ungkapan-ungkapan spiritual (<em>syathahāt</em>) yang beliau gunakan dalam ceramah-ceramah beliau sering disalahpahami oleh orang awam. Misalnya, ungkapan <em>lenyapnya pecinta dalam Yang Dicintai</em> oleh sebagian orang dipahami sebagai <em>ittihad</em> (penyatuan dengan Allah) atau <em>hulul</em> (inkarnasi), yang merupakan keyakinan yang sesat dalam Islam.</li>
+<li><strong>Iri Hati terhadap Popularitas</strong> — Popularitas beliau yang sangat tinggi menimbulkan iri hati di kalangan sebagian orang. Mereka tidak dapat menerima bahwa seorang ulama muda (beliau lebih muda dari banyak ulama besar di Baghdad) mendapatkan perhatian yang begitu besar dari masyarakat.</li>
+<li><strong>Penyebaran Rumor Palsu</strong> — Beberapa rumor palsu disebarkan tentang kehidupan pribadi beliau — rumor yang tidak memiliki dasar kebenaran, namun dipercaya oleh sebagian orang yang memang ingin menjatuhkan reputasi beliau.</li>
+</ul>
+<p>
+Namun, Syeikh Ahmad menghadapi semua ini dengan kesabaran yang luar biasa. Beliau tidak pernah membalas fitnah dengan fitnah, tidak pernah membela diri dengan keras, melainkan membiarkan waktu dan kebenaran yang berbicara. Beliau berkata: <em>"Kebenaran itu seperti minyak — meskipun engkau menekannya ke bawah air, ia akan tetap muncul ke permukaan. Dan kebatilan itu seperti buih — meskipun ia tampak besar, ia akan segera hilang tanpa bekas."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEBENARAN YANG TETAP TERUNGKAP — QS. AL-ISRA: 81</div>
+<div class="arabic-text">
+وَقُلْ جَاءَ الْحَقُّ وَزَهَقَ الْبَاطِلُ ۚ إِنَّ الْبَاطِلَ كَانَ زَهُوقًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan katakanlah: 'Yang benar telah datang dan yang batil pasti lenyap.' Sesungguhnya yang batil itu pasti lenyap."
+<br>— QS. Al-Isra': 81
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Sikap Pro dari Kalangan Ulama — Para Sufi dan Fuqaha yang Memahami</span>
+<div class="karomah-arabic">مَوْقِفُ الْعُلَمَاءِ الْمُؤَيِّدِينَ — الصُّوفِيَّةُ وَالْفُقَهَاءُ الْبَصِيرُونَ</div>
+<p>
+Di kalangan ulama, Syeikh Ahmad Al-Ghazali mendapatkan dukungan yang sangat kuat dari para sufi besar dan fuqaha yang memahami hakikat tasawuf yang sejati. Mereka melihat dalam diri beliau seorang wali yang memadukan kedalaman ilmu zhahir dengan ketinggian maqam batin — perpaduan langka yang menjadikan beliau sebagai tokoh yang sangat dihormati di kalangan ulama sejati.
+</p>
+<p>
+Di antara ulama yang mendukung dan memuji Syeikh Ahmad adalah:
+</p>
+<ul>
+<li><strong>Imam Abu Hamid Al-Ghazali</strong> — Kakak kandung beliau sendiri, yang merupakan salah satu ulama terbesar di zamannya. Abu Hamid senantiasa membimbing dan mendukung adiknya, dan menyebut beliau sebagai <em>lambang cinta ilahi yang hidup</em>. Dalam beberapa surat beliau, Abu Hamid menulis tentang adiknya dengan penuh cinta dan penghormatan.</li>
+<li><strong>Syeikh Abu Ishaq Al-Kazruini</strong> — Salah satu murid terbesar Syeikh Ahmad, yang kemudian menjadi mursyid besar di Fars (Iran selatan). Beliau senantiasa menyebut guru beliau dengan gelar-gelar mulia dan menyebarkan ajaran-ajaran beliau ke seluruh penjuru Persia.</li>
+<li><strong>Syeikh Abu An-Najib As-Suhrawardi</strong> — Pendiri Tarekat Suhrawardiyah, yang merupakan murid langsung Syeikh Ahmad. Beliau menyebut guru beliau sebagai <em>Quthb al-Aqthab</em> (Porosnya Para Poros) dan <em>Sultan al-'Ussyaq</em>.</li>
+<li><strong>Para Ulama Sufi di Baghdad</strong> — Banyak ulama sufi di Baghdad yang menghormati Syeikh Ahmad dan menganggap beliau sebagai salah satu bintang tasawuf di zamannya. Mereka menghadiri majelis-majelis beliau dan mengambil manfaat dari ajaran-ajaran beliau.</li>
+<li><strong>Para Fuqaha yang Memahami Hakikat</strong> — Tidak semua fuqaha menolak Syeikh Ahmad. Ada beberapa fuqaha besar yang memahami bahwa tasawuf yang beliau ajarkan adalah tasawuf yang sejati — tasawuf yang berpijak pada syariat dan sunnah. Mereka membela beliau dari serangan-serangan yang tidak adil.</li>
+<li><strong>Para Sastrawan dan Penyair</strong> — Banyak sastrawan dan penyair Persia dan Arab yang mengagumi keindahan bahasa Syeikh Ahmad. Karya beliau <em>Savanih al-'Ussyaq</em> menjadi inspirasi bagi banyak penyair setelahnya, termasuk Fariduddin Aththar dan Jalaluddin Rumi.</li>
+</ul>
+<p>
+Salah seorang fuqaha yang membela Syeikh Ahmad berkata: <em>"Barangsiapa yang menuduh Syeikh Ahmad sebagai orang yang melampaui syariat, maka ia belum memahami makna syariat itu sendiri. Karena syariat yang sejati akan membawa engkau kepada hakikat, dan hakikat yang sejati akan mengembalikan engkau kepada syariat. Syeikh Ahmad adalah bukti hidup dari perpaduan keduanya."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG PARA ULAMA YANG TAKUT KEPADA ALLAH — QS. FATHIR: 28</div>
+<div class="arabic-text">
+إِنَّمَا يَخْشَى اللَّهَ مِنْ عِبَادِهِ الْعُلَمَاءُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sesungguhnya yang takut kepada Allah di antara hamba-hamba-Nya, hanyalah ulama."
+<br>— QS. Fathir: 28
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Sikap Kontra dari Kalangan Ulama — Fuqaha Zhahir dan Ahli Kalam</span>
+<div class="karomah-arabic">مَوْقِفُ الْعُلَمَاءِ الْمُعَارِضِينَ — الظَّاهِرِيُّونَ وَالْمُتَكَلِّمُونَ</div>
+<p>
+Di sisi lain, tidak sedikit pula ulama yang menentang Syeikh Ahmad Al-Ghazali dengan keras. Penentangan ini terutama datang dari dua kelompok: (1) para fuqaha zhahir yang berpegang teguh pada pemahaman lahiriah semata, dan (2) para ahli kalam rasionalis yang menolak konsep kasyf dan pengalaman spiritual.
+</p>
+<p>
+Di antara bentuk-bentuk penentangan dari kalangan ulama adalah:
+</p>
+<ul>
+<li><strong>Tuduhan Bid'ah</strong> — Sebagian fuqaha zhahir menuduh Syeikh Ahmad mengajarkan ajaran bid'ah, khususnya dalam penggunaan bahasa-bahasa cinta ilahi yang dianggap oleh mereka sebagai bahasa yang tidak lazim dalam agama. Mereka berkata: <em>"Para salaf tidak pernah berbicara seperti ini, maka ini adalah bid'ah yang harus ditolak."</em></li>
+<li><strong>Tuduhan Zindiq (Melampaui Batas)</strong> — Sebagian ulama yang lebih keras menuduh Syeikh Ahmad sebagai zindiq — orang yang melampaui batas-batas aqidah Islam. Tuduhan ini sangat berbahaya pada masa itu, karena dapat berakibat pada hukuman mati. Namun, tuduhan ini tidak pernah terbukti, karena Syeikh Ahmad senantiasa berpegang teguh pada aqidah Ahlus Sunnah wal Jama'ah.</li>
+<li><strong>Penolakan terhadap Tafsir Isyari</strong> — Sebagian ulama menolak tafsir isyari (penafsiran batin) yang digunakan oleh Syeikh Ahmad dalam memahami ayat-ayat Al-Qur'an. Mereka menganggap tafsir ini sebagai tafsir tanpa dasar yang jelas, yang dapat menyesatkan orang awam.</li>
+<li><strong>Kritik terhadap Konsep Mahabbah dan 'Isyq</strong> — Sebagian ahli kalam mengkritik konsep <em>mahabbah</em> (cinta) dan <em>'isyq</em> (cinta yang membara) yang diajarkan oleh Syeikh Ahmad. Mereka menganggap konsep ini tidak memiliki dasar yang kuat dalam ilmu kalam, dan lebih menekankan pada konsep <em>ma'rifah</em> (pengetahuan tentang Allah) sebagai jalan utama menuju Allah.</li>
+<li><strong>Perdebatan tentang Syathahāt</strong> — Sebagian ulama memperdebatkan status hukum <em>syathahāt</em> (ungkapan-ungkapan spiritual) yang diucapkan oleh Syeikh Ahmad dan para sufi lainnya. Ada yang menganggapnya sebagai kekufuran, ada yang menganggapnya sebagai kekeliruan yang harus dimaafkan, dan ada yang menganggapnya sebagai ungkapan yang harus dipahami dalam konteks spiritual.</li>
+<li><strong>Upaya untuk Mengucilkan Beliau</strong> — Sebagian ulama yang memusuhi beliau berupaya untuk mengucilkannya dari kalangan ulama — tidak mengundang beliau ke majelis-majelis ilmiah, tidak menyebut nama beliau dalam karya-karya mereka, dan bahkan melarang murid-murid mereka untuk berguru kepada beliau.</li>
+</ul>
+<p>
+Namun, Syeikh Ahmad menghadapi semua ini dengan hikmah dan kelembutan. Beliau tidak pernah membalas dengan keras, melainkan dengan menjelaskan bahwa tasawuf yang beliau ajarkan bukanlah tasawuf yang melampaui syariat, melainkan tasawuf yang berpijak pada syariat dan sunnah. Beliau berkata: <em>"Aku bukanlah orang yang melampaui syariat, melainkan orang yang mencari hakikat di balik syariat. Dan barangsiapa yang mencari hakikat tanpa syariat, maka ia adalah orang yang tersesat."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG PERBEDAAN PENDAPAT — QS. AN-NISA: 59</div>
+<div class="arabic-text">
+فَإِن تَنَازَعْتُمْ فِي شَيْءٍ فَرُدُّوهُ إِلَى اللَّهِ وَالرَّسُولِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Kemudian jika kamu berlainan pendapat tentang sesuatu, maka kembalikanlah ia kepada Allah (Al-Qur'an) dan Rasul (sunnahnya)."
+<br>— QS. An-Nisa: 59
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Sikap Penguasa — Dinasti Seljuk dan Khalifah Abbasiyah</span>
+<div class="karomah-arabic">مَوْقِفُ الْحُكَّامِ — الدَّوْلَةُ السَّلْجُوقِيَّةُ وَالْخِلَافَةُ الْعَبَّاسِيَّةُ</div>
+<p>
+Sikap penguasa terhadap Syeikh Ahmad Al-Ghazali sangat dipengaruhi oleh posisi beliau sebagai adik kandung Imam Abu Hamid Al-Ghazali — ulama yang sangat dihormati oleh para penguasa Dinasti Seljuk dan Khalifah Abbasiyah. Secara umum, para penguasa bersikap positif terhadap beliau, meskipun ada pula yang bersikap hati-hati karena pengaruh para ulama yang memusuhi beliau.
+</p>
+<p>
+Di antara sikap-sikap penguasa terhadap beliau adalah:
+</p>
+<ul>
+<li><strong>Penghormatan dari Khalifah Abbasiyah</strong> — Khalifah Abbasiyah di Baghdad pada masa itu (terutama pada masa Khalifah Al-Mustazhir dan penerusnya) memberikan penghormatan yang tinggi kepada Syeikh Ahmad, sebagian besar karena hormat mereka kepada kakaknya, Imam Abu Hamid. Beliau diizinkan untuk berceramah di masjid-masjid utama Baghdad tanpa hambatan.</li>
+<li><strong>Dukungan dari Wazir Dinasti Seljuk</strong> — Para wazir Dinasti Seljuk yang merupakan pendukung utama Imam Abu Hamid juga memberikan dukungan kepada Syeikh Ahmad. Mereka menganggap beliau sebagai penerus spiritual kakaknya, dan memberikan fasilitas untuk kegiatan dakwah beliau.</li>
+<li><strong>Undangan ke Istana</strong> — Syeikh Ahmad beberapa kali diundang ke istana untuk memberikan nasihat spiritual kepada para penguasa. Beliau menerima undangan ini dengan sikap yang sangat hati-hati — beliau memberikan nasihat dengan hikmah, namun tidak pernah mendekat secara berlebihan kepada penguasa, sehingga tidak menimbulkan kesan bahwa beliau adalah ulama istana.</li>
+<li><strong>Perlindungan dari Gangguan</strong> — Ketika ada upaya dari sebagian ulama untuk mengganggu kegiatan dakwah beliau, para penguasa memberikan perlindungan kepada beliau. Hal ini menunjukkan bahwa posisi beliau di mata penguasa cukup kuat, meskipun tidak sekuat posisi kakaknya.</li>
+<li><strong>Sikap Hati-Hati Sebagian Penguasa</strong> — Meskipun mayoritas penguasa bersikap positif, ada pula sebagian penguasa yang bersikap hati-hati terhadap beliau, khususnya karena pengaruh para ulama yang memusuhi beliau. Mereka tidak secara terbuka menentang beliau, namun juga tidak memberikan dukungan yang penuh.</li>
+<li><strong>Tidak Ada Persekusi Resmi</strong> — Berbeda dengan beberapa sufi lain di masa-masa sebelumnya (seperti Al-Hallaj yang dihukum mati), Syeikh Ahmad tidak pernah mengalami persekusi resmi dari penguasa. Beliau wafat dalam keadaan dihormati dan dimakamkan dengan layak.</li>
+</ul>
+<p>
+Syeikh Ahmad sendiri bersikap sangat hati-hati dalam berinteraksi dengan para penguasa. Beliau tidak pernah mencari-cari kedekatan dengan mereka, dan tidak pernah memanfaatkan hubungan dengan mereka untuk kepentingan pribadi. Beliau berkata: <em>"Penguasa itu seperti api — jika engkau mendekat terlalu jauh, engkau akan terbakar; jika engkau menjauh terlalu jauh, engkau akan kedinginan. Maka hendaklah engkau berada di tengah-tengah — memberikan hak mereka dengan nasihat yang baik, namun tidak mendekat terlalu jauh hingga engkau kehilangan kemerdekaan hatimu."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG SIKAP TERHADAP PENGUASA — QS. AL-HUJURAT: 13</div>
+<div class="arabic-text">
+يَا أَيُّهَا النَّاسُ إِنَّا خَلَقْنَاكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَاكُمْ شُعُوبًا وَقَبَائِلَ لِتَعَارَفُوا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Hai manusia, sesungguhnya Kami menciptakan kamu dari seorang laki-laki dan seorang perempuan dan menjadikan kamu berbangsa-bangsa dan bersuku-suku supaya kamu saling kenal-mengenal."
+<br>— QS. Al-Hujurat: 13
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">6</span>
+<span class="karomah-title">Tanggapan Diri Syeikh Ahmad — Sabar, Hikmah, dan Cinta</span>
+<div class="karomah-arabic">تَجَاوُبُ الشَّيْخِ نَفْسِهِ — الصَّبْرُ وَالْحِكْمَةُ وَالْمَحَبَّةُ</div>
+<p>
+Yang paling mengagumkan dari seluruh dinamika pro dan kontra ini adalah tanggapan diri Syeikh Ahmad sendiri terhadap semua reaksi yang datang kepada beliau. Beliau tidak pernah terpengaruh oleh pujian, tidak pernah goyah oleh celaan, dan senantiasa kembali kepada Allah sebagai satu-satunya tujuan. Sikap beliau ini menjadi teladan bagi para dai dan mursyid di sepanjang zaman.
+</p>
+<p>
+Di antara prinsip-prinsip yang beliau pegang dalam menghadapi pro dan kontra adalah:
+</p>
+<ul>
+<li><strong>Tidak Terpengaruh oleh Pujian</strong> — Ketika orang-orang memuji beliau, beliau tidak menjadi sombong atau bangga diri. Beliau menganggap pujian sebagai ujian yang lebih berat daripada celaan, karena pujian dapat merusak hati jika tidak disikapi dengan benar. Beliau berkata: <em>"Pujian manusia adalah racun yang manis — jika engkau meminumnya tanpa sadar, ia akan membunuh hatimu."</em></li>
+<li><strong>Tidak Goyah oleh Celaan</strong> — Ketika orang-orang mencela beliau, beliau tidak menjadi sedih atau marah. Beliau menganggap celaan sebagai ujian yang dapat membersihkan hati dari kotoran-kotoran tersembunyi. Beliau berkata: <em>"Celaan orang yang mencelamu karena Allah adalah hadiah yang tersembunyi — ia membersihkan hatimu dari sifat-sifat yang tidak engkau sadari."</em></li>
+<li><strong>Mencintai Para Pencela</strong> — Salah satu keistimewaan beliau adalah beliau senantiasa mencintai orang-orang yang mencela beliau, dan mendoakan mereka dengan kebaikan. Beliau berkata: <em>"Barangsiapa yang mencelaku, maka ia adalah kekasihku — karena ia mengingatkanku dari aibku, atau mengujiku dengan kesabaran."</em></li>
+<li><strong>Tidak Membela Diri dengan Keras</strong> — Beliau tidak pernah membalas fitnah dengan fitnah, tidak pernah membela diri dengan keras, melainkan membiarkan waktu dan kebenaran yang berbicara. Beliau berkata: <em>"Biarkanlah kebenaran itu bersinar dengan cahayanya sendiri — ia tidak membutuhkan pembelaanmu, karena ia adalah pembela dirinya sendiri."</em></li>
+<li><strong>Kembali kepada Allah</strong> — Dalam setiap keadaan — baik ketika dipuji maupun ketika dicela — beliau senantiasa kembali kepada Allah dengan dzikir, doa, dan khalwat. Beliau berkata: <em>"Ketika manusia memujiku, aku lari kepada Allah dari diriku. Dan ketika manusia mencelaku, aku lari kepada Allah dari mereka."</em></li>
+<li><strong>Mendoakan Umat</strong> — Meskipun banyak orang yang mencela beliau, beliau senantiasa mendoakan umat Islam dengan kebaikan. Beliau berkata: <em>"Doaku untuk umat ini lebih aku cintai daripada dunia dan seisinya. Karena aku tidak mencari cinta manusia, melainkan cinta Allah — dan cinta Allah didapat dengan mencintai hamba-hamba-Nya."</em></li>
+</ul>
+<p>
+Sikap beliau ini menjadi teladan bagi kita semua — bagaimana seorang dai dan mursyid harus bersikap di tengah masyarakat yang beragam, dengan berbagai pandangan dan pemahaman. Beliau mengajarkan bahwa dakwah bukanlah tentang memenangkan diri sendiri, melainkan tentang menyampaikan kebenaran dengan cara yang terbaik — dengan hikmah, kelembutan, dan cinta.
+</p>
+<p>
+Beliau pernah berkata dalam salah satu ceramah beliau yang terkenal: <em>"Aku tidak mencari ridha manusia, karena ridha manusia adalah tujuan yang tidak pernah tercapai. Aku hanya mencari ridha Allah — dan barangsiapa yang mendapatkan ridha Allah, maka ia akan mendapatkan cinta manusia meskipun mereka tidak menyadarinya. Dan barangsiapa yang mencari ridha manusia dengan mengorbankan ridha Allah, maka ia akan kehilangan keduanya."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENCARI RIDHA ALLAH — QS. AL-BAQARAH: 207</div>
+<div class="arabic-text">
+وَمِنَ النَّاسِ مَن يَشْرِي نَفْسَهُ ابْتِغَاءَ مَرْضَاتِ اللَّهِ ۗ وَاللَّهُ رَءُوفٌ بِالْعِبَادِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Di antara manusia ada orang yang mengorbankan dirinya karena mencari keridhaan Allah; dan Allah Maha Penyayang kepada hamba-hamba-Nya."
+<br>— QS. Al-Baqarah: 207
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Tanggapan Pro dan Kontra terhadap Syeikh Ahmad Al-Ghazali:</strong>
+<ul>
+<li><strong>Pro dari masyarakat awam:</strong> Kehadiran massal di majelis ceramah, tangisan dan pingsan karena terharu, taubat massal, pembentukan kelompok pengajian, cinta dan penghormatan mendalam, permintaan doa dan barakah</li>
+<li><strong>Kontra dari masyarakat awam:</strong> Tuduhan sebagai penyair cinta profan, tuduhan sebagai qalandar, fitnah sihir, kesalahpahaman terhadap syathahāt, iri hati terhadap popularitas, penyebaran rumor palsu</li>
+<li><strong>Pro dari ulama:</strong> Dukungan dari Abu Hamid Al-Ghazali, Abu Ishaq Al-Kazruini, Abu An-Najib As-Suhrawardi, para sufi Baghdad, fuqaha yang memahami hakikat, para sastrawan dan penyair</li>
+<li><strong>Kontra dari ulama:</strong> Tuduhan bid'ah, tuduhan zindiq, penolakan tafsir isyari, kritik terhadap konsep mahabbah, perdebatan tentang syathahāt, upaya pengucilan</li>
+<li><strong>Sikap penguasa:</strong> Penghormatan dari Khalifah Abbasiyah, dukungan dari wazir Seljuk, undangan ke istana, perlindungan dari gangguan, sikap hati-hati sebagian penguasa, tidak ada persekusi resmi</li>
+<li><strong>Sikap diri beliau:</strong> Tidak terpengaruh pujian, tidak goyah oleh celaan, mencintai para pencela, tidak membela diri dengan keras, kembali kepada Allah, mendoakan umat</li>
+<li><strong>Prinsip utama:</strong> Mencari ridha Allah, bukan ridha manusia</li>
+<li><strong>Warisan sikap:</strong> Menjadi teladan bagi para dai dan mursyid dalam menghadapi dinamika pro/kontra</li>
+</ul>
+</div>
+<h2>Doa Memohon Keteguhan Hati di Tengah Umat</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON KETEGUHAN HATI DAN HIKMAH</div>
+<div class="arabic-text">
+اللَّهُمَّ لَا تَجْعَلْ مُصِيبَتَنَا فِي دِينِنَا، وَلَا تَجْعَلِ الدُّنْيَا أَكْبَرَ هَمِّنَا، وَلَا إِلَى عِلْمِنَا مَصِيرَنَا. اللَّهُمَّ ارْزُقْنَا الصَّبْرَ عِنْدَ الْبَلَاءِ، وَالشُّكْرَ عِنْدَ الرَّخَاءِ، وَالرِّضَا عِنْدَ الْقَضَاءِ، وَاجْعَلْنَا مِمَّنْ يَطْلُبُونَ رِضَاكَ وَلَا يَطْلُبُونَ رِضَاءَ النَّاسِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, janganlah Engkau jadikan musibah kami dalam agama kami, janganlah Engkau jadikan dunia sebagai cita-cita terbesar kami, dan janganlah Engkau jadikan ilmu kami sebagai ujung perjalanan kami. Ya Allah, anugerahkanlah kepada kami kesabaran ketika mendapat cobaan, syukur ketika mendapat nikmat, dan ridha ketika menghadapi takdir. Jadikanlah kami termasuk orang-orang yang mencari ridha-Mu, bukan ridha manusia."
+<br>— Doa terinspirasi dari hadits Rasulullah SAW
+</div>
+</div>
+<h2>Penutup Halaman 6</h2>
+<p>
+Demikianlah peta tanggapan pro dan kontra terhadap Syeikh Ahmad Al-Ghazali di masanya — sebuah peta yang sangat kompleks dan dinamis, yang mencerminkan betapa berpengaruhnya beliau di tengah masyarakat, ulama, dan penguasa. Di satu sisi, beliau dicintai oleh ribuan orang yang terpesona oleh ceramah-ceramah beliau tentang cinta ilahi. Di sisi lain, beliau dicela oleh sebagian orang yang tidak memahami ajaran beliau atau yang iri dengan popularitas beliau. Di kalangan ulama, beliau didukung oleh para sufi besar dan fuqaha yang memahami hakikat, namun ditentang oleh fuqaha zhahir dan ahli kalam rasionalis. Di kalangan penguasa, beliau dihormati dan dilindungi, meskipun ada pula yang bersikap hati-hati.
+</p>
+<p>
+Namun, di tengah semua ini, Syeikh Ahmad tetap istiqamah dengan prinsip beliau — tidak terpengaruh oleh pujian, tidak goyah oleh celaan, dan senantiasa kembali kepada Allah sebagai satu-satunya tujuan. Sikap beliau ini menjadi teladan bagi kita semua — bagaimana seorang dai dan mursyid harus bersikap di tengah masyarakat yang beragam, dengan berbagai pandangan dan pemahaman. Beliau mengajarkan bahwa dakwah bukanlah tentang memenangkan diri sendiri, melainkan tentang menyampaikan kebenaran dengan cara yang terbaik — dengan hikmah, kelembutan, dan cinta.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas secara khusus sikap Syeikh Ahmad Al-Ghazali terhadap para penguasa di masanya — bagaimana beliau berinteraksi dengan mereka, bagaimana beliau memberikan nasihat, dan bagaimana beliau menjaga kemerdekaan hati beliau di tengah godaan-godaan dunia yang datang dari istana.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan barangsiapa yang bertawakkal kepada Allah, maka Allah cukup baginya."
+<br>— QS. Ath-Thalaq: 3
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="ahmad1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="ahmad2.html" class="article-nav-btn" title="Halaman 2: Masa Kecil & Pendidikan">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="ahmad3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="ahmad4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="ahmad5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="ahmad6.html" class="article-nav-btn active" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="ahmad7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="ahmad8.html" class="article-nav-btn" title="Halaman 8: Warisan Tasawuf">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="ahmad9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

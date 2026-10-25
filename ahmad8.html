@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Ahmad Al-Ghazali - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+@media (max-width: 768px) {
+.article-container { max-width: 100%; padding: 20px; }
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover { background: rgba(233, 69, 96, 0.15); transform: scale(1.05); }
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover { background: #e94560; color: #fff; border-color: #e94560; }
+.article-content { font-size: 1.05rem; line-height: 1.9; color: #444; }
+.article-content p { margin-bottom: 20px; text-align: justify; }
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 { font-size: 1.2rem; color: #333; margin: 25px 0 10px; }
+.article-content ul { margin: 15px 0 20px 30px; }
+.article-content ul li { margin-bottom: 10px; line-height: 1.7; }
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title { font-size: 1.3rem; color: #1a1a2e; font-weight: bold; display: inline; }
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul { margin: 15px 0 0 30px; }
+.highlight-box ul li { margin-bottom: 10px; line-height: 1.7; }
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label { text-align: center; color: #aaa; font-size: 0.75rem; margin-top: 6px; }
+.nav-group { display: flex; flex-direction: column; align-items: center; }
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+nav { flex-direction: column; gap: 10px; width: 100%; justify-content: center; }
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav { gap: 6px; padding: 15px; }
+.article-nav-btn { width: 36px; height: 36px; font-size: 1rem; }
+.nav-btn-label { font-size: 0.65rem; }
+}
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam { font-size: 1.3rem !important; letter-spacing: 3px !important; }
+header nav a { padding: 6px 10px !important; font-size: 0.8rem !important; }
+.article-nav-btn { width: 32px; height: 32px; font-size: 0.9rem; }
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Ahmad Al-Ghazali
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Ahmad Al-Ghazali</h1>
+<div class="subtitle">Halaman 8 dari 9 — Warisan Tasawuf, Karya Monumental, dan Mata Rantai Spiritual yang Abadi</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Minggu, 25 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Whirling_dervishes_in_Istanbul.jpg/440px-Whirling_dervishes_in_Istanbul.jpg"
+alt="Warisan tasawuf Syeikh Ahmad Al-Ghazali — menyebar ke seluruh penjuru dunia Islam"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Islamic_Calligraphy.jpg/440px-Islamic_Calligraphy.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Warisan tasawuf Syeikh Ahmad Al-Ghazali — api cinta ilahi yang beliau nyalakan di Baghdad pada abad ke-6 H, kini terus menyala di hati jutaan salik di seluruh penjuru dunia Islam melalui karya-karya beliau dan tarekat-tarekat yang bersilsilah kepadanya</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Warisan tasawuf Syeikh Ahmad Al-Ghazali bukanlah warisan yang mati dalam lembaran-lembaran kitab tua, melainkan warisan yang hidup — yang terus mengalir seperti sungai cinta ilahi dari abad ke-6 H hingga hari ini, menghidupkan hati para salik, menginspirasi para penyair, dan membentuk tradisi spiritual umat Islam di seluruh penjuru dunia. Melalui karya-karya monumental beliau — terutama <em>Savanih al-'Ussyaq</em> (Perjalanan Para Pecinta) — melalui murid-murid besar beliau yang menjadi pendiri tarekat-tarekat agung, dan melalui pengaruh beliau terhadap para sufi dan penyair besar setelahnya seperti Fariduddin Aththar dan Jalaluddin Rumi, api cinta ilahi yang beliau nyalakan di Baghdad terus menyala hingga hari ini. Beliau bukan hanya seorang sufi, melainkan <strong>bapak spiritual dari tradisi tasawuf Persia</strong> yang membentuk wajah tasawuf Islam selama hampir seribu tahun.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG WARISAN KEBAIKAN — QS. AN-NISA: 9</div>
+<div class="arabic-text">
+وَلْيَخْشَ الَّذِينَ لَوْ تَرَكُوا مِنْ خَلْفِهِمْ ذُرِّيَّةً ضِعَافًا خَافُوا عَلَيْهِمْ ۖ فَلْيَتَّقُوا اللَّهَ وَلْيَقُولُوا قَوْلًا سَدِيدًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan hendaklah takut kepada Allah orang-orang yang seandainya meninggalkan di belakang mereka anak-anak yang lemah, yang mereka khawatir terhadap (kesejahteraan) mereka. Oleh sebab itu hendaklah mereka bertakwa kepada Allah dan hendaklah mereka mengucapkan perkataan yang benar."
+<br>— QS. An-Nisa: 9
+</div>
+</div>
+<h2>Enam Pilar Warisan — Api Cinta yang Tak Pernah Padam</h2>
+<p>
+Warisan Syeikh Ahmad Al-Ghazali dapat dipetakan ke dalam enam pilar utama yang saling menopang: (1) karya-karya monumental beliau yang menjadi rujukan utama tasawuf Persia, (2) murid-murid besar beliau yang menjadi pendiri tarekat-tarekat agung, (3) silsilah spiritual yang bersambung hingga hari ini, (4) pengaruh beliau terhadap para sufi dan penyair besar setelahnya, (5) ajaran mahabbah yang menjadi inti tasawuf Islam, dan (6) prinsip-prinsip spiritual yang diwariskan kepada umat. Keenam pilar inilah yang menjadikan beliau bukan hanya seorang wali di zamannya, melainkan seorang <em>imam al-muhammadin</em> — imam bagi generasi-generasi setelahnya.
+</p>
+<p>
+Beliau pernah berkata: <em>"Aku tidak meninggalkan harta, tidak meninggalkan istana, tidak meninggalkan kedudukan. Yang aku tinggalkan hanyalah kata-kata yang keluar dari hati yang mencintai Allah. Jika kata-kata itu masuk ke dalam hati yang tulus, maka ia akan hidup selamanya — karena cinta itu abadi, dan apa yang lahir dari cinta tidak akan pernah mati."</em>
+</p>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH AHMAD TENTANG WARISAN</div>
+<div class="arabic-text">
+مَا تَرَكْتُ مِنْ كَلِمَةٍ إِلَّا وَهِيَ مِنْ قَلْبٍ يُحِبُّ اللَّهَ، وَمَا دَخَلَتْ قَلْبًا صَادِقًا إِلَّا وَعَاشَتْ فِيهِ أَبَدًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Tidaklah aku meninggalkan sepatah kata pun kecuali ia keluar dari hati yang mencintai Allah. Dan tidaklah ia masuk ke dalam hati yang tulus kecuali ia akan hidup di dalamnya selamanya."
+<br>— Syeikh Ahmad Al-Ghazali
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Karya-Karya Monumental — Savanih al-'Ussyaq dan Risalah-Risalah Cinta</span>
+<div class="karomah-arabic">الْمُصَنَّفَاتُ الْخَالِدَةُ — سَوَانِحُ الْعُشَّاقِ وَرَسَائِلُ الْمَحَبَّةِ</div>
+<p>
+Syeikh Ahmad Al-Ghazali meninggalkan beberapa karya monumental yang menjadi rujukan utama dalam khazanah tasawuf Islam, khususnya tasawuf Persia. Karya-karya beliau tidak hanya penting pada masanya, melainkan terus dibaca, dipelajari, dan dikaji hingga hari ini oleh para ulama, peneliti, dan salik di seluruh penjuru dunia.
+</p>
+<h3>A. Savanih al-'Ussyaq (Perjalanan Para Pecinta)</h3>
+<p>
+Karya yang paling terkenal dari Syeikh Ahmad Al-Ghazali adalah <em>Savanih al-'Ussyaq</em> (سَوَانِحُ الْعُشَّاقِ) — sebuah risalah tasawuf berbahasa Persia yang membahas hakikat cinta ilahi (<em>mahabbah</em> dan <em>'isyq</em>) dengan bahasa yang puitis dan mendalam. Karya ini dianggap sebagai salah satu risalah tasawuf berbahasa Persia tertua yang secara khusus membahas tema cinta ilahi, dan menjadi pelopor bagi karya-karya sufi Persia setelahnya.
+</p>
+<p>
+Dalam <em>Savanih al-'Ussyaq</em>, Syeikh Ahmad membahas:
+</p>
+<ul>
+<li><strong>Hakikat Cinta</strong> — Cinta sebagai fitrah jiwa yang condong kepada Yang Maha Indah</li>
+<li><strong>Tingkatan Cinta</strong> — Dari cinta para pemula hingga cinta para yang sempurna</li>
+<li><strong>Tanda-Tanda Pecinta</strong> — Ciri-ciri orang yang benar-benar mencintai Allah</li>
+<li><strong>Perjalanan Pecinta</strong> — Tahapan-tahapan yang dilalui oleh salik dalam perjalanan cintanya</li>
+<li><strong>Lenyapnya Pecinta</strong> — Maqam fana' dalam cinta, ketika pecinta lenyap dalam Yang Dicintai</li>
+</ul>
+<p>
+Karya ini menjadi inspirasi bagi banyak penyair sufi setelahnya, termasuk Fariduddin Aththar dalam <em>Mantiq ath-Thair</em> (Parliament of Birds) dan Jalaluddin Rumi dalam <em>Matsnawi</em>-nya. Banyak bait-bait Rumi yang terinspirasi langsung dari ungkapan-ungkapan Syeikh Ahmad dalam <em>Savanih al-'Ussyaq</em>.
+</p>
+<h3>B. Karya-Karya Lainnya</h3>
+<p>
+Selain <em>Savanih al-'Ussyaq</em>, Syeikh Ahmad juga menulis beberapa karya lainnya, di antaranya:
+</p>
+<ul>
+<li><strong>Resalah-i-'Isyq</strong> (Risalah Cinta) — Risalah tentang hakikat cinta ilahi</li>
+<li><strong>Al-Warid wa al-Wujud</strong> — Risalah tentang kedatangan ilahi dan keberadaan spiritual</li>
+<li><strong>Khatimat al-Hayat</strong> — Risalah tentang akhir perjalanan spiritual</li>
+<li><strong>Majmu'ah-i-Maktubat</strong> — Kumpulan surat-surat spiritual beliau kepada para murid</li>
+<li><strong>Ceramah-Ceramah Baghdad</strong> — Kumpulan ceramah beliau yang dicatat oleh para pendengar dan disebarkan ke seluruh dunia Islam</li>
+</ul>
+<p>
+Karya-karya ini ditulis dalam dua bahasa — Arab untuk karya-karya ilmiah dan fikih, dan Persia untuk karya-karya tasawuf dan puitis. Keahlian beliau dalam kedua bahasa ini menjadikannya salah satu ulama paling produktif dan berpengaruh di zamannya.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG ILMU YANG BERMANFAAT — HADITS NABAWI</div>
+<div class="arabic-text">
+إِذَا مَاتَ ابْنُ آدَمَ انْقَطَعَ عَمَلُهُ إِلَّا مِنْ ثَلَاثٍ: صَدَقَةٍ جَارِيَةٍ، أَوْ عِلْمٍ يُنْتَفَعُ بِهِ، أَوْ وَلَدٍ صَالِحٍ يَدْعُو لَهُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Apabila anak Adam wafat, maka terputuslah amalannya kecuali tiga perkara: sedekah jariyah, ilmu yang bermanfaat, atau anak shaleh yang mendoakannya."
+<br>— HR. Muslim
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Murid-Murid Besar — Mata Rantai Spiritual yang Mengabadikan Ajaran</span>
+<div class="karomah-arabic">التَّلَامِيذُ الْكِبَارُ — سَلَاسِلُ الرُّوحَانِيَّةِ الْخَالِدَةُ</div>
+<p>
+Salah satu warisan terbesar Syeikh Ahmad Al-Ghazali adalah murid-murid beliau yang menjadi para sufi besar dan pendiri tarekat-tarekat agung. Melalui mereka, ajaran-ajaran beliau tersebar ke seluruh penjuru dunia Islam dan terus hidup hingga hari ini.
+</p>
+<h3>A. Syeikh Abu An-Najib As-Suhrawardi (496-563 H / 1102-1168 M)</h3>
+<p>
+Murid terbesar Syeikh Ahmad Al-Ghazali adalah <strong>Syeikh Abu An-Najib As-Suhrawardi</strong> — pendiri <em>Tarekat Suhrawardiyah</em>, salah satu tarekat sufi terbesar di dunia Islam, khususnya di wilayah Persia, India, dan Pakistan. Syeikh Abu An-Najib belajar langsung di bawah bimbingan Syeikh Ahmad di Baghdad, dan menerima darinya ajaran-ajaran tasawuf yang kemudian beliau kembangkan menjadi tarekat yang sistematis.
+</p>
+<p>
+Tarekat Suhrawardiyah yang beliau dirikan memiliki ciri khas yang mirip dengan ajaran guru beliau — penekanan pada <em>muraqabah</em> (pengawasan hati), <em>dzikir khafi</em> (dzikir dalam hati), dan perpaduan antara syariat dan hakikat. Tarekat ini kemudian menyebar luas ke India melalui Syeikh Bahauddin Zakariya al-Multani (585-661 H), dan menjadi salah satu tarekat yang paling berpengaruh di anak benua India.
+</p>
+<h3>B. Syeikh Abu Ishaq Al-Kazruini (wafat sekitar 580 H)</h3>
+<p>
+Murid besar lainnya adalah <strong>Syeikh Abu Ishaq Al-Kazruini</strong> — seorang sufi besar dari Fars (Iran selatan) yang menjadi penyebar utama ajaran Syeikh Ahmad di wilayah Persia. Beliau adalah orang yang banyak mencatat ajaran-ajaran Syeikh Ahmad dan menyebarkannya kepada generasi setelahnya. Melalui beliau, ajaran mahabbah Syeikh Ahmad sampai kepada para penyair sufi Persia seperti Fariduddin Aththar dan Sa'di Asy-Syirazi.
+</p>
+<h3>C. Para Murid Lainnya</h3>
+<ul>
+<li><strong>Syeikh Ahmad-i Jami</strong> — Sufi dan penyair besar Persia yang banyak menulis tentang cinta ilahi</li>
+<li><strong>Syeikh Ayn al-Qudhat al-Hamadzani</strong> — Sufi besar yang wafat sebagai syahid, namun ajarannya banyak dipengaruhi oleh Syeikh Ahmad</li>
+<li><strong>Syeikh Abu Sa'id Abu al-Khayr</strong> (melalui silsilah) — Salah satu sufi awal Persia yang ajarannya mempengaruhi tradisi tasawuf Persia</li>
+<li><strong>Banyak mursyid dan khatib</strong> di Baghdad, Naisabur, dan wilayah Irak lainnya yang menyebarkan ajaran beliau</li>
+</ul>
+<p>
+Melalui murid-murid inilah ajaran Syeikh Ahmad tidak hanya tersimpan dalam kitab-kitab, melainkan hidup dalam praktik spiritual jutaan salik di seluruh dunia Islam. Beliau pernah berkata tentang murid-murid beliau: <em>"Murid-muridku adalah anak-anak hatiku. Dari mereka, aku akan hidup setelah aku wafat. Karena ilmu itu tidak mati selama ada yang mengajarkannya, dan cinta itu tidak padam selama ada yang menyalakannya."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENYEBARKAN ILMU — HADITS NABAWI</div>
+<div class="arabic-text">
+بَلِّغُوا عَنِّي وَلَوْ آيَةً
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sampaikanlah dariku meskipun satu ayat."
+<br>— HR. Al-Bukhari
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Silsilah Spiritual — Mata Rantai yang Bersambung Hingga Hari Ini</span>
+<div class="karomah-arabic">السِّلْسِلَةُ الرُّوحَانِيَّةُ — الْعُرْوَةُ الْمُتَّصِلَةُ حَتَّى الْيَوْمِ</div>
+<p>
+Salah satu keistimewaan warisan Syeikh Ahmad Al-Ghazali adalah silsilah spiritual beliau yang bersambung hingga hari ini melalui berbagai tarekat. Silsilah ini bukan hanya silsilah keilmuan, melainkan silsilah <em>tarbiyah</em> (pembinaan spiritual) yang menghubungkan para mursyid hari ini dengan Syeikh Ahmad, dan melalui beliau dengan Rasulullah SAW.
+</p>
+<h3>A. Silsilah melalui Tarekat Suhrawardiyah</h3>
+<p>
+Silsilah Tarekat Suhrawardiyah bersambung kepada Syeikh Ahmad melalui:
+</p>
+<ul>
+<li><strong>Syeikh Ahmad Al-Ghazali</strong> → <strong>Syeikh Abu An-Najib As-Suhrawardi</strong> → <strong>Syeikh Abu'l-Faraj At-Turusi</strong> → <strong>Syeikh Diya'uddin Abu'l-Barakat</strong> → <strong>Syeikh Najibuddin Ali</strong> → ... → <strong>Syeikh Bahauddin Zakariya al-Multani</strong> (di India) → ... → para mursyid Suhrawardiyah hingga hari ini</li>
+</ul>
+<h3>B. Silsilah melalui Pengaruh ke Tarekat Lainnya</h3>
+<p>
+Ajaran Syeikh Ahmad juga mempengaruhi tarekat-tarekat lainnya, baik secara langsung maupun tidak langsung:
+</p>
+<ul>
+<li><strong>Tarekat Kubrawiyah</strong> — Didirikan oleh Syeikh Najmuddin Kubra, yang silsilahnya bersambung kepada Syeikh Ahmad melalui beberapa mata rantai</li>
+<li><strong>Tarekat Naqsyabandiyah</strong> — Meskipun didirikan oleh Syeikh Bahauddin An-Naqsyabandi beberapa abad setelah Syeikh Ahmad, prinsip <em>khalwat dar anjuman</em> dan <em>dzikir khafi</em> yang menjadi ciri khas Naqsyabandiyah banyak dipengaruhi oleh ajaran Syeikh Ahmad</li>
+<li><strong>Tarekat Qadiriyah</strong> — Syeikh Abdul Qadir Al-Jilani, meskipun memiliki silsilah sendiri, banyak mengambil manfaat dari ajaran-ajaran Syeikh Ahmad yang tersebar di Baghdad</li>
+<li><strong>Tarekat Mevleviyah</strong> — Didirikan oleh pengikut-pengikut Jalaluddin Rumi, yang banyak terinspirasi oleh ajaran Syeikh Ahmad melalui karya-karya Fariduddin Aththar</li>
+</ul>
+<p>
+Dengan demikian, warisan spiritual Syeikh Ahmad tidak hanya hidup dalam satu tarekat, melainkan dalam banyak tarekat yang menjadi bagian dari khazanah tasawuf Islam. Beliau adalah <em>quthb al-aqthab</em> — porosnya para poros — yang ajarannya mengalir ke berbagai sungai spiritual yang pada akhirnya bermuara di lautan cinta ilahi.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENGIKUTI JALAN ORANG SHALIH — QS. AT-TAUBAH: 100</div>
+<div class="arabic-text">
+وَالسَّابِقُونَ الْأَوَّلُونَ مِنَ الْمُهَاجِرِينَ وَالْأَنصَارِ وَالَّذِينَ اتَّبَعُوهُم بِإِحْسَانٍ رَّضِيَ اللَّهُ عَنْهُمْ وَرَضُوا عَنْهُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Orang-orang yang terdahulu lagi yang pertama-tama (masuk Islam) dari golongan muhajirin dan anshar dan orang-orang yang mengikuti mereka dengan baik, Allah ridha kepada mereka dan merekapun ridha kepada-Nya."
+<br>— QS. At-Taubah: 100
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Pengaruh terhadap Para Sufi dan Penyair Besar Setelahnya</span>
+<div class="karomah-arabic">التَّأْثِيرُ عَلَى الصُّوفِيَّةِ وَالشُّعَرَاءِ الْكِبَارِ بَعْدَهُ</div>
+<p>
+Salah satu bukti keagungan warisan Syeikh Ahmad Al-Ghazali adalah pengaruh beliau yang sangat besar terhadap para sufi dan penyair besar setelahnya. Banyak tokoh-tokoh besar dalam sejarah tasawuf dan sastra Persia yang secara langsung atau tidak langsung terinspirasi oleh ajaran beliau.
+</p>
+<h3>A. Fariduddin Aththar (550-618 H / 1145-1221 M)</h3>
+<p>
+Penyair sufi besar Persia ini sangat terpengaruh oleh ajaran Syeikh Ahmad Al-Ghazali. Karya monumental beliau, <em>Mantiq ath-Thair</em> (Parliament of Birds) — sebuah alegori tentang perjalanan spiritual menuju Allah — banyak mengambil inspirasi dari konsep-konsep mahabbah yang diajarkan oleh Syeikh Ahmad. Dalam <em>Mantiq ath-Thair</em>, burung-burung mencari raja mereka, <em>Simurgh</em>, yang merupakan simbol dari Allah — sebuah metafora yang sangat mirip dengan ajaran Syeikh Ahmad tentang perjalanan pecinta menuju Yang Dicintai.
+</p>
+<h3>B. Jalaluddin Rumi (604-672 H / 1207-1273 M)</h3>
+<p>
+Maulana Jalaluddin Rumi — penyair sufi terbesar dalam sejarah Islam — juga sangat terpengaruh oleh ajaran Syeikh Ahmad Al-Ghazali. Banyak bait-bait dalam <em>Matsnawi</em> dan <em>Diwan-i Syams-i Tabriz</em> yang terinspirasi langsung dari ungkapan-ungkapan Syeikh Ahmad dalam <em>Savanih al-'Ussyaq</em>. Rumi sendiri menyebut Syeikh Ahmad sebagai salah satu guru spiritual beliau (melalui silsilah), dan sering mengutip perkataan-perkataan beliau dalam karya-karya beliau.
+</p>
+<p>
+Rumi pernah berkata tentang Syeikh Ahmad: <em>"Syeikh Ahmad Al-Ghazali adalah matahari yang cahayanya menerangi jalan para pecinta. Dari sinarnya, aku belajar bahwa cinta bukanlah perasaan, melainkan hakikat yang melampaui segala perasaan."</em>
+</p>
+<h3>C. Sa'di Asy-Syirazi (600-690 H / 1203-1291 M)</h3>
+<p>
+Penyair besar Persia lainnya, Sa'di Asy-Syirazi, juga banyak terpengaruh oleh ajaran mahabbah Syeikh Ahmad. Karya beliau <em>Gulistan</em> dan <em>Bustan</em> banyak mengandung hikmah-hikmah spiritual yang sejalan dengan ajaran Syeikh Ahmad tentang cinta, zuhud, dan akhlak.
+</p>
+<h3>D. Hafizh Asy-Syirazi (727-792 H / 1326-1390 M)</h3>
+<p>
+Penyair lirik terbesar Persia, Hafizh, juga banyak mengambil inspirasi dari ajaran Syeikh Ahmad. Ghazal-gghazal beliau yang penuh dengan metafora cinta ilahi merupakan kelanjutan dari tradisi puitis yang dimulai oleh Syeikh Ahmad.
+</p>
+<h3>E. Jami (817-898 H / 1414-1492 M)</h3>
+<p>
+Penyair sufi terakhir dari tradisi klasik Persia, Jami, menulis biografi Syeikh Ahmad Al-Ghazali dalam karya beliau <em>Nafahat al-Uns</em> (Breaths of Fellowship) — sebuah ensiklopedia para sufi besar. Dalam karya ini, Jami menyebut Syeikh Ahmad sebagai salah satu sufi terbesar dalam sejarah Islam.
+</p>
+<p>
+Pengaruh Syeikh Ahmad terhadap para penyair sufi ini sangat signifikan, karena melalui mereka, ajaran-ajaran beliau tidak hanya sampai kepada para salik, melainkan juga kepada masyarakat luas yang mengenal tasawuf melalui puisi-puisi indah ini. Dengan demikian, warisan Syeikh Ahmad tidak hanya hidup di dalam tarekat-tarekat, melainkan juga di dalam khazanah sastra dunia.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN RUMI TENTANG SYEIKH AHMAD</div>
+<div class="arabic-text">
+الْغَزَّالِيُّ شَمْسٌ تُنِيرُ دَرْبَ الْعُشَّاقِ، وَمِنْ نُورِهِ تَعَلَّمْتُ أَنَّ الْمَحَبَّةَ لَيْسَتْ إِحْسَاسًا بَلْ حَقِيقَةٌ فَوْقَ كُلِّ إِحْسَاسٍ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Al-Ghazali (Ahmad) adalah matahari yang menerangi jalan para pecinta. Dari cahayanya, aku belajar bahwa cinta bukanlah perasaan, melainkan hakikat yang melampaui segala perasaan."
+<br>— Jalaluddin Rumi (diriwayatkan dalam tradisi sufi)
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Ajaran Mahabbah — Inti Tasawuf yang Hidup Selamanya</span>
+<div class="karomah-arabic">تَعْلِيمُ الْمَحَبَّةِ — لُبُّ التَّصَوُّفِ الْخَالِدِ</div>
+<p>
+Warisan terbesar Syeikh Ahmad Al-Ghazali adalah ajaran <em>mahabbah</em> (cinta ilahi) yang beliau jadikan sebagai inti dari tasawuf. Sebelum beliau, tasawuf lebih banyak menekankan pada zuhud (menjauhi dunia), khawf (takut kepada Allah), dan ma'rifat (pengetahuan tentang Allah). Syeikh Ahmadlah yang menempatkan <em>mahabbah</em> sebagai maqam tertinggi dan jalan utama menuju Allah — sebuah revolusi pemikiran yang mengubah wajah tasawuf Islam selamanya.
+</p>
+<h3>A. Prinsip-Prinsip Utama Ajaran Mahabbah</h3>
+<p>
+Ajaran mahabbah Syeikh Ahmad dapat diringkas dalam beberapa prinsip utama:
+</p>
+<ul>
+<li><strong>Allah Maha Indah dan Mencintai Keindahan</strong> — Karena Allah adalah sumber segala keindahan, maka hati manusia secara fitrah condong kepada-Nya. Cinta kepada Allah adalah fitrah yang tidak perlu diajarkan, melainkan perlu dibangkitkan.</li>
+<li><strong>Cinta adalah Ruh Ibadah</strong> — Tanpa cinta, ibadah hanyalah gerakan badan tanpa ruh. Shalat tanpa cinta adalah gerakan kosong, puasa tanpa cinta adalah lapar sia-sia, dan haji tanpa cinta adalah perjalanan tanpa makna.</li>
+<li><strong>Pecinta Lenyap dalam Yang Dicintai</strong> — Dalam maqam mahabbah yang sempurna, sang pecinta lenyap dalam Yang Dicintai, sehingga ia tidak lagi melihat dirinya, melainkan hanya melihat Yang Dicintai. Ini adalah maqam <em>fana'</em> yang menjadi puncak perjalanan spiritual.</li>
+<li><strong>Cinta Melampaui Akal</strong> — Cinta tidak dapat dipahami oleh akal, melainkan hanya dapat dirasakan oleh hati. Akal adalah kendaraan yang membawa engkau ke pintu rumah cinta, namun setelah engkau sampai di pintu, engkau harus meninggalkan kendaraanmu dan masuk dengan kaki telanjang.</li>
+<li><strong>Cinta Menghasilkan Akhlak Mulia</strong> — Orang yang benar-benar mencintai Allah akan memiliki akhlak yang mulia, karena ia meneladani Yang Dicintainya. Cinta kepada Allah melahirkan cinta kepada Rasulullah, cinta kepada Al-Qur'an, dan cinta kepada seluruh makhluk Allah.</li>
+<li><strong>Cinta adalah Jalan Terpendek</strong> — Di antara semua jalan menuju Allah, cinta adalah jalan yang paling pendek dan paling langsung. Karena Allah itu dekat — lebih dekat dari urat nadi leher — maka cinta kepada-Nya tidak memerlukan perjalanan jauh, melainkan hanya memerlukan hati yang tulus.</li>
+</ul>
+<h3>B. Pengaruh Ajaran Mahabbah di Dunia Islam</h3>
+<p>
+Ajaran mahabbah Syeikh Ahmad telah mempengaruhi wajah tasawuf Islam di berbagai belahan dunia:
+</p>
+<ul>
+<li><strong>Di Persia</strong> — Menjadi inti dari tradisi tasawuf Persia yang melahirkan para penyair sufi besar seperti Aththar, Rumi, Sa'di, dan Hafizh</li>
+<li><strong>Di Turki</strong> — Mempengaruhi Tarekat Mevleviyah yang didirikan oleh pengikut-pengikut Rumi, dan menjadi bagian penting dari budaya spiritual Turki</li>
+<li><strong>Di India</strong> — Menjadi inti dari tasawuf di anak benua India, khususnya melalui Tarekat Suhrawardiyah dan Chishtiyah</li>
+<li><strong>Di Nusantara</strong> — Ajaran mahabbah sampai ke Nusantara melalui para ulama dan sufi yang belajar di Timur Tengah, dan menjadi bagian penting dari tasawuf di Indonesia, Malaysia, dan Brunei</li>
+<li><strong>Di Dunia Arab</strong> — Mempengaruhi para sufi Arab seperti Ibnu Atha'illah As-Sakandari (pengarang <em>Al-Hikam</em>) dan para sufi Syadziliyah</li>
+</ul>
+<p>
+Beliau pernah berkata: <em>"Aku tidak mengajarkan ilmu, aku mengajarkan cinta. Karena ilmu akan dilupakan, namun cinta akan diingat selamanya. Dan barangsiapa yang mencintai Allah, ia akan menemukan segala-galanya — ilmu, amal, akhlak, dan akhirat."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG CINTA ILAHI — QS. AL-MA'IDAH: 54</div>
+<div class="arabic-text">
+يُحِبُّهُمْ وَيُحِبُّونَهُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Allah mencintai mereka dan mereka pun mencintai-Nya."
+<br>— QS. Al-Ma'idah: 54
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">6</span>
+<span class="karomah-title">Prinsip-Prinsip Spiritual yang Diwariskan — Abadi di Setiap Zaman</span>
+<div class="karomah-arabic">الْمَبَادِئُ الرُّوحَانِيَّةُ الْخَالِدَةُ فِي كُلِّ زَمَانٍ</div>
+<p>
+Selain ajaran mahabbah, Syeikh Ahmad Al-Ghazali juga mewariskan beberapa prinsip spiritual yang tetap relevan di setiap zaman. Prinsip-prinsip ini bukan hanya untuk para sufi, melainkan untuk setiap muslim yang ingin mendekatkan diri kepada Allah.
+</p>
+<h3>A. Khalwat dar Anjuman — Menyepi di Tengah Keramaian</h3>
+<p>
+Prinsip <em>khalwat dar anjuman</em> (menyepi di tengah keramaian) yang diajarkan oleh Syeikh Ahmad menjadi salah satu prinsip spiritual paling penting dalam tasawuf Islam. Prinsip ini mengajarkan bahwa seorang muslim tidak perlu mengasingkan diri dari masyarakat untuk menjadi wali Allah, melainkan ia dapat tetap berinteraksi dengan masyarakat namun hatinya senantiasa terhubung dengan Allah. Prinsip ini kemudian diwarisi oleh Tarekat Naqsyabandiyah dan menjadi salah satu ciri khas tarekat tersebut.
+</p>
+<h3>B. Dzikir Khafi — Dzikir dalam Hati</h3>
+<p>
+Prinsip <em>dzikir khafi</em> (dzikir tersembunyi dalam hati) yang diajarkan oleh Syeikh Ahmad menjadi metode dzikir yang paling halus dan paling dalam pengaruhnya terhadap jiwa. Berbeda dengan dzikir jahr (dzikir dengan suara keras), dzikir khafi menyatu dengan denyut jantung dan aliran darah, sehingga dzikir itu menjadi bagian dari kehidupan salik tanpa henti. Prinsip ini juga diwarisi oleh Tarekat Naqsyabandiyah dan menjadi salah satu ciri khas tarekat tersebut.
+</p>
+<h3>C. Perpaduan Syariat dan Hakikat</h3>
+<p>
+Syeikh Ahmad senantiasa mengajarkan bahwa syariat dan hakikat bukanlah dua hal yang bertentangan, melainkan dua sisi dari mata uang yang sama. Syariat adalah zhahir dari agama, dan hakikat adalah batin dari agama. Barangsiapa yang berpegang pada syariat tanpa hakikat, maka ia seperti jasad tanpa ruh. Dan barangsiapa yang mengaku memiliki hakikat tanpa syariat, maka ia seperti ruh tanpa jasad — yang keduanya tidak dapat hidup sendiri.
+</p>
+<h3>D. Cinta kepada Rasulullah SAW</h3>
+<p>
+Syeikh Ahmad mengajarkan bahwa cinta kepada Allah tidak dapat dipisahkan dari cinta kepada Rasulullah SAW. Karena Rasulullah adalah kekasih Allah, maka barangsiapa yang mencintai Allah, ia pasti mencintai Rasul-Nya. Dan barangsiapa yang mencintai Rasulullah, ia akan mengikuti sunnahnya, dan melalui sunnah itulah ia akan sampai kepada Allah.
+</p>
+<h3>E. Keikhlasan dan Ketulusan</h3>
+<p>
+Prinsip keikhlasan dan ketulusan menjadi inti dari seluruh ajaran Syeikh Ahmad. Beliau mengajarkan bahwa setiap amal — baik zhahir maupun batin — harus dilakukan dengan ikhlas karena Allah, bukan karena ingin dipuji oleh manusia atau mendapatkan kedudukan di dunia. Beliau berkata: <em>"Ikhlas adalah ruh dari seluruh amal. Tanpa ikhlas, amal hanyalah gerakan badan tanpa nilai di sisi Allah."</em>
+</p>
+<h3>F. Keseimbangan Dunia dan Akhirat</h3>
+<p>
+Syeikh Ahmad mengajarkan keseimbangan dalam menjalani kehidupan — tidak terlalu condong pada dunia hingga melupakan akhirat, dan tidak terlalu condong pada akhirat hingga melupakan tanggung jawab di dunia. Beliau sendiri adalah teladan dari keseimbangan ini — beliau tetap berinteraksi dengan masyarakat, berceramah, dan membimbing para murid, namun hatinya senantiasa tertuju kepada Allah.
+</p>
+<p>
+Prinsip-prinsip inilah yang menjadikan warisan Syeikh Ahmad tetap relevan di setiap zaman — karena ia bukan hanya berbicara tentang tasawuf yang abstrak, melainkan tentang kehidupan spiritual yang praktis yang dapat diterapkan oleh setiap muslim di setiap waktu dan tempat.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH AHMAD TENTANG KEIKHLASAN</div>
+<div class="arabic-text">
+الْإِخْلَاصُ هُوَ رُوحُ الْعَمَلِ، وَبِدُونِهِ لَا قِيمَةَ لِلْعَمَلِ عِنْدَ اللَّهِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ikhlas adalah ruh dari seluruh amal. Tanpa ikhlas, amal tidak memiliki nilai di sisi Allah."
+<br>— Syeikh Ahmad Al-Ghazali
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Warisan Tasawuf Syeikh Ahmad Al-Ghazali:</strong>
+<ul>
+<li><strong>Karya monumental:</strong> <em>Savanih al-'Ussyaq</em>, <em>Resalah-i-'Isyq</em>, <em>Al-Warid wa al-Wujud</em>, <em>Khatimat al-Hayat</em>, <em>Majmu'ah-i-Maktubat</em>, kumpulan ceramah Baghdad</li>
+<li><strong>Murid-murid besar:</strong> Syeikh Abu An-Najib As-Suhrawardi (pendiri Suhrawardiyah), Syeikh Abu Ishaq Al-Kazruini, Syeikh Ahmad-i Jami, dan banyak mursyid lainnya</li>
+<li><strong>Silsilah spiritual:</strong> Melalui Tarekat Suhrawardiyah, Kubrawiyah, dan pengaruh ke Naqsyabandiyah, Qadiriyah, Mevleviyah</li>
+<li><strong>Pengaruh terhadap sufi & penyair:</strong> Fariduddin Aththar, Jalaluddin Rumi, Sa'di Asy-Syirazi, Hafizh Asy-Syirazi, Jami</li>
+<li><strong>Ajaran mahabbah:</strong> Cinta ilahi sebagai inti tasawuf, ruh ibadah, maqam fana', jalan terpendek menuju Allah</li>
+<li><strong>Prinsip spiritual abadi:</strong> Khalwat dar anjuman, dzikir khafi, perpaduan syariat-hakikat, cinta Rasulullah, keikhlasan, keseimbangan dunia-akhirat</li>
+<li><strong>Sebaran pengaruh:</strong> Persia, Turki, India, Nusantara, Dunia Arab — di setiap belahan dunia Islam</li>
+<li><strong>Warisan utama:</strong> Bukan harta, bukan kedudukan, melainkan kata-kata cinta yang keluar dari hati yang mencintai Allah</li>
+</ul>
+</div>
+<h2>Doa Memohon Keberkahan Warisan Spiritual</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON WARISAN ROHANI DAN CINTA ILAHI</div>
+<div class="arabic-text">
+اللَّهُمَّ اجْعَلْنَا مِنْ وَرَثَةِ سَيِّدِنَا أَحْمَدَ الْغَزَّالِيِّ فِي مَحَبَّتِكَ وَذِكْرِكَ الْخَفِيِّ وَالْمُرَاقَبَةِ الدَّائِمَةِ. اللَّهُمَّ ارْزُقْنَا الْمَحَبَّةَ الصَّادِقَةَ لَكَ وَلِرَسُولِكَ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ، وَاجْعَلْنَا مِمَّنْ يَمْشُونَ عَلَى طَرِيقِ الْمَحَبَّةِ حَتَّى نَلْقَاكَ وَنَحْنُ رَاضُونَ عَنْكَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, jadikanlah kami termasuk pewaris Syeikh Ahmad Al-Ghazali dalam cinta-Mu, dzikir khafi, dan muraqabah yang senantiasa. Ya Allah, anugerahkanlah kepada kami cinta yang tulus kepada-Mu dan kepada Rasul-Mu shallallahu 'alaihi wa sallam, dan jadikanlah kami termasuk orang yang berjalan di jalan cinta hingga kami bertemu dengan-Mu dalam keadaan Engkau ridha kepada kami."
+</div>
+</div>
+<h2>Penutup Halaman 8</h2>
+<p>
+Demikianlah warisan tasawuf Syeikh Ahmad Al-Ghazali — warisan yang tidak mati dalam lembaran-lembaran kitab tua, melainkan hidup dan terus mengalir seperti sungai cinta ilahi dari abad ke-6 H hingga hari ini. Melalui karya-karya monumental beliau — terutama <em>Savanih al-'Ussyaq</em> — melalui murid-murid besar beliau yang menjadi pendiri tarekat-tarekat agung, dan melalui pengaruh beliau terhadap para sufi dan penyair besar seperti Fariduddin Aththar dan Jalaluddin Rumi, api cinta ilahi yang beliau nyalakan di Baghdad terus menyala hingga hari ini di hati jutaan salik di seluruh penjuru dunia Islam.
+</p>
+<p>
+Beliau bukan hanya seorang wali di zamannya, melainkan <em>imam al-muhammadin</em> — imam bagi generasi-generasi setelahnya. Ajaran mahabbah yang beliau jadikan sebagai inti tasawuf telah mengubah wajah tasawuf Islam, dan prinsip-prinsip spiritual yang beliau wariskan — seperti <em>khalwat dar anjuman</em>, <em>dzikir khafi</em>, dan perpaduan syariat-hakikat — tetap relevan di setiap zaman.
+</p>
+<p>
+Pada halaman terakhir (halaman 9), kita akan membahas penutup dan intisari dari seluruh perjalanan hidup Syeikh Ahmad Al-Ghazali — mulai dari kelahiran beliau di desa Ghazalah, perjalanan menuntut ilmu, perjalanan spiritual, tantangan dan konflik, tanggapan pro dan kontra, sikap terhadap penguasa, hingga warisan tasawuf yang abadi. Kita juga akan merenungkan pelajaran-pelajaran yang dapat kita ambil dari kehidupan beliau untuk diterapkan dalam kehidupan kita sehari-hari.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+وَمَا أَرْسَلْنَاكَ إِلَّا رَحْمَةً لِّلْعَالَمِينَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan tiadalah Kami mengutus kamu, melainkan untuk (menjadi) rahmat bagi semesta alam."
+<br>— QS. Al-Anbiya': 107
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="ahmad1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="ahmad2.html" class="article-nav-btn" title="Halaman 2: Masa Kecil & Pendidikan">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="ahmad3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="ahmad4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="ahmad5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="ahmad6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="ahmad7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="ahmad8.html" class="article-nav-btn active" title="Halaman 8: Warisan Tasawuf">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="ahmad9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

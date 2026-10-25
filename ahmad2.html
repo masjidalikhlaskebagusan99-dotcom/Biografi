@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Ahmad Al-Ghazali - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+@media (max-width: 768px) {
+.article-container { max-width: 100%; padding: 20px; }
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover { background: rgba(233, 69, 96, 0.15); transform: scale(1.05); }
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover { background: #e94560; color: #fff; border-color: #e94560; }
+.article-content { font-size: 1.05rem; line-height: 1.9; color: #444; }
+.article-content p { margin-bottom: 20px; text-align: justify; }
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 { font-size: 1.2rem; color: #333; margin: 25px 0 10px; }
+.article-content ul { margin: 15px 0 20px 30px; }
+.article-content ul li { margin-bottom: 10px; line-height: 1.7; }
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title { font-size: 1.3rem; color: #1a1a2e; font-weight: bold; display: inline; }
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul { margin: 15px 0 0 30px; }
+.highlight-box ul li { margin-bottom: 10px; line-height: 1.7; }
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label { text-align: center; color: #aaa; font-size: 0.75rem; margin-top: 6px; }
+.nav-group { display: flex; flex-direction: column; align-items: center; }
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+nav { flex-direction: column; gap: 10px; width: 100%; justify-content: center; }
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav { gap: 6px; padding: 15px; }
+.article-nav-btn { width: 36px; height: 36px; font-size: 1rem; }
+.nav-btn-label { font-size: 0.65rem; }
+}
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam { font-size: 1.3rem !important; letter-spacing: 3px !important; }
+header nav a { padding: 6px 10px !important; font-size: 0.8rem !important; }
+.article-nav-btn { width: 32px; height: 32px; font-size: 0.9rem; }
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Ahmad Al-Ghazali
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Ahmad Al-Ghazali</h1>
+<div class="subtitle">Halaman 2 dari 9 — Masa Kecil, Yatim Piatu, dan Pendidikan Awal di Desa Ghazalah</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Minggu, 25 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Nishapur_map.jpg/440px-Nishapur_map.jpg"
+alt="Peta wilayah Khorasan — tempat Syeikh Ahmad Al-Ghazali tumbuh"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tus_-_map.jpg/440px-Tus_-_map.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Wilayah Khorasan (Iran) — tanah tempat Syeikh Ahmad Al-Ghazali tumbuh sebagai yatim piatu, ditempa oleh didikan teman ayah yang shaleh, dan dibesarkan bersama kakaknya, Abu Hamid, dalam lingkungan ilmu dan takwa</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Masa kecil Syeikh Ahmad Al-Ghazali adalah masa yang penuh dengan ujian ketabahan sekaligus berkah tersembunyi. Beliau tumbuh sebagai anak yatim di desa Ghazalah dekat kota Tus, dibesarkan oleh seorang wali shaleh — teman dekat ayahnya — yang menggantikan peran sang ayah dengan penuh kasih sayang. Bersama kakaknya, Abu Hamid (kelak Imam Al-Ghazali), Ahmad kecil menghafal Al-Qur'an, mempelajari ilmu-ilmu dasar Islam, dan menunjukkan tanda-tanda kecerdasan serta kecenderungan spiritual yang luar biasa sejak usia dini. Di desa inilah benih-benih cinta ilahi (<em>mahabbah</em>) mulai tumbuh di dalam hatinya — benih yang kelak akan berkembang menjadi pohon rindang yang menaungi ribuan salik di sepanjang abad-abad berikutnya.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG UJIAN DENGAN KETAKUTAN DAN KELAPARAN — QS. AL-BAQARAH: 155-156</div>
+<div class="arabic-text">
+وَلَنَبْلُوَنَّكُم بِشَيْءٍ مِّنَ الْخَوْفِ وَالْجُوعِ وَنَقْصٍ مِّنَ الْأَمْوَالِ وَالْأَنفُسِ وَالثَّمَرَاتِ ۗ وَبَشِّرِ الصَّابِرِينَ ۝ الَّذِينَ إِذَا أَصَابَتْهُم مُّصِيبَةٌ قَالُوا إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan sungguh akan Kami berikan cobaan kepadamu, dengan sedikit ketakutan, kelaparan, kekurangan harta, jiwa, dan buah-buahan. Dan berikanlah berita gembira kepada orang-orang yang sabar. (Yaitu) orang-orang yang apabila ditimpa musibah, mereka mengucapkan: 'Inna lillaahi wa innaa ilaihi raaji'uun'."
+<br>— QS. Al-Baqarah: 155-156
+</div>
+</div>
+<h2>Masa Kecil di Desa Ghazalah — Tumbuh dalam Kesederhanaan dan Takwa</h2>
+<p>
+Syeikh Ahmad Al-Ghazali menghabiskan tahun-tahun awal kehidupannya di desa Ghazalah, sebuah desa kecil yang tenang di pinggiran kota Tus, wilayah Khorasan (kini Iran). Desa ini dikelilingi oleh ladang-ladang gandum yang menghijau, kebun-kebun buah yang rindang, dan sungai-sungai kecil yang mengalir jernih. Kehidupan di desa ini sederhana namun penuh berkah — kehidupan yang membentuk karakter Ahmad kecil menjadi pribadi yang zuhud, qana'ah (merasa cukup), dan senantiasa bersyukur kepada Allah atas segala nikmat-Nya.
+</p>
+<p>
+Ahmad kecil tumbuh di tengah keluarga yang meskipun secara ekonomi sederhana, namun kaya akan nilai-nilai spiritual. Ayahnya, Syeikh Muhammad Al-Ghazali, adalah seorang pemintal benang wol yang wara' — orang yang sangat berhati-hati dalam mencari nafkah yang halal dan menjauhi segala yang syubhat. Dari ayahnya inilah Ahmad kecil belajar bahwa kemuliaan seseorang bukanlah terletak pada harta atau kedudukan, melainkan pada ketakwaan dan kehalalan rezeki yang ia makan.
+</p>
+<p>
+Ibunda beliau juga memainkan peran yang sangat penting dalam pembentukan karakter Ahmad kecil. Beliau adalah wanita shalehah yang senantiasa menjaga shalat lima waktu, rajin berpuasa sunnah, dan gemar membaca Al-Qur'an. Dari ibundanya inilah Ahmad kecil belajar kelembutan hati, kesabaran dalam menghadapi cobaan, dan kecintaan kepada ibadah. Kedua orang tuanya senantiasa menanamkan dalam hati kedua putra mereka — Abu Hamid dan Ahmad — bahwa dunia ini hanyalah tempat persinggahan sementara, dan akhiratlah negeri yang kekal.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH AHMAD TENTANG MASA KECILNYA</div>
+<div class="arabic-text">
+تَرَبَّيْتُ فِي حِجْرِ وَالِدٍ وَرِعٍ وَأُمٍّ صَالِحَةٍ، فَعَلَّمَانِي أَنَّ الدُّنْيَا مَزْرَعَةُ الْآخِرَةِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Aku dibesarkan di pangkuan ayah yang wara' dan ibu yang shalehah, maka keduanya mengajariku bahwa dunia ini adalah ladang (tempat menanam) bagi akhirat."
+<br>— Syeikh Ahmad Al-Ghazali, mengenang masa kecilnya
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Kehilangan Ayah di Usia Dini — Ujian Pertama Sang Wali Kecil</span>
+<div class="karomah-arabic">فِقْدُ الْوَالِدِ فِي الصِّغَرِ — أَوَّلُ ابْتِلَاءٍ لِلْوَلِيِّ الصَّغِيرِ</div>
+<p>
+Ujian terbesar dalam masa kecil Syeikh Ahmad Al-Ghazali datang ketika beliau dan kakaknya, Abu Hamid, masih berusia sangat muda — ayahanda mereka, Syeikh Muhammad Al-Ghazali, wafat meninggalkan mereka sebagai anak yatim. Peristiwa ini merupakan pukulan yang sangat berat bagi kedua bersaudara ini, terutama karena mereka masih membutuhkan bimbingan dan kasih sayang seorang ayah dalam menempuh perjalanan hidup.
+</p>
+<p>
+Namun, di balik musibah ini, Allah telah menyiapkan rencana yang lebih indah. Sebelum wafatnya, sang ayah telah berwasiat kepada seorang teman dekatnya yang shaleh — seorang sufi yang wara' dan ahli ibadah — untuk mengambil tanggung jawab mendidik dan membiayai kedua anak yatim tersebut. Teman shaleh inilah yang kemudian menjadi pengganti ayah bagi Abu Hamid dan Ahmad, mendidik mereka dengan penuh kasih sayang, dan menggunakan harta yang ditinggalkan oleh sang ayah untuk membiayai pendidikan mereka.
+</p>
+<p>
+Para ulama menceritakan bahwa teman ayah mereka ini bukanlah orang kaya, melainkan seorang sufi fakir yang hidup dari hasil pekerjaannya sendiri. Namun, ia senantiasa mengutamakan kebutuhan kedua anak yatim ini di atas kebutuhannya sendiri. Ia memberi mereka makan sebelum ia sendiri makan, dan ia memakaikan mereka pakaian yang baik sebelum ia sendiri mengenakan pakaian yang sederhana. Dari sinilah Ahmad kecil belajar makna <em>itsar</em> (mendahulukan orang lain) dan <em>tawakkal</em> (berserah diri kepada Allah) — dua akhlak yang kelak menjadi ciri khas beliau dalam perjalanan spiritualnya.
+</p>
+<p>
+Beliau pernah berkata mengenang masa ini: <em>"Allah mengambil ayahku dari sisiku, namun Dia memberikan kepadaku seorang ayah spiritual yang lebih mulia dari ayah kandung. Ayahku yang pertama memberiku kehidupan dunia, sedangkan ayahku yang kedua memberiku kehidupan akhirat."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENYANTUNI ANAK YATIM — QS. AL-BAQARAH: 83</div>
+<div class="arabic-text">
+وَاعْبُدُوا اللَّهَ وَلَا تُشْرِكُوا بِهِ شَيْئًا ۖ وَبِالْوَالِدَيْنِ إِحْسَانًا وَبِذِي الْقُرْبَىٰ وَالْيَتَامَىٰ وَالْمَسَاكِينِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sembahlah Allah dan janganlah kamu mempersekutukan-Nya dengan sesuatupun. Dan berbuat baiklah kepada dua orang ibu-bapa, karib-kerabat, anak-anak yatim, orang-orang miskin..."
+<br>— QS. An-Nisa: 36
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Pendidikan Awal — Menghafal Al-Qur'an dan Ilmu-Ilmu Dasar</span>
+<div class="karomah-arabic">التَّعْلِيمُ الْأَوَّلِي — حِفْظُ الْقُرْآنِ وَعُلُومُ الْأَسَاسِ</div>
+<p>
+Pendidikan awal Syeikh Ahmad Al-Ghazali dimulai di desa Ghazalah, di bawah bimbingan teman ayah beliau yang shaleh dan para ulama setempat. Seperti kebiasaan anak-anak shaleh di zamannya, Ahmad kecil pertama-tama diajarkan membaca Al-Qur'an dan menghafalkannya. Beliau menunjukkan kecerdasan yang luar biasa dalam menghafal — pada usia yang masih sangat muda, beliau telah menyelesaikan hafalan Al-Qur'an 30 juz dengan tartil dan tajwid yang sempurna.
+</p>
+<p>
+Setelah menghafal Al-Qur'an, Ahmad kecil mulai mempelajari ilmu-ilmu dasar keislaman, di antaranya:
+</p>
+<ul>
+<li><strong>Ilmu Nahwu dan Sharaf</strong> — ilmu tata bahasa Arab yang menjadi kunci untuk memahami Al-Qur'an dan Hadits</li>
+<li><strong>Ilmu Fikih</strong> — ilmu tentang hukum-hukum syariat, khususnya fikih mazhab Syafi'i yang dominan di wilayah Khorasan pada masa itu</li>
+<li><strong>Ilmu Tauhid</strong> — ilmu tentang aqidah dan keimanan, yang menjadi fondasi bagi seluruh ilmu lainnya</li>
+<li><strong>Ilmu Hadits</strong> — ilmu tentang sabda-sabda Rasulullah SAW dan sanad-sanadnya</li>
+<li><strong>Ilmu Tafsir</strong> — ilmu tentang penafsiran Al-Qur'an</li>
+<li><strong>Ilmu Akhlak dan Tasawuf</strong> — ilmu tentang penyucian jiwa dan perjalanan spiritual</li>
+</ul>
+<p>
+Ahmad kecil mempelajari ilmu-ilmu ini bersama kakaknya, Abu Hamid, di bawah bimbingan para ulama di Tus. Keduanya menunjukkan kecerdasan yang luar biasa, sehingga para guru mereka pun terkagum-kagum. Seorang guru mereka berkata: <em>"Aku belum pernah melihat dua anak yang seperti ini — yang satu tajam akalnya (Abu Hamid), dan yang satu lembut hatinya (Ahmad). Keduanya akan menjadi bintang di langit ilmu dan tasawuf."</em>
+</p>
+<p>
+Namun, di antara semua ilmu yang dipelajarinya, Ahmad kecil paling tertarik pada ilmu tasawuf dan akhlak. Beliau lebih suka duduk di majelis para sufi daripada di majelis para fuqaha (ahli fikih). Beliau lebih tertarik pada pembahasan tentang cinta ilahi, ma'rifatullah, dan penyucian jiwa daripada pembahasan tentang hukum-hukum fikih yang rinci. Kecenderungan inilah yang kelak menjadikan beliau sebagai <em>Sultan al-‘Ussyaq</em> — Raja Para Pecinta Ilahi.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENGAJAR ANAK — QS. LUQMAN: 13-14</div>
+<div class="arabic-text">
+وَإِذْ قَالَ لُقْمَانُ لِابْنِهِ وَهُوَ يَعِظُهُ يَا بُنَيَّ لَا تُشْرِكْ بِاللَّهِ ۖ إِنَّ الشِّرْكَ لَظُلْمٌ عَظِيمٌ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan (ingatlah) ketika Luqman berkata kepada anaknya, di waktu ia memberi pelajaran kepadanya: 'Hai anakku, janganlah kamu mempersekutukan Allah, sesungguhnya mempersekutukan (Allah) adalah benar-benar kezaliman yang besar'."
+<br>— QS. Luqman: 13
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Hubungan Erat dengan Kakaknya, Abu Hamid</span>
+<div class="karomah-arabic">الْعَلَاقَةُ الْوَثِيقَةُ مَعَ أَخِيهِ أَبِي حَامِدٍ</div>
+<p>
+Salah satu karunia terbesar dalam masa kecil Syeikh Ahmad Al-Ghazali adalah kehadiran kakaknya, Abu Hamid (kelak Imam Al-Ghazali), yang berusia empat tahun lebih tua darinya. Hubungan kedua bersaudara ini sangat erat — mereka tumbuh bersama, belajar bersama, bermain bersama, dan saling menguatkan dalam menghadapi ujian kehidupan setelah kehilangan ayahanda mereka.
+</p>
+<p>
+Abu Hamid, sebagai kakak tertua, senantiasa melindungi dan membimbing Ahmad dengan penuh kasih sayang. Ia menggantikan peran ayah dalam banyak hal — mengajarkannya membaca, membantunya menghafal Al-Qur'an, dan menemaninya dalam shalat malam. Ahmad pun senantiasa mengikuti jejak kakaknya dengan penuh hormat dan cinta. Ia menganggap Abu Hamid bukan hanya sebagai kakak, melainkan juga sebagai guru, teladan, dan sahabat terdekatnya.
+</p>
+<p>
+Namun, meskipun keduanya sangat dekat, karakter mereka mulai menunjukkan perbedaan yang jelas sejak masa kecil. Abu Hamid lebih condong pada pemikiran rasional, logika, dan ilmu-ilmu aqliyah (filsafat, kalam, mantiq). Ia lebih suka berdebat dan menganalisis. Sebaliknya, Ahmad lebih condong pada rasa (<em>dzauq</em>), intuisi spiritual, dan ilmu-ilmu qalbiyah (tasawuf, akhlak, mahabbah). Ia lebih suka berdzikir, merenung, dan merasakan kehadiran Allah.
+</p>
+<p>
+Perbedaan karakter ini bukanlah sumber perpecahan, melainkan saling melengkapi. Abu Hamid memberikan Ahmad landasan intelektual yang kokoh, sementara Ahmad memberikan Abu Hamid kedalaman spiritual yang menyentuh hati. Keduanya menjadi dua bintang yang cahayanya saling menerangi — Abu Hamid sebagai <em>Hujjatul Islam</em> yang membela syariat dengan akal, dan Ahmad sebagai <em>Sultan al-‘Ussyaq</em> yang membela hakikat dengan cinta.
+</p>
+<p>
+Beliau pernah berkata tentang kakaknya: <em>"Abu Hamid adalah cahaya yang menerangi akal, dan aku adalah cahaya yang menerangi hati. Keduanya berasal dari sumber yang sama — cahaya Allah yang dianugerahkan kepada keluarga kami."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG PERSAUDARAAN — QS. AL-HUJURAT: 10</div>
+<div class="arabic-text">
+إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ ۚ وَاتَّقُوا اللَّهَ لَعَلَّكُمْ تُرْحَمُونَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Orang-orang beriman itu sesungguhnya bersaudara. Sebab itu damaikanlah (perbaikilah hubungan) antara kedua saudaramu itu dan bertakwalah kepada Allah, supaya kamu mendapat rahmat."
+<br>— QS. Al-Hujurat: 10
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Tanda-Tanda Kewalian Sejak Dini — Cahaya Mahabbah di Hati Ahmad Kecil</span>
+<div class="karomah-arabic">عَلَامَاتُ الْوِلَايَةِ مُنْذُ الصِّغَرِ — نُورُ الْمَحَبَّةِ فِي قَلْبِ أَحْمَدَ الصَّغِيرِ</div>
+<p>
+Para ulama dan orang-orang shaleh di desa Ghazalah dan kota Tus menceritakan bahwa Ahmad kecil telah menunjukkan tanda-tanda kewalian sejak usia dini. Di antara tanda-tanda tersebut adalah:
+</p>
+<ul>
+<li><strong>Kecintaan pada Kesunyian</strong> — Sejak kecil, Ahmad lebih suka menyendiri di tempat-tempat yang tenang untuk berdzikir dan merenung. Ia sering ditemukan di sudut masjid atau di bawah pohon di pinggiran desa, tenggelam dalam munajat kepada Allah.</li>
+<li><strong>Tangisan karena Takut kepada Allah</strong> — Ketika mendengar ayat-ayat Al-Qur'an yang berbicara tentang neraka dan azab Allah, Ahmad kecil senantiasa menangis dengan kencang. Tangisannya bukan karena takut akan azab semata, melainkan karena rindu akan ridha Allah dan cinta akan pertemuan dengan-Nya.</li>
+<li><strong>Zuhud sejak Kecil</strong> — Ahmad kecil tidak tertarik pada mainan dan permainan anak-anak seusianya. Ia lebih suka memberikan makanannya kepada anak-anak fakir, dan lebih senang memakai pakaian yang sederhana daripada pakaian yang bagus.</li>
+<li><strong>Kecerdasan Spiritual</strong> — Ketika para guru menjelaskan tentang cinta Allah dan Rasulullah, Ahmad kecil seolah-olah sudah memahami makna-makna tersebut dari sebelumnya. Ia sering memberikan jawaban-jawaban yang membuat para gurunya terkagum-kagum dengan kedalaman pemahamannya.</li>
+<li><strong>Karamah Pertama</strong> — Dalam sebuah riwayat, diceritakan bahwa ketika Ahmad kecil berusia sekitar tujuh tahun, ia pernah kehilangan seekor kambing milik keluarganya. Dengan penuh tawakkal, ia berdoa kepada Allah, dan tak lama kemudian kambing itu kembali dengan sendirinya, disertai dengan seekor kambing lain yang lebih gemuk sebagai hadiah dari Allah.</li>
+</ul>
+<p>
+Seorang ulama shaleh di Tus yang melihat tanda-tanda ini berkata kepada teman ayah Ahmad: <em>"Sesungguhnya anak ini (Ahmad) memiliki cahaya yang berbeda dari kakaknya (Abu Hamid). Abu Hamid akan menjadi pembela syariat dengan ilmunya, sedangkan Ahmad akan menjadi pembela hakikat dengan cintanya. Jagalah keduanya, karena keduanya adalah amanah Allah untuk umat ini."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG CINTA ALLAH — QS. MARYAM: 96</div>
+<div class="arabic-text">
+إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ سَيَجْعَلُ لَهُمُ الرَّحْمَٰنُ وُدًّا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sesungguhnya orang-orang yang beriman dan beramal saleh, kelak Allah Yang Maha Pemurah akan menanamkan dalam (hati) mereka rasa kasih sayang."
+<br>— QS. Maryam: 96
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Pendidikan Akhlak dan Tasawuf — Fondasi Spiritual yang Kokoh</span>
+<div class="karomah-arabic">تَعْلِيمُ الْأَخْلَاقِ وَالتَّصَوُّفِ — أَسَاسٌ رُوحِيٌّ مَتِينٌ</div>
+<p>
+Selain mempelajari ilmu-ilmu zhahir (fikih, nahwu, hadits, dll.), Ahmad kecil juga mendapatkan pendidikan akhlak dan tasawuf yang sangat mendalam dari teman ayah beliau yang shaleh dan dari para sufi di wilayah Tus. Pendidikan inilah yang menjadi fondasi spiritual beliau — fondasi yang kelak akan menopang seluruh perjalanan hidupnya sebagai mursyid dan pembawa ajaran cinta ilahi.
+</p>
+<p>
+Di antara pendidikan akhlak dan tasawuf yang beliau terima sejak kecil adalah:
+</p>
+<ul>
+<li><strong>Muraqabah (Pengawasan Hati)</strong> — Beliau diajarkan untuk senantiasa merasa diawasi oleh Allah dalam setiap gerak-gerik, pikiran, dan perasaan. Ia dilatih untuk senantiasa menghadirkan Allah di dalam hatinya, baik ketika sendirian maupun di tengah orang banyak.</li>
+<li><strong>Muhasabah (Introspeksi Diri)</strong> — Setiap malam sebelum tidur, beliau diajarkan untuk menghisab (menghitung) amal-amalnya sepanjang hari — apa yang telah ia lakukan, apa yang telah ia tinggalkan, dan apa yang perlu ia perbaiki esok hari.</li>
+<li><strong>Riyadhah (Latihan Spiritual)</strong> — Beliau dilatih untuk berpuasa sunnah (senin-kamis dan hari-hari putih), shalat malam (tahajjud), dan berdzikir dengan jumlah yang banyak. Latihan-latihan ini membentuk jiwanya menjadi jiwa yang kuat dan tahan uji.</li>
+<li><strong>Khalwat (Menyepi)</strong> — Beliau diajarkan untuk meluangkan waktu khusus setiap hari untuk menyepi dan bermunajat kepada Allah. Dalam kesunyian inilah beliau merasakan kehadiran Allah dengan lebih mendalam dan mengalami rasa cinta ilahi yang semakin menguat.</li>
+<li><strong>Suhbah (Berguru kepada Ahlinya)</strong> — Beliau diajarkan untuk senantiasa bergaul dengan orang-orang shaleh dan mengambil manfaat dari kehadiran mereka. Ia percaya bahwa hati itu seperti tanaman — jika ditanam di tanah yang subur (majelis orang shaleh), ia akan tumbuh dengan baik; jika ditanam di tanah yang gersang (majelis orang lalai), ia akan layu dan mati.</li>
+</ul>
+<p>
+Pendidikan akhlak dan tasawuf inilah yang membedakan Ahmad kecil dari anak-anak lainnya di zamannya. Ia tumbuh menjadi pemuda yang zuhud, wara', lembut hati, dan senantiasa rindu kepada Allah. Ia tidak tertarik pada kemewahan dunia, tidak terpesona oleh kedudukan, dan tidak silau oleh popularitas. Hatinya hanya tertuju pada satu tujuan — meraih cinta Allah dan ridha-Nya.
+</p>
+<p>
+Beliau pernah berkata tentang pentingnya pendidikan akhlak sejak dini: <em>"Barangsiapa yang tidak diajarkan akhlak sejak kecil, maka ia tidak akan memiliki akhlak ketika besar. Hati anak itu seperti tanah yang subur — apa pun yang ditanam di dalamnya, ia akan tumbuh. Maka tanamlah di dalamnya cinta Allah dan Rasul-Nya, niscaya ia akan tumbuh menjadi pohon yang buahnya adalah ma'rifat dan mahabbah."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH AHMAD TENTANG PENDIDIKAN HATI</div>
+<div class="arabic-text">
+الْقَلْبُ كَالْأَرْضِ إِنْ لَمْ تَزْرَعْ فِيهَا الْخَيْرَ نَبَتَ فِيهَا الشَّرُّ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Hati itu seperti tanah — jika engkau tidak menanam kebaikan di dalamnya, maka kejahatan akan tumbuh di dalamnya."
+<br>— Syeikh Ahmad Al-Ghazali
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Masa Kecil dan Pendidikan Awal Syeikh Ahmad Al-Ghazali:</strong>
+<ul>
+<li><strong>Tumbuh di desa Ghazalah</strong> — desa yang tenang dan penuh berkah di pinggiran kota Tus, Khorasan</li>
+<li><strong>Kehilangan ayah di usia muda</strong> — Syeikh Muhammad Al-Ghazali wafat ketika Ahmad dan Abu Hamid masih kecil</li>
+<li><strong>Diasuh oleh teman ayah yang shaleh</strong> — seorang sufi wara' yang menggantikan peran ayah dengan penuh kasih sayang</li>
+<li><strong>Menghafal Al-Qur'an sejak kecil</strong> — menunjukkan kecerdasan luar biasa dalam menghafal</li>
+<li><strong>Mempelajari ilmu-ilmu dasar</strong> — nahwu, sharaf, fikih, tauhid, hadits, tafsir, akhlak, tasawuf</li>
+<li><strong>Hubungan erat dengan kakaknya</strong> — Abu Hamid sebagai pelindung, guru, dan sahabat terdekat</li>
+<li><strong>Perbedaan karakter</strong> — Abu Hamid condong pada akal, Ahmad condong pada rasa dan cinta</li>
+<li><strong>Tanda-tanda kewalian sejak dini</strong> — kecintaan pada kesunyian, tangisan karena takut Allah, zuhud, kecerdasan spiritual</li>
+<li><strong>Pendidikan akhlak dan tasawuf</strong> — muraqabah, muhasabah, riyadhah, khalwat, suhbah</li>
+<li><strong>Fondasi spiritual yang kokoh</strong> — menjadi bekal bagi perjalanan spiritual beliau di masa dewasa</li>
+</ul>
+</div>
+<h2>Doa Memohon Keberkahan Masa Kecil dan Didikan yang Shaleh</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA UNTUK ANAK-ANAK KITA DAN PENDIDIKAN MEREKA</div>
+<div class="arabic-text">
+رَبِّ هَبْ لِي مِنَ الصَّالِحِينَ، وَاجْعَلْ أَوْلَادَنَا مِنْ أَهْلِ التَّقْوَى وَالْإِيمَانِ، وَارْزُقْنَا تَرْبِيَتَهُمْ عَلَى الْحُبِّ فِي اللَّهِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Tuhanku, anugerahkanlah kepadaku (keturunan) yang termasuk orang-orang yang shaleh, dan jadikanlah anak-anak kami termasuk ahli takwa dan iman, serta anugerahkanlah kepada kami kemampuan untuk mendidik mereka di atas dasar cinta karena Allah."
+<br>— Doa terinspirasi dari QS. Ash-Shaffat: 100
+</div>
+</div>
+<h2>Penutup Halaman 2</h2>
+<p>
+Demikianlah kisah masa kecil Syeikh Ahmad Al-Ghazali — sang Sultan al-‘Ussyaq yang tumbuh sebagai anak yatim di desa Ghazalah, ditempa oleh ujian kehilangan ayah, namun dibesarkan dengan penuh kasih sayang oleh seorang wali shaleh yang menggantikan peran ayahnya. Bersama kakaknya, Abu Hamid, beliau menghafal Al-Qur'an, mempelajari ilmu-ilmu dasar Islam, dan menunjukkan tanda-tanda kewalian sejak usia dini. Di desa inilah benih-benih cinta ilahi mulai tumbuh di dalam hatinya — benih yang kelak akan berkembang menjadi pohon rindang yang menaungi ribuan salik di sepanjang sejarah Islam.
+</p>
+<p>
+Setelah masa kecil yang penuh berkah di desa Ghazalah, Ahmad remaja mulai memasuki fase baru dalam perjalanan hidupnya — fase menuntut ilmu yang lebih mendalam di kota-kota besar seperti Tus, Naisabur, dan Baghdad. Pada halaman berikutnya, kita akan membahas perjalanan menuntut ilmu beliau — bidang-bidang ilmu yang beliau pelajari, nama-nama guru beliau, dan bagaimana beliau menjadi salah satu ulama terbesar di zamannya.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Tuhan kami, anugerahkanlah kepada kami istri-istri dan keturunan kami sebagai penyejuk hati, dan jadikanlah kami pemimpin bagi orang-orang yang bertakwa."
+<br>— QS. Al-Furqan: 74
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="ahmad1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="ahmad2.html" class="article-nav-btn active" title="Halaman 2: Masa Kecil & Pendidikan">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="ahmad3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="ahmad4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="ahmad5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="ahmad6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="ahmad7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="ahmad8.html" class="article-nav-btn" title="Halaman 8: Warisan Tasawuf">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="ahmad9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

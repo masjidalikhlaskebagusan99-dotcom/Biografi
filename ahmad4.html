@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Ahmad Al-Ghazali - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+@media (max-width: 768px) {
+.article-container { max-width: 100%; padding: 20px; }
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover { background: rgba(233, 69, 96, 0.15); transform: scale(1.05); }
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover { background: #e94560; color: #fff; border-color: #e94560; }
+.article-content { font-size: 1.05rem; line-height: 1.9; color: #444; }
+.article-content p { margin-bottom: 20px; text-align: justify; }
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 { font-size: 1.2rem; color: #333; margin: 25px 0 10px; }
+.article-content ul { margin: 15px 0 20px 30px; }
+.article-content ul li { margin-bottom: 10px; line-height: 1.7; }
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title { font-size: 1.3rem; color: #1a1a2e; font-weight: bold; display: inline; }
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul { margin: 15px 0 0 30px; }
+.highlight-box ul li { margin-bottom: 10px; line-height: 1.7; }
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label { text-align: center; color: #aaa; font-size: 0.75rem; margin-top: 6px; }
+.nav-group { display: flex; flex-direction: column; align-items: center; }
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+nav { flex-direction: column; gap: 10px; width: 100%; justify-content: center; }
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav { gap: 6px; padding: 15px; }
+.article-nav-btn { width: 36px; height: 36px; font-size: 1rem; }
+.nav-btn-label { font-size: 0.65rem; }
+}
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam { font-size: 1.3rem !important; letter-spacing: 3px !important; }
+header nav a { padding: 6px 10px !important; font-size: 0.8rem !important; }
+.article-nav-btn { width: 32px; height: 32px; font-size: 0.9rem; }
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Ahmad Al-Ghazali
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Ahmad Al-Ghazali</h1>
+<div class="subtitle">Halaman 4 dari 9 — Perjalanan Spiritual: Suluk Umum, Kasyf Khusus, dan Maqam Mahabbah</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Minggu, 25 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Whirling_dervishes_in_Istanbul.jpg/440px-Whirling_dervishes_in_Istanbul.jpg"
+alt="Suasana dzikir dan suluk para sufi — melambangkan perjalanan spiritual Syeikh Ahmad Al-Ghazali"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Islamic_Calligraphy.jpg/440px-Islamic_Calligraphy.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Perjalanan spiritual Syeikh Ahmad Al-Ghazali — dari suluk dan riyadhah umum menuju kasyf dan mukasyafah khusus, hingga mencapai maqam mahabbah (cinta ilahi) yang menjadi inti ajarannya</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Perjalanan spiritual Syeikh Ahmad Al-Ghazali adalah perjalanan seorang salik yang tidak hanya mempelajari tasawuf dari kitab-kitab dan para guru, melainkan mengalaminya secara langsung dalam suluk yang mendalam, riyadhah yang ketat, dan kasyf yang membuka tabir-tabir gaib. Beliau menempuh dua jalur perjalanan spiritual secara bersamaan — jalur umum (<em>suluk</em> dan <em>riyadhah</em>) yang dilalui oleh setiap salik, dan jalur khusus (<em>kasyf</em> dan <em>mukasyafah</em>) yang dianugerahkan Allah kepada para wali-Nya yang terpilih. Dari perpaduan kedua jalur inilah lahir ajaran <em>mahabbah</em> (cinta ilahi) yang menjadi inti tasawuf beliau — ajaran yang tidak hanya menyentuh akal, melainkan juga menggetarkan hati dan menghidupkan jiwa. Melalui perjalanan inilah beliau menjadi <em>Sultan al-‘Ussyaq</em> — Raja Para Pecinta Ilahi — yang ajarannya terus hidup hingga hari ini.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG PERJALANAN SPIRITUAL — QS. AL-ANKABUT: 69</div>
+<div class="arabic-text">
+وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا ۚ وَإِنَّ اللَّهَ لَمَعَ الْمُحْسِنِينَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan orang-orang yang berjihad untuk (mencari keridhaan) Kami, pastilah akan Kami tunjukkan kepada mereka jalan-jalan Kami. Dan sesungguhnya Allah benar-benar beserta orang-orang yang berbuat baik."
+<br>— QS. Al-'Ankabut: 69
+</div>
+</div>
+<h2>Dua Jalur Perjalanan Spiritual — Suluk Umum dan Kasyf Khusus</h2>
+<p>
+Perjalanan spiritual Syeikh Ahmad Al-Ghazali dapat dibagi menjadi dua jalur yang saling melengkapi: <strong>jalur umum</strong> (suluk, riyadhah, mujahadah) yang merupakan jalan yang ditempuh oleh setiap salik dalam perjalanannya menuju Allah, dan <strong>jalur khusus</strong> (kasyf, mukasyafah, ilham) yang merupakan anugerah Allah kepada hamba-hamba-Nya yang terpilih. Kedua jalur ini bukan saling meniadakan, melainkan saling menguatkan — suluk membuka pintu hati, dan kasyf menerangi apa yang ada di balik pintu tersebut.
+</p>
+<p>
+Syeikh Ahmad menjalani kedua jalur ini dengan penuh ketekunan dan kesungguhan. Beliau tidak hanya mengandalkan usaha diri (kasb), melainkan juga membuka diri sepenuhnya terhadap anugerah ilahi (wahb). Beliau pernah berkata: <em>"Barangsiapa yang menempuh jalan spiritual hanya dengan usahanya sendiri tanpa membuka diri terhadap anugerah Allah, maka ia seperti orang yang mendaki gunung dengan tangan terikat. Dan barangsiapa yang mengharapkan anugerah Allah tanpa berusaha, maka ia seperti orang yang menunggu buah jatuh dari langit tanpa menanam pohon."</em>
+</p>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH AHMAD TENTANG DUA JALUR SPIRITUAL</div>
+<div class="arabic-text">
+السُّلُوكُ هُوَ الطَّرِيقُ، وَالْكَشْفُ هُوَ النُّورُ، وَالْمَحَبَّةُ هِيَ الْمَقْصُودُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Suluk adalah jalan, kasyf adalah cahaya, dan mahabbah (cinta) adalah tujuan."
+<br>— Syeikh Ahmad Al-Ghazali, dalam <em>Savanih al-‘Ussyaq</em>
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Perjalanan Spiritual Umum — Suluk, Riyadhah, dan Mujahadah</span>
+<div class="karomah-arabic">السُّلُوكُ الْعَامُّ — الرِّيَاضَةُ وَالْمُجَاهَدَةُ</div>
+<p>
+Perjalanan spiritual umum (<em>as-suluk al-'amm</em>) yang ditempuh Syeikh Ahmad Al-Ghazali adalah perjalanan yang dilalui oleh setiap salik dalam perjalanannya menuju Allah. Perjalanan ini terdiri dari tiga komponen utama: <em>suluk</em> (perjalanan), <em>riyadhah</em> (latihan spiritual), dan <em>mujahadah</em> (perjuangan melawan hawa nafsu).
+</p>
+<h3>A. Suluk — Perjalanan Menuju Allah</h3>
+<p>
+Suluk secara harfiah berarti "perjalanan" — yaitu perjalanan hati dari dunia menuju Allah. Dalam suluk, seorang salik menempuh maqamat (tingkatan-tingkatan) spiritual yang telah ditetapkan oleh para ulama tasawuf, seperti taubat, zuhud, wara', faqir, sabar, tawakkal, ridha, dan mahabbah. Syeikh Ahmad menempuh seluruh maqamat ini dengan penuh ketekunan, namun beliau memberikan perhatian khusus pada maqam <em>mahabbah</em> (cinta ilahi) yang menjadi puncak dari seluruh maqamat.
+</p>
+<h3>B. Riyadhah — Latihan Spiritual</h3>
+<p>
+Riyadhah adalah latihan-latihan spiritual yang bertujuan untuk membersihkan hati dari kotoran-kotoran duniawi dan menghiasinya dengan sifat-sifat ilahiah. Di antara riyadhah yang ditempuh Syeikh Ahmad adalah:
+</p>
+<ul>
+<li><strong>Puasa yang Berkelanjutan</strong> — Beliau berpuasa sunnah hampir setiap hari, kecuali hari-hari yang dilarang berpuasa. Beliau berkata: <em>"Puasa adalah makanan para wali, dan minuman para pecinta."</em></li>
+<li><strong>Qiyamul Lail (Shalat Malam)</strong> — Beliau senantiasa bangun pada sepertiga malam terakhir untuk shalat tahajjud, bermunajat, dan membaca Al-Qur'an. Beliau sering menghabiskan separuh malam atau lebih untuk shalat, dengan tangis yang tak henti-hentinya.</li>
+<li><strong>Dzikir yang Berkelanjutan</strong> — Beliau senantiasa berdzikir kepada Allah dalam setiap keadaan — ketika berjalan, duduk, berbaring, bahkan ketika tidur. Dzikirnya bukan hanya di lisan, melainkan juga di hati, sehingga hatinya senantiasa hidup dengan mengingat Allah.</li>
+<li><strong>Tilawah Al-Qur'an</strong> — Beliau mengkhatamkan Al-Qur'an setiap beberapa hari sekali, dengan tadabbur yang mendalam. Beliau berkata: <em>"Al-Qur'an adalah taman hati, dan tadabbur adalah kunci untuk masuk ke dalamnya."</em></li>
+</ul>
+<h3>C. Mujahadah — Perjuangan Melawan Hawa Nafsu</h3>
+<p>
+Mujahadah adalah perjuangan melawan hawa nafsu dan godaan-godaan duniawi. Syeikh Ahmad menempuh mujahadah dengan cara:
+</p>
+<ul>
+<li><strong>Menjaga Pandangan</strong> — Beliau senantiasa menjaga pandangannya dari hal-hal yang haram dan syubhat, karena beliau tahu bahwa pandangan adalah panah beracun yang dapat mematikan hati.</li>
+<li><strong>Menjaga Lisan</strong> — Beliau berbicara hanya ketika perlu, dan lebih banyak diam. Beliau berkata: <em>"Lisan adalah pintu neraka dan pintu surga — barangsiapa yang menjaganya, ia akan selamat; dan barangsiapa yang melepaskannya, ia akan binasa."</em></li>
+<li><strong>Menjaga Perut</strong> — Beliau makan hanya yang halal dan thayyib, dalam jumlah yang sedikit, dan tidak makan kecuali ketika benar-benar lapar.</li>
+<li><strong>Menjaga Hati</strong> — Beliau senantiasa membersihkan hatinya dari sifat-sifat tercela seperti hasad, riya', takabbur, dan cinta dunia.</li>
+</ul>
+<p>
+Beliau pernah berkata tentang mujahadah: <em>"Mujahadah bukanlah membunuh nafsu, melainkan mendidiknya agar tunduk kepada Allah. Nafsu itu seperti kuda liar — jika engkau membiarkannya, ia akan membawamu ke jurang; namun jika engkau mendidiknya, ia akan membawamu kepada Allah."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MUJAHADAH — QS. AL-ANKABUT: 6</div>
+<div class="arabic-text">
+وَمَن جَاهَدَ فَإِنَّمَا يُجَاهِدُ لِنَفْسِهِ ۚ إِنَّ اللَّهَ لَغَنِيٌّ عَنِ الْعَالَمِينَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan barangsiapa yang berjihad, maka sesungguhnya jihadnya itu adalah untuk dirinya sendiri. Sesungguhnya Allah benar-benar Maha Kaya (tidak memerlukan sesuatu) dari semesta alam."
+<br>— QS. Al-'Ankabut: 6
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Dzikir Khafi dan Muraqabah — Metode Khas Syeikh Ahmad</span>
+<div class="karomah-arabic">الذِّكْرُ الْخَفِيُّ وَالْمُرَاقَبَةُ — مِنْهَاجُ الشَّيْخِ أَحْمَدَ الْخَاصّ</div>
+<p>
+Salah satu keistimewaan Syeikh Ahmad Al-Ghazali dalam perjalanan spiritual beliau adalah penekanan beliau pada <em>dzikir khafi</em> (dzikir tersembunyi dalam hati) dan <em>muraqabah</em> (pengawasan hati yang ketat). Meskipun dzikir khafi lebih dikenal sebagai ciri khas Tarekat Naqsyabandiyah yang didirikan oleh Syeikh Bahauddin An-Naqsyabandi (yang hidup beberapa abad setelah beliau), Syeikh Ahmad Al-Ghazali telah meletakkan dasar-dasar metode ini dalam ajaran tasawuf beliau.
+</p>
+<h3>A. Dzikir Khafi — Dzikir dalam Hati</h3>
+<p>
+Dzikir khafi adalah dzikir yang dilakukan di dalam hati, tanpa diucapkan dengan lisan. Syeikh Ahmad mengajarkan bahwa dzikir yang paling utama adalah dzikir yang hadir di hati, karena dzikir lisan tanpa kehadiran hati adalah dzikir yang tidak sempurna. Beliau berkata: <em>"Dzikir lisan adalah kulit, dan dzikir hati adalah isi. Barangsiapa yang mendapatkan kulit tanpa isi, maka ia seperti orang yang memiliki wadah tanpa air."</em>
+</p>
+<p>
+Beliau mengajarkan metode dzikir khafi dengan cara:
+</p>
+<ul>
+<li><strong>Nafyu al-isymaal</strong> — Menafikan segala sesuatu dari hati kecuali Allah, sehingga hati hanya tertuju kepada-Nya.</li>
+<li><strong>Itsbat adz-dzikr</strong> — Menetapkan dzikir "Allah" di dalam hati, sehingga dzikir itu menyatu dengan denyut jantung dan aliran darah.</li>
+<li><strong>Hifzh as-sirr</strong> — Menjaga rahasia dzikir, tidak memamerkannya kepada orang lain.</li>
+<li><strong>Raddu an-nafas</strong> — Mengatur nafas agar selaras dengan dzikir, sehingga setiap nafas menjadi dzikir.</li>
+</ul>
+<h3>B. Muraqabah — Pengawasan Hati</h3>
+<p>
+Muraqabah adalah pengawasan hati yang ketat terhadap setiap pikiran, perasaan, dan perbuatan. Syeikh Ahmad mengajarkan bahwa seorang salik harus senantiasa merasa diawasi oleh Allah, sehingga ia tidak berani berbuat dosa, baik zhahir maupun batin. Beliau berkata: <em>"Muraqabah adalah engkau mengetahui bahwa Allah senantiasa melihatmu — maka malulah engkau dari-Nya dalam keadaan sia-sia, sementara Dia melihatmu dalam keadaan yang tidak seharusnya."</em>
+</p>
+<p>
+Beliau membagi muraqabah menjadi tiga tingkatan:
+</p>
+<ul>
+<li><strong>Muraqabah al-'ammah</strong> — Pengawasan terhadap seluruh anggota badan dari perbuatan dosa.</li>
+<li><strong>Muraqabah al-khassah</strong> — Pengawasan terhadap hati dari sifat-sifat tercela.</li>
+<li><strong>Muraqabah khasshat al-khassah</strong> — Pengawasan terhadap hati dari segala sesuatu selain Allah, sehingga hati hanya tertuju kepada-Nya.</li>
+</ul>
+<p>
+Beliau pernah berkata tentang muraqabah: <em>"Muraqabah adalah cermin hati — barangsiapa yang senantiasa berkaca di dalamnya, ia akan melihat aib-aibnya dan membersihkannya."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG DZIKIR — QS. AL-AHZAB: 41-42</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا اذْكُرُوا اللَّهَ ذِكْرًا كَثِيرًا ۝ وَسَبِّحُوهُ بُكْرَةً وَأَصِيلًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, ingatlah Allah dengan dzikir yang sebanyak-banyaknya. Dan bertasbihlah kepada-Nya pada waktu pagi dan petang."
+<br>— QS. Al-Ahzab: 41-42
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Kasyf dan Mukasyafah — Anugerah Ilahi yang Diterima</span>
+<div class="karomah-arabic">الْكَشْفُ وَالْمُكَاشَفَةُ — مَوَاهِبُ اللَّهِ لِلْأَوْلِيَاءِ</div>
+<p>
+Selain perjalanan spiritual umum (suluk dan riyadhah), Syeikh Ahmad Al-Ghazali juga menerima anugerah ilahi berupa <em>kasyf</em> (penyingkapan tabir gaib) dan <em>mukasyafah</em> (penyaksian terhadap hakikat-hakikat tersembunyi). Kasyf dan mukasyafah ini bukanlah hasil dari usaha beliau semata, melainkan anugerah Allah yang diberikan kepada hamba-hamba-Nya yang telah membersihkan hati dan mendekatkan diri kepada-Nya.
+</p>
+<h3>A. Kasyf — Penyingkapan Tabir Gaib</h3>
+<p>
+Kasyf adalah penyingkapan tabir yang menutupi hati dari melihat hakikat-hakikat gaib. Syeikh Ahmad menerima berbagai bentuk kasyf dalam perjalanan spiritualnya, di antaranya:
+</p>
+<ul>
+<li><strong>Kasyf al-ma'ani</strong> — Penyingkapan makna-makna tersembunyi di balik ayat-ayat Al-Qur'an dan hadits-hadits Nabi SAW. Beliau mampu memahami makna-makna batin (isyari) dari ayat-ayat zhahir, yang tidak dapat dipahami oleh para ulama zhahir.</li>
+<li><strong>Kasyf al-a'mal</strong> — Penyingkapan hakikat amal-amal ibadah. Beliau mampu melihat hakikat shalat, puasa, zakat, dan ibadah-ibadah lainnya dari sudut pandang batin, yang melampaui pemahaman fikih zhahir.</li>
+<li><strong>Kasyf al-ahwal</strong> — Penyingkapan keadaan-keadaan spiritual para salik. Beliau mampu memahami maqam dan hal seorang salik hanya dengan melihatnya, tanpa perlu bertanya.</li>
+<li><strong>Kasyf al-ghuyub</strong> — Penyingkapan sebagian hal-hal gaib yang Allah izinkan untuk beliau ketahui, seperti firasat (farasah) yang benar tentang orang-orang yang beliau temui.</li>
+</ul>
+<h3>B. Mukasyafah — Penyaksian Hakikat</h3>
+<p>
+Mukasyafah adalah penyaksian terhadap hakikat-hakikat yang tersembunyi di balik wujud ini. Syeikh Ahmad mengalami berbagai bentuk mukasyafah dalam perjalanan spiritualnya, di antaranya:
+</p>
+<ul>
+<li><strong>Mukasyafah al-jalal</strong> — Penyaksian terhadap keagungan dan kebesaran Allah, yang membuatnya senantiasa khusyuk dan tunduk di hadapan-Nya.</li>
+<li><strong>Mukasyafah al-jamal</strong> — Penyaksian terhadap keindahan dan kecantikan Allah, yang membuatnya jatuh cinta kepada-Nya dan rindu untuk bertemu dengan-Nya.</li>
+<li><strong>Mukasyafah al-kamal</strong> — Penyaksian terhadap kesempurnaan Allah, yang membuatnya menyadari kekurangan dirinya dan senantiasa berusaha untuk mendekatkan diri kepada-Nya.</li>
+<li><strong>Mukasyafah al-wahdah</strong> — Penyaksian terhadap keesaan Allah, yang membuatnya tidak melihat dalam wujud ini selain Allah.</li>
+</ul>
+<p>
+Beliau pernah berkata tentang kasyf dan mukasyafah: <em>"Kasyf bukanlah tujuan, melainkan jalan. Tujuan yang sejati adalah ma'rifatullah dan mahabbatullah. Barangsiapa yang mendapatkan kasyf namun tidak mendapatkan ma'rifat dan mahabbah, maka ia seperti orang yang memiliki lampu namun tidak memiliki jalan."</em>
+</p>
+<p>
+Namun, Syeikh Ahmad senantiasa berhati-hati dalam menceritakan pengalaman-pengalaman kasyf dan mukasyafah beliau. Beliau tidak memamerkannya di depan orang banyak, melainkan hanya menceritakannya kepada para murid beliau yang khusus, sebagai pelajaran dan bimbingan. Beliau berkata: <em>"Barangsiapa yang menceritakan kasyfnya kepada orang yang tidak memahaminya, maka ia seperti orang yang melemparkan mutiara kepada babi."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KASYF — QS. QAF: 22</div>
+<div class="arabic-text">
+لَقَدْ كُنتَ فِي غَفْلَةٍ مِّنْ هَٰذَا فَكَشَفْنَا عَنكَ غِطَاءَكَ فَبَصَرُكَ الْيَوْمَ حَدِيدٌ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sesungguhnya kamu berada dalam keadaan lalai dari (hal) ini, maka Kami singkapkan daripadamu tutup (yang menutupi) matamu, maka penglihatanmu pada hari itu amat tajam."
+<br>— QS. Qaf: 22
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Maqam Mahabbah — Puncak Perjalanan Spiritual</span>
+<div class="karomah-arabic">مَقَامُ الْمَحَبَّةِ — ذُرْوَةُ السُّلُوكِ الرُّوحِيِّ</div>
+<p>
+Puncak dari perjalanan spiritual Syeikh Ahmad Al-Ghazali adalah <em>maqam mahabbah</em> (tingkatan cinta ilahi) — maqam yang menjadi inti dari seluruh ajaran tasawuf beliau. Maqam mahabbah bukanlah maqam yang dapat dicapai dengan usaha semata, melainkan anugerah Allah yang diberikan kepada hamba-hamba-Nya yang telah membersihkan hati dan mendekatkan diri kepada-Nya. Namun, usaha (kasb) tetap diperlukan sebagai syarat untuk menerima anugerah (wahb) ini.
+</p>
+<h3>A. Hakikat Mahabbah</h3>
+<p>
+Menurut Syeikh Ahmad, mahabbah adalah:
+</p>
+<ul>
+<li><strong>Condongnya hati kepada Yang Maha Indah</strong> — Hati manusia secara fitrah condong kepada keindahan, dan keindahan yang sejati hanyalah Allah. Maka mahabbah adalah condongnya hati kepada Allah sebagai sumber segala keindahan.</li>
+<li><strong>Lenyapnya pecinta dalam Yang Dicintai</strong> — Dalam maqam mahabbah yang sempurna, sang pecinta lenyap dalam Yang Dicintai, sehingga ia tidak lagi melihat dirinya, melainkan hanya melihat Yang Dicintai.</li>
+<li><strong>Kesepakatan antara hati dan lisan</strong> — Mahabbah yang sejati adalah ketika hati dan lisan sepakat dalam mencintai Allah — hati mencintai-Nya dengan sungguh-sungguh, dan lisan mengikrarkan cinta tersebut dengan mengikuti sunnah Rasulullah SAW.</li>
+</ul>
+<h3>B. Tingkatan Mahabbah</h3>
+<p>
+Syeikh Ahmad membagi mahabbah menjadi beberapa tingkatan:
+</p>
+<ul>
+<li><strong>Mahabbah al-mubtadi'in</strong> — Cinta para pemula, yang masih bercampur dengan harapan akan surga dan takut akan neraka.</li>
+<li><strong>Mahabbah al-muntahin</strong> — Cinta para pencari yang telah maju, yang mencintai Allah karena keindahan dan kesempurnaan-Nya, bukan karena imbalan.</li>
+<li><strong>Mahabbah al-washilin</strong> — Cinta para yang telah sampai, yang telah lenyap dalam cinta kepada Allah, sehingga mereka tidak lagi melihat diri mereka sendiri, melainkan hanya melihat Yang Dicintai.</li>
+<li><strong>Mahabbah al-kamilin</strong> — Cinta yang sempurna, yang merupakan maqam para nabi dan shiddiqin — cinta yang menjadikan mereka sebagai teladan bagi seluruh umat manusia.</li>
+</ul>
+<h3>C. Tanda-Tanda Orang yang Mencintai Allah</h3>
+<p>
+Syeikh Ahmad menyebutkan beberapa tanda-tanda orang yang benar-benar mencintai Allah:
+</p>
+<ul>
+<li><strong>Mencintai Al-Qur'an</strong> — Orang yang mencintai Allah akan mencintai kitab-Nya, dan senantiasa membacanya dengan tadabbur.</li>
+<li><strong>Mencintai Rasulullah SAW</strong> — Orang yang mencintai Allah akan mencintai Rasul-Nya, dan senantiasa mengikuti sunnahnya.</li>
+<li><strong>Mencintai para wali dan orang shaleh</strong> — Orang yang mencintai Allah akan mencintai hamba-hamba-Nya yang shaleh.</li>
+<li><strong>Mencintai ketaatan dan membenci maksiat</strong> — Orang yang mencintai Allah akan mencintai segala yang dicintai Allah, dan membenci segala yang dibenci-Nya.</li>
+<li><strong>Senantiasa berdzikir kepada-Nya</strong> — Orang yang mencintai Allah akan senantiasa mengingat-Nya, karena orang yang mencintai sesuatu akan senantiasa mengingatnya.</li>
+<li><strong>Rela berpisah dengan dunia demi Allah</strong> — Orang yang mencintai Allah akan rela meninggalkan segala sesuatu yang menghalanginya dari Allah.</li>
+</ul>
+<p>
+Beliau pernah berkata tentang mahabbah: <em>"Mahabbah adalah ruh dari seluruh ibadah — tanpa mahabbah, ibadah hanyalah gerakan badan tanpa ruh. Barangsiapa yang beribadah tanpa mahabbah, maka ibadahnya seperti jasad tanpa ruh — ia hidup di mata manusia, namun mati di mata Allah."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG CINTA ILAHI — QS. AL-MA'IDAH: 54</div>
+<div class="arabic-text">
+يُحِبُّهُمْ وَيُحِبُّونَهُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Allah mencintai mereka dan mereka pun mencintai-Nya."
+<br>— QS. Al-Ma'idah: 54
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Khalwat dan Uzlah — Menyepi untuk Mendekat kepada Allah</span>
+<div class="karomah-arabic">الْخَلْوَةُ وَالْعُزْلَةُ — الِانْفِرَادُ لِلْقُرْبِ مِنَ اللَّهِ</div>
+<p>
+Salah satu ciri khas perjalanan spiritual Syeikh Ahmad Al-Ghazali adalah penekanan beliau pada <em>khalwat</em> (menyepi) dan <em>uzlah</em> (mengasingkan diri dari keramaian) sebagai sarana untuk mendekatkan diri kepada Allah. Meskipun beliau juga dikenal sebagai khatib (penceramah) ulung di Baghdad yang senantiasa berinteraksi dengan masyarakat, beliau senantiasa meluangkan waktu khusus untuk menyepi dan bermunajat kepada Allah.
+</p>
+<h3>A. Khalwat — Menyepi dengan Allah</h3>
+<p>
+Khalwat secara harfiah berarti "menyepi" — yaitu mengasingkan diri dari manusia untuk bermunajat kepada Allah. Syeikh Ahmad mengajarkan bahwa khalwat yang sejati bukanlah khalwat badan semata, melainkan khalwat hati — yaitu ketika hati menyepi dari segala sesuatu selain Allah, meskipun badan berada di tengah keramaian.
+</p>
+<p>
+Beliau membagi khalwat menjadi tiga tingkatan:
+</p>
+<ul>
+<li><strong>Khalwat al-'ammah</strong> — Menyepi badan dari manusia di tempat yang sunyi, seperti gua, gunung, atau masjid yang sepi.</li>
+<li><strong>Khalwat al-khassah</strong> — Menyepi hati dari segala sesuatu selain Allah, meskipun badan berada di tengah manusia.</li>
+<li><strong>Khalwat khasshat al-khassah</strong> — Menyepi hati dari kesadaran akan khalwat itu sendiri, sehingga sang salik lenyap dalam kehadiran Allah, tanpa menyadari dirinya sedang berkhalwat.</li>
+</ul>
+<h3>B. Uzlah — Mengasingkan Diri dari Keramaian</h3>
+<p>
+Uzlah adalah mengasingkan diri dari keramaian manusia untuk menghindari fitnah dan menjaga hati. Syeikh Ahmad mengajarkan bahwa uzlah diperlukan pada masa-masa tertentu dalam perjalanan spiritual, khususnya ketika hati sedang sakit atau ketika fitnah sedang merajalela. Namun, uzlah yang sempurna bukanlah uzlah badan semata, melainkan uzlah hati dari cinta dunia dan keterikatan kepadanya.
+</p>
+<p>
+Beliau berkata: <em>"Uzlah yang sejati adalah ketika hatimu uzlah dari cinta dunia, meskipun badanmu berada di tengah pasar. Dan uzlah badan tanpa uzlah hati hanyalah pelarian dari tanggung jawab."</em>
+</p>
+<h3>C. Prinsip Khalwat dar Anjuman — Menyepi di Tengah Keramaian</h3>
+<p>
+Meskipun Syeikh Ahmad menekankan khalwat dan uzlah, beliau juga mengajarkan prinsip <em>khalwat dar anjuman</em> (menyepi di tengah keramaian) — yaitu kemampuan untuk tetap terhubung dengan Allah meskipun berada di tengah masyarakat. Prinsip ini kelak diwarisi oleh Tarekat Naqsyabandiyah dan menjadi salah satu ciri khas tarekat tersebut.
+</p>
+<p>
+Beliau berkata: <em>"Wali yang sejati bukanlah orang yang mengasingkan diri di gunung, melainkan orang yang berada di tengah pasar namun hatinya senantiasa bersama Allah. Yang pertama adalah wali yang masih belajar, dan yang kedua adalah wali yang telah sampai."</em>
+</p>
+<p>
+Dalam praktiknya, Syeikh Ahmad memadukan kedua hal ini — beliau senantiasa berceramah dan berinteraksi dengan masyarakat di Baghdad, namun beliau juga meluangkan waktu khusus setiap hari untuk berkhalwat dan bermunajat kepada Allah. Beliau berkata: <em>"Aku memberikan hak masyarakat dengan lidahku, dan aku memberikan hak Allah dengan hatiku. Keduanya harus seimbang, agar aku tidak menjadi orang yang terputus dari Allah karena masyarakat, atau terputus dari masyarakat karena Allah."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH AHMAD TENTANG KHALWAT</div>
+<div class="arabic-text">
+الْخَلْوَةُ مِفْتَاحُ الْكَنُوزِ الإِلَهِيَّةِ، وَمَنْ لَمْ يَدْخُلْهَا لَمْ يَرَ نُورَ الْحَقَائِقِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Khalwat adalah kunci perbendaharaan-perbendaharaan ilahiah, dan barangsiapa yang tidak memasukinya, ia tidak akan melihat cahaya hakikat-hakikat."
+<br>— Syeikh Ahmad Al-Ghazali
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Perjalanan Spiritual Syeikh Ahmad Al-Ghazali:</strong>
+<ul>
+<li><strong>Dua jalur spiritual:</strong> Jalur umum (suluk, riyadhah, mujahadah) dan jalur khusus (kasyf, mukasyafah, ilham)</li>
+<li><strong>Suluk:</strong> Perjalanan hati dari dunia menuju Allah, menempuh maqamat-maqamat spiritual</li>
+<li><strong>Riyadhah:</strong> Latihan spiritual — puasa, qiyamul lail, dzikir, tilawah Al-Qur'an</li>
+<li><strong>Mujahadah:</strong> Perjuangan melawan hawa nafsu — menjaga pandangan, lisan, perut, dan hati</li>
+<li><strong>Dzikir khafi:</strong> Dzikir dalam hati tanpa lisan, menyatu dengan denyut jantung</li>
+<li><strong>Muraqabah:</strong> Pengawasan hati yang ketat terhadap pikiran, perasaan, dan perbuatan</li>
+<li><strong>Kasyf:</strong> Penyingkapan tabir gaib — kasyf al-ma'ani, kasyf al-a'mal, kasyf al-ahwal</li>
+<li><strong>Mukasyafah:</strong> Penyaksian hakikat — al-jalal, al-jamal, al-kamal, al-wahdah</li>
+<li><strong>Maqam mahabbah:</strong> Puncak perjalanan — cinta ilahi yang lenyap dalam Yang Dicintai</li>
+<li><strong>Tingkatan mahabbah:</strong> Mahabbah al-mubtadi'in, al-muntahin, al-washilin, al-kamilin</li>
+<li><strong>Khalwat:</strong> Menyepi untuk mendekat kepada Allah — tiga tingkatan</li>
+<li><strong>Uzlah:</strong> Mengasingkan diri dari keramaian untuk menjaga hati</li>
+<li><strong>Khalwat dar anjuman:</strong> Menyepi di tengah keramaian — prinsip yang diwarisi Tarekat Naqsyabandiyah</li>
+<li><strong>Keseimbangan:</strong> Memberikan hak masyarakat dengan lisan, dan hak Allah dengan hati</li>
+</ul>
+</div>
+<h2>Doa Memohon Keberkahan Perjalanan Spiritual</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON MAQAM MAHABBAH DAN KASYF</div>
+<div class="arabic-text">
+اللَّهُمَّ ارْزُقْنِي السُّلُكَ الصَّحِيحَ، وَالرِّيَاضَةَ الْمَقْبُولَةَ، وَالْمُجَاهَدَةَ الْمُوفَقَةَ، وَاجْعَلْ قَلْبِي مَحَلًّا لِكَشْفِكَ وَمُكَاشَفَتِكَ، وَارْزُقْنِي مَحَبَّتَكَ وَمَحَبَّةَ مَنْ يُحِبُّكَ، وَاجْعَلْ سَيِّدَنَا أَحْمَدَ الْغَزَّالِيَّ إِمَامِي فِي السُّلُوكِ إِلَيْكَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, anugerahkanlah kepadaku suluk yang benar, riyadhah yang diterima, dan mujahadah yang mendapat taufik. Jadikanlah hatiku tempat kasyf dan mukasyafah-Mu, anugerahkanlah kepadaku cinta-Mu dan cinta kepada orang-orang yang mencintai-Mu, dan jadikanlah Sayyidina Ahmad Al-Ghazali sebagai imamku dalam perjalanan menuju kepada-Mu."
+</div>
+</div>
+<h2>Penutup Halaman 4</h2>
+<p>
+Demikianlah perjalanan spiritual Syeikh Ahmad Al-Ghazali — perjalanan seorang salik yang menempuh dua jalur secara bersamaan: jalur umum (suluk, riyadhah, mujahadah) dan jalur khusus (kasyf, mukasyafah, ilham). Dari perpaduan kedua jalur inilah lahir ajaran <em>mahabbah</em> (cinta ilahi) yang menjadi inti tasawuf beliau — ajaran yang tidak hanya menyentuh akal, melainkan juga menggetarkan hati dan menghidupkan jiwa. Melalui perjalanan inilah beliau menjadi <em>Sultan al-‘Ussyaq</em> — Raja Para Pecinta Ilahi — yang ajarannya terus hidup hingga hari ini melalui tarekat-tarekat yang bersilsilah kepadanya.
+</p>
+<p>
+Namun, perjalanan spiritual yang demikian tinggi dan dalam ini tidak lepas dari tantangan dan konflik. Pada halaman berikutnya, kita akan membahas tantangan-tantangan yang beliau hadapi dalam mengamalkan hasil pemahaman keilmuan dan spiritual beliau — baik tantangan dari dalam diri sendiri, dari masyarakat, maupun dari para ulama yang berbeda pandangan.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+وَأَنَّهُ تَعَالَىٰ جَدُّ رَبِّنَا مَا اتَّخَذَ صَاحِبَةً وَلَا وَلَدًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan bahwasanya tinggi keagungan Tuhan kami. Dia tidak beristeri dan tidak (pula) beranak."
+<br>— QS. Al-Jin: 3
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="ahmad1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="ahmad2.html" class="article-nav-btn" title="Halaman 2: Masa Kecil & Pendidikan">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="ahmad3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="ahmad4.html" class="article-nav-btn active" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="ahmad5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="ahmad6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="ahmad7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="ahmad8.html" class="article-nav-btn" title="Halaman 8: Warisan Tasawuf">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="ahmad9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>
