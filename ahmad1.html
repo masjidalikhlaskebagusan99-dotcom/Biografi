@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Ahmad Al-Ghazali - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+/* 1. RESET & DASAR */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+/* 2. MEDIA QUERY TABLET */
+@media (max-width: 768px) {
+.article-container {
+max-width: 100%;
+padding: 20px;
+}
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+/* 3. HEADER & NAVIGASI ATAS */
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+/* 4. BREADCRUMB & CONTAINER */
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+/* 5. ARTICLE HEADER & META */
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+/* 6. GAMBAR & SHARE BAR */
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+/* 7. KONTEN ARTIKEL */
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 8. KOTAK ARAB & BIOGRAFI */
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 9. NAVIGASI HALAMAN (9 TOMBOL) */
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* 10. TOMBOL KEMBALI & FOOTER */
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+/* 11. MEDIA QUERY MOBILE */
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+/* PATCH UNIVERSAL v2.0 */
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Ahmad Al-Ghazali
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Ahmad Al-Ghazali</h1>
+<div class="subtitle">Halaman 1 dari 9 — Pengenalan, Nasab, dan Kelahiran Sang Pembawa Cinta Ilahi</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Minggu, 25 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tus_-_map.jpg/440px-Tus_-_map.jpg"
+alt="Kota Thusi (Tus), tempat lahir Syeikh Ahmad Al-Ghazali"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Nishapur_map.jpg/440px-Nishapur_map.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Wilayah Khorasan (Thusi/Tus), Iran — tanah kelahiran dua bersaudara Imam Abu Hamid Al-Ghazali dan Syeikh Ahmad Al-Ghazali, dua bintang ilmu dan tasawuf di abad ke-5 H</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Syeikh Ahmad bin Muhammad Al-Ghazali (wafat 517 H / 1123 M atau 520 H / 1126 M) adalah seorang sufi besar, khatib (penceramah) ulung, dan pembaharu pemikiran cinta ilahi (<em>‘isyq</em> dan <em>mahabbah</em>) dalam dunia Islam. Beliau adalah adik kandung dari Hujjatul Islam Imam Abu Hamid Al-Ghazali — dua bersaudara yang oleh para ulama disebut sebagai "dua bintang Khorasan" yang cahayanya menerangi abad ke-5 dan ke-6 Hijriyah. Beliau lahir di desa Ghazalah, dekat kota Tus, wilayah Khorasan (kini Iran), dan menghabiskan sebagian besar hidupnya di Baghdad, Naisabur, dan wilayah Irak sebagai da'i, mursyid, dan guru spiritual bagi para wali dan ulama besar setelahnya, termasuk Syeikh Abu An-Najib As-Suhrawardi (pendiri Tarekat Suhrawardiyah) dan Syeikh Abu Ishaq Al-Kazruini. Karya monumentalnya, <em>Savanih al-‘Ussyaq</em> (Perjalanan Para Pecinta), menjadi salah satu risalah tasawuf berbahasa Persia tertua yang membahas hakikat cinta ilahi dengan bahasa yang puitis dan mendalam.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG CINTA ILAHI — QS. AL-MA'IDAH: 54</div>
+<div class="arabic-text">
+يُحِبُّهُمْ وَيُحِبُّونَهُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Allah mencintai mereka dan mereka pun mencintai-Nya."
+<br>— QS. Al-Ma'idah: 54
+</div>
+</div>
+<h2>Ahmad Al-Ghazali — Sang Pembawa Api Cinta Ilahi</h2>
+<p>
+Syeikh Ahmad Al-Ghazali dikenal dalam khazanah tasawuf sebagai <em>Sultan al-‘Ussyaq</em> (Raja Para Pecinta Ilahi) dan <em>Khatib Baghdad</em> (Penceramah Agung Baghdad). Jika kakaknya, Imam Abu Hamid Al-Ghazali, lebih dikenal sebagai pembaharu pemikiran yang memadukan syariat, tarekat, hakikat, dan ilmu kalam, maka Syeikh Ahmad Al-Ghazali dikenal sebagai pembaharu bahasa cinta — yang menerjemahkan pengalaman spiritual ke dalam ungkapan-ungkapan puitis yang menggetarkan hati. Beliau adalah tokoh sentral dalam pembentukan tradisi tasawuf Persia yang kemudian melahirkan para sufi besar seperti Fariduddin Aththar, Jalaluddin Rumi, dan Hafizh Asy-Syirazi.
+</p>
+<p>
+Pengaruh Syeikh Ahmad Al-Ghazali terhadap perkembangan tasawuf sangat besar. Beliau adalah mata rantai penting dalam silsilah spiritual yang menghubungkan Imam Al-Ghazali dengan Tarekat Suhrawardiyah dan Tarekat Kubrawiyah yang kemudian menyebar luas ke wilayah Persia, India, Turki, dan Nusantara. Para muridnya menjadi pendiri tarekat-tarekat besar, sehingga beliau disebut sebagai <em>Quthb al-Aqthab</em> (Porosnya Para Poros) di zamannya.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH AHMAD AL-GHAZALI TENTANG CINTA</div>
+<div class="arabic-text">
+الْمَحَبَّةُ شَجَرَةٌ أُصُولُهَا الذَّاتُ الإِلَهِيَّةُ وَأَغْصَانُهَا الصِّفَاتُ الرَّبَّانِيَّةُ وَثِمَارُهَا الْمَعَارِفُ الإِيمَانِيَّةُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Cinta itu adalah pohon; akarnya adalah Dzat Ilahi, cabang-cabangnya adalah sifat-sifat Rabbani, dan buah-buahnya adalah ma'rifat keimanan."
+<br>— Syeikh Ahmad Al-Ghazali, dalam <em>Savanih al-‘Ussyaq</em>
+</div>
+</div>
+<h2>Nasab dan Latar Belakang Keluarga — Keluarga Ulama dari Thusi</h2>
+<p>
+Syeikh Ahmad Al-Ghazali lahir dari keluarga yang sederhana namun shaleh di desa Ghazalah, dekat kota Tus, wilayah Khorasan (kini Iran). Nasab lengkap beliau adalah: <em>Ahmad bin Muhammad bin Muhammad bin Ibrahim At-Thusi Al-Ghazali</em>. Nisbah <em>Al-Ghazali</em> (الْغَزَّالِي) berasal dari kata <em>al-ghazzal</em> (الْغَزَّال) yang berarti "pemintal benang wol" — karena ayah beliau, Muhammad bin Muhammad, bermata pencaharian sebagai pemintal dan penjual benang wol di pasar Tus.
+</p>
+<p>
+Meskipun berasal dari keluarga sederhana secara ekonomi, keluarga ini sangat dihormati karena keilmuan, kewara'an, dan kesalehan mereka. Ayah beliau, Syeikh Muhammad Al-Ghazali, adalah seorang ulama yang wara' dan ahli ibadah, yang dikenal di kalangan masyarakat Tus sebagai orang yang zuhud dan senantiasa menjaga diri dari hal-hal syubhat. Beliau mendidik kedua putranya — Abu Hamid (Imam Al-Ghazali) dan Ahmad — dengan pendidikan agama yang sangat ketat sejak usia dini.
+</p>
+<p>
+Ibunda beliau juga merupakan wanita shalehah yang dikenal dengan kesalehan dan ibadahnya. Setelah wafatnya sang ayah ketika kedua bersaudara masih kecil, seorang teman dekat ayahnya yang shaleh — yang juga seorang sufi — dititipi wasiat untuk mendidik dan membiayai kedua anak yatim tersebut. Dari sinilah kedua bersaudara Al-Ghazali tumbuh dalam lingkungan ilmu dan spiritualitas yang mendalam.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEUTAMAAN ILMU — QS. AL-MUJADILAH: 11</div>
+<div class="arabic-text">
+يَرْفَعِ اللَّهُ الَّذِينَ آمَنُوا مِنكُمْ وَالَّذِينَ أُوتُوا الْعِلْمَ دَرَجَاتٍ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Allah akan mengangkat orang-orang yang beriman di antaramu dan orang-orang yang diberi ilmu pengetahuan beberapa derajat."
+<br>— QS. Al-Mujadilah: 11
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Silsilah Nasab Syeikh Ahmad Al-Ghazali</span>
+<div class="karomah-arabic">نَسَبُهُ الشَّرِيفُ الْغَزَّالِيُّ الثُّوسِيُّ</div>
+<p>
+Silsilah lengkap nasab Syeikh Ahmad Al-Ghazali yang bersambung kepada keluarga ulama Thusi adalah sebagai berikut:
+</p>
+<ul>
+<li><strong>Syeikh Ahmad</strong> bin <strong>Muhammad</strong> bin <strong>Muhammad</strong> bin <strong>Ibrahim</strong></li>
+<li>bin <strong>At-Thusi Al-Ghazali</strong> (dinisbatkan kepada kota Tus dan pekerjaan ayahnya sebagai pemintal benang wol)</li>
+<li>Ayah beliau: <strong>Syeikh Muhammad Al-Ghazali</strong> — seorang ulama wara' dan pemintal benang wol di pasar Tus</li>
+<li>Kakek beliau: <strong>Muhammad bin Ibrahim At-Thusi</strong></li>
+<li>Kakek buyut beliau: <strong>Ibrahim At-Thusi</strong></li>
+<li>Keluarga ini berasal dari desa <strong>Ghazalah</strong> di pinggiran kota <strong>Tus</strong>, wilayah <strong>Khorasan</strong> (kini Iran)</li>
+</ul>
+<p>
+Meskipun tidak memiliki nasab Sayyid (keturunan Rasulullah SAW) seperti sebagian wali besar lainnya, kemuliaan keluarga Al-Ghazali terletak pada keilmuan, kewara'an, dan kesalehan mereka. Para ulama berkata bahwa kemuliaan sejati bukanlah pada darah yang mengalir, melainkan pada ilmu yang diamalkan dan akhlak yang dihiasi. Keluarga Al-Ghazali adalah bukti nyata bahwa Allah dapat mengangkat derajat hamba-Nya melalui ilmu dan ketakwaan, sebagaimana firman-Nya dalam QS. Al-Hujurat: 13.
+</p>
+<p>
+Beliau pernah berkata tentang nasab dan kemuliaan: <em>"Kemuliaan yang sejati bukanlah pada keturunan, melainkan pada ketakwaan dan ilmu yang bermanfaat. Barangsiapa yang berilmu namun tidak beramal, maka ilmunya menjadi hujjah (dalil) atas dirinya, bukan kemuliaan baginya."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEMULIAAN TAKWA — QS. AL-HUJURAT: 13</div>
+<div class="arabic-text">
+إِنَّ أَكْرَمَكُمْ عِندَ اللَّهِ أَتْقَاكُمْ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sesungguhnya orang yang paling mulia di antara kamu di sisi Allah ialah orang yang paling takwa di antara kamu."
+<br>— QS. Al-Hujurat: 13
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Latar Belakang Keluarga — Dua Bersaudara Bintang Khorasan</span>
+<div class="karomah-arabic">خَلْفِيَّةُ عَائِلَتِهِ — أَخَوَا خُرَاسَانَ النَّيِّرَانِ</div>
+<p>
+Syeikh Ahmad Al-Ghazali adalah adik kandung dari <strong>Imam Abu Hamid Al-Ghazali</strong> (450-505 H / 1058-1111 M) — sang Hujjatul Islam yang mengguncang dunia intelektual Islam dengan karya monumentalnya <em>Ihya' 'Ulumiddin</em>. Kedua bersaudara ini tumbuh dalam lingkungan keluarga yang penuh dengan nilai-nilai keislaman, meskipun secara ekonomi mereka tergolong sederhana.
+</p>
+<p>
+Setelah wafatnya sang ayah, seorang teman dekat ayahnya yang shaleh — yang dalam beberapa riwayat disebut sebagai seorang sufi — mengambil tanggung jawab untuk mendidik dan membiayai kedua anak yatim tersebut. Ia berwasiat sebelum wafatnya agar harta yang ditinggalkannya digunakan untuk pendidikan kedua bersaudara ini. Dari sinilah Abu Hamid dan Ahmad memasuki dunia ilmu dengan bimbingan yang penuh berkah.
+</p>
+<p>
+Kedua bersaudara ini memiliki karakter yang berbeda namun saling melengkapi. Abu Hamid lebih condong pada pemikiran rasional, filsafat, kalam, dan fikih — sehingga beliau menjadi ulama besar yang memadukan syariat dan hakikat. Ahmad lebih condong pada rasa (<em>dzauq</em>), cinta ilahi (<em>mahabbah</em>), dan pengalaman spiritual — sehingga beliau menjadi mursyid besar yang mengajarkan tasawuf melalui bahasa cinta. Keduanya menjadi dua bintang yang cahayanya menerangi abad ke-5 dan ke-6 Hijriyah.
+</p>
+<p>
+Hubungan kedua bersaudara ini sangat erat. Ahmad senantiasa mengikuti jejak kakaknya dalam menuntut ilmu, dan Abu Hamid senantiasa membimbing adiknya dengan penuh kasih sayang. Ketika Abu Hamid mengalami krisis spiritual yang terkenal — yang membuatnya meninggalkan jabatan guru di Nizhamiyah Baghdad dan mengembara selama sepuluh tahun — Ahmad adalah salah satu orang yang paling merasakan dampaknya, dan dari pengalaman kakaknya inilah Ahmad semakin mantap dalam jalan tasawuf.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG PERSAUDARAAN — QS. AL-HUJURAT: 10</div>
+<div class="arabic-text">
+إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Orang-orang beriman itu sesungguhnya bersaudara."
+<br>— QS. Al-Hujurat: 10
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Tempat dan Tanggal Lahir — Desa Ghazalah, Thusi, 456 H</span>
+<div class="karomah-arabic">مَكَانُ وَتَارِيخُ وِلَادَتِهِ — قَرْيَةُ غَزَالَةَ، طُوسْ، 456 هـ</div>
+<p>
+Syeikh Ahmad Al-Ghazali lahir pada tahun <strong>456 H (1061 M)</strong> — empat tahun setelah kelahiran kakaknya, Abu Hamid — di desa <strong>Ghazalah</strong>, sebuah desa kecil di pinggiran kota <strong>Tus</strong>, wilayah <strong>Khorasan</strong> (kini provinsi Razavi Khorasan, Iran). Kota Tus pada masa itu adalah salah satu pusat peradaban Islam terpenting di wilayah timur dunia Islam — kota yang melahirkan para ulama dan penyair besar seperti Firdausi (penulis kitab <em>Shahnameh</em>), Abu Hamid Al-Ghazali, dan Asad bin Furang.
+</p>
+<p>
+Desa Ghazalah adalah desa yang tenang dan asri, dikelilingi oleh ladang-ladang gandum dan kebun-kebun buah. Di desa inilah kedua bersaudara Al-Ghazali tumbuh dan dibesarkan dalam lingkungan yang penuh dengan nilai-nilai keislaman. Nama desa ini — Ghazalah — kemudian menjadi asal nisbah keluarga mereka, karena ayah mereka bekerja sebagai pemintal benang wol (<em>ghazzal</em>) di desa tersebut.
+</p>
+<p>
+Para ulama menceritakan bahwa kelahiran Ahmad disertai dengan tanda-tanda keberkahan. Seorang ulama shaleh di Tus yang melihat keluarga ini berkata: <em>"Sesungguhnya Allah telah menganugerahkan kepada keluarga ini dua cahaya — satu cahaya untuk menerangi akal (Abu Hamid), dan satu cahaya untuk menerangi hati (Ahmad)."</em> Nubuwat ini terbukti benar, karena kedua bersaudara ini kemudian menjadi dua tokoh terbesar dalam dunia Islam di zamannya.
+</p>
+<p>
+Ahmad menghabiskan masa kecil dan remajanya di Tus, menuntut ilmu di bawah bimbingan para ulama besar di wilayah Khorasan. Setelah kakaknya, Abu Hamid, mendapatkan jabatan sebagai guru di Nizhamiyah Naisabur (484 H / 1091 M), Ahmad ikut bersamanya dan mulai meniti karier keilmuan dan spiritualnya di kota yang menjadi pusat peradaban Islam di wilayah timur tersebut.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG CAHAYA IMAN — QS. AT-TAGHABUN: 8</div>
+<div class="arabic-text">
+يَوْمَ يَجْمَعُكُمْ لِيَوْمِ الْجَمْعِ ذَلِكَ يَوْمُ التَّغَابُنِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "(Yaitu) pada hari (ketika) Allah mengumpulkan kamu untuk hari pengumpulan. Itulah hari yang dinamakan hari pengumpulan (hari kiamat)."
+<br>— QS. At-Taghabun: 8
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Makna Nisbah "Al-Ghazali" — Pemintal Benang Wol</span>
+<div class="karomah-arabic">مَعْنَى لَقَبِ "الْغَزَّالِي" — غَازِلُ الصُّوفِ</div>
+<p>
+Nisbah <em>Al-Ghazali</em> (الْغَزَّالِي) yang disandang oleh Syeikh Ahmad dan kakaknya, Imam Abu Hamid, memiliki makna yang sangat sederhana namun sarat hikmah. Kata <em>al-ghazzal</em> (الْغَزَّال) dalam bahasa Arab berarti "pemintal benang" — khususnya pemintal benang wol (<em>ghazl ash-shuf</em>). Ayah mereka, Syeikh Muhammad, bermata pencaharian sebagai pemintal dan penjual benang wol di pasar Tus.
+</p>
+<p>
+Dalam konteks spiritual, para ulama sufi memberikan tafsir yang sangat indah terhadap nisbah ini. Mereka berkata bahwa <em>al-ghazzal</em> (pemintal benang) adalah simbol dari orang yang "memintal" benang-benang ilmu dan amal menjadi satu kesatuan yang utuh — sebagaimana seorang pemintal menyatukan serat-serat wol menjadi benang yang kuat. Syeikh Ahmad Al-Ghazali, dengan ajarannya tentang cinta ilahi, adalah "pemintal" yang menyatukan syariat dan hakikat, zhahir dan batin, ilmu dan rasa, menjadi satu benang spiritual yang kokoh.
+</p>
+<p>
+Beliau sendiri pernah berkata tentang makna nisbahnya: <em>"Ayahku memintal benang wol dengan tangannya, dan aku memintal benang cinta ilahi dengan hatiku. Keduanya adalah pekerjaan yang mulia, karena keduanya menghasilkan sesuatu yang menyatukan dan menghangatkan."</em>
+</p>
+<ul>
+<li><strong>Makna harfiah:</strong> Pemintal benang wol — nisbah kepada pekerjaan ayah beliau</li>
+<li><strong>Makna spiritual:</strong> Pemintal benang cinta ilahi — yang menyatukan syariat dan hakikat</li>
+<li><strong>Makna simbolis:</strong> Orang yang mengubah serat-serat pengalaman spiritual menjadi benang ajaran yang kokoh</li>
+<li><strong>Nisbah geografis:</strong> <em>At-Thusi</em> — dinisbatkan kepada kota Tus di wilayah Khorasan</li>
+</ul>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH AHMAD TENTANG HAKIKAT CINTA</div>
+<div class="arabic-text">
+الْمَحَبَّةُ هِيَ أَنْ لَا تَرَى فِي الْوُجُودِ سِوَى الْمَحْبُوبِ، وَلَا تَسْمَعَ إِلَّا نِدَاءَهُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Cinta adalah engkau tidak melihat dalam wujud ini selain Yang Dicintai, dan tidak mendengar kecuali panggilan-Nya."
+<br>— Syeikh Ahmad Al-Ghazali
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Keistimewaan Syeikh Ahmad di Antara Para Sufi Zamannya</span>
+<div class="karomah-arabic">مُمَيِّزَاتُ الشَّيْخِ أَحْمَدَ بَيْنَ صُوفِيَّةِ زَمَانِهِ</div>
+<p>
+Syeikh Ahmad Al-Ghazali memiliki beberapa keistimewaan yang membedakannya dari para sufi lainnya di zamannya. Di antara keistimewaan tersebut adalah:
+</p>
+<ul>
+<li><strong>Bahasa Cinta yang Puitis</strong> — Beliau adalah salah satu sufi pertama yang menggunakan bahasa Persia puitis untuk mengungkapkan pengalaman spiritual, berbeda dengan para sufi sebelumnya yang lebih banyak menggunakan bahasa Arab.</li>
+<li><strong>Khatib Ulung Baghdad</strong> — Beliau dikenal sebagai penceramah yang sangat fasih dan memukau di Masjid Jami' Baghdad. Setiap kali beliau berceramah, ribuan orang — dari kalangan ulama, saudagar, hingga rakyat biasa — berbondong-bondong mendengarkan, dan banyak yang menangis hingga pingsan karena terharu.</li>
+<li><strong>Guru Para Mursyid Besar</strong> — Beliau adalah guru spiritual dari Syeikh Abu An-Najib As-Suhrawardi (pendiri Tarekat Suhrawardiyah) dan Syeikh Abu Ishaq Al-Kazruini — dua tokoh besar yang kemudian menjadi mata rantai penting dalam silsilah tarekat.</li>
+<li><strong>Karya Monumental</strong> — Karya beliau <em>Savanih al-‘Ussyaq</em> (Perjalanan Para Pecinta) menjadi salah satu risalah tasawuf berbahasa Persia tertua yang mempengaruhi karya-karya sufi setelahnya, termasuk karya-karya Fariduddin Aththar dan Jalaluddin Rumi.</li>
+<li><strong>Penekanan pada Mahabbah</strong> — Berbeda dengan sebagian sufi yang menekankan pada zuhud atau ma'rifat, Syeikh Ahmad menekankan pada <em>mahabbah</em> (cinta ilahi) sebagai jalan utama menuju Allah.</li>
+<li><strong>Pemadu Syariat dan Hakikat</strong> — Meskipun menekankan pada rasa dan pengalaman spiritual, beliau tidak pernah meninggalkan syariat. Tasawuf beliau adalah tasawuf yang berpijak pada syariat dan sunnah.</li>
+</ul>
+<p>
+Keistimewaan-keistimewaan inilah yang menjadikan Syeikh Ahmad Al-Ghazali sebagai salah satu tokoh paling berpengaruh dalam sejarah tasawuf Islam, dan ajarannya terus hidup hingga hari ini melalui tarekat-tarekat yang bersilsilah kepadanya.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENGIKUTI RASULULLAH — QS. ALI 'IMRAN: 31</div>
+<div class="arabic-text">
+قُلْ إِن كُنتُمْ تُحِبُّونَ اللَّهَ فَاتَّبِعُونِي يُحْبِبْكُمُ اللَّهُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Katakanlah: 'Jika kamu (benar-benar) mencintai Allah, maka ikutilah aku (Rasulullah), niscaya Allah mengasihi dan mengampuni dosa-dosamu.'"
+<br>— QS. Ali 'Imran: 31
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Pendahuluan Biografi Syeikh Ahmad Al-Ghazali:</strong>
+<ul>
+<li><strong>Nama lengkap:</strong> Ahmad bin Muhammad bin Muhammad bin Ibrahim At-Thusi Al-Ghazali</li>
+<li><strong>Gelar:</strong> Sultan al-‘Ussyaq (Raja Para Pecinta Ilahi), Khatib Baghdad</li>
+<li><strong>Nasab:</strong> Keluarga ulama dari desa Ghazalah, Thusi, Khorasan (bukan Asyraf, namun mulia karena ilmu dan takwa)</li>
+<li><strong>Tempat lahir:</strong> Desa Ghazalah, dekat kota Tus, wilayah Khorasan (kini Iran)</li>
+<li><strong>Tanggal lahir:</strong> Tahun 456 H (1061 M)</li>
+<li><strong>Keluarga:</strong> Adik kandung Imam Abu Hamid Al-Ghazali (Hujjatul Islam)</li>
+<li><strong>Ayah:</strong> Syeikh Muhammad Al-Ghazali — ulama wara' dan pemintal benang wol</li>
+<li><strong>Makna Al-Ghazali:</strong> Pemintal benang wol (nisbah kepada pekerjaan ayah)</li>
+<li><strong>Ciri khas ajaran:</strong> Tasawuf mahabbah (cinta ilahi) dengan bahasa puitis Persia</li>
+<li><strong>Karya monumental:</strong> <em>Savanih al-‘Ussyaq</em> (Perjalanan Para Pecinta)</li>
+<li><strong>Murid-murid besar:</strong> Syeikh Abu An-Najib As-Suhrawardi, Syeikh Abu Ishaq Al-Kazruini</li>
+<li><strong>Wafat:</strong> 517 H / 1123 M (atau 520 H / 1126 M menurut sebagian riwayat)</li>
+</ul>
+</div>
+<h2>Doa Memohon Keberkahan Ilmu dan Maqam Mahabbah</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON CINTA ILAHI DAN ISTIQAMAH</div>
+<div class="arabic-text">
+اللَّهُمَّ اجْعَلْنِي مِنْ عُبَادِكَ الْمُحِبِّينَ لَكَ، وَارْزُقْنِي مَحَبَّةَ رَسُولِكَ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ، وَاجْعَلْ سَيِّدَنَا أَحْمَدَ الْغَزَّالِيَّ شَفِيعِي يَوْمَ الْقِيَامَةِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, jadikanlah aku termasuk hamba-hamba-Mu yang mencintai-Mu, anugerahkanlah kepadaku cinta kepada Rasul-Mu shallallahu 'alaihi wa sallam, dan jadikanlah Sayyidina Ahmad Al-Ghazali sebagai pemberi syafaat bagiku pada hari kiamat."
+</div>
+</div>
+<h2>Penutup Halaman 1</h2>
+<p>
+Demikianlah pengantar biografi Syeikh Ahmad Al-Ghazali — sang Sultan al-‘Ussyaq, khatib Baghdad, dan pembawa api cinta ilahi dalam dunia tasawuf Islam. Beliau lahir dari keluarga ulama yang sederhana namun mulia di desa Ghazalah dekat kota Tus pada tahun 456 H, sebagai adik kandung Imam Abu Hamid Al-Ghazali. Kelahiran beliau adalah isyarat ilahiah bahwa Allah akan mengutus seorang wali besar untuk mengajarkan umat Islam tentang hakikat cinta ilahi — cinta yang menjadi inti dari seluruh ibadah dan perjalanan spiritual.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas masa kecil Syeikh Ahmad Al-Ghazali di desa Ghazalah — bagaimana beliau tumbuh dalam lingkungan keluarga yang shaleh, menuntut ilmu di bawah bimbingan para ulama besar di Tus dan Naisabur, dan mulai menunjukkan tanda-tanda kecerdasan serta kewalian sejak dini.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+وَقُل رَّبِّ زِدْنِي عِلْمًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan katakanlah: 'Ya Tuhanku, tambahkanlah kepadaku ilmu pengetahuan.'"
+<br>— QS. Thaha: 114
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="ahmad1.html" class="article-nav-btn active" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="ahmad2.html" class="article-nav-btn" title="Halaman 2: Masa Kecil & Pendidikan">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="ahmad3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="ahmad4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="ahmad5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="ahmad6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="ahmad7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="ahmad8.html" class="article-nav-btn" title="Halaman 8: Warisan Tasawuf">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="ahmad9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>
