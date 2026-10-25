@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Abu Bakar Asy-Syibli - KALAM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
+<style>
+html { scroll-behavior: auto !important; }
+/* 1. RESET & DASAR */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+/* 2. MEDIA QUERY TABLET */
+@media (max-width: 768px) {
+.article-container {
+max-width: 100%;
+padding: 20px;
+}
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+/* 3. HEADER & NAVIGASI ATAS */
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+/* 4. BREADCRUMB & CONTAINER */
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+/* 5. ARTICLE HEADER & META */
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+/* 6. GAMBAR & SHARE BAR */
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+/* 7. KONTEN ARTIKEL */
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 8. KOTAK ARAB & BIOGRAFI */
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Noto Naskh Arabic', 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Noto Naskh Arabic', 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.karomah-arabic {
+font-family: 'Noto Naskh Arabic', 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 9. NAVIGASI HALAMAN (9 TOMBOL) */
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* 10. TOMBOL KEMBALI & FOOTER */
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+/* 11. MEDIA QUERY MOBILE */
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+/* PATCH UNIVERSAL v2.0 */
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Abu Bakar Asy-Syibli
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Abu Bakar Asy-Syibli</h1>
+<div class="subtitle">Halaman 3 dari 9 — Bidang-Bidang Keilmuan dan Para Guru yang Membentuk Sang Wali</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Minggu, 25 Oktober 2026, 10:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Mustansiriya_Madrasa.jpg/440px-Mustansiriya_Madrasa.jpg"
+alt="Majelis Ilmu di Baghdad"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Samarkand_-_Bibi_Khanym_Mosque_02.jpg/440px-Samarkand_-_Bibi_Khanym_Mosque_02.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Salah satu madrasah bersejarah di Baghdad, gambaran megahnya tradisi majelis ilmu yang diwarisi Syeikh Abu Bakar Asy-Syibli ketika beliau menimba Al-Qur'an, hadits, fikih, dan tasawuf dari para ulama besar di akhir abad ke-3 Hijriyah</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Meskipun baru menempuh jalan ilmu secara penuh setelah bertaubat dan menanggalkan jabatannya, Syeikh Abu Bakar Asy-Syibli menunjukkan kesungguhan yang luar biasa dalam menuntut ilmu. Beliau memahami dengan yakin bahwa <em>jalan menuju Allah tidak dapat ditempuh dengan perasaan semata, melainkan harus berdiri di atas fondasi ilmu yang benar</em>. Karena itu beliau menimba berbagai cabang ilmu dari para ulama Baghdad dengan penuh ketekunan: Al-Qur'an dan tafsirnya, hadits dan riwayat, fikih dan hukum-hukum syariat, bahasa Arab dan balaghah, hingga ilmu tasawuf — maqamat, ahwal, tauhid, dan ma'rifat — di bawah bimbingan langsung Syeikh Junaid al-Baghdadi. Perpaduan antara ilmu syariat yang kokoh dan ilmu hakikat yang mendalam inilah yang kelak menjadikan beliau salah satu rujukan utama para sufi di zamannya.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEDUDUKAN ULAMA — QS. FATHIR: 28</div>
+<div class="arabic-text">
+إِنَّمَا يَخْشَى اللَّهَ مِنْ عِبَادِهِ الْعُلَمَاءُ ۗ إِنَّ اللَّهَ عَزِيزٌ غَفُورٌ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sesungguhnya yang takut kepada Allah di antara hamba-hamba-Nya hanyalah ulama. Sesungguhnya Allah Maha Perkasa lagi Maha Pengampun."
+<br>— QS. Fathir: 28
+</div>
+</div>
+
+<h2>Keluasan Bidang Ilmu Syeikh Asy-Syibli</h2>
+<p>
+Baghdad pada akhir abad ke-3 Hijriyah adalah samudra ilmu yang tidak bertepi. Di kota inilah Syeikh Asy-Syibli — yang telah matang usia dan pengalaman — memulai kembali hidupnya sebagai seorang murid. Beliau tidak memilih satu cabang ilmu lalu mengabaikan yang lain, melainkan menempuh jalan para ulama salaf: <strong>membangun fondasi yang luas terlebih dahulu, baru kemudian mendalami satu puncak</strong>. Fondasi yang luas itu adalah ilmu-ilmu syariat, dan puncaknya adalah ilmu ma'rifat kepada Allah. Berikut adalah bidang-bidang ilmu yang beliau tekuni:
+</p>
+
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Al-Qur'anul Karim, Tafsir, dan Tadabbur</span>
+<div class="karomah-arabic">الْعِلْمُ الْأَوَّلُ: كِتَابُ اللَّهِ تَعَالَى تَفْسِيرًا وَتَدَبُّرًا</div>
+<p>
+Ilmu pertama dan paling utama yang mendapat perhatian Syeikh Asy-Syibli adalah <strong>Kitabullah</strong>. Beliau menjaga tilawah, memperbaiki bacaan, dan mentadabburi ayat-ayat Allah dengan tadabbur yang mendalam. Para ulama yang menghadiri majelisnya menyaksikan bahwa hampir setiap nasihat beliau dibangun di atas ayat-ayat Al-Qur'an — beliau membaca ayat, menangis, lalu menafsirkannya dengan ungkapan-ungkapan yang menggetarkan hati.
+</p>
+<p>
+Di antara prinsip beliau tentang Al-Qur'an: <em>barangsiapa mengaku mencintai Allah namun tidak menjadikan Al-Qur'an sebagai sahabatnya di waktu sepi, maka pengakuan cintanya perlu dipertanyakan</em>. Prinsip inilah yang membuat seluruh dakwah beliau senantiasa kembali kepada Al-Qur'an, dan menjadi benteng yang menjaga beliau dari penyimpangan — sebagaimana akan kita lihat pada bagian pro dan kontra masyarakat.
+</p>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Hadits dan Riwayat Rasulullah SAW</span>
+<div class="karomah-arabic">الْعِلْمُ الثَّانِي: حَدِيثُ رَسُولِ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ وَرِوَايَتُهُ</div>
+<p>
+Syeikh Asy-Syibli menghadiri majelis-majelis para muhaddits di Baghdad, mendengarkan hadits-hadits Rasulullah SAW, dan meriwayatkan dari sebagian mereka. Beliau memahami bahwa hadits adalah penafsir utama Al-Qur'an dan teladan praktis dari maqam-maqam yang beliau tempuh — sebab Rasulullah SAW adalah imam para pecinta Allah dan penghulu orang-orang yang zuhud.
+</p>
+<p>
+Sikap beliau terhadap hadits sangat tegas: setiap keadaan spiritual (<em>hal</em>) dan setiap ungkapan (<em>maqal</em>) harus ditimbang dengan sunnah. Beliau berkata dalam sebuah riwayat: <em>"Setiap keadaan (spiritual) yang tidak disaksikan oleh Al-Qur'an dan sunnah, maka itu adalah tipuan."</em> Prinsip inilah yang membedakan beliau dari sebagian pelaku tasawuf yang mengabaikan timbangan syariat.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MEMEGANG SUNNAH — QS. AL-HASYR: 7</div>
+<div class="arabic-text">
+وَمَا آتَاكُمُ الرَّسُولُ فَخُذُوهُ وَمَا نَهَاكُمْ عَنْهُ فَانْتَهُوا ۚ وَاتَّقُوا اللَّهَ ۖ إِنَّ اللَّهَ شَدِيدُ الْعِقَابِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Apa yang diberikan Rasul kepadamu maka terimalah, dan apa yang dilarangnya bagimu maka tinggalkanlah. Dan bertakwalah kepada Allah, sesungguhnya Allah sangat keras hukuman-Nya."
+<br>— QS. Al-Hasyr: 7
+</div>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Fikih dan Hukum-Hukum Syariat</span>
+<div class="karomah-arabic">الْعِلْمُ الثَّالِثُ: الْفِقْهُ وَأَحْكَامُ الشَّرِيعَةِ</div>
+<p>
+Syeikh Asy-Syibli mempelajari fikih dan hukum-hukum syariat dengan sungguh-sungguh, karena beliau menyadari bahwa <em>syariat adalah perahu, tarekat adalah lautan, dan hakikat adalah mutiara</em> — tidak ada jalan menuju mutiara tanpa perahu yang kokoh. Beliau menjaga shalat-shalatnya dengan kekhusyukan sempurna, menunaikan zakat, berpuasa, berhaji berulang kali, dan berfatwa dalam persoalan-persoalan agama dengan rujukan yang benar.
+</p>
+<p>
+Ketegasan beliau dalam fikih inilah yang membuat para ulama Baghdad — bahkan sebagian yang awalnya meragukan ungkapan-ungkapan beliau — pada akhirnya menghormati kedudukan keilmuannya. Beliau membuktikan bahwa menjadi seorang pecinta Allah tidak berarti meninggalkan timbangan fikih, justru sebaliknya: fikih menjadi semakin hidup ketika dihayati dengan hati yang hadir.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">HADITS TENTANG KEPAHAMAN DALAM AGAMA — MUTTAFAQ 'ALAIH</div>
+<div class="arabic-text">
+مَنْ يُرِدِ اللَّهُ بِهِ خَيْرًا يُفَقِّهْهُ فِي الدِّينِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Barangsiapa Allah kehendaki kebaikan baginya, niscaya Allah menjadikannya faham (mendalam) dalam agama."
+<br>— HR. Al-Bukhari dan Muslim
+</div>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Bahasa Arab, Balaghah, dan Adab</span>
+<div class="karomah-arabic">الْعِلْمُ الرَّابِعُ: اللُّغَةُ الْعَرَبِيَّةُ وَالْبَلَاغَةُ وَالْأَدَبُ</div>
+<p>
+Syeikh Asy-Syibli menguasai bahasa Arab dengan kefashihan yang luar biasa. Latar belakang beliau sebagai keluarga bangsawan Persia yang terdidik, ditambah adab istana yang pernah digelutinya, menjadikan ungkapan-ungkapan beliau sangat indah, padat, dan penuh tenaga. Para ulama sastra mengakui bahwa <em>syathahat</em> dan maqalat (ungkapan-ungkapan spiritual) beliau termasuk yang paling fasih dan paling indah dalam literatur tasawuf — sejajar dengan ungkapan-ungkapan al-Hallaj, namun dengan warna yang lebih lembut dan lebih terjaga.
+</p>
+<p>
+Kefashihan inilah yang menjadikan majelis-majelis dakwah beliau selalu dipadati manusia dari berbagai kalangan — para ulama, para sastrawan, para pedagang, hingga orang-orang awam — sebab setiap kalimat yang keluar dari lisan beliau menyentuh hati sesuai dengan kadar pemahaman pendengarnya.
+</p>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Ilmu Tasawuf — Maqamat, Ahwal, Tauhid, dan Ma'rifat</span>
+<div class="karomah-arabic">الْعِلْمُ الْخَامِسُ: عِلْمُ التَّصَوُّفِ — الْمَقَامَاتُ وَالْأَحْوَالُ وَالتَّوْحِيدُ وَالْمَعْرِفَةُ</div>
+<p>
+Inilah puncak dari seluruh ilmu yang beliau tempuh: <strong>ilmu tentang perjalanan hati menuju Allah</strong>. Di bawah bimbingan Syeikh Junaid al-Baghdadi, Syeikh Asy-Syibli mempelajari maqamat (tingkatan-tingkatan spiritual) seperti taubat, zuhud, sabar, tawakkal, dan rida; mengenal ahwal (keadaan-keadaan spiritual) seperti khauf, raja', mahabbah, syauq, dan wajd; serta mendalami tauhid dan ma'rifat — pengenalan kepada Allah yang menjadi tujuan akhir seluruh perjalanan.
+</p>
+<p>
+Ilmu inilah yang kemudian beliau ajarkan hingga akhir hayatnya, dengan satu syarat yang tidak pernah beliau tinggalkan: <em>ilmu tasawuf harus selalu ditimbang dengan Al-Qur'an dan sunnah</em>. Dengan demikian, beliau menjadi contoh sempurna dari ulama yang menggabungkan <em>naql</em> (dalil wahyu) dan <em>dzauq</em> (rasa spiritual) dalam satu keseimbangan yang indah.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">HADITS TENTANG ULAMA PEWARIS PARA NABI — RIWAYAT ABU DAUD DAN AT-TIRMIDZI</div>
+<div class="arabic-text">
+وَإِنَّ الْعُلَمَاءَ وَرَثَةُ الْأَنْبِيَاءِ، وَإِنَّ الْأَنْبِيَاءَ لَمْ يُوَرِّثُوا دِينَارًا وَلَا دِرْهَمًا، وَإِنَّمَا وَرَّثُوا الْعِلْمَ، فَمَنْ أَخَذَهُ أَخَذَ بِحَظٍّ وَافِرٍ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sesungguhnya para ulama adalah pewaris para nabi, dan sesungguhnya para nabi tidak mewariskan dinar maupun dirham, melainkan mewariskan ilmu. Maka barangsiapa mengambilnya, sungguh ia telah mengambil bagian yang sangat besar."
+<br>— HR. Abu Dawud dan At-Tirmidzi
+</div>
+</div>
+
+<h2>Para Guru yang Membentuk Keilmuan Beliau</h2>
+<p>
+Setelah memahami keluasan bidang ilmu yang beliau tempuh, kini kita mengenal <strong>para guru dan lingkungan keilmuan</strong> yang membentuk Syeikh Abu Bakar Asy-Syibli menjadi ulama dan wali besar. Allah tidak menakdirkan beliau belajar sendirian, melainkan mempertemukannya dengan tokoh-tokoh terbaik di zamannya — sebuah isyarat bahwa ilmu yang berkah adalah ilmu yang diambil melalui sanad dan bimbingan guru yang benar.
+</p>
+
+<div class="karomah-card">
+<span class="karomah-number">6</span>
+<span class="karomah-title">Syeikh Junaid bin Muhammad Al-Baghdadi — Guru Utama dan Mursyid (w. 297 H)</span>
+<div class="karomah-arabic">شَيْخُهُ الْأَكْبَرُ: الْجُنَيْدُ بْنُ مُحَمَّدٍ الْبَغْدَادِيُّ سَيِّدُ الطَّائِفَةِ</div>
+<p>
+Guru terbesar dan paling berpengaruh dalam hidup Syeikh Asy-Syibli adalah <strong>Syeikh Abu al-Qasim Junaid bin Muhammad al-Baghdadi</strong> (wafat 297 H / 910 M) — tokoh yang digelari <em>Sayyid ath-Tha'ifah</em> (pemimpin para sufi) dan <em>Thawus al-Ulama</em> (burung merak para ulama). Syeikh Junaid adalah pemimpin tasawuf Baghdad yang terkenal dengan jalan <em>sahwu</em> (kesadaran penuh) — yaitu tasawuf yang sangat berhati-hati dalam ungkapan, ketat menjaga syariat, dan tidak membuka rahasia spiritual kepada sembarang orang.
+</p>
+<p>
+Di tangan Syeikh Junaid-lah Syibli ditempa selama bertahun-tahun. Sang guru melihat pada diri muridnya potensi mahabbah dan wajd yang sangat besar — bagaikan api yang berkobar — maka beliau menempa api itu dengan adab, ilmu, dan kesabaran, agar tidak membakar pemiliknya. Setelah muridnya matang, Syeikh Junaid mengizinkannya berdakwah dan membimbing umat. Ketika Syeikh Junaid wafat pada tahun 297 H, Syeikh Asy-Syibli menjadi salah satu rujukan utama para sufi Baghdad — penerus majelis dan jalan gurunya, dengan warna mahabbah yang lebih menyala.
+</p>
+<p>
+Syeikh Junaid sendiri meninggalkan prinsip agung yang terus dipegang oleh Syeikh Asy-Syibli sepanjang hidupnya:
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH JUNAI AL-BAGHDADI TENTANG JALANNYA</div>
+<div class="arabic-text">
+مَذْهَبُنَا هَذَا مُقَيَّدٌ بِأُصُولِ الْكِتَابِ وَالسُّنَّةِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Jalan kami ini terikat dengan prinsip-prinsip Al-Qur'an dan sunnah."
+<br>— Syeikh Junaid bin Muhammad al-Baghdadi, diriwayatkan dalam Ar-Risalah Al-Qusyairiyyah
+</div>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">7</span>
+<span class="karomah-title">Para Ulama Hadits dan Fikih Baghdad</span>
+<div class="karomah-arabic">مَشَايِخُ الْحَدِيثِ وَالْفِقْهِ فِي بَغْدَاد</div>
+<p>
+Selain Syeikh Junaid, Syeikh Asy-Syibli menimba ilmu dari para ulama hadits dan fikih yang memenuhi majelis-majelis Baghdad pada akhir abad ke-3 Hijriyah. Beliau menghadiri halaqah-halaqah periwayatan, mendengarkan sanad-sanad hadits, dan mempelajari hukum-hukum fikih dari para ahlinya. Baghdad pada masa itu dipenuhi para imam periwayatan dan para fuqaha dari berbagai mazhab, sehingga seorang penuntut ilmu dapat minum dari banyak mata air keilmuan sekaligus.
+</p>
+<p>
+Pergaulan beliau dengan para ahli hadits inilah yang menanamkan dalam dirinya penghormatan mendalam terhadap sunnah dan sanad — hingga beliau menjadi salah satu tokoh sufi yang paling tegas dalam menimbang setiap keadaan spiritual dengan timbangan riwayat yang sahih. Sebagian ahli hadits meriwayatkan hadits darinya, sementara sebagian lain menahan diri karena kondisi <em>wajd</em> beliau — dan persoalan ini akan kita bahas lebih rinci pada bagian pro dan kontra ulama.
+</p>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">8</span>
+<span class="karomah-title">Lingkaran Sufiyyah Baghdad — Sahabat dan Lingkungan Keilmuan</span>
+<div class="karomah-arabic">حَلْقَةُ الصُّوفِيَّةِ فِي بَغْدَاد — رِفَاقُ الطَّرِيقِ</div>
+<p>
+Selain guru-guru formal, Syeikh Asy-Syibli juga dibentuk oleh <em>lingkaran sufiyyah Baghdad</em> — komunitas para pecinta Allah yang hidup sezaman dengan beliau. Di antara tokoh-tokoh yang berinteraksi erat dengan beliau:
+</p>
+<ul>
+<li><strong>Syeikh Abu al-Husain an-Nuri (w. 295 H)</strong> — tokoh sufi besar Baghdad yang dikenal dengan zuhud dan mahabbah-nya; termasuk sahabat dekat lingkaran Syeikh Junaid.</li>
+<li><strong>Syeikh Ruwaym bin Ahmad (w. 303 H)</strong> — ulama dan sufi Baghdad yang dikenal dengan kelembutan adab dan kedalaman maqamnya.</li>
+<li><strong>Syeikh Abu al-'Abbas bin 'Atha' (w. 309 H)</strong> — salah satu imam tasawuf Baghdad yang banyak meriwayatkan perkataan para sufi.</li>
+<li><strong>Syeikh Abu Muhammad al-Jariri (w. 311 H)</strong> — penerus jalan Syeikh Junaid setelah wafatnya, sahabat seperjuangan Syibli.</li>
+<li><strong>Syeikh Abu al-Hasan bin Salim al-Bashri</strong> — sahabat karib Syeikh Asy-Syibli yang paling dekat, yang banyak meriwayatkan keadaan dan perkataan beliau.</li>
+<li><strong>Al-Husain bin Manshur al-Hallaj (w. 309 H)</strong> — sahabat sezaman yang nasibnya sangat terkait dengan perjalanan hidup Syibli, sebagaimana telah disinggung dan akan dibahas lebih lanjut.</li>
+</ul>
+<p>
+Lingkaran inilah yang menjadi "universitas ruhani" bagi Syeikh Asy-Syibli. Dari mereka beliau belajar adab persaudaraan, cara menjaga rahasia spiritual, dan seni membedakan antara ungkapan yang boleh disampaikan kepada khalayak dan yang harus disimpan bersama Allah.
+</p>
+</div>
+
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Bidang Ilmu dan Para Guru Syeikh Asy-Syibli:</strong>
+<ul>
+<li><strong>Bidang ilmu yang dipelajari:</strong> Al-Qur'an dan tafsir, hadits dan riwayat, fikih dan syariat, bahasa Arab dan balaghah, serta tasawuf (maqamat, ahwal, tauhid, ma'rifat).</li>
+<li><strong>Guru utama dan mursyid:</strong> Syeikh Junaid bin Muhammad al-Baghdadi (w. 297 H), pemimpin para sufi zamannya.</li>
+<li><strong>Guru-guru syariat:</strong> Para ulama hadits dan fikih Baghdad pada akhir abad ke-3 H.</li>
+<li><strong>Lingkaran sufiyyah:</strong> Abu al-Husain an-Nuri, Ruwaym bin Ahmad, Abu al-'Abbas bin 'Atha', Abu Muhammad al-Jariri, dan Abu al-Hasan bin Salim al-Bashri (sahabat karib).</li>
+<li><strong>Sahabat sezaman:</strong> Al-Husain bin Manshur al-Hallaj, yang kisahnya akan mewarnai perjalanan hidup beliau.</li>
+<li><strong>Prinsip keilmuan beliau:</strong> Hakikat harus selalu berjalan di atas rel syariat; setiap keadaan spiritual ditimbang dengan Al-Qur'an dan sunnah.</li>
+<li><strong>Hasil tempaan:</strong> Seorang ulama-wali yang menggabungkan kedalaman ilmu dengan nyala mahabbah — rujukan utama tasawuf Baghdad setelah wafatnya Syeikh Junaid.</li>
+</ul>
+</div>
+
+<h2>Doa Memohon Ilmu yang Bermanfaat dan Guru yang Membimbing</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON ILMU YANG BERMANFAAT — RIWAYAT AT-TIRMIDZI</div>
+<div class="arabic-text">
+اللَّهُمَّ انْفَعْنِي بِمَا عَلَّمْتَنِي، وَعَلِّمْنِي مَا يَنْفَعُنِي، وَزِدْنِي عِلْمًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, manfaatilah aku dengan apa yang telah Engkau ajarkan kepadaku, ajarkanlah kepadaku apa yang bermanfaat bagiku, dan tambahkanlah kepadaku ilmu."
+<br>— HR. At-Tirmidzi dan Ibnu Majah
+</div>
+</div>
+
+<h2>Penutup Halaman 3</h2>
+<p>
+Demikianlah potret keilmuan Syeikh Abu Bakar Asy-Syibli — seorang murid yang datang ke majelis ilmu dengan hati yang telah dibersihkan oleh taubat, lalu Allah karuniakan kepadanya keluasan ilmu dan kedalaman ma'rifat. Beliau belajar dari guru terbaik di zamannya, Syeikh Junaid al-Baghdadi, dan dari lingkaran sufiyyah Baghdad yang dipenuhi para wali. Dari perpaduan ilmu dan bimbingan inilah lahir seorang tokoh yang ucapannya terus dikutip hingga hari ini, dan jalannya terus diteladani oleh para salik di setiap generasi.
+</p>
+<p>
+Pada halaman berikutnya (Halaman 4), insya Allah kita akan memasuki bagian yang paling ditunggu: <strong>Perjalanan Spiritual Syeikh Asy-Syibli</strong> — bagaimana Syeikh Junaid menempa beliau dengan mujahadah yang keras, kisah terkenal ketika beliau diperintahkan menjual air di pasar-pasar Baghdad untuk mematahkan kesombongan jiwa, hingga akhirnya beliau mencapai maqam mahabbah yang menyala-nyala.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-text">
+وَقُل رَّبِّ زِدْنِي عِلْمًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan katakanlah: 'Ya Tuhanku, tambahkanlah kepadaku ilmu pengetahuan.'"
+<br>— QS. Thaha: 114
+</div>
+</div>
+</div>
+
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="syibli1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="syibli2.html" class="article-nav-btn" title="Halaman 2: Perjalanan Menuntut Ilmu">2</a>
+<div class="nav-btn-label">Menuntut Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="syibli3.html" class="article-nav-btn active" title="Halaman 3: Guru-Guru & Bidang Keilmuan">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="syibli4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual Khusus">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="syibli5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik Internal">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="syibli6.html" class="article-nav-btn" title="Halaman 6: Pro Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="syibli7.html" class="article-nav-btn" title="Halaman 7: Sikap Terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="syibli8.html" class="article-nav-btn" title="Halaman 8: Warisan & Karya">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="syibli9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Abu Bakar Asy-Syibli - KALAM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
+<style>
+html { scroll-behavior: auto !important; }
+/* 1. RESET & DASAR */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+/* 2. MEDIA QUERY TABLET */
+@media (max-width: 768px) {
+.article-container {
+max-width: 100%;
+padding: 20px;
+}
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+/* 3. HEADER & NAVIGASI ATAS */
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+/* 4. BREADCRUMB & CONTAINER */
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+/* 5. ARTICLE HEADER & META */
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+/* 6. GAMBAR & SHARE BAR */
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+/* 7. KONTEN ARTIKEL */
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 8. KOTAK ARAB & BIOGRAFI */
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Noto Naskh Arabic', 'Amiri', 'Traditional Arabic', 'Scheherazade', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Noto Naskh Arabic', 'Amiri', 'Traditional Arabic', 'Scheherazade', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.karomah-arabic {
+font-family: 'Noto Naskh Arabic', 'Amiri', 'Traditional Arabic', 'Scheherazade', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 9. NAVIGASI HALAMAN (9 TOMBOL) */
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* 10. TOMBOL KEMBALI & FOOTER */
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+/* 11. MEDIA QUERY MOBILE */
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+/* PATCH UNIVERSAL v2.0 */
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Abu Bakar Asy-Syibli
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Abu Bakar Asy-Syibli</h1>
+<div class="subtitle">Halaman 8 dari 9 — Warisan dan Pengaruh: Wafat, Makam, dan Cahaya yang Tak Pernah Padam</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Minggu, 25 Oktober 2026, 15:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Kadhimayn_Mosque_Baghdad.jpg/440px-Kadhimayn_Mosque_Baghdad.jpg"
+alt="Makam Para Wali di Baghdad"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Samarkand_-_Bibi_Khanym_Mosque_02.jpg/440px-Samarkand_-_Bibi_Khanym_Mosque_02.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Baghdad, tempat Syeikh Abu Bakar Asy-Syibli dimakamkan di pekuburan Asy-Syunizi pada tahun 334 H — makam yang diziarahi oleh para pecinta ilmu dan tasawuf selama berabad-abad</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Setiap yang bernyawa pasti akan merasakan mati — namun tidak setiap kematian mengakhiri pengaruh. Syeikh Abu Bakar Asy-Syibli wafat di Baghdad pada tahun <strong>334 H (946 M)</strong> dalam usia sekitar 87 tahun, namun warisannya tidak ikut terkubur bersama jasadnya. Beliau tidak meninggalkan istana, tidak pula meninggalkan dinar dan dirham — beliau meninggalkan <strong>perkataan yang terus dikutip, keteladanan yang terus ditiru, dan jalan mahabbah yang terus ditempuh</strong> oleh generasi demi generasi. Namanya terukir abadi dalam kitab-kitab tasawuf induk: <em>Hilyatul Auliya'</em>, <em>Tadzkiratul Auliya'</em>, <em>Ar-Risalah Al-Qusyairiyyah</em>, dan banyak lagi. Inilah warisan sejati seorang wali: <em>pengaruh yang terus mengalir meskipun jasad telah lama terbaring di bumi</em>.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEMATIAN DAN BALASAN — QS. ALI 'IMRAN: 185</div>
+<div class="arabic-text">
+كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ ۗ وَإِنَّمَا تُوَفَّوْنَ أُجُورَكُمْ يَوْمَ الْقِيَامَةِ
+</div>
+<div class="arabic-translation">
+<strong>Transliterasi (Latin):</strong><br>
+<em>Kullu nafsin żā'iqatul-maut, wa innamā tuwaffauna ujūrakum yaumal-qiyāmah.</em><br><br>
+<strong>Artinya:</strong> "Tiap-tiap yang berjiwa akan merasakan mati. Dan sesungguhnya pada hari kiamat sajalah disempurnakan pahalamu."
+<br>— QS. Ali 'Imran: 185
+</div>
+</div>
+
+<h2>Wafatnya Sang Api Mahabbah — Baghdad, 334 H</h2>
+<p>
+Pada tahun <strong>334 H (946 M)</strong>, Baghdad menyaksikan dua peristiwa besar yang terjadi hampir bersamaan: masuknya Dinasti Buwaih ke kota itu — yang menandai berakhirnya satu babak sejarah politik Abbasiyah — dan wafatnya seorang wali besar yang selama puluhan tahun menghidupkan hati penduduknya, yaitu <strong>Syeikh Abu Bakar Asy-Syibli</strong>. Beliau wafat dalam usia sekitar <strong>87 tahun</strong>, setelah menghabiskan hampir satu abad penuh dalam perjalanan dari istana menuju Allah.
+</p>
+<p>
+Kaum muslimin Baghdad — dari berbagai kalangan — menghadiri pengurusan jenazah beliau dengan duka dan penghormatan yang mendalam. Beliau dimakamkan di <strong>pekuburan Asy-Syunizi (الشُّونِيزِيَّة)</strong>, salah satu pekuburan bersejarah di sisi barat Baghdad yang dikenal sebagai tempat dimakamkannya banyak orang shaleh. Sejak hari itu, makam beliau menjadi tempat ziarah yang dikunjungi oleh para pecinta ilmu, para salik, dan orang-orang yang mencari keberkahan — selama berabad-abad lamanya.
+</p>
+
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Wafat dan Makam — Pekuburan Asy-Syunizi, Baghdad</span>
+<div class="karomah-arabic">وَفَاتُهُ وَمَدْفِنُهُ فِي مَقْبَرَةِ الشُّونِيزِيَّةِ بِبَغْدَاد سَنَةَ ٣٣٤ هـ</div>
+<p>
+Catatan para ulama tarikh tentang wafat beliau:
+</p>
+<ul>
+<li><strong>Tahun wafat:</strong> 334 H (946 M) — tahun yang sama dengan masuknya Dinasti Buwaih ke Baghdad.</li>
+<li><strong>Usia:</strong> sekitar 87 tahun — usia yang panjang dan dipenuhi dengan ilmu, ibadah, dan dakwah setelah taubatnya.</li>
+<li><strong>Tempat wafat:</strong> Baghdad — kota yang menjadi saksi seluruh perjalanan spiritualnya sejak taubat hingga wafat.</li>
+<li><strong>Tempat pemakaman:</strong> Pekuburan Asy-Syunizi, sisi barat Baghdad, di antara makam-makam para ulama dan orang shaleh.</li>
+<li><strong>Penghormatan terakhir:</strong> Kaum muslimin dari berbagai kalangan hadir mengurus jenazah beliau — bukti cinta umat yang tidak pernah padam.</li>
+</ul>
+<p>
+Makam beliau di Asy-Syunizi terus diziarahi oleh para pecinta ilmu dan tasawuf selama berabad-abad. Para peziarah datang bukan untuk menyembah, melainkan untuk mengenang, mendoakan, dan mengambil pelajaran dari hidup seorang hamba yang pernah menanggalkan seluruh dunia demi Tuhannya. Inilah salah satu tanda kewalian yang disebutkan oleh para ulama: <em>keberkahan seorang wali tetap terasa bahkan setelah jasadnya berpisah dengan dunia</em>.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">HADITS TENTANG AMAL YANG TIDAK TERPUTUS — RIWAYAT MUSLIM</div>
+<div class="arabic-text">
+إِذَا مَاتَ ابْنُ آدَمَ انْقَطَعَ عَمَلُهُ إِلَّا مِنْ ثَلَاثٍ: صَدَقَةٍ جَارِيَةٍ، أَوْ عِلْمٍ يُنْتَفَعُ بِهِ، أَوْ وَلَدٍ صَالِحٍ يَدْعُو لَهُ
+</div>
+<div class="arabic-translation">
+<strong>Transliterasi (Latin):</strong><br>
+<em>Iżā māta bnu Ādama inqaṭa'a 'amaluhū illā min śalāś: ṣadaqatin jāriyah, au 'ilmin yuntafa'u bih, au waladin ṣāliḥin yad'ū lah.</em><br><br>
+<strong>Artinya:</strong> "Jika anak Adam meninggal dunia, maka terputuslah amalnya kecuali tiga perkara: sedekah jariyah, ilmu yang bermanfaat, atau anak shaleh yang mendoakannya."
+<br>— HR. Muslim
+</div>
+</div>
+
+<h2>Warisan Abadi — Perkataan, Keteladanan, dan Jalan Mahabbah</h2>
+<p>
+Syeikh Asy-Syibli tidak meninggalkan bangunan megah maupun harta warisan — dan memang itulah yang beliau kehendaki. Namun Allah menggantinya dengan warisan yang jauh lebih kekal: <strong>perkataan-perkataan yang terus hidup di hati umat</strong>. Para ulama mencatat dan meriwayatkan ungkapan-ungkapan beliau dalam kitab-kitab induk, sehingga generasi demi generasi dapat terus minum dari mata air hikmahnya.
+</p>
+
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Ungkapan-Ungkapan Beliau dalam Kitab-Kitab Tasawuf Induk</span>
+<div class="karomah-arabic">أَقْوَالُهُ فِي أُمَّهَاتِ كُتُبِ التَّصَوُّفِ</div>
+<p>
+Nama dan perkataan Syeikh Abu Bakar Asy-Syibli diabadikan dalam kitab-kitab tasawuf dan tarikh paling otoritatif dalam sejarah Islam, di antaranya:
+</p>
+<ul>
+<li><strong><em>Hilyatul Auliya' wa Thabaqatul Ashfiya'</em></strong> — karya Imam Abu Nu'aim Al-Isfahani (w. 430 H), yang memuat biografi panjang dan riwayat perkataan beliau.</li>
+<li><strong><em>Tadzkiratul Auliya'</em></strong> — karya Fariduddin Aththar (w. 618 H), yang mengisahkan perjalanan hidup beliau dengan penuh keindahan.</li>
+<li><strong><em>Ar-Risalah Al-Qusyairiyyah</em></strong> — karya Imam Abu Al-Qasim Al-Qusyairi (w. 465 H), yang memuat definisi tasawuf beliau yang terkenal.</li>
+<li><strong><em>Al-Luma' fi At-Tashawwuf</em></strong> — karya Abu Nashr As-Sarraj (w. 378 H), salah satu rujukan tertamanya tentang sejarah dan ajaran tasawuf.</li>
+<li><strong><em>Shifat Ash-Shafwah</em></strong> — karya Imam Ibnul Jauzi (w. 597 H), yang mencatat biografi para tokoh pilihan dari kalangan ahli ibadah dan sufi.</li>
+<li><strong><em>Siyar A'lam An-Nubala'</em></strong> — karya Imam Adz-Dzahabi (w. 748 H), kitab tarikh agung yang juga membahas kedudukan beliau di kalangan ulama.</li>
+</ul>
+<p>
+Di antara ungkapan beliau yang paling masyhur dan terus dikutip hingga hari ini:
+</p>
+<ul>
+<li><strong>Tentang hakikat tasawuf:</strong> <em>"Tasawuf adalah duduk bersama Allah tanpa kesusahan dan tanpa kegundahan"</em> (التَّصَوُّفُ الْجُلُوسُ مَعَ اللَّهِ بِلَا هَمٍّ وَلَا غَمٍّ).</li>
+<li><strong>Tentang wara' dalam lisan:</strong> <em>"Bentuk wara' yang paling berat di kalangan kaum sufi adalah wara' dalam berbicara"</em> (أَشَدُّ الْوَرَعِ عِنْدَ الصُّوفِيَّةِ الْوَرَعُ فِي الْكَلَامِ).</li>
+<li><strong>Tentang menjaga rahasia spiritual:</strong> <em>"Aku dan al-Hallaj adalah satu, hanya saja ia menampakkan apa yang aku sembunyikan"</em> (أَنَا وَالْحَلَّاجُ وَاحِدٌ إِلَّا أَنَّهُ أَظْهَرَ مَا أَخْفَيْتُ).</li>
+</ul>
+<p>
+Ungkapan-ungkapan ini tidak sekadar menjadi kutipan indah — ia menjadi <strong>prinsip hidup</strong> bagi para salik di setiap zaman, dan menjadi bahan kajian para ulama tasawuf dari generasi ke generasi.
+</p>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Pengaruh Beliau pada Generasi Sesudahnya</span>
+<div class="karomah-arabic">أَثَرُهُ فِي الْأَجْيَالِ مِنْ بَعْدِهِ</div>
+<p>
+Pengaruh Syeikh Asy-Syibli tidak berhenti dengan wafatnya. Para ulama mencatat beberapa bentuk pengaruh beliau yang terus mengalir:
+</p>
+<ul>
+<li><strong>Menjadi jembatan dua aliran besar tasawuf</strong> — Beliau menggabungkan jalan <em>sahwu</em> (kesadaran dan keterjagaan) warisan Syeikh Junaid dengan jalan <em>wajd dan mahabbah</em> yang menyala. Dengan itu, beliau menunjukkan bahwa cinta yang bergelora dan syariat yang kokoh dapat berjalan beriringan.</li>
+<li><strong>Menjadi rujukan para sufi sesudahnya</strong> — Para penulis thabaqat dan para mursyid terus menyebut nama beliau sebagai salah satu rujukan utama dalam adab suluk, mahabbah, dan keteguhan di atas sunnah.</li>
+<li><strong>Menghidupkan tradisi dakwah yang menyentuh hati</strong> — Metode dakwah beliau yang memadukan kefashihan lisan, kejujuran hal, dan air mata menjadi teladan bagi para dai di setiap zaman.</li>
+<li><strong>Menjadi teladan taubat bagi para pembesar</strong> — Kisahnya meninggalkan jabatan menjadi inspirasi bagi setiap orang yang diberi kedudukan: bahwa tidak ada kata terlambat untuk kembali kepada Allah.</li>
+<li><strong>Menginspirasi para penulis dan penyair</strong> — Kisah hidup beliau yang dramatis — dari istana ke pasar, dari jabatan ke zuhud — menjadi salah satu kisah paling menggetarkan dalam literatur tasawuf dunia.</li>
+</ul>
+<p>
+Dengan semua itu, Syeikh Asy-Syibli membuktikan hadits Rasulullah SAW tentang <em>ilmu yang bermanfaat</em> — ilmu yang pahalanya terus mengalir meskipun pemiliknya telah lama wafat.
+</p>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Keteladanan Abadi — Pelajaran dari Hidup Beliau</span>
+<div class="karomah-arabic">الدُّرُوسُ الْخَالِدَةُ مِنْ حَيَاتِهِ رَحِمَهُ اللَّهُ</div>
+<p>
+Hidup Syeikh Abu Bakar Asy-Syibli adalah kitab terbuka yang penuh pelajaran. Di antara pelajaran terpenting yang dapat kita petik:
+</p>
+<ul>
+<li><strong>Taubat tidak mengenal kata terlambat</strong> — Beliau bertaubat di usia matang, setelah mapan dalam jabatan, dan Allah justru menjadikannya salah satu wali terbesar di zamannya.</li>
+<li><strong>Ilmu adalah fondasi jalan spiritual</strong> — Beliau tidak menempuh tasawuf dengan perasaan semata, melainkan membangunnya di atas Al-Qur'an, hadits, dan fikih.</li>
+<li><strong>Adab kepada guru adalah kunci pembuka</strong> — Kesabarannya menjalani perintah Syeikh Junaid — termasuk menjual air di pasar — menjadi sebab terbukanya pintu-pintu ma'rifat baginya.</li>
+<li><strong>Ujian adalah tangga kenaikan</strong> — Setiap badai yang menimpanya justru mengangkat derajatnya dan memperluas cahaya dakwahnya.</li>
+<li><strong>Jangan menjual agama demi dunia</strong> — Beliau membuktikan bahwa seorang hamba dapat hidup mulia tanpa tunduk kepada kekuasaan dan tanpa menggadaikan kebenaran.</li>
+<li><strong>Mahabbah adalah puncak segala maqam</strong> — Cinta kepada Allah adalah api yang membakar seluruh hijab, dan cinta itulah yang menjadi ciri khas beliau hingga akhir hayat.</li>
+</ul>
+</div>
+
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Warisan dan Pengaruh Syeikh Asy-Syibli:</strong>
+<ul>
+<li><strong>Wafat:</strong> Baghdad, tahun 334 H (946 M), usia sekitar 87 tahun — tahun yang sama dengan masuknya Dinasti Buwaih ke Baghdad.</li>
+<li><strong>Makam:</strong> Pekuburan Asy-Syunizi, sisi barat Baghdad — tempat ziarah selama berabad-abad.</li>
+<li><strong>Warisan utama:</strong> Perkataan dan keteladanan — bukan harta dan jabatan.</li>
+<li><strong>Kitab-kitab yang memuat riwayatnya:</strong> Hilyatul Auliya', Tadzkiratul Auliya', Ar-Risalah Al-Qusyairiyyah, Al-Luma', Shifat Ash-Shafwah, Siyar A'lam An-Nubala'.</li>
+<li><strong>Pengaruh:</strong> Jembatan antara aliran sahwu (Syeikh Junaid) dan aliran wajd-mahabbah; rujukan adab suluk bagi para salik.</li>
+<li><strong>Amal jariyah:</strong> Ilmu yang bermanfaat yang terus mengalir pahalanya hingga hari ini.</li>
+<li><strong>Pelajaran terbesar:</strong> Kemuliaan sejati terletak pada hati yang jujur bersama Allah, bukan pada singgasana dan mahkota.</li>
+</ul>
+</div>
+
+<h2>Doa untuk Syeikh Abu Bakar Asy-Syibli</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA UNTUK SANG WALI — RAHIMAHULLAH</div>
+<div class="arabic-text">
+اللَّهُمَّ اغْفِرْ لِسَيِّدِنَا أَبِي بَكْرٍ الشِّبْلِيِّ وَارْحَمْهُ، وَقَدِّسْ سِرَّهُ، وَارْفَعْ دَرَجَتَهُ فِي الْمَهْدِيِّينَ، وَأَسْكِنْهُ فَسِيحَ جَنَّاتِكَ، وَاجْعَلْهُ مَعَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ مِنَ النَّبِيِّينَ وَالصِّدِّيقِينَ وَالشُّهَدَاءِ وَالصَّالِحِينَ
+</div>
+<div class="arabic-translation">
+<strong>Transliterasi (Latin):</strong><br>
+<em>Allāhumma-ghfir li-sayyidinā Abī Bakrin asy-Syiblii war-ḥamhu, wa qaddis sirrahū, warfa' darajatahū fil-mahdiyyīn, wa askinhu fasīḥa jannātik, waj'alhu ma'al-lażīna an'amta 'alaihim minan-nabiyyīna waṣ-ṣiddīqīna wasy-syuhadā'i waṣ-ṣāliḥīn.</em><br><br>
+<strong>Artinya:</strong> "Ya Allah, ampunilah tuan kami Abu Bakar Asy-Syibli dan rahmatilah ia, sucikanlah ruhnya, angkatlah derajatnya bersama orang-orang yang mendapat petunjuk, tempatkanlah ia di surga-Mu yang luas, dan kumpulkanlah ia bersama orang-orang yang Engkau beri nikmat: para nabi, shiddiqin, syuhada, dan orang-orang shaleh."
+</div>
+</div>
+
+<h2>Penutup Halaman 8</h2>
+<p>
+Demikianlah akhir perjalanan duniawi Syeikh Abu Bakar Asy-Syibli — namun bukan akhir pengaruhnya. Jasadnya terbaring di pekuburan Asy-Syunizi, namun namanya tetap hidup di lidah para penuntut ilmu, perkataannya tetap dikutip di majelis-majelis tasawuf, dan jalan mahabbahnya tetap ditempuh oleh para salik di setiap zaman. Beliau membuktikan bahwa warisan sejati bukanlah apa yang kita tinggalkan untuk dunia, melainkan apa yang kita tinggalkan di hati manusia — dan apa yang tertanam di hati karena Allah tidak akan pernah layu.
+</p>
+<p>
+Pada halaman terakhir (Halaman 9), insya Allah kita akan menutup seluruh rangkaian biografi ini dengan <strong>Penutup dan Intisari</strong> — merangkum perjalanan hidup beliau dari kelahiran di Ustrushana hingga wafat di Baghdad dalam satu kesatuan pelajaran, disertai doa penutup majelis.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-text">
+وَقُل رَّبِّ زِدْنِي عِلْمًا
+</div>
+<div class="arabic-translation">
+<strong>Transliterasi (Latin):</strong><br>
+<em>Wa qur rabbi zidnī 'ilmā.</em><br><br>
+<strong>Artinya:</strong> "Dan katakanlah: 'Ya Tuhanku, tambahkanlah kepadaku ilmu pengetahuan.'"
+<br>— QS. Thaha: 114
+</div>
+</div>
+</div>
+
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="syibli1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="syibli2.html" class="article-nav-btn" title="Halaman 2: Perjalanan Menuntut Ilmu">2</a>
+<div class="nav-btn-label">Menuntut Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="syibli3.html" class="article-nav-btn" title="Halaman 3: Guru-Guru & Bidang Keilmuan">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="syibli4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="syibli5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="syibli6.html" class="article-nav-btn" title="Halaman 6: Pro Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="syibli7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="syibli8.html" class="article-nav-btn active" title="Halaman 8: Warisan & Pengaruh">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="syibli9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

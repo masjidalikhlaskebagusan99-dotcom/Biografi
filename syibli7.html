@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Abu Bakar Asy-Syibli - KALAM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
+<style>
+html { scroll-behavior: auto !important; }
+/* 1. RESET & DASAR */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+/* 2. MEDIA QUERY TABLET */
+@media (max-width: 768px) {
+.article-container {
+max-width: 100%;
+padding: 20px;
+}
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+/* 3. HEADER & NAVIGASI ATAS */
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+/* 4. BREADCRUMB & CONTAINER */
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+/* 5. ARTICLE HEADER & META */
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+/* 6. GAMBAR & SHARE BAR */
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+/* 7. KONTEN ARTIKEL */
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 8. KOTAK ARAB & BIOGRAFI */
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Noto Naskh Arabic', 'Amiri', 'Traditional Arabic', 'Scheherazade', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Noto Naskh Arabic', 'Amiri', 'Traditional Arabic', 'Scheherazade', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.karomah-arabic {
+font-family: 'Noto Naskh Arabic', 'Amiri', 'Traditional Arabic', 'Scheherazade', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 9. NAVIGASI HALAMAN (9 TOMBOL) */
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* 10. TOMBOL KEMBALI & FOOTER */
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+/* 11. MEDIA QUERY MOBILE */
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+/* PATCH UNIVERSAL v2.0 */
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Abu Bakar Asy-Syibli
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Abu Bakar Asy-Syibli</h1>
+<div class="subtitle">Halaman 7 dari 9 — Sikap Pro dan Kontra Penguasa terhadap Diri dan Dakwah Beliau</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Minggu, 25 Oktober 2026, 14:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Kadhimayn_Mosque_Baghdad.jpg/440px-Kadhimayn_Mosque_Baghdad.jpg"
+alt="Baghdad, Pusat Kekuasaan Abbasiyah"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Samarkand_-_Bibi_Khanym_Mosque_02.jpg/440px-Samarkand_-_Bibi_Khanym_Mosque_02.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Baghdad, pusat kekuasaan Bani Abbasiyah tempat Syeikh Abu Bakar Asy-Syibli pernah menjadi hajib (pejabat istana), lalu menjadi hamba yang merdeka dari jabatan, dan akhirnya menjadi mursyid yang dihormati sekaligus diwaspadai oleh penguasa</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Hubungan Syeikh Abu Bakar Asy-Syibli dengan penguasa Bani Abbasiyah adalah salah satu bab paling menarik dalam sejarah hidupnya — bukan karena beliau seorang pemburu kekuasaan atau pemimpin pemberontakan, melainkan karena <strong>beliau sendiri pernah menjadi bagian dari kekuasaan itu</strong>, kemudian menanggalkannya dengan tangan sendiri, dan akhirnya berdiri di hadapan kekuasaan sebagai seorang hamba Allah yang tidak dapat dibeli dan tidak dapat diintimidasi. Para pembesar menghormati kefasihan dan keilmuannya, namun sebagian penguasa juga mencurigai pengaruhnya — terutama setelah peristiwa al-Hallaj (309 H). Di tengah arus pro dan kontra itu, Syeikh Asy-Syibli menjaga satu garis yang sangat tegas: <em>tidak menjual agama demi jabatan, tidak memberontak terhadap umat, dan tidak pernah berhenti menasihati dengan hikmah</em>.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KETAATAN DAN PEMEGANG KEKUASAAN — QS. AN-NISA: 59</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا أَطِيعُوا اللَّهَ وَأَطِيعُوا الرَّسُولَ وَأُولِي الْأَمْرِ مِنْكُمْ
+</div>
+<div class="arabic-translation">
+<strong>Transliterasi (Latin):</strong><br>
+<em>Yā ayyuhallażīna āmanū aṭī'ullāha wa aṭī'ur-rasūla wa ulil-amri minkum.</em><br><br>
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, taatilah Allah dan taatilah Rasul (Nya), dan ulil amri (pemegang kekuasaan) di antara kamu."
+<br>— QS. An-Nisa: 59
+</div>
+</div>
+
+<h2>Dua Wajah Kekuasaan — Bagian dari Istana, Lalu Merdeka dari Istana</h2>
+<p>
+Untuk memahami sikap pro dan kontra penguasa terhadap Syeikh Asy-Syibli, kita harus terlebih dahulu memahami posisi unik beliau. Beliau bukan orang luar yang tiba-tiba datang menasihati istana; beliau adalah <strong>mantan orang dalam</strong>. Beliau pernah tumbuh di lingkungan pejabat, pernah duduk dalam rapat-rapat kekuasaan, dan pernah merasakan manisnya ketaatan manusia kepada perintahnya. Karena itu beliau memahami betul dua hal sekaligus: bagaimana cara kekuasaan bekerja, dan bagaimana cara kekuasaan itu memperlakukan orang yang meninggalkannya.
+</p>
+<p>
+Dari pengetahuan langsung inilah lahir sikap beliau yang sangat matang terhadap penguasa: beliau tidak naif terhadap politik, tidak pula terbawa oleh politik. Baginya, kekuasaan adalah <em>amanah yang akan dihisab</em>, bukan tujuan hidup. Dan dakwah kepada Allah harus tetap berjalan, entah penguasa rida maupun tidak rida.
+</p>
+
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Fase Pertama — Beliau Sendiri adalah Bagian dari Kekuasaan</span>
+<div class="karomah-arabic">الْمَرْحَلَةُ الْأُولَىٰ: كَانَ مِنَ أَرْكَانِ الدَّوْلَةِ</div>
+<p>
+Sebelum bertaubat, Syeikh Asy-Syibli — dengan nama aslinya <em>Dulaf bin Jahdar</em> — memangku jabatan tinggi sebagai <strong>hajib</strong>, yaitu kepala protokol dan pengawal istana dalam lingkungan pemerintahan Abbasiyah. Para pengarang thabaqat mengaitkan masa jabatan beliau dengan periode pemerintahan Khalifah <strong>Al-Mu'tadid Billah (279–289 H)</strong>, salah satu khalifah Abbasiyah yang dikenal kuat dan tegas.
+</p>
+<p>
+Pada fase ini, hubungan beliau dengan penguasa tentu bersifat <strong>pro dan penuh kepercayaan</strong>: beliau adalah bagian dari aparatur negara, dipercaya menjaga kehormatan istana, dan diberi kedudukan serta fasilitas. Namun kepercayaan itu tidak beliau jadikan jaminan kebahagiaan. Justru ketika berada di dalam, beliau menyaksikan hal-hal yang kelak membuat hatinya gelisah: betapa cepatnya manusia diperlakukan menurut ukuran jabatan, betapa rapuhnya kedudukan, dan betapa jauhnya urusan dunia dari urusan akhirat.
+</p>
+<p>
+Inilah sebabnya kisah taubat beliau begitu menggetarkan: yang meninggalkan istana bukanlah orang yang gagal masuk ke dalamnya, melainkan orang yang <strong>sudah berdiri di dalamnya dan melihat semuanya dengan mata kepala sendiri</strong>.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL CARA BERBICARA KEPADA PEMEGANG KEKUASAAN — QS. THAHA: 44</div>
+<div class="arabic-text">
+فَقُولَا لَهُ قَوْلًا لَيِّنًا لَعَلَّهُ يَتَذَكَّرُ أَوْ يَخْشَىٰ
+</div>
+<div class="arabic-translation">
+<strong>Transliterasi (Latin):</strong><br>
+<em>Faqūlā lahū qaulan layyinā, la'allahū yatadzakkaru au yakhsyā.</em><br><br>
+<strong>Artinya:</strong> "Maka berbicaralah kamu berdua kepadanya (Fir'aun) dengan ucapan yang lemah lembut, agar ia ingat atau takut."
+<br>— QS. Thaha: 44
+</div>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Fase Kedua — Setelah Taubat, Penguasa Kehilangan "Orangnya"</span>
+<div class="karomah-arabic">الْمَرْحَلَةُ الثَّانِيَةُ: زُهْدُهُ فِي الْمَنَاصِبِ بَعْدَ التَّوْبَةِ</div>
+<p>
+Ketika Syeikh Asy-Syibli menanggalkan jabatannya, meninggalkan pakaian kebesaran, dan menyedekahkan hartanya, terjadi perubahan mendasar dalam hubungan beliau dengan istana. Dari seorang pejabat yang diandalkan, beliau berubah menjadi seorang <em>faqir</em> yang hanya mengandalkan Allah. Sebagian pembesar heran, sebagian merasa kecewa karena kehilangan orang kepercayaannya, dan sebagian lain menilai tindakan beliau sebagai sesuatu yang tidak masuk akal.
+</p>
+<p>
+Namun yang lebih penting: <strong>penguasa tidak lagi memiliki jalan untuk "mengendalikan" beliau</strong>. Seorang yang telah meninggalkan jabatan dan harta tidak dapat dibeli dengan jabatan dan harta. Inilah yang membuat sebagian kalangan istana segan — sekaligus curiga. Mereka tidak memahami bagaimana seseorang bisa dengan sukarela melepaskan semua yang mereka rebut seumur hidup.
+</p>
+<p>
+Syeikh Asy-Syibli menjawab keheranan itu bukan dengan perdebatan, melainkan dengan kehidupan. Beliau hidup sederhana, berkhidmat kepada gurunya, dan hanya menerima undangan yang tidak menjadikannya hamba bagi undangan itu. Baginya, duduk bersama penguasa boleh — tetapi duduk bersama penguasa dengan hati yang mengharapkan dunia adalah perkara yang sangat berbeda.
+</p>
+</div>
+
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Fase Ketiga — Pasca al-Hallaj (309 H), Penguasa Bersikap Keras</span>
+<div class="karomah-arabic">بَعْدَ وَاقِعَةِ الْحَلَّاجِ سَنَةَ ٣٠٩ هـ — التَّشَدُّدُ السِّيَاسِيُّ</div>
+<p>
+Setelah peristiwa hukuman mati terhadap <strong>al-Husain bin Manshur al-Hallaj</strong> pada tahun <strong>309 H (922 M)</strong>, suasana politik Baghdad berubah sangat tegang. Pada masa Khalifah <strong>Al-Muqtadir Billah</strong>, dengan peran kuat wazir <em>Ali bin Isa bin al-Jarrah</em> dan pengaruh para fuqaha, seluruh gerakan yang dianggap membawa "bahasa ketuhanan" di luar batas diteliti dan ditekan. Kalangan sufi secara umum berada di bawah pengamatan ketat.
+</p>
+<p>
+Dalam situasi inilah Syeikh Asy-Syibli ikut terseret arus. Karena kedekatan beliau dengan al-Hallaj secara pribadi dan karena ungkapan-ungkapan wajd yang pernah beliau sampaikan, sebagian pihak melaporkan keadaan beliau kepada penguasa. Akibatnya, beliau mengalami pembatasan dan — sebagaimana diriwayatkan dalam kitab-kitab thabaqat — <strong>ditempatkan di maristan Baghdad</strong>.
+</p>
+<p>
+Perlu ditegaskan di sini: riwayat tentang maristan ini <strong>bukanlah bukti bahwa beliau dianggap murtad atau dijatuhi hukuman mati</strong>. Justru sebagian ulama tasawuf membacanya sebagai bentuk perlindungan: dengan diperlakukan sebagai orang yang tidak sepenuhnya sadar atas ucapannya, beliau tidak dihukum sebagaimana al-Hallaj. Ini adalah penilaian para ulama tasawuf atas hikmah peristiwa, bukan putusan hukum yang ditetapkan penguasa terhadap akidah beliau.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH ASY-SYIBLI TENTANG MENJAGA LISAN</div>
+<div class="arabic-text">
+أَشَدُّ الْوَرَعِ عِنْدَ الصُّوفِيَّةِ الْوَرَعُ فِي الْكَلَامِ
+</div>
+<div class="arabic-translation">
+<strong>Transliterasi (Latin):</strong><br>
+<em>Aysyaddul-wara'i 'indash-shūfiyyah: al-wara'u fil-kalām.</em><br><br>
+<strong>Artinya:</strong> "Bentuk wara' yang paling berat di kalangan kaum sufi adalah wara' dalam berbicara."
+<br>— Syeikh Abu Bakar Asy-Syibli, sebagaimana dinukil dalam tradisi ulama tasawuf dan dibahas oleh para ulama tarikh
+</div>
+</div>
+
+<h2>Sikap Syeikh Asy-Syibli terhadap Penguasa — Lima Prinsip yang Tidak Pernah Beliau Langgar</h2>
+<p>
+Bagaimana sikap beliau sendiri ketika di satu sisi dihormati oleh pembesar, dan di sisi lain diawasi bahkan dibatasi oleh penguasa? Para ulama merangkum sikap beliau ke dalam lima prinsip yang sangat indah untuk dijadikan pedoman oleh umat hingga hari ini:
+</p>
+
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Tidak Menjual Agama demi Kedudukan, Tidak Memberontak demi Kepentingan</span>
+<div class="karomah-arabic">لَا يَبِيعُ دِينَهُ بِمَنْصِبٍ، وَلَا يَحْمِلُ سِلَاحًا عَلَى الْأُمَّةِ</div>
+<ul>
+<li><strong>Tidak mengejar jabatan</strong> — Beliau tidak pernah kembali menawarkan dirinya kepada istana, meskipun secara kemampuan jauh lebih layak daripada banyak pejabat.</li>
+<li><strong>Tidak menerima fasilitas dengan syarat membungkam dakwah</strong> — Apabila suatu undangan kekuasaan berpotensi menjadikannya "juru bicara istana", beliau memilih menjauh.</li>
+<li><strong>Tidak memberontak</strong> — Beliau tidak mengajak murid-muridnya turun ke jalan, tidak membentuk kekuatan politik, dan tidak menjadikan majelisnya sebagai pusat makar.</li>
+<li><strong>Tetap menasihati dengan hikmah</strong> — Ketika ada kesempatan, beliau menyampaikan kebenaran dengan lemah lembut, sesuai adab Al-Qur'an: <em>qaulan layyina</em> (perkataan yang lembut).</li>
+<li><strong>Tetap mendoakan kebaikan</strong> — Beliau tidak menjadikan celaan penguasa sebagai alasan untuk mendoakan keburukan; doanya untuk umat dan untuk kebaikan negeri tetap mengalir.</li>
+</ul>
+<p>
+Dari sinilah terlihat kebesaran akhlak beliau: <strong>berani menyampaikan kebenaran tanpa menjadikan kebenaran itu alat untuk merebut kekuasaan</strong>. Ini adalah jalan para nabi dan wali, bukan jalan para perebut takhta.
+</p>
+</div>
+
+<h3>Arus Pro — Penghormatan dari Pembesar dan Istana</h3>
+
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Pihak yang Menghormati (Pro): Pengaruh yang Tidak Bisa Dipadamkan</span>
+<div class="karomah-arabic">الْمَوْقِفُ الْمُؤَيِّدُ مِنْ بَعْضِ أَهْلِ الدَّوْلَةِ</div>
+<p>
+Meskipun terjadi kecurigaan pada masa-masa genting, sejarah juga mencatat bahwa banyak pembesar Abbasiyah yang tetap menghormati Syeikh Asy-Syibli. Bentuk dukungan itu antara lain:
+</p>
+<ul>
+<li><strong>Pengakuan atas kefasihan dan keilmuan</strong> — Latar belakang beliau sebagai mantan hajib membuat para pembesar mengenal kecerdasan dan adabnya. Banyak dari mereka yang diam-diam meminta nasihat beliau dalam persoalan pribadi.</li>
+<li><strong>Kehadiran di majelis</strong> — Sebagian pejabat dan keluarganya hadir sebagai jamaah biasa di majelis beliau, tanpa protokoler, tanpa keistimewaan. Beliau memperlakukan mereka sebagaimana memperlakukan rakyat biasa.</li>
+<li><strong>Perlindungan tidak langsung</strong> — Setelah situasi mereda, majelis beliau dibiarkan berjalan kembali. Ini menunjukkan bahwa tidak seluruh unsur kekuasaan memusuhinya; ada pihak-pihak yang memahami bahwa dakwah beliau adalah dakwah perbaikan, bukan pemberontakan.</li>
+<li><strong>Penghormatan saat wafat</strong> — Ketika beliau wafat di Baghdad pada tahun 334 H, kaum muslimin dari berbagai kalangan hadir dalam pengurusan jenazah dan pemakamannya di pekuburan Asy-Syunizi — termasuk mereka yang dekat dengan lingkungan kekuasaan.</li>
+</ul>
+<p>
+Namun beliau tidak pernah menjadikan penghormatan itu sebagai modal. Bagi seorang yang telah menjual dunianya kepada Allah, pujian pembesar tidak lebih berat daripada pujian seorang penggembala.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEADILAN DAN KEBAIKAN — QS. AN-NAHL: 90</div>
+<div class="arabic-text">
+إِنَّ اللَّهَ يَأْمُرُ بِالْعَدْلِ وَالْإِحْسَانِ وَإِيتَاءِ ذِي الْقُرْبَىٰ وَيَنْهَىٰ عَنِ الْفَحْشَاءِ وَالْمُنكَرِ وَالْبَغْيِ ۚ يَعِظُكُمْ لَعَلَّكُمْ تَذَكَّرُونَ
+</div>
+<div class="arabic-translation">
+<strong>Transliterasi (Latin):</strong><br>
+<em>Innallāha ya'muru bil-'adli wal-iḥsāni wa ītā'i żil-qurbā, wa yan'hā 'anil-faḥsyā'i wal-munkari wal-baghyi, ya'iẓukum la'allakum tadzakkarūn.</em><br><br>
+<strong>Artinya:</strong> "Sesungguhnya Allah menyuruh (kamu) berlaku adil dan berbuat kebajikan, memberi kepada kaum kerabat, dan Allah melarang dari perbuatan keji, kemungkaran dan permusuhan. Dia memberi pengajaran kepadamu agar kamu dapat mengambil pelajaran."
+<br>— QS. An-Nahl: 90
+</div>
+</div>
+
+<h3>Arus Kontra — Kecurigaan, Pengawasan, dan Pembatasan</h3>
+
+<div class="karomah-card">
+<span class="karomah-number">6</span>
+<span class="karomah-title">Pihak yang Mencurigai (Kontra): Ketika Bahasa Hati Disalahpahami oleh Politik</span>
+<div class="karomah-arabic">الْمَوْقِفُ الْمُعَارِضُ: التُّهَمَةُ وَالرَّقَابَةُ</div>
+<p>
+Di sisi lain, sebagian unsur penguasa dan orang-orang di sekelilingnya mengambil sikap yang berlawanan:
+</p>
+<ul>
+<li><strong>Mengawasi ungkapan beliau</strong> — Setiap perkataan yang keluar dalam keadaan wajd dicatat dan ditafsirkan secara harfiah, tanpa membedakan antara bahasa musyahadah dan pengakuan syariat.</li>
+<li><strong>Menyamakan beliau dengan al-Hallaj</strong> — Karena keduanya bersahabat dan keduanya dikenal dengan ungkapan cinta yang mendalam, sebagian pihak menyamakan kedudukan keduanya, padahal perbedaan jalan mereka sangat jelas.</li>
+<li><strong>Membatasi pergerakan beliau</strong> — Termasuk peristiwa penempatan di maristan, yang dalam konteks politik masa itu adalah bentuk pembatasan, bukan keputusan ilmiah atas kedalaman spiritual beliau.</li>
+<li><strong>Memakai laporan orang yang tidak paham</strong> — Sebagaimana lazim dalam sejarah para wali, pihak yang paling keras menuduh往往是 orang yang paling jauh duduk di majelisnya.</li>
+</ul>
+<p>
+Namun perhatikan: <strong>tidak ada riwayat sahih yang menunjukkan Syeikh Asy-Syibli dijatuhi hukuman mati atau dihukum sebagai penoda agama</strong>. Beliau hidup terus hingga usia sekitar 87 tahun, membimbing umat, dan wafat dengan tenang di Baghdad. Ini sendiri adalah jawaban yang paling kuat terhadap tuduhan-tuduhan yang pernah dilekatkan kepada beliau.
+</p>
+</div>
+
+<div class="arabic-box">
+<div class="arabic-label">HADITS TENTANG AGAMA ADALAH NASIHAT — RIWAYAT MUSLIM</div>
+<div class="arabic-text">
+الدِّينُ النَّصِيحَةُ، قُلْنَا: لِمَنْ؟ قَالَ: لِلَّهِ وَلِكِتَابِهِ وَلِرَسُولِهِ وَلِأَئِمَّةِ الْمُسْلِمِينَ وَعَامَّتِهِمْ
+</div>
+<div class="arabic-translation">
+<strong>Transliterasi (Latin):</strong><br>
+<em>Ad-dīn un-naṣīḥah.</em> Qulnā: Liman? Qāla: <em>Lillāhi wa li-Kitābihi wa li-Rasūlihi wa li-a'immatil-muslimīna wa 'āmmatihim.</em><br><br>
+<strong>Artinya:</strong> "Agama adalah nasihat." Para sahabat bertanya: "Bagi siapa?" Beliau menjawab: "Bagi Allah, Kitab-Nya, Rasul-Nya, para pemimpin kaum muslimin, dan kaum muslimin secara umum."
+<br>— HR. Muslim
+</div>
+</div>
+
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Sikap Pro-Kontra Penguasa dan Sikap Beliau:</strong>
+<ul>
+<li><strong>Fase pertama:</strong> Beliau adalah bagian dari kekuasaan — menjabat hajib pada masa Abbasiyah, sehingga sangat memahami cara kerja istana.</li>
+<li><strong>Fase kedua:</strong> Setelah taubat, beliau menanggalkan jabatan; penguasa kehilangan "orangnya", sebagian segan, sebagian curiga.</li>
+<li><strong>Fase ketiga:</strong> Pasca al-Hallaj (309 H), penguasa bersikap keras terhadap kalangan sufi; beliau ikut diawasi dan dibatasi, termasuk riwayat maristan.</li>
+<li><strong>Pro dari penguasa:</strong> Banyak pembesar menghormati kefasihan, keilmuan, dan akhlaknya; sebagian diam-diam meminta nasihat.</li>
+<li><strong>Kontra dari penguasa:</strong> Pengawasan lisan, penyamaan dengan al-Hallaj, dan pembatasan pergerakan — bukan putusan hukuman atas akidahnya.</li>
+<li><strong>Sikap beliau sendiri:</strong> Tidak mengejar jabatan, tidak menjual agama, tidak memberontak, tetap menasihati dengan lemah lembut, dan tetap mendoakan kebaikan.</li>
+<li><strong>Prinsip utama:</strong> Berani menyampaikan kebenaran tanpa menjadikan kebenaran sebagai alat merebut kekuasaan.</li>
+<li><strong>Hasil akhir:</strong> Beliau tetap berdakwah hingga wafat pada 334 H, dimakamkan dengan penghormatan umat di Asy-Syunizi, Baghdad.</li>
+</ul>
+</div>
+
+<h2>Doa untuk Pemimpin dan Umat</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON PEMIMPIN YANG ADIL DAN NASEHAT YANG DITERIMA</div>
+<div class="arabic-text">
+اللَّهُمَّ أَصْلِحْ أُمَّةَ مُحَمَّدٍ، وَاجْعَلْ أُمُورَهَا فِي خِيَارِهَا، وَوَفِّقْ وُلَاتَهَا لِلْعَدْلِ وَالرَّحْمَةِ، وَاجْعَلْنَا مِنَ الَّذِينَ يَقُولُونَ الْحَقَّ وَلَا يَخَافُونَ لَوْمَةَ لَائِمٍ
+</div>
+<div class="arabic-translation">
+<strong>Transliterasi (Latin):</strong><br>
+<em>Allāhumma aṣliḥ ummata Muḥammad, waj'al umūrahā fī khiyārihā, wa waffiq walātahā lil-'adli war-raḥmah, waj'alnā minallażīna yaqūlūnal-ḥaqqa wa lā yakhāfūna laumata lā'im.</em><br><br>
+<strong>Artinya:</strong> "Ya Allah, perbaikilah umat Muhammad, jadikanlah urusan mereka berada di tangan orang-orang terbaiknya, taufikilah para pemimpinnya untuk berlaku adil dan penuh kasih, dan jadikanlah kami termasuk orang-orang yang mengatakan kebenaran tanpa takut celaan orang yang mencela."
+</div>
+</div>
+
+<h2>Penutup Halaman 7</h2>
+<p>
+Demikianlah hubungan Syeikh Abu Bakar Asy-Syibli dengan penguasa zamannya — sebuah hubungan yang melewati tiga fase: menjadi bagian dari kekuasaan, meninggalkan kekuasaan, lalu menghadapi kekuasaan sebagai hamba Allah yang merdeka. Dari sini kita belajar bahwa seorang dai tidak harus menjadi musuh penguasa untuk berani menyampaikan kebenaran, dan tidak harus menjadi bagian dari penguasa untuk tetap dihormati. Cukuplah ia berdiri tegak di atas Al-Qur'an dan sunnah, berkata benar dengan lembut, dan tidak menukar ridha Allah dengan seluruh istana di dunia.
+</p>
+<p>
+Pada halaman berikutnya (Halaman 8), insya Allah kita akan membahas <strong>warisan dan pengaruh Syeikh Asy-Syibli</strong> — wafat dan pemakaman beliau di Baghdad, ungkapan-ungkapan beliau yang diriwayatkan dalam kitab-kitab tasawuf induk, serta bagaimana jalan mahabbah beliau terus hidup dalam hati para salik hingga berabad-abad setelah beliau tiada.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+
+<div class="arabic-box">
+<div class="arabic-text">
+وَقُل رَّبِّ زِدْنِي عِلْمًا
+</div>
+<div class="arabic-translation">
+<strong>Transliterasi (Latin):</strong><br>
+<em>Wa qur rabbi zidnī 'ilmā.</em><br><br>
+<strong>Artinya:</strong> "Dan katakanlah: 'Ya Tuhanku, tambahkanlah kepadaku ilmu pengetahuan.'"
+<br>— QS. Thaha: 114
+</div>
+</div>
+</div>
+
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="syibli1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="syibli2.html" class="article-nav-btn" title="Halaman 2: Perjalanan Menuntut Ilmu">2</a>
+<div class="nav-btn-label">Menuntut Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="syibli3.html" class="article-nav-btn" title="Halaman 3: Guru-Guru & Bidang Keilmuan">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="syibli4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="syibli5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="syibli6.html" class="article-nav-btn" title="Halaman 6: Pro Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="syibli7.html" class="article-nav-btn active" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="syibli8.html" class="article-nav-btn" title="Halaman 8: Warisan & Pengaruh">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="syibli9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>
