@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Abdullah Ibnu Alawi Al-Haddad - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+@media (max-width: 768px) {
+.article-container { max-width: 100%; padding: 20px; }
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover { background: rgba(233, 69, 96, 0.15); transform: scale(1.05); }
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover { background: #e94560; color: #fff; border-color: #e94560; }
+.article-content { font-size: 1.05rem; line-height: 1.9; color: #444; }
+.article-content p { margin-bottom: 20px; text-align: justify; }
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 { font-size: 1.2rem; color: #333; margin: 25px 0 10px; }
+.article-content ul { margin: 15px 0 20px 30px; }
+.article-content ul li { margin-bottom: 10px; line-height: 1.7; }
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title { font-size: 1.3rem; color: #1a1a2e; font-weight: bold; display: inline; }
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul { margin: 15px 0 0 30px; }
+.highlight-box ul li { margin-bottom: 10px; line-height: 1.7; }
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label { text-align: center; color: #aaa; font-size: 0.75rem; margin-top: 6px; }
+.nav-group { display: flex; flex-direction: column; align-items: center; }
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+nav { flex-direction: column; gap: 10px; width: 100%; justify-content: center; }
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav { gap: 6px; padding: 15px; }
+.article-nav-btn { width: 36px; height: 36px; font-size: 1rem; }
+.nav-btn-label { font-size: 0.65rem; }
+}
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam { font-size: 1.3rem !important; letter-spacing: 3px !important; }
+header nav a { padding: 6px 10px !important; font-size: 0.8rem !important; }
+.article-nav-btn { width: 32px; height: 32px; font-size: 0.9rem; }
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Abdullah Ibnu Alawi Al-Haddad
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Abdullah Ibnu Alawi Al-Haddad</h1>
+<div class="subtitle">Halaman 8 dari 9 — Warisan Keilmuan, Karya Monumental, dan Pengaruh Abadi di Nusantara</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Selasa, 27 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tarim_Hadhramaut_Yemen.jpg/440px-Tarim_Hadhramaut_Yemen.jpg"
+alt="Kota Tarim, Hadhramaut — pusat warisan keilmuan keluarga Al-Haddad"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Seiyun_Palace.jpg/440px-Seiyun_Palace.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Tarim, Hadhramaut — pusat warisan keilmuan keluarga Al-Haddad, tempat karya-karya Syeikh Abdullah Ibnu Alawi Al-Haddad lahir dan menyebar ke seluruh penjuru dunia Islam, khususnya ke Nusantara yang menjadi salah satu pusat pengamalan ajaran beliau terbesar di dunia</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Warisan keilmuan Syeikh Abdullah Ibnu Alawi Al-Haddad bukanlah warisan yang mati dalam lembaran-lembaran kitab tua, melainkan warisan yang hidup — yang terus mengalir seperti sungai ilmu dan akhlak dari abad ke-13 H hingga hari ini, menghidupkan hati para salik, membimbing para penuntut ilmu, dan membentuk tradisi keilmuan umat Islam di seluruh penjuru dunia, khususnya di Nusantara. Melalui karya-karya monumental beliau — terutama <em>Risalatul Muawanah</em>, <em>Risalatul Mukasyafah</em>, <em>An-Nashaih Ad-Diniyyah</em>, dan <em>Al-Fawaidul Mukhtarah</em> — melalui ajaran-ajaran tasawuf Alawiyyah yang beliau wariskan, dan melalui para murid serta penerus beliau di Hadhramaut dan Nusantara, cahaya ilmu dan akhlak yang beliau nyalakan di Tarim terus menyala hingga hari ini. Beliau bukan hanya seorang ulama di zamannya, melainkan <strong>imam bagi generasi-generasi setelahnya</strong> — seorang penerang yang ajarannya terus dibaca, diamalkan, dan diajarkan di pesantren-pesantren, majelis-majelis ilmu, dan rumah-rumah tangga muslim di seluruh pelosok Nusantara.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG WARISAN KEBAIKAN — QS. AN-NISA': 9</div>
+<div class="arabic-text">
+وَلْيَخْشَ الَّذِينَ لَوْ تَرَكُوا مِنْ خَلْفِهِمْ ذُرِّيَّةً ضِعَافًا خَافُوا عَلَيْهِمْ ۖ فَلْيَتَّقُوا اللَّهَ وَلْيَقُولُوا قَوْلًا سَدِيدًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan hendaklah takut kepada Allah orang-orang yang seandainya meninggalkan di belakang mereka anak-anak yang lemah, yang mereka khawatir terhadap (kesejahteraan) mereka. Oleh sebab itu hendaklah mereka bertakwa kepada Allah dan hendaklah mereka mengucapkan perkataan yang benar."
+<br>— QS. An-Nisa': 9
+</div>
+</div>
+<h2>Enam Pilar Warisan — Cahaya Ilmu yang Tak Pernah Padam</h2>
+<p>
+Warisan keilmuan Syeikh Abdullah Ibnu Alawi Al-Haddad dapat dipetakan ke dalam enam pilar utama yang saling menopang: (1) karya-karya monumental beliau yang menjadi rujukan utama dalam bidang akhlak dan tasawuf, (2) ajaran-ajaran tasawuf Alawiyyah yang beliau wariskan, (3) pengaruh beliau yang sangat luas di Nusantara, (4) tradisi keilmuan keluarga Al-Haddad yang berlanjut, (5) para murid dan penerus beliau, dan (6) relevansi ajaran beliau di zaman modern. Keenam pilar inilah yang menjadikan beliau bukan hanya seorang wali di zamannya, melainkan seorang <em>imam al-muhammadin</em> — imam bagi generasi-generasi setelahnya.
+</p>
+<p>
+Beliau pernah berkata: <em>"Aku tidak meninggalkan harta, tidak meninggalkan istana, tidak meninggalkan kedudukan. Yang aku tinggalkan hanyalah kata-kata yang keluar dari hati yang mencintai Allah. Jika kata-kata itu masuk ke dalam hati yang tulus, maka ia akan hidup selamanya — karena ilmu yang bermanfaat itu abadi, dan apa yang lahir dari hati yang ikhlas tidak akan pernah mati."</em>
+</p>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH ABDULLAH TENTANG WARISAN</div>
+<div class="arabic-text">
+مَا تَرَكْتُ مِنْ كَلِمَةٍ إِلَّا وَهِيَ مِنْ قَلْبٍ يُحِبُّ اللَّهَ، وَمَا دَخَلَتْ قَلْبًا صَادِقًا إِلَّا وَعَاشَتْ فِيهِ أَبَدًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Tidaklah aku meninggalkan sepatah kata pun kecuali ia keluar dari hati yang mencintai Allah. Dan tidaklah ia masuk ke dalam hati yang tulus kecuali ia akan hidup di dalamnya selamanya."
+<br>— Syeikh Abdullah Ibnu Alawi Al-Haddad
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Karya-Karya Monumental — Risalah-Risalah Cahaya dan Akhlak</span>
+<div class="karomah-arabic">الْمُصَنَّفَاتُ الْخَالِدَةُ — رَسَائِلُ النُّورِ وَالْأَخْلَاقِ</div>
+<p>
+Syeikh Abdullah Ibnu Alawi Al-Haddad meninggalkan beberapa karya monumental yang menjadi rujukan utama dalam khazanah keilmuan Islam, khususnya dalam bidang akhlak, tasawuf, dan adab. Karya-karya beliau tidak hanya penting pada masanya, melainkan terus dibaca, dipelajari, dan diamalkan hingga hari ini oleh para ulama, penuntut ilmu, dan masyarakat luas di seluruh penjuru dunia Islam.
+</p>
+<h3>A. Risalatul Muawanah (Risalah tentang Pertolongan)</h3>
+<p>
+Karya yang paling terkenal dari Syeikh Abdullah adalah <em>Risalatul Muawanah</em> (رِسَالَةُ الْمُعَاوَنَةِ) — sebuah risalah komprehensif yang membahas tentang berbagai aspek kehidupan spiritual seorang muslim. Risalah ini mencakup pembahasan tentang:
+</p>
+<ul>
+<li><strong>Aqidah dan Tauhid</strong> — Pondasi keimanan yang harus dimiliki oleh setiap muslim</li>
+<li><strong>Akhlak Mulia</strong> — Sifat-sifat terpuji yang harus dihiasi oleh setiap muslim</li>
+<li><strong>Adab-adab Spiritual</strong> — Etika dalam beribadah, bermuamalah, dan berhubungan dengan Allah dan makhluk</li>
+<li><strong>Tazkiyatun Nafs</strong> — Penyucian jiwa dari sifat-sifat tercela</li>
+<li><strong>Hubungan dengan Sesama</strong> — Adab dalam bergaul dengan keluarga, tetangga, dan masyarakat</li>
+</ul>
+<p>
+Risalah ini ditulis dengan bahasa yang mudah dipahami namun sarat makna, sehingga dapat dibaca oleh orang awam maupun ulama. Hingga hari ini, <em>Risalatul Muawanah</em> menjadi bacaan wajib di banyak pesantren di Nusantara dan menjadi rujukan utama dalam pengajian-pengajian akhlak.
+</p>
+<h3>B. Risalatul Mukasyafah (Risalah tentang Penyaksian)</h3>
+<p>
+Karya kedua yang sangat terkenal adalah <em>Risalatul Mukasyafah</em> (رِسَالَةُ الْمُكَاشَفَةِ) — risalah yang membahas tentang hakikat-hakikat spiritual yang disaksikan oleh seorang salik dalam perjalanannya menuju Allah. Risalah ini membahas:
+</p>
+<ul>
+<li><strong>Hakikat Iman</strong> — Penyaksian terhadap hakikat keimanan yang sejati</li>
+<li><strong>Hakikat Ibadah</strong> — Makna batin di balik ibadah-ibadah zhahir</li>
+<li><strong>Hakikat Dzikir</strong> — Rahasia dzikir dan pengaruhnya terhadap hati</li>
+<li><strong>Hakikat Cinta</strong> — Ma'rifatullah dan mahabbatullah sebagai puncak perjalanan spiritual</li>
+</ul>
+<p>
+Risalah ini menjadi panduan bagi para salik yang ingin memahami hakikat-hakikat spiritual di balik amal-amal zhahir mereka.
+</p>
+<h3>C. An-Nashaih Ad-Diniyyah (Nasihat-Nasihat Agama)</h3>
+<p>
+Karya ketiga yang sangat populer adalah <em>An-Nashaih Ad-Diniyyah</em> (النَّصَائِحُ الدِّينِيَّةُ) — kumpulan nasihat-nasihat agama yang sangat praktis dan mudah diamalkan oleh setiap muslim. Risalah ini berisi nasihat-nasihat tentang:
+</p>
+<ul>
+<li><strong>Kewajiban Seorang Muslim</strong> — Kewajiban-kewajiban dasar yang harus ditunaikan</li>
+<li><strong>Bahaya-Bahaya Dosa</strong> — Peringatan terhadap dosa-dosa yang dapat merusak hati</li>
+<li><strong>Keutamaan Amal Shaleh</strong> — Dorongan untuk memperbanyak amal shaleh</li>
+<li><strong>Adab-Adab Harian</strong> — Panduan praktis untuk menjalani kehidupan sehari-hari dengan adab Islam</li>
+</ul>
+<p>
+Risalah ini sangat populer di Nusantara dan sering dibaca dalam majelis-majelis pengajian, khususnya di kalangan ibu-ibu dan bapak-bapak yang ingin mendapatkan nasihat agama yang praktis.
+</p>
+<h3>D. Al-Fawaidul Mukhtarah (Faedah-Faedah yang Terpilih)</h3>
+<p>
+Karya keempat yang juga sangat penting adalah <em>Al-Fawaidul Mukhtarah</em> (الْفَوَائِدُ الْمُخْتَارَةُ) — kumpulan faedah-faedah spiritual yang terpilih dari pengalaman spiritual beliau dan leluhur-leluhur beliau. Karya ini berisi:
+</p>
+<ul>
+<li><strong>Hikmah-Hikmah Spiritual</strong> — Kata-kata hikmah yang mendalam tentang kehidupan spiritual</li>
+<li><strong>Petunjuk-Petunjuk Suluk</strong> — Bimbingan praktis untuk para salik dalam perjalanan spiritual</li>
+<li><strong>Adab-Adab Khusus</strong> — Etika-etika khusus yang harus diperhatikan oleh para penuntut ilmu</li>
+</ul>
+<h3>E. Karya-Karya Lainnya</h3>
+<p>
+Selain keempat karya utama tersebut, Syeikh Abdullah juga menulis beberapa karya lainnya, di antaranya:
+</p>
+<ul>
+<li><strong>Adab Ahli Haqq</strong> — Tentang adab-adab orang yang menempuh jalan hakikat</li>
+<li><strong>Da'ilul Falah</strong> — Panduan untuk meraih kemenangan di dunia dan akhirat</li>
+<li><strong>Umdatuth Thalibin</strong> — Panduan bagi para penuntut ilmu</li>
+<li><strong>Kumpulan Surat-Surat Spiritual</strong> — Surat-surat beliau kepada para murid yang berisi bimbingan spiritual</li>
+<li><strong>Syarah Ratib Al-Haddad</strong> — Penjelasan makna-makna yang terkandung dalam Ratib Al-Haddad</li>
+</ul>
+<p>
+Karya-karya ini ditulis dalam bahasa Arab yang mudah dipahami, sehingga dapat dibaca oleh para penuntut ilmu di berbagai tingkatan. Banyak dari karya-karya ini yang telah diterjemahkan ke dalam bahasa Melayu, Indonesia, dan bahasa-bahasa lokal lainnya, sehingga dapat diakses oleh masyarakat luas di Nusantara.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG ILMU YANG BERMANFAAT — HADITS NABAWI</div>
+<div class="arabic-text">
+إِذَا مَاتَ ابْنُ آدَمَ انْقَطَعَ عَمَلُهُ إِلَّا مِنْ ثَلَاثٍ: صَدَقَةٍ جَارِيَةٍ، أَوْ عِلْمٍ يُنْتَفَعُ بِهِ، أَوْ وَلَدٍ صَالِحٍ يَدْعُو لَهُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Apabila anak Adam wafat, maka terputuslah amalannya kecuali tiga perkara: sedekah jariyah, ilmu yang bermanfaat, atau anak shaleh yang mendoakannya."
+<br>— HR. Muslim
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Ajaran Tasawuf Alawiyyah yang Diwariskan</span>
+<div class="karomah-arabic">تَعَالِيمُ التَّصَوُّفِ الْعَلَوِيِّ الْمَوْرُوثَةُ</div>
+<p>
+Selain karya-karya monumental, warisan terbesar Syeikh Abdullah Ibnu Alawi Al-Haddad adalah ajaran-ajaran tasawuf Alawiyyah yang beliau wariskan kepada para murid beliau dan generasi-generasi setelahnya. Ajaran-ajaran ini merupakan kelanjutan dari tradisi tasawuf keluarga Al-Haddad yang telah berlangsung selama beberapa abad, khususnya dari leluhur beliau, <em>Imam Abdullah bin Alawi Al-Haddad</em> (1044-1132 H / 1634-1720 M).
+</p>
+<h3>A. Prinsip-Prinsip Utama Tasawuf Alawiyyah</h3>
+<p>
+Ajaran tasawuf Alawiyyah yang diwariskan oleh Syeikh Abdullah berpijak pada beberapa prinsip utama:
+</p>
+<ul>
+<li><strong>Ittiba' Sunnah</strong> — Setiap amalan spiritual harus sesuai dengan sunnah Rasulullah SAW. Tidak ada amalan bid'ah yang diterima, meskipun tampaknya "spiritual".</li>
+<li><strong>Adab yang Tinggi</strong> — Seorang salik harus memiliki adab yang tinggi terhadap Allah, Rasulullah, para guru, orang tua, dan sesama muslim. Adab adalah buah dari tazkiyatun nafs yang sejati.</li>
+<li><strong>Akhlak yang Mulia</strong> — Tujuan akhir dari tazkiyatun nafs adalah akhlak yang mulia — yaitu akhlak yang meneladani akhlak Rasulullah SAW.</li>
+<li><strong>Keseimbangan Zhahir dan Batin</strong> — Seorang salik harus menyeimbangkan antara amal zhahir (ibadah, muamalah) dan amal batin (dzikir, muraqabah).</li>
+<li><strong>Khidmah kepada Umat</strong> — Seorang salik harus bermanfaat bagi masyarakat, bukan mengasingkan diri dari mereka.</li>
+<li><strong>Tawadhu' dan Tawadhu'</strong> — Kerendahan hati adalah ciri khas para salik Alawiyyah.</li>
+</ul>
+<h3>B. Amalan-Amalan Harian</h3>
+<p>
+Syeikh Abdullah mengajarkan amalan-amalan harian yang menjadi ciri khas Tarekat Alawiyyah:
+</p>
+<ul>
+<li><strong>Ratib Al-Haddad</strong> — Wirid agung warisan leluhur beliau yang dibaca setiap hari, khususnya setelah Maghrib dan Subuh</li>
+<li><strong>Wirid Pagi dan Petang</strong> — Wirid-wirid ma'tsurat yang dibaca setelah shalat Subuh dan Ashar</li>
+<li><strong>Dzikir La ilaha illallah</strong> — Dzikir tauhid yang diulang-ulang</li>
+<li><strong>Shalawat kepada Nabi SAW</strong> — Shalawat yang banyak kepada Rasulullah SAW</li>
+<li><strong>Tilawah Al-Qur'an</strong> — Membaca Al-Qur'an setiap hari dengan tadabbur</li>
+<li><strong>Muhasabah Harian</strong> — Menghisab amal-amal setiap malam sebelum tidur</li>
+</ul>
+<h3>C. Adab-Adab Spiritual</h3>
+<p>
+Syeikh Abdullah juga mengajarkan adab-adab spiritual yang menjadi ciri khas keluarga Al-Haddad:
+</p>
+<ul>
+<li><strong>Adab terhadap Al-Qur'an</strong> — Memuliakan Al-Qur'an dan membacanya dengan adab yang benar</li>
+<li><strong>Adab terhadap Rasulullah SAW</strong> — Mencintai beliau, bershalawat kepadanya, dan mengikuti sunnahnya</li>
+<li><strong>Adab terhadap Para Guru</strong> — Menghormati guru dan mengambil manfaat dari kehadiran mereka</li>
+<li><strong>Adab terhadap Orang Tua</strong> — Berbaktilah kepada orang tua dengan sebaik-baiknya</li>
+<li><strong>Adab terhadap Sesama Muslim</strong> — Berakhlak mulia kepada sesama muslim</li>
+<li><strong>Adab terhadap Asyraf dan Habaib</strong> — Menghormati keturunan Rasulullah SAW dengan adab yang benar</li>
+</ul>
+<p>
+Ajaran-ajaran inilah yang menjadi ciri khas tasawuf Alawiyyah dan yang membedakan tarekat ini dari tarekat-tarekat lainnya. Ajaran-ajaran ini tidak hanya diajarkan secara teori, melainkan juga diamalkan dalam kehidupan sehari-hari oleh para pengikut beliau di Hadhramaut, Nusantara, dan berbagai penjuru dunia Islam lainnya.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENGIKUTI RASULULLAH — QS. ALI 'IMRAN: 31</div>
+<div class="arabic-text">
+قُلْ إِن كُنتُمْ تُحِبُّونَ اللَّهَ فَاتَّبِعُونِي يُحْبِبْكُمُ اللَّهُ وَيَغْفِرْ لَكُمْ ذُنُوبَكُمْ ۗ وَاللَّهُ غَفُورٌ رَّحِيمٌ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Katakanlah: 'Jika kamu (benar-benar) mencintai Allah, maka ikutilah aku (Rasulullah), niscaya Allah mengasihi dan mengampuni dosa-dosamu.' Dan Allah Maha Pengampun lagi Maha Penyayang."
+<br>— QS. Ali 'Imran: 31
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Pengaruh Luas di Nusantara — Tanah Pengamalan Ajaran Beliau</span>
+<div class="karomah-arabic">التَّأْثِيرُ الْوَاسِعُ فِي أَرْخَبِيلِ النَّبَتِيِّ — أَرْضُ تَطْبِيقِ تَعَالِيمِهِ</div>
+<p>
+Salah satu keistimewaan warisan Syeikh Abdullah Ibnu Alawi Al-Haddad adalah pengaruh beliau yang sangat luas di Nusantara — khususnya di Indonesia, Malaysia, Singapura, dan Brunei. Nusantara menjadi salah satu pusat pengamalan ajaran beliau terbesar di dunia, bahkan mungkin lebih besar daripada di Hadhramaut sendiri. Hal ini disebabkan oleh beberapa faktor:
+</p>
+<h3>A. Peran Para Habaib dan Ulama Hadhramaut</h3>
+<p>
+Sejak abad ke-17 M, banyak habaib dan ulama keturunan Hadhramaut yang bermigrasi ke Nusantara untuk berdakwah dan berdagang. Mereka membawa serta ajaran-ajaran keluarga Al-Haddad dan menyebarkannya di berbagai pelosok Nusantara. Di antara para habaib dan ulama yang berperan dalam penyebaran ajaran Syeikh Abdullah adalah:
+</p>
+<ul>
+<li><strong>Habib Utsman bin Yahya</strong> (1156-1233 H / 1743-1818 M) — Mufti Batavia (Jakarta) yang merupakan salah satu ulama terbesar di Nusantara pada masanya</li>
+<li><strong>Habib Ali bin Husein Al-Attas</strong> — Salah satu habaib besar yang menyebarkan ajaran Alawiyyah di Nusantara</li>
+<li><strong>Habib Abdurrahman Az-Zahir</strong> — Habaib yang menyebarkan ajaran Syeikh Abdullah di berbagai pelosok Nusantara</li>
+<li><strong>Habib Ali Al-Habsyi</strong> — Penulis <em>Ratib Al-Habsyi</em> yang sangat populer di Nusantara</li>
+<li><strong>Habib Umar bin Hafidz</strong> — Ulama besar Hadhramaut kontemporer yang terus menyebarkan ajaran Alawiyyah</li>
+<li><strong>Para Habaib dan Ulama Lainnya</strong> — Ratusan habaib dan ulama keturunan Hadhramaut yang bermukim di Nusantara</li>
+</ul>
+<h3>B. Pengamalan di Pesantren-Pesantren</h3>
+<p>
+Karya-karya Syeikh Abdullah menjadi bacaan wajib di banyak pesantren di Nusantara. Para kiai mengajarkan karya-karya ini kepada para santri sebagai pedoman akhlak dan tasawuf. Di antara pesantren-pesantren yang mengamalkan ajaran beliau adalah:
+</p>
+<ul>
+<li><strong>Pesantren-Pesantren di Jawa</strong> — Seperti Pesantren Tebuireng, Pesantren Lirboyo, Pesantren Sidogiri, dan banyak pesantren lainnya</li>
+<li><strong>Pesantren-Pesantren di Sumatra</strong> — Seperti Pesantren di Sumatera Barat, Sumatera Utara, dan Sumatera Selatan</li>
+<li><strong>Pesantren-Pesantren di Kalimantan</strong> — Seperti Pesantren di Kalimantan Selatan dan Kalimantan Barat</li>
+<li><strong>Pesantren-Pesantren di Sulawesi</strong> — Seperti Pesantren di Sulawesi Selatan dan Sulawesi Tenggara</li>
+</ul>
+<h3>C. Majelis-Majelis Ratib dan Maulid</h3>
+<p>
+Pengamalan ajaran Syeikh Abdullah juga terlihat dalam majelis-majelis Ratib dan Maulid yang diadakan di berbagai pelosok Nusantara:
+</p>
+<ul>
+<li><strong>Majelis Ratib Al-Haddad</strong> — Diadakan setiap malam Jumat, malam Senin, atau setelah Maghrib di berbagai tempat</li>
+<li><strong>Majelis Ratib Al-Habsyi</strong> — Majelis yang membaca Ratib Al-Habsyi yang ditulis oleh Habib Ali Al-Habsyi</li>
+<li><strong>Majelis Maulid Nabi SAW</strong> — Majelis-majelis yang memperingati kelahiran Rasulullah SAW dengan membaca manaqib dan shalawat</li>
+<li><strong>Majelis Manaqib</strong> — Majelis yang membahas kehidupan para wali, khususnya keluarga Al-Haddad</li>
+</ul>
+<h3>D. Pengaruh dalam Budaya Nusantara</h3>
+<p>
+Ajaran Syeikh Abdullah juga telah mempengaruhi budaya Nusantara dalam berbagai aspek:
+</p>
+<ul>
+<li><strong>Tradisi Tahlilan</strong> — Tradisi membaca tahlil dan yasin yang sangat populer di Nusantara</li>
+<li><strong>Tradisi Ziarah</strong> — Tradisi ziarah ke makam para wali dan orang shaleh</li>
+<li><strong>Tradisi Shalawat</strong> — Tradisi bershalawat kepada Rasulullah SAW dalam berbagai kesempatan</li>
+<li><strong>Tradisi Maulid</strong> — Peringatan kelahiran Rasulullah SAW yang menjadi bagian dari budaya Nusantara</li>
+</ul>
+<p>
+Pengaruh yang sangat luas inilah yang menjadikan Nusantara sebagai salah satu pusat pengamalan ajaran Syeikh Abdullah terbesar di dunia. Karya-karya beliau tidak hanya dibaca oleh para ulama dan habaib, melainkan juga oleh masyarakat luas — dari para kiai dan santri, hingga ibu-ibu rumah tangga dan anak-anak yang baru belajar mengaji.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG CINTA KERABAT — QS. ASY-SYURA: 23</div>
+<div class="arabic-text">
+قُلْ لَا أَسْأَلُكُمْ عَلَيْهِ أَجْرًا إِلَّا الْمَوَدَّةَ فِي الْقُرْبَىٰ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Katakanlah: 'Aku tidak meminta kepadamu sesuatu upah pun atas dakwahku kecuali kasih sayang dalam kekeluargaan (qurba).'"
+<br>— QS. Asy-Syura: 23
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Tradisi Keilmuan Keluarga Al-Haddad yang Berkelanjutan</span>
+<div class="karomah-arabic">تَقْلِيدُ آلِ الْحَدَّادِ الْعِلْمِيُّ الْمُسْتَمِرُّ</div>
+<p>
+Salah satu keistimewaan warisan Syeikh Abdullah Ibnu Alawi Al-Haddad adalah tradisi keilmuan keluarga Al-Haddad yang terus berlanjut hingga hari ini. Keluarga Al-Haddad merupakan salah satu keluarga ulama terbesar di Hadhramaut, yang telah melahirkan para ulama besar selama beberapa abad. Tradisi keilmuan ini tidak terputus dengan wafatnya Syeikh Abdullah, melainkan terus dilanjutkan oleh keturunan-keturunan beliau dan kerabat-kerabat beliau dari keluarga Al-Haddad.
+</p>
+<h3>A. Para Penerus dari Keluarga Al-Haddad</h3>
+<p>
+Setelah wafatnya Syeikh Abdullah, tradisi keilmuan keluarga Al-Haddad dilanjutkan oleh para penerus beliau, di antaranya:
+</p>
+<ul>
+<li><strong>Putra-Putra Beliau</strong> — Yang melanjutkan tradisi keilmuan dan pengajaran beliau di Tarim</li>
+<li><strong>Keturunan-Keturunan Beliau</strong> — Yang menjadi ulama-ulama besar di Hadhramaut dan Nusantara</li>
+<li><strong>Kerabat-Kerabat dari Keluarga Al-Haddad</strong> — Yang melanjutkan tradisi keilmuan keluarga</li>
+</ul>
+<h3>B. Ribath Tarim dan Madrasah-Madrasah</h3>
+<p>
+Tradisi keilmuan keluarga Al-Haddad juga terus hidup melalui ribath-ribath dan madrasah-madrasah di Tarim:
+</p>
+<ul>
+<li><strong>Ribath Tarim</strong> — Pusat kegiatan spiritual dan keilmuan di Tarim yang terus aktif hingga hari ini</li>
+<li><strong>Dar Al-Mustafa</strong> — Madrasah yang didirikan oleh Habib Umar bin Hafidz yang menjadi pusat pengajaran ajaran Alawiyyah</li>
+<li><strong>Madrasah-Madrasah Lainnya</strong> — Berbagai madrasah di Tarim yang mengajarkan ajaran keluarga Al-Haddad</li>
+</ul>
+<h3>C. Penyebaran ke Seluruh Dunia Islam</h3>
+<p>
+Tradisi keilmuan keluarga Al-Haddad tidak hanya terbatas di Hadhramaut, melainkan telah menyebar ke seluruh dunia Islam:
+</p>
+<ul>
+<li><strong>Di Nusantara</strong> — Melalui para habaib dan ulama yang menuntut ilmu di Hadhramaut</li>
+<li><strong>Di Afrika Timur</strong> — Melalui para habaib yang bermigrasi ke Kenya, Tanzania, dan Komoro</li>
+<li><strong>Di India dan Pakistan</strong> — Melalui para ulama yang belajar di Hadhramaut</li>
+<li><strong>Di Eropa dan Amerika</strong> — Melalui para habaib yang bermukim di negara-negara Barat</li>
+</ul>
+<p>
+Tradisi keilmuan yang berkelanjutan inilah yang menjadikan keluarga Al-Haddad sebagai salah satu keluarga ulama paling berpengaruh dalam sejarah Islam. Ajaran-ajaran mereka tidak hanya hidup dalam lembaran-lembaran kitab, melainkan juga dalam kehidupan para pengikut mereka di berbagai penjuru dunia.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENGIKUTI JALAN ORANG SHALIH — QS. AT-TAUBAH: 100</div>
+<div class="arabic-text">
+وَالسَّابِقُونَ الْأَوَّلُونَ مِنَ الْمُهَاجِرِينَ وَالْأَنصَارِ وَالَّذِينَ اتَّبَعُوهُم بِإِحْسَانٍ رَّضِيَ اللَّهُ عَنْهُمْ وَرَضُوا عَنْهُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Orang-orang yang terdahulu lagi yang pertama-tama (masuk Islam) dari golongan muhajirin dan anshar dan orang-orang yang mengikuti mereka dengan baik, Allah ridha kepada mereka dan merekapun ridha kepada-Nya."
+<br>— QS. At-Taubah: 100
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Para Murid dan Penerus Beliau — Mata Rantai yang Bersambung</span>
+<div class="karomah-arabic">التَّلَامِيذُ وَالْخُلَفَاءُ — السِّلْسِلَةُ الْمُتَّصِلَةُ</div>
+<p>
+Salah satu bukti keagungan warisan Syeikh Abdullah Ibnu Alawi Al-Haddad adalah para murid dan penerus beliau yang menjadi ulama-ulama besar di zamannya dan generasi-generasi setelahnya. Melalui mereka, ajaran-ajaran beliau tersebar ke seluruh penjuru dunia Islam dan terus hidup hingga hari ini.
+</p>
+<h3>A. Para Murid Langsung Beliau</h3>
+<p>
+Syeikh Abdullah memiliki banyak murid yang belajar langsung kepada beliau di Tarim, di antaranya:
+</p>
+<ul>
+<li><strong>Para Ulama dari Keluarga Al-Haddad</strong> — Kerabat-kerabat beliau yang belajar langsung kepada beliau</li>
+<li><strong>Para Ulama dari Keluarga Asyraf Lainnya</strong> — Dari keluarga As-Seggaf, Asy-Syathiri, Al-Aydarus, Al-Habsyi, dan lainnya</li>
+<li><strong>Para Penuntut Ilmu dari Hadhramaut</strong> — Yang belajar di majelis-majelis beliau di Tarim</li>
+<li><strong>Para Penuntut Ilmu dari Nusantara</strong> — Yang datang ke Hadhramaut untuk berguru kepada beliau</li>
+<li><strong>Para Penuntut Ilmu dari Afrika Timur</strong> — Yang belajar di Tarim dan kemudian menyebarkan ajaran beliau di Afrika</li>
+</ul>
+<h3>B. Para Penerus Generasi Berikutnya</h3>
+<p>
+Ajaran-ajaran beliau kemudian dilanjutkan oleh para penerus generasi berikutnya, di antaranya:
+</p>
+<ul>
+<li><strong>Para Ulama di Hadhramaut</strong> — Yang melanjutkan tradisi keilmuan beliau di Tarim dan sekitarnya</li>
+<li><strong>Para Habaib di Nusantara</strong> — Yang menyebarkan ajaran beliau di Indonesia, Malaysia, Singapura, dan Brunei</li>
+<li><strong>Para Ulama di Afrika Timur</strong> — Yang mengajarkan ajaran beliau di Kenya, Tanzania, dan Komoro</li>
+<li><strong>Para Ulama Kontemporer</strong> — Seperti Habib Umar bin Hafidz, Habib Ali Al-Jufri, dan ulama-ulama Alawiyyah kontemporer lainnya</li>
+</ul>
+<h3>C. Silsilah Spiritual yang Bersambung</h3>
+<p>
+Para murid dan penerus beliau membentuk silsilah spiritual yang bersambung hingga hari ini. Silsilah ini bukan hanya silsilah keilmuan, melainkan silsilah <em>tarbiyah</em> (pembinaan spiritual) yang menghubungkan para mursyid hari ini dengan Syeikh Abdullah, dan melalui beliau dengan leluhur-leluhur beliau dari keluarga Al-Haddad, dan melalui mereka dengan Rasulullah SAW.
+</p>
+<p>
+Beliau pernah berkata tentang murid-murid beliau: <em>"Murid-muridku adalah anak-anak hatiku. Dari mereka, aku akan hidup setelah aku wafat. Karena ilmu itu tidak mati selama ada yang mengajarkannya, dan akhlak itu tidak padam selama ada yang meneladaninya."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENYEBARKAN ILMU — HADITS NABAWI</div>
+<div class="arabic-text">
+بَلِّغُوا عَنِّي وَلَوْ آيَةً
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sampaikanlah dariku meskipun satu ayat."
+<br>— HR. Al-Bukhari
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">6</span>
+<span class="karomah-title">Relevansi Ajaran Beliau di Zaman Modern</span>
+<div class="karomah-arabic">صَلَاحِيَّةُ تَعَالِيمِهِ فِي الْعَصْرِ الْحَدِيثِ</div>
+<p>
+Salah satu keistimewaan warisan Syeikh Abdullah Ibnu Alawi Al-Haddad adalah ajaran-ajaran beliau tetap relevan di setiap zaman, termasuk di zaman modern ini yang penuh dengan tantangan dan godaan. Di tengah dunia yang semakin materialistis, semakin individualistis, dan semakin jauh dari nilai-nilai spiritual, ajaran-ajaran beliau menjadi oase yang menyejukkan hati.
+</p>
+<h3>A. Di Tengah Materialisme Modern</h3>
+<p>
+Di zaman di mana manusia diukur oleh harta dan kedudukannya, ajaran zuhud dan tazkiyatun nafs Syeikh Abdullah mengingatkan kita bahwa kemuliaan sejati bukanlah pada apa yang kita miliki, melainkan pada apa yang kita berikan. Beliau mengajarkan bahwa dunia ini hanyalah tempat persinggahan sementara, dan akhiratlah negeri yang kekal.
+</p>
+<h3>B. Di Tengah Individualisme</h3>
+<p>
+Di zaman di mana manusia semakin individualistis dan terputus dari sesama, prinsip <em>khidmah kepada umat</em> yang diajarkan oleh Syeikh Abdullah mengingatkan kita bahwa seorang muslim harus bermanfaat bagi masyarakat. Beliau mengajarkan bahwa kesalehan sejati bukanlah kesalehan yang mengasingkan diri dari masyarakat, melainkan kesalehan yang bermanfaat bagi masyarakat.
+</p>
+<h3>C. Di Tengah Krisis Spiritual</h3>
+<p>
+Di zaman di mana banyak manusia mengalami krisis spiritual — merasa hampa meskipun memiliki segala-galanya — ajaran akhlak dan tasawuf Syeikh Abdullah menawarkan solusi: kembalilah kepada Allah dengan hati yang bersih, akhlak yang mulia, dan dzikir yang senantiasa. Karena hanya Allah yang dapat mengisi kekosongan di dalam hati manusia.
+</p>
+<h3>D. Di Tengah Arus Globalisasi</h3>
+<p>
+Di zaman di mana batas-batas antar negara semakin kabur, ajaran Syeikh Abdullah tentang keseimbangan antara dunia dan akhirat, antara zhahir dan batin, antara individu dan masyarakat, menjadi pedoman yang sangat berharga bagi umat Islam dalam menghadapi arus globalisasi tanpa kehilangan jati diri.
+</p>
+<h3>E. Di Tengah Konflik Antar Umat</h3>
+<p>
+Di zaman di mana konflik antar umat beragama dan antar mazhab semakin marak, sikap Syeikh Abdullah yang senantiasa mencintai para pencela, membalas kebencian dengan kebaikan, dan mendoakan umat dengan tulus, menjadi teladan yang sangat relevan bagi kita semua. Beliau mengajarkan bahwa dakwah bukanlah tentang memenangkan diri sendiri, melainkan tentang menyampaikan kebenaran dengan cara yang terbaik — dengan hikmah, kelembutan, dan akhlak mulia.
+</p>
+<h3>F. Di Tengah Tantangan Teknologi</h3>
+<p>
+Di zaman di mana teknologi semakin menguasai kehidupan manusia, ajaran Syeikh Abdullah tentang muraqabah (pengawasan hati) dan muhasabah (introspeksi diri) menjadi sangat relevan. Beliau mengajarkan bahwa setiap muslim harus senantiasa mengawasi hatinya dari pengaruh-pengaruh negatif, baik dari dunia nyata maupun dari dunia maya.
+</p>
+<p>
+Relevansi ajaran Syeikh Abdullah di zaman modern inilah yang menjadikan karya-karya beliau terus dibaca dan diamalkan oleh umat Islam di seluruh penjuru dunia. Ajaran-ajaran beliau bukan hanya untuk abad ke-13 H, melainkan untuk setiap zaman — karena ia berpijak pada nilai-nilai universal Islam yang tidak lekang oleh waktu.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH ABDULLAH TENTANG KEIKHLASAN</div>
+<div class="arabic-text">
+الْإِخْلَاصُ هُوَ رُوحُ الْعَمَلِ، وَبِدُونِهِ لَا قِيمَةَ لِلْعَمَلِ عِنْدَ اللَّهِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ikhlas adalah ruh dari seluruh amal. Tanpa ikhlas, amal tidak memiliki nilai di sisi Allah."
+<br>— Syeikh Abdullah Ibnu Alawi Al-Haddad
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Warisan Keilmuan Syeikh Abdullah Ibnu Alawi Al-Haddad:</strong>
+<ul>
+<li><strong>Karya monumental:</strong> <em>Risalatul Muawanah</em>, <em>Risalatul Mukasyafah</em>, <em>An-Nashaih Ad-Diniyyah</em>, <em>Al-Fawaidul Mukhtarah</em>, <em>Adab Ahli Haqq</em>, <em>Da'ilul Falah</em>, <em>Umdatuth Thalibin</em>, kumpulan surat spiritual, syarah Ratib Al-Haddad</li>
+<li><strong>Ajaran tasawuf Alawiyyah:</strong> Ittiba' sunnah, adab tinggi, akhlak mulia, keseimbangan zhahir-batin, khidmah kepada umat, tawadhu'</li>
+<li><strong>Amalan harian:</strong> Ratib Al-Haddad, wirid pagi-petang, dzikir La ilaha illallah, shalawat, tilawah Al-Qur'an, muhasabah harian</li>
+<li><strong>Adab-adab spiritual:</strong> Adab terhadap Al-Qur'an, Rasulullah, para guru, orang tua, sesama muslim, Asyraf dan habaib</li>
+<li><strong>Pengaruh di Nusantara:</strong> Melalui para habaib dan ulama, pengamalan di pesantren-pesantren, majelis-majelis Ratib dan Maulid, pengaruh dalam budaya Nusantara</li>
+<li><strong>Tradisi keluarga Al-Haddad:</strong> Berkelanjutan melalui putra-putra beliau, keturunan beliau, kerabat keluarga Al-Haddad, Ribath Tarim, Dar Al-Mustafa</li>
+<li><strong>Para murid dan penerus:</strong> Para ulama Hadhramaut, para habaib Nusantara, para ulama Afrika Timur, ulama kontemporer seperti Habib Umar bin Hafidz</li>
+<li><strong>Relevansi di zaman modern:</strong> Di tengah materialisme, individualisme, krisis spiritual, globalisasi, konflik antar umat, tantangan teknologi</li>
+<li><strong>Warisan utama:</strong> Bukan harta, bukan kedudukan, melainkan kata-kata yang keluar dari hati yang mencintai Allah</li>
+</ul>
+</div>
+<h2>Doa Memohon Keberkahan Warisan Spiritual</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON WARISAN ROHANI DAN ILMU YANG BERMANFAAT</div>
+<div class="arabic-text">
+اللَّهُمَّ اجْعَلْنَا مِنْ وَرَثَةِ سَيِّدِنَا عَبْدِ اللَّهِ ابْنِ عَلَوِيٍّ الْحَدَّادِ فِي عِلْمِهِ وَعَمَلِهِ وَأَخْلَاقِهِ. اللَّهُمَّ انْفَعْنَا بِمَا عَلَّمْنَاهُ مِنْ مُصَنَّفَاتِهِ، وَاجْعَلْهَا نُورًا لَنَا فِي قُبُورِنَا وَيَوْمَ الْقِيَامَةِ. اللَّهُمَّ ارْزُقْنَا اتِّبَاعَ السُّنَّةِ وَحُسْنَ الْأَدَبِ وَكَرَامَةَ الْأَخْلَاقِ، وَاجْعَلْنَا مِمَّنْ يَنْتَفِعُونَ بِعِلْمِهِمْ وَيُنَفِّعُونَ بِهِ غَيْرَهُمْ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, jadikanlah kami termasuk pewaris Syeikh Abdullah bin Alawi Al-Haddad dalam ilmu, amal, dan akhlaknya. Ya Allah, berilah manfaat kepada kami dengan apa yang telah Engkau ajarkan kepada kami dari karya-karya beliau, dan jadikanlah ia cahaya bagi kami di kubur kami dan pada hari kiamat. Ya Allah, anugerahkanlah kepada kami ittiba' sunnah, adab yang baik, dan akhlak yang mulia, dan jadikanlah kami termasuk orang yang mengambil manfaat dari ilmu mereka dan memberikan manfaat kepada orang lain."
+</div>
+</div>
+<h2>Penutup Halaman 8</h2>
+<p>
+Demikianlah warisan keilmuan Syeikh Abdullah Ibnu Alawi Al-Haddad — warisan yang tidak mati dalam lembaran-lembaran kitab tua, melainkan hidup dan terus mengalir seperti sungai ilmu dan akhlak dari abad ke-13 H hingga hari ini. Melalui karya-karya monumental beliau — terutama <em>Risalatul Muawanah</em>, <em>Risalatul Mukasyafah</em>, <em>An-Nashaih Ad-Diniyyah</em>, dan <em>Al-Fawaidul Mukhtarah</em> — melalui ajaran-ajaran tasawuf Alawiyyah yang beliau wariskan, dan melalui para murid serta penerus beliau di Hadhramaut dan Nusantara, cahaya ilmu dan akhlak yang beliau nyalakan di Tarim terus menyala hingga hari ini.
+</p>
+<p>
+Beliau bukan hanya seorang ulama di zamannya, melainkan <em>imam al-muhammadin</em> — imam bagi generasi-generasi setelahnya. Ajaran-ajaran beliau tentang akhlak, tasawuf, adab, dan tazkiyatun nafs telah membentuk wajah Islam di Nusantara selama berabad-abad, dan terus hidup hingga hari ini di pesantren-pesantren, majelis-majelis ilmu, dan rumah-rumah tangga muslim di seluruh pelosok Nusantara.
+</p>
+<p>
+Pada halaman terakhir (halaman 9), kita akan membahas penutup dan intisari dari seluruh perjalanan hidup Syeikh Abdullah Ibnu Alawi Al-Haddad — mulai dari kelahiran beliau di Sei'un, masa kecil di Tarim, perjalanan menuntut ilmu, perjalanan spiritual, tantangan dan konflik, tanggapan pro dan kontra, sikap terhadap penguasa, hingga warisan keilmuan yang abadi. Kita juga akan merenungkan pelajaran-pelajaran yang dapat kita ambil dari kehidupan beliau untuk diterapkan dalam kehidupan kita sehari-hari.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+وَمَا أَرْسَلْنَاكَ إِلَّا رَحْمَةً لِّلْعَالَمِينَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan tiadalah Kami mengutus kamu, melainkan untuk (menjadi) rahmat bagi semesta alam."
+<br>— QS. Al-Anbiya': 107
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="haddad1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="haddad2.html" class="article-nav-btn" title="Halaman 2: Masa Kecil & Pendidikan">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="haddad3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="haddad4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="haddad5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="haddad6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="haddad7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="haddad8.html" class="article-nav-btn active" title="Halaman 8: Warisan Keilmuan">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="haddad9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

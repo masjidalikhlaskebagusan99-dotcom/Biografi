@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Abdullah Ibnu Alawi Al-Haddad - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+@media (max-width: 768px) {
+.article-container { max-width: 100%; padding: 20px; }
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover { background: rgba(233, 69, 96, 0.15); transform: scale(1.05); }
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover { background: #e94560; color: #fff; border-color: #e94560; }
+.article-content { font-size: 1.05rem; line-height: 1.9; color: #444; }
+.article-content p { margin-bottom: 20px; text-align: justify; }
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 { font-size: 1.2rem; color: #333; margin: 25px 0 10px; }
+.article-content ul { margin: 15px 0 20px 30px; }
+.article-content ul li { margin-bottom: 10px; line-height: 1.7; }
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title { font-size: 1.3rem; color: #1a1a2e; font-weight: bold; display: inline; }
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul { margin: 15px 0 0 30px; }
+.highlight-box ul li { margin-bottom: 10px; line-height: 1.7; }
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label { text-align: center; color: #aaa; font-size: 0.75rem; margin-top: 6px; }
+.nav-group { display: flex; flex-direction: column; align-items: center; }
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+nav { flex-direction: column; gap: 10px; width: 100%; justify-content: center; }
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav { gap: 6px; padding: 15px; }
+.article-nav-btn { width: 36px; height: 36px; font-size: 1rem; }
+.nav-btn-label { font-size: 0.65rem; }
+}
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam { font-size: 1.3rem !important; letter-spacing: 3px !important; }
+header nav a { padding: 6px 10px !important; font-size: 0.8rem !important; }
+.article-nav-btn { width: 32px; height: 32px; font-size: 0.9rem; }
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Abdullah Ibnu Alawi Al-Haddad
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Abdullah Ibnu Alawi Al-Haddad</h1>
+<div class="subtitle">Halaman 4 dari 9 — Perjalanan Spiritual: Suluk Alawi, Tazkiyatun Nafs, dan Maqam Kewalian</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Selasa, 27 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tarim_Hadhramaut_Yemen.jpg/440px-Tarim_Hadhramaut_Yemen.jpg"
+alt="Kota Tarim, Hadhramaut — pusat suluk dan spiritualitas Tarekat Alawiyyah"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Seiyun_Palace.jpg/440px-Seiyun_Palace.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Kota Tarim, Hadhramaut — tempat Syeikh Abdullah Ibnu Alawi Al-Haddad menempuh perjalanan spiritual dalam Tarekat Alawiyyah, memadukan suluk zhahir dengan tazkiyatun nafs yang mendalam, hingga mencapai maqam kewalian yang tinggi</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Perjalanan spiritual Syeikh Abdullah Ibnu Alawi Al-Haddad adalah perjalanan seorang salik yang menempuh jalan <em>Tarekat Alawiyyah</em> — tarekat sufi yang berkembang di Hadhramaut yang menekankan pada penyucian jiwa (<em>tazkiyatun nafs</em>), akhlak mulia, dan perpaduan harmonis antara syariat dan hakikat. Berbeda dengan sebagian tarekat yang menekankan pada kasyf yang mencolok atau keadaan-keadaan spiritual yang dramatis, Tarekat Alawiyyah menekankan pada <em>istiqamah</em> (konsistensi) dalam ibadah, <em>adab</em> (etika spiritual) yang tinggi, dan <em>khidmah</em> (pengabdian) kepada umat. Di bawah bimbingan para mursyid Tarekat Alawiyyah dan dengan mengamalkan wirid-wirid warisan leluhur beliau — khususnya <em>Ratib Al-Haddad</em> — Syeikh Abdullah menempuh perjalanan spiritual yang mendalam hingga mencapai maqam kewalian yang tinggi, di mana hati beliau senantiasa hadir bersama Allah, lisan beliau basah dengan dzikir, dan akhlak beliau menjadi cerminan akhlak Rasulullah SAW.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG PERJALANAN SPIRITUAL — QS. AL-ANKABUT: 69</div>
+<div class="arabic-text">
+وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا ۚ وَإِنَّ اللَّهَ لَمَعَ الْمُحْسِنِينَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan orang-orang yang berjihad untuk (mencari keridhaan) Kami, pastilah akan Kami tunjukkan kepada mereka jalan-jalan Kami. Dan sesungguhnya Allah benar-benar beserta orang-orang yang berbuat baik."
+<br>— QS. Al-'Ankabut: 69
+</div>
+</div>
+<h2>Dua Jalur Perjalanan Spiritual — Suluk Umum dan Kasyf Khusus</h2>
+<p>
+Perjalanan spiritual Syeikh Abdullah Ibnu Alawi Al-Haddad dapat dibagi menjadi dua jalur yang saling melengkapi: <strong>jalur umum</strong> (suluk, riyadhah, mujahadah) yang merupakan jalan yang ditempuh oleh setiap salik dalam Tarekat Alawiyyah, dan <strong>jalur khusus</strong> (kasyf, mukasyafah, ilham) yang merupakan anugerah Allah kepada hamba-hamba-Nya yang terpilih. Kedua jalur ini bukan saling meniadakan, melainkan saling menguatkan — suluk membuka pintu hati, dan kasyf menerangi apa yang ada di balik pintu tersebut.
+</p>
+<p>
+Ciri khas perjalanan spiritual Syeikh Abdullah adalah penekanannya pada <em>adab</em> dan <em>akhlak</em> — bukan pada karomah yang mencolok atau keadaan-keadaan spiritual yang dramatis. Beliau mengikuti jejak leluhur beliau, <em>Imam Abdullah bin Alawi Al-Haddad</em> (1044-1132 H), yang mengajarkan bahwa maqam kewalian yang sejati bukanlah ketika seseorang dapat terbang di udara atau berjalan di atas air, melainkan ketika seseorang memiliki akhlak yang mulia, hati yang bersih, dan lisan yang basah dengan dzikrullah.
+</p>
+<p>
+Beliau pernah berkata: <em>"Wali yang sejati bukanlah orang yang memiliki karomah yang mencolok, melainkan orang yang memiliki akhlak yang mulia. Barangsiapa yang akhlaknya baik, hatinya bersih, dan lisannya basah dengan dzikir, maka ia adalah wali Allah meskipun ia tidak mengetahui kewalian dirinya."</em>
+</p>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH ABDULLAH TENTANG WALI SEJATI</div>
+<div class="arabic-text">
+الْوَلِيُّ لَيْسَ مَنْ لَهُ كَرَامَاتٌ ظَاهِرَةٌ، بَلْ مَنْ لَهُ أَخْلَاقٌ فَاضِلَةٌ وَقَلْبٌ سَلِيمٌ وَلِسَانٌ رَطْبٌ بِذِكْرِ اللَّهِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Wali bukanlah orang yang memiliki karomah-karomah yang tampak, melainkan orang yang memiliki akhlak yang mulia, hati yang bersih, dan lisan yang basah dengan dzikrullah."
+<br>— Syeikh Abdullah Ibnu Alawi Al-Haddad
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Perjalanan Spiritual Umum — Suluk, Riyadhah, dan Mujahadah Alawiyyah</span>
+<div class="karomah-arabic">السُّلُوكُ الْعَامُّ — الرِّيَاضَةُ وَالْمُجَاهَدَةُ الْعَلَوِيَّةُ</div>
+<p>
+Perjalanan spiritual umum (<em>as-suluk al-'amm</em>) yang ditempuh Syeikh Abdullah Ibnu Alawi Al-Haddad adalah perjalanan yang dilalui oleh setiap salik dalam Tarekat Alawiyyah. Perjalanan ini terdiri dari tiga komponen utama: <em>suluk</em> (perjalanan), <em>riyadhah</em> (latihan spiritual), dan <em>mujahadah</em> (perjuangan melawan hawa nafsu).
+</p>
+<h3>A. Suluk — Perjalanan Menuju Allah</h3>
+<p>
+Suluk secara harfiah berarti "perjalanan" — yaitu perjalanan hati dari dunia menuju Allah. Dalam suluk, seorang salik menempuh maqamat (tingkatan-tingkatan) spiritual yang telah ditetapkan oleh para ulama Tarekat Alawiyyah, seperti:
+</p>
+<ul>
+<li><strong>Taubat</strong> — Kembali kepada Allah dari segala dosa dan maksiat</li>
+<li><strong>Wara'</strong> — Menjauhi segala yang syubhat (meragukan) dalam makanan, minuman, dan pakaian</li>
+<li><strong>Zuhud</strong> — Tidak terlalu cinta kepada dunia, meskipun tetap memanfaatkannya untuk ibadah</li>
+<li><strong>Faqir</strong> — Merasa cukup dengan apa yang ada, dan tidak tamak kepada harta orang lain</li>
+<li><strong>Sabar</strong> — Bersabar dalam menghadapi ujian, musibah, dan godaan</li>
+<li><strong>Tawakkal</strong> — Berserah diri sepenuhnya kepada Allah dalam segala urusan</li>
+<li><strong>Ridha</strong> — Ridha terhadap takdir Allah, baik yang menyenangkan maupun yang tidak</li>
+<li><strong>Mahabbah</strong> — Cinta kepada Allah yang menjadi puncak dari seluruh maqamat</li>
+<li><strong>Ma'rifat</strong> — Mengenal Allah dengan sebenar-benarnya melalui asma', sifat, dan af'al-Nya</li>
+</ul>
+<h3>B. Riyadhah — Latihan Spiritual</h3>
+<p>
+Riyadhah adalah latihan-latihan spiritual yang bertujuan untuk membersihkan hati dari kotoran-kotoran duniawi dan menghiasinya dengan sifat-sifat ilahiah. Di antara riyadhah yang ditempuh Syeikh Abdullah adalah:
+</p>
+<ul>
+<li><strong>Puasa Sunnah yang Berkelanjutan</strong> — Beliau berpuasa sunnah pada hari Senin dan Kamis, hari-hari putih (13, 14, 15 bulan kamariah), dan hari-hari utama lainnya. Beliau berkata: <em>"Puasa adalah makanan para wali, dan minuman para pecinta."</em></li>
+<li><strong>Qiyamul Lail (Shalat Malam)</strong> — Beliau senantiasa bangun pada sepertiga malam terakhir untuk shalat tahajjud, bermunajat, dan membaca Al-Qur'an. Beliau sering menghabiskan separuh malam atau lebih untuk shalat, dengan tangis yang tak henti-hentinya.</li>
+<li><strong>Dzikir yang Berkelanjutan</strong> — Beliau senantiasa berdzikir kepada Allah dalam setiap keadaan — ketika berjalan, duduk, berbaring, bahkan ketika tidur. Dzikirnya bukan hanya di lisan, melainkan juga di hati, sehingga hatinya senantiasa hidup dengan mengingat Allah.</li>
+<li><strong>Tilawah Al-Qur'an</strong> — Beliau mengkhatamkan Al-Qur'an secara rutin, dengan tadabbur yang mendalam. Beliau berkata: <em>"Al-Qur'an adalah taman hati, dan tadabbur adalah kunci untuk masuk ke dalamnya."</em></li>
+<li><strong>Shalawat kepada Nabi SAW</strong> — Beliau senantiasa bershalawat kepada Rasulullah SAW, karena shalawat adalah salah satu amalan utama dalam Tarekat Alawiyyah.</li>
+<li><strong>Membaca Ratib Al-Haddad</strong> — Wirid agung warisan leluhur beliau, <em>Ratib Al-Haddad</em>, menjadi amalan harian beliau yang tidak pernah beliau tinggalkan.</li>
+</ul>
+<h3>C. Mujahadah — Perjuangan Melawan Hawa Nafsu</h3>
+<p>
+Mujahadah adalah perjuangan melawan hawa nafsu dan godaan-godaan duniawi. Syeikh Abdullah menempuh mujahadah dengan cara:
+</p>
+<ul>
+<li><strong>Menjaga Pandangan</strong> — Beliau senantiasa menjaga pandangannya dari hal-hal yang haram dan syubhat, karena beliau tahu bahwa pandangan adalah panah beracun yang dapat mematikan hati.</li>
+<li><strong>Menjaga Lisan</strong> — Beliau berbicara hanya ketika perlu, dan lebih banyak diam. Beliau berkata: <em>"Lisan adalah pintu neraka dan pintu surga — barangsiapa yang menjaganya, ia akan selamat; dan barangsiapa yang melepaskannya, ia akan binasa."</em></li>
+<li><strong>Menjaga Perut</strong> — Beliau makan hanya yang halal dan thayyib, dalam jumlah yang sedikit, dan tidak makan kecuali ketika benar-benar lapar.</li>
+<li><strong>Menjaga Hati</strong> — Beliau senantiasa membersihkan hatinya dari sifat-sifat tercela seperti hasad, riya', takabbur, dan cinta dunia.</li>
+<li><strong>Menjaga Waktu</strong> — Beliau tidak menyia-nyiakan waktunya untuk hal-hal yang tidak bermanfaat. Setiap menit dalam hidup beliau diisi dengan ibadah, ilmu, atau khidmah kepada umat.</li>
+</ul>
+<p>
+Beliau pernah berkata tentang mujahadah: <em>"Mujahadah bukanlah membunuh nafsu, melainkan mendidiknya agar tunduk kepada Allah. Nafsu itu seperti kuda liar — jika engkau membiarkannya, ia akan membawamu ke jurang; namun jika engkau mendidiknya, ia akan membawamu kepada Allah."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MUJAHADAH — QS. AL-ANKABUT: 6</div>
+<div class="arabic-text">
+وَمَن جَاهَدَ فَإِنَّمَا يُجَاهِدُ لِنَفْسِهِ ۚ إِنَّ اللَّهَ لَغَنِيٌّ عَنِ الْعَالَمِينَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan barangsiapa yang berjihad, maka sesungguhnya jihadnya itu adalah untuk dirinya sendiri. Sesungguhnya Allah benar-benar Maha Kaya (tidak memerlukan sesuatu) dari semesta alam."
+<br>— QS. Al-'Ankabut: 6
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Ratib Al-Haddad — Wirid Agung Warisan Leluhur</span>
+<div class="karomah-arabic">رَاتِبُ الْحَدَّادِ — الْوِرْدُ الْعَظِيمُ إِرْثُ الْأَسْلَافِ</div>
+<p>
+Salah satu ciri khas perjalanan spiritual Syeikh Abdullah Ibnu Alawi Al-Haddad adalah pengamalan beliau yang sangat tekun terhadap <em>Ratib Al-Haddad</em> — wirid agung yang disusun oleh leluhur beliau, <em>Imam Abdullah bin Alawi Al-Haddad</em> (1044-1132 H / 1634-1720 M). Ratib ini menjadi amalan harian beliau yang tidak pernah beliau tinggalkan, baik dalam keadaan mukim maupun safar, sehat maupun sakit.
+</p>
+<h3>A. Kandungan Ratib Al-Haddad</h3>
+<p>
+Ratib Al-Haddad adalah wirid komprehensif yang memadukan berbagai amalan spiritual, di antaranya:
+</p>
+<ul>
+<li><strong>Istighfar</strong> — Permohonan ampun kepada Allah yang diulang-ulang, sebagai pembersih hati dari dosa-dosa</li>
+<li><strong>Shalawat kepada Nabi SAW</strong> — Shalawat yang banyak kepada Rasulullah SAW, sebagai wujud cinta dan pengagungan kepada beliau</li>
+<li><strong>Dzikir Asmaul Husna</strong> — Dzikir dengan nama-nama Allah yang indah, sebagai sarana untuk mengenal Allah</li>
+<li><strong>Tahlil dan Tahmid</strong> — Mengesakan Allah dan memuji-Nya, sebagai inti dari seluruh ibadah</li>
+<li><strong>Doa-doa Ma'tsurat</strong> — Doa-doa yang diajarkan oleh Rasulullah SAW dan para salaf</li>
+<li><strong>Ikrar dan Taubat</strong> — Pengakuan dosa dan taubat kepada Allah, sebagai pembuka pintu rahmat</li>
+</ul>
+<h3>B. Keutamaan Ratib Al-Haddad</h3>
+<p>
+Syeikh Abdullah senantiasa mengamalkan Ratib ini dengan penuh kekhusyukan dan kehadiran hati. Beliau berkata tentang Ratib: <em>"Ratib Al-Haddad adalah warisan leluhur kami yang paling berharga. Barangsiapa yang mengamalkannya dengan ikhlas dan istiqamah, ia akan mendapatkan cahaya di hatinya, ketenangan di jiwanya, dan perlindungan dari segala marabahaya."</em>
+</p>
+<p>
+Beliau juga menganjurkan para murid dan pengikut beliau untuk mengamalkan Ratib ini setiap hari, khususnya setelah shalat Maghrib dan Subuh. Beliau berkata: <em>"Ratib Al-Haddad adalah benteng bagi orang yang mengamalkannya. Barangsiapa yang membacanya setiap hari, ia akan berada dalam perlindungan Allah sepanjang hari."</em>
+</p>
+<h3>C. Pengamalan Syeikh Abdullah terhadap Ratib</h3>
+<p>
+Syeikh Abdullah tidak hanya mengamalkan Ratib secara rutin, melainkan juga mengajarkannya kepada para murid beliau dengan penuh hikmah. Beliau menjelaskan makna-makna yang terkandung di dalam Ratib, sehingga para murid tidak hanya membaca dengan lisan, melainkan juga memahami dengan hati. Beliau berkata: <em>"Membaca Ratib tanpa memahami maknanya adalah seperti memakan makanan tanpa mencicipi rasanya — engkau mendapatkan manfaatnya, namun tidak merasakan keindahannya."</em>
+</p>
+<p>
+Beliau juga menambahkan beberapa amalan tambahan yang beliau warisi dari para mursyid Tarekat Alawiyyah, seperti:
+</p>
+<ul>
+<li><strong>Dzikir La ilaha illallah</strong> — Dzikir tauhid yang diulang-ulang, sebagai pembersih hati dari segala bentuk syirik</li>
+<li><strong>Dzikir Allah, Allah</strong> — Dzikir khafi (dalam hati) yang menyatu dengan denyut jantung</li>
+<li><strong>Wirid Pagi dan Petang</strong> — Wirid-wirid ma'tsurat yang dibaca setelah shalat Subuh dan Ashar</li>
+<li><strong>Membaca Al-Qur'an dengan Tadabbur</strong> — Membaca Al-Qur'an setiap hari dengan merenungkan maknanya</li>
+</ul>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG DZIKIR — QS. AL-AHZAB: 41-42</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا اذْكُرُوا اللَّهَ ذِكْرًا كَثِيرًا ۝ وَسَبِّحُوهُ بُكْرَةً وَأَصِيلًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, ingatlah Allah dengan dzikir yang sebanyak-banyaknya. Dan bertasbihlah kepada-Nya pada waktu pagi dan petang."
+<br>— QS. Al-Ahzab: 41-42
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Kasyf dan Mukasyafah — Anugerah Ilahi yang Diterima</span>
+<div class="karomah-arabic">الْكَشْفُ وَالْمُكَاشَفَةُ — مَوَاهِبُ اللَّهِ لِلْأَوْلِيَاءِ</div>
+<p>
+Selain perjalanan spiritual umum (suluk dan riyadhah), Syeikh Abdullah Ibnu Alawi Al-Haddad juga menerima anugerah ilahi berupa <em>kasyf</em> (penyingkapan tabir gaib) dan <em>mukasyafah</em> (penyaksian terhadap hakikat-hakikat tersembunyi). Kasyf dan mukasyafah ini bukanlah hasil dari usaha beliau semata, melainkan anugerah Allah yang diberikan kepada hamba-hamba-Nya yang telah membersihkan hati dan mendekatkan diri kepada-Nya.
+</p>
+<h3>A. Kasyf — Penyingkapan Tabir Gaib</h3>
+<p>
+Kasyf adalah penyingkapan tabir yang menutupi hati dari melihat hakikat-hakikat gaib. Syeikh Abdullah menerima berbagai bentuk kasyf dalam perjalanan spiritualnya, di antaranya:
+</p>
+<ul>
+<li><strong>Kasyf al-Ma'ani</strong> — Penyingkapan makna-makna tersembunyi di balik ayat-ayat Al-Qur'an dan hadits-hadits Nabi SAW. Beliau mampu memahami makna-makna batin (isyari) dari ayat-ayat zhahir, yang tidak dapat dipahami oleh para ulama zhahir.</li>
+<li><strong>Kasyf al-A'mal</strong> — Penyingkapan hakikat amal-amal ibadah. Beliau mampu melihat hakikat shalat, puasa, zakat, dan ibadah-ibadah lainnya dari sudut pandang batin, yang melampaui pemahaman fikih zhahir.</li>
+<li><strong>Kasyf al-Ahwal</strong> — Penyingkapan keadaan-keadaan spiritual para salik. Beliau mampu memahami maqam dan hal seorang salik hanya dengan melihatnya, tanpa perlu bertanya.</li>
+<li><strong>Kasyf al-Ghuyub</strong> — Penyingkapan sebagian hal-hal gaib yang Allah izinkan untuk beliau ketahui, seperti firasat (farasah) yang benar tentang orang-orang yang beliau temui.</li>
+</ul>
+<h3>B. Mukasyafah — Penyaksian Hakikat</h3>
+<p>
+Mukasyafah adalah penyaksian terhadap hakikat-hakikat yang tersembunyi di balik wujud ini. Syeikh Abdullah mengalami berbagai bentuk mukasyafah dalam perjalanan spiritualnya, di antaranya:
+</p>
+<ul>
+<li><strong>Mukasyafah al-Jalal</strong> — Penyaksian terhadap keagungan dan kebesaran Allah, yang membuatnya senantiasa khusyuk dan tunduk di hadapan-Nya.</li>
+<li><strong>Mukasyafah al-Jamal</strong> — Penyaksian terhadap keindahan dan kecantikan Allah, yang membuatnya jatuh cinta kepada-Nya dan rindu untuk bertemu dengan-Nya.</li>
+<li><strong>Mukasyafah al-Kamal</strong> — Penyaksian terhadap kesempurnaan Allah, yang membuatnya menyadari kekurangan dirinya dan senantiasa berusaha untuk mendekatkan diri kepada-Nya.</li>
+<li><strong>Mukasyafah al-Wahdah</strong> — Penyaksian terhadap keesaan Allah, yang membuatnya tidak melihat dalam wujud ini selain Allah sebagai Pencipta dan Pengatur segala sesuatu.</li>
+</ul>
+<h3>C. Sikap terhadap Kasyf dan Mukasyafah</h3>
+<p>
+Namun, Syeikh Abdullah senantiasa berhati-hati dalam menceritakan pengalaman-pengalaman kasyf dan mukasyafah beliau. Beliau tidak memamerkannya di depan orang banyak, melainkan hanya menceritakannya kepada para murid beliau yang khusus, sebagai pelajaran dan bimbingan. Beliau berkata: <em>"Kasyf bukanlah tujuan, melainkan jalan. Tujuan yang sejati adalah ma'rifatullah dan mahabbatullah. Barangsiapa yang mendapatkan kasyf namun tidak mendapatkan ma'rifat dan mahabbah, maka ia seperti orang yang memiliki lampu namun tidak memiliki jalan."</em>
+</p>
+<p>
+Beliau juga senantiasa mengingatkan para murid beliau untuk tidak tertipu oleh kasyf dan karomah, karena kasyf bisa menjadi fitnah jika tidak disertai dengan akhlak yang mulia dan ilmu yang benar. Beliau berkata: <em>"Janganlah engkau tertipu oleh karomah yang engkau lihat pada dirimu atau pada orang lain. Karena karomah bukanlah tanda kewalian yang sejati, melainkan tanda kewalian yang sejati adalah akhlak yang mulia dan istiqamah dalam syariat."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KASYF — QS. QAF: 22</div>
+<div class="arabic-text">
+لَقَدْ كُنتَ فِي غَفْلَةٍ مِّنْ هَٰذَا فَكَشَفْنَا عَنكَ غِطَاءَكَ فَبَصَرُكَ الْيَوْمَ حَدِيدٌ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sesungguhnya kamu berada dalam keadaan lalai dari (hal) ini, maka Kami singkapkan daripadamu tutup (yang menutupi) matamu, maka penglihatanmu pada hari itu amat tajam."
+<br>— QS. Qaf: 22
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Tazkiyatun Nafs — Penyucian Jiwa ala Alawiyyah</span>
+<div class="karomah-arabic">تَزْكِيَةُ النَّفْسِ — مِنْهَاجُ التَّصَوُّفِ الْعَلَوِيِّ</div>
+<p>
+Salah satu ciri khas perjalanan spiritual Syeikh Abdullah Ibnu Alawi Al-Haddad adalah penekanan beliau pada <em>tazkiyatun nafs</em> (penyucian jiwa) menurut manhaj Tarekat Alawiyyah. Tazkiyatun nafs dalam tradisi Alawiyyah memiliki karakteristik yang unik, yang membedakannya dari tarekat-tarekat lainnya.
+</p>
+<h3>A. Prinsip-Prinsip Tazkiyatun Nafs ala Alawiyyah</h3>
+<p>
+Tazkiyatun nafs dalam Tarekat Alawiyyah berpijak pada beberapa prinsip utama:
+</p>
+<ul>
+<li><strong>Ittiba' Sunnah</strong> — Setiap amalan spiritual harus sesuai dengan sunnah Rasulullah SAW. Tidak ada amalan bid'ah yang diterima, meskipun tampaknya "spiritual".</li>
+<li><strong>Adab yang Tinggi</strong> — Seorang salik harus memiliki adab yang tinggi terhadap Allah, Rasulullah, para guru, orang tua, dan sesama muslim. Adab adalah buah dari tazkiyatun nafs yang sejati.</li>
+<li><strong>Akhlak yang Mulia</strong> — Tujuan akhir dari tazkiyatun nafs adalah akhlak yang mulia — yaitu akhlak yang meneladani akhlak Rasulullah SAW.</li>
+<li><strong>Keseimbangan Zhahir dan Batin</strong> — Seorang salik harus menyeimbangkan antara amal zhahir (ibadah, muamalah) dan amal batin (dzikir, muraqabah). Tidak boleh salah satunya diabaikan.</li>
+<li><strong>Khidmah kepada Umat</strong> — Seorang salik harus bermanfaat bagi masyarakat, bukan mengasingkan diri dari mereka. Inilah prinsip <em>uzlah ma'a khidmah</em> (menyepi sambil berkhidmah).</li>
+</ul>
+<h3>B. Tahapan-Tahapan Tazkiyatun Nafs</h3>
+<p>
+Syeikh Abdullah mengajarkan tahapan-tahapan tazkiyatun nafs yang sistematis, di antaranya:
+</p>
+<ul>
+<li><strong>Takhliyah</strong> — Mengosongkan hati dari sifat-sifat tercela seperti hasad, riya', takabbur, cinta dunia, dan sebagainya.</li>
+<li><strong>Tahliyah</strong> — Menghiasi hati dengan sifat-sifat terpuji seperti ikhlas, sabar, syukur, tawakkal, ridha, dan mahabbah.</li>
+<li><strong>Tajalliyah</strong> — Menerima cahaya-cahaya ilahi yang Allah pancarkan ke dalam hati yang telah bersih, sehingga hati menjadi cermin yang memantulkan cahaya ilahi.</li>
+</ul>
+<h3>C. Metode-Metode Praktis</h3>
+<p>
+Syeikh Abdullah mengajarkan metode-metode praktis untuk tazkiyatun nafs, di antaranya:
+</p>
+<ul>
+<li><strong>Muhasabah Harian</strong> — Setiap malam sebelum tidur, beliau menghisab (menghitung) amal-amalnya sepanjang hari, dan bertaubat dari segala kekurangan.</li>
+<li><strong>Muraqabah Ketat</strong> — Beliau senantiasa merasa diawasi oleh Allah dalam setiap gerak-gerik, pikiran, dan perasaan.</li>
+<li><strong>Menghindari Makanan Syubhat</strong> — Beliau sangat berhati-hati dalam memilih makanan, karena makanan yang haram atau syubhat dapat menghalangi cahaya ilahi masuk ke dalam hati.</li>
+<li><strong>Berkhalwat secara Teratur</strong> — Beliau meluangkan waktu khusus setiap hari untuk berkhalwat dan bermunajat kepada Allah, meskipun hanya sebentar.</li>
+<li><strong>Bergaul dengan Orang-Orang Shaleh</strong> — Beliau senantiasa bergaul dengan orang-orang shaleh, karena hati itu seperti tanaman — ia akan tumbuh dengan baik jika ditanam di tanah yang subur.</li>
+</ul>
+<p>
+Beliau pernah berkata tentang tazkiyatun nafs: <em>"Tazkiyatun nafs bukanlah pekerjaan satu malam, melainkan pekerjaan seumur hidup. Barangsiapa yang mengaku telah menyucikan jiwanya sepenuhnya, maka ia belum memahami hakikat tazkiyatun nafs. Karena tazkiyatun nafs adalah perjalanan yang tidak pernah selesai di dunia ini — ia baru selesai ketika kita bertemu dengan Allah dalam keadaan hati yang bersih (qalbun salim)."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG TAZKIYATUN NAFS — QS. ASY-SYAMS: 9-10</div>
+<div class="arabic-text">
+قَدْ أَفْلَحَ مَن زَكَّاهَا ۝ وَقَدْ خَابَ مَن دَسَّاهَا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sesungguhnya beruntunglah orang yang mensucikan jiwa itu, dan sesungguhnya merugilah orang yang mengotorinya."
+<br>— QS. Asy-Syams: 9-10
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Maqam Kewalian — Puncak Perjalanan Spiritual</span>
+<div class="karomah-arabic">مَقَامُ الْوِلَايَةِ — ذُرْوَةُ السُّلُوكِ الرُّوحِيِّ</div>
+<p>
+Puncak dari perjalanan spiritual Syeikh Abdullah Ibnu Alawi Al-Haddad adalah maqam kewalian — maqam di mana hati beliau senantiasa hadir bersama Allah, lisan beliau basah dengan dzikir, dan akhlak beliau menjadi cerminan akhlak Rasulullah SAW. Maqam ini bukanlah maqam yang dapat dicapai dengan usaha semata, melainkan anugerah Allah yang diberikan kepada hamba-hamba-Nya yang telah membersihkan hati dan mendekatkan diri kepada-Nya.
+</p>
+<h3>A. Tanda-Tanda Kewalian Syeikh Abdullah</h3>
+<p>
+Para ulama dan murid-murid beliau menceritakan beberapa tanda kewalian beliau, di antaranya:
+</p>
+<ul>
+<li><strong>Hati yang Sentiasa Hadir bersama Allah</strong> — Beliau senantiasa merasakan kehadiran Allah dalam setiap keadaan, baik ketika sendirian maupun di tengah orang banyak. Hati beliau tidak pernah lalai dari dzikrullah meskipun sekejap.</li>
+<li><strong>Akhlak yang Mulia</strong> — Beliau memiliki akhlak yang sangat mulia — lembut, penyayang, pemaaf, rendah hati, dan senantiasa berbuat baik kepada siapa pun, baik yang mencintai beliau maupun yang membenci beliau.</li>
+<li><strong>Zuhud yang Mendalam</strong> — Beliau tidak tertarik pada kemewahan dunia, tidak terpesona oleh kedudukan, dan tidak silau oleh popularitas. Hatinya hanya tertuju pada satu tujuan — meraih ridha Allah.</li>
+<li><strong>Ilmu yang Luas dan Amal yang Shaleh</strong> — Beliau memadukan ilmu yang luas dengan amal yang shaleh, sehingga ilmunya bermanfaat bagi diri beliau dan bagi umat.</li>
+<li><strong>Pengaruh Spiritual yang Luas</strong> — Ajaran-ajaran beliau tersebar luas ke seluruh penjuru dunia Islam, khususnya di Hadhramaut, Indonesia, Malaysia, dan negara-negara Asia Tenggara lainnya. Karya-karya beliau dibaca dan diamalkan oleh jutaan umat Islam hingga hari ini.</li>
+<li><strong>Karamah yang Tersembunyi</strong> — Meskipun beliau tidak memamerkan karomah, para murid dan pengikut beliau menceritakan berbagai karomah yang beliau alami, seperti doa-doa beliau yang mustajab, firasat beliau yang benar, dan pertolongan-pertolongan Allah yang beliau terima dalam keadaan-keadaan sulit.</li>
+</ul>
+<h3>B. Sikap Beliau terhadap Kewalian</h3>
+<p>
+Meskipun beliau telah mencapai maqam kewalian yang tinggi, Syeikh Abdullah tidak pernah mengklaim dirinya sebagai wali. Beliau justru senantiasa merendahkan diri di hadapan Allah dan di hadapan makhluk-Nya. Beliau berkata: <em>"Aku bukanlah wali, melainkan hamba yang lemah yang berusaha untuk taat kepada Tuhannya. Barangsiapa yang menganggapku sebagai wali, maka ia telah keliru. Karena kewalian hanyalah milik Allah, dan Dia memberikannya kepada siapa yang Dia kehendaki."</em>
+</p>
+<p>
+Beliau juga senantiasa mengingatkan para murid beliau untuk tidak tertipu oleh gelar-gelar duniawi seperti "wali", "quthb", atau "ghauts". Beliau berkata: <em>"Janganlah engkau mencari gelar-gelar duniawi, melainkan carilah ridha Allah. Karena gelar-gelar duniawi akan hilang, sedangkan ridha Allah akan kekal."</em>
+</p>
+<h3>C. Warisan Spiritual Beliau</h3>
+<p>
+Warisan spiritual Syeikh Abdullah Ibnu Alawi Al-Haddad tidak hanya hidup dalam diri beliau, melainkan juga dalam karya-karya beliau, murid-murid beliau, dan para pengikut beliau di seluruh penjuru dunia Islam. Karya-karya beliau seperti <em>Risalatul Muawanah</em>, <em>Risalatul Mukasyafah</em>, <em>An-Nashaih Ad-Diniyyah</em>, dan <em>Al-Fawaidul Mukhtarah</em> menjadi rujukan utama dalam bidang akhlak dan tasawuf di Nusantara.
+</p>
+<p>
+Beliau pernah berkata tentang warisan spiritual: <em>"Warisan yang sejati bukanlah harta, bukan pula kedudukan, melainkan kata-kata yang keluar dari hati yang mencintai Allah. Karena harta akan habis, kedudukan akan hilang, namun kata-kata yang keluar dari hati yang tulus akan hidup selamanya di dalam hati-hati yang tulus."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG WALI ALLAH — QS. YUNUS: 62-63</div>
+<div class="arabic-text">
+أَلَا إِنَّ أَوْلِيَاءَ اللَّهِ لَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ ۝ الَّذِينَ آمَنُوا وَكَانُوا يَتَّقُونَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ingatlah, sesungguhnya wali-wali Allah itu tidak ada ketakutan bagi mereka dan tidak pula mereka bersedih hati. (Yaitu) orang-orang yang beriman dan mereka senantiasa bertakwa."
+<br>— QS. Yunus: 62-63
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Perjalanan Spiritual Syeikh Abdullah Ibnu Alawi Al-Haddad:</strong>
+<ul>
+<li><strong>Dua jalur spiritual:</strong> Jalur umum (suluk, riyadhah, mujahadah) dan jalur khusus (kasyf, mukasyafah, ilham)</li>
+<li><strong>Suluk Alawiyyah:</strong> Perjalanan hati menuju Allah melalui maqamat taubat, wara', zuhud, faqir, sabar, tawakkal, ridha, mahabbah, ma'rifat</li>
+<li><strong>Riyadhah:</strong> Puasa sunnah, qiyamul lail, dzikir berkelanjutan, tilawah Al-Qur'an, shalawat, Ratib Al-Haddad</li>
+<li><strong>Mujahadah:</strong> Menjaga pandangan, lisan, perut, hati, dan waktu</li>
+<li><strong>Ratib Al-Haddad:</strong> Wirid agung warisan leluhur yang menjadi amalan harian beliau</li>
+<li><strong>Kasyf:</strong> Penyingkapan makna-makna tersembunyi, hakikat amal, keadaan salik, dan sebagian gaib</li>
+<li><strong>Mukasyafah:</strong> Penyaksian terhadap jalal, jamal, kamal, dan wahdah Allah</li>
+<li><strong>Tazkiyatun nafs ala Alawiyyah:</strong> Ittiba' sunnah, adab tinggi, akhlak mulia, keseimbangan zhahir-batin, khidmah kepada umat</li>
+<li><strong>Tahapan tazkiyah:</strong> Takhliyah (mengosongkan), tahliyah (menghiasi), tajalliyah (menerima cahaya)</li>
+<li><strong>Maqam kewalian:</strong> Hati senantiasa hadir bersama Allah, akhlak mulia, zuhud mendalam, ilmu luas, pengaruh spiritual luas</li>
+<li><strong>Sikap terhadap kewalian:</strong> Tidak mengklaim diri sebagai wali, senantiasa merendahkan diri, mencari ridha Allah bukan gelar duniawi</li>
+<li><strong>Warisan spiritual:</strong> Karya-karya monumental, murid-murid besar, pengaruh luas di Hadhramaut dan Nusantara</li>
+</ul>
+</div>
+<h2>Doa Memohon Keberkahan Perjalanan Spiritual</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON MAQAM KEWALIAN DAN TAZKIYATUN NAFS</div>
+<div class="arabic-text">
+اللَّهُمَّ ارْزُقْنِي السُّلُكَ الصَّحِيحَ، وَالرِّيَاضَةَ الْمَقْبُولَةَ، وَالْمُجَاهَدَةَ الْمُوفَقَةَ، وَطَهِّرْ قَلْبِي مِنَ النِّفَاقِ وَالرِّيَاءِ وَالْحَسَدِ، وَاجْعَلْنِي مِمَّنْ يُحِبُّكَ وَيُحِبُّ رَسُولَكَ وَيُحِبُّ أَوْلِيَاءَكَ، وَارْزُقْنِي تَزْكِيَةَ النَّفْسِ عَلَى مِنْهَاجِ السَّلَفِ الصَّالِحِ، وَاجْعَلْ سَيِّدَنَا عَبْدَ اللَّهِ ابْنَ عَلَوِيٍّ الْحَدَّادَ إِمَامِي فِي السُّلُوكِ إِلَيْكَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, anugerahkanlah kepadaku suluk yang benar, riyadhah yang diterima, dan mujahadah yang mendapat taufik. Bersihkanlah hatiku dari nifaq, riya', dan hasad. Jadikanlah aku termasuk orang yang mencintai-Mu, mencintai Rasul-Mu, dan mencintai wali-wali-Mu. Anugerahkanlah kepadaku tazkiyatun nafs di atas manhaj para salaf yang shaleh, dan jadikanlah Sayyidina Abdullah bin Alawi Al-Haddad sebagai imamku dalam perjalanan menuju kepada-Mu."
+</div>
+</div>
+<h2>Penutup Halaman 4</h2>
+<p>
+Demikianlah perjalanan spiritual Syeikh Abdullah Ibnu Alawi Al-Haddad — perjalanan seorang salik yang menempuh dua jalur secara bersamaan: jalur umum (suluk, riyadhah, mujahadah) dan jalur khusus (kasyf, mukasyafah, ilham). Di bawah bimbingan para mursyid Tarekat Alawiyyah dan dengan mengamalkan wirid-wirid warisan leluhur beliau — khususnya <em>Ratib Al-Haddad</em> — beliau menempuh perjalanan spiritual yang mendalam hingga mencapai maqam kewalian yang tinggi.
+</p>
+<p>
+Ciri khas perjalanan spiritual beliau adalah penekanannya pada <em>adab</em>, <em>akhlak</em>, dan <em>tazkiyatun nafs</em> — bukan pada karomah yang mencolok atau keadaan-keadaan spiritual yang dramatis. Beliau mengikuti jejak leluhur beliau, Imam Abdullah bin Alawi Al-Haddad, yang mengajarkan bahwa maqam kewalian yang sejati bukanlah ketika seseorang dapat terbang di udara atau berjalan di atas air, melainkan ketika seseorang memiliki akhlak yang mulia, hati yang bersih, dan lisan yang basah dengan dzikrullah.
+</p>
+<p>
+Namun, perjalanan spiritual yang demikian tinggi dan dalam ini tidak lepas dari tantangan dan konflik. Pada halaman berikutnya, kita akan membahas tantangan-tantangan yang beliau hadapi dalam mengamalkan hasil pemahaman keilmuan dan spiritual beliau — baik tantangan dari dalam diri sendiri, dari masyarakat, maupun dari para ulama yang berbeda pandangan.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+وَأَنَّهُ تَعَالَىٰ جَدُّ رَبِّنَا مَا اتَّخَذَ صَاحِبَةً وَلَا وَلَدًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan bahwasanya tinggi keagungan Tuhan kami. Dia tidak beristeri dan tidak (pula) beranak."
+<br>— QS. Al-Jin: 3
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="haddad1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="haddad2.html" class="article-nav-btn" title="Halaman 2: Masa Kecil & Pendidikan">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="haddad3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="haddad4.html" class="article-nav-btn active" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="haddad5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="haddad6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="haddad7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="haddad8.html" class="article-nav-btn" title="Halaman 8: Warisan Keilmuan">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="haddad9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

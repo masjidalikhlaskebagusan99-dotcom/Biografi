@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Abdullah Ibnu Alawi Al-Haddad - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+@media (max-width: 768px) {
+.article-container { max-width: 100%; padding: 20px; }
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover { background: rgba(233, 69, 96, 0.15); transform: scale(1.05); }
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover { background: #e94560; color: #fff; border-color: #e94560; }
+.article-content { font-size: 1.05rem; line-height: 1.9; color: #444; }
+.article-content p { margin-bottom: 20px; text-align: justify; }
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 { font-size: 1.2rem; color: #333; margin: 25px 0 10px; }
+.article-content ul { margin: 15px 0 20px 30px; }
+.article-content ul li { margin-bottom: 10px; line-height: 1.7; }
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title { font-size: 1.3rem; color: #1a1a2e; font-weight: bold; display: inline; }
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul { margin: 15px 0 0 30px; }
+.highlight-box ul li { margin-bottom: 10px; line-height: 1.7; }
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label { text-align: center; color: #aaa; font-size: 0.75rem; margin-top: 6px; }
+.nav-group { display: flex; flex-direction: column; align-items: center; }
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+nav { flex-direction: column; gap: 10px; width: 100%; justify-content: center; }
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav { gap: 6px; padding: 15px; }
+.article-nav-btn { width: 36px; height: 36px; font-size: 1rem; }
+.nav-btn-label { font-size: 0.65rem; }
+}
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam { font-size: 1.3rem !important; letter-spacing: 3px !important; }
+header nav a { padding: 6px 10px !important; font-size: 0.8rem !important; }
+.article-nav-btn { width: 32px; height: 32px; font-size: 0.9rem; }
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Abdullah Ibnu Alawi Al-Haddad
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Abdullah Ibnu Alawi Al-Haddad</h1>
+<div class="subtitle">Halaman 7 dari 9 — Sikap terhadap Penguasa: Zuhud di Tengah Istana, Nasihat di Tengah Kekuasaan</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Selasa, 27 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Seiyun_Palace.jpg/440px-Seiyun_Palace.jpg"
+alt="Istana Kesultanan Kathiri di Sei'un, Hadhramaut — simbol kekuasaan di masa Syeikh Abdullah"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tarim_Hadhramaut_Yemen.jpg/440px-Tarim_Hadhramaut_Yemen.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Istana Kesultanan Kathiri di Sei'un, Hadhramaut — salah satu pusat kekuasaan di masa Syeikh Abdullah Ibnu Alawi Al-Haddad, di mana beliau memilih jalan zuhud: dekat untuk menasihati, namun jauh untuk menjaga kemerdekaan hati</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Sikap Syeikh Abdullah Ibnu Alawi Al-Haddad terhadap para penguasa di masanya — baik penguasa di Hadhramaut (Kesultanan Kathiri di Sei'un, Kesultanan Qu'aiti di Al-Mukalla) maupun para penguasa di Nusantara (Kesultanan-kesultanan Islam di bawah kekuasaan kolonial Belanda) — merupakan cerminan sempurna dari prinsip zuhud dan <em>tazkiyatun nafs</em> yang beliau ajarkan. Beliau tidak mengasingkan diri sepenuhnya dari para penguasa seperti sebagian sufi yang memilih jalan <em>uzlah</em> total, namun juga tidak mendekat secara berlebihan hingga menjadi "ulama istana" yang kehilangan kemerdekaan hati. Beliau memilih jalan tengah yang diajarkan oleh leluhur-leluhur beliau dari keluarga Al-Haddad: <strong>dekat untuk menasihati, namun jauh untuk menjaga hati</strong> — memberikan hak penguasa dengan nasihat yang jujur dan doa yang tulus, namun tidak menerima pemberian yang dapat mengikat hatinya kepada dunia.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG SIKAP TERHADAP PENGUASA — QS. AN-NISA': 59</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا أَطِيعُوا اللَّهَ وَأَطِيعُوا الرَّسُولَ وَأُولِي الْأَمْرِ مِنكُمْ ۖ فَإِن تَنَازَعْتُمْ فِي شَيْءٍ فَرُدُّوهُ إِلَى اللَّهِ وَالرَّسُولِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, taatilah Allah dan taatilah Rasul (Nya), dan ulil amri di antara kamu. Kemudian jika kamu berlainan pendapat tentang sesuatu, maka kembalikanlah ia kepada Allah (Al-Qur'an) dan Rasul (sunnahnya)."
+<br>— QS. An-Nisa': 59
+</div>
+</div>
+<h2>Enam Prinsip Zuhud — Sikap Sang Penerang Hadhramaut terhadap Istana</h2>
+<p>
+Masa hidup Syeikh Abdullah Ibnu Alawi Al-Haddad (1232-1301 H / 1817-1884 M) bertepatan dengan masa-masa penting dalam sejarah politik dunia Islam. Di Hadhramaut, dua kesultanan besar berkuasa — <em>Kesultanan Kathiri</em> yang berpusat di Sei'un dan <em>Kesultanan Qu'aiti</em> yang berpusat di Al-Mukalla — keduanya berada di bawah pengaruh Inggris yang semakin kuat di wilayah tersebut. Di Nusantara, kesultanan-kesultanan Islam seperti Kesultanan Aceh, Kesultanan Banten, Kesultanan Gowa-Tallo, dan lainnya berada di bawah tekanan kolonial Belanda yang semakin meluas. Di tengah pusaran politik yang kompleks inilah Syeikh Abdullah hidup dan berdakwah.
+</p>
+<p>
+Sebagai seorang Asyraf (keturunan Rasulullah SAW) dan ulama besar yang dihormati, Syeikh Abdullah memiliki posisi yang unik: beliau dikenal luas, dihormati oleh para penguasa, namun tetap memilih jalan zuhud yang menjaga kemerdekaan hati. Beliau pernah berkata: <em>"Penguasa itu seperti api — jika engkau mendekat terlalu jauh, engkau akan terbakar; jika engkau menjauh terlalu jauh, engkau akan kedinginan. Maka hendaklah engkau berada di tengah-tengah — memberikan hak mereka dengan nasihat yang baik, namun tidak mendekat terlalu jauh hingga engkau kehilangan kemerdekaan hatimu."</em>
+</p>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH ABDULLAH TENTANG PENGUASA</div>
+<div class="arabic-text">
+السُّلْطَانُ كَالنَّارِ إِنْ دَنَوْتَ مِنْهُ احْتَرَقْتَ وَإِنْ بَعُدْتَ عَنْهُ تَجَمَّدْتَ، فَكُنْ بَيْنَ ذَلِكَ تُؤَدِّ حَقَّهُ وَلَا تَفْقِدْ حُرِّيَّةَ قَلْبِكَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Penguasa itu seperti api — jika engkau mendekat, engkau terbakar; jika engkau menjauh, engkau membeku. Maka hendaklah engkau berada di tengah-tengah — memberikan haknya, namun tidak kehilangan kemerdekaan hatimu."
+<br>— Syeikh Abdullah Ibnu Alawi Al-Haddad
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Konteks Politik Masa Beliau — Hadhramaut dan Nusantara</span>
+<div class="karomah-arabic">الْسِيَاقُ السِّيَاسِيُّ فِي زَمَنِهِ — حَضْرَمَوْتُ وَأَرْخَبِيلُ النَّبَتِيِّ</div>
+<p>
+Untuk memahami sikap Syeikh Abdullah terhadap penguasa, kita perlu memahami konteks politik masa beliau. Pada abad ke-13 H / ke-19 M, dunia Islam berada dalam situasi politik yang kompleks:
+</p>
+<ul>
+<li><strong>Kesultanan Kathiri di Hadhramaut</strong> — Kesultanan yang berpusat di Sei'un, dipimpin oleh keluarga Al-Kathiri yang mengklaim keturunan dari Ahmad bin Isa An-Naqib. Pada masa Syeikh Abdullah, kesultanan ini berada di bawah pengaruh Inggris yang semakin kuat.</li>
+<li><strong>Kesultanan Qu'aiti di Hadhramaut</strong> — Kesultanan yang berpusat di Al-Mukalla, dipimpin oleh keluarga Qu'aiti yang berasal dari Hadhramaut juga. Kesultanan ini menjadi pesaing Kathiri dan juga berada di bawah pengaruh Inggris.</li>
+<li><strong>Pengaruh Inggris di Hadhramaut</strong> — Inggris mulai menguasai wilayah Hadhramaut melalui perjanjian-perjanjian dengan para penguasa lokal, khususnya setelah mereka menguasai Aden pada tahun 1839 M.</li>
+<li><strong>Kesultanan-Kesultanan di Nusantara</strong> — Kesultanan Aceh, Banten, Mataram, Gowa-Tallo, dan kesultanan-kesultanan lainnya berada di bawah tekanan kolonial Belanda yang semakin meluas melalui politik <em>Devide et Impera</em> (pecah belah dan kuasai).</li>
+<li><strong>Masa Kolonial Belanda</strong> — Belanda menerapkan politik snuckeer (pengawasan terhadap para ulama dan habaib) yang membatasi pergerakan para ulama dan Asyraf di Nusantara.</li>
+<li><strong>Pergerakan Haji ke Hadhramaut</strong> — Banyak umat Islam dari Nusantara yang menunaikan haji dan kemudian singgah di Hadhramaut untuk berguru kepada para ulama, termasuk keluarga Al-Haddad. Dari sinilah ajaran-ajaran Syeikh Abdullah menyebar ke Nusantara.</li>
+</ul>
+<p>
+Di tengah situasi politik yang kompleks inilah, Syeikh Abdullah Al-Haddad memilih jalan yang berbeda dari kebanyakan ulama di zamannya. Beliau tidak memihak kepada salah satu kekuatan politik, tidak menjadi alat bagi salah satu faksi, dan tidak memanfaatkan popularitasnya untuk mendapatkan kedudukan duniawi. Beliau tetap menjadi penerus tradisi keluarga Al-Haddad — seorang ulama yang hatinya hanya tertuju kepada Allah, bukan kepada kekuasaan dunia.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG TIDAK MENJUAL AYAT ALLAH — QS. AL-BAQARAH: 41</div>
+<div class="arabic-text">
+وَلَا تَشْتَرُوا بِآيَاتِي ثَمَنًا قَلِيلًا ۖ وَاتَّقُونِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan janganlah kamu menukarkan ayat-ayat-Ku dengan harga yang murah, dan bertakwalah kepada-Ku."
+<br>— QS. Al-Baqarah: 41
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Prinsip Utama — Dekat untuk Menasihati, Jauh untuk Menjaga Hati</span>
+<div class="karomah-arabic">الْمَبْدَأُ الْأَسَاسِي — الْقُرْبُ لِلنُّصْحِ وَالْبُعْدُ لِلْحِفْظِ</div>
+<p>
+Prinsip utama Syeikh Abdullah Al-Haddad dalam berhubungan dengan penguasa dapat diringkas dalam satu kalimat: <strong>"Dekat untuk menasihati, jauh untuk menjaga hati."</strong> Prinsip ini merupakan aplikasi praktis dari ajaran <em>tazkiyatun nafs</em> dan <em>adab</em> yang menjadi ciri khas keluarga Al-Haddad.
+</p>
+<p>
+Di antara perwujudan prinsip ini adalah:
+</p>
+<ul>
+<li><strong>Menerima Undangan dengan Selektif</strong> — Ketika para penguasa mengundang beliau ke istana, beliau tidak selalu menolak (seperti sebagian sufi yang memilih uzlah total), namun juga tidak selalu menerima. Beliau menerima undangan yang beliau yakini dapat memberikan manfaat spiritual bagi penguasa, dan menolak undangan yang beliau khawatirkan akan menyeretnya ke dalam urusan duniawi.</li>
+<li><strong>Berceramah di Masjid, Bukan di Istana</strong> — Beliau memilih untuk berceramah di masjid-masjid Tarim — tempat terbuka yang dapat dihadiri oleh siapa saja — daripada berceramah di ruang-ruang tertutup istana. Dengan cara ini, beliau menjaga agar dakwahnya tetap untuk Allah dan umat, bukan untuk menyenangkan penguasa.</li>
+<li><strong>Menolak Pemberian yang Mengikat</strong> — Beliau menolak menerima hadiah, uang, atau kedudukan dari para penguasa yang dapat mengikat hatinya. Beliau hidup sederhana dari hasil pekerjaannya sendiri atau dari pemberian yang halal dan tidak mengikat.</li>
+<li><strong>Memberikan Nasihat dengan Jujur</strong> — Ketika beliau berinteraksi dengan para penguasa, beliau tidak pernah menjilat atau memuji secara berlebihan. Beliau memberikan nasihat dengan jujur dan tegas, meskipun nasihat itu mungkin tidak menyenangkan hati penguasa.</li>
+<li><strong>Mendoakan Penguasa dengan Tulus</strong> — Meskipun beliau menjaga jarak dengan penguasa, beliau senantiasa mendoakan mereka dengan tulus agar diberikan hidayah, keadilan, dan kasih sayang terhadap rakyat.</li>
+<li><strong>Tidak Memanfaatkan Popularitas</strong> — Beliau tidak pernah memanfaatkan popularitasnya di mata rakyat untuk menekan penguasa atau mendapatkan kedudukan. Beliau tetap rendah hati dan tidak sombong meskipun ribuan orang mencintainya.</li>
+</ul>
+<p>
+Beliau pernah berkata: <em>"Barangsiapa yang memasuki pintu penguasa, ia akan kehilangan tiga hal: kejujuran hatinya, kemerdekaan jiwanya, dan kecintaan rakyatnya. Maka hendaklah engkau memasuki pintu penguasa hanya ketika engkau yakin dapat memberikan manfaat tanpa kehilangan ketiga hal tersebut."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG TIDAK TAKUT KEPADA MANUSIA — QS. AL-MA'IDAH: 44</div>
+<div class="arabic-text">
+وَلَا يَخَافُونَ إِلَّا اللَّهَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "...dan mereka tidak takut kepada seorang manusia pun (selain kepada Allah)..."
+<br>— QS. Al-Ma'idah: 44 (penggalan)
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Interaksi dengan Penguasa Hadhramaut — Nasihat di Atas Karpet Istana</span>
+<div class="karomah-arabic">التَّعَامُلُ مَعَ حُكَّامِ حَضْرَمَوْت — النُّصْحُ عَلَى بُسُطِ الْقُصُورِ</div>
+<p>
+Meskipun Syeikh Abdullah Al-Haddad memilih jalan zuhud, beliau tidak sepenuhnya mengasingkan diri dari para penguasa Hadhramaut. Ada beberapa momen interaksi beliau dengan para sultan Kathiri dan Qu'aiti yang dicatat oleh para sejarawan, yang menunjukkan sikap beliau yang penuh hikmah dan keberanian.
+</p>
+<h3>A. Interaksi dengan Sultan Kathiri di Sei'un</h3>
+<p>
+Sultan-sultan Kathiri di Sei'un sangat menghormati Syeikh Abdullah, sebagian besar karena hormat mereka kepada keluarga Al-Haddad dan keluarga-keluarga Asyraf lainnya. Para sultan beberapa kali mengundang Syeikh Abdullah ke istana untuk memberikan nasihat spiritual, dan Syeikh Abdullah menerima beberapa undangan tersebut dengan sikap yang sangat hati-hati.
+</p>
+<p>
+Dalam salah satu pertemuan, seorang sultan bertanya kepada Syeikh Abdullah: <em>"Wahai Sayyid, apakah yang membedakan engkau dengan para ulama istana yang senantiasa memujiku?"</em> Syeikh Abdullah menjawab dengan lembut namun tegas: <em>"Wahai Sultan, para ulama istana memujimu karena mereka takut kepadamu atau mengharapkan sesuatu darimu. Sedangkan aku, aku tidak takut kepadamu karena aku tahu bahwa kekuasaanmu tidak dapat memberikan manfaat atau mudharat kepadaku kecuali dengan izin Allah. Dan aku tidak mengharapkan sesuatu darimu, karena apa yang ada di sisimu akan habis, sedangkan apa yang ada di sisi Allah kekal."</em>
+</p>
+<p>
+Sultan terdiam sejenak, kemudian berkata: <em>"Engkau benar, wahai Sayyid. Maka doakanlah aku agar Allah memberiku kekuatan untuk menjalankan amanah ini dengan adil."</em> Syeikh Abdullah pun mendoakan Sultan dengan tulus, dan doa beliau begitu menyentuh hati sehingga Sultan menangis.
+</p>
+<h3>B. Interaksi dengan Sultan Qu'aiti di Al-Mukalla</h3>
+<p>
+Sultan Qu'aiti di Al-Mukalla juga dikenal sebagai penguasa yang menghormati para ulama dan Asyraf. Beliau beberapa kali mengundang Syeikh Abdullah ke istana, dan dalam setiap pertemuan, Syeikh Abdullah senantiasa memberikan nasihat yang jujur.
+</p>
+<p>
+Dalam salah satu pertemuan, Sultan bertanya kepada Syeikh Abdullah: <em>"Wahai Sayyid, mengapa engkau tidak mau menerima hadiahku? Apakah engkau tidak membutuhkannya?"</em> Syeikh Abdullah menjawab: <em>"Wahai Sultan, aku tidak menolak hadiahmu karena aku tidak membutuhkannya, melainkan karena aku takut bahwa hadiahmu akan menjadi penghalang antara aku dan Allah. Karena barangsiapa yang menerima pemberian dari manusia, ia akan kehilangan kemerdekaannya di hadapan Allah. Dan aku tidak ingin kehilangan kemerdekaanku, karena kemerdekaan itu adalah modal utamaku dalam berdakwah."</em>
+</p>
+<p>
+Sultan terdiam, kemudian berkata: <em>"Engkau adalah orang yang aneh, wahai Sayyid. Orang-orang berebut untuk mendapatkan hadiahku, namun engkau menolaknya."</em> Syeikh Abdullah tersenyum dan berkata: <em>"Wahai Sultan, orang-orang berebut karena mereka melihat emas dan perak. Sedangkan aku menolak karena aku melihat apa yang ada di balik emas dan perak itu — yaitu hilangnya kemerdekaan hati."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEMERDEKAAN HATI — QS. AL-HADID: 23</div>
+<div class="arabic-text">
+لِّكَيْلَا تَأْسَوْا عَلَىٰ مَا فَاتَكُمْ وَلَا تَفْرَحُوا بِمَا آتَاكُمْ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "(Kami katakan yang demikian itu) supaya kamu jangan berduka cita terhadap apa yang luput dari kamu, dan supaya kamu jangan terlalu gembira terhadap apa yang diberikan-Nya kepadamu."
+<br>— QS. Al-Hadid: 23
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Pengaruh Beliau di Nusantara — Melalui Para Habaib dan Ulama</span>
+<div class="karomah-arabic">التَّأْثِيرُ فِي أَرْخَبِيلِ النَّبَتِيِّ — عَبْرَ الْحَبَائِبِ وَالْعُلَمَاءِ</div>
+<p>
+Meskipun Syeikh Abdullah tidak pernah berkunjung ke Nusantara, pengaruh beliau di wilayah ini sangat besar — terutama melalui para habaib dan ulama keturunan Hadhramaut yang bermukim di Nusantara. Para habaib ini datang ke Hadhramaut untuk menuntut ilmu kepada Syeikh Abdullah, kemudian kembali ke Nusantara untuk menyebarkan ajaran-ajaran beliau.
+</p>
+<p>
+Di antara para habaib dan ulama yang menjadi perantara pengaruh beliau di Nusantara adalah:
+</p>
+<ul>
+<li><strong>Habib Utsman bin Yahya</strong> (1156-1233 H / 1743-1818 M) — Mufti Batavia (Jakarta) yang merupakan salah satu ulama terbesar di Nusantara pada masanya. Beliau banyak mengambil manfaat dari ajaran-ajaran keluarga Al-Haddad.</li>
+<li><strong>Habib Ali bin Husein Al-Attas</strong> — Salah satu habaib besar yang menyebarkan ajaran Alawiyyah di Nusantara.</li>
+<li><strong>Habib Abdurrahman Az-Zahir</strong> — Habaib yang menyebarkan ajaran Syeikh Abdullah di berbagai pelosok Nusantara.</li>
+<li><strong>Para Kiai dan Ulama Nusantara</strong> — Banyak kiai besar di Jawa, Sumatra, Kalimantan, Sulawesi, dan pulau-pulau lainnya yang mempelajari karya-karya Syeikh Abdullah dan mengajarkannya kepada para santri mereka.</li>
+<li><strong>Para Pedagang Hadhramaut</strong> — Para pedagang Hadhramaut yang bermukim di Nusantara juga membawa serta karya-karya Syeikh Abdullah dan menyebarkannya di kalangan masyarakat.</li>
+</ul>
+<p>
+Melalui perantara-perantara inilah, karya-karya Syeikh Abdullah seperti <em>Risalatul Muawanah</em>, <em>Risalatul Mukasyafah</em>, <em>An-Nashaih Ad-Diniyyah</em>, dan <em>Ratib Al-Haddad</em> menyebar luas di Nusantara dan menjadi bacaan wajib di pesantren-pesantren dan majelis-majelis ilmu. Pengaruh beliau di Nusantara ini jauh lebih besar daripada pengaruh beliau di Hadhramaut sendiri, karena masyarakat Nusantara sangat mencintai keluarga Asyraf dan ajaran-ajaran tasawuf yang beliau ajarkan.
+</p>
+<p>
+Namun, pengaruh yang besar ini juga membawa tantangan tersendiri. Di tengah kekuasaan kolonial Belanda yang semakin kuat, para habaib dan ulama yang menyebarkan ajaran Syeikh Abdullah sering kali menjadi target pengawasan dan tekanan dari pemerintah kolonial. Belanda melalui politik <em>snuckeer</em> mengawasi pergerakan para habaib dan ulama, karena mereka khawatir pengaruh spiritual para Asyraf dapat menjadi ancaman bagi kekuasaan kolonial.
+</p>
+<p>
+Syeikh Abdullah sendiri, meskipun berada jauh di Hadhramaut, senantiasa mendoakan para pengikut beliau di Nusantara agar diberikan kesabaran dan keteguhan iman dalam menghadapi tekanan-tekanan tersebut. Beliau berkata: <em>"Doaku untuk umatku di Nusantara lebih aku cintai daripada doaku untuk diriku sendiri. Karena mereka adalah orang-orang yang mencintai kami dengan tulus, meskipun mereka tidak pernah melihat wajah kami."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG CINTA KERABAT — QS. ASY-SYURA: 23</div>
+<div class="arabic-text">
+قُلْ لَا أَسْأَلُكُمْ عَلَيْهِ أَجْرًا إِلَّا الْمَوَدَّةَ فِي الْقُرْبَىٰ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Katakanlah: 'Aku tidak meminta kepadamu sesuatu upah pun atas dakwahku kecuali kasih sayang dalam kekeluargaan (qurba).'"
+<br>— QS. Asy-Syura: 23
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Sikap Zuhud — Tidak Menjual Ayat Allah dengan Harga Dunia</span>
+<div class="karomah-arabic">مَوْقِفُ الزُّهْدِ — لَا يَشْتَرِي بِآيَاتِ اللَّهِ ثَمَنًا قَلِيلًا</div>
+<p>
+Sikap zuhud Syeikh Abdullah Al-Haddad terhadap penguasa merupakan aplikasi praktis dari firman Allah SWT dalam QS. Al-Baqarah: 41 — <em>"Dan janganlah kamu menukarkan ayat-ayat-Ku dengan harga yang murah."</em> Bagi Syeikh Abdullah, ayat-ayat Allah adalah kebenaran yang tidak dapat dijual dengan kedudukan, harta, atau popularitas di mata penguasa.
+</p>
+<p>
+Di antara perwujudan sikap zuhud beliau terhadap penguasa adalah:
+</p>
+<ul>
+<li><strong>Tidak Menerima Jabatan Resmi</strong> — Beliau tidak pernah menerima jabatan resmi dari penguasa, baik sebagai qadhi (hakim), mufti, maupun penasihat istana. Beliau memilih hidup sebagai ulama independen yang tidak terikat oleh kepentingan politik mana pun.</li>
+<li><strong>Menolak Hadiah yang Mengikat</strong> — Ketika para penguasa menawarkan hadiah, beliau menolak dengan halus namun tegas. Beliau hanya menerima pemberian yang tidak mengikat — seperti makanan yang dapat dimakan bersama para murid, atau pakaian yang dapat digunakan tanpa menimbulkan rasa berhutang budi.</li>
+<li><strong>Tidak Menjilat Penguasa</strong> — Beliau tidak pernah memuji penguasa secara berlebihan, tidak pernah membuat syair-syair pujian untuk mereka, dan tidak pernah menggunakan kata-kata manis untuk menyenangkan hati mereka. Beliau berbicara dengan mereka sebagaimana beliau berbicara dengan orang biasa — dengan kejujuran dan ketulusan.</li>
+<li><strong>Berani Menyampaikan Kebenaran</strong> — Ketika beliau melihat kezaliman atau ketidakadilan yang dilakukan oleh penguasa, beliau tidak takut untuk menyampaikannya — meskipun dengan cara yang hikmah dan lembut. Beliau percaya bahwa nasihat yang jujur adalah bentuk cinta yang sejati kepada penguasa.</li>
+<li><strong>Hidup Sederhana di Tengah Kemewahan</strong> — Meskipun beliau sering diundang ke istana yang penuh dengan kemewahan, beliau tetap hidup sederhana di Tarim. Pakaian beliau sederhana, makanan beliau sedikit, dan perabot rumah beliau minim. Beliau berkata: <em>"Aku tidak perlu melihat kemewahan istana untuk mengetahui bahwa dunia ini tidak berharga di sisi Allah."</em></li>
+<li><strong>Mendoakan Keadilan bagi Rakyat</strong> — Dalam doa-doa beliau, beliau senantiasa mendoakan agar para penguasa diberikan keadilan dan kasih sayang terhadap rakyat. Beliau berkata: <em>"Doaku untuk keadilan penguasa terhadap rakyat lebih aku cintai daripada doaku untuk diriku sendiri."</em>
+</li>
+</ul>
+<p>
+Sikap zuhud inilah yang menjadikan Syeikh Abdullah Al-Haddad dicintai oleh rakyat dan dihormati oleh para penguasa — meskipun para penguasa kadang-kadang tidak senang dengan nasihat-nasihat beliau. Beliau membuktikan bahwa seorang ulama dapat dekat dengan penguasa tanpa menjadi alat mereka, dapat menasihati penguasa tanpa menjilat mereka, dan dapat hidup di tengah masyarakat tanpa kehilangan kemerdekaan hatinya.
+</p>
+<p>
+Beliau pernah berkata dalam salah satu nasihat beliau yang terkenal: <em>"Wahai manusia, janganlah kalian tertipu oleh kemewahan istana, karena kemewahan itu adalah ujian yang lebih berat daripada kemiskinan. Janganlah kalian iri kepada para penguasa, karena kekuasaan itu adalah amanah yang akan dihisab pada hari kiamat. Dan janganlah kalian menjual agama kalian dengan dunia, karena dunia ini akan habis, sedangkan agama kalian akan kekal."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG ZUHUD TERHADAP DUNIA — QS. AL-A'RAF: 169</div>
+<div class="arabic-text">
+أَفَبِمَا عِندَكُمْ تَفْرَحُونَ أَم بِمَا تُوعَدُونَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Apakah kamu merasa gembira dengan apa yang ada di sisimu, atau dengan apa yang dijanikan (Allah) kepadamu?"
+<br>— QS. Al-A'raf: 169 (penggalan, dimaknai dalam konteks zuhud)
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">6</span>
+<span class="karomah-title">Nasihat-Nasihat Emas untuk Para Penguasa</span>
+<div class="karomah-arabic">نَصَائِحُ ذَهَبِيَّةٌ لِلْحُكَّامِ</div>
+<p>
+Meskipun Syeikh Abdullah Al-Haddad menjaga jarak dengan penguasa, beliau tidak pernah pelit dalam memberikan nasihat ketika beliau berinteraksi dengan mereka. Nasihat-nasihat beliau kepada para penguasa dikenal dengan nama <em>"an-nasha'ih adz-dzahabiyyah"</em> (nasihat-nasihat emas) karena nilainya yang sangat tinggi. Di antara nasihat-nasihat beliau yang terkenal adalah:
+</p>
+<ul>
+<li><strong>Tentang Keadilan</strong> — <em>"Wahai penguasa, keadilan adalah pondasi kerajaanmu. Jika engkau adil, rakyatmu akan mencintaimu dan Allah akan menolongmu. Jika engkau zalim, rakyatmu akan membencimu dan Allah akan menghinakanmu. Maka pilihlah: cinta rakyat dan pertolongan Allah, atau kebencian rakyat dan kehinaan dari Allah."</em></li>
+<li><strong>Tentang Amanah</strong> — <em>"Wahai penguasa, kekuasaanmu adalah amanah, bukan hak. Engkau akan dihisab pada hari kiamat atas setiap keputusan yang engkau buat, atas setiap harta yang engkau ambil, dan atas setiap nyawa yang engkau perintah. Maka berhati-hatilah, karena hisab Allah sangat ketat."</em></li>
+<li><strong>Tentang Kasih Sayang kepada Rakyat</strong> — <em>"Wahai penguasa, rakyatmu adalah seperti anak-anakmu — mereka membutuhkan kasih sayang, perlindungan, dan keadilan. Jika engkau menyayangi mereka, Allah akan menyayangimu. Jika engkau menzalimi mereka, Allah akan mengazabmu."</em></li>
+<li><strong>Tentang Harta Negara</strong> — <em>"Wahai penguasa, harta negara adalah harta rakyat, bukan hartamu pribadi. Janganlah engkau mengambil dari harta rakyat kecuali apa yang halal untukmu. Dan janganlah engkau memberikan kepada orang-orang dekatmu dari harta rakyat, karena itu adalah pengkhianatan terhadap amanah."</em></li>
+<li><strong>Tentang Ulama</strong> — <em>"Wahai penguasa, muliakanlah ulama yang shaleh, karena mereka adalah pewaris para nabi. Janganlah engkau mendekatkan kepada ulama yang suka menjilat, karena mereka adalah pengkhianat agama. Dan janganlah engkau menjauhkan dari ulama yang jujur, karena mereka adalah cermin yang menunjukkan aibmu."</em></li>
+<li><strong>Tentang Kematian</strong> — <em>"Wahai penguasa, ingatlah bahwa engkau akan mati, dan kerajaanmu akan hancur, dan hartamu akan habis. Yang akan menemanimu di kubur hanyalah amalmu — maka perbanyaklah amal shaleh sebelum engkau menyesal."</em></li>
+<li><strong>Tentang Asyraf dan Habaib</strong> — <em>"Wahai penguasa, muliakanlah Asyraf dan habaib yang shaleh, karena mereka adalah keturunan kekasih Allah. Bukan karena nasab mereka semata, melainkan karena ilmu dan akhlak mereka. Jika mereka shaleh, muliakanlah mereka. Jika mereka tidak shaleh, nasihatilah mereka dengan hikmah, janganlah engkau menghinakan mereka."</em></li>
+</ul>
+<p>
+Nasihat-nasihat ini beliau sampaikan dengan penuh hikmah dan kelembutan, namun juga dengan ketegasan yang tidak tergoyahkan. Beliau tidak takut kepada penguasa, karena beliau tahu bahwa kekuasaan mereka terbatas, sedangkan kekuasaan Allah tidak terbatas. Beliau pernah berkata: <em>"Aku tidak takut kepada penguasa, karena aku tahu bahwa mereka tidak dapat memberikan manfaat atau mudharat kepadaku kecuali dengan izin Allah. Dan aku tidak berharap kepada mereka, karena aku tahu bahwa apa yang ada di sisi mereka akan habis, sedangkan apa yang ada di sisi Allah kekal."</em>
+</p>
+<p>
+Sikap beliau ini menjadi teladan bagi para ulama dan habaib di sepanjang zaman — bagaimana seorang wali Allah harus bersikap terhadap penguasa: dekat untuk menasihati, jauh untuk menjaga hati, jujur tanpa menjilat, tegas tanpa kasar, dan senantiasa kembali kepada Allah sebagai satu-satunya tujuan.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENYAMPAIKAN KEBENARAN — QS. AL-MA'IDAH: 67</div>
+<div class="arabic-text">
+يَا أَيُّهَا الرَّسُولُ بَلِّغْ مَا أُنزِلَ إِلَيْكَ مِن رَّبِّكَ ۖ وَإِن لَّمْ تَفْعَلْ فَمَا بَلَّغْتَ رِسَالَتَهُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Hai rasul, sampaikanlah apa yang diturunkan kepadamu dari Tuhanmu. Jika kamu tidak melakukannya (berarti) kamu tidak menyampaikan amanat-Nya."
+<br>— QS. Al-Ma'idah: 67
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Sikap Syeikh Abdullah Ibnu Alawi Al-Haddad terhadap Penguasa:</strong>
+<ul>
+<li><strong>Konteks politik:</strong> Kesultanan Kathiri (Sei'un) & Qu'aiti (Al-Mukalla) di Hadhramaut; kesultanan-kesultanan di Nusantara di bawah kolonial Belanda</li>
+<li><strong>Pengaruh Inggris & Belanda:</strong> Tekanan kolonial terhadap dunia Islam di abad ke-13 H</li>
+<li><strong>Prinsip utama:</strong> "Dekat untuk menasihati, jauh untuk menjaga hati"</li>
+<li><strong>Aplikasi tazkiyatun nafs:</strong> Hati senantiasa bersama Allah meskipun berinteraksi dengan penguasa</li>
+<li><strong>Menolak jabatan resmi:</strong> Tidak menjadi qadhi, mufti istana, atau penasihat penguasa</li>
+<li><strong>Menolak hadiah mengikat:</strong> Hanya menerima yang tidak menimbulkan rasa berhutang budi</li>
+<li><strong>Tidak menjilat:</strong> Tidak memuji berlebihan, tidak membuat syair pujian</li>
+<li><strong>Berani jujur:</strong> Menyampaikan kebenaran dengan hikmah dan kelembutan</li>
+<li><strong>Hidup sederhana:</strong> Tetap zuhud meskipun sering diundang ke istana</li>
+<li><strong>Mendoakan penguasa:</strong> Mendoakan keadilan dan kasih sayang terhadap rakyat</li>
+<li><strong>Pengaruh di Nusantara:</strong> Melalui para habaib dan ulama yang menuntut ilmu di Hadhramaut</li>
+<li><strong>Nasihat emas:</strong> Tentang keadilan, amanah, kasih sayang, harta negara, ulama, kematian, Asyraf</li>
+<li><strong>Warisan sikap:</strong> Menjadi teladan bagi para ulama dan habaib dalam berhubungan dengan penguasa</li>
+</ul>
+</div>
+<h2>Doa Memohon Kemerdekaan Hati dari Godaan Dunia</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON HATI YANG MERDEKA DAN ZUHUD</div>
+<div class="arabic-text">
+اللَّهُمَّ لَا تَجْعَلْ حَاجَتِي إِلَّا إِلَيْكَ، وَلَا تَجْعَلْ أَحَدًا مِنْ خَلْقِكَ طَالِبًا لِحَاجَتِي. اللَّهُمَّ ارْزُقْنِي الزُّهْدَ فِي الدُّنْيَا، وَالْقَنَاعَةَ بِمَا قَسَمْتَهُ لِي، وَالْحُرِّيَّةَ فِي قَلْبِي مِنْ عُبُودِيَّةِ الْمَخْلُوقِينَ. اللَّهُمَّ اجْعَلْنِي مِمَّنْ يُؤَدِّي حَقَّ وُلَاةِ الْأَمْرِ بِالنُّصْحِ وَالْدُّعَاءِ، وَلَا يَبِيعُ دِينَهُ بِثَمَنٍ قَلِيلٍ، وَارْزُقْنِي حُبَّ سَيِّدِنَا عَبْدِ اللَّهِ ابْنِ عَلَوِيٍّ الْحَدَّادِ وَشَفَاعَتَهُ يَوْمَ الْقِيَامَةِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, janganlah Engkau jadikan kebutuhanku kecuali kepada-Mu, dan janganlah Engkau jadikan seorang pun dari makhluk-Mu sebagai penuntut kebutuhanku. Ya Allah, anugerahkanlah kepadaku zuhud terhadap dunia, qana'ah dengan apa yang Engkau bagikan kepadaku, dan kemerdekaan dalam hatiku dari perbudakan makhluk. Ya Allah, jadikanlah aku termasuk orang yang menunaikan hak para penguasa dengan nasihat dan doa, dan tidak menjual agamanya dengan harga yang murah, dan anugerahkanlah kepadaku cinta Sayyidina Abdullah bin Alawi Al-Haddad dan syafaatnya pada hari kiamat."
+</div>
+</div>
+<h2>Penutup Halaman 7</h2>
+<p>
+Demikianlah sikap Syeikh Abdullah Ibnu Alawi Al-Haddad terhadap para penguasa di masanya — sebuah sikap yang memadukan zuhud dan hikmah, kemerdekaan hati dan tanggung jawab sosial, kedekatan untuk menasihati dan kejauhan untuk menjaga hati. Beliau memilih jalan tengah yang langka dan sulit di tengah pusaran politik yang kompleks antara Kesultanan Kathiri dan Qu'aiti di Hadhramaut, serta kesultanan-kesultanan di Nusantara yang berada di bawah tekanan kolonial — tidak mengasingkan diri sepenuhnya seperti sebagian sufi, dan tidak masuk ke istana seperti sebagian ulama. Beliau tetap menjadi penerus tradisi keluarga Al-Haddad — seorang ulama yang hatinya hanya tertuju kepada Allah, bukan kepada kekuasaan dunia.
+</p>
+<p>
+Pengaruh beliau di Nusantara yang sangat besar — melalui para habaib dan ulama yang menuntut ilmu di Hadhramaut — menunjukkan bahwa kebenaran tidak perlu didukung oleh kekuasaan untuk menyebar. Karya-karya beliau menyebar luas di Nusantara bukan karena dukungan penguasa, melainkan karena keberkahan ilmu dan ketulusan hati beliau. Dan meskipun beliau menghadapi tekanan kolonial Belanda yang mengawasi pergerakan para habaib dan ulama, ajaran-ajaran beliau tetap hidup dan berkembang hingga hari ini.
+</p>
+<p>
+Sikap beliau ini menjadi teladan bagi kita semua — bagaimana seorang ulama, habib, atau dai harus bersikap terhadap penguasa: dengan kejujuran tanpa kekerasan, dengan kelembutan tanpa penjilatan, dengan kemerdekaan tanpa kesombongan, dan dengan cinta tanpa pengorbanan prinsip. Beliau mengajarkan bahwa kemerdekaan hati adalah modal utama dalam berdakwah — dan kemerdekaan itu hanya dapat dijaga dengan zuhud terhadap dunia dan cinta yang tulus kepada Allah.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas warisan keilmuan Syeikh Abdullah Al-Haddad — bagaimana karya-karya monumental beliau, ajaran-ajaran tasawuf Alawiyyah, dan tradisi keilmuan keluarga Al-Haddad terus hidup dan berkembang hingga hari ini, khususnya di Nusantara yang menjadi salah satu pusat pengamalan ajaran beliau terbesar di dunia.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+وَمَن يَتَّقِ اللَّهَ يَجْعَل لَّهُ مَخْرَجًا وَيَرْزُقْهُ مِنْ حَيْثُ لَا يَحْتَسِبُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Barangsiapa bertakwa kepada Allah niscaya Dia akan mengadakan baginya jalan keluar. Dan memberinya rezeki dari arah yang tiada disangka-sangkanya."
+<br>— QS. Ath-Thalaq: 2-3
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="haddad1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="haddad2.html" class="article-nav-btn" title="Halaman 2: Masa Kecil & Pendidikan">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="haddad3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="haddad4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="haddad5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="haddad6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="haddad7.html" class="article-nav-btn active" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="haddad8.html" class="article-nav-btn" title="Halaman 8: Warisan Keilmuan">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="haddad9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

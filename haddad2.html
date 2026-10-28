@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Abdullah Ibnu Alawi Al-Haddad - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+@media (max-width: 768px) {
+.article-container { max-width: 100%; padding: 20px; }
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover { background: rgba(233, 69, 96, 0.15); transform: scale(1.05); }
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover { background: #e94560; color: #fff; border-color: #e94560; }
+.article-content { font-size: 1.05rem; line-height: 1.9; color: #444; }
+.article-content p { margin-bottom: 20px; text-align: justify; }
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 { font-size: 1.2rem; color: #333; margin: 25px 0 10px; }
+.article-content ul { margin: 15px 0 20px 30px; }
+.article-content ul li { margin-bottom: 10px; line-height: 1.7; }
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title { font-size: 1.3rem; color: #1a1a2e; font-weight: bold; display: inline; }
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul { margin: 15px 0 0 30px; }
+.highlight-box ul li { margin-bottom: 10px; line-height: 1.7; }
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label { text-align: center; color: #aaa; font-size: 0.75rem; margin-top: 6px; }
+.nav-group { display: flex; flex-direction: column; align-items: center; }
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+nav { flex-direction: column; gap: 10px; width: 100%; justify-content: center; }
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav { gap: 6px; padding: 15px; }
+.article-nav-btn { width: 36px; height: 36px; font-size: 1rem; }
+.nav-btn-label { font-size: 0.65rem; }
+}
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam { font-size: 1.3rem !important; letter-spacing: 3px !important; }
+header nav a { padding: 6px 10px !important; font-size: 0.8rem !important; }
+.article-nav-btn { width: 32px; height: 32px; font-size: 0.9rem; }
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Abdullah Ibnu Alawi Al-Haddad
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Abdullah Ibnu Alawi Al-Haddad</h1>
+<div class="subtitle">Halaman 2 dari 9 — Masa Kecil, Yatim di Usia Muda, dan Pendidikan Awal di Tarim</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Selasa, 27 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tarim_Hadhramaut_Yemen.jpg/440px-Tarim_Hadhramaut_Yemen.jpg"
+alt="Kota Tarim, Hadhramaut — tempat Syeikh Abdullah Ibnu Alawi Al-Haddad tumbuh"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Seiyun_Palace.jpg/440px-Seiyun_Palace.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Kota Tarim, Hadhramaut, Yaman — kota ilmu tempat Syeikh Abdullah Ibnu Alawi Al-Haddad tumbuh sebagai yatim, ditempa oleh didikan para ulama, dan dibesarkan dalam lingkungan ilmu serta takwa yang mendalam</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Masa kecil Syeikh Abdullah Ibnu Alawi Al-Haddad adalah masa yang penuh dengan ujian ketabahan sekaligus berkah tersembunyi. Beliau tumbuh di kota Tarim, Hadhramaut, dalam lingkungan keluarga Asyraf yang terkenal dengan keilmuan dan kewalian. Namun, ujian terbesar datang ketika beliau masih berusia sangat muda — beliau kehilangan ayahanda tercinta, <em>Alawi bin Muhammad Al-Haddad</em>, yang merupakan penulis <em>Ratib Al-Haddad</em> yang terkenal di seluruh dunia Islam. Sejak saat itu, beliau diasuh oleh para kerabat dan ulama shaleh di Tarim yang melanjutkan pendidikan beliau dengan penuh kasih sayang. Di kota ilmu Tarim inilah Abdullah kecil menghafal Al-Qur'an, mempelajari ilmu-ilmu dasar Islam, dan menunjukkan tanda-tanda kecerdasan serta kewalian yang luar biasa sejak usia dini — tanda-tanda yang kelak akan menjadikannya salah satu ulama terbesar di Hadhramaut dan seluruh dunia Islam.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG UJIAN DENGAN KETAKUTAN DAN KELAPARAN — QS. AL-BAQARAH: 155-156</div>
+<div class="arabic-text">
+وَلَنَبْلُوَنَّكُم بِشَيْءٍ مِّنَ الْخَوْفِ وَالْجُوعِ وَنَقْصٍ مِّنَ الْأَمْوَالِ وَالْأَنفُسِ وَالثَّمَرَاتِ ۗ وَبَشِّرِ الصَّابِرِينَ ۝ الَّذِينَ إِذَا أَصَابَتْهُم مُّصِيبَةٌ قَالُوا إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan sungguh akan Kami berikan cobaan kepadamu, dengan sedikit ketakutan, kelaparan, kekurangan harta, jiwa, dan buah-buahan. Dan berikanlah berita gembira kepada orang-orang yang sabar. (Yaitu) orang-orang yang apabila ditimpa musibah, mereka mengucapkan: 'Inna lillaahi wa innaa ilaihi raaji'uun'."
+<br>— QS. Al-Baqarah: 155-156
+</div>
+</div>
+<h2>Masa Kecil di Tarim — Tumbuh dalam Kesederhanaan dan Takwa</h2>
+<p>
+Syeikh Abdullah Ibnu Alawi Al-Haddad menghabiskan tahun-tahun awal kehidupannya di kota <em>Tarim</em>, salah satu kota terpenting di wilayah Hadhramaut, Yaman. Kota ini dikenal sebagai <em>madinah al-ilm</em> (kota ilmu) — pusat keilmuan Islam di Hadhramaut yang telah melahirkan ratusan ulama besar selama berabad-abad. Di kota inilah terdapat banyak sekali masjid, madrasah, ribath (tempat tinggal para sufi), dan perpustakaan yang menjadi pusat kegiatan keilmuan dan spiritual.
+</p>
+<p>
+Tarim pada abad ke-13 H merupakan kota yang penuh berkah, dikelilingi oleh kebun-kebun kurma, sungai-sungai kecil yang mengalir jernih, dan pegunungan yang indah. Kehidupan di kota ini sederhana namun penuh dengan nilai-nilai spiritual — kehidupan yang membentuk karakter Abdullah kecil menjadi pribadi yang zuhud, qana'ah (merasa cukup), dan senantiasa bersyukur kepada Allah atas segala nikmat-Nya.
+</p>
+<p>
+Abdullah kecil tumbuh di tengah keluarga Asyraf yang meskipun secara ekonomi sederhana, namun kaya akan nilai-nilai spiritual. Ayahnya, <em>Alawi bin Muhammad Al-Haddad</em>, adalah seorang ulama yang wara' dan ahli ibadah — penulis <em>Ratib Al-Haddad</em> yang hingga hari ini dibaca oleh jutaan umat Islam di seluruh dunia. Dari ayahnya inilah Abdullah kecil belajar bahwa kemuliaan seseorang bukanlah terletak pada harta atau kedudukan, melainkan pada ketakwaan dan kehalalan rezeki yang ia makan.
+</p>
+<p>
+Ibunda beliau juga memainkan peran yang sangat penting dalam pembentukan karakter Abdullah kecil. Beliau adalah wanita shalehah yang berasal dari keluarga Asyraf, yang senantiasa menjaga shalat lima waktu, rajin berpuasa sunnah, dan gemar membaca Al-Qur'an. Dari ibundanya inilah Abdullah kecil belajar kelembutan hati, kesabaran dalam menghadapi cobaan, dan kecintaan kepada ibadah. Kedua orang tuanya senantiasa menanamkan dalam hati putra mereka bahwa dunia ini hanyalah tempat persinggahan sementara, dan akhiratlah negeri yang kekal.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH ABDULLAH TENTANG MASA KECILNYA</div>
+<div class="arabic-text">
+تَرَبَّيْتُ فِي حِجْرِ وَالِدٍ وَرِعٍ وَأُمٍّ صَالِحَةٍ، فَعَلَّمَانِي أَنَّ الدُّنْيَا مَزْرَعَةُ الْآخِرَةِ، وَأَنَّ الْعِلْمَ نُورٌ لَا يُضِيءُ إِلَّا فِي قَلْبٍ طَاهِرٍ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Aku dibesarkan di pangkuan ayah yang wara' dan ibu yang shalehah, maka keduanya mengajariku bahwa dunia ini adalah ladang (tempat menanam) bagi akhirat, dan bahwa ilmu adalah cahaya yang tidak akan bersinar kecuali di dalam hati yang bersih."
+<br>— Syeikh Abdullah Ibnu Alawi Al-Haddad, mengenang masa kecilnya
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Kehilangan Ayah di Usia Dini — Ujian Pertama Sang Wali Kecil</span>
+<div class="karomah-arabic">فِقْدُ الْوَالِدِ فِي الصِّغَرِ — أَوَّلُ ابْتِلَاءٍ لِلْوَلِيِّ الصَّغِيرِ</div>
+<p>
+Ujian terbesar dalam masa kecil Syeikh Abdullah Ibnu Alawi Al-Haddad datang ketika beliau masih berusia sangat muda — ayahanda beliau, <em>Alawi bin Muhammad Al-Haddad</em> — penulis <em>Ratib Al-Haddad</em> yang terkenal — wafat meninggalkan beliau sebagai anak yatim. Peristiwa ini merupakan pukulan yang sangat berat bagi Abdullah kecil, terutama karena beliau masih membutuhkan bimbingan dan kasih sayang seorang ayah dalam menempuh perjalanan hidup.
+</p>
+<p>
+Namun, di balik musibah ini, Allah telah menyiapkan rencana yang lebih indah. Keluarga Al-Haddad adalah keluarga besar yang memiliki tradisi keilmuan yang sangat kuat. Setelah wafatnya ayah beliau, para kerabat dan ulama shaleh di Tarim — khususnya paman-paman beliau dan para murid ayahnya — mengambil tanggung jawab untuk mendidik dan membiayai Abdullah kecil. Mereka menggantikan peran ayah dengan penuh kasih sayang, dan menggunakan harta yang ditinggalkan oleh sang ayah untuk membiayai pendidikan beliau.
+</p>
+<p>
+Para ulama menceritakan bahwa para pengasuh Abdullah kecil bukanlah orang-orang biasa, melainkan ulama-ulama besar yang terkenal di Hadhramaut. Mereka mendidik Abdullah dengan pendidikan yang sangat ketat — tidak hanya dalam bidang ilmu zhahir (fikih, tauhid, hadits), tetapi juga dalam bidang ilmu batin (tasawuf, akhlak, suluk). Dari sinilah Abdullah kecil belajar makna <em>itsar</em> (mendahulukan orang lain) dan <em>tawakkal</em> (berserah diri kepada Allah) — dua akhlak yang kelak menjadi ciri khas beliau dalam perjalanan spiritualnya.
+</p>
+<p>
+Beliau pernah berkata mengenang masa ini: <em>"Allah mengambil ayahku dari sisiku, namun Dia memberikan kepadaku banyak ayah spiritual yang lebih mulia dari ayah kandung dalam banyak hal. Ayahku yang pertama memberiku kehidupan dunia dan warisan ilmu, sedangkan para ayah spiritualku memberiku kehidupan akhirat dan warisan spiritual."</em>
+</p>
+<p>
+Kehilangan ayah di usia muda ini justru menjadi titik balik dalam kehidupan beliau. Beliau menjadi lebih mandiri, lebih tekun dalam menuntut ilmu, dan lebih dekat kepada Allah. Beliau berkata: <em>"Kehilangan ayahku mengajarkan kepadaku bahwa Allah adalah sebaik-baik pelindung. Ketika manusia pergi, Allah tetap ada. Ketika dunia meninggalkanmu, akhirat menunggumu."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENYANTUNI ANAK YATIM — QS. AL-BAQARAH: 83</div>
+<div class="arabic-text">
+وَاعْبُدُوا اللَّهَ وَلَا تُشْرِكُوا بِهِ شَيْئًا ۖ وَبِالْوَالِدَيْنِ إِحْسَانًا وَبِذِي الْقُرْبَىٰ وَالْيَتَامَىٰ وَالْمَسَاكِينِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sembahlah Allah dan janganlah kamu mempersekutukan-Nya dengan sesuatupun. Dan berbuat baiklah kepada dua orang ibu-bapa, karib-kerabat, anak-anak yatim, orang-orang miskin..."
+<br>— QS. An-Nisa: 36
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Pendidikan Awal — Menghafal Al-Qur'an dan Ilmu-Ilmu Dasar</span>
+<div class="karomah-arabic">التَّعْلِيمُ الْأَوَّلِي — حِفْظُ الْقُرْآنِ وَعُلُومُ الْأَسَاسِ</div>
+<p>
+Pendidikan awal Syeikh Abdullah Ibnu Alawi Al-Haddad dimulai di kota Tarim, di bawah bimbingan para kerabat dan ulama shaleh. Seperti kebiasaan anak-anak Asyraf di zamannya, Abdullah kecil pertama-tama diajarkan membaca Al-Qur'an dan menghafalkannya. Beliau menunjukkan kecerdasan yang luar biasa dalam menghafal — pada usia yang masih sangat muda, beliau telah menyelesaikan hafalan Al-Qur'an 30 juz dengan tartil dan tajwid yang sempurna.
+</p>
+<p>
+Setelah menghafal Al-Qur'an, Abdullah kecil mulai mempelajari ilmu-ilmu dasar keislaman, di antaranya:
+</p>
+<ul>
+<li><strong>Ilmu Nahwu dan Sharaf</strong> — ilmu tata bahasa Arab yang menjadi kunci untuk memahami Al-Qur'an dan Hadits</li>
+<li><strong>Ilmu Fikih (Mazhab Syafi'i)</strong> — ilmu tentang hukum-hukum syariat, khususnya fikih mazhab Syafi'i yang dominan di wilayah Hadhramaut</li>
+<li><strong>Ilmu Tauhid (Aqidah Asy'ariyah)</strong> — ilmu tentang aqidah dan keimanan, yang menjadi fondasi bagi seluruh ilmu lainnya</li>
+<li><strong>Ilmu Hadits</strong> — ilmu tentang sabda-sabda Rasulullah SAW dan sanad-sanadnya</li>
+<li><strong>Ilmu Tafsir</strong> — ilmu tentang penafsiran Al-Qur'an</li>
+<li><strong>Ilmu Akhlak dan Tasawuf</strong> — ilmu tentang penyucian jiwa dan perjalanan spiritual</li>
+<li><strong>Ilmu Mantik (Logika)</strong> — ilmu tentang cara berpikir yang benar</li>
+<li><strong>Ilmu Falak (Astronomi)</strong> — ilmu tentang perbintangan yang berguna untuk menentukan waktu shalat dan arah kiblat</li>
+</ul>
+<p>
+Abdullah kecil mempelajari ilmu-ilmu ini di bawah bimbingan para ulama besar di Tarim, yang dikenal sebagai kota dengan tradisi keilmuan yang sangat kuat. Para guru beliau terkagum-kagum dengan kecerdasan dan kecepatan beliau dalam menguasai ilmu-ilmu ini. Seorang guru beliau berkata: <em>"Aku belum pernah melihat anak yang seperti ini — yang satu tajam akalnya, lembut hatinya, dan cepat hafalannya. Ia akan menjadi bintang di langit ilmu dan tasawuf."</em>
+</p>
+<p>
+Namun, di antara semua ilmu yang dipelajarinya, Abdullah kecil paling tertarik pada ilmu akhlak dan tasawuf. Beliau lebih suka duduk di majelis para sufi daripada di majelis para fuqaha (ahli fikih). Beliau lebih tertarik pada pembahasan tentang penyucian jiwa, adab-adab spiritual, dan hubungan antara hamba dengan Tuhannya daripada pembahasan tentang hukum-hukum fikih yang rinci. Kecenderungan inilah yang kelak menjadikan beliau sebagai ulama besar yang memadukan ilmu zhahir dan ilmu batin secara sempurna.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENGAJAR ANAK — QS. LUQMAN: 13-14</div>
+<div class="arabic-text">
+وَإِذْ قَالَ لُقْمَانُ لِابْنِهِ وَهُوَ يَعِظُهُ يَا بُنَيَّ لَا تُشْرِكْ بِاللَّهِ ۖ إِنَّ الشِّرْكَ لَظُلْمٌ عَظِيمٌ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan (ingatlah) ketika Luqman berkata kepada anaknya, di waktu ia memberi pelajaran kepadanya: 'Hai anakku, janganlah kamu mempersekutukan Allah, sesungguhnya mempersekutukan (Allah) adalah benar-benar kezaliman yang besar'."
+<br>— QS. Luqman: 13
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Pendidikan di Bimbingan Para Ulama Tarim — Kota Ilmu Hadhramaut</span>
+<div class="karomah-arabic">التَّعْلِيمُ فِي رِعَايَةِ عُلَمَاءِ تَارِيمَ — مَدِينَةُ الْعِلْمِ فِي حَضْرَمَوْت</div>
+<p>
+Kota Tarim pada abad ke-13 H merupakan pusat keilmuan Islam yang sangat penting di wilayah Hadhramaut. Di kota ini terdapat banyak sekali masjid, madrasah, dan ribath yang menjadi pusat kegiatan keilmuan dan spiritual. Di antara madrasah-madrasah terkenal di Tarim adalah <em>Masjid Al-Mihdar</em>, <em>Masjid Al-Irsyad</em>, dan berbagai ribath para sufi yang menjadi tempat berkumpulnya para ulama dan penuntut ilmu dari berbagai penjuru dunia Islam.
+</p>
+<p>
+Di kota inilah Abdullah kecil menimba ilmu dari para ulama besar, di antaranya:
+</p>
+<ul>
+<li><strong>Para Paman Beliau dari Keluarga Al-Haddad</strong> — yang melanjutkan tradisi keilmuan keluarga dan membimbing beliau dalam ilmu fikih, tauhid, dan tasawuf</li>
+<li><strong>Para Ulama Tarim</strong> — yang mengajarkan ilmu-ilmu zhahir seperti fikih Syafi'i, ushul fikih, dan hadits</li>
+<li><strong>Para Sufi Hadhramaut</strong> — yang membimbing beliau dalam ilmu tasawuf, akhlak, dan suluk</li>
+<li><strong>Para Muhadditsin Hadhramaut</strong> — yang memberinya sanad keilmuan yang bersambung kepada Rasulullah SAW</li>
+</ul>
+<p>
+Abdullah kecil mempelajari ilmu-ilmu ini dengan penuh kesungguhan dan ketekunan. Beliau tidak hanya mempelajari ilmu dari buku-buku, melainkan juga dari kehidupan para gurunya — mengamalkan akhlak mereka, meneladani ibadah mereka, dan mengambil manfaat dari kehadiran mereka. Beliau percaya bahwa ilmu yang paling bermanfaat adalah ilmu yang diambil dari kehidupan para guru, bukan hanya dari kitab-kitab.
+</p>
+<p>
+Beliau pernah berkata tentang pentingnya berguru kepada para ulama: <em>"Barangsiapa yang tidak memiliki guru, maka syetan adalah gurunya. Dan barangsiapa yang memiliki guru namun tidak mengikuti jejaknya, maka ia seperti orang yang memiliki peta namun tidak berjalan di atasnya. Maka hendaklah engkau berguru kepada para ulama yang shaleh, dan mengikuti jejak mereka dalam ilmu dan amal."</em>
+</p>
+<p>
+Di Tarim pula Abdullah mulai mengenal tradisi keilmuan keluarga Al-Haddad yang telah berlangsung selama beberapa abad. Beliau mempelajari karya-karya leluhur beliau — khususnya karya-karya <em>Imam Abdullah bin Alawi Al-Haddad</em> (1044-1132 H / 1634-1720 M) — seperti <em>Risalatul Muawanah</em>, <em>Risalatul Mukasyafah</em>, <em>An-Nashaih Ad-Diniyyah</em>, dan <em>Ratib Al-Haddad</em>. Karya-karya inilah yang kelak menjadi inspirasi bagi beliau dalam menulis karya-karya beliau sendiri.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENGIKUTI ORANG-ORANG SHALIH — QS. AT-TAUBAH: 100</div>
+<div class="arabic-text">
+وَالسَّابِقُونَ الْأَوَّلُونَ مِنَ الْمُهَاجِرِينَ وَالْأَنصَارِ وَالَّذِينَ اتَّبَعُوهُم بِإِحْسَانٍ رَّضِيَ اللَّهُ عَنْهُمْ وَرَضُوا عَنْهُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Orang-orang yang terdahulu lagi yang pertama-tama (masuk Islam) dari golongan muhajirin dan anshar dan orang-orang yang mengikuti mereka dengan baik, Allah ridha kepada mereka dan merekapun ridha kepada-Nya."
+<br>— QS. At-Taubah: 100
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Tanda-Tanda Kewalian Sejak Dini — Cahaya Ilmu di Hati Abdullah Kecil</span>
+<div class="karomah-arabic">عَلَامَاتُ الْوِلَايَةِ مُنْذُ الصِّغَرِ — نُورُ الْعِلْمِ فِي قَلْبِ عَبْدِ اللَّهِ الصَّغِيرِ</div>
+<p>
+Para ulama dan orang-orang shaleh di kota Tarim menceritakan bahwa Abdullah kecil telah menunjukkan tanda-tanda kewalian sejak usia dini. Di antara tanda-tanda tersebut adalah:
+</p>
+<ul>
+<li><strong>Kecintaan pada Kesunyian dan Dzikir</strong> — Sejak kecil, Abdullah lebih suka menyendiri di tempat-tempat yang tenang untuk berdzikir dan merenung. Ia sering ditemukan di sudut masjid atau di bawah pohon kurma di pinggiran kota, tenggelam dalam munajat kepada Allah.</li>
+<li><strong>Tangisan karena Takut kepada Allah</strong> — Ketika mendengar ayat-ayat Al-Qur'an yang berbicara tentang neraka dan azab Allah, Abdullah kecil senantiasa menangis dengan kencang. Tangisannya bukan karena takut akan azab semata, melainkan karena rindu akan ridha Allah dan cinta akan pertemuan dengan-Nya.</li>
+<li><strong>Zuhud sejak Kecil</strong> — Abdullah kecil tidak tertarik pada mainan dan permainan anak-anak seusianya. Ia lebih suka memberikan makanannya kepada anak-anak fakir, dan lebih senang memakai pakaian yang sederhana daripada pakaian yang bagus.</li>
+<li><strong>Kecerdasan Spiritual</strong> — Ketika para guru menjelaskan tentang akhlak dan tasawuf, Abdullah kecil seolah-olah sudah memahami makna-makna tersebut dari sebelumnya. Ia sering memberikan jawaban-jawaban yang membuat para gurunya terkagum-kagum dengan kedalaman pemahamannya.</li>
+<li><strong>Perhatian terhadap Akhlak</strong> — Berbeda dengan anak-anak lainnya yang lebih memperhatikan aspek zhahir dari ibadah, Abdullah kecil lebih memperhatikan aspek batin — yaitu akhlak dan penyucian jiwa. Ia senantiasa bertanya kepada para gurunya tentang cara membersihkan hati dari sifat-sifat tercela.</li>
+<li><strong>Karamah Pertama</strong> — Dalam sebuah riwayat, diceritakan bahwa ketika Abdullah kecil berusia sekitar tujuh tahun, ia pernah bermimpi bertemu dengan leluhur beliau, <em>Imam Abdullah bin Alawi Al-Haddad</em>, yang memberikan beliau sebotol madu dan berkata: <em>"Ini adalah madu ilmu, minumlah ia, niscaya hatimu akan manis dengan dzikrullah."</em> Sejak mimpi itu, hati Abdullah kecil semakin condong kepada ilmu dan dzikir.</li>
+</ul>
+<p>
+Seorang ulama shaleh di Tarim yang melihat tanda-tanda ini berkata kepada para pengasuh Abdullah: <em>"Sesungguhnya anak ini (Abdullah) memiliki cahaya yang berbeda dari anak-anak lainnya. Ia akan menjadi penerus tradisi keluarga Al-Haddad, dan namanya akan dikenal di seluruh penjuru dunia Islam, khususnya di Nusantara. Jagalah ia, karena ia adalah amanah Allah untuk umat ini."</em>
+</p>
+<p>
+Nubuwat ini terbukti benar, karena karya-karya Syeikh Abdullah Ibnu Alawi Al-Haddad hingga hari ini sangat populer di Indonesia, Malaysia, Singapura, dan negara-negara Asia Tenggara lainnya. Buku-buku beliau menjadi bacaan wajib di pesantren-pesantren dan majelis-majelis ilmu di Nusantara.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG CINTA ALLAH — QS. MARYAM: 96</div>
+<div class="arabic-text">
+إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ سَيَجْعَلُ لَهُمُ الرَّحْمَٰنُ وُدًّا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sesungguhnya orang-orang yang beriman dan beramal saleh, kelak Allah Yang Maha Pemurah akan menanamkan dalam (hati) mereka rasa kasih sayang."
+<br>— QS. Maryam: 96
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Pendidikan Akhlak dan Tasawuf — Fondasi Spiritual yang Kokoh</span>
+<div class="karomah-arabic">تَعْلِيمُ الْأَخْلَاقِ وَالتَّصَوُّفِ — أَسَاسٌ رُوحِيٌّ مَتِينٌ</div>
+<p>
+Selain mempelajari ilmu-ilmu zhahir (fikih, nahwu, hadits, dll.), Abdullah kecil juga mendapatkan pendidikan akhlak dan tasawuf yang sangat mendalam dari para pengasuh beliau dan dari para sufi di Tarim. Pendidikan inilah yang menjadi fondasi spiritual beliau — fondasi yang kelak akan menopang seluruh perjalanan hidupnya sebagai ulama, mursyid, dan penulis karya-karya monumental.
+</p>
+<p>
+Di antara pendidikan akhlak dan tasawuf yang beliau terima sejak kecil adalah:
+</p>
+<ul>
+<li><strong>Muraqabah (Pengawasan Hati)</strong> — Beliau diajarkan untuk senantiasa merasa diawasi oleh Allah dalam setiap gerak-gerik, pikiran, dan perasaan. Ia dilatih untuk senantiasa menghadirkan Allah di dalam hatinya, baik ketika sendirian maupun di tengah orang banyak.</li>
+<li><strong>Muhasabah (Introspeksi Diri)</strong> — Setiap malam sebelum tidur, beliau diajarkan untuk menghisab (menghitung) amal-amalnya sepanjang hari — apa yang telah ia lakukan, apa yang telah ia tinggalkan, dan apa yang perlu ia perbaiki esok hari.</li>
+<li><strong>Riyadhah (Latihan Spiritual)</strong> — Beliau dilatih untuk berpuasa sunnah (senin-kamis dan hari-hari putih), shalat malam (tahajjud), dan berdzikir dengan jumlah yang banyak. Latihan-latihan ini membentuk jiwanya menjadi jiwa yang kuat dan tahan uji.</li>
+<li><strong>Khalwat (Menyepi)</strong> — Beliau diajarkan untuk meluangkan waktu khusus setiap hari untuk menyepi dan bermunajat kepada Allah. Dalam kesunyian inilah beliau merasakan kehadiran Allah dengan lebih mendalam dan mengalami rasa cinta ilahi yang semakin menguat.</li>
+<li><strong>Suhbah (Berguru kepada Ahlinya)</strong> — Beliau diajarkan untuk senantiasa bergaul dengan orang-orang shaleh dan mengambil manfaat dari kehadiran mereka. Ia percaya bahwa hati itu seperti tanaman — jika ditanam di tanah yang subur (majelis orang shaleh), ia akan tumbuh dengan baik; jika ditanam di tanah yang gersang (majelis orang lalai), ia akan layu dan mati.</li>
+<li><strong>Adab-adab Spiritual</strong> — Beliau diajarkan adab-adab spiritual yang menjadi ciri khas keluarga Al-Haddad — seperti adab terhadap Al-Qur'an, adab terhadap Rasulullah SAW, adab terhadap para guru, adab terhadap orang tua, dan adab terhadap sesama muslim.</li>
+</ul>
+<p>
+Pendidikan akhlak dan tasawuf inilah yang membedakan Abdullah kecil dari anak-anak Asyraf lainnya di zamannya. Ia tumbuh menjadi pemuda yang zuhud, wara', lembut hati, dan senantiasa rindu kepada Allah. Ia tidak tertarik pada kemewahan dunia, tidak terpesona oleh kedudukan, dan tidak silau oleh popularitas. Hatinya hanya tertuju pada satu tujuan — meraih cinta Allah dan ridha-Nya.
+</p>
+<p>
+Beliau pernah berkata tentang pentingnya pendidikan akhlak sejak dini: <em>"Barangsiapa yang tidak diajarkan akhlak sejak kecil, maka ia tidak akan memiliki akhlak ketika besar. Hati anak itu seperti tanah yang subur — apa pun yang ditanam di dalamnya, ia akan tumbuh. Maka tanamlah di dalamnya cinta Allah dan Rasul-Nya, niscaya ia akan tumbuh menjadi pohon yang buahnya adalah ma'rifat dan mahabbah."</em>
+</p>
+<p>
+Fondasi spiritual yang kokoh inilah yang kelak menjadikan Syeikh Abdullah Ibnu Alawi Al-Haddad sebagai salah satu ulama terbesar di Hadhramaut dan seluruh dunia Islam. Karya-karya beliau tentang akhlak dan tasawuf — seperti <em>Risalatul Muawanah</em> dan <em>Risalatul Mukasyafah</em> — merupakan buah dari pendidikan yang beliau terima sejak kecil ini.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH ABDULLAH TENTANG PENDIDIKAN HATI</div>
+<div class="arabic-text">
+الْقَلْبُ كَالْأَرْضِ إِنْ لَمْ تَزْرَعْ فِيهَا الْخَيْرَ نَبَتَ فِيهَا الشَّرُّ، فَازْرَعْ فِيهَا ذِكْرَ اللَّهِ وَحُبَّ رَسُولِهِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Hati itu seperti tanah — jika engkau tidak menanam kebaikan di dalamnya, maka kejahatan akan tumbuh di dalamnya. Maka tanamlah di dalamnya dzikrullah dan cinta kepada Rasul-Nya."
+<br>— Syeikh Abdullah Ibnu Alawi Al-Haddad
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Masa Kecil dan Pendidikan Awal Syeikh Abdullah Ibnu Alawi Al-Haddad:</strong>
+<ul>
+<li><strong>Tumbuh di kota Tarim</strong> — kota ilmu di Hadhramaut, Yaman, yang penuh berkah</li>
+<li><strong>Kehilangan ayah di usia muda</strong> — Alawi bin Muhammad Al-Haddad (penulis Ratib Al-Haddad) wafat ketika Abdullah masih kecil</li>
+<li><strong>Diasuh oleh para kerabat dan ulama shaleh</strong> — paman-paman dan murid-murid ayahnya yang melanjutkan pendidikan beliau</li>
+<li><strong>Menghafal Al-Qur'an sejak kecil</strong> — menunjukkan kecerdasan luar biasa dalam menghafal</li>
+<li><strong>Mempelajari ilmu-ilmu dasar</strong> — nahwu, sharaf, fikih Syafi'i, tauhid Asy'ari, hadits, tafsir, akhlak, tasawuf, mantik, falak</li>
+<li><strong>Pendidikan di bawah para ulama Tarim</strong> — di Masjid Al-Mihdar, madrasah-madrasah, dan ribath-ribath sufi</li>
+<li><strong>Mempelajari karya leluhur</strong> — karya-karya Imam Abdullah bin Alawi Al-Haddad (1044-1132 H)</li>
+<li><strong>Tanda-tanda kewalian sejak dini</strong> — kecintaan pada kesunyian, tangisan karena takut Allah, zuhud, kecerdasan spiritual</li>
+<li><strong>Pendidikan akhlak dan tasawuf</strong> — muraqabah, muhasabah, riyadhah, khalwat, suhbah, adab-adab spiritual</li>
+<li><strong>Fondasi spiritual yang kokoh</strong> — menjadi bekal bagi perjalanan spiritual dan keilmuan beliau di masa dewasa</li>
+</ul>
+</div>
+<h2>Doa Memohon Keberkahan Masa Kecil dan Didikan yang Shaleh</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA UNTUK ANAK-ANAK KITA DAN PENDIDIKAN MEREKA</div>
+<div class="arabic-text">
+رَبِّ هَبْ لِي مِنَ الصَّالِحِينَ، وَاجْعَلْ أَوْلَادَنَا مِنْ أَهْلِ التَّقْوَى وَالْإِيمَانِ، وَارْزُقْنَا تَرْبِيَتَهُمْ عَلَى الْحُبِّ فِي اللَّهِ وَعَلَى مِنْهَاجِ السَّلَفِ الصَّالِحِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Tuhanku, anugerahkanlah kepadaku (keturunan) yang termasuk orang-orang yang shaleh, dan jadikanlah anak-anak kami termasuk ahli takwa dan iman, serta anugerahkanlah kepada kami kemampuan untuk mendidik mereka di atas dasar cinta karena Allah dan di atas manhaj para salaf yang shaleh."
+<br>— Doa terinspirasi dari QS. Ash-Shaffat: 100
+</div>
+</div>
+<h2>Penutup Halaman 2</h2>
+<p>
+Demikianlah kisah masa kecil Syeikh Abdullah Ibnu Alawi Al-Haddad — sang penerus tradisi keluarga Al-Haddad yang tumbuh sebagai anak yatim di kota ilmu Tarim, ditempa oleh ujian kehilangan ayah, namun dibesarkan dengan penuh kasih sayang oleh para kerabat dan ulama shaleh. Di kota Tarim inilah beliau menghafal Al-Qur'an, mempelajari ilmu-ilmu dasar Islam, dan menunjukkan tanda-tanda kewalian sejak usia dini. Di kota inilah pula fondasi spiritual beliau dibangun — fondasi yang kelak akan menopang seluruh perjalanan hidup beliau sebagai ulama besar dan penulis karya-karya monumental.
+</p>
+<p>
+Setelah masa kecil yang penuh berkah di Tarim, Abdullah remaja mulai memasuki fase baru dalam perjalanan hidupnya — fase menuntut ilmu yang lebih mendalam dari para ulama besar di Hadhramaut dan sekitarnya. Pada halaman berikutnya, kita akan membahas perjalanan menuntut ilmu beliau — bidang-bidang ilmu yang beliau pelajari, nama-nama guru beliau, dan bagaimana beliau menjadi salah satu ulama terbesar di zamannya.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Tuhan kami, anugerahkanlah kepada kami istri-istri dan keturunan kami sebagai penyejuk hati, dan jadikanlah kami pemimpin bagi orang-orang yang bertakwa."
+<br>— QS. Al-Furqan: 74
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="haddad1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="haddad2.html" class="article-nav-btn active" title="Halaman 2: Masa Kecil & Pendidikan">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="haddad3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="haddad4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="haddad5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="haddad6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="haddad7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="haddad8.html" class="article-nav-btn" title="Halaman 8: Warisan Keilmuan">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="haddad9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

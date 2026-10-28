@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Abdullah Ibnu Alawi Al-Haddad - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+/* 1. RESET & DASAR */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+/* 2. MEDIA QUERY TABLET */
+@media (max-width: 768px) {
+.article-container {
+max-width: 100%;
+padding: 20px;
+}
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+/* 3. HEADER & NAVIGASI ATAS */
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+/* 4. BREADCRUMB & CONTAINER */
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+/* 5. ARTICLE HEADER & META */
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+/* 6. GAMBAR & SHARE BAR */
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+/* 7. KONTEN ARTIKEL */
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 8. KOTAK ARAB & BIOGRAFI */
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 9. NAVIGASI HALAMAN (9 TOMBOL) */
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* 10. TOMBOL KEMBALI & FOOTER */
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+/* 11. MEDIA QUERY MOBILE */
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+/* PATCH UNIVERSAL v2.0 */
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Abdullah Ibnu Alawi Al-Haddad
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Abdullah Ibnu Alawi Al-Haddad</h1>
+<div class="subtitle">Halaman 9 dari 9 — Penutup, Intisari, dan Pelajaran dari Sang Penerang Hadhramaut</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Rabu, 28 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Seiyun_Palace.jpg/440px-Seiyun_Palace.jpg"
+alt="Sei'un, Hadhramaut — tanah para ulama Alawiyyin"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tarim_Hadhramaut_Yemen.jpg/440px-Tarim_Hadhramaut_Yemen.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Hadhramaut, Yaman — tanah yang melahirkan keluarga Al-Haddad dan Ratib yang dibacakan di ribuan majelis. Dari Tarim, cahaya ilmu dan akhlak itu mengalir hingga ke pesantren-pesantren Nusantara dan tetap hidup sampai hari ini.</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Demikianlah perjalanan hidup Syeikh Abdullah Ibnu Alawi Al-Haddad — dari lembah Hadhramaut, melalui majelis-majelis ilmu di Tarim dan Sei'un, hingga namanya dikenal di ribuan majelis tahlil, Ratib, dan pengajian akhlak di seluruh Nusantara. Beliau adalah bagian dari mata rantai keluarga Alawiyyin yang mewariskan satu pesan sederhana namun dalam: <strong>ilmu tanpa amal tidak berbuah, dan amal tanpa akhlak tidak bercahaya</strong>. Ratib yang dibaca setiap malam, risalah yang dikaji di pesantren, dan akhlak yang diteladani oleh para muridnya — itulah maqam kewalian yang tidak membutuhkan pengakuan manusia. Pada halaman penutup ini, kita merangkum seluruh perjalanan beliau, mengambil hikmahnya, dan menata cara menghidupkan warisannya dalam kehidupan kita hari ini.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEMBALI KEPADA ALLAH — QS. AL-BAQARAH: 156</div>
+<div class="arabic-text">
+الَّذِينَ إِذَا أَصَابَتْهُم مُّصِيبَةٌ قَالُوا إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Allażīna iżā aṣābat-hum muṣībatun qālū innā lillāhi wa innā ilaihi rāji‘ūn."<br>
+<strong>Artinya:</strong> "(Yaitu) orang-orang yang apabila ditimpa musibah, mereka mengucapkan: 'Sesungguhnya kami milik Allah dan kepada-Nyalah kami kembali.'"
+<br>— QS. Al-Baqarah: 156
+</div>
+</div>
+<h2>Husnul Khatimah — Kembali kepada Dzat yang Selalu Dicari</h2>
+<p>
+Bagi seorang salik, kematian bukanlah akhir perjalanan, melainkan pintu pertemuan. Seluruh mujahadah, puasa, qiyamul lail, dan air mata munajat yang dilakukan sepanjang hidup bermuara pada satu saat: ketika jiwa diserahkan kembali kepada Allah dalam keadaan <em>rāḍiyatan marḍiyyah</em> — ridha dan diridhai. Dalam tradisi Alawiyyah, tanda kebaikan akhir hidup bukanlah ramainya pelayat, melainkan istiqamahnya seseorang di atas sunnah hingga napas terakhir.
+</p>
+<p>
+Karena itu, para guru kita selalu mengingatkan: jangan menilai seseorang hanya dari banyaknya karamah yang diceritakan tentangnya, tetapi lihatlah bagaimana ia menutup hari-harinya — apakah lisannya masih basah dengan dzikir, apakah hatinya masih malu untuk bermaksiat, dan apakah tangannya masih terbuka untuk melayani umat. Itulah ukuran yang diajarkan oleh Al-Qur'an: <em>"Orang yang paling mulia di antara kamu di sisi Allah ialah yang paling bertakwa."</em>
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DOA HUSNUL KHATIMAH</div>
+<div class="arabic-text">
+اللَّهُمَّ اجْعَلْ خَيْرَ عُمْرِي آخِرَهُ، وَخَيْرَ عَمَلِي خَوَاتِيمَهُ، وَاجْعَلْ خَيْرَ أَيَّامِي يَوْمَ أَلْقَاكَ فِيهِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Allāhumma-j‘al khaira ‘umrī ākhirah, wa khaira ‘amalī khawātīmah, waj‘al khaira ayyāmī yauma alqāka fīh."<br>
+<strong>Artinya:</strong> "Ya Allah, jadikanlah sebaik-baik umurku adalah yang terakhirnya, sebaik-baik amalku adalah penutupnya, dan sebaik-baik hariku adalah hari ketika aku bertemu dengan-Mu."
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Intisari Perjalanan Hidup — Delapan Babak Sang Penerang Hadhramaut</span>
+<div class="karomah-arabic">خُلَاصَةُ الْحَيَاةِ — ثَمَانِيَةُ مَشَاهِدَ لِلنُّورِ الْحَضْرَمِيِّ</div>
+<p>
+Sepanjang delapan halaman sebelumnya, kita telah menelusuri delapan babak kehidupan beliau. Berikut rangkumannya sebagai bekal perenungan:
+</p>
+<ul>
+<li><strong>Babak 1 — Pengenalan &amp; Nasab:</strong> Kelahiran dari keluarga Asyraf Alawiyyin di Hadhramaut, nasab yang bersambung melalui Sayyidina Husain bin Ali dan Sayyidah Fathimah Az-Zahra. Nasab adalah amanah, bukan jaminan kemuliaan tanpa takwa.</li>
+<li><strong>Babak 2 — Masa Kecil:</strong> Tumbuh dalam lingkungan keluarga ulama, menghafal Al-Qur'an, beradab kepada guru, dan ditempa oleh ujian kehilangan sejak dini.</li>
+<li><strong>Babak 3 — Menuntut Ilmu:</strong> Fikih Syafi'i, ushul, tauhid Asy'ari, tafsir, hadits, nahwu-sharaf, sirah, serta tasawuf dan akhlak — dipelajari dengan sanad, bukan sekadar membaca judul kitab.</li>
+<li><strong>Babak 4 — Perjalanan Spiritual:</strong> Suluk umum (taubat, wara', zuhud, sabar, tawakkal, ridha) dan anugerah khusus (kasyf), dengan Ratib Al-Haddad sebagai wirid penjaga harian. Puncaknya bukan karamah, melainkan akhlak.</li>
+<li><strong>Babak 5 — Tantangan &amp; Konflik:</strong> Mujahadah terhadap 'ujub dan riya', perbedaan pandangan mengenai tarekat, ziarah, dan tawassul, serta kesalahpahaman masyarakat terhadap kedudukan seorang habib.</li>
+<li><strong>Babak 6 — Pro dan Kontra:</strong> Dicintai umat melalui Ratib dan risalahnya, ditentang sebagian pihak, didukung ulama tradisional, dan tetap rendah hati di antara pujian maupun celaan.</li>
+<li><strong>Babak 7 — Sikap terhadap Penguasa:</strong> "Dekat untuk menasihati, jauh untuk menjaga hati." Tidak menjual kebenaran demi jabatan, hadiah, atau popularitas.</li>
+<li><strong>Babak 8 — Warisan:</strong> Risalah akhlak, wirid Ratib, adab Alawiyyah, murid-murid, dan pesantren-pesantren di Nusantara yang terus menghidupkan ajaran tersebut.</li>
+</ul>
+<blockquote>
+<em>"Delapan babak itu sesungguhnya hanya satu pelajaran: seorang hamba berjalan menuju Allah bukan dengan membanggakan langkahnya, melainkan dengan memperbaiki langkahnya."</em>
+</blockquote>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG TAKWA SEBAGAI UKURAN — QS. AL-HUJURAT: 13</div>
+<div class="arabic-text">
+إِنَّ أَكْرَمَكُمْ عِندَ اللَّهِ أَتْقَاكُمْ ۚ إِنَّ اللَّهَ عَلِيمٌ خَبِيرٌ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Inna akramakum ‘inda-llāhi atqākum. Inna-llāha ‘Alīmun Khabīr."<br>
+<strong>Artinya:</strong> "Sesungguhnya orang yang paling mulia di antara kamu di sisi Allah ialah orang yang paling takwa. Sesungguhnya Allah Maha Mengetahui lagi Maha Mengenal."
+<br>— QS. Al-Hujurat: 13
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Sepuluh Pelajaran Utama — Bekal untuk Kehidupan Sehari-hari</span>
+<div class="karomah-arabic">عَشْرُ دُرَرٍ لِلْعَمَلِ فِي الْحَيَاةِ الْيَوْمِيَّةِ</div>
+<h3>1. Ilmu Harus Berbuah Amal</h3>
+<p>
+Membaca <em>Risalatul Muawanah</em> bukan untuk memperbanyak koleksi pengetahuan, melainkan untuk mengubah satu kebiasaan buruk menjadi satu kebiasaan baik. Ukurlah kemajuan ilmu dengan perubahan akhlak, bukan dengan tebalnya catatan.
+</p>
+<h3>2. Syariat dan Hakikat Tidak Boleh Dipisahkan</h3>
+<p>
+Shalat lima waktu tetap wajib, hak tetap harus dikembalikan, dan amanah tetap harus ditunaikan — siapa pun yang mengaku telah mencapai maqam tinggi. Tasawuf yang benar justru membuat seseorang semakin teliti terhadap kewajiban.
+</p>
+<h3>3. Adab Lebih Dahulu daripada Ilmu</h3>
+<p>
+Sebelum bertanya, belajarlah menghormati. Sebelum mengajar, belajarlah mendengarkan. Seorang murid yang beradab kepada gurunya akan lebih mudah menerima cahaya ilmu daripada orang yang banyak ilmu namun kasar lisannya.
+</p>
+<h3>4. Ratib Bukan Sekadar Bacaan</h3>
+<p>
+Ratib Al-Haddad adalah latihan menghadirkan hati. Bacalah perlahan, pahami maknanya, lalu hidupkan isinya: istighfar yang benar-benar berhenti dari dosa, shalawat yang benar-benar menumbuhkan cinta kepada Nabi, dan syukur yang benar-benar mengurangi keluhan.
+</p>
+<h3>5. Ujian adalah Timbangan, Bukan Hukuman</h3>
+<p>
+Ketika dakwah ditolak, ketika usaha belum berhasil, ketika dihina tanpa salah — ingatlah bahwa Allah sedang menimbang kesabaran. Jawaban terbaik sering kali bukan pembelaan diri, melainkan perbaikan diri.
+</p>
+<h3>6. Kemerdekaan Hati adalah Modal Dakwah</h3>
+<p>
+Orang yang tidak diperbudak oleh jabatan, hadiah, dan pujian akan lebih mudah berkata benar. Jangan menukar satu kalimat haq dengan satu kesenangan sementara.
+</p>
+<h3>7. Pujian dan Celaan Sama di Hati yang Arif</h3>
+<p>
+Pujian dapat membuat lalai; celaan dapat membuat ingat. Keduanya adalah ujian. Yang dicari adalah ridha Allah, bukan tepuk tangan manusia.
+</p>
+<h3>8. Menyepi di Tengah Keramaian</h3>
+<p>
+Tidak harus meninggalkan pekerjaan, keluarga, atau masyarakat untuk dekat kepada Allah. Cukup让 hati tidak dimiliki oleh dunia. Bekerjalah di pasar, namun jangan biarkan pasar masuk ke dalam hati.
+</p>
+<h3>9. Cinta kepada Nabi Dibuktikan dengan Mengikuti Sunnah</h3>
+<p>
+Shalawat yang ramai tanpa keteladanan adalah klaim yang belum diuji. Ikutilah akhlak beliau dalam jujur, amanah, lembut kepada keluarga, dan adil kepada lawan.
+</p>
+<h3>10. Warisan Terbaik adalah Ilmu yang Diamalkan</h3>
+<p>
+Harta akan habis, bangunan akan runtuh, tetapi satu kalimat ikhlas yang mengubah hidup seseorang akan terus mengalir pahalanya. Maka tinggalkanlah bukan hanya nama, melainkan teladan.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN HIKMAH TENTANG ADAB</div>
+<div class="arabic-text">
+الْأَدَبُ قَبْلَ الْعِلْمِ، وَالْعَمَلُ ثَمَرَةُ الْعِلْمِ، وَالْإِخْلَاصُ رُوحُ الْعَمَلِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Al-adabu qabla al-‘ilmi, wa al-‘amalu thamarat al-‘ilmi, wa al-ikhlāṣu rūḥu al-‘amal."<br>
+<strong>Artinya:</strong> "Adab mendahului ilmu, amal adalah buah ilmu, dan ikhlas adalah ruh amal."
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Relevansi untuk Nusantara Hari Ini</span>
+<div class="karomah-arabic">صِلَةُ التُّرَاثِ بِالْمُجْتَمَعِ النُّوسَنْتَارِيِّ الْحَالِّ</div>
+<h3>A. Menghadapi Materialisme</h3>
+<p>
+Ketika ukuran sukses hanyalah rumah besar dan jabatan tinggi, ajaran zuhud mengingatkan: cukuplah hati tidak diperhamba oleh apa yang sebenarnya hanya titipan. Zuhud bukan meninggalkan pendapatan, melainkan meninggalkan keserakahan.
+</p>
+<h3>B. Menghadapi Perpecahan di Media Sosial</h3>
+<p>
+Ajaran adab menuntut kita tidak mudah mengkafirkan, tidak menyebar aib, dan tidak menghina ulama yang berbeda pandangan. Satu komentar lembut lebih bermanfaat daripada seribu debat yang memecah ukhuwah.
+</p>
+<h3>C. Menghidupkan Kembali Majelis Keluarga</h3>
+<p>
+Ratib dan pembacaan shalawat jangan berhenti di masjid saja. Jadikan lima menit sebelum tidur sebagai majelis keluarga: membaca Al-Qur'an bersama, berdoa untuk tetangga, dan saling memaafkan sebelum tidur.
+</p>
+<h3>D. Pendidikan Pesantren dan Santri</h3>
+<p>
+Risalah akhlak perlu kembali menjadi bacaan yang diamalkan, bukan hanya dihafalkan untuk ujian. Santri yang pulang membawa kesantunan kepada orang tua lebih bernilai daripada santri yang pulang membawa banyak gelar tanpa adab.
+</p>
+<h3>E. Kemandirian Ekonomi dan Kepedulian Sosial</h3>
+<p>
+Keteladanan ulama yang menolak hadiah penguasa mengajarkan kemandirian. Masjid dan majelis perlu membangun usaha halal, membantu fakir, dan membebaskan umat dari ketergantungan — karena tangan di atas lebih dicintai Allah.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG BERLAKU LEMBUT — QS. ALI 'IMRAN: 159</div>
+<div class="arabic-text">
+فَبِمَا رَحْمَةٍ مِّنَ اللَّهِ لِنتَ لَهُمْ ۖ وَلَوْ كُنتَ فَظًّا غَلِيظَ الْقَلْبِ لَانفَضُّوا مِنْ حَوْلِكَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Fabimā raḥmatin mina-llāhi linta la-hum. Wa lau kunta faẓẓan ghalīẓa al-qalbi lañfaḍḍū min ḥaulik."<br>
+<strong>Artinya:</strong> "Maka berkat rahmat Allah engkau (Muhammad) berlaku lemah lembut terhadap mereka. Sekiranya engkau bersikap keras dan berhati kasar, tentulah mereka menjauhkan diri dari sekitarmu."
+<br>— QS. Ali 'Imran: 159
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Cara Menghidupkan Warisan Beliau — Lima Amalan Praktis</span>
+<div class="arabic-text" style="font-size:1.3rem;">
+إِحْيَاءُ التُّرَاثِ بِالْعَمَلِ لَا بِالدَّعْوَىٰ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Iḥyā' at-turāts bi al-‘amal, lā bi ad-da‘wā."<br>
+<strong>Artinya:</strong> "Menghidupkan warisan adalah dengan amal, bukan dengan pengakuan."
+</div>
+<h3>A. Istiqamahkan Ratib dengan Pemahaman</h3>
+<p>
+Tetapkan waktu tetap setiap hari. Ajak keluarga. Sediakan satu majelis sebulan untuk menjelaskan makna Ratib agar bacaan tidak menjadi rutinitas tanpa ruh.
+</p>
+<h3>B. Kaji Satu Risalah sampai Diamalkan</h3>
+<p>
+Pilih satu risalah akhlak, bacalah bersama guru, lalu buat satu komitmen amal selama empat puluh hari. Misalnya: meninggalkan ghibah, melunasi utang, atau menyambung silaturahim yang terputus.
+</p>
+<h3>C. Hadirkan Guru, Bukan Sekadar Video</h3>
+<p>
+Ilmu dalam tradisi ini diterima melalui bimbingan, bukan hanya tontonan. Datangi majelis, tanyakan yang belum dipahami, dan minta dibetahkan akhlak — bukan hanya dimintai doa.
+</p>
+<h3>D. Ziarah dengan Adab, Bukan Tuntutan</h3>
+<p>
+Jika berziarah, niatkan mengambil pelajaran, membaca Al-Qur'an, dan mendoakan penghuni kubur. Ingatlah bahwa yang memberi manfaat dan mudharat hanya Allah. Hindari permintaan yang menyimpang dan pengagulan yang berlebihan.
+</p>
+<h3>E. Mendoakan dan Meneladani, Bukan Mengkultuskan</h3>
+<p>
+Cinta kepada ulama diwujudkan dengan mengikuti ketaatannya, bukan dengan meniru segala tindakannya secara membabi buta. Apabila ada perkataan yang bertentangan dengan Al-Qur'an dan Sunnah, maka Al-Qur'an dan Sunnahlah yang didahulukan.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG ILMU YANG TIDAK TERPUTUS — HADITS NABAWI</div>
+<div class="arabic-text">
+إِذَا مَاتَ الْإِنْسَانُ انْقَطَعَ عَمَلُهُ إِلَّا مِنْ ثَلَاثٍ: صَدَقَةٍ جَارِيَةٍ، وَعِلْمٍ يُنْتَفَعُ بِهِ، وَوَلَدٍ صَالِحٍ يَدْعُو لَهُ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Iżā māta al-insānu nqaṭa‘a ‘amaluhū illā min ṡalātsin: ṣadaqatin jāriyah, wa ‘ilmin yuntafa‘u bih, wa waladin ṣāliḥin yad‘ū lah."<br>
+<strong>Artinya:</strong> "Apabila seseorang meninggal dunia, terputuslah amalnya kecuali tiga perkara: sedekah jariyah, ilmu yang bermanfaat, dan anak shaleh yang mendoakannya."
+<br>— HR. Muslim
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Penutup — Menjaga Api Itu Tetap Menyala</span>
+<div class="karomah-arabic">خَاتِمَةٌ — حِفْظُ النُّورِ لِيَبْقَى مُضِيئًا</div>
+<p>
+Kita menutup perjalanan ini bukan dengan sebuah akhir, melainkan dengan sebuah pertanyaan kepada diri sendiri: <em>setelah membaca kisah seorang hamba yang menghabiskan hidupnya untuk membersihkan hati, perubahan apa yang hari ini kita mulai?</em>
+</p>
+<p>
+Karena kisah para ulama tidak berguna jika hanya membuat kita menangis sesaat, lalu kembali kepada kebiasaan lama. Manfaatnya baru terasa ketika kita pulang dan menjadi anak yang lebih santun kepada orang tua, tetangga yang lebih amanah, pedagang yang lebih jujur, dan hamba yang lebih malu untuk meninggalkan shalat.
+</p>
+<p>
+Semoga Allah merahmati para ulama Hadhramaut yang telah menjaga sanad ilmu ini, para habaib dan kiai yang menyampaikannya kepada kita, serta semua orang yang duduk dalam majelis Ratib dan pengajian akhlak. Semoga Allah menempatkan kita pada golongan orang-orang yang mencintai mereka bukan karena harta dan kedudukan, melainkan karena mereka mencintai Allah dan Rasul-Nya.
+</p>
+<p>
+Dan semoga hati kita termasuk <em>qalbun salīm</em> — hati yang selamat: bersih dari kesombongan, lapang untuk menerima kebenaran, dan selalu rindu pulang kepada-Nya.
+</p>
+<blockquote>
+<em>"Jangan只求 nama seorang penuntut ilmu.<br>
+Cukuplah Allah mengetahui bahwa engkau sedang berusaha pulang."</em>
+</blockquote>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Akhir Biografi Syeikh Abdullah Ibnu Alawi Al-Haddad:</strong>
+<ul>
+<li><strong>Identitas:</strong> Bagian dari keluarga Asyraf Alawiyyin Hadhramaut; marga Al-Haddad yang terkenal dengan Ratib dan risalah akhlaknya.</li>
+<li><strong>Nasab mulia:</strong> Bersambung melalui Sayyidina Husain bin Ali dan Sayyidah Fathimah Az-Zahra — kemuliaan yang diwujudkan dalam takwa, bukan kebanggaan keturunan semata.</li>
+<li><strong>Tanah kelahiran tradisi:</strong> Hadhramaut, Yaman (Sei'un dan Tarim), pusat majelis ilmu para Alawiyyin.</li>
+<li><strong>Landasan keilmuan:</strong> Fikih mazhab Syafi'i, aqidah Asy'ariyah, hadits, tafsir, nahwu-sharaf, serta tasawuf yang berpegang pada sunnah.</li>
+<li><strong>Jalan spiritual:</strong> Suluk dengan taubat, wara', zuhud, sabar, tawakkal, ridha, mahabbah; dijaga dengan wirid harian dan muhasabah.</li>
+<li><strong>Ciri khas:</strong> Adab sebelum ilmu, amal sebagai buah ilmu, ikhlas sebagai ruh amal; tidak mengejar karamah maupun gelar.</li>
+<li><strong>Penghadapan ujian:</strong> Sabar menghadapi perbedaan, menjawab dengan hikmah, tidak membalas celaan dengan celaan.</li>
+<li><strong>Sikap kepada penguasa:</strong> Memberi nasihat jujur, tidak menjual kebenaran, menjaga kemerdekaan hati dari hadiah yang mengikat.</li>
+<li><strong>Warisan utama:</strong> Ratib Al-Haddad, Risalatul Muawanah, Risalatul Mukasyafah, An-Nashaih Ad-Diniyyah, dan tradisi majelis akhlak.</li>
+<li><strong>Jejak di Nusantara:</strong> Ratib, majelis Maulid, tradisi ziarah yang beradab, serta pengajian risalah akhlak di pesantren dan majelis keluarga.</li>
+<li><strong>Pesan inti:</strong> Warisan sejati bukan nama besar, melainkan akhlak yang diteruskan dan hati yang dibersihkan.</li>
+<li><strong>Catatan redaksi:</strong> Nama, nasab lengkap, dan tahun lahir-wafat perlu dicek ulang pada kitab biografi otoritatif (manaqib dan silsilah Alawiyyin) sebelum diterbitkan sebagai rujukan sejarah. Lihat catatan di bawah artikel.</li>
+</ul>
+</div>
+<h2>Doa Penutup — Memohon Keikhlasan dan Husnul Khatimah</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA PENUTUP</div>
+<div class="arabic-text">
+اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ، اللَّهُمَّ اغْفِرْ لِعُلَمَاءِ الْمُسْلِمِينَ وَشُيُوخِ الْمُؤْمِنِينَ، وَارْفَعْ دَرَجَاتِهِمْ، وَأَلْحِقْنَا بِهِمْ عَلَى الْإِيمَانِ وَالْمَحَبَّةِ. اللَّهُمَّ ارْزُقْنَا إِخْلَاصَ الْعَمَلِ، وَحُسْنَ الْأَدَبِ، وَالثَّبَاتَ عَلَى السُّنَّةِ، وَاحْتِمْ خِيَاتَنَا بِالْخَيْرِ يَا أَرْحَمَ الرَّاحِمِينَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Allāhumma ṣalli ‘alā sayyidinā Muḥammadin wa ‘alā āli sayyidinā Muḥammad. Allāhumma-ghfir li-‘ulamā' al-muslimīna wa syuyūḥi al-mu'minīn, warfa‘ darajātuhum, wa alḥiqnā bi-him ‘alā al-īmāni wa al-maḥabbah. Allāhumma-rzuqnā ikhlaṣa al-‘amal, wa ḥusna al-adab, wa aṡ-ṡabāta ‘alā as-sunnah, wakhtim ḥayātanā bi al-khair, yā Arḥama ar-rāḥimīn."<br>
+<strong>Artinya:</strong> "Ya Allah, limpahkanlah shalawat kepada Sayyidina Muhammad dan keluarga Sayyidina Muhammad. Ya Allah, ampunilah para ulama kaum muslimin dan para guru orang-orang beriman, tinggikanlah derajat mereka, dan hubungkanlah kami dengan mereka di atas iman dan cinta. Ya Allah, anugerahkanlah kepada kami keikhlasan amal, adab yang baik, dan keteguhan di atas sunnah, serta akhiri kehidupan kami dengan kebaikan, wahai Dzat Yang Maha Penyayang."
+</div>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DOA PENUTUP MAJELIS — TAFRILUL MAJLIS</div>
+<div class="arabic-text">
+سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا أَنْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Subḥānaka Allāhumma wa bi-ḥamdik, asyhadu allā ilāha illā Anta, astaghfiruka wa atūbu ilaik."<br>
+<strong>Artinya:</strong> "Maha Suci Engkau Ya Allah dan dengan memuji-Mu. Aku bersaksi bahwa tidak ada Tuhan selain Engkau. Aku memohon ampun kepada-Mu dan bertaubat kepada-Mu."
+</div>
+</div>
+<p><em>Wallahu a'lam bish-shawab.</em> Segala puji bagi Allah, Tuhan semesta alam. Shalawat dan salam semoga tercurah kepada Nabi Muhammad SAW, keluarga, sahabat, dan seluruh orang yang mengikuti petunjuk beliau hingga akhir zaman.</p>
+<div class="arabic-box">
+<div class="arabic-text">
+وَقُلِ الْحَمْدُ لِلَّهِ الَّذِي لَمْ يَتَّخِذْ وَلَدًا وَلَمْ يَكُن لَّهُ شَرِيكٌ فِي الْمُلْكِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa quli al-ḥamdu lillāhi llażī lam yattakhiż waladan wa lam yakun lahū syarīkun fi al-mulk."<br>
+<strong>Artinya:</strong> "Dan katakanlah: 'Segala puji bagi Allah yang tidak mempunyai anak dan tidak mempunyai sekutu dalam kerajaan-Nya.'"
+<br>— QS. Al-Isra': 111 (penggalan)
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="haddad1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="haddad2.html" class="article-nav-btn" title="Halaman 2: Masa Kecil & Pendidikan">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="haddad3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="haddad4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="haddad5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="haddad6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="haddad7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="haddad8.html" class="article-nav-btn" title="Halaman 8: Warisan Keilmuan">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="haddad9.html" class="article-nav-btn active" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

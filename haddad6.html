@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Abdullah Ibnu Alawi Al-Haddad - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+@media (max-width: 768px) {
+.article-container { max-width: 100%; padding: 20px; }
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover { background: rgba(233, 69, 96, 0.15); transform: scale(1.05); }
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover { background: #e94560; color: #fff; border-color: #e94560; }
+.article-content { font-size: 1.05rem; line-height: 1.9; color: #444; }
+.article-content p { margin-bottom: 20px; text-align: justify; }
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 { font-size: 1.2rem; color: #333; margin: 25px 0 10px; }
+.article-content ul { margin: 15px 0 20px 30px; }
+.article-content ul li { margin-bottom: 10px; line-height: 1.7; }
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title { font-size: 1.3rem; color: #1a1a2e; font-weight: bold; display: inline; }
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul { margin: 15px 0 0 30px; }
+.highlight-box ul li { margin-bottom: 10px; line-height: 1.7; }
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label { text-align: center; color: #aaa; font-size: 0.75rem; margin-top: 6px; }
+.nav-group { display: flex; flex-direction: column; align-items: center; }
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+nav { flex-direction: column; gap: 10px; width: 100%; justify-content: center; }
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav { gap: 6px; padding: 15px; }
+.article-nav-btn { width: 36px; height: 36px; font-size: 1rem; }
+.nav-btn-label { font-size: 0.65rem; }
+}
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam { font-size: 1.3rem !important; letter-spacing: 3px !important; }
+header nav a { padding: 6px 10px !important; font-size: 0.8rem !important; }
+.article-nav-btn { width: 32px; height: 32px; font-size: 0.9rem; }
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Abdullah Ibnu Alawi Al-Haddad
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Abdullah Ibnu Alawi Al-Haddad</h1>
+<div class="subtitle">Halaman 6 dari 9 — Tanggapan Pro dan Kontra Masyarakat, Ulama, dan Penguasa terhadap Sepak Terjang Beliau</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Selasa, 27 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Seiyun_Palace.jpg/440px-Seiyun_Palace.jpg"
+alt="Hadhramaut, Yaman — tempat Syeikh Abdullah berdakwah di tengah pro/kontra"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tarim_Hadhramaut_Yemen.jpg/440px-Tarim_Hadhramaut_Yemen.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Hadhramaut dan Nusantara — medan dakwah Syeikh Abdullah Ibnu Alawi Al-Haddad yang penuh dengan dinamika pro dan kontra, namun beliau menghadapinya dengan tawadhu', hikmah, dan akhlak mulia yang menjadi ciri khas keluarga Al-Haddad</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Sepak terjang Syeikh Abdullah Ibnu Alawi Al-Haddad sebagai penerus tradisi keilmuan keluarga Al-Haddad, mursyid Tarekat Alawiyyah, dan penulis karya-karya monumental tidak pernah luput dari perhatian berbagai kalangan di masanya. Sebagai seorang Asyraf (keturunan Rasulullah SAW) yang juga ulama besar di Hadhramaut pada abad ke-13 H — abad yang ditandai dengan munculnya berbagai gerakan pembaharu dalam dunia Islam — beliau menjadi tokoh yang sangat berpengaruh, sekaligus menjadi pusat perhatian dan perdebatan. Ada yang mencintainya dengan sepenuh hati, ada yang mencelanya dengan keras, dan ada yang bersikap netral menunggu kebenaran yang sejati. Tanggapan pro dan kontra ini datang dari tiga kalangan utama: masyarakat awam, para ulama, dan para penguasa. Namun di tengah semua ini, Syeikh Abdullah tetap istiqamah dengan prinsip beliau — tidak terpengaruh oleh pujian, tidak goyah oleh celaan, dan senantiasa kembali kepada Allah sebagai satu-satunya tujuan.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG TIDAK TAKUT CELAAN — QS. AL-MA'IDAH: 54</div>
+<div class="arabic-text">
+يُحِبُّهُمْ وَيُحِبُّهُمْ أَذِلَّةٍ عَلَى الْمُؤْمِنِينَ أَعِزَّةٍ عَلَى الْكَافِرِينَ يُجَاهِدُونَ فِي سَبِيلِ اللَّهِ وَلَا يَخَافُونَ لَوْمَةَ لَائِمٍ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Allah mencintai mereka dan mereka pun mencintai-Nya, yang bersikap lemah lembut terhadap orang yang mukmin, yang bersikap keras terhadap orang-orang kafir, yang berjihad di jalan Allah, dan yang tidak takut kepada celaan orang yang mencela."
+<br>— QS. Al-Ma'idah: 54
+</div>
+</div>
+<h2>Enam Medan Reaksi — Peta Pro dan Kontra Sang Penerang Hadhramaut</h2>
+<p>
+Para ulama sejarah tasawuf mencatat bahwa reaksi terhadap Syeikh Abdullah Ibnu Alawi Al-Haddad dapat dipetakan ke dalam enam medan utama: (1) tanggapan pro dari masyarakat awam, (2) tanggapan kontra dari masyarakat awam, (3) sikap pro dari kalangan ulama, (4) sikap kontra dari kalangan ulama, (5) sikap penguasa di Hadhramaut dan Nusantara, dan (6) tanggapan diri beliau sendiri terhadap semua pro dan kontra ini. Masing-masing medan ini memiliki dinamika yang unik, dan dari sinilah kita dapat memahami betapa berpengaruhnya beliau di tengah masyarakat pada masanya.
+</p>
+<p>
+Beliau pernah berkata: <em>"Manusia itu seperti obat — ada yang manis dan menyembuhkan, ada yang pahit namun menyembuhkan, dan ada yang manis namun mematikan. Maka janganlah engkau tertipu oleh manisnya pujian, dan janganlah engkau lari dari pahitnya celaan. Karena yang penting bukanlah apa yang dikatakan manusia tentangmu, melainkan apa yang dikatakan Allah tentangmu di dalam hatimu."</em>
+</p>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN SYEIKH ABDULLAH TENTANG PUJIAN DAN CELAAN</div>
+<div class="arabic-text">
+لَا تَفْرَحْ بِمَدْحِ النَّاسِ وَلَا تَحْزَنْ بِذَمِّهِمْ، فَإِنَّ الْمَدْحَ وَالذَّمَّ سَوَاءٌ عِنْدَ الْعَارِفِ، وَالْمِعْيَارُ هُوَ رِضَا اللَّهِ تَعَالَى
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Janganlah engkau gembira dengan pujian manusia, dan janganlah engkau bersedih dengan celaan mereka. Karena pujian dan celaan itu sama saja di sisi orang yang arif (mengenal Allah), dan standar yang sejati adalah ridha Allah Ta'ala."
+<br>— Syeikh Abdullah Ibnu Alawi Al-Haddad
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Tanggapan Pro dari Masyarakat — Karya yang Dibaca Jutaan Umat</span>
+<div class="karomah-arabic">تَجَاوُبُ الْعَامَّةِ بِالْقَبُولِ — مُصَنَّفَاتٌ تُقْرَأُ فِي الْمَلَائِنِ</div>
+<p>
+Di kalangan masyarakat awam — baik di Hadhramaut maupun di Nusantara (Indonesia, Malaysia, Singapura, Brunei) — Syeikh Abdullah Ibnu Alawi Al-Haddad mendapatkan sambutan yang sangat luar biasa. Karya-karya beliau dibaca, dipelajari, dan diamalkan oleh jutaan umat Islam dari berbagai lapisan masyarakat — dari para kiai dan ulama, para santri, hingga rakyat biasa, ibu-ibu rumah tangga, dan anak-anak yang baru belajar mengaji.
+</p>
+<p>
+Di antara bentuk-bentuk tanggapan pro dari masyarakat adalah:
+</p>
+<ul>
+<li><strong>Pembacaan Ratib Al-Haddad secara Rutin</strong> — Wirid agung warisan leluhur beliau, <em>Ratib Al-Haddad</em>, yang beliau ajarkan dan amalkan, menjadi amalan harian jutaan umat Islam di Nusantara. Setiap malam Jumat, malam Senin, atau setelah shalat Maghrib, majelis-majelis Ratib diadakan di berbagai pelosok negeri, dari Aceh hingga Papua.</li>
+<li><strong>Pengajian Karya-Karya Beliau di Pesantren</strong> — Karya-karya beliau seperti <em>Risalatul Muawanah</em>, <em>Risalatul Mukasyafah</em>, <em>An-Nashaih Ad-Diniyyah</em>, dan <em>Al-Fawaidul Mukhtarah</em> menjadi bacaan wajib di banyak pesantren di Nusantara. Para kiai mengajarkannya kepada para santri sebagai pedoman akhlak dan tasawuf.</li>
+<li><strong>Majelis-Majelis Maulid dan Manaqib</strong> — Majelis-majelis yang membahas kehidupan dan ajaran beliau diadakan di berbagai tempat, khususnya di kalangan masyarakat Hadhramaut dan keturunan mereka di Nusantara. Kisah-kisah kewalian beliau menjadi inspirasi bagi banyak orang.</li>
+<li><strong>Ziarah ke Makam Beliau di Tarim</strong> — Makam beliau di Tarim, Hadhramaut, menjadi tempat ziarah yang ramai dikunjungi oleh umat Islam dari berbagai penjuru dunia, khususnya dari Nusantara. Banyak yang datang untuk mencari barakah dan mendoakan beliau.</li>
+<li><strong>Cinta dan Penghormatan yang Mendalam</strong> — Masyarakat memberikan penghormatan yang sangat tinggi kepada beliau. Mereka memanggil beliau dengan gelar-gelar mulia seperti <em>Imamul Muhaqqiqin</em> (Imamnya Para Peneliti Kebenaran), <em>Najmud Dzurri</em> (Bintang Generasi), dan <em>Quthb al-Irshad</em> (Poros Pembimbingan).</li>
+<li><strong>Permintaan Doa dan Barakah</strong> — Banyak orang yang datang kepada beliau — baik ketika beliau masih hidup maupun setelah wafat — untuk meminta doa, barakah, dan nasihat spiritual. Doa-doa beliau dikenal mustajab, dan banyak orang yang mendapatkan pertolongan Allah melalui wasilah doa beliau.</li>
+</ul>
+<p>
+Salah seorang murid beliau dari Nusantara berkata mengenang: <em>"Ketika kami membaca karya-karya Syeikh Abdullah, seolah-olah beliau sedang berbicara langsung kepada hati kami. Kata-kata beliau bukan berasal dari otaknya semata, melainkan dari hatinya yang telah dipenuhi oleh cahaya Allah. Siapa pun yang membacanya dengan hati yang hidup, hatinya akan hidup kembali setelah mati."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG DAKWAH YANG MENYENTUH HATI — QS. MARYAM: 58</div>
+<div class="arabic-text">
+أُولَٰئِكَ الَّذِينَ أَنْعَمَ اللَّهُ عَلَيْهِم مِّنَ النَّبِيِّينَ مِن ذُرِّيَّةِ آدَمَ وَمِمَّنْ حَمَلْنَا مَعَ نُوحٍ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Mereka itu adalah orang-orang yang telah diberi nikmat oleh Allah, (yaitu) para nabi dari keturunan Adam, dan dari orang-orang yang Kami angkat bersama Nuh..."
+<br>— QS. Maryam: 58
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Tanggapan Kontra dari Masyarakat — Pengaruh Gerakan Pembaharu</span>
+<div class="karomah-arabic">تَجَاوُبُ الْعَامَّةِ بِالرَّفْضِ — تَأْثِيرُ حَرَكَاتِ التَّجْدِيدِ</div>
+<p>
+Di sisi lain, tidak sedikit pula masyarakat yang menanggapi Syeikh Abdullah dengan negatif, khususnya mereka yang terpengaruh oleh gerakan-gerakan pembaharu yang menentang tradisi tasawuf Alawiyyah. Penolakan ini datang dari berbagai kalangan — dari orang-orang awam yang baru mengenal pemikiran pembaharu, dari para pendengki yang iri dengan popularitas beliau, dan dari orang-orang yang memang memiliki penyakit di hatinya.
+</p>
+<p>
+Di antara bentuk-bentuk tanggapan kontra dari masyarakat adalah:
+</p>
+<ul>
+<li><strong>Penolakan terhadap Ratib Al-Haddad</strong> — Sebagian orang yang terpengaruh gerakan pembaharu menganggap Ratib Al-Haddad sebagai bid'ah yang harus ditolak, karena wirid ini tidak diajarkan secara langsung oleh Rasulullah SAW. Mereka melarang pengamalannya dan menganggap orang yang mengamalkannya sebagai orang yang sesat.</li>
+<li><strong>Tuduhan Sebagai Penganut Tarekat Sesat</strong> — Sebagian orang menuduh Syeikh Abdullah dan keluarga Al-Haddad sebagai penganut tarekat yang menyimpang dari ajaran Islam yang sejati. Tuduhan ini sangat menyakitkan bagi beliau, karena beliau adalah orang yang sangat berpegang teguh pada syariat dan sunnah Nabi SAW.</li>
+<li><strong>Fitnah Ziarah dan Tawassul</strong> — Sebagian pendengki menyebarkan fitnah bahwa ziarah ke makam para wali dan tawassul melalui mereka — yang diajarkan oleh Syeikh Abdullah — adalah bentuk syirik yang harus diberantas. Mereka tidak memahami bahwa tawassul yang diajarkan oleh beliau adalah tawassul yang sesuai dengan syariat.</li>
+<li><strong>Kesalahpahaman terhadap Konsep Karomah</strong> — Sebagian orang awam yang terpengaruh pemikiran pembaharu menganggap keyakinan akan karomah para wali sebagai takhayul dan khurafat yang tidak memiliki dasar dalam Islam. Mereka tidak memahami bahwa karomah adalah anugerah Allah yang diberikan kepada para wali-Nya, sebagaimana disebutkan dalam Al-Qur'an dan Hadits.</li>
+<li><strong>Iri Hati terhadap Popularitas</strong> — Popularitas beliau yang sangat tinggi, khususnya di Nusantara, menimbulkan iri hati di kalangan sebagian orang. Mereka tidak dapat menerima bahwa seorang ulama dari Hadhramaut mendapatkan perhatian yang begitu besar dari masyarakat Nusantara.</li>
+<li><strong>Penyebaran Tulisan-Tulisan Penentang</strong> — Beberapa tulisan yang menentang ajaran beliau disebarkan di kalangan masyarakat, khususnya di Nusantara. Tulisan-tulisan ini seringkali berisi kesalahpahaman terhadap ajaran beliau, atau bahkan fitnah yang tidak memiliki dasar kebenaran.</li>
+</ul>
+<p>
+Namun, Syeikh Abdullah menghadapi semua ini dengan kesabaran yang luar biasa. Beliau tidak pernah membalas fitnah dengan fitnah, tidak pernah membela diri dengan keras, melainkan membiarkan waktu dan kebenaran yang berbicara. Beliau berkata: <em>"Kebenaran itu seperti minyak — meskipun engkau menekannya ke bawah air, ia akan tetap muncul ke permukaan. Dan kebatilan itu seperti buih — meskipun ia tampak besar, ia akan segera hilang tanpa bekas. Maka hendaklah engkau bersabar, karena kemenangan kebenaran telah dijanjikan oleh Allah."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEBENARAN YANG TETAP TERUNGKAP — QS. AL-ISRA': 81</div>
+<div class="arabic-text">
+وَقُلْ جَاءَ الْحَقُّ وَزَهَقَ الْبَاطِلُ ۚ إِنَّ الْبَاطِلَ كَانَ زَهُوقًا
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan katakanlah: 'Yang benar telah datang dan yang batil pasti lenyap.' Sesungguhnya yang batil itu pasti lenyap."
+<br>— QS. Al-Isra': 81
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Sikap Pro dari Kalangan Ulama — Tradisi yang Dijaga</span>
+<div class="karomah-arabic">مَوْقِفُ الْعُلَمَاءِ الْمُؤَيِّدِينَ — حِفْظُ التَّقْلِيدِ الْعِلْمِيِّ</div>
+<p>
+Di kalangan ulama, Syeikh Abdullah Ibnu Alawi Al-Haddad mendapatkan dukungan yang sangat kuat dari para ulama tradisional, khususnya dari keluarga-keluarga Asyraf di Hadhramaut dan para ulama Nusantara yang mengikuti tradisi Ahlus Sunnah wal Jama'ah. Mereka melihat dalam diri beliau seorang wali yang memadukan kedalaman ilmu zhahir dengan ketinggian maqam batin — perpaduan langka yang menjadikan beliau sebagai tokoh yang sangat dihormati di kalangan ulama sejati.
+</p>
+<p>
+Di antara ulama yang mendukung dan memuji Syeikh Abdullah adalah:
+</p>
+<ul>
+<li><strong>Para Ulama Keluarga Al-Haddad</strong> — Kerabat-kerabat beliau dari keluarga Al-Haddad yang melanjutkan tradisi keilmuan keluarga dan mendukung beliau dalam dakwah dan pengajaran.</li>
+<li><strong>Para Ulama Keluarga As-Seggaf, Asy-Syathiri, Al-Aydarus, Al-Habsyi</strong> — Keluarga-keluarga Asyraf besar di Hadhramaut yang senantiasa mendukung beliau dan bekerja sama dalam menjaga tradisi keilmuan dan spiritual di wilayah tersebut.</li>
+<li><strong>Para Ulama Tarekat Alawiyyah</strong> — Para mursyid dan muqaddam Tarekat Alawiyyah di Hadhramaut dan Nusantara yang menganggap beliau sebagai salah satu tokoh sentral dalam tarekat mereka.</li>
+<li><strong>Para Ulama Nusantara</strong> — Banyak ulama besar di Nusantara yang menghormati Syeikh Abdullah dan menganggap karya-karya beliau sebagai rujukan utama dalam bidang akhlak dan tasawuf. Di antara mereka adalah para kiai besar di Jawa, Sumatra, Kalimantan, Sulawesi, dan pulau-pulau lainnya.</li>
+<li><strong>Para Mufti dan Qadhi Hadhramaut</strong> — Para pejabat agama di Hadhramaut yang mengakui kedudukan beliau sebagai salah satu ulama terbesar di wilayah tersebut.</li>
+<li><strong>Para Penyebar Ajaran Alawiyyah di Nusantara</strong> — Para habaib dan ulama keturunan Hadhramaut yang menyebar ke Nusantara dan membawa ajaran-ajaran beliau, seperti Habib Utsman bin Yahya (Mufti Batavia), Habib Ali bin Husein Al-Attas, dan banyak lainnya.</li>
+</ul>
+<p>
+Salah seorang ulama Nusantara yang membela Syeikh Abdullah berkata: <em>"Barangsiapa yang menuduh Syeikh Abdullah sebagai orang yang melampaui syariat, maka ia belum memahami makna syariat itu sendiri. Karena syariat yang sejati akan membawa engkau kepada hakikat, dan hakikat yang sejati akan mengembalikan engkau kepada syariat. Syeikh Abdullah adalah bukti hidup dari perpaduan keduanya."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG PARA ULAMA YANG TAKUT KEPADA ALLAH — QS. FATHIR: 28</div>
+<div class="arabic-text">
+إِنَّمَا يَخْشَى اللَّهَ مِنْ عِبَادِهِ الْعُلَمَاءُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Sesungguhnya yang takut kepada Allah di antara hamba-hamba-Nya, hanyalah ulama."
+<br>— QS. Fathir: 28
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Sikap Kontra dari Kalangan Ulama — Penentangan Gerakan Pembaharu</span>
+<div class="karomah-arabic">مَوْقِفُ الْعُلَمَاءِ الْمُعَارِضِينَ — مُعَارَضَةُ حَرَكَاتِ التَّجْدِيدِ</div>
+<p>
+Di sisi lain, tidak sedikit pula ulama yang menentang Syeikh Abdullah Al-Haddad dengan keras, khususnya dari kalangan yang terpengaruh oleh gerakan pembaharu yang menentang tradisi tasawuf. Penentangan ini terutama datang dari dua kelompok: (1) para ulama yang terpengaruh oleh pemikiran Ibnu Taimiyah dan Ibnu Abdul Wahhab yang menentang tradisi tasawuf, dan (2) para ulama yang menganggap praktik-praktik spiritual Alawiyyah sebagai bid'ah yang harus diberantas.
+</p>
+<p>
+Di antara bentuk-bentuk penentangan dari kalangan ulama adalah:
+</p>
+<ul>
+<li><strong>Tuduhan Bid'ah</strong> — Sebagian ulama menuduh Syeikh Abdullah mengajarkan ajaran bid'ah, khususnya dalam hal Ratib Al-Haddad, ziarah ke makam para wali, dan tawassul. Mereka berkata: <em>"Para salaf tidak pernah melakukan hal-hal ini, maka ini adalah bid'ah yang harus ditolak."</em></li>
+<li><strong>Tuduhan Syirik dan Khurafat</strong> — Sebagian ulama yang lebih keras menuduh Syeikh Abdullah mengajarkan ajaran yang mengandung unsur syirik dan khurafat, seperti keyakinan akan karomah para wali dan tawassul melalui mereka. Tuduhan ini sangat berbahaya pada masa itu, karena dapat berakibat pada pengkafiran.</li>
+<li><strong>Penolakan terhadap Tarekat Alawiyyah</strong> — Sebagian ulama menolak seluruh tradisi Tarekat Alawiyyah yang dianut oleh Syeikh Abdullah, dan menganggap tarekat ini sebagai tarekat yang menyimpang dari jalan yang lurus.</li>
+<li><strong>Kritik terhadap Karya-Karya Beliau</strong> — Sebagian ulama mengkritik karya-karya beliau, dengan alasan bahwa karya-karya ini mengandung ajaran-ajaran yang tidak memiliki dasar yang kuat dalam Al-Qur'an dan Sunnah.</li>
+<li><strong>Upaya Memutus Pengaruh Beliau di Nusantara</strong> — Sebagian ulama yang menentang beliau berupaya untuk memutus pengaruh beliau di Nusantara, dengan cara menulis buku-buku dan risalah-risalah yang menentang ajaran beliau, serta melarang pengikut mereka untuk membaca karya-karya beliau.</li>
+<li><strong>Pengkafiran terhadap Pengikut Beliau</strong> — Sebagian ulama yang ekstrem tidak hanya menentang ajaran beliau, melainkan juga mengkafirkan orang-orang yang mengikuti ajaran beliau. Ini adalah sikap yang sangat berbahaya dan memecah belah umat Islam.</li>
+</ul>
+<p>
+Namun, Syeikh Abdullah menghadapi semua ini dengan hikmah dan kelembutan. Beliau tidak pernah membalas dengan keras, melainkan dengan menjelaskan bahwa tasawuf yang beliau ajarkan bukanlah tasawuf yang melampaui syariat, melainkan tasawuf yang berpijak pada syariat dan sunnah. Beliau berkata: <em>"Aku bukanlah orang yang melampaui syariat, melainkan orang yang mencari hakikat di balik syariat. Dan barangsiapa yang mencari hakikat tanpa syariat, maka ia adalah orang yang tersesat. Aku mengikuti jejak Rasulullah SAW dan para salaf shaleh dalam zhahir dan batin, dalam syariat dan hakikat."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG PERBEDAAN PENDAPAT — QS. AN-NISA': 59</div>
+<div class="arabic-text">
+فَإِن تَنَازَعْتُمْ فِي شَيْءٍ فَرُدُّوهُ إِلَى اللَّهِ وَالرَّسُولِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Kemudian jika kamu berlainan pendapat tentang sesuatu, maka kembalikanlah ia kepada Allah (Al-Qur'an) dan Rasul (sunnahnya)."
+<br>— QS. An-Nisa': 59
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Sikap Penguasa — Hadhramaut dan Nusantara</span>
+<div class="karomah-arabic">مَوْقِفُ الْحُكَّامِ — حَضْرَمَوْتُ وَأَرْخَبِيلُ النَّبَتِيِّ</div>
+<p>
+Sikap penguasa terhadap Syeikh Abdullah Ibnu Alawi Al-Haddad sangat dipengaruhi oleh kedudukan beliau sebagai Asyraf (keturunan Rasulullah SAW) dan ulama besar di Hadhramaut. Secara umum, para penguasa bersikap positif terhadap beliau, meskipun ada pula yang bersikap hati-hati karena pengaruh para ulama yang memusuhi beliau.
+</p>
+<p>
+Di antara sikap-sikap penguasa terhadap beliau adalah:
+</p>
+<ul>
+<li><strong>Penghormatan dari Penguasa Hadhramaut</strong> — Para sultan dan penguasa di Hadhramaut pada masa itu memberikan penghormatan yang tinggi kepada Syeikh Abdullah, sebagian besar karena hormat mereka kepada keluarga Al-Haddad dan keluarga-keluarga Asyraf lainnya. Beliau diizinkan untuk mengajar dan berdakwah tanpa hambatan.</li>
+<li><strong>Dukungan dari Penguasa Nusantara</strong> — Para sultan dan penguasa di Nusantara — seperti Kesultanan Aceh, Kesultanan Demak, Kesultanan Banten, Kesultanan Mataram, dan kesultanan-kesultanan lainnya — memberikan dukungan yang sangat besar kepada ajaran-ajaran beliau. Banyak dari mereka yang memiliki hubungan spiritual dengan para ulama Alawiyyah.</li>
+<li><strong>Undangan ke Istana</strong> — Syeikh Abdullah beberapa kali diundang ke istana untuk memberikan nasihat spiritual kepada para penguasa. Beliau menerima undangan ini dengan sikap yang sangat hati-hati — beliau memberikan nasihat dengan hikmah, namun tidak pernah mendekat secara berlebihan kepada penguasa, sehingga tidak menimbulkan kesan bahwa beliau adalah ulama istana.</li>
+<li><strong>Perlindungan dari Gangguan</strong> — Ketika ada upaya dari sebagian ulama untuk mengganggu kegiatan dakwah beliau, para penguasa memberikan perlindungan kepada beliau. Hal ini menunjukkan bahwa posisi beliau di mata penguasa cukup kuat, meskipun tidak sekuat posisi para Asyraf lainnya.</li>
+<li><strong>Sikap Hati-Hati Sebagian Penguasa</strong> — Meskipun mayoritas penguasa bersikap positif, ada pula sebagian penguasa yang bersikap hati-hati terhadap beliau, khususnya karena pengaruh para ulama yang memusuhi beliau. Mereka tidak secara terbuka menentang beliau, namun juga tidak memberikan dukungan yang penuh.</li>
+<li><strong>Tidak Ada Persekusi Resmi</strong> — Berbeda dengan beberapa sufi lain di masa-masa sebelumnya (seperti Al-Hallaj yang dihukum mati), Syeikh Abdullah tidak pernah mengalami persekusi resmi dari penguasa. Beliau wafat dalam keadaan dihormati dan dimakamkan dengan layak di Tarim.</li>
+</ul>
+<p>
+Syeikh Abdullah sendiri bersikap sangat hati-hati dalam berinteraksi dengan para penguasa. Beliau tidak pernah mencari-cari kedekatan dengan mereka, dan tidak pernah memanfaatkan hubungan dengan mereka untuk kepentingan pribadi. Beliau berkata: <em>"Penguasa itu seperti api — jika engkau mendekat terlalu jauh, engkau akan terbakar; jika engkau menjauh terlalu jauh, engkau akan kedinginan. Maka hendaklah engkau berada di tengah-tengah — memberikan hak mereka dengan nasihat yang baik, namun tidak mendekat terlalu jauh hingga engkau kehilangan kemerdekaan hatimu."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG SIKAP TERHADAP PENGUASA — QS. AL-HUJURAT: 13</div>
+<div class="arabic-text">
+يَا أَيُّهَا النَّاسُ إِنَّا خَلَقْنَاكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَاكُمْ شُعُوبًا وَقَبَائِلَ لِتَعَارَفُوا ۚ إِنَّ أَكْرَمَكُمْ عِندَ اللَّهِ أَتْقَاكُمْ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Hai manusia, sesungguhnya Kami menciptakan kamu dari seorang laki-laki dan seorang perempuan dan menjadikan kamu berbangsa-bangsa dan bersuku-suku supaya kamu saling kenal-mengenal. Sesungguhnya orang yang paling mulia diantara kamu disisi Allah ialah orang yang paling takwa diantara kamu."
+<br>— QS. Al-Hujurat: 13
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">6</span>
+<span class="karomah-title">Tanggapan Diri Syeikh Abdullah — Tawadhu', Sabar, dan Cinta</span>
+<div class="karomah-arabic">تَجَاوُبُ الشَّيْخِ نَفْسِهِ — التَّوَاضُعُ وَالصَّبْرُ وَالْمَحَبَّةُ</div>
+<p>
+Yang paling mengagumkan dari seluruh dinamika pro dan kontra ini adalah tanggapan diri Syeikh Abdullah sendiri terhadap semua reaksi yang datang kepada beliau. Beliau tidak pernah terpengaruh oleh pujian, tidak pernah goyah oleh celaan, dan senantiasa kembali kepada Allah sebagai satu-satunya tujuan. Sikap beliau ini menjadi teladan bagi para ulama dan mursyid di sepanjang zaman.
+</p>
+<p>
+Di antara prinsip-prinsip yang beliau pegang dalam menghadapi pro dan kontra adalah:
+</p>
+<ul>
+<li><strong>Tawadhu' (Kerendahan Hati)</strong> — Ketika orang-orang memuji beliau, beliau tidak menjadi sombong atau bangga diri. Beliau menganggap dirinya sebagai hamba yang lemah yang berusaha untuk taat kepada Tuhannya. Beliau berkata: <em>"Aku bukanlah wali, melainkan hamba yang lemah yang berusaha untuk taat kepada Tuhannya. Barangsiapa yang menganggapku sebagai wali, maka ia telah keliru. Karena kewalian hanyalah milik Allah, dan Dia memberikannya kepada siapa yang Dia kehendaki."</em></li>
+<li><strong>Sabar tanpa Keluhan</strong> — Ketika orang-orang mencela beliau, beliau tidak menjadi sedih atau marah. Beliau menganggap celaan sebagai ujian yang dapat membersihkan hati dari kotoran-kotoran tersembunyi. Beliau berkata: <em>"Celaan orang yang mencelamu karena Allah adalah hadiah yang tersembunyi — ia membersihkan hatimu dari sifat-sifat yang tidak engkau sadari."</em></li>
+<li><strong>Mencintai Para Pencela</strong> — Salah satu keistimewaan beliau adalah beliau senantiasa mencintai orang-orang yang mencela beliau, dan mendoakan mereka dengan kebaikan. Beliau berkata: <em>"Barangsiapa yang mencelaku, maka ia adalah kekasihku — karena ia mengingatkanku dari aibku, atau mengujiku dengan kesabaran."</em></li>
+<li><strong>Tidak Membela Diri dengan Keras</strong> — Beliau tidak pernah membalas fitnah dengan fitnah, tidak pernah membela diri dengan keras, melainkan membiarkan waktu dan kebenaran yang berbicara. Beliau berkata: <em>"Biarkanlah kebenaran itu bersinar dengan cahayanya sendiri — ia tidak membutuhkan pembelaanmu, karena ia adalah pembela dirinya sendiri."</em></li>
+<li><strong>Kembali kepada Allah</strong> — Dalam setiap keadaan — baik ketika dipuji maupun ketika dicela — beliau senantiasa kembali kepada Allah dengan dzikir, doa, dan khalwat. Beliau berkata: <em>"Ketika manusia memujiku, aku lari kepada Allah dari diriku. Dan ketika manusia mencelaku, aku lari kepada Allah dari mereka."</em></li>
+<li><strong>Mendoakan Umat</strong> — Meskipun banyak orang yang mencela beliau, beliau senantiasa mendoakan umat Islam dengan kebaikan. Beliau berkata: <em>"Doaku untuk umat ini lebih aku cintai daripada dunia dan seisinya. Karena aku tidak mencari cinta manusia, melainkan cinta Allah — dan cinta Allah didapat dengan mencintai hamba-hamba-Nya."</em></li>
+<li><strong>Fokus pada Tazkiyatun Nafs</strong> — Beliau tidak menghabiskan waktunya untuk berdebat dengan para penentang, melainkan beliau fokus pada tazkiyatun nafs dan pembinaan akhlak para murid beliau. Beliau berkata: <em>"Perbaikan diri lebih utama daripada perbaikan orang lain. Karena barangsiapa yang telah memperbaiki dirinya, ia akan menjadi sumber perbaikan bagi orang lain."</em></li>
+</ul>
+<p>
+Sikap beliau ini menjadi teladan bagi kita semua — bagaimana seorang ulama dan mursyid harus bersikap di tengah masyarakat yang beragam, dengan berbagai pandangan dan pemahaman. Beliau mengajarkan bahwa dakwah bukanlah tentang memenangkan diri sendiri, melainkan tentang menyampaikan kebenaran dengan cara yang terbaik — dengan hikmah, kelembutan, dan akhlak mulia.
+</p>
+<p>
+Beliau pernah berkata dalam salah satu nasihat beliau yang terkenal: <em>"Aku tidak mencari ridha manusia, karena ridha manusia adalah tujuan yang tidak pernah tercapai. Aku hanya mencari ridha Allah — dan barangsiapa yang mendapatkan ridha Allah, maka ia akan mendapatkan cinta manusia meskipun mereka tidak menyadarinya. Dan barangsiapa yang mencari ridha manusia dengan mengorbankan ridha Allah, maka ia akan kehilangan keduanya."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENCARI RIDHA ALLAH — QS. AL-BAQARAH: 207</div>
+<div class="arabic-text">
+وَمِنَ النَّاسِ مَن يَشْرِي نَفْسَهُ ابْتِغَاءَ مَرْضَاتِ اللَّهِ ۗ وَاللَّهُ رَءُوفٌ بِالْعِبَادِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Di antara manusia ada orang yang mengorbankan dirinya karena mencari keridhaan Allah; dan Allah Maha Penyayang kepada hamba-hamba-Nya."
+<br>— QS. Al-Baqarah: 207
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Tanggapan Pro dan Kontra terhadap Syeikh Abdullah Ibnu Alawi Al-Haddad:</strong>
+<ul>
+<li><strong>Pro dari masyarakat awam:</strong> Pembacaan Ratib Al-Haddad secara rutin, pengajian karya-karya beliau di pesantren, majelis-majelis Maulid dan Manaqib, ziarah ke makam beliau di Tarim, cinta dan penghormatan mendalam, permintaan doa dan barakah</li>
+<li><strong>Kontra dari masyarakat awam:</strong> Penolakan terhadap Ratib Al-Haddad, tuduhan sebagai penganut tarekat sesat, fitnah ziarah dan tawassul, kesalahpahaman terhadap konsep karomah, iri hati terhadap popularitas, penyebaran tulisan-tulisan penentang</li>
+<li><strong>Pro dari ulama:</strong> Dukungan dari keluarga Al-Haddad, As-Seggaf, Asy-Syathiri, Al-Aydarus, Al-Habsyi, para ulama Tarekat Alawiyyah, para ulama Nusantara, para mufti dan qadhi Hadhramaut, para penyebar ajaran Alawiyyah di Nusantara</li>
+<li><strong>Kontra dari ulama:</strong> Tuduhan bid'ah, tuduhan syirik dan khurafat, penolakan terhadap Tarekat Alawiyyah, kritik terhadap karya-karya beliau, upaya memutus pengaruh beliau di Nusantara, pengkafiran terhadap pengikut beliau</li>
+<li><strong>Sikap penguasa:</strong> Penghormatan dari penguasa Hadhramaut, dukungan dari penguasa Nusantara, undangan ke istana, perlindungan dari gangguan, sikap hati-hati sebagian penguasa, tidak ada persekusi resmi</li>
+<li><strong>Sikap diri beliau:</strong> Tawadhu' (kerendahan hati), sabar tanpa keluhan, mencintai para pencela, tidak membela diri dengan keras, kembali kepada Allah, mendoakan umat, fokus pada tazkiyatun nafs</li>
+<li><strong>Prinsip utama:</strong> Mencari ridha Allah, bukan ridha manusia</li>
+<li><strong>Warisan sikap:</strong> Menjadi teladan bagi para ulama dan mursyid dalam menghadapi dinamika pro/kontra</li>
+</ul>
+</div>
+<h2>Doa Memohon Keteguhan Hati di Tengah Umat</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON KETEGUHAN HATI DAN HIKMAH</div>
+<div class="arabic-text">
+اللَّهُمَّ لَا تَجْعَلْ مُصِيبَتَنَا فِي دِينِنَا، وَلَا تَجْعَلِ الدُّنْيَا أَكْبَرَ هَمِّنَا، وَلَا إِلَى عِلْمِنَا مَصِيرَنَا. اللَّهُمَّ ارْزُقْنَا التَّوَاضُعَ عِنْدَ الْمَدْحِ، وَالصَّبْرَ عِنْدَ الذَّمِّ، وَالرِّضَا عِنْدَ الْقَضَاءِ، وَاجْعَلْنَا مِمَّنْ يَطْلُبُونَ رِضَاكَ وَلَا يَطْلُبُونَ رِضَاءَ النَّاسِ، وَارْزُقْنَا حُبَّ سَيِّدِنَا عَبْدِ اللَّهِ ابْنِ عَلَوِيٍّ الْحَدَّادِ وَشَفَاعَتَهُ يَوْمَ الْقِيَامَةِ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Ya Allah, janganlah Engkau jadikan musibah kami dalam agama kami, janganlah Engkau jadikan dunia sebagai cita-cita terbesar kami, dan janganlah Engkau jadikan ilmu kami sebagai ujung perjalanan kami. Ya Allah, anugerahkanlah kepada kami kerendahan hati ketika dipuji, kesabaran ketika dicela, dan ridha ketika menghadapi takdir. Jadikanlah kami termasuk orang-orang yang mencari ridha-Mu, bukan ridha manusia, dan anugerahkanlah kepada kami cinta Sayyidina Abdullah bin Alawi Al-Haddad dan syafaatnya pada hari kiamat."
+<br>— Doa terinspirasi dari hadits Rasulullah SAW
+</div>
+</div>
+<h2>Penutup Halaman 6</h2>
+<p>
+Demikianlah peta tanggapan pro dan kontra terhadap Syeikh Abdullah Ibnu Alawi Al-Haddad di masanya — sebuah peta yang sangat kompleks dan dinamis, yang mencerminkan betapa berpengaruhnya beliau di tengah masyarakat, ulama, dan penguasa. Di satu sisi, beliau dicintai oleh jutaan umat Islam yang membaca dan mengamalkan karya-karya beliau, khususnya di Hadhramaut dan Nusantara. Di sisi lain, beliau dicela oleh sebagian orang yang terpengaruh oleh gerakan pembaharu yang menentang tradisi tasawuf Alawiyyah. Di kalangan ulama, beliau didukung oleh para ulama tradisional dan keluarga-keluarga Asyraf, namun ditentang oleh sebagian ulama yang terpengaruh pemikiran pembaharu. Di kalangan penguasa, beliau dihormati dan dilindungi, meskipun ada pula yang bersikap hati-hati.
+</p>
+<p>
+Namun, di tengah semua ini, Syeikh Abdullah tetap istiqamah dengan prinsip beliau — tidak terpengaruh oleh pujian, tidak goyah oleh celaan, dan senantiasa kembali kepada Allah sebagai satu-satunya tujuan. Sikap beliau ini menjadi teladan bagi kita semua — bagaimana seorang ulama dan mursyid harus bersikap di tengah masyarakat yang beragam, dengan berbagai pandangan dan pemahaman. Beliau mengajarkan bahwa dakwah bukanlah tentang memenangkan diri sendiri, melainkan tentang menyampaikan kebenaran dengan cara yang terbaik — dengan hikmah, kelembutan, dan akhlak mulia.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas secara khusus sikap Syeikh Abdullah Ibnu Alawi Al-Haddad terhadap para penguasa di masanya — bagaimana beliau berinteraksi dengan mereka, bagaimana beliau memberikan nasihat, dan bagaimana beliau menjaga kemerdekaan hati beliau di tengah godaan-godaan dunia yang datang dari istana.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ
+</div>
+<div class="arabic-translation">
+<strong>Artinya:</strong> "Dan barangsiapa yang bertawakkal kepada Allah, maka Allah cukup baginya."
+<br>— QS. Ath-Thalaq: 3
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="haddad1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="haddad2.html" class="article-nav-btn" title="Halaman 2: Masa Kecil & Pendidikan">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="haddad3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="haddad4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="haddad5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="haddad6.html" class="article-nav-btn active" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="haddad7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="haddad8.html" class="article-nav-btn" title="Halaman 8: Warisan Keilmuan">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="haddad9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>
