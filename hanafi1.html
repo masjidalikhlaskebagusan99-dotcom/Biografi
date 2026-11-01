@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+/* 1. RESET & DASAR */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+/* 2. MEDIA QUERY TABLET */
+@media (max-width: 768px) {
+.article-container {
+max-width: 100%;
+padding: 20px;
+}
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+/* 3. HEADER & NAVIGASI ATAS */
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+/* 4. BREADCRUMB & CONTAINER */
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+/* 5. ARTICLE HEADER & META */
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+/* 6. GAMBAR & SHARE BAR */
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+/* 7. KONTEN ARTIKEL */
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 8. KOTAK ARAB & BIOGRAFI */
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 9. NAVIGASI HALAMAN (9 TOMBOL) */
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* 10. TOMBOL KEMBALI & FOOTER */
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+/* 11. MEDIA QUERY MOBILE */
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+/* PATCH UNIVERSAL v2.0 */
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah</h1>
+<div class="subtitle">Halaman 1 dari 9 — Pengenalan, Nasab Mulia, dan Kelahiran Sang Ulama Tabi'in Agung</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Rabu, 28 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Medina_-_Map_of_the_Prophet%27s_Mosque.jpg/440px-Medina_-_Map_of_the_Prophet%27s_Mosque.jpg"
+alt="Kota Madinah Al-Munawwarah — tempat lahir dan tumbuhnya Syeikh Muhammad Ibnu Al-Hanafiyyah"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Kufa_Mosque.jpg/440px-Kufa_Mosque.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Kota Madinah Al-Munawwarah dan Kufah — tanah kelahiran dan masa kecil Syeikh Muhammad bin Ali bin Abi Thalib Al-Hanafiyyah, salah satu ulama besar tabi'in yang mewarisi ilmu dan hikmah dari ayahnya, Amirul Mukminin Ali bin Abi Thalib radhiyallahu 'anhu</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Syeikh Muhammad bin Ali bin Abi Thalib, yang lebih dikenal dengan nama <em>Muhammad Al-Hanafiyyah</em> atau <em>Ibnu Al-Hanafiyyah</em> (lahir sekitar 36 H / 656 M, wafat sekitar 81 H / 700 M), adalah salah satu ulama besar dari kalangan tabi'in, putra Amirul Mukminin Ali bin Abi Thalib radhiyallahu 'anhu, dan tokoh yang sangat dihormati di kalangan umat Islam. Beliau adalah seorang yang alim, faqih, ahli ibadah, dan memiliki kedudukan tinggi di antara para ulama pada zamannya. Beliau tumbuh di lingkungan keluarga Ahlul Bait, dididik oleh ayahandanya yang merupakan salah satu sahabat terdekat Rasulullah SAW dan Khalifah keempat, sehingga beliau mewarisi keilmuan dan hikmah yang sangat mendalam. Meskipun bukan putra dari Sayyidah Fathimah Az-Zahra, beliau tetap menjadi bagian dari keluarga besar Rasulullah SAW melalui ayahandanya Ali bin Abi Thalib, dan menjadi salah satu tokoh penting dalam sejarah awal perkembangan ilmu-ilmu Islam.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEUTAMAAN AHLUL BAIT — QS. AL-AHZAB: 33</div>
+<div class="arabic-text">
+إِنَّمَا يُرِيدُ اللَّهُ لِيُذْهِبَ عَنكُمُ الرِّجْسَ أَهْلَ الْبَيْتِ وَيُطَهِّرَكُمْ تَطْهِيرًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Innamā yurīdu-Llāhu li-yudzhiba 'ankumu-r-rijsa ahlal-bayti wa yuthahhirakum tathīrā."<br>
+<strong>Artinya:</strong> "Sesungguhnya Allah bermaksud hendak menghilangkan dosa dari kamu, hai ahlul bait, dan membersihkan kamu sebersih-bersihnya."
+<br>— QS. Al-Ahzab: 33
+</div>
+</div>
+<h2>Muhammad Al-Hanafiyyah — Sang Ulama Tabi'in dari Keluarga Ali bin Abi Thalib</h2>
+<p>
+Muhammad Al-Hanafiyyah adalah sosok yang sangat istimewa dalam sejarah Islam. Beliau merupakan putra dari <em>Ali bin Abi Thalib radhiyallahu 'anhu</em>, sepupu dan menantu Rasulullah SAW, Khalifah keempat dari Khulafa' Ar-Rasyidin, dan salah satu dari sepuluh sahabat yang dijamin masuk surga. Ibunda beliau adalah <em>Khaulah binti Ja'far Al-Hanafiyyah</em>, seorang wanita dari kabilah Bani Hanifah. Oleh karena itu, beliau diberi nisbah <em>Al-Hanafiyyah</em> — yang merujuk kepada nama kabilah ibunya, untuk membedakannya dari saudara-saudaranya yang lain dari kalangan Ahlul Bait.
+</p>
+<p>
+Beliau tumbuh di lingkungan yang sangat mulia — di bawah bimbingan ayahanda yang merupakan salah satu sahabat terdekat Rasulullah SAW, dan di tengah saudara-saudara beliau seperti <em>Al-Hasan bin Ali</em> dan <em>Al-Husain bin Ali</em> radhiyallahu 'anhum. Lingkungan keluarga ini menjadikan beliau tumbuh sebagai pribadi yang alim, zuhud, ahli ibadah, dan memiliki kedudukan tinggi di kalangan ulama pada zamannya. Banyak ulama salaf yang meriwayatkan ilmu dari beliau dan memuji keilmuan serta kesalehan beliau.
+</p>
+<p>
+Beliau dikenal sebagai seorang yang sangat wara' (berhati-hati dalam agama), rajin beribadah, dan memiliki ilmu yang sangat luas. Para ulama seperti Ibnu Sirin, Al-Hasan Al-Bashri, dan banyak tokoh tabi'in lainnya telah memuji keilmuan dan kesalehan beliau. Meskipun beliau hidup di masa yang penuh dengan gejolak politik — seperti Perang Jamal, Perang Shiffin, dan peristiwa Karbala — beliau tetap menjaga dirinya dari fitnah dan tetap istiqamah dalam menuntut ilmu serta beribadah.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN TENTANG KEUTAMAAN MUHAMMAD AL-HANAFIYYAH</div>
+<div class="arabic-text">
+كَانَ مُحَمَّدُ بْنُ عَلِيِّ بْنِ أَبِي طَالِبٍ مِنْ أَفَاضِلِ أَهْلِهِ وَأَكْثَرِهِمْ عِلْمًا وَفِقْهًا وَزُهْدًا وَعِبَادَةً
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Kāna Muhammadu bnu 'Aliyyi bni Abī Ṭālibin min afādhili ahlihī wa aktsarihim 'ilman wa fiqhan wa zuhdan wa 'ibādatan."<br>
+<strong>Artinya:</strong> "Muhammad bin Ali bin Abi Thalib adalah salah satu yang paling utama di kalangan keluarganya, yang paling banyak ilmunya, paling dalam pemahamannya, paling zuhud, dan paling rajin beribadah."
+<br>— Riwayat dari para ulama salaf tentang keutamaan beliau
+</div>
+</div>
+<h2>Nasab dan Latar Belakang Keluarga — Putra Amirul Mukminin Ali bin Abi Thalib</h2>
+<p>
+Syeikh Muhammad Al-Hanafiyyah lahir dari keluarga yang sangat mulia — keluarga Ahlul Bait yang Allah bersihkan dalam Al-Qur'an. Nasab lengkap beliau adalah: <em>Muhammad bin Ali bin Abi Thalib bin Abdul Muthalib bin Hasyim bin Abdu Manaf bin Qushay bin Kilab bin Murrah bin Ka'ab bin Luay bin Ghalib bin Fihr bin Malik bin An-Nadhr bin Kinanah bin Khuzaimah bin Mudrikah bin Ilyas bin Mudhar bin Nizar bin Ma'ad bin Adnan</em>.
+</p>
+<p>
+Ayahanda beliau, <em>Ali bin Abi Thalib radhiyallahu 'anhu</em>, adalah salah satu sahabat terdekat Rasulullah SAW, Khalifah keempat dari Khulafa' Ar-Rasyidin, dan salah satu dari sepuluh sahabat yang dijamin masuk surga. Beliau dikenal dengan julukan <em>Bab al-'Ilm</em> (Pintu Ilmu) karena keilmuannya yang sangat luas. Ibunda beliau, <em>Khaulah binti Ja'far Al-Hanafiyyah</em>, adalah seorang wanita shalehah dari kabilah Bani Hanifah.
+</p>
+<p>
+Saudara-saudara beliau seayah antara lain adalah:
+</p>
+<ul>
+<li><strong>Al-Hasan bin Ali</strong> — cucu Rasulullah SAW dari Fathimah Az-Zahra</li>
+<li><strong>Al-Husain bin Ali</strong> — cucu Rasulullah SAW dari Fathimah Az-Zahra</li>
+<li><strong>Ummu Kultsum binti Ali</strong></li>
+<li><strong>Zainab binti Ali</strong></li>
+<li>Dan saudara-saudara lainnya dari pernikahan Ali bin Abi Thalib dengan istri-istri beliau yang lain</li>
+</ul>
+<p>
+Meskipun Muhammad Al-Hanafiyyah bukan putra dari Sayyidah Fathimah Az-Zahra, beliau tetap merupakan bagian dari keluarga besar Rasulullah SAW melalui ayahandanya. Para ulama menyebutkan bahwa beliau sangat mencintai saudara-saudaranya dari Fathimah, dan mereka pun mencintainya. Hubungan keluarga Ahlul Bait tetap terjaga dengan baik, meskipun ada perbedaan pendapat di kalangan masyarakat setelahnya.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KETURUNAN YANG BAIK — QS. AN-NAML: 19</div>
+<div class="arabic-text">
+رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَىٰ وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Rabbi awzi'nī an asykura ni'mataka-llatī an'amta 'alayya wa 'alā wālidayya wa an a'mala ṣālihan tardhāhu wa adkhilnī biraḥmatika fī 'ibādika-ṣ-ṣāliḥīn."<br>
+<strong>Artinya:</strong> "Ya Tuhanku, berilah aku ilham untuk tetap mensyukuri nikmat-Mu yang telah Engkau anugerahkan kepadaku dan kepada kedua orang tuaku, dan untuk mengerjakan amal shaleh yang Engkau ridhai, dan masukkanlah aku dengan rahmat-Mu ke dalam golongan hamba-hamba-Mu yang shaleh."
+<br>— QS. An-Naml: 19
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Silsilah Nasab Syeikh Muhammad Al-Hanafiyyah</span>
+<div class="karomah-arabic">نَسَبُهُ الشَّرِيفُ الْقُرَشِيُّ الْعَلَوِيُّ</div>
+<p>
+Silsilah lengkap nasab Syeikh Muhammad Al-Hanafiyyah yang bersambung kepada Rasulullah SAW melalui kakek buyut beliau Abdul Muthalib adalah sebagai berikut:
+</p>
+<ul>
+<li><strong>Muhammad</strong> bin <strong>Ali</strong> bin <strong>Abi Thalib</strong> bin <strong>Abdul Muthalib</strong></li>
+<li>bin <strong>Hasyim</strong> bin <strong>Abdu Manaf</strong> bin <strong>Qushay</strong></li>
+<li>bin <strong>Kilab</strong> bin <strong>Murrah</strong> bin <strong>Ka'ab</strong></li>
+<li>bin <strong>Luay</strong> bin <strong>Ghalib</strong> bin <strong>Fihr</strong></li>
+<li>bin <strong>Malik</strong> bin <strong>An-Nadhr</strong> bin <strong>Kinanah</strong></li>
+<li>bin <strong>Khuzaimah</strong> bin <strong>Mudrikah</strong> bin <strong>Ilyas</strong></li>
+<li>bin <strong>Mudhar</strong> bin <strong>Nizar</strong> bin <strong>Ma'ad</strong></li>
+<li>bin <strong>Adnan</strong> — keturunan Nabi Ibrahim 'alaihissalam</li>
+</ul>
+<p>
+Nasab yang mulia ini menjadikan beliau termasuk dalam kalangan <em>Bani Hasyim</em> — suku yang paling mulia di kalangan Quraisy. Ayahanda beliau, Ali bin Abi Thalib, adalah sepupu Rasulullah SAW dan suami dari putri Rasulullah SAW, Sayyidah Fathimah Az-Zahra. Meskipun Muhammad Al-Hanafiyyah bukan putra dari Fathimah, beliau tetap merupakan bagian dari keluarga besar Bani Hasyim melalui ayahandanya.
+</p>
+<p>
+Beliau pernah berkata tentang nasabnya: <em>"Kemuliaan nasab bukanlah kebanggaan, melainkan amanah. Barangsiapa yang memiliki nasab mulia namun akhlaknya buruk, maka ia telah mengkhianati nasabnya. Dan barangsiapa yang memiliki nasab mulia serta akhlaknya baik, maka ia telah menunaikan amanah nasabnya."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEMULIAAN TAKWA — QS. AL-HUJURAT: 13</div>
+<div class="arabic-text">
+إِنَّ أَكْرَمَكُمْ عِندَ اللَّهِ أَتْقَاكُمْ ۚ إِنَّ اللَّهَ عَلِيمٌ خَبِيرٌ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Inna akramakum 'inda-Llāhi atqākum. Inna-Llāha 'Alīmun Khabīr."<br>
+<strong>Artinya:</strong> "Sesungguhnya orang yang paling mulia di antara kamu di sisi Allah ialah orang yang paling takwa di antara kamu. Sesungguhnya Allah Maha Mengetahui lagi Maha Mengenal."
+<br>— QS. Al-Hujurat: 13
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Latar Belakang Keluarga — Keluarga Ahlul Bait yang Mulia</span>
+<div class="karomah-arabic">خَلْفِيَّةُ عَائِلَتِهِ — أُسْرَةُ أَهْلِ الْبَيْتِ الشَّرِيفَةِ</div>
+<p>
+Syeikh Muhammad Al-Hanafiyyah lahir dari keluarga <em>Ahlul Bait</em> — keluarga Rasulullah SAW yang Allah bersihkan dalam Al-Qur'an. Keluarga ini dikenal dengan keilmuan, kewara'an, dan kesalehan mereka yang sangat tinggi. Ayahanda beliau, <em>Ali bin Abi Thalib radhiyallahu 'anhu</em>, adalah salah satu sahabat terdekat Rasulullah SAW, Khalifah keempat dari Khulafa' Ar-Rasyidin, dan salah satu dari sepuluh sahabat yang dijamin masuk surga.
+</p>
+<p>
+Ali bin Abi Thalib dikenal dengan julukan <em>Bab al-'Ilm</em> (Pintu Ilmu) karena keilmuannya yang sangat luas. Beliau adalah salah satu sahabat yang paling banyak meriwayatkan hadits dari Rasulullah SAW, dan beliau juga dikenal sebagai salah satu sahabat yang paling alim dalam masalah fikih dan tafsir. Ali bin Abi Thalib mendidik putra-putranya dengan pendidikan agama yang sangat ketat sejak usia dini.
+</p>
+<p>
+Ibunda beliau, <em>Khaulah binti Ja'far Al-Hanafiyyah</em>, adalah seorang wanita shalehah dari kabilah Bani Hanifah. Beliau adalah istri Ali bin Abi Thalib setelah wafatnya Sayyidah Fathimah Az-Zahra. Khaulah binti Ja'far dikenal sebagai wanita yang shalehah, penyayang, dan mendidik putranya dengan pendidikan yang sangat baik.
+</p>
+<p>
+Saudara-saudara Muhammad Al-Hanafiyyah dari ayahandanya antara lain adalah Al-Hasan bin Ali dan Al-Husain bin Ali — cucu Rasulullah SAW dari Fathimah Az-Zahra. Hubungan antara Muhammad Al-Hanafiyyah dengan saudara-saudaranya ini sangat baik. Para ulama menyebutkan bahwa beliau sangat mencintai Al-Hasan dan Al-Husain, dan mereka pun mencintainya. Ketika terjadi peristiwa Karbala pada tahun 61 H, Muhammad Al-Hanafiyyah sangat berduka atas syahidnya Al-Husain bin Ali.
+</p>
+<p>
+Beliau pernah berkata tentang keluarganya: <em>"Aku dibesarkan di tengah keluarga Ahlul Bait — keluarga yang dikenal dengan keilmuan dan kesalehan. Ayahku mengajarkan kepadaku ilmu, ibuku mengajarkan kepadaku akhlak, dan saudara-saudaraku mengajarkan kepadaku cinta kepada sesama. Maka hendaklah aku menjaga amanah keluarga ini dengan ilmu dan amal yang bermanfaat."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG DIDIKAN KELUARGA — QS. AL-FURQAN: 74</div>
+<div class="arabic-text">
+رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Rabbanā hab lanā min azwājinā wa dzurriyyātinā qurrata a'yunin waj'alnā lil-muttaqīna imāmā."<br>
+<strong>Artinya:</strong> "Ya Tuhan kami, anugerahkanlah kepada kami istri-istri kami dan keturunan kami sebagai penyejuk hati kami, dan jadikanlah kami imam bagi orang-orang yang bertakwa."
+<br>— QS. Al-Furqan: 74
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Tempat dan Tanggal Lahir — Madinah Al-Munawwarah, Sekitar 36 H</span>
+<div class="karomah-arabic">مَكَانُ وَتَارِيخُ وِلَادَتِهِ — الْمَدِينَةُ الْمُنَوَّرَةُ، حَوَالِي 36 هـ</div>
+<p>
+Syeikh Muhammad Al-Hanafiyyah lahir pada sekitar tahun <strong>36 H (656 M)</strong> di kota <strong>Madinah Al-Munawwarah</strong> — kota suci kedua dalam Islam, tempat hijrah Rasulullah SAW, dan tempat dimakamkannya Rasulullah SAW serta banyak sahabat. Madinah pada masa itu adalah salah satu pusat peradaban Islam terpenting — kota yang menjadi saksi atas lahirnya ilmu-ilmu Islam dan perkembangan peradaban umat.
+</p>
+<p>
+Madinah pada masa kecil Muhammad Al-Hanafiyyah adalah kota yang penuh berkah. Di kota ini terdapat Masjid Nabawi — masjid yang dibangun oleh Rasulullah SAW — dan para sahabat serta tabi'in yang mengajarkan ilmu di masjid tersebut. Di kota inilah Muhammad Al-Hanafiyyah tumbuh dan dibesarkan dalam lingkungan yang penuh dengan nilai-nilai keislaman dan spiritualitas.
+</p>
+<p>
+Namun, pada tahun 40 H (660 M), ayahanda beliau — Ali bin Abi Thalib — memindahkan pusat pemerintahan dari Madinah ke Kufah (Irak). Oleh karena itu, Muhammad Al-Hanafiyyah ikut bersama ayahandanya ke Kufah. Di Kufah inilah beliau menghabiskan sebagian besar masa kecilnya, hingga ayahandanya wafat pada tahun 40 H.
+</p>
+<p>
+Para ulama menceritakan bahwa ketika Muhammad Al-Hanafiyyah lahir, ayahandanya Ali bin Abi Thalib sangat berbahagia. Beliau memberikan nama "Muhammad" kepada putranya — nama yang sama dengan nama Rasulullah SAW. Para ulama menyebutkan bahwa nama ini diberikan sebagai bentuk kecintaan Ali bin Abi Thalib kepada Rasulullah SAW dan harapan agar putranya tumbuh menjadi pribadi yang mulia seperti Rasulullah SAW.
+</p>
+<p>
+Setelah wafatnya ayahandanya Ali bin Abi Thalib pada tahun 40 H (661 M), Muhammad Al-Hanafiyyah kembali ke Madinah. Di kota inilah beliau menuntut ilmu dan menjadi salah satu ulama besar pada zamannya. Beliau menghabiskan sebagian besar hidupnya di Madinah, meskipun sesekali beliau bepergian ke kota-kota lain seperti Mekkah dan Kufah.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEUTAMAAN MADINAH — QS. AL-MUNAFIQUN: 8</div>
+<div class="arabic-text">
+وَاللَّهُ يَشْهَدُ إِنَّ الْمُنَافِقِينَ لَكَاذِبُونَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa-Llāhu yasyhadu inna-l-munāfiqīna lakādzibūn."<br>
+<strong>Artinya:</strong> "Dan Allah menyaksikan bahwa orang-orang munafik itu benar-benar pendusta."
+<br>— QS. Al-Munafiqun: 8
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Makna Gelar "Al-Hanafiyyah" — Nisbah kepada Kabilah Ibu</span>
+<div class="karomah-arabic">مَعْنَى لَقَبِ "الْحَنَفِيَّةِ" — نِسْبَةٌ إِلَى قَبِيلَةِ الْأُمِّ</div>
+<p>
+Gelar <em>Al-Hanafiyyah</em> yang disandang oleh Syeikh Muhammad memiliki makna yang sangat penting dalam konteks sejarah dan nasab. Kata <em>Al-Hanafiyyah</em> (الْحَنَفِيَّةُ) merupakan nisbah (hubungan) kepada kabilah <em>Bani Hanifah</em> — kabilah dari ibunda beliau, Khaulah binti Ja'far. Nisbah ini diberikan untuk membedakan beliau dari saudara-saudaranya yang lain dari kalangan Ahlul Bait.
+</p>
+<p>
+Dalam tradisi Arab, seorang anak biasanya dinisbahkan kepada ayahnya. Namun, dalam beberapa kasus, seorang anak dinisbahkan kepada ibunya atau kabilah ibunya untuk tujuan tertentu. Dalam kasus Muhammad Al-Hanafiyyah, nisbah ini diberikan untuk membedakan beliau dari saudara-saudaranya dari Fathimah Az-Zahra — yaitu Al-Hasan dan Al-Husain bin Ali.
+</p>
+<p>
+Nisbah ini juga menjadi pembeda antara beliau dengan <em>Mazhab Hanafi</em> yang didirikan oleh Imam Abu Hanifah An-Nu'man bin Tsabit. Meskipun namanya mirip, Muhammad Al-Hanafiyyah dan Mazhab Hanafi adalah dua hal yang berbeda. Mazhab Hanafi dinisbahkan kepada Imam Abu Hanifah — seorang ulama besar dari Kufah yang hidup sekitar satu abad setelah Muhammad Al-Hanafiyyah.
+</p>
+<p>
+Beliau sendiri pernah berkata tentang nisbahnya: <em>"Aku adalah Muhammad bin Ali bin Abi Thalib. Nisbah Al-Hanafiyyah diberikan kepadaku karena ibuku berasal dari Bani Hanifah. Nisbah ini tidak mengurangi kedudukanku sebagai putra Ali bin Abi Thalib, dan tidak pula menambahinya. Yang menambah dan mengurangi adalah amal dan takwa."</em>
+</p>
+<ul>
+<li><strong>Makna harfiah:</strong> Nisbah kepada kabilah Bani Hanifah — kabilah ibunda beliau</li>
+<li><strong>Makna pembeda:</strong> Membedakan beliau dari saudara-saudaranya dari Fathimah Az-Zahra</li>
+<li><strong>Makna sejarah:</strong> Menjadi penanda dalam tradisi nasab Arab</li>
+<li><strong>Bukan Mazhab Hanafi:</strong> Berbeda dengan Mazhab Hanafi yang didirikan oleh Imam Abu Hanifah</li>
+</ul>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN TENTANG HAKIKAT KEMULIAAN</div>
+<div class="arabic-text">
+لَيْسَ الشَّرَفُ بِالنَّسَبِ وَحْدَهُ، بَلْ بِالْعِلْمِ وَالْعَمَلِ وَالتَّقْوَى
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Laysa-sy-syarafu bi-n-nasabi waḥdahū, bal bi-l-'ilmi wa-l-'amali wa-t-taqwā."<br>
+<strong>Artinya:</strong> "Kemuliaan bukanlah dengan nasab semata, melainkan dengan ilmu, amal, dan takwa."
+<br>— Perkataan hikmah yang dinisbahkan kepada Syeikh Muhammad Al-Hanafiyyah
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Keistimewaan Syeikh Muhammad Al-Hanafiyyah di Kalangan Tabi'in</span>
+<div class="karomah-arabic">مُمَيِّزَاتُ مُحَمَّدٍ الْحَنَفِيَّةِ بَيْنَ التَّابِعِينَ</div>
+<p>
+Syeikh Muhammad Al-Hanafiyyah memiliki beberapa keistimewaan yang menjadikannya sebagai salah satu tokoh paling dihormati di kalangan tabi'in. Di antara keistimewaan tersebut adalah:
+</p>
+<ul>
+<li><strong>Keturunan Ahlul Bait</strong> — Beliau adalah putra dari Ali bin Abi Thalib radhiyallahu 'anhu, salah satu sahabat terdekat Rasulullah SAW dan Khalifah keempat. Nasab ini memberikan beliau kedudukan yang sangat tinggi di kalangan umat Islam.</li>
+<li><strong>Keilmuan yang Luas</strong> — Beliau dikenal sebagai salah satu ulama tabi'in yang paling alim dalam masalah fikih, tafsir, dan hadits. Banyak ulama besar yang belajar dari beliau dan meriwayatkan ilmu dari beliau.</li>
+<li><strong>Ibadah yang Tekun</strong> — Beliau dikenal sebagai ahli ibadah yang sangat rajin. Beliau senantiasa shalat, puasa, dan berdzikir kepada Allah dengan penuh kekhusyukan.</li>
+<li><strong>Zuhud yang Mendalam</strong> — Beliau tidak pernah tergiur oleh harta dan kedudukan duniawi. Beliau hidup sederhana meskipun beliau berasal dari keluarga Ahlul Bait yang sangat dihormati.</li>
+<li><strong>Wara' (Berhati-hati dalam Agama)</strong> — Beliau sangat berhati-hati dalam masalah agama. Beliau tidak pernah memberikan fatwa kecuali setelah yakin benar bahwa fatwanya sesuai dengan Al-Qur'an dan Sunnah.</li>
+<li><strong>Menjauhi Fitnah</strong> — Meskipun beliau hidup di masa yang penuh dengan gejolak politik, beliau tetap menjaga dirinya dari fitnah dan tidak terlibat dalam konflik antar kelompok. Beliau memilih jalan netral dan tetap istiqamah dalam menuntut ilmu serta beribadah.</li>
+<li><strong>Dihormati oleh Semua Kalangan</strong> — Beliau dihormati oleh berbagai kalangan umat Islam, baik dari kalangan Ahlus Sunnah maupun dari kalangan lainnya. Beliau menjadi tokoh pemersatu di tengah perbedaan pendapat.</li>
+</ul>
+<p>
+Keistimewaan-keistimewaan inilah yang menjadikan Syeikh Muhammad Al-Hanafiyyah sebagai salah satu tokoh paling berpengaruh dalam sejarah awal Islam. Meskipun beliau tidak menjadi khalifah atau pemimpin politik, pengaruh beliau dalam bidang ilmu dan dakwah sangat besar dan terus dirasakan hingga hari ini.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENGIKUTI RASULULLAH — QS. ALI 'IMRAN: 31</div>
+<div class="arabic-text">
+قُلْ إِن كُنتُمْ تُحِبُّونَ اللَّهَ فَاتَّبِعُونِي يُحْبِبْكُمُ اللَّهُ وَيَغْفِرْ لَكُمْ ذُنُوبَكُمْ ۗ وَاللَّهُ غَفُورٌ رَّحِيمٌ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Qul in kuntum tuḥibbūna-Llāha fattabi'ūnī yuḥbibkumu-Llāhu wa yaghfir lakum dzunūbakum. Wa-Llāhu Ghafūrur Raḥīm."<br>
+<strong>Artinya:</strong> "Katakanlah: 'Jika kamu (benar-benar) mencintai Allah, maka ikutilah aku (Rasulullah), niscaya Allah mengasihi dan mengampuni dosa-dosamu.' Dan Allah Maha Pengampun lagi Maha Penyayang."
+<br>— QS. Ali 'Imran: 31
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Pendahuluan Biografi Syeikh Muhammad Al-Hanafiyyah:</strong>
+<ul>
+<li><strong>Nama lengkap:</strong> Muhammad bin Ali bin Abi Thalib bin Abdul Muthalib</li>
+<li><strong>Gelar:</strong> Al-Hanafiyyah (nisbah kepada kabilah ibunda), Ibnu Al-Hanafiyyah</li>
+<li><strong>Nasab:</strong> Bani Hasyim, keturunan Ali bin Abi Thalib radhiyallahu 'anhu</li>
+<li><strong>Ayah:</strong> Ali bin Abi Thalib radhiyallahu 'anhu — Khalifah keempat, sahabat terdekat Rasulullah SAW</li>
+<li><strong>Ibunda:</strong> Khaulah binti Ja'far Al-Hanafiyyah — dari kabilah Bani Hanifah</li>
+<li><strong>Saudara seayah:</strong> Al-Hasan bin Ali, Al-Husain bin Ali, dan lainnya</li>
+<li><strong>Tempat lahir:</strong> Madinah Al-Munawwarah (kemudian pindah ke Kufah bersama ayahnya)</li>
+<li><strong>Tanggal lahir:</strong> Sekitar tahun 36 H (656 M)</li>
+<li><strong>Wafat:</strong> Sekitar tahun 81 H (700 M)</li>
+<li><strong>Kedudukan:</strong> Ulama besar tabi'in, ahli fikih, ahli ibadah</li>
+<li><strong>Ciri khas:</strong> Alim, zuhud, wara', ahli ibadah, menjauhi fitnah politik</li>
+<li><strong>Bukan:</strong> Putra Fathimah Az-Zahra (putra Ali dari istri lain), dan bukan pendiri Mazhab Hanafi</li>
+</ul>
+</div>
+<h2>Doa Memohon Keberkahan Ilmu dan Keteladanan dari Ahlul Bait</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA UNTUK AHLUL BAIT DAN PARA TABI'IN</div>
+<div class="arabic-text">
+اللَّهُمَّ ارْضَ عَنْ أَهْلِ بَيْتِ نَبِيِّكَ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ، وَارْزُقْنَا مَحَبَّتَهُمْ وَالسَّيْرَ عَلَى مِنْهَاجِهِمْ، وَاجْعَلْنَا مِمَّنْ يَتَّبِعُ أَثَرَهُمْ بِإِحْسَانٍ إِلَى يَوْمِ الدِّينِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Allāhumma-rḍha 'an ahli bayti nabiyyika ṣallā-Llāhu 'alaihi wa sallam, wa-rzuqnā maḥbatahum wa-s-sayra 'alā minhājihim, wa-j'alnā mimman yattabi'u atsarhum bi-iḥsānin ilā yawmi-d-dīn."<br>
+<strong>Artinya:</strong> "Ya Allah, ridhailah keluarga Nabi-Mu shallallahu 'alaihi wa sallam, anugerahkanlah kepada kami cinta kepada mereka dan mengikuti jalan mereka, dan jadikanlah kami termasuk orang yang mengikuti jejak mereka dengan kebaikan hingga hari kiamat."
+</div>
+</div>
+<h2>Penutup Halaman 1</h2>
+<p>
+Demikianlah pengantar biografi Syeikh Muhammad Al-Hanafiyyah — putra Amirul Mukminin Ali bin Abi Thalib radhiyallahu 'anhu, salah satu ulama besar tabi'in, dan tokoh yang sangat dihormati di kalangan umat Islam. Beliau lahir di Madinah Al-Munawwarah pada sekitar tahun 36 H, tumbuh di lingkungan keluarga Ahlul Bait yang mulia, dan mewarisi keilmuan serta hikmah dari ayahandanya. Beliau adalah contoh nyata seorang ulama yang menggabungkan antara nasab yang mulia, ilmu yang luas, ibadah yang tekun, dan akhlak yang luhur.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas masa kecil Syeikh Muhammad Al-Hanafiyyah di Madinah dan Kufah — bagaimana beliau tumbuh di bawah bimbingan ayahandanya, bagaimana beliau menuntut ilmu sejak usia dini, dan bagaimana beliau menunjukkan tanda-tanda keilmuan serta kesalehan sejak kecil.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+وَقُل رَّبِّ زِدْنِي عِلْمًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa qur rabbi zidnī 'ilmā."<br>
+<strong>Artinya:</strong> "Dan katakanlah: 'Ya Tuhanku, tambahkanlah kepadaku ilmu pengetahuan.'"
+<br>— QS. Thaha: 114
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="hanafi1.html" class="article-nav-btn active" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi2.html" class="article-nav-btn" title="Halaman 2: Masa Kecil & Pendidikan">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="hanafi3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="hanafi4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="hanafi5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="hanafi7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="hanafi8.html" class="article-nav-btn" title="Halaman 8: Warisan Keilmuan">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

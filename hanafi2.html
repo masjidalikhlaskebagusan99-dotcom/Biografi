@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+/* 1. RESET & DASAR */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+/* 2. MEDIA QUERY TABLET */
+@media (max-width: 768px) {
+.article-container {
+max-width: 100%;
+padding: 20px;
+}
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+/* 3. HEADER & NAVIGASI ATAS */
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover {
+background: rgba(233, 69, 96, 0.15);
+transform: scale(1.05);
+}
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+/* 4. BREADCRUMB & CONTAINER */
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container {
+max-width: 800px;
+margin: 40px auto;
+padding: 0 20px;
+}
+/* 5. ARTICLE HEADER & META */
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+/* 6. GAMBAR & SHARE BAR */
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover {
+background: #e94560;
+color: #fff;
+border-color: #e94560;
+}
+/* 7. KONTEN ARTIKEL */
+.article-content {
+font-size: 1.05rem;
+line-height: 1.9;
+color: #444;
+}
+.article-content p {
+margin-bottom: 20px;
+text-align: justify;
+}
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 {
+font-size: 1.2rem;
+color: #333;
+margin: 25px 0 10px;
+}
+.article-content ul {
+margin: 15px 0 20px 30px;
+}
+.article-content ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 8. KOTAK ARAB & BIOGRAFI */
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title {
+font-size: 1.3rem;
+color: #1a1a2e;
+font-weight: bold;
+display: inline;
+}
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul {
+margin: 15px 0 0 30px;
+}
+.highlight-box ul li {
+margin-bottom: 10px;
+line-height: 1.7;
+}
+/* 9. NAVIGASI HALAMAN (9 TOMBOL) */
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label {
+text-align: center;
+color: #aaa;
+font-size: 0.75rem;
+margin-top: 6px;
+}
+.nav-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* 10. TOMBOL KEMBALI & FOOTER */
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+/* 11. MEDIA QUERY MOBILE */
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header {
+flex-direction: column;
+gap: 10px;
+padding: 15px 20px;
+}
+nav {
+flex-direction: column;
+gap: 10px;
+width: 100%;
+justify-content: center;
+}
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav {
+gap: 6px;
+padding: 15px;
+}
+.article-nav-btn {
+width: 36px;
+height: 36px;
+font-size: 1rem;
+}
+.nav-btn-label { font-size: 0.65rem; }
+}
+/* PATCH UNIVERSAL v2.0 */
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam {
+font-size: 1.3rem !important;
+letter-spacing: 3px !important;
+}
+header nav a {
+padding: 6px 10px !important;
+font-size: 0.8rem !important;
+}
+.article-nav-btn {
+width: 32px;
+height: 32px;
+font-size: 0.9rem;
+}
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah</h1>
+<div class="subtitle">Halaman 2 dari 9 — Masa Kecil di Madinah dan Kufah, Didikan Amirul Mukminin Ali bin Abi Thalib</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Rabu, 28 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Medina_-_Map_of_the_Prophet%27s_Mosque.jpg/440px-Medina_-_Map_of_the_Prophet%27s_Mosque.jpg"
+alt="Masjid Nabawi Madinah — tempat masa kecil Muhammad Al-Hanafiyyah"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Kufa_Mosque.jpg/440px-Kufa_Mosque.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Madinah Al-Munawwarah dan Kufah — dua kota suci tempat Muhammad Al-Hanafiyyah menghabiskan masa kecilnya, di bawah bimbingan langsung ayahandanya Amirul Mukminin Ali bin Abi Thalib radhiyallahu 'anhu</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Masa kecil Muhammad Al-Hanafiyyah adalah masa yang penuh keberkahan luar biasa. Beliau tumbuh di dua kota suci Islam — Madinah Al-Munawwarah dan Kufah — di bawah bimbingan langsung ayahandanya, Amirul Mukminin Ali bin Abi Thalib radhiyallahu 'anhu. Bayangkan seorang anak yang setiap hari mendengar ayat-ayat Al-Qur'an dari mulut ayahandanya yang merupakan <em>Bab al-'Ilm</em> (Pintu Ilmu), yang belajar shalat langsung dari orang yang dididik oleh Rasulullah SAW sendiri, dan yang tumbuh di lingkungan keluarga Ahlul Bait yang penuh dengan cahaya keimanan. Meskipun masa kecilnya diwarnai oleh gejolak politik yang dahsyat — Perang Jamal, Perang Shiffin, dan syahidnya ayahandanya — Muhammad kecil tumbuh menjadi pribadi yang tenang, alim, dan jauh dari fitnah.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG DIDIKAN KELUARGA — QS. LUQMAN: 13</div>
+<div class="arabic-text">
+وَإِذْ قَالَ لُقْمَانُ لِابْنِهِ وَهُوَ يَعِظُهُ يَا بُنَيَّ لَا تُشْرِكْ بِاللَّهِ ۖ إِنَّ الشِّرْكَ لَظُلْمٌ عَظِيمٌ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa idz qāla Luqmānu li-bnihī wa huwa ya'izhuhū yā bunayya lā tusyrik bi-Llāh. Inna-sy-syirka la-zhulmun 'azhīm."<br>
+<strong>Artinya:</strong> "Dan (ingatlah) ketika Luqman berkata kepada anaknya, di waktu ia memberi pelajaran kepadanya: 'Hai anakku, janganlah kamu mempersekutukan Allah, sesungguhnya mempersekutukan (Allah) adalah benar-benar kezaliman yang besar.'"
+<br>— QS. Luqman: 13
+</div>
+</div>
+<h2>Masa Kecil di Madinah dan Kufah — Tumbuh di Bawah Naungan Ahlul Bait</h2>
+<p>
+Muhammad Al-Hanafiyyah menghabiskan empat tahun pertama kehidupannya di kota Madinah Al-Munawwarah — kota suci kedua dalam Islam, tempat hijrah Rasulullah SAW, dan kota yang penuh dengan keberkahan. Di kota inilah beliau pertama kali mendengar suara adzan, pertama kali melihat Masjid Nabawi, dan pertama kali merasakan hangatnya kasih sayang keluarga Ahlul Bait.
+</p>
+<p>
+Namun pada tahun 40 H (661 M), kehidupan Muhammad kecil berubah secara drastis. Ayahandanya, Ali bin Abi Thalib, memindahkan pusat pemerintahan dari Madinah ke Kufah di Irak. Perpindahan ini dilakukan setelah Perang Jamal (36 H) dan Perang Shiffin (37 H), yang menjadikan Kufah sebagai basis politik Ali bin Abi Thalib. Muhammad kecil yang saat itu berusia sekitar empat tahun ikut bersama ayahandanya ke Kufah.
+</p>
+<p>
+Di Kufah, Muhammad kecil menghabiskan masa kecilnya hingga ayahandanya wafat pada tahun 40 H (661 M). Meskipun masa tinggalnya di Kufah relatif singkat — hanya sekitar empat tahun — pengalaman di kota ini sangat membekas dalam ingatannya. Di Kufah inilah beliau menyaksikan langsung kehidupan politik ayahandanya sebagai Khalifah, dan di kota inilah beliau menyaksikan detik-detik terakhir kehidupan ayahandanya.
+</p>
+<p>
+Setelah wafatnya Ali bin Abi Thalib, Muhammad Al-Hanafiyyah kembali ke Madinah bersama keluarganya. Di kota inilah beliau menghabiskan sisa hidupnya, menuntut ilmu, dan menjadi salah satu ulama besar tabi'in. Madinah menjadi tempat beliau tumbuh dewasa, belajar, dan akhirnya wafat.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEUTAMAAN MADINAH — HADITS NABAWI</div>
+<div class="arabic-text">
+الْمَدِينَةُ حَرَمٌ مَا بَيْنَ عَيْرٍ إِلَى ثَوْرٍ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Al-Madīnatu ḥaramun mā bayna 'Airin ilā Tsaur."<br>
+<strong>Artinya:</strong> "Madinah adalah tanah suci, antara 'Air hingga Tsaur."
+<br>— HR. Al-Bukhari dan Muslim
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Didikan Langsung Amirul Mukminin Ali bin Abi Thalib</span>
+<div class="karomah-arabic">تَرْبِيَةُ أَمِيرِ الْمُؤْمِنِينَ عَلِيِّ بْنِ أَبِي طَالِبٍ مُبَاشَرَةً</div>
+<p>
+Keistimewaan terbesar masa kecil Muhammad Al-Hanafiyyah adalah beliau mendapatkan pendidikan langsung dari ayahandanya, <em>Ali bin Abi Thalib radhiyallahu 'anhu</em>. Ali bin Abi Thalib bukan hanya Khalifah keempat dan sahabat terdekat Rasulullah SAW, tetapi beliau juga dikenal sebagai <em>Bab al-'Ilm</em> (Pintu Ilmu) karena keilmuannya yang sangat luas. Rasulullah SAW bersabda tentang Ali: <em>"Aku adalah kota ilmu, dan Ali adalah pintunya."</em>
+</p>
+<p>
+Dari ayahandanya, Muhammad kecil belajar berbagai ilmu:
+</p>
+<ul>
+<li><strong>Al-Qur'an dan Tafsir</strong> — Ali bin Abi Thalib adalah salah satu sahabat yang paling banyak menghafal dan memahami Al-Qur'an. Beliau mengajarkan putranya cara membaca, menghafal, dan memahami makna-makna Al-Qur'an.</li>
+<li><strong>Hadits Rasulullah SAW</strong> — Ali bin Abi Thalib meriwayatkan banyak hadits langsung dari Rasulullah SAW. Beliau mengajarkan hadits-hadits ini kepada putranya dengan penuh ketelitian.</li>
+<li><strong>Fikih dan Hukum Islam</strong> — Ali bin Abi Thalib adalah salah satu sahabat yang paling alim dalam masalah fikih. Beliau mengajarkan dasar-dasar hukum Islam kepada putranya.</li>
+<li><strong>Bahasa Arab dan Sastra</strong> — Ali bin Abi Thalib dikenal sangat fasih dalam bahasa Arab dan memiliki khutbah-khutbah yang sangat indah. Beliau mengajarkan keindahan bahasa kepada putranya.</li>
+<li><strong>Akhlak dan Adab</strong> — Yang paling utama, Ali bin Abi Thalib mengajarkan akhlak mulia, zuhud, wara', dan kecintaan kepada Allah dan Rasulullah SAW.</li>
+</ul>
+<p>
+Muhammad Al-Hanafiyyah pernah berkata tentang pendidikan ayahandanya: <em>"Ayahku mengajariku bukan hanya dengan kata-kata, tetapi dengan keteladanan. Ketika beliau shalat, aku melihat kekhusyukan yang luar biasa. Ketika beliau berdzikir, aku merasakan kehadiran Allah yang nyata. Ketika beliau berbicara, setiap kata-kata penuh dengan hikmah. Inilah pendidikan terbaik yang pernah aku terima."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEUTAMAAN ALI BIN ABI THALIB — HADITS NABAWI</div>
+<div class="arabic-text">
+أَنَا مَدِينَةُ الْعِلْمِ وَعَلِيٌّ بَابُهَا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Anā madīnatu-l-'ilmi wa 'Aliyyun bābuhā."<br>
+<strong>Artinya:</strong> "Aku adalah kota ilmu, dan Ali adalah pintunya."
+<br>— Hadits yang diriwayatkan dalam beberapa sumber (dengan catatan sanad yang diperbincangkan)
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Hafalan Al-Qur'an dan Ilmu-Ilmu Dasar Sejak Dini</span>
+<div class="karomah-arabic">حِفْظُ الْقُرْآنِ وَعُلُومُ الْأَسَاسِ مُنْذُ الصِّغَرِ</div>
+<p>
+Seperti tradisi anak-anak Ahlul Bait pada masa itu, Muhammad Al-Hanafiyyah diajarkan membaca dan menghafal Al-Qur'an sejak usia sangat muda. Beliau menunjukkan kecerdasan yang luar biasa dalam menghafal. Para ulama menyebutkan bahwa beliau telah menyelesaikan hafalan Al-Qur'an pada usia yang sangat muda, dengan tartil dan tajwid yang sempurna.
+</p>
+<p>
+Selain menghafal Al-Qur'an, Muhammad kecil juga mempelajari ilmu-ilmu dasar keislaman:
+</p>
+<ul>
+<li><strong>Membaca dan Menulis</strong> — Pada masa itu, tidak semua anak memiliki kesempatan belajar membaca dan menulis. Namun, sebagai putra Khalifah, Muhammad memiliki akses kepada pendidikan terbaik.</li>
+<li><strong>Ilmu Tauhid</strong> — Dasar-dasar keimanan kepada Allah, malaikat, kitab-kitab, rasul-rasul, hari akhir, dan qadha-qadar diajarkan dengan sangat kuat.</li>
+<li><strong>Ilmu Fikih Dasar</strong> — Tata cara shalat, puasa, zakat, dan ibadah-ibadah dasar lainnya diajarkan dengan penuh ketelitian.</li>
+<li><strong>Sirah Nabawiyah</strong> — Kisah kehidupan Rasulullah SAW dan para sahabat diajarkan sebagai teladan dan inspirasi.</li>
+<li><strong>Akhlak dan Adab</strong> — Sopan santun, kejujuran, kasih sayang, dan akhlak-akhlak mulia lainnya ditanamkan sejak dini.</li>
+</ul>
+<p>
+Para ulama mencatat bahwa kecerdasan Muhammad Al-Hanafiyyah sudah terlihat sejak kecil. Ketika para guru menjelaskan suatu ilmu, beliau seringkali sudah memahami makna-makna yang lebih dalam dari yang diajarkan. Seorang guru beliau berkata: <em>"Anak ini memiliki pemahaman yang melampaui usianya. Ia akan menjadi ulama besar di zamannya."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEUTAMAAN MENGHAFAL AL-QUR'AN — QS. AL-ANKABUT: 49</div>
+<div class="arabic-text">
+بَلْ هُوَ آيَاتٌ بَيِّنَاتٌ فِي صُدُورِ الَّذِينَ أُوتُوا الْعِلْمَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Bal huwa āyātun bayyinātun fī shudūri-l-ladzīna ūtū-l-'ilm."<br>
+<strong>Artinya:</strong> "Sebenarnya, Al-Qur'an itu adalah ayat-ayat yang nyata di dalam dada orang-orang yang diberi ilmu."
+<br>— QS. Al-'Ankabut: 49
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Masa Kecil di Tengah Gejolak Politik — Perang Jamal, Shiffin, dan Nahrawan</span>
+<div class="karomah-arabic">الطُّفُولَةُ فِي وَسَطِ الاِضْطِرَابَاتِ السِّيَاسِيَّةِ</div>
+<p>
+Masa kecil Muhammad Al-Hanafiyyah tidak dapat dipisahkan dari gejolak politik yang melanda umat Islam pada masa itu. Beliau lahir pada sekitar tahun 36 H, tepat ketika ayahnya Ali bin Abi Thalib menjadi Khalifah keempat. Sejak saat itu, berbagai peristiwa besar terjadi:
+</p>
+<ul>
+<li><strong>Perang Jamal (36 H / 656 M)</strong> — Perang antara pasukan Ali bin Abi Thalib dengan pasukan yang dipimpin oleh Aisyah, Thalhah, dan Zubair. Perang ini terjadi di dekat Bashrah dan menjadi perang saudara pertama dalam sejarah Islam. Muhammad kecil yang baru lahir saat itu belum memahami peristiwa ini, namun ia merasakan ketegangan di sekitar keluarganya.</li>
+<li><strong>Perang Shiffin (37 H / 657 M)</strong> — Perang antara pasukan Ali bin Abi Thalib dengan pasukan Muawiyah bin Abi Sufyan di tepi Sungai Efrat. Perang ini berlangsung selama beberapa bulan dan berakhir dengan peristiwa tahkim (arbitrase). Muhammad kecil yang saat itu berusia sekitar satu tahun dibawa oleh keluarganya ke Kufah.</li>
+<li><strong>Perang Nahrawan (38 H / 658 M)</strong> — Perang antara pasukan Ali bin Abi Thalib dengan kelompok Khawarij yang memisahkan diri setelah peristiwa tahkim. Perang ini terjadi di Nahrawan, dekat Kufah.</li>
+</ul>
+<p>
+Meskipun Muhammad Al-Hanafiyyah masih sangat kecil saat peristiwa-peristiwa ini terjadi, suasana tegang dan penuh konflik ini pasti mempengaruhi masa kecilnya. Beliau tumbuh di tengah keluarga yang sedang menghadapi ujian berat — ujian kepemimpinan, ujian persaudaraan, dan ujian kesetiaan.
+</p>
+<p>
+Para ulama menyebutkan bahwa meskipun tumbuh di tengah gejolak, Muhammad Al-Hanafiyyah tidak pernah terlibat dalam pertikaian politik tersebut. Beliau memilih jalan netral dan tetap istiqamah dalam menuntut ilmu serta beribadah. Sikap ini kemudian menjadi ciri khas beliau sepanjang hidupnya — menjauhi fitnah politik dan fokus pada ilmu serta ibadah.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG FITNAH — QS. AL-ANFAL: 25</div>
+<div class="arabic-text">
+وَاتَّقُوا فِتْنَةً لَّا تُصِيبَنَّ الَّذِينَ ظَلَمُوا مِنكُمْ خَاصَّةً
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa-ttaqū fitnatan lā tushībanna-l-ladzīna zhalamū minkum khāshshah."<br>
+<strong>Artinya:</strong> "Dan peliharalah dirimu dari pada siksaan yang tidak khusus menimpa orang-orang yang zalim saja di antara kamu."
+<br>— QS. Al-Anfal: 25
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Syahidnya Amirul Mukminin Ali bin Abi Thalib (40 H / 661 M)</span>
+<div class="karomah-arabic">اسْتِشْهَادُ أَمِيرِ الْمُؤْمِنِينَ عَلِيِّ بْنِ أَبِي طَالِبٍ 40 هـ</div>
+<p>
+Peristiwa paling menyedihkan dalam masa kecil Muhammad Al-Hanafiyyah adalah syahidnya ayahandanya, Amirul Mukminin Ali bin Abi Thalib radhiyallahu 'anhu, pada tanggal 21 Ramadhan 40 H (661 M). Ali bin Abi Thalib dibunuh oleh seorang Khawarij bernama Abdurrahman bin Muljam ketika sedang shalat subuh di Masjid Kufah.
+</p>
+<p>
+Muhammad Al-Hanafiyyah yang saat itu berusia sekitar empat tahun pasti sangat merasakan kehilangan ini. Beliau kehilangan sosok ayah yang sangat ia cintai — sosok yang mengajarinya Al-Qur'an, yang membimbingnya dalam shalat, dan yang menjadi teladan hidupnya. Kehilangan ini menjadi luka mendalam yang membentuk karakternya di kemudian hari.
+</p>
+<p>
+Para ulama menyebutkan bahwa sebelum wafatnya, Ali bin Abi Thalib memberikan wasiat kepada putra-putranya, termasuk Muhammad. Di antara wasiat beliau adalah:
+</p>
+<ul>
+<li><strong>Menjaga shalat</strong> — Ali berpesan agar putra-putranya senantiasa menjaga shalat lima waktu dengan khusyuk.</li>
+<li><strong>Menjaga Al-Qur'an</strong> — Ali berpesan agar putra-putranya senantiasa membaca, menghafal, dan mengamalkan Al-Qur'an.</li>
+<li><strong>Menjaga akhlak mulia</strong> — Ali berpesan agar putra-putranya senantiasa berakhlak mulia, jujur, dan penyayang.</li>
+<li><strong>Menjauhi fitnah</strong> — Ali berpesan agar putra-putranya menjauhi fitnah dan pertikaian politik, serta fokus pada ilmu dan ibadah.</li>
+<li><strong>Menjaga persaudaraan</strong> — Ali berpesan agar putra-putranya saling menyayangi dan menjaga persaudaraan di antara mereka.</li>
+</ul>
+<p>
+Muhammad Al-Hanafiyyah senantiasa mengingat wasiat ayahandanya dan menjadikannya sebagai pedoman hidup. Beliau pernah berkata: <em>"Wasiat ayahku adalah harta yang paling berharga yang aku miliki. Aku menjaganya seperti menjaga nyawaku sendiri."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG WAFATNYA ORANG SHALIH — QS. AL-AN'AM: 162</div>
+<div class="arabic-text">
+قُلْ إِنَّ صَلَاتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Qul inna shalātī wa nusukī wa maḥyāya wa mamātī li-Llāhi rabbi-l-'ālamīn."<br>
+<strong>Artinya:</strong> "Katakanlah: 'Sesungguhnya shalatku, ibadahku, hidupku, dan matiku hanyalah untuk Allah, Tuhan semesta alam.'"
+<br>— QS. Al-An'am: 162
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Kembali ke Madinah — Memulai Fase Baru Kehidupan</span>
+<div class="karomah-arabic">الْعَوْدَةُ إِلَى الْمَدِينَةِ — بَدْءُ مَرْحَلَةٍ جَدِيدَةٍ</div>
+<p>
+Setelah wafatnya Ali bin Abi Thalib pada tahun 40 H, Muhammad Al-Hanafiyyah bersama keluarganya kembali ke Madinah Al-Munawwarah. Kembali ke kota suci ini menjadi titik balik dalam kehidupan beliau. Di Madinah, beliau memulai fase baru — fase menuntut ilmu secara lebih mendalam dari para sahabat dan tabi'in yang masih hidup pada masa itu.
+</p>
+<p>
+Madinah pada masa itu masih menjadi pusat keilmuan Islam. Banyak sahabat Rasulullah SAW yang masih hidup di kota ini, dan mereka menjadi sumber ilmu yang sangat berharga bagi generasi tabi'in. Di antara sahabat yang masih hidup pada masa Muhammad Al-Hanafiyyah kembali ke Madinah adalah:
+</p>
+<ul>
+<li><strong>Abu Hurairah radhiyallahu 'anhu</strong> (wafat 57 H) — sahabat yang paling banyak meriwayatkan hadits</li>
+<li><strong>Anas bin Malik radhiyallahu 'anhu</strong> (wafat 93 H) — pelayan Rasulullah SAW</li>
+<li><strong>Abdullah bin Umar radhiyallahu 'anhuma</strong> (wafat 73 H) — putra Umar bin Khattab</li>
+<li><strong>Abdullah bin Abbas radhiyallahu 'anhuma</strong> (wafat 68 H) — putra Abbas bin Abdul Muthalib, dikenal sebagai <em>Tarjuman Al-Qur'an</em></li>
+<li><strong>Aisyah radhiyallahu 'anha</strong> (wafat 58 H) — istri Rasulullah SAW</li>
+</ul>
+<p>
+Kehadiran para sahabat besar ini di Madinah menjadi berkah yang luar biasa bagi Muhammad Al-Hanafiyyah. Beliau dapat belajar langsung dari orang-orang yang pernah hidup bersama Rasulullah SAW, mendengar hadits langsung dari mulut mereka, dan memahami Al-Qur'an dari orang-orang yang menyaksikan turunnya wahyu.
+</p>
+<p>
+Para ulama menyebutkan bahwa setelah kembali ke Madinah, Muhammad Al-Hanafiyyah mulai dikenal sebagai pemuda yang sangat alim dan shaleh. Beliau menghabiskan hari-harinya di Masjid Nabawi, belajar dari para sahabat, dan beribadah dengan penuh kekhusyukan. Beliau juga mulai dikenal sebagai rujukan bagi orang-orang yang ingin bertanya tentang masalah agama.
+</p>
+<p>
+Beliau pernah berkata tentang masa mudanya di Madinah: <em>"Madinah adalah sekolah terbaik bagiku. Di kota ini, aku belajar dari para sahabat yang pernah hidup bersama Rasulullah SAW. Di kota ini, aku merasakan keharuman kenabian yang masih tersisa. Dan di kota ini, aku membentuk diriku menjadi hamba Allah yang berusaha untuk selalu taat."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENUNTUT ILMU — HADITS NABAWI</div>
+<div class="arabic-text">
+طَلَبُ الْعِلْمِ فَرِيضَةٌ عَلَى كُلِّ مُسْلِمٍ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Thalabu-l-'ilmi farīdhatun 'alā kulli muslim."<br>
+<strong>Artinya:</strong> "Menuntut ilmu adalah kewajiban atas setiap muslim."
+<br>— HR. Ibnu Majah
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Masa Kecil Syeikh Muhammad Al-Hanafiyyah:</strong>
+<ul>
+<li><strong>Lahir:</strong> Sekitar 36 H (656 M) di Madinah Al-Munawwarah</li>
+<li><strong>Masa kecil di Madinah:</strong> 4 tahun pertama (36-40 H), di bawah bimbingan langsung ayahandanya</li>
+<li><strong>Pindah ke Kufah:</strong> Tahun 40 H, mengikuti ayahandanya yang memindahkan pusat pemerintahan</li>
+<li><strong>Pendidikan langsung dari Ali bin Abi Thalib:</strong> Al-Qur'an, hadits, fikih, bahasa Arab, akhlak</li>
+<li><strong>Hafalan Al-Qur'an:</strong> Selesai pada usia sangat muda dengan tartil dan tajwid sempurna</li>
+<li><strong>Gejolak politik masa kecil:</strong> Perang Jamal, Perang Shiffin, Perang Nahrawan</li>
+<li><strong>Syahidnya ayahanda:</strong> Ali bin Abi Thalib wafat 21 Ramadhan 40 H (661 M) di Kufah</li>
+<li><strong>Wasiat Ali bin Abi Thalib:</strong> Menjaga shalat, Al-Qur'an, akhlak mulia, menjauhi fitnah, menjaga persaudaraan</li>
+<li><strong>Kembali ke Madinah:</strong> Setelah wafatnya Ali, memulai fase baru menuntut ilmu dari para sahabat</li>
+<li><strong>Guru-guru di Madinah:</strong> Abu Hurairah, Anas bin Malik, Abdullah bin Umar, Abdullah bin Abbas, Aisyah</li>
+<li><strong>Ciri khas masa kecil:</strong> Tumbuh di tengah gejolak namun tetap istiqamah, menjauhi fitnah politik, fokus pada ilmu dan ibadah</li>
+</ul>
+</div>
+<h2>Doa Memohon Keberkahan Masa Kecil dan Didikan Orang Tua</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA UNTUK ORANG TUA DAN PENDIDIKAN ANAK</div>
+<div class="arabic-text">
+رَبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا، وَاجْعَلْ أَوْلَادَنَا قُرَّةَ أَعْيُنٍ لَنَا، وَارْزُقْنَا تَرْبِيَتَهُمْ عَلَى حُبِّ اللَّهِ وَرَسُولِهِ وَعَلَى مِنْهَاجِ أَهْلِ الْبَيْتِ الصَّالِحِينَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Rabbi-rḥamhumā kamā rabbayānī shaghīrā. Wa-j'al awlādanā qurrata a'yunin lanā. Wa-rzuqnā tarbiyatahum 'alā ḥubbi-Llāhi wa rasūlihī wa 'alā minhāji ahli-l-bayti-ṣ-ṣāliḥīn."<br>
+<strong>Artinya:</strong> "Ya Tuhanku, kasihilah kedua orang tuaku sebagaimana mereka berdua telah mendidik aku waktu kecil. Jadikanlah anak-anak kami sebagai penyejuk hati kami, dan anugerahkanlah kepada kami kemampuan untuk mendidik mereka di atas dasar cinta kepada Allah dan Rasul-Nya, serta di atas jalan keluarga Ahlul Bait yang shaleh."
+<br>— Doa terinspirasi dari QS. Al-Isra': 24
+</div>
+</div>
+<h2>Penutup Halaman 2</h2>
+<p>
+Demikianlah kisah masa kecil Syeikh Muhammad Al-Hanafiyyah — putra Amirul Mukminin Ali bin Abi Thalib yang tumbuh di dua kota suci Islam, Madinah dan Kufah, di bawah bimbingan langsung ayahandanya yang merupakan Bab al-'Ilm. Meskipun masa kecilnya diwarnai oleh gejolak politik yang dahsyat dan kehilangan ayahanda tercinta, beliau tumbuh menjadi pribadi yang tenang, alim, dan jauh dari fitnah. Wasiat ayahandanya menjadi pedoman hidup yang senantiasa ia jaga hingga akhir hayatnya.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas perjalanan menuntut ilmu Syeikh Muhammad Al-Hanafiyyah di Madinah — bagaimana beliau berguru kepada para sahabat besar yang masih hidup pada masa itu, bidang-bidang ilmu yang beliau pelajari, dan bagaimana beliau menjadi salah satu ulama tabi'in yang paling alim di zamannya.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Rabbanā hab lanā min azwājinā wa dzurriyyātinā qurrata a'yunin wa-j'alnā lil-muttaqīna imāmā."<br>
+<strong>Artinya:</strong> "Ya Tuhan kami, anugerahkanlah kepada kami istri-istri kami dan keturunan kami sebagai penyejuk hati kami, dan jadikanlah kami imam bagi orang-orang yang bertakwa."
+<br>— QS. Al-Furqan: 74
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="hanafi1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi2.html" class="article-nav-btn active" title="Halaman 2: Masa Kecil & Pendidikan">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="hanafi3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="hanafi4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="hanafi5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="hanafi7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="hanafi8.html" class="article-nav-btn" title="Halaman 8: Warisan Keilmuan">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

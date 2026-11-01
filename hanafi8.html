@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+@media (max-width: 768px) {
+.article-container { max-width: 100%; padding: 20px; }
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover { background: rgba(233, 69, 96, 0.15); transform: scale(1.05); }
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover { background: #e94560; color: #fff; border-color: #e94560; }
+.article-content { font-size: 1.05rem; line-height: 1.9; color: #444; }
+.article-content p { margin-bottom: 20px; text-align: justify; }
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 { font-size: 1.2rem; color: #333; margin: 25px 0 10px; }
+.article-content ul { margin: 15px 0 20px 30px; }
+.article-content ul li { margin-bottom: 10px; line-height: 1.7; }
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title { font-size: 1.3rem; color: #1a1a2e; font-weight: bold; display: inline; }
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul { margin: 15px 0 0 30px; }
+.highlight-box ul li { margin-bottom: 10px; line-height: 1.7; }
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label { text-align: center; color: #aaa; font-size: 0.75rem; margin-top: 6px; }
+.nav-group { display: flex; flex-direction: column; align-items: center; }
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+nav { flex-direction: column; gap: 10px; width: 100%; justify-content: center; }
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav { gap: 6px; padding: 15px; }
+.article-nav-btn { width: 36px; height: 36px; font-size: 1rem; }
+.nav-btn-label { font-size: 0.65rem; }
+}
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam { font-size: 1.3rem !important; letter-spacing: 3px !important; }
+header nav a { padding: 6px 10px !important; font-size: 0.8rem !important; }
+.article-nav-btn { width: 32px; height: 32px; font-size: 0.9rem; }
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah</h1>
+<div class="subtitle">Halaman 8 dari 9 — Warisan Keilmuan: Hadits, Fikih, Tafsir, dan Akhlak Ahlul Bait</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Rabu, 28 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Medina_-_Map_of_the_Prophet%27s_Mosque.jpg/440px-Medina_-_Map_of_the_Prophet%27s_Mosque.jpg"
+alt="Masjid Nabawi Madinah — pusat penyebaran ilmu Muhammad Al-Hanafiyyah"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Kufa_Mosque.jpg/440px-Kufa_Mosque.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Masjid Nabawi di Madinah Al-Munawwarah — tempat Muhammad bin Ali Al-Hanafiyyah mengajarkan ilmu kepada para tabi'in, dan dari sinilah warisan keilmuan beliau menyebar ke seluruh penjuru dunia Islam hingga hari ini</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Warisan keilmuan Muhammad Al-Hanafiyyah bukanlah warisan yang tertulis dalam kitab-kitab tebal yang beliau tinggalkan — karena pada masa beliau, tradisi penulisan kitab masih belum berkembang seperti pada masa-masa setelahnya. Warisan beliau adalah warisan yang hidup: hadits-hadits yang diriwayatkan dari beliau dan tercatat dalam kitab-kitab hadits muktabar, murid-murid besar yang melanjutkan estafet keilmuan beliau, fikih dan tafsir yang beliau ajarkan kepada generasi tabi'in, serta akhlak mulia Ahlul Bait yang beliau wariskan kepada keturunannya hingga hari ini. Melalui Abu Ja'far Al-Baqir, Ibnu Syihab Az-Zuhri, dan para ulama besar lainnya yang belajar dari beliau, cahaya ilmu Muhammad Al-Hanafiyyah terus bersinar hingga lebih dari tiga belas abad kemudian. Beliau adalah mata rantai penting yang menghubungkan ilmu generasi sahabat dengan generasi tabi'in dan generasi-generasi setelahnya — sebuah mata rantai yang tanpa beliau, banyak ilmu Ahlul Bait mungkin tidak akan sampai kepada kita hari ini.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG ILMU YANG BERMANFAAT — HADITS NABAWI</div>
+<div class="arabic-text">
+إِذَا مَاتَ ابْنُ آدَمَ انْقَطَعَ عَمَلُهُ إِلَّا مِنْ ثَلَاثٍ: صَدَقَةٍ جَارِيَةٍ، أَوْ عِلْمٍ يُنْتَفَعُ بِهِ، أَوْ وَلَدٍ صَالِحٍ يَدْعُو لَهُ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Idzā māta-bnu Ādama-nqaṭa'a 'amaluhū illā min ṡalāṡin: ṣadaqatin jāriyatin, au 'ilmin yuntafa'u bihī, au waladin ṣāliḥin yad'ū lah."<br>
+<strong>Artinya:</strong> "Apabila anak Adam meninggal dunia, terputuslah amalnya kecuali tiga perkara: sedekah jariyah, ilmu yang bermanfaat, dan anak shaleh yang mendoakannya."
+<br>— HR. Muslim
+</div>
+</div>
+<h2>Enam Pilar Warisan — Cahaya Ilmu yang Terus Bersinar</h2>
+<p>
+Warisan keilmuan Muhammad Al-Hanafiyyah dapat dipetakan ke dalam enam pilar utama yang saling menopang: (1) hadits-hadits yang diriwayatkan dari beliau, (2) murid-murid besar yang melanjutkan estafet keilmuan beliau, (3) warisan fikih dan fatwa, (4) warisan tafsir dan pemahaman Al-Qur'an, (5) warisan akhlak dan spiritualitas Ahlul Bait, dan (6) pengaruh beliau terhadap generasi-generasi setelahnya. Keenam pilar inilah yang menjadikan beliau bukan hanya seorang ulama di zamannya, melainkan <em>mata rantai ilmu</em> yang menghubungkan generasi sahabat dengan seluruh generasi umat Islam setelahnya.
+</p>
+<p>
+Beliau pernah berkata: <em>"Aku tidak mewariskan harta yang banyak, dan tidak pula meninggalkan kitab-kitab yang tebal. Yang aku wariskan hanyalah ilmu yang aku terima dari ayahku, dan ayahku menerimanya dari Rasulullah shallallahu 'alaihi wa sallam. Maka jagalah ilmu ini dengan mengamalkannya, dan sampaikanlah kepada orang-orang yang layak menerimanya."</em>
+</p>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN TENTANG MENYAMPAIKAN ILMU</div>
+<div class="arabic-text">
+بَلِّغُوا عَنِّي وَلَوْ آيَةً، وَحَدِّثُوا عَنِّي وَلَا حَرَجَ، وَمَنْ كَذَبَ عَلَيَّ مُتَعَمِّدًا فَلْيَتَبَوَّأْ مَقْعَدَهُ مِنَ النَّارِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Ballighū 'annī wa lau āyah, wa ḥaddiṡū 'annī wa lā ḥaraja. Wa man kadzaba 'alayya muta'ammidan fa-l-yatabawwa' maq'adahū mina-n-nār."<br>
+<strong>Artinya:</strong> "Sampaikanlah dariku meskipun satu ayat, dan ceritakanlah dariku tanpa berdosa. Dan barangsiapa yang berdusta atas namaku dengan sengaja, maka hendaklah ia mempersiapkan tempat duduknya di neraka."
+<br>— HR. Al-Bukhari (hadits yang diriwayatkan oleh Rasulullah SAW, menjadi prinsip periwayatan)
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Warisan Hadits — Riwayat Beliau dalam Kitab-Kitab Muktabar</span>
+<div class="karomah-arabic">إِرْثُ الْحَدِيثِ — رِوَايَاتُهُ فِي الْكُتُبِ الْمُعْتَبَرَةِ</div>
+<p>
+Salah satu warisan terbesar Muhammad Al-Hanafiyyah adalah hadits-hadits yang diriwayatkan dari beliau. Meskipun jumlah hadits yang diriwayatkan langsung dari beliau tidak sebanyak para sahabat besar, namun kualitas riwayat beliau sangat tinggi karena sanadnya yang bersambung langsung kepada Rasulullah SAW melalui ayahandanya Ali bin Abi Thalib.
+</p>
+<h3>A. Status Beliau sebagai Perawi</h3>
+<p>
+Para ulama hadits menetapkan bahwa Muhammad Al-Hanafiyyah adalah perawi yang <em>tsiqah</em> (terpercaya) dan <em>mutqin</em> (teliti). Dalam kitab-kitab rijalul hadits seperti <em>At-Tsiqat</em> karya Ibnu Hibban dan <em>Tahdzib al-Kamal</em> karya Al-Mizzi, nama beliau tercatat sebagai perawi yang dapat diterima riwayatnya. Imam Adz-Dzahabi dalam <em>Siyar A'lam an-Nubala</em> juga menyebutkan beliau dengan pujian yang tinggi.
+</p>
+<h3>B. Hadits-Hadits yang Diriwayatkan</h3>
+<p>
+Di antara hadits-hadits yang diriwayatkan dari Muhammad Al-Hanafiyyah adalah hadits-hadits yang berasal dari ayahandanya Ali bin Abi Thalib, serta dari beberapa sahabat lain yang beliau temui di Madinah. Riwayat-riwayat beliau dapat ditemukan dalam berbagai kitab hadits, di antaranya:
+</p>
+<ul>
+<li><strong>Kutub as-Sittah</strong> — Beberapa riwayat beliau tercatat dalam kitab-kitab hadits utama seperti Shahih Al-Bukhari, Shahih Muslim, Sunan Abu Dawud, Sunan At-Tirmidzi, Sunan An-Nasa'i, dan Sunan Ibnu Majah, baik secara langsung maupun melalui perantara.</li>
+<li><strong>Musnad Ahmad</strong> — Imam Ahmad bin Hanbal mencatat beberapa riwayat yang berkaitan dengan keluarga Ali bin Abi Thalib, termasuk riwayat dari jalur Muhammad Al-Hanafiyyah.</li>
+<li><strong>Kitab-kitab Tarikh dan Thabaqat</strong> — Para sejarawan seperti Ibnu Sa'ad dalam <em>At-Thabaqat Al-Kubra</em> mencatat biografi dan riwayat beliau.</li>
+</ul>
+<h3>C. Keistimewaan Sanad Beliau</h3>
+<p>
+Sanad Muhammad Al-Hanafiyyah memiliki keistimewaan khusus karena merupakan <em>sanad 'ali</em> (sanad tinggi) — yaitu sanad yang pendek jumlah perantaranya antara beliau dengan Rasulullah SAW. Ketika beliau meriwayatkan dari ayahandanya Ali bin Abi Thalib, maka hanya ada satu perantara antara beliau dengan Rasulullah SAW. Sanad semacam ini sangat berharga dalam ilmu hadits karena semakin pendek sanadnya, semakin kecil kemungkinan terjadinya kesalahan dalam periwayatan.
+</p>
+<p>
+Para ulama hadits berkata: <em>"Sanad Muhammad bin Ali dari ayahnya termasuk sanad yang paling mulia, karena ia menghubungkan seorang tabi'in yang saleh dengan sahabat yang agung, yang kemudian bersambung kepada Rasulullah shallallahu 'alaihi wa sallam."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG PENTINGNYA SANAD — PERKATAAN IBNU AL-MUBARAK</div>
+<div class="arabic-text">
+الْإِسْنَادُ مِنَ الدِّينِ، وَلَوْلَا الْإِسْنَادُ لَقَالَ مَنْ شَاءَ مَا شَاءَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Al-isnādu mina-d-dīn. Wa lau lā-l-isnādu la-qāla man syā'a mā syā'a."<br>
+<strong>Artinya:</strong> "Sanad itu bagian dari agama. Kalaulah bukan karena sanad, niscaya siapa pun akan berkata apa pun yang ia kehendaki."
+<br>— Abdullah bin Al-Mubarak (diriwayatkan dalam Muqaddimah Shahih Muslim)
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Murid-Murid Besar — Mata Rantai yang Melanjutkan Estafet</span>
+<div class="karomah-arabic">التَّلَامِيذُ الْكِبَارُ — حَلَقَاتٌ تُكْمِلُ السِّلْسِلَةَ</div>
+<p>
+Warisan keilmuan Muhammad Al-Hanafiyyah terus hidup melalui murid-murid beliau yang menjadi ulama-ulama besar pada generasi setelahnya. Melalui merekalah ilmu yang beliau terima dari ayahandanya Ali bin Abi Thalib dan para sahabat lainnya menyebar ke seluruh penjuru dunia Islam.
+</p>
+<h3>A. Abu Ja'far Muhammad Al-Baqir (wafat 114 H)</h3>
+<p>
+Murid paling istimewa dari Muhammad Al-Hanafiyyah adalah keponakan beliau sendiri, <em>Abu Ja'far Muhammad bin Ali bin Al-Husain bin Ali bin Abi Thalib</em>, yang dikenal dengan gelar <em>Al-Baqir</em> (pembuka ilmu). Al-Baqir adalah putra Al-Husain bin Ali, dan beliau belajar banyak ilmu dari pamannya Muhammad Al-Hanafiyyah. Al-Baqir kemudian menjadi imam kelima dalam silsilah Ahlul Bait dan salah satu ulama tabi'in yang paling alim pada zamannya. Melalui Al-Baqir, ilmu Ahlul Bait terus mengalir kepada generasi-generasi setelahnya.
+</p>
+<h3>B. Ibnu Syihab Az-Zuhri (wafat 124 H)</h3>
+<p>
+<em>Muhammad bin Syihab Az-Zuhri</em> adalah salah satu ulama hadits terbesar pada masa tabi'in. Beliau meriwayatkan hadits dari Muhammad Al-Hanafiyyah dan banyak memuji keilmuan beliau. Az-Zuhri kemudian menjadi guru bagi Imam Malik bin Anas (pendiri Mazhab Maliki) dan banyak ulama besar lainnya. Melalui Az-Zuhri, ilmu Muhammad Al-Hanafiyyah masuk ke dalam tradisi keilmuan Madinah yang menjadi fondasi Mazhab Maliki.
+</p>
+<h3>C. Para Murid Lainnya</h3>
+<ul>
+<li><strong>Abdullah bin Muhammad bin Aqil</strong> — Perawi hadits dari kalangan tabi'in yang meriwayatkan dari Muhammad Al-Hanafiyyah</li>
+<li><strong>Para ulama Madinah</strong> — Banyak tabi'in Madinah yang belajar dari beliau dan mengambil ilmu dari majelis beliau</li>
+<li><strong>Putra-putra beliau</strong> — Anak-anak Muhammad Al-Hanafiyyah juga menjadi ulama yang melanjutkan tradisi keilmuan keluarga</li>
+<li><strong>Para pengikut Ahlul Bait</strong> — Banyak orang yang belajar dari beliau sebagai bentuk kecintaan kepada keluarga Ali bin Abi Thalib</li>
+</ul>
+<h3>D. Estafet Keilmuan yang Tidak Terputus</h3>
+<p>
+Melalui murid-murid inilah, ilmu Muhammad Al-Hanafiyyah terus mengalir dari generasi ke generasi. Dari murid beliau, ilmu itu sampai kepada murid-murid mereka, dan seterusnya hingga ke zaman kita hari ini. Inilah yang dimaksud dengan hadits Rasulullah SAW tentang <em>ilmu yang bermanfaat</em> — ilmu yang tidak berhenti pada satu orang, tetapi terus mengalir dan memberikan manfaat kepada banyak orang sepanjang zaman.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENYEBARKAN ILMU — QS. ALI 'IMRAN: 187</div>
+<div class="arabic-text">
+وَإِذْ أَخَذَ اللَّهُ مِيثَاقَ الَّذِينَ أُوتُوا الْكِتَابَ لَتُبَيِّنُنَّهُ لِلنَّاسِ وَلَا تَكْتُمُونَهُ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa idz akhadza-Llāhu mīṡāqa-l-ladzīna ūtū-l-kitāba la-tubayyinunnahū li-n-nāsi wa lā taktumūnah."<br>
+<strong>Artinya:</strong> "Dan (ingatlah) ketika Allah mengambil janji dari orang-orang yang telah diberi kitab, 'Hendaklah kamu menerangkan isi kitab itu kepada manusia, dan janganlah kamu menyembunyikannya.'"
+<br>— QS. Ali 'Imran: 187
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Warisan Fikih dan Fatwa — Hukum Islam dari Keluarga Ali</span>
+<div class="karomah-arabic">إِرْثُ الْفِقْهِ وَالْفَتْوَى — أَحْكَامٌ مِنْ بَيْتِ عَلِيٍّ</div>
+<p>
+Muhammad Al-Hanafiyyah dikenal sebagai salah seorang ahli fikih di kalangan tabi'in. Beliau banyak memberikan fatwa dan penjelasan hukum Islam yang didasarkan pada ilmu yang beliau terima dari ayahandanya Ali bin Abi Thalib — salah satu sahabat yang paling alim dalam masalah fikih dan peradilan.
+</p>
+<h3>A. Keahlian dalam Fikih</h3>
+<p>
+Ali bin Abi Thalib radhiyallahu 'anhu dikenal sebagai salah satu sahabat yang paling banyak memberikan fatwa pada masa kekhalifahannya. Beliau juga dikenal sebagai qadhi (hakim) yang sangat adil dan teliti. Ilmu fikih ini diwariskan kepada putra-putranya, termasuk Muhammad Al-Hanafiyyah, yang kemudian menjadi salah satu rujukan fikih di Madinah pada masa tabi'in.
+</p>
+<h3>B. Fatwa-Fatwa Beliau</h3>
+<p>
+Para ulama fikih mencatat beberapa fatwa Muhammad Al-Hanafiyyah dalam berbagai masalah, di antaranya:
+</p>
+<ul>
+<li><strong>Masalah thaharah (bersuci)</strong> — Beliau memberikan penjelasan tentang tata cara wudhu dan mandi janabah sesuai dengan sunnah Rasulullah SAW</li>
+<li><strong>Masalah shalat</strong> — Beliau menjelaskan rukun-rukun dan sunnah-sunnah shalat</li>
+<li><strong>Masalah zakat</strong> — Beliau memberikan fatwa tentang nisab dan kadar zakat</li>
+<li><strong>Masalah waris</strong> — Sebagai putra Ali bin Abi Thalib yang terkenal dengan keilmuan warisnya, beliau memberikan penjelasan tentang pembagian harta waris</li>
+<li><strong>Masalah muamalah</strong> — Beliau memberikan fatwa tentang jual beli, sewa-menyewa, dan transaksi lainnya</li>
+</ul>
+<h3>C. Pengaruh terhadap Mazhab-Mazhab Fikih</h3>
+<p>
+Meskipun Muhammad Al-Hanafiyyah tidak mendirikan mazhab fikih tersendiri, ilmu fikih beliau berpengaruh terhadap perkembangan mazhab-mazhab fikih yang ada. Hal ini karena murid-murid beliau — terutama Ibnu Syihab Az-Zuhri — menjadi guru bagi para pendiri mazhab seperti Imam Malik bin Anas. Dengan demikian, fikih Muhammad Al-Hanafiyyah secara tidak langsung turut mewarnai pembentukan Mazhab Maliki dan mazhab-mazhab fikih lainnya.
+</p>
+<p>
+Para ulama fikih berkata: <em>"Fikih Ali bin Abi Thalib adalah salah satu sumber utama fikih Islam. Dan Muhammad Al-Hanafiyyah adalah salah satu jalur utama perpindahan fikih Ali bin Abi Thalib kepada generasi tabi'in dan setelahnya."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEUTAMAAN MEMPELAJARI FIKIH — HADITS NABAWI</div>
+<div class="arabic-text">
+مَنْ يُرِدِ اللَّهُ بِهِ خَيْرًا يُفَقِّهْهُ فِي الدِّينِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Man yuridi-Llāhu bihī khairan yufaqqihhu fī-d-dīn."<br>
+<strong>Artinya:</strong> "Barangsiapa yang Allah kehendaki kebaikan baginya, Allah akan memahamkannya dalam agama."
+<br>— HR. Al-Bukhari dan Muslim
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Warisan Tafsir dan Pemahaman Al-Qur'an</span>
+<div class="karomah-arabic">إِرْثُ التَّفْسِيرِ وَفَهْمِ الْقُرْآنِ</div>
+<p>
+Muhammad Al-Hanafiyyah juga mewariskan pemahaman Al-Qur'an yang sangat mendalam kepada generasi setelahnya. Pemahaman ini beliau terima dari ayahandanya Ali bin Abi Thalib — yang dikenal sebagai salah satu sahabat paling alim dalam tafsir Al-Qur'an — serta dari para sahabat besar lainnya di Madinah.
+</p>
+<h3>A. Sumber Pemahaman Tafsir Beliau</h3>
+<p>
+Pemahaman tafsir Muhammad Al-Hanafiyyah bersumber dari tiga sumber utama:
+</p>
+<ul>
+<li><strong>Ayahandanya Ali bin Abi Thalib</strong> — Ali bin Abi Thalib dikenal dengan julukan <em>Bab al-'Ilm</em> dan merupakan salah satu sahabat yang paling mendalam pemahamannya tentang Al-Qur'an. Dari beliau, Muhammad Al-Hanafiyyah belajar tafsir ayat-ayat yang berkaitan dengan aqidah, hukum, dan akhlak.</li>
+<li><strong>Abdullah bin Abbas</strong> — Ibnu Abbas yang dijuluki <em>Tarjuman Al-Qur'an</em> juga menjadi salah satu sumber tafsir bagi Muhammad Al-Hanafiyyah, khususnya untuk ayat-ayat yang memerlukan penjelasan linguistik.</li>
+<li><strong>Tradisi Ahlul Bait</strong> — Sebagai bagian dari keluarga Ahlul Bait, Muhammad Al-Hanafiyyah juga mewarisi pemahaman-pemahaman khusus tentang Al-Qur'an yang diwariskan dalam keluarga besar Ali bin Abi Thalib.</li>
+</ul>
+<h3>B. Corak Tafsir Beliau</h3>
+<p>
+Tafsir yang diajarkan oleh Muhammad Al-Hanafiyyah memiliki beberapa ciri khas:
+</p>
+<ul>
+<li><strong>Berpijak pada riwayat</strong> — Beliau lebih mengutamakan tafsir berdasarkan riwayat dari Rasulullah SAW dan para sahabat daripada penafsiran berdasarkan akal semata.</li>
+<li><strong>Memadukan zhahir dan batin</strong> — Beliau tidak hanya memahami makna lahir ayat, tetapi juga menggali makna-makna batin yang terkandung di dalamnya.</li>
+<li><strong>Berorientasi pada amal</strong> — Setiap tafsir yang beliau ajarkan selalu disertai dengan penekanan pada pengamalan, bukan sekadar pengetahuan teoritis.</li>
+<li><strong>Menghindari takwil yang berlebihan</strong> — Beliau berhati-hati dalam menafsirkan ayat-ayat yang bersifat gaib dan menyerahkannya kepada Allah.</li>
+</ul>
+<h3>C. Pengaruh terhadap Ilmu Tafsir</h3>
+<p>
+Meskipun kitab tafsir yang dinisbahkan langsung kepada Muhammad Al-Hanafiyyah tidak banyak yang sampai kepada kita (karena tradisi penulisan pada masa itu belum berkembang), pemahaman tafsir beliau hidup melalui riwayat-riwayat yang dicatat dalam kitab-kitab tafsir besar seperti <em>Tafsir Ath-Thabari</em>, <em>Tafsir Ibnu Katsir</em>, dan kitab-kitab tafsir lainnya. Para mufassir sering mengutip riwayat dari jalur Muhammad Al-Hanafiyyah ketika membahas ayat-ayat tertentu.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEUTAMAAN AL-QUR'AN — QS. AL-ISRA': 82</div>
+<div class="arabic-text">
+وَنُنَزِّلُ مِنَ الْقُرْآنِ مَا هُوَ شِفَاءٌ وَرَحْمَةٌ لِّلْمُؤْمِنِينَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa nunazzilu mina-l-Qur'āni mā huwa syifā'un wa raḥmatun li-l-mu'minīn."<br>
+<strong>Artinya:</strong> "Dan Kami turunkan dari Al-Qur'an sesuatu yang menjadi penawar dan rahmat bagi orang-orang yang beriman."
+<br>— QS. Al-Isra': 82
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Warisan Akhlak dan Spiritualitas Ahlul Bait</span>
+<div class="karomah-arabic">إِرْثُ الْأَخْلَاقِ وَالرُّوحَانِيَّةِ مِنْ أَهْلِ الْبَيْتِ</div>
+<p>
+Selain warisan ilmu zhahir berupa hadits, fikih, dan tafsir, Muhammad Al-Hanafiyyah juga mewariskan warisan yang tidak kalah penting: akhlak mulia dan spiritualitas Ahlul Bait. Warisan ini mungkin tidak tercatat dalam kitab-kitab, tetapi hidup dalam keteladanan yang beliau tunjukkan kepada murid-muridnya dan keturunannya.
+</p>
+<h3>A. Akhlak yang Diwariskan</h3>
+<p>
+Muhammad Al-Hanafiyyah mewariskan kepada murid-muridnya akhlak-akhlak mulia yang beliau pelajari dari ayahandanya, di antaranya:
+</p>
+<ul>
+<li><strong>Tawadhu' (kerendahan hati)</strong> — Meskipun berasal dari keluarga Ahlul Bait, beliau tidak pernah menyombongkan diri</li>
+<li><strong>Sabar</strong> — Beliau mengajarkan kesabaran dalam menghadapi ujian dan cobaan</li>
+<li><strong>Wara'</strong> — Berhati-hati dalam setiap urusan agama</li>
+<li><strong>Zuhud</strong> — Tidak terikat pada dunia meskipun memiliki akses terhadapnya</li>
+<li><strong>Kasih sayang</strong> — Menyayangi sesama muslim tanpa memandang latar belakang mereka</li>
+<li><strong>Keberanian dalam kebenaran</strong> — Tidak takut menyampaikan kebenaran meskipun berisiko</li>
+</ul>
+<h3>B. Spiritualitas yang Diwariskan</h3>
+<p>
+Dalam hal spiritualitas, Muhammad Al-Hanafiyyah mewariskan:
+</p>
+<ul>
+<li><strong>Kekhusyukan dalam ibadah</strong> — Setiap ibadah dilakukan dengan penuh kehadiran hati</li>
+<li><strong>Muraqabah</strong> — Senantiasa merasa diawasi oleh Allah</li>
+<li><strong>Muhasabah</strong> — Introspeksi diri secara rutin</li>
+<li><strong>Dzikir</strong> — Mengingat Allah dalam setiap keadaan</li>
+<li><strong>Tawakkal</strong> — Berserah diri kepada Allah setelah berikhtiar</li>
+</ul>
+<h3>C. Warisan yang Hidup dalam Keturunan Beliau</h3>
+<p>
+Warisan akhlak dan spiritualitas ini tidak berhenti pada murid-murid langsung beliau, tetapi terus mengalir melalui keturunan-keturunan beliau. Anak-anak dan cucu-cucu Muhammad Al-Hanafiyyah menjadi ulama-ulama yang melanjutkan tradisi keilmuan dan spiritual keluarga. Melalui mereka, akhlak Ahlul Bait terus hidup dan menjadi teladan bagi umat Islam di berbagai penjuru dunia.
+</p>
+<p>
+Beliau pernah berkata: <em>"Sebaik-baik warisan yang ditinggalkan seorang ayah untuk anak-anaknya bukanlah emas dan perak, melainkan akhlak mulia dan ilmu yang bermanfaat. Karena emas dan perak akan habis, tetapi akhlak dan ilmu akan terus hidup sepanjang masa."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG AKHLAK RASULULLAH — QS. AL-QALAM: 4</div>
+<div class="arabic-text">
+وَإِنَّكَ لَعَلَىٰ خُلُقٍ عَظِيمٍ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa innaka la-'alā khuluqin 'azhīm."<br>
+<strong>Artinya:</strong> "Dan sesungguhnya kamu benar-benar berbudi pekerti yang agung."
+<br>— QS. Al-Qalam: 4
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">6</span>
+<span class="karomah-title">Relevansi Warisan di Zaman Modern</span>
+<div class="karomah-arabic">صَلَاحِيَّةُ الْإِرْثِ فِي الْعَصْرِ الْحَدِيثِ</div>
+<p>
+Warisan keilmuan Muhammad Al-Hanafiyyah tetap relevan di zaman modern ini, meskipun telah lebih dari tiga belas abad berlalu sejak beliau wafat. Prinsip-prinsip yang beliau ajarkan memberikan panduan yang sangat berharga bagi umat Islam dalam menghadapi tantangan zaman.
+</p>
+<h3>A. Di Tengah Krisis Otoritas Keilmuan</h3>
+<p>
+Di zaman ketika banyak orang yang berbicara tentang agama tanpa ilmu yang memadai, warisan Muhammad Al-Hanafiyyah mengingatkan kita tentang pentingnya sanad dan otoritas keilmuan. Beliau mengajarkan bahwa ilmu agama harus diambil dari sumber yang jelas dan dapat dipertanggungjawabkan, bukan dari sembarang orang yang mengaku memiliki ilmu.
+</p>
+<h3>B. Di Tengah Polarisasi Umat</h3>
+<p>
+Di zaman ketika umat Islam terpecah belah oleh berbagai perbedaan pandangan, sikap netral dan bijak Muhammad Al-Hanafiyyah menjadi teladan yang sangat relevan. Beliau mengajarkan bahwa persatuan umat lebih penting daripada memenangkan satu kelompok atas kelompok lain, dan bahwa seorang ulama sejati harus mampu menjadi pemersatu, bukan pemecah belah.
+</p>
+<h3>C. Di Tengah Godaan Kekuasaan</h3>
+<p>
+Di zaman ketika banyak ulama yang tergoda untuk mendekat kepada kekuasaan demi kepentingan duniawi, sikap zuhud Muhammad Al-Hanafiyyah menjadi pengingat yang sangat penting. Beliau mengajarkan bahwa ilmu adalah amanah yang harus dijaga dari kepentingan politik, dan bahwa seorang ulama tidak boleh menjual agamanya demi keuntungan duniawi.
+</p>
+<h3>D. Di Tengah Krisis Akhlak</h3>
+<p>
+Di zaman ketika akhlak semakin terpinggirkan, warisan akhlak Muhammad Al-Hanafiyyah menjadi oase yang menyejukkan. Beliau mengajarkan bahwa ilmu tanpa akhlak adalah sia-sia, dan bahwa puncak dari segala keilmuan adalah akhlak yang mulia sebagaimana akhlak Rasulullah SAW.
+</p>
+<h3>E. Di Tengah Krisis Spiritualitas</h3>
+<p>
+Di zaman ketika banyak manusia merasa hampa secara spiritual meskipun hidup berkecukupan, warisan spiritualitas Muhammad Al-Hanafiyyah menawarkan solusi: kembali kepada Allah dengan hati yang bersih, memperbanyak dzikir dan ibadah, serta meneladani kehidupan Rasulullah SAW dan keluarga beliau.
+</p>
+<p>
+Dengan demikian, warisan Muhammad Al-Hanafiyyah bukanlah warisan yang usang dan tidak relevan, melainkan warisan abadi yang terus memberikan cahaya bagi umat Islam di setiap zaman.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEBENARAN YANG ABADI — QS. AL-ISRA': 81</div>
+<div class="arabic-text">
+وَقُلْ جَاءَ الْحَقُّ وَزَهَقَ الْبَاطِلُ ۚ إِنَّ الْبَاطِلَ كَانَ زَهُوقًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa qul jā'a-l-ḥaqqu wa zahaqa-l-bāṭil. Inna-l-bāṭila kāna zahūqā."<br>
+<strong>Artinya:</strong> "Dan katakanlah: 'Yang benar telah datang dan yang batil pasti lenyap.' Sesungguhnya yang batil itu pasti lenyap."
+<br>— QS. Al-Isra': 81
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Warisan Keilmuan Muhammad Al-Hanafiyyah:</strong>
+<ul>
+<li><strong>Warisan hadits:</strong> Riwayat beliau tercatat dalam kitab-kitab hadits muktabar; sanad 'ali yang bersambung langsung kepada Rasulullah SAW melalui Ali bin Abi Thalib</li>
+<li><strong>Status sebagai perawi:</strong> Tsiqah (terpercaya) dan mutqin (teliti) menurut para ulama rijalul hadits</li>
+<li><strong>Murid-murid besar:</strong> Abu Ja'far Al-Baqir (keponakan, imam kelima Ahlul Bait), Ibnu Syihab Az-Zuhri (guru Imam Malik), Abdullah bin Muhammad bin Aqil, dan banyak tabi'in Madinah</li>
+<li><strong>Warisan fikih:</strong> Fatwa dalam masalah thaharah, shalat, zakat, waris, dan muamalah; pengaruh terhadap Mazhab Maliki melalui jalur Az-Zuhri</li>
+<li><strong>Warisan tafsir:</strong> Pemahaman Al-Qur'an dari tiga sumber: Ali bin Abi Thalib, Abdullah bin Abbas, dan tradisi Ahlul Bait</li>
+<li><strong>Corak tafsir:</strong> Berpijak pada riwayat, memadukan zhahir dan batin, berorientasi pada amal, berhati-hati dalam takwil</li>
+<li><strong>Warisan akhlak:</strong> Tawadhu', sabar, wara', zuhud, kasih sayang, keberanian dalam kebenaran</li>
+<li><strong>Warisan spiritualitas:</strong> Kekhusyukan, muraqabah, muhasabah, dzikir, tawakkal</li>
+<li><strong>Relevansi modern:</strong> Krisis otoritas keilmuan, polarisasi umat, godaan kekuasaan, krisis akhlak, dan krisis spiritualitas</li>
+<li><strong>Prinsip utama:</strong> Ilmu adalah amanah yang harus dijaga dari kepentingan politik dan disampaikan kepada yang layak menerimanya</li>
+</ul>
+</div>
+<h2>Doa Memohon Keberkahan Ilmu dan Sanad yang Shahih</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON ILMU YANG BERMANFAAT</div>
+<div class="arabic-text">
+اللَّهُمَّ انْفَعْنِي بِمَا عَلَّمْتَنِي، وَعَلِّمْنِي مَا يَنْفَعُنِي، وَزِدْنِي عِلْمًا، وَاجْعَلْنِي مِمَّنْ يَسْتَمِعُونَ الْقَوْلَ فَيَتَّبِعُونَ أَحْسَنَهُ. اللَّهُمَّ ارْزُقْنِي الْإِخْلَاصَ فِي الْعِلْمِ وَالْعَمَلِ، وَاجْعَلْ عِلْمِي حُجَّةً لِي لَا عَلَيَّ، وَارْزُقْنِي شَفَاعَةَ سَيِّدِنَا مُحَمَّدِ بْنِ عَلِيِّ بْنِ أَبِي طَالِبٍ يَوْمَ الْقِيَامَةِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Allāhumma-nfa'nī bimā 'allamtanī, wa 'allimnī mā yanfa'unī, wa zidnī 'ilmā, wa-j'alnī mimman yasma'ūna-l-qawla fa-yattabi'ūna aḥsanah. Allāhumma-rzuqnī-l-ikhlāṣa fī-l-'ilmi wa-l-'amal, wa-j'al 'ilmī ḥujjatan lī lā 'alayya, wa-rzuqnī syafā'ata sayyidinā Muḥammadi bni 'Aliyyi bni Abī Ṭālibin yawma-l-qiyāmah."<br>
+<strong>Artinya:</strong> "Ya Allah, berilah manfaat kepadaku dengan apa yang telah Engkau ajarkan kepadaku, ajarilah aku apa yang bermanfaat bagiku, tambahkanlah ilmu kepadaku, dan jadikanlah aku termasuk orang-orang yang mendengar perkataan lalu mengikuti yang terbaik darinya. Ya Allah, anugerahkanlah kepadaku keikhlasan dalam ilmu dan amal, jadikanlah ilmuku sebagai pembela bagiku bukan sebagai penuntut atasku, dan anugerahkanlah kepadaku syafaat Sayyidina Muhammad bin Ali bin Abi Thalib pada hari kiamat."
+</div>
+</div>
+<h2>Penutup Halaman 8</h2>
+<p>
+Demikianlah warisan keilmuan Muhammad Al-Hanafiyyah — warisan yang tidak tertulis dalam kitab-kitab tebal, melainkan hidup dalam riwayat hadits yang tercatat di kitab-kitab muktabar, dalam ilmu yang diwariskan kepada murid-murid besar seperti Abu Ja'far Al-Baqir dan Ibnu Syihab Az-Zuhri, dalam fikih dan tafsir yang beliau ajarkan kepada generasi tabi'in, serta dalam akhlak mulia dan spiritualitas Ahlul Bait yang terus mengalir melalui keturunan-keturunan beliau hingga hari ini.
+</p>
+<p>
+Warisan ini mengajarkan kepada kita bahwa kebesaran seorang ulama tidak diukur dari jumlah kitab yang ia tulis, melainkan dari seberapa luas ilmu yang ia wariskan dan seberapa banyak manfaat yang dirasakan oleh umat dari ilmu tersebut. Muhammad Al-Hanafiyyah mungkin tidak menulis kitab-kitab tebal, tetapi ilmu yang beliau wariskan terus hidup dan memberikan manfaat selama lebih dari tiga belas abad — dan akan terus hidup hingga akhir zaman.
+</p>
+<p>
+Pada halaman terakhir (halaman 9), kita akan membahas penutup dan intisari dari seluruh perjalanan hidup Muhammad Al-Hanafiyyah — mulai dari kelahiran beliau di Madinah, masa kecil di bawah bimbingan ayahanda Ali bin Abi Thalib, perjalanan menuntut ilmu dari para sahabat besar, perjalanan spiritual dengan ibadah yang tekun, tantangan dan fitnah politik yang beliau hadapi, tanggapan pro dan kontra dari berbagai kalangan, sikap netral beliau terhadap penguasa, hingga warisan keilmuan yang abadi. Kita juga akan merenungkan pelajaran-pelajaran yang dapat kita ambil dari kehidupan beliau untuk diterapkan dalam kehidupan kita sehari-hari.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+وَقُل رَّبِّ زِدْنِي عِلْمًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa qur rabbi zidnī 'ilmā."<br>
+<strong>Artinya:</strong> "Dan katakanlah: 'Ya Tuhanku, tambahkanlah kepadaku ilmu pengetahuan.'"
+<br>— QS. Thaha: 114
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="hanafi1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi2.html" class="article-nav-btn" title="Halaman 2: Masa Kecil & Pendidikan">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="hanafi3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="hanafi4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="hanafi5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="hanafi7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="hanafi8.html" class="article-nav-btn active" title="Halaman 8: Warisan Keilmuan">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

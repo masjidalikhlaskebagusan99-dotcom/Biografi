@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+@media (max-width: 768px) {
+.article-container { max-width: 100%; padding: 20px; }
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover { background: rgba(233, 69, 96, 0.15); transform: scale(1.05); }
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover { background: #e94560; color: #fff; border-color: #e94560; }
+.article-content { font-size: 1.05rem; line-height: 1.9; color: #444; }
+.article-content p { margin-bottom: 20px; text-align: justify; }
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 { font-size: 1.2rem; color: #333; margin: 25px 0 10px; }
+.article-content ul { margin: 15px 0 20px 30px; }
+.article-content ul li { margin-bottom: 10px; line-height: 1.7; }
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title { font-size: 1.3rem; color: #1a1a2e; font-weight: bold; display: inline; }
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul { margin: 15px 0 0 30px; }
+.highlight-box ul li { margin-bottom: 10px; line-height: 1.7; }
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label { text-align: center; color: #aaa; font-size: 0.75rem; margin-top: 6px; }
+.nav-group { display: flex; flex-direction: column; align-items: center; }
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+nav { flex-direction: column; gap: 10px; width: 100%; justify-content: center; }
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav { gap: 6px; padding: 15px; }
+.article-nav-btn { width: 36px; height: 36px; font-size: 1rem; }
+.nav-btn-label { font-size: 0.65rem; }
+}
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam { font-size: 1.3rem !important; letter-spacing: 3px !important; }
+header nav a { padding: 6px 10px !important; font-size: 0.8rem !important; }
+.article-nav-btn { width: 32px; height: 32px; font-size: 0.9rem; }
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah</h1>
+<div class="subtitle">Halaman 6 dari 9 — Tanggapan Pro dan Kontra Masyarakat, Ulama, dan Penguasa terhadap Sepak Terjang Beliau</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Rabu, 28 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Medina_-_Map_of_the_Prophet%27s_Mosque.jpg/440px-Medina_-_Map_of_the_Prophet%27s_Mosque.jpg"
+alt="Madinah Al-Munawwarah — pusat pro/kontra terhadap Muhammad Al-Hanafiyyah"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Kufa_Mosque.jpg/440px-Kufa_Mosque.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Madinah dan Kufah, dua kota saksi pro dan kontra terhadap Muhammad bin Ali Al-Hanafiyyah. Di Madinah beliau dicintai sebagai ulama tabi'in, sementara di Kufah nama beliau sempat diklaim oleh gerakan politik Mukhtar ats-Tsaqafi</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Sepak terjang Muhammad Al-Hanafiyyah sebagai ulama besar tabi'in dari keluarga Ahlul Bait tidak pernah luput dari perhatian berbagai kalangan di zamannya. Sebagai putra Amirul Mukminin Ali bin Abi Thalib, beliau menjadi tokoh yang sangat berpengaruh — sekaligus sangat diperebutkan. Ada yang mencintainya dengan sepenuh hati sebagai ulama dan pewaris ilmu Ahlul Bait, ada yang mengkultuskannya secara berlebihan hingga menyimpang dari akidah yang benar, ada pula yang menentang dan mencurigainya karena berbagai kepentingan politik. Tanggapan pro dan kontra ini datang dari tiga kalangan utama: masyarakat awam, para ulama, dan para penguasa. Namun di tengah semua dinamika ini, Muhammad Al-Hanafiyyah tetap istiqamah dengan prinsip beliau — tidak terpengaruh oleh pujian, tidak goyah oleh celaan, dan senantiasa kembali kepada Allah sebagai satu-satunya tujuan.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG TIDAK TAKUT CELAAN — QS. AL-MA'IDAH: 54</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا مَن يَرْتَدَّ مِنكُمْ عَن دِينِهِ فَسَوْفَ يَأْتِي اللَّهُ بِقَوْمٍ يُحِبُّهُمْ وَيُحِبُّونَهُ أَذِلَّةٍ عَلَى الْمُؤْمِنِينَ أَعِزَّةٍ عَلَى الْكَافِرِينَ يُجَاهِدُونَ فِي سَبِيلِ اللَّهِ وَلَا يَخَافُونَ لَوْمَةَ لَائِمٍ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Yā ayyuhā-l-ladzīna āmanū man yartadda minkum 'an dīnihī fa-sawfa ya'ti-Llāhu bi-qaumin yuḥibbuhum wa yuḥibbūnahū adzillatin 'alā-l-mu'minīna a'izzatin 'alā-l-kāfirīna yujāhidūna fī sabīli-Llāhi wa lā yakhāfūna lawmata lā'im."<br>
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, barangsiapa di antara kamu yang murtad dari agamanya, maka kelak Allah akan mendatangkan suatu kaum yang Allah mencintai mereka dan mereka pun mencintai-Nya, yang bersikap lemah lembut terhadap orang mukmin, yang bersikap keras terhadap orang-orang kafir, yang berjihad di jalan Allah, dan yang tidak takut kepada celaan orang yang mencela."
+<br>— QS. Al-Ma'idah: 54
+</div>
+</div>
+<h2>Enam Medan Reaksi — Peta Pro dan Kontra Putra Amirul Mukminin</h2>
+<p>
+Para ulama sejarah mencatat bahwa reaksi terhadap Muhammad Al-Hanafiyyah dapat dipetakan ke dalam enam medan utama: (1) tanggapan pro dari masyarakat awam, (2) tanggapan kontra dari masyarakat awam, (3) sikap pro dari kalangan ulama, (4) sikap kontra dari kalangan ulama, (5) sikap penguasa Bani Umayyah dan kelompok-kelompok politik, dan (6) tanggapan diri beliau sendiri terhadap semua pro dan kontra ini. Masing-masing medan ini memiliki dinamika yang unik, dan dari sinilah kita dapat memahami betapa kompleksnya posisi Muhammad Al-Hanafiyyah di tengah umat Islam pada abad pertama Hijriah.
+</p>
+<p>
+Beliau pernah berkata: <em>"Manusia itu ada tiga golongan terhadapku: yang mencintaiku dengan benar, yang mengkultuskanku secara berlebihan hingga merusak akidahnya, dan yang membenciku karena iri hati atau salah paham. Kepada yang pertama, aku doakan kebaikan. Kepada yang kedua, aku peringatkan agar kembali kepada akidah yang lurus. Dan kepada yang ketiga, aku maafkan dan aku serahkan urusannya kepada Allah."</em>
+</p>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN TENTANG SIKAP TERHADAP PUJIAN DAN CELAAN</div>
+<div class="arabic-text">
+لَا تَفْرَحْ بِمَدْحِ النَّاسِ وَلَا تَحْزَنْ بِذَمِّهِمْ، فَإِنَّ الْمَعْيَارَ هُوَ مَا عِنْدَ اللَّهِ لَا مَا عِنْدَ النَّاسِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Lā tafraḥ bi-madḥi-n-nāsi wa lā taḥzan bi-dzammihim. Fa-inna-l-mi'yāra huwa mā 'inda-Llāhi lā mā 'inda-n-nās."<br>
+<strong>Artinya:</strong> "Janganlah engkau gembira dengan pujian manusia, dan janganlah engkau bersedih dengan celaan mereka. Karena standar yang sejati adalah apa yang ada di sisi Allah, bukan apa yang ada di sisi manusia."
+<br>— Nasihat hikmah dalam tradisi salaf
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Tanggapan Pro dari Masyarakat — Kecintaan kepada Putra Ali bin Abi Thalib</span>
+<div class="karomah-arabic">تَجَاوُبُ الْعَامَّةِ بِالْقَبُولِ — مَحَبَّةُ ابْنِ عَلِيِّ بْنِ أَبِي طَالِبٍ</div>
+<p>
+Di kalangan masyarakat awam Madinah, Kufah, dan kota-kota Islam lainnya, Muhammad Al-Hanafiyyah mendapatkan sambutan dan kecintaan yang sangat besar. Sebagai putra Amirul Mukminin Ali bin Abi Thalib — salah satu sahabat paling dicintai umat Islam — beliau secara alami mendapatkan tempat istimewa di hati umat.
+</p>
+<p>
+Di antara bentuk-bentuk tanggapan pro dari masyarakat adalah:
+</p>
+<ul>
+<li><strong>Kehadiran Massal di Majelis Ilmu Beliau</strong> — Setiap kali Muhammad Al-Hanafiyyah membuka majelis ilmu di Masjid Nabawi atau di rumahnya, banyak orang yang berbondong-bondong datang untuk mendengarkan. Mereka terdiri dari berbagai kalangan — ulama, tabi'in muda, pedagang, hingga rakyat biasa.</li>
+<li><strong>Permintaan Doa dan Barakah</strong> — Banyak orang yang datang kepada beliau untuk meminta doa dan barakah, karena mereka meyakini bahwa doa keturunan Ahlul Bait memiliki keistimewaan tersendiri. Beliau selalu menyambut mereka dengan ramah dan mendoakan mereka dengan tulus.</li>
+<li><strong>Cinta yang Mendalam</strong> — Masyarakat mencintai beliau bukan hanya karena nasabnya sebagai putra Ali bin Abi Thalib, tetapi juga karena akhlak beliau yang mulia, keilmuan beliau yang luas, dan kesalehan beliau yang nyata.</li>
+<li><strong>Penghormatan sebagai Keluarga Ahlul Bait</strong> — Sebagai bagian dari keluarga besar Ali bin Abi Thalib, beliau mendapatkan penghormatan khusus dari umat. Banyak yang mengirim hadiah dan sedekah kepada keluarga beliau sebagai bentuk kecintaan kepada Ahlul Bait.</li>
+<li><strong>Ketaatan kepada Nasihat Beliau</strong> — Ketika beliau memberikan nasihat atau fatwa, masyarakat menerimanya dengan penuh ketaatan, karena mereka yakin bahwa ilmu beliau bersambung langsung kepada Rasulullah SAW melalui ayahandanya.</li>
+</ul>
+<p>
+Salah seorang murid beliau berkata mengenang: <em>"Ketika Muhammad bin Ali Al-Hanafiyyah berbicara, seolah-olah ayahandanya Ali bin Abi Thalib yang berbicara melalui beliau. Kata-kata beliau penuh hikmah, tegas namun lembut, dan menyentuh hati setiap orang yang mendengarkannya. Kami merasa seperti duduk di majelis sahabat Rasulullah SAW sendiri."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KECINTAAN TERHADAP AHLUL BAIT — QS. ASY-SYURA: 23</div>
+<div class="arabic-text">
+قُل لَّا أَسْأَلُكُمْ عَلَيْهِ أَجْرًا إِلَّا الْمَوَدَّةَ فِي الْقُرْبَىٰ ۗ وَمَن يَقْتَرِفْ حَسَنَةً نَّزِدْ لَهُ فِيهَا حُسْنًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Qul lā as'alukum 'alayhi ajran illā-l-mawaddata fī-l-qurbā. Wa man yaqtarif ḥasanatan nazid lahū fīhā ḥusnā."<br>
+<strong>Artinya:</strong> "Katakanlah: 'Aku tidak meminta kepadamu sesuatu upah pun atas dakwahku kecuali kasih sayang dalam kekeluargaan.' Dan barangsiapa yang mengerjakan kebaikan, Kami akan menambahkan baginya kebaikan atas kebaikan itu."
+<br>— QS. Asy-Syura: 23
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Tanggapan Kontra dari Masyarakat — Kesalahpahaman dan Pengkultusan</span>
+<div class="karomah-arabic">تَجَاوُبُ الْعَامَّةِ بِالرَّفْضِ — سُوءُ الْفَهْمِ وَالْغُلُوُّ</div>
+<p>
+Di sisi lain, tidak semua tanggapan masyarakat terhadap Muhammad Al-Hanafiyyah bersifat positif. Ada beberapa bentuk tanggapan negatif yang justru menjadi ujian berat bagi beliau:
+</p>
+<ul>
+<li><strong>Pengkultusan oleh Kelompok Kaysaniyyah</strong> — Sebagian masyarakat, terutama pengikut Mukhtar ats-Tsaqafi yang kemudian dikenal sebagai kelompok <em>Kaysaniyyah</em>, mengkultuskan Muhammad Al-Hanafiyyah secara berlebihan. Mereka meyakini bahwa beliau adalah Al-Mahdi yang dijanjikan, bahkan ada yang meyakini bahwa beliau tidak benar-benar wafat melainkan bersembunyi di gunung dan akan kembali. Keyakinan-keyakinan ini sangat bertentangan dengan akidah Islam yang lurus, dan Muhammad Al-Hanafiyyah sendiri berlepas diri darinya.</li>
+<li><strong>Klaim Politik Tanpa Izin</strong> — Sebagaimana telah dibahas pada halaman sebelumnya, Mukhtar ats-Tsaqafi menggunakan nama Muhammad Al-Hanafiyyah untuk kepentingan politiknya tanpa izin. Hal ini menyebabkan sebagian masyarakat salah paham dan mengira bahwa beliau benar-benar terlibat dalam gerakan politik tersebut.</li>
+<li><strong>Kecurigaan Sebagian Masyarakat Madinah</strong> — Karena nama beliau sering dikaitkan dengan berbagai gerakan politik di Kufah, sebagian masyarakat Madinah menjadi curiga terhadap beliau. Mereka khawatir bahwa beliau memiliki ambisi politik tersembunyi, meskipun pada kenyataannya beliau sama sekali tidak tertarik dengan kekuasaan.</li>
+<li><strong>Tuduhan dari Kelompok Khawarij</strong> — Kelompok Khawarij yang mengkafirkan Ali bin Abi Thalib juga menyerang Muhammad Al-Hanafiyyah sebagai putra beliau. Mereka menyebarkan tuduhan-tuduhan palsu untuk menjatuhkan reputasi keluarga Ali bin Abi Thalib.</li>
+<li><strong>Fitnah dan Gosip</strong> — Karena kedudukan beliau yang tinggi, banyak orang yang iri hati menyebarkan fitnah dan gosip tentang beliau. Namun, semua fitnah ini tidak mampu menjatuhkan beliau, karena kebenaran selalu menang pada akhirnya.</li>
+</ul>
+<p>
+Menghadapi semua tanggapan negatif ini, Muhammad Al-Hanafiyyah tetap tenang dan sabar. Beliau tidak pernah membalas fitnah dengan fitnah, tidak pernah membela diri dengan cara yang keras, melainkan membiarkan waktu dan kebenaran yang berbicara. Beliau berkata: <em>"Kebenaran itu seperti matahari — meskipun engkau mencoba menutupinya dengan awan, ia akan tetap bersinar. Dan kebatilan itu seperti bayangan — ia hanya ada ketika ada cahaya, dan akan hilang ketika cahaya itu lenyap."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG LARANGAN GHULUW (BERLEBIHAN) — HADITS NABAWI</div>
+<div class="arabic-text">
+إِيَّاكُمْ وَالْغُلُوَّ فِي الدِّينِ، فَإِنَّمَا أَهْلَكَ مَنْ كَانَ قَبْلَكُمُ الْغُلُوُّ فِي الدِّينِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Iyyākum wa-l-ghuluwwa fī-d-dīn. Fa-innamā ahlaka man kāna qablakumu-l-ghuluwwu fī-d-dīn."<br>
+<strong>Artinya:</strong> "Jauhilah oleh kalian sikap berlebihan dalam agama, karena sesungguhnya sikap berlebihan itulah yang telah membinasakan orang-orang sebelum kalian."
+<br>— HR. An-Nasa'i dan Ahmad
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Sikap Pro dari Ulama — Penghormatan Para Tabi'in Besar</span>
+<div class="karomah-arabic">مَوْقِفُ الْعُلَمَاءِ الْمُؤَيِّدِينَ — إِكْرَامُ كِبَارِ التَّابِعِينَ</div>
+<p>
+Di kalangan ulama, Muhammad Al-Hanafiyyah mendapatkan penghormatan dan pengakuan yang sangat tinggi. Para ulama besar tabi'in, baik di Madinah maupun di Kufah, mengakui keilmuan, kesalehan, dan kedudukan beliau sebagai salah satu ulama terdepan di zamannya.
+</p>
+<p>
+Di antara ulama yang mendukung dan memuji Muhammad Al-Hanafiyyah adalah:
+</p>
+<ul>
+<li><strong>Muhammad bin Syihab Az-Zuhri</strong> (wafat 124 H) — Imam besar hadits di Madinah, yang meriwayatkan hadits dari Muhammad Al-Hanafiyyah dan memuji keilmuan beliau. Az-Zuhri adalah salah satu ulama tabi'in yang paling banyak meriwayatkan hadits, dan periwayatannya dari Muhammad Al-Hanafiyyah menunjukkan pengakuan beliau terhadap keilmuan putra Ali bin Abi Thalib ini.</li>
+<li><strong>Abu Ja'far Muhammad bin Ali Al-Baqir</strong> (wafat 114 H) — Cucu Al-Husain bin Ali dan imam kelima dalam silsilah Ahlul Bait. Beliau sangat menghormati pamannya Muhammad Al-Hanafiyyah dan banyak mengambil ilmu dari beliau.</li>
+<li><strong>Para Ulama Madinah</strong> — Para fuqaha dan muhadditsin Madinah pada masa itu mengakui kedudukan Muhammad Al-Hanafiyyah sebagai salah satu rujukan utama dalam masalah fikih dan hadits.</li>
+<li><strong>Para Ulama Kufah</strong> — Meskipun Kufah merupakan pusat berbagai aliran politik, para ulama yang lurus di kota ini tetap menghormati Muhammad Al-Hanafiyyah sebagai ulama yang menjauhi fitnah.</li>
+<li><strong>Ulama dari Kalangan Tabi'in Lainnya</strong> — Banyak tabi'in besar yang belajar dari beliau atau meriwayatkan ilmu dari beliau, yang menjadi bukti pengakuan mereka terhadap keilmuan beliau.</li>
+</ul>
+<p>
+Para ulama salaf mencatat bahwa Muhammad Al-Hanafiyyah dikenal sebagai perawi hadits yang <em>tsiqah</em> (terpercaya) dan <em>mutqin</em> (teliti). Hadits-hadits yang diriwayatkan dari beliau diterima oleh para ulama hadits generasi setelahnya, dan sebagian di antaranya tercatat dalam kitab-kitab hadits yang muktabar.
+</p>
+<p>
+Salah seorang ulama tabi'in berkata tentang beliau: <em>"Muhammad bin Ali bin Abi Thalib adalah lautan ilmu. Barangsiapa yang menyelam di dalamnya, ia akan mendapatkan mutiara-mutiara hikmah yang tiada ternilai harganya. Dan barangsiapa yang duduk di majelisnya, ia akan pulang dengan membawa ilmu yang tidak ia dapatkan di majelis lainnya."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEUTAMAAN ULAMA — QS. FATHIR: 28</div>
+<div class="arabic-text">
+إِنَّمَا يَخْشَى اللَّهَ مِنْ عِبَادِهِ الْعُلَمَاءُ ۗ إِنَّ اللَّهَ عَزِيزٌ غَفُورٌ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Innamā yakhsyā-Llāha min 'ibādīhi-l-'ulamā'. Inna-Llāha 'Azīzun Ghafūr."<br>
+<strong>Artinya:</strong> "Sesungguhnya yang takut kepada Allah di antara hamba-hamba-Nya, hanyalah ulama. Sesungguhnya Allah Maha Perkasa lagi Maha Pengampun."
+<br>— QS. Fathir: 28
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Sikap Kontra dari Ulama — Keraguan dan Salah Paham</span>
+<div class="karomah-arabic">مَوْقِفُ الْعُلَمَاءِ الْمُعَارِضِينَ — الشُّكُوكُ وَسُوءُ الْفَهْمِ</div>
+<p>
+Meskipun mayoritas ulama menghormati Muhammad Al-Hanafiyyah, ada pula sebagian ulama yang meragukan atau salah paham terhadap beliau. Sikap kontra ini umumnya bukan berasal dari penolakan terhadap keilmuan beliau, melainkan dari kesalahpahaman yang disebabkan oleh situasi politik yang rumit pada masa itu.
+</p>
+<p>
+Di antara bentuk-bentuk sikap kontra dari kalangan ulama adalah:
+</p>
+<ul>
+<li><strong>Keraguan terhadap Periwayatan Beliau</strong> — Sebagian ulama hadits pada masa awal meragukan beberapa riwayat yang dinisbahkan kepada Muhammad Al-Hanafiyyah, bukan karena beliau tidak jujur, tetapi karena nama beliau sering dicatut oleh kelompok-kelompok politik seperti Kaysaniyyah. Namun, setelah diteliti lebih lanjut, para ulama hadits menetapkan bahwa riwayat-riwayat yang sahih dari beliau dapat diterima.</li>
+<li><strong>Kesalahpahaman tentang Kedudukan Beliau di Ahlul Bait</strong> — Sebagian orang mempertanyakan kedudukan Muhammad Al-Hanafiyyah dalam keluarga Ahlul Bait karena beliau bukan putra Fathimah Az-Zahra. Namun, para ulama Ahlus Sunnah wal Jama'ah menetapkan bahwa beliau tetap merupakan bagian dari keluarga besar Ali bin Abi Thalib dan berhak atas penghormatan yang sesuai dengan kedudukannya.</li>
+<li><strong>Kekhawatiran terhadap Pengkultusan</strong> — Sebagian ulama yang melihat munculnya kelompok Kaysaniyyah yang mengkultuskan Muhammad Al-Hanafiyyah menjadi khawatir bahwa nama beliau akan digunakan untuk menyebarkan ajaran-ajaran yang menyimpang. Kekhawatiran ini beralasan, namun Muhammad Al-Hanafiyyah sendiri telah berlepas diri dari semua ajaran menyimpang tersebut.</li>
+<li><strong>Sikap Khawarij</strong> — Ulama-ulama dari kalangan Khawarij tentu saja menolak dan menyerang Muhammad Al-Hanafiyyah sebagai putra Ali bin Abi Thalib, karena mereka mengkafirkan Ali bin Abi Thalib. Namun, serangan ini tidak memiliki dasar ilmiah yang dapat diterima.</li>
+</ul>
+<p>
+Menariknya, sebagian besar sikap kontra terhadap Muhammad Al-Hanafiyyah pada akhirnya mereda seiring berjalannya waktu. Para ulama generasi setelahnya, setelah meneliti dengan cermat, menetapkan bahwa Muhammad Al-Hanafiyyah adalah seorang ulama yang tsiqah (terpercaya), saleh, dan jauh dari segala bentuk penyimpangan. Nama beliau tercatat dengan hormat dalam kitab-kitab rijalul hadits dan sejarah Islam.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG TABAYYUN (KLARIFIKASI) — QS. AL-HUJURAT: 6</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا إِن جَاءَكُمْ فَاسِقٌ بِنَبَإٍ فَتَبَيَّنُوا أَن تُصِيبُوا قَوْمًا بِجَهَالَةٍ فَتُصْبِحُوا عَلَىٰ مَا فَعَلْتُمْ نَادِمِينَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Yā ayyuhā-l-ladzīna āmanū in jā'akum fāsiqun bi-naba'in fa-tabayyanū an tuṣībū qauman bi-jahālatin fa-tuṣbiḥū 'alā mā fa'altum nādimīn."<br>
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, jika datang kepadamu orang fasik membawa suatu berita, maka periksalah dengan teliti, agar kamu tidak menimpakan suatu musibah kepada suatu kaum tanpa mengetahui keadaannya yang menyebabkan kamu menyesal atas perbuatanmu itu."
+<br>— QS. Al-Hujurat: 6
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Sikap Penguasa — Antara Penghormatan dan Kecurigaan</span>
+<div class="karomah-arabic">مَوْقِفُ الْحُكَّامِ — بَيْنَ الْإِكْرَامِ وَالشُّبْهَةِ</div>
+<p>
+Sikap para penguasa terhadap Muhammad Al-Hanafiyyah sangat dipengaruhi oleh posisi beliau sebagai putra Amirul Mukminin Ali bin Abi Thalib dan sebagai tokoh yang dihormati oleh banyak kalangan umat Islam. Secara umum, ada tiga fase hubungan antara Muhammad Al-Hanafiyyah dengan para penguasa:
+</p>
+<h3>A. Fase Kekhalifahan Ali bin Abi Thalib (35-40 H)</h3>
+<p>
+Pada masa ini, Muhammad Al-Hanafiyyah hidup di bawah perlindungan ayahandanya sendiri yang menjadi Khalifah. Beliau tumbuh di lingkungan kekuasaan, namun tidak pernah memanfaatkan kedudukan ini untuk kepentingan pribadi. Setelah ayahandanya syahid pada tahun 40 H, beliau kembali menjadi rakyat biasa yang fokus pada ilmu dan ibadah.
+</p>
+<h3>B. Fase Kekuasaan Muawiyah dan Yazid (41-64 H)</h3>
+<p>
+Pada masa Bani Umayyah, Muhammad Al-Hanafiyyah memilih sikap netral. Beliau tidak memberontak, tetapi juga tidak menjilat kepada penguasa. Para penguasa Umayyah pada umumnya menghormati beliau sebagai putra Ali bin Abi Thalib, meskipun mereka tetap waspada terhadap kemungkinan nama beliau digunakan oleh kelompok oposisi.
+</p>
+<p>
+Ketika Al-Husain bin Ali berangkat ke Kufah pada tahun 61 H, Muhammad Al-Hanafiyyah memberikan nasihat kepada saudaranya agar berhati-hati. Setelah Al-Husain syahid di Karbala, Muhammad Al-Hanafiyyah sangat berduka namun tetap memilih jalur damai.
+</p>
+<h3>C. Fase Abdullah bin Zubair dan Abdul Malik bin Marwan (64-86 H)</h3>
+<p>
+Pada masa ini, Muhammad Al-Hanafiyyah menghadapi tekanan yang lebih berat. Abdullah bin Zubair yang menguasai Makkah dan Madinah menekan Muhammad Al-Hanafiyyah untuk memberikan baiat kepadanya. Muhammad Al-Hanafiyyah menolak untuk berbaiat kepada siapa pun selama umat masih terpecah, dan memilih untuk tidak mendukung salah satu pihak.
+</p>
+<p>
+Karena penolakannya ini, Abdullah bin Zubair memenjarakan Muhammad Al-Hanafiyyah di Makkah. Beliau mengalami masa-masa sulit dalam penjara, namun tetap sabar dan istiqamah. Setelah kekuasaan Abdullah bin Zubair berakhir dan Abdul Malik bin Marwan menjadi Khalifah, Muhammad Al-Hanafiyyah dibebaskan dan kembali ke Madinah.
+</p>
+<h3>D. Sikap Netral yang Konsisten</h3>
+<p>
+Di tengah semua dinamika politik ini, Muhammad Al-Hanafiyyah tetap konsisten dengan sikap netralnya. Beliau tidak pernah menggunakan namanya untuk menggalang kekuatan politik, tidak pernah memberontak terhadap penguasa yang sah, dan tidak pernah menjilat kepada penguasa untuk mendapatkan keuntungan duniawi. Sikap inilah yang pada akhirnya membuat beliau dihormati oleh semua pihak, meskipun pada awalnya beliau sempat dicurigai.
+</p>
+<p>
+Beliau berkata: <em>"Aku tidak ingin menjadi bagian dari perebutan kekuasaan. Bagiku, ilmu dan ibadah lebih mulia daripada tahta dan mahkota. Biarlah orang lain berlomba-lomba mengejar dunia, aku memilih untuk mengejar akhirat."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KETAATAN KEPADA ALLAH DI ATAS SEGALANYA — QS. AN-NISA: 59</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا أَطِيعُوا اللَّهَ وَأَطِيعُوا الرَّسُولَ وَأُولِي الْأَمْرِ مِنكُمْ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Yā ayyuhā-l-ladzīna āmanū aṭī'ū-Llāha wa aṭī'ū-r-Rasūla wa ulī-l-amri minkum."<br>
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, taatilah Allah dan taatilah Rasul (Nya), dan ulil amri di antara kamu."
+<br>— QS. An-Nisa: 59
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">6</span>
+<span class="karomah-title">Tanggapan Diri Muhammad Al-Hanafiyyah — Tawadhu', Sabar, dan Istiqamah</span>
+<div class="karomah-arabic">تَجَاوُبُ مُحَمَّدِ بْنِ عَلِيٍّ — التَّوَاضُعُ وَالصَّبْرُ وَالِاسْتِقَامَةُ</div>
+<p>
+Yang paling mengagumkan dari seluruh dinamika pro dan kontra ini adalah tanggapan Muhammad Al-Hanafiyyah sendiri terhadap semua reaksi yang datang kepada beliau. Beliau tidak pernah terpengaruh oleh pujian, tidak pernah goyah oleh celaan, dan senantiasa kembali kepada Allah sebagai satu-satunya tujuan. Sikap beliau ini menjadi teladan bagi para ulama di sepanjang zaman.
+</p>
+<p>
+Di antara prinsip-prinsip yang beliau pegang dalam menghadapi pro dan kontra adalah:
+</p>
+<ul>
+<li><strong>Tawadhu' (Kerendahan Hati)</strong> — Meskipun beliau berasal dari keluarga Ahlul Bait yang sangat dihormati, beliau tidak pernah menyombongkan diri. Beliau hidup sederhana, bergaul dengan semua kalangan, dan tidak pernah merasa lebih tinggi dari orang lain. Ketika ada orang yang memuji nasabnya, beliau menjawab: <em>"Nasab tidak mengangkat derajat seseorang jika amalnya tidak baik. Yang mengangkat derajat adalah takwa dan amal saleh."</em></li>
+<li><strong>Sabar tanpa Keluhan</strong> — Ketika beliau difitnah, dipenjara, atau dicela, beliau tidak pernah mengeluh kepada manusia. Beliau hanya mengadu kepada Allah dan memohon kesabaran dari-Nya. Beliau berkata: <em>"Pengaduan kepada makhluk adalah tanda kelemahan iman, dan pengaduan kepada Allah adalah tanda kekuatan iman."</em></li>
+<li><strong>Menolak Pengkultusan</strong> — Ketika kelompok Kaysaniyyah mengkultuskannya secara berlebihan, beliau dengan tegas menolak dan berlepas diri dari mereka. Beliau berkata: <em>"Aku hanyalah hamba Allah dan putra Ali bin Abi Thalib. Janganlah kalian mengangkatku di atas kedudukanku, karena hal itu adalah kezaliman terhadap diriku sendiri."</em></li>
+<li><strong>Tidak Membalas dengan Sejenis</strong> — Beliau tidak pernah membalas fitnah dengan fitnah, atau celaan dengan celaan. Beliau memilih untuk memaafkan dan mendoakan kebaikan bagi orang-orang yang telah menzaliminya.</li>
+<li><strong>Tetap Fokus pada Ilmu dan Ibadah</strong> — Di tengah semua gejolak politik dan sosial, beliau tetap fokus pada kegiatan utamanya — menuntut ilmu, mengajarkan ilmu, dan beribadah kepada Allah. Beliau tidak membiarkan fitnah zaman mengalihkan perhatiannya dari tujuan hidupnya.</li>
+<li><strong>Mendoakan Umat</strong> — Meskipun banyak orang yang salah paham terhadap beliau, beliau senantiasa mendoakan kebaikan bagi seluruh umat Islam. Beliau berkata: <em>"Doaku untuk umat ini lebih aku cintai daripada doaku untuk diriku sendiri. Karena aku tidak mencari cinta manusia, melainkan cinta Allah — dan cinta Allah didapat dengan mencintai hamba-hamba-Nya."</em></li>
+</ul>
+<p>
+Sikap beliau ini menjadi teladan abadi bagi kita semua — bagaimana seorang ulama sejati harus bersikap di tengah masyarakat yang beragam, dengan berbagai pandangan dan kepentingan. Beliau mengajarkan bahwa dakwah bukanlah tentang memenangkan diri sendiri, melainkan tentang menyampaikan kebenaran dengan cara yang terbaik — dengan hikmah, kelembutan, dan kesabaran.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MEMBALAS KEBAIKAN — QS. FUSSILAT: 34</div>
+<div class="arabic-text">
+وَلَا تَسْتَوِي الْحَسَنَةُ وَلَا السَّيِّئَةُ ۚ ادْفَعْ بِالَّتِي هِيَ أَحْسَنُ فَإِذَا الَّذِي بَيْنَكَ وَبَيْنَهُ عَدَاوَةٌ كَأَنَّهُ وَلِيٌّ حَمِيمٌ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa lā tastawī-l-ḥasanatu wa lā-s-sayyi'ah. Idfa' bi-l-latī hiya aḥsanu fa-idzā-l-ladzī bainaka wa bainahū 'adāwatun ka'annahū waliyyun ḥamīm."<br>
+<strong>Artinya:</strong> "Dan tidaklah sama kebaikan dan kejahatan. Tolaklah (kejahatan itu) dengan cara yang lebih baik, maka tiba-tiba orang yang antaramu dan antara dia ada permusuhan seolah-olah telah menjadi teman yang sangat setia."
+<br>— QS. Fussilat: 34
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Tanggapan Pro dan Kontra terhadap Muhammad Al-Hanafiyyah:</strong>
+<ul>
+<li><strong>Pro dari masyarakat:</strong> Kehadiran massal di majelis ilmu, permintaan doa dan barakah, cinta yang mendalam, penghormatan sebagai Ahlul Bait, ketaatan kepada nasihat beliau</li>
+<li><strong>Kontra dari masyarakat:</strong> Pengkultusan berlebihan oleh Kaysaniyyah, klaim politik tanpa izin oleh Mukhtar ats-Tsaqafi, kecurigaan sebagian masyarakat Madinah, tuduhan Khawarij, fitnah dari yang iri hati</li>
+<li><strong>Pro dari ulama:</strong> Pengakuan dari Ibnu Syihab Az-Zuhri, penghormatan dari Abu Ja'far Al-Baqir, pengakuan ulama Madinah dan Kufah, status sebagai perawi tsiqah</li>
+<li><strong>Kontra dari ulama:</strong> Keraguan awal terhadap periwayatan (karena pencatutan nama), kesalahpahaman tentang kedudukan di Ahlul Bait, kekhawatiran terhadap pengkultusan, penolakan Khawarij</li>
+<li><strong>Sikap penguasa:</strong> Dihormati pada masa Muawiyah, ditekan oleh Abdullah bin Zubair hingga dipenjara, dibebaskan pada masa Abdul Malik bin Marwan</li>
+<li><strong>Sikap diri beliau:</strong> Tawadhu', sabar tanpa keluhan, menolak pengkultusan, tidak membalas dengan sejenis, fokus pada ilmu dan ibadah, mendoakan umat</li>
+<li><strong>Prinsip utama:</strong> Mencari ridha Allah, bukan ridha manusia; netral dalam politik, istiqamah dalam ilmu</li>
+<li><strong>Warisan sikap:</strong> Menjadi teladan bagi para ulama dalam menghadapi dinamika pro/kontra</li>
+</ul>
+</div>
+<h2>Doa Memohon Keteguhan Hati di Tengah Dinamika Umat</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON KETEGUHAN DAN HIKMAH</div>
+<div class="arabic-text">
+اللَّهُمَّ ثَبِّتْ قُلُوبَنَا عَلَى دِينِكَ، وَارْزُقْنَا الْحِكْمَةَ فِي الْقَوْلِ وَالْعَمَلِ، وَاجْعَلْنَا مِمَّنْ يَسْمَعُونَ الْقَوْلَ فَيَتَّبِعُونَ أَحْسَنَهُ. اللَّهُمَّ لَا تَجْعَلْنَا مِمَّنْ يَمْدَحُ فَيَغْتَرُّ، وَلَا مِمَّنْ يُذَمُّ فَيَنْكَسِرُ، بَلِ اجْعَلْنَا مِمَّنْ يَطْلُبُ رِضَاكَ وَحْدَكَ. وَارْزُقْنَا حُبَّ سَيِّدِنَا مُحَمَّدِ بْنِ عَلِيِّ بْنِ أَبِي طَالِبٍ وَشَفَاعَتَهُ يَوْمَ الْقِيَامَةِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Allāhumma thabbit qulūbanā 'alā dīnika, wa-rzuqnā-l-ḥikmata fī-l-qawli wa-l-'amal, wa-j'alnā mimman yasma'ūna-l-qawla fa-yattabi'ūna aḥsanah. Allāhumma lā taj'alnā mimman yamdahu fa-yaghtarru, wa lā mimman yudzammu fa-yankasiru, bal i-j'alnā mimman yaṭlubu riḍāka waḥdah. Wa-rzuqnā ḥubba sayyidinā Muḥammadi bni 'Aliyyi bni Abī Ṭālibin wa syafā'atahū yawma-l-qiyāmah."<br>
+<strong>Artinya:</strong> "Ya Allah, teguhkanlah hati kami di atas agama-Mu, anugerahkanlah kepada kami hikmah dalam perkataan dan perbuatan, dan jadikanlah kami termasuk orang-orang yang mendengar perkataan lalu mengikuti yang terbaik darinya. Ya Allah, janganlah Engkau jadikan kami orang yang dipuji lalu menjadi sombong, atau orang yang dicela lalu menjadi patah semangat, melainkan jadikanlah kami orang yang hanya mencari ridha-Mu semata. Anugerahkanlah kepada kami cinta kepada Sayyidina Muhammad bin Ali bin Abi Thalib dan syafaatnya pada hari kiamat."
+</div>
+</div>
+<h2>Penutup Halaman 6</h2>
+<p>
+Demikianlah peta tanggapan pro dan kontra terhadap Muhammad Al-Hanafiyyah di masanya — sebuah peta yang sangat kompleks dan dinamis, yang mencerminkan betapa berpengaruhnya beliau di tengah umat Islam pada abad pertama Hijriah. Di satu sisi, beliau dicintai oleh ribuan orang yang menghormatinya sebagai ulama besar dan putra Amirul Mukminin Ali bin Abi Thalib. Di sisi lain, nama beliau dicatut oleh kelompok-kelompok politik, dikultuskan secara berlebihan oleh sebagian pengikut, dan dicurigai oleh para penguasa.
+</p>
+<p>
+Namun, di tengah semua dinamika ini, Muhammad Al-Hanafiyyah tetap istiqamah dengan prinsip beliau — tidak terpengaruh oleh pujian, tidak goyah oleh celaan, dan senantiasa kembali kepada Allah sebagai satu-satunya tujuan. Beliau menolak pengkultusan, menjauhi politik praktis, dan fokus pada ilmu serta ibadah. Sikap beliau ini menjadi teladan abadi bagi kita semua — bagaimana seorang ulama sejati harus bersikap di tengah masyarakat yang beragam, dengan berbagai pandangan dan kepentingan.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas secara khusus sikap Muhammad Al-Hanafiyyah terhadap para penguasa di zamannya — bagaimana beliau berinteraksi dengan Khalifah-khalifah Bani Umayyah, bagaimana beliau menghadapi tekanan dari Abdullah bin Zubair, dan bagaimana beliau menjaga kemerdekaan hati di tengah godaan kekuasaan yang datang dari berbagai arah.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ ۚ إِنَّ اللَّهَ بَالِغُ أَمْرِهِ ۚ قَدْ جَعَلَ اللَّهُ لِكُلِّ شَيْءٍ قَدْرًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa man yatawakkal 'alā-Llāhi fa-huwa ḥasbuh. Inna-Llāha bālighu amrih. Qad ja'ala-Llāhu li-kulli syai'in qadrā."<br>
+<strong>Artinya:</strong> "Dan barangsiapa yang bertawakkal kepada Allah, niscaya Allah akan mencukupkan (keperluan)nya. Sesungguhnya Allah melaksanakan urusan yang (dikehendaki)Nya. Sesungguhnya Allah telah mengadakan ketentuan bagi tiap-tiap sesuatu."
+<br>— QS. Ath-Thalaq: 3
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="hanafi1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi2.html" class="article-nav-btn" title="Halaman 2: Masa Kecil & Pendidikan">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="hanafi3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="hanafi4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="hanafi5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi6.html" class="article-nav-btn active" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="hanafi7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="hanafi8.html" class="article-nav-btn" title="Halaman 8: Warisan Keilmuan">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

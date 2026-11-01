@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+@media (max-width: 768px) {
+.article-container { max-width: 100%; padding: 20px; }
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover { background: rgba(233, 69, 96, 0.15); transform: scale(1.05); }
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover { background: #e94560; color: #fff; border-color: #e94560; }
+.article-content { font-size: 1.05rem; line-height: 1.9; color: #444; }
+.article-content p { margin-bottom: 20px; text-align: justify; }
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 { font-size: 1.2rem; color: #333; margin: 25px 0 10px; }
+.article-content ul { margin: 15px 0 20px 30px; }
+.article-content ul li { margin-bottom: 10px; line-height: 1.7; }
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title { font-size: 1.3rem; color: #1a1a2e; font-weight: bold; display: inline; }
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul { margin: 15px 0 0 30px; }
+.highlight-box ul li { margin-bottom: 10px; line-height: 1.7; }
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label { text-align: center; color: #aaa; font-size: 0.75rem; margin-top: 6px; }
+.nav-group { display: flex; flex-direction: column; align-items: center; }
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+nav { flex-direction: column; gap: 10px; width: 100%; justify-content: center; }
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav { gap: 6px; padding: 15px; }
+.article-nav-btn { width: 36px; height: 36px; font-size: 1rem; }
+.nav-btn-label { font-size: 0.65rem; }
+}
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam { font-size: 1.3rem !important; letter-spacing: 3px !important; }
+header nav a { padding: 6px 10px !important; font-size: 0.8rem !important; }
+.article-nav-btn { width: 32px; height: 32px; font-size: 0.9rem; }
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah</h1>
+<div class="subtitle">Halaman 4 dari 9 — Perjalanan Spiritual: Ibadah, Tazkiyatun Nafs, dan Maqam Kewalian Sang Tabi'in Agung</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Rabu, 28 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Medina_-_Map_of_the_Prophet%27s_Mosque.jpg/440px-Medina_-_Map_of_the_Prophet%27s_Mosque.jpg"
+alt="Masjid Nabawi Madinah — tempat Muhammad Al-Hanafiyyah beribadah dan bermunajat"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Kufa_Mosque.jpg/440px-Kufa_Mosque.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Madinah Al-Munawwarah — tempat Muhammad bin Ali Al-Hanafiyyah menghabiskan sebagian besar hidupnya dalam ibadah, dzikir, dan munajat kepada Allah di Masjid Nabawi</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Perjalanan spiritual Muhammad Al-Hanafiyyah adalah perjalanan seorang hamba Allah yang tumbuh di lingkungan keluarga Ahlul Bait — keluarga yang dikenal dengan kedalaman ibadah dan kesucian jiwa. Beliau menempuh dua jalur perjalanan spiritual secara bersamaan: <strong>jalur umum</strong> (ibadah, riyadhah, dan mujahadah yang dilakukan oleh setiap muslim) dan <strong>jalur khusus</strong> (tazkiyatun nafs, ma'rifat, dan kedekatan dengan Allah yang diwariskan secara khusus dalam keluarga Ahlul Bait). Berbeda dengan para sufi di abad-abad kemudian yang dikenal dengan istilah-istilah teknis seperti fana' dan baqa', perjalanan spiritual Muhammad Al-Hanafiyyah lebih menekankan pada <em>istiqamah</em> (konsistensi dalam ibadah), <em>zuhud</em> (tidak terikat dunia), dan <em>wara'</em> (berhati-hati dalam agama) — tiga pilar yang menjadi ciri khas spiritualitas para salafush shalih. Beliau adalah contoh nyata seorang ulama yang tidak hanya menguasai ilmu zhahir, tetapi juga mengamalkan ilmu batin dengan penuh kekhusyukan.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG IBADAH YANG ISTIQAMAH — QS. FUSSILAT: 30</div>
+<div class="arabic-text">
+إِنَّ الَّذِينَ قَالُوا رَبُّنَا اللَّهُ ثُمَّ اسْتَقَامُوا تَتَنَزَّلُ عَلَيْهِمُ الْمَلَائِكَةُ أَلَّا تَخَافُوا وَلَا تَحْزَنُوا وَأَبْشِرُوا بِالْجَنَّةِ الَّتِي كُنتُمْ تُوعَدُونَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Inna-l-ladzīna qālū rabbunā-Llāhu tsumma-staqāmū tatanazzalu 'alayhimu-l-malā'ikatu allā takhāfū wa lā taḥzanū wa absyirū bi-l-jannati-l-latī kuntum tū'adūn."<br>
+<strong>Artinya:</strong> "Sesungguhnya orang-orang yang mengatakan: 'Tuhan kami ialah Allah', kemudian mereka meneguhkan pendirian mereka (istiqamah), maka malaikat akan turun kepada mereka dengan mengatakan: 'Janganlah kamu takut dan janganlah merasa sedih; dan gembirakanlah mereka dengan jannah yang telah dijanjikan Allah kepadamu.'"
+<br>— QS. Fussilat: 30
+</div>
+</div>
+<h2>Dua Jalur Spiritual — Ibadah Zhahir dan Tazkiyatun Nafs Batin</h2>
+<p>
+Perjalanan spiritual Muhammad Al-Hanafiyyah dapat dipahami melalui dua jalur yang saling melengkapi. <strong>Jalur umum</strong> adalah ibadah-ibadah yang dilakukan oleh setiap muslim — shalat, puasa, zakat, haji, membaca Al-Qur'an, dan berdzikir kepada Allah. Muhammad Al-Hanafiyyah menjalankan semua ibadah ini dengan kesungguhan yang luar biasa, melebihi kebanyakan orang di zamannya.
+</p>
+<p>
+<strong>Jalur khusus</strong> adalah <em>tazkiyatun nafs</em> (penyucian jiwa) yang diwariskan dalam keluarga Ahlul Bait. Ini mencakup pembersihan hati dari sifat-sifat tercela seperti dengki, sombong, riya', dan cinta dunia, serta menghiasinya dengan sifat-sifat terpuji seperti ikhlas, sabar, syukur, tawakkal, dan mahabbah kepada Allah. Muhammad Al-Hanafiyyah menempuh jalur ini di bawah bimbingan ayahandanya Ali bin Abi Thalib, yang merupakan salah satu sahabat paling alim dalam masalah-masalah batin.
+</p>
+<p>
+Beliau pernah berkata: <em>"Ayahku mengajariku bahwa ibadah tanpa kekhusyukan adalah seperti jasad tanpa ruh. Dan kekhusyukan tanpa ilmu adalah seperti ruh tanpa jasad — keduanya tidak dapat hidup sendiri. Maka hendaklah engkau memadukan ilmu dan kekhusyukan, niscaya ibadahmu akan diterima oleh Allah."</em>
+</p>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN TENTANG HAKIKAT IBADAH</div>
+<div class="arabic-text">
+لَيْسَتِ الْعِبَادَةُ كَثْرَةَ الصَّلَاةِ وَالصِّيَامِ، إِنَّمَا الْعِبَادَةُ كَثْرَةُ التَّفَكُّرِ فِي أَمْرِ اللَّهِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Laysati-l-'ibādatu katsrata-ṣ-ṣalāti wa-ṣ-ṣiyām. Innamā-l-'ibādatu katsratu-t-tafakkuri fī amri-Llāh."<br>
+<strong>Artinya:</strong> "Ibadah bukanlah banyaknya shalat dan puasa, melainkan ibadah adalah banyaknya tafakkur (merenung) tentang urusan Allah."
+<br>— Perkataan yang dinisbahkan kepada tradisi keilmuan Ahlul Bait
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Ibadah yang Tekun — Shalat, Puasa, dan Qiyamul Lail</span>
+<div class="karomah-arabic">الْعِبَادَةُ الْمُسْتَمِرَّةُ — الصَّلَاةُ وَالصِّيَامُ وَقِيَامُ اللَّيْلِ</div>
+<p>
+Muhammad Al-Hanafiyyah dikenal sebagai ahli ibadah yang sangat tekun. Para ulama salaf mencatat bahwa beliau menghabiskan sebagian besar waktunya untuk beribadah kepada Allah dengan penuh kekhusyukan dan ketulusan.
+</p>
+<h3>A. Shalat Lima Waktu dengan Kekhusyukan Sempurna</h3>
+<p>
+Beliau senantiasa shalat lima waktu di awal waktunya, dengan kekhusyukan yang sempurna. Ketika beliau berdiri dalam shalat, seolah-olah beliau sedang berhadapan langsung dengan Allah. Beliau tidak pernah terburu-buru dalam shalat, melainkan memberikan setiap rukun dan sunnahnya dengan sempurna.
+</p>
+<p>
+Para ulama menyebutkan bahwa beliau sering menangis dalam shalatnya, terutama ketika membaca ayat-ayat yang berbicara tentang surga, neraka, dan hari kiamat. Tangisan ini bukan tangisan kesedihan, melainkan tangisan kekhusyukan dan kerinduan kepada Allah.
+</p>
+<h3>B. Qiyamul Lail (Shalat Malam)</h3>
+<p>
+Muhammad Al-Hanafiyyah tidak pernah meninggalkan shalat malam (tahajjud) sepanjang hidupnya. Beliau bangun pada sepertiga malam terakhir untuk shalat, membaca Al-Qur'an, dan bermunajat kepada Allah. Para ulama menyebutkan bahwa beliau sering menghabiskan separuh malam atau lebih untuk beribadah.
+</p>
+<p>
+Beliau berkata tentang shalat malam: <em>"Shalat malam adalah waktu yang paling dekat dengan Allah. Di waktu itu, langit-langit terbuka dan doa-doa dikabulkan. Maka janganlah engkau menyia-nyiakan waktu tersebut dengan tidur."</em>
+</p>
+<h3>C. Puasa Sunnah</h3>
+<p>
+Beliau rajin berpuasa sunnah — puasa Senin-Kamis, puasa hari-hari putih (tanggal 13, 14, 15 setiap bulan hijriah), dan puasa-puasa sunnah lainnya. Beliau berkata: <em>"Puasa adalah perisai dari api neraka. Barangsiapa yang berpuasa karena Allah, maka Allah akan menjauhkannya dari api neraka sejauh tujuh puluh tahun perjalanan."</em>
+</p>
+<h3>D. Membaca Al-Qur'an dengan Tadabbur</h3>
+<p>
+Muhammad Al-Hanafiyyah senantiasa membaca Al-Qur'an setiap hari dengan tadabbur (merenungkan maknanya). Beliau tidak hanya membaca untuk menyelesaikan jumlah halaman, tetapi benar-benar memahami dan menghayati setiap ayat yang dibaca. Beliau berkata: <em>"Membaca Al-Qur'an tanpa memahami maknanya adalah seperti makan tanpa mengunyah — tidak ada manfaatnya bagi tubuh."</em>
+</p>
+<h3>E. Dzikir kepada Allah</h3>
+<p>
+Lisan beliau senantiasa basah dengan dzikrullah — baik ketika sendirian maupun di tengah orang banyak. Beliau berdzikir dengan hati dan lisan secara bersamaan, sehingga dzikir itu menjadi bagian dari setiap tarikan nafasnya.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG QIYAMUL LAIL — QS. AL-ISRA': 79</div>
+<div class="arabic-text">
+وَمِنَ اللَّيْلِ فَتَهَجَّدْ بِهِ نَافِلَةً لَّكَ عَسَىٰ أَن يَبْعَثَكَ رَبُّكَ مَقَامًا مَّحْمُودًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa mina-l-layli fatahajjad bihī nāfilatan laka 'asā an yab'atsaka rabbuka maqāman maḥmūdā."<br>
+<strong>Artinya:</strong> "Dan pada sebagian malam hari bersembahyang tahajjudlah kamu sebagai suatu ibadah tambahan bagimu; mudah-mudahan Tuhanmu mengangkat kamu ke tempat yang terpuji."
+<br>— QS. Al-Isra': 79
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Tazkiyatun Nafs — Penyucian Jiwa ala Ahlul Bait</span>
+<div class="karomah-arabic">تَزْكِيَةُ النَّفْسِ — مِنْهَاجُ أَهْلِ الْبَيْتِ فِي تَطْهِيرِ الْقُلُوبِ</div>
+<p>
+Salah satu keistimewaan perjalanan spiritual Muhammad Al-Hanafiyyah adalah penekanan beliau pada <em>tazkiyatun nafs</em> — penyucian jiwa dari sifat-sifat tercela dan menghiasinya dengan sifat-sifat terpuji. Ilmu ini beliau warisi dari ayahandanya Ali bin Abi Thalib, yang merupakan salah satu sahabat paling mendalam pengetahuannya tentang masalah-masalah batin.
+</p>
+<h3>A. Membersihkan Hati dari Sifat-Sifat Tercela</h3>
+<p>
+Muhammad Al-Hanafiyyah mengajarkan bahwa langkah pertama dalam tazkiyatun nafs adalah membersihkan hati dari sifat-sifat tercela, di antaranya:
+</p>
+<ul>
+<li><strong>Dengki (Hasad)</strong> — Iri hati terhadap nikmat orang lain. Beliau mengajarkan bahwa dengki adalah api yang memakan kebaikan sebagaimana api memakan kayu bakar.</li>
+<li><strong>Sombong (Kibr)</strong> — Merasa lebih tinggi dari orang lain. Beliau berkata: <em>"Ketakwaan bukanlah pada pakaian atau nasab, melainkan pada kerendahan hati di hadapan Allah."</em></li>
+<li><strong>Riya'</strong> — Beramal untuk dilihat manusia. Beliau sangat berhati-hati agar setiap amalannya murni karena Allah.</li>
+<li><strong>Cinta Dunia (Hubb ad-Dunya)</strong> — Keterikatan hati terhadap harta, kedudukan, dan kesenangan dunia. Beliau mengajarkan bahwa dunia adalah jembatan, bukan tempat tinggal.</li>
+<li><strong>Ujub</strong> — Bangga diri atas amal ibadah yang dilakukan. Beliau senantiasa mengingatkan bahwa semua kebaikan adalah taufik dari Allah semata.</li>
+</ul>
+<h3>B. Menghiasi Hati dengan Sifat-Sifat Terpuji</h3>
+<p>
+Setelah membersihkan hati dari sifat-sifat tercela, langkah berikutnya adalah menghiasinya dengan sifat-sifat terpuji:
+</p>
+<ul>
+<li><strong>Ikhlas</strong> — Beramal semata-mata karena Allah, tanpa mengharapkan pujian atau balasan dari manusia.</li>
+<li><strong>Sabar</strong> — Bersabar dalam menghadapi ujian, dalam menjalankan ketaatan, dan dalam menjauhi kemaksiatan.</li>
+<li><strong>Syukur</strong> — Bersyukur atas segala nikmat Allah, baik yang besar maupun yang kecil.</li>
+<li><strong>Tawakkal</strong> — Berserah diri sepenuhnya kepada Allah setelah berikhtiar dengan sungguh-sungguh.</li>
+<li><strong>Mahabbah</strong> — Mencintai Allah, Rasul-Nya, dan sesama muslim karena Allah.</li>
+</ul>
+<h3>C. Muhasabah (Introspeksi Diri)</h3>
+<p>
+Muhammad Al-Hanafiyyah senantiasa melakukan muhasabah setiap malam sebelum tidur. Beliau menghisab (menghitung) amal-amalnya sepanjang hari — apa yang telah ia lakukan dengan baik, apa yang kurang sempurna, dan apa yang perlu diperbaiki esok hari. Beliau berkata: <em>"Hisablah dirimu sebelum engkau dihisab. Timbanglah amalmu sebelum amalmu ditimbang. Karena hisab di dunia lebih ringan daripada hisab di akhirat."</em>
+</p>
+<h3>D. Muraqabah (Pengawasan Hati)</h3>
+<p>
+Beliau juga mengajarkan <em>muraqabah</em> — senantiasa merasa diawasi oleh Allah dalam setiap gerak-gerik, pikiran, dan perasaan. Dengan muraqabah, seorang hamba tidak berani berbuat dosa, baik secara zhahir maupun batin, karena ia menyadari bahwa Allah senantiasa melihatnya.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG TAZKIYATUN NAFS — QS. ASY-SYAMS: 9-10</div>
+<div class="arabic-text">
+قَدْ أَفْلَحَ مَن زَكَّاهَا ۝ وَقَدْ خَابَ مَن دَسَّاهَا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Qad aflaha man zakkāhā. Wa qad khāba man dassāhā."<br>
+<strong>Artinya:</strong> "Sesungguhnya beruntunglah orang yang mensucikan jiwa itu. Dan sesungguhnya merugilah orang yang mengotorinya."
+<br>— QS. Asy-Syams: 9-10
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Zuhud dan Wara' — Tidak Terikat oleh Dunia</span>
+<div class="karomah-arabic">الزُّهْدُ وَالْوَرَعُ — عَدَمُ التَّعَلُّقِ بِالدُّنْيَا</div>
+<p>
+Muhammad Al-Hanafiyyah dikenal sebagai seorang yang sangat zuhud dan wara'. Meskipun beliau berasal dari keluarga Ahlul Bait yang sangat dihormati dan memiliki kedudukan sosial yang tinggi, beliau memilih hidup sederhana dan tidak pernah memanfaatkan kedudukannya untuk mendapatkan harta atau kekuasaan.
+</p>
+<h3>A. Zuhud terhadap Harta</h3>
+<p>
+Beliau tidak pernah menumpuk harta. Apa pun yang beliau dapatkan, beliau gunakan untuk kebutuhan sehari-hari dan sisanya beliau sedekahkan kepada fakir miskin. Beliau berkata: <em>"Harta yang engkau simpan akan menjadi bebanmu di akhirat. Maka gunakanlah harta di jalan Allah, niscaya ia akan menjadi simpananmu yang sejati."</em>
+</p>
+<h3>B. Zuhud terhadap Kedudukan</h3>
+<p>
+Meskipun beliau adalah putra Amirul Mukminin Ali bin Abi Thalib, beliau tidak pernah memanfaatkan nasabnya untuk mendapatkan kedudukan politik. Ketika ada kelompok yang ingin mengangkatnya sebagai pemimpin, beliau menolak dengan halus dan memilih tetap menjadi ulama yang mengajarkan ilmu kepada umat.
+</p>
+<h3>C. Wara' dalam Makanan dan Pakaian</h3>
+<p>
+Beliau sangat berhati-hati dalam memilih makanan dan pakaian. Beliau tidak memakan makanan yang belum jelas kehalalannya, dan tidak memakai pakaian yang berasal dari sumber yang syubhat. Beliau berkata: <em>"Barangsiapa yang memakan makanan haram, maka anggota tubuhnya akan bermaksiat kepada Allah. Dan barangsiapa yang memakan makanan halal, maka anggota tubuhnya akan taat kepada Allah."</em>
+</p>
+<h3>D. Hidup Sederhana di Tengah Kemewahan</h3>
+<p>
+Meskipun beliau memiliki akses terhadap harta dan kedudukan karena nasabnya, beliau memilih hidup sederhana. Rumah beliau sederhana, pakaian beliau sederhana, dan makanan beliau sederhana. Beliau berkata: <em>"Kekayaan sejati bukanlah pada banyaknya harta, melainkan pada kekayaan hati. Barangsiapa yang hatinya kaya, maka ia adalah orang yang paling kaya, meskipun ia tidak memiliki apa-apa."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEKAYAAN HATI — HADITS NABAWI</div>
+<div class="arabic-text">
+لَيْسَ الْغِنَى عَنْ كَثْرَةِ الْعَرَضِ، وَلَكِنَّ الْغِنَى غِنَى النَّفْسِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Laysa-l-ghinā 'an katsrati-l-'araḍ. Wa lākinna-l-ghinā ghinā-n-nafs."<br>
+<strong>Artinya:</strong> "Kekayaan bukanlah pada banyaknya harta, akan tetapi kekayaan adalah kekayaan hati."
+<br>— HR. Al-Bukhari dan Muslim
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Menjauhi Fitnah Politik — Sikap Netral yang Penuh Hikmah</span>
+<div class="karomah-arabic">الْبُعْدُ عَنِ الْفِتَنِ السِّيَاسِيَّةِ — الْمَوْقِفُ الْمُتَوَازِنُ بِالْحِكْمَةِ</div>
+<p>
+Salah satu ciri khas perjalanan spiritual Muhammad Al-Hanafiyyah adalah sikap beliau yang menjauhi fitnah politik. Beliau hidup di masa yang sangat bergejolak — masa Perang Jamal, Perang Shiffin, peristiwa Karbala, dan berbagai konflik politik lainnya. Namun, beliau memilih untuk tidak terlibat dalam pertikaian politik dan tetap istiqamah dalam menuntut ilmu serta beribadah.
+</p>
+<h3>A. Sikap Netral dalam Perang Shiffin</h3>
+<p>
+Ketika terjadi Perang Shiffin antara pasukan ayahandanya Ali bin Abi Thalib dengan pasukan Muawiyah bin Abi Sufyan pada tahun 37 H, Muhammad Al-Hanafiyyah yang saat itu masih sangat muda tidak terlibat langsung dalam peperangan. Beliau tetap fokus pada menuntut ilmu dan beribadah, meskipun hatinya tentu sangat berat melihat pertikaian di antara sesama muslim.
+</p>
+<h3>B. Sikap terhadap Peristiwa Karbala</h3>
+<p>
+Ketika saudaranya Al-Husain bin Ali syahid di Karbala pada tahun 61 H, Muhammad Al-Hanafiyyah sangat berduka. Namun, beliau tidak memilih jalan kekerasan untuk membalas dendam. Beliau tetap istiqamah dalam jalur ilmu dan dakwah, serta mendoakan saudaranya yang syahid.
+</p>
+<h3>C. Menolak Menjadi Simbol Politik</h3>
+<p>
+Setelah wafatnya Al-Husain bin Ali, ada kelompok yang ingin mengangkat Muhammad Al-Hanafiyyah sebagai pemimpin (imam) pengganti. Namun, beliau menolak dengan halus dan berkata bahwa kepemimpinan umat haruslah berdasarkan musyawarah dan kesepakatan, bukan berdasarkan klaim sepihak. Beliau lebih memilih menjadi ulama yang mengajarkan ilmu daripada menjadi pemimpin politik.
+</p>
+<h3>D. Hikmah di Balik Sikap Netral</h3>
+<p>
+Sikap netral Muhammad Al-Hanafiyyah bukanlah sikap pengecut atau tidak peduli. Justru, sikap ini merupakan bentuk hikmah yang sangat tinggi. Beliau menyadari bahwa pertikaian politik hanya akan membawa kerusakan dan perpecahan umat. Beliau memilih jalur yang lebih konstruktif — yaitu menjaga persatuan umat melalui ilmu dan dakwah, bukan melalui kekuatan senjata.
+</p>
+<p>
+Beliau pernah berkata: <em>"Aku tidak ingin menjadi bagian dari pertikaian yang memecah belah umat. Aku lebih memilih menjadi orang yang menyatukan umat dengan ilmu dan hikmah, meskipun aku tidak mendapatkan kedudukan duniawi."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENJAUHI FITNAH — QS. AL-ANFAL: 25</div>
+<div class="arabic-text">
+وَاتَّقُوا فِتْنَةً لَّا تُصِيبَنَّ الَّذِينَ ظَلَمُوا مِنكُمْ خَاصَّةً ۖ وَاعْلَمُوا أَنَّ اللَّهَ شَدِيدُ الْعِقَابِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa-ttaqū fitnatan lā tuṣībanna-l-ladzīna ẓalamū minkum khāṣṣah. Wa-'lamū anna-Llāha syadīdu-l-'iqāb."<br>
+<strong>Artinya:</strong> "Dan peliharalah dirimu dari pada siksaan yang tidak khusus menimpa orang-orang yang zalim saja di antara kamu. Dan ketahuilah bahwa Allah amat keras siksaan-Nya."
+<br>— QS. Al-Anfal: 25
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Maqam Kewalian — Kedekatan dengan Allah dan Doa yang Mustajab</span>
+<div class="karomah-arabic">مَقَامُ الْوِلَايَةِ — الْقُرْبُ مِنَ اللَّهِ وَاسْتِجَابَةُ الدُّعَاءِ</div>
+<p>
+Para ulama salaf mencatat bahwa Muhammad Al-Hanafiyyah mencapai maqam kewalian yang tinggi. Beliau dikenal sebagai salah satu wali Allah yang doanya mustajab (dikabulkan), yang karamahnya tampak dalam berbagai bentuk, dan yang ma'rifatnya kepada Allah sangat mendalam.
+</p>
+<h3>A. Doa yang Mustajab</h3>
+<p>
+Banyak riwayat yang menyebutkan bahwa doa Muhammad Al-Hanafiyyah senantiasa dikabulkan oleh Allah. Ketika beliau berdoa untuk kesembuhan orang sakit, orang itu sembuh. Ketika beliau berdoa untuk turunnya hujan di musim kemarau, hujan turun. Ketika beliau berdoa untuk keselamatan umat dari fitnah, umat diselamatkan.
+</p>
+<p>
+Beliau pernah berkata: <em>"Doa adalah senjata orang mukmin. Namun, doa tidak akan dikabulkan jika hati masih terikat oleh dunia dan masih penuh dengan sifat-sifat tercela. Maka bersihkanlah hatimu terlebih dahulu, barulah berdoalah kepada Allah."</em>
+</p>
+<h3>B. Karamah-karamah Beliau</h3>
+<p>
+Para ulama menyebutkan beberapa karamah Muhammad Al-Hanafiyyah, di antaranya:
+</p>
+<ul>
+<li><strong>Karamah Ilmu</strong> — Beliau mampu memahami makna-makna Al-Qur'an dan hadits yang tidak dipahami oleh ulama lain pada masanya.</li>
+<li><strong>Karamah Doa</strong> — Doa beliau senantiasa dikabulkan oleh Allah.</li>
+<li><strong>Karamah Akhlak</strong> — Beliau mampu mengubah hati orang-orang yang membencinya menjadi mencintainya dengan akhlak beliau yang mulia.</li>
+<li><strong>Karamah Hidayah</strong> — Banyak orang yang mendapatkan hidayah melalui nasihat dan pengajaran beliau.</li>
+</ul>
+<h3>C. Ma'rifatullah yang Mendalam</h3>
+<p>
+Ma'rifat (pengenalan kepada Allah) Muhammad Al-Hanafiyyah sangat mendalam. Beliau mengenal Allah tidak hanya melalui akal dan ilmu, tetapi juga melalui hati dan pengalaman spiritual. Beliau berkata: <em>"Ma'rifat kepada Allah bukanlah sekadar tahu bahwa Allah ada, melainkan merasakan kehadiran-Nya dalam setiap tarikan napas. Barangsiapa yang telah mencapai ma'rifat ini, maka ia tidak akan pernah merasa sendirian, karena ia senantiasa bersama Allah."</em>
+</p>
+<h3>D. Tanda-Tanda Kewalian Beliau</h3>
+<p>
+Para ulama menyebutkan tanda-tanda kewalian Muhammad Al-Hanafiyyah:
+</p>
+<ul>
+<li><strong>Istiqamah dalam ibadah</strong> — Beliau tidak pernah meninggalkan ibadah, baik yang wajib maupun yang sunnah.</li>
+<li><strong>Akhlak yang mulia</strong> — Beliau senantiasa berakhlak mulia kepada siapa pun, baik yang mencintai maupun yang membencinya.</li>
+<li><strong>Zuhud terhadap dunia</strong> — Beliau tidak pernah terikat oleh harta, kedudukan, atau popularitas.</li>
+<li><strong>Cinta kepada Allah dan Rasul-Nya</strong> — Setiap perkataan dan perbuatannya selalu dilandasi oleh cinta kepada Allah dan Rasul-Nya.</li>
+<li><strong>Manfaat bagi umat</strong> — Beliau senantiasa bermanfaat bagi umat melalui ilmu, nasihat, dan doanya.</li>
+</ul>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG WALI ALLAH — QS. YUNUS: 62-63</div>
+<div class="arabic-text">
+أَلَا إِنَّ أَوْلِيَاءَ اللَّهِ لَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ ۝ الَّذِينَ آمَنُوا وَكَانُوا يَتَّقُونَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Alā inna awliyā'a-Llāhi lā khawfun 'alayhim wa lā hum yaḥzanūn. Alladzīna āmanū wa kānū yattaqūn."<br>
+<strong>Artinya:</strong> "Ingatlah, sesungguhnya wali-wali Allah itu tidak ada ketakutan bagi mereka dan tidak pula mereka bersedih hati. (Yaitu) orang-orang yang beriman dan mereka senantiasa bertakwa."
+<br>— QS. Yunus: 62-63
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Perjalanan Spiritual Muhammad Al-Hanafiyyah:</strong>
+<ul>
+<li><strong>Dua jalur spiritual:</strong> Jalur umum (ibadah, riyadhah) dan jalur khusus (tazkiyatun nafs ala Ahlul Bait)</li>
+<li><strong>Ibadah utama:</strong> Shalat lima waktu dengan khusyuk, qiyamul lail setiap malam, puasa sunnah, membaca Al-Qur'an dengan tadabbur, dzikir yang tak terputus</li>
+<li><strong>Tazkiyatun nafs:</strong> Membersihkan hati dari hasad, kibr, riya', hubb ad-dunya, dan 'ujub</li>
+<li><strong>Menghiasi hati:</strong> Ikhlas, sabar, syukur, tawakkal, dan mahabbah kepada Allah</li>
+<li><strong>Muhasabah:</strong> Introspeksi diri setiap malam sebelum tidur</li>
+<li><strong>Muraqabah:</strong> Senantiasa merasa diawasi oleh Allah</li>
+<li><strong>Zuhud:</strong> Tidak terikat pada harta dan kedudukan, hidup sederhana</li>
+<li><strong>Wara':</strong> Berhati-hati dalam makanan, pakaian, dan segala urusan</li>
+<li><strong>Menjauhi fitnah politik:</strong> Sikap netral yang penuh hikmah di tengah gejolak politik</li>
+<li><strong>Maqam kewalian:</strong> Doa mustajab, karamah ilmu, akhlak mulia, ma'rifatullah mendalam</li>
+<li><strong>Prinsip utama:</strong> Istiqamah, zuhud, wara', dan tidak terlibat fitnah politik</li>
+</ul>
+</div>
+<h2>Doa Memohon Keberkahan Perjalanan Spiritual</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON ISTIQAMAH DAN KEDUDUKAN WALI</div>
+<div class="arabic-text">
+اللَّهُمَّ اجْعَلْنَا مِنَ الصَّالِحِينَ الْمُتَّقِينَ، وَارْزُقْنَا اسْتِقَامَةً عَلَى دِينِكَ، وَزُهْدًا فِي دُنْيَانَا، وَرَغْبَةً فِي آخِرَتِنَا، وَاجْعَلْنَا مِنْ أَوْلِيَائِكَ الَّذِينَ لَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ، وَارْزُقْنَا شَفَاعَةَ سَيِّدِنَا مُحَمَّدِ بْنِ عَلِيِّ بْنِ أَبِي طَالِبٍ يَوْمَ الْقِيَامَةِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Allāhumma-j'alnā mina-ṣ-ṣāliḥīna-l-muttaqīn. Wa-rzuqnā-stiqāmatan 'alā dīnika, wa zuhdan fī dunyānā, wa raghbatan fī ākhiratinā. Wa-j'alnā min awliyā'ika-l-ladzīna lā khawfun 'alayhim wa lā hum yaḥzanūn. Wa-rzuqnā syafā'ata sayyidinā Muḥammadi bni 'Aliyyi bni Abī Ṭālibin yawma-l-qiyāmah."<br>
+<strong>Artinya:</strong> "Ya Allah, jadikanlah kami termasuk orang-orang shaleh yang bertakwa. Anugerahkanlah kepada kami istiqamah di atas agama-Mu, zuhud terhadap dunia kami, dan keinginan terhadap akhirat kami. Jadikanlah kami termasuk wali-wali-Mu yang tidak ada ketakutan bagi mereka dan tidak pula mereka bersedih hati. Anugerahkanlah kepada kami syafaat Sayyidina Muhammad bin Ali bin Abi Thalib pada hari kiamat."
+</div>
+</div>
+<h2>Penutup Halaman 4</h2>
+<p>
+Demikianlah perjalanan spiritual Muhammad Al-Hanafiyyah — putra Amirul Mukminin Ali bin Abi Thalib yang tumbuh menjadi ulama besar dan wali Allah yang sangat dihormati. Beliau menempuh dua jalur spiritual secara bersamaan: jalur umum berupa ibadah-ibadah yang tekun dengan kekhusyukan sempurna, dan jalur khusus berupa tazkiyatun nafs yang diwariskan dalam keluarga Ahlul Bait. Dengan zuhud yang mendalam, wara' yang ketat, dan sikap netral yang penuh hikmah di tengah fitnah politik, beliau menjadi teladan bagi umat Islam sepanjang zaman.
+</p>
+<p>
+Perjalanan spiritual beliau mengajarkan kepada kita bahwa kewalian tidak selalu ditandai dengan karamah-karamah yang mencolok, tetapi dengan istiqamah dalam ibadah, akhlak yang mulia, dan manfaat yang diberikan kepada umat. Beliau membuktikan bahwa seorang ulama sejati adalah orang yang tidak hanya menguasai ilmu zhahir, tetapi juga mengamalkan ilmu batin dengan penuh kekhusyukan dan ketulusan.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas tantangan-tantangan yang dihadapi Muhammad Al-Hanafiyyah dalam mengamalkan ilmu dan spiritualitasnya — baik tantangan dari dalam diri sendiri, dari masyarakat yang berbeda pandangan, maupun dari penguasa di zamannya.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ الْوَهَّابُ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Rabbanā lā tuzigh qulūbanā ba'da idz hadaytanā wa hab lanā min ladunka raḥmah. Innaka anta-l-Wahhāb."<br>
+<strong>Artinya:</strong> "Ya Tuhan kami, janganlah Engkau jadikan hati kami condong kepada kesesatan sesudah Engkau beri petunjuk kepada kami, dan karuniakanlah kepada kami rahmat dari sisi Engkau; karena sesungguhnya Engkau-lah Maha Pemberi (karunia)."
+<br>— QS. Ali 'Imran: 8
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="hanafi1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi2.html" class="article-nav-btn" title="Halaman 2: Masa Kecil & Pendidikan">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="hanafi3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="hanafi4.html" class="article-nav-btn active" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="hanafi5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="hanafi7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="hanafi8.html" class="article-nav-btn" title="Halaman 8: Warisan Keilmuan">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

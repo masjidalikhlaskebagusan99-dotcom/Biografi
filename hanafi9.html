@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+@media (max-width: 768px) {
+.article-container { max-width: 100%; padding: 20px; }
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover { background: rgba(233, 69, 96, 0.15); transform: scale(1.05); }
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover { background: #e94560; color: #fff; border-color: #e94560; }
+.article-content { font-size: 1.05rem; line-height: 1.9; color: #444; }
+.article-content p { margin-bottom: 20px; text-align: justify; }
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 { font-size: 1.2rem; color: #333; margin: 25px 0 10px; }
+.article-content ul { margin: 15px 0 20px 30px; }
+.article-content ul li { margin-bottom: 10px; line-height: 1.7; }
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title { font-size: 1.3rem; color: #1a1a2e; font-weight: bold; display: inline; }
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul { margin: 15px 0 0 30px; }
+.highlight-box ul li { margin-bottom: 10px; line-height: 1.7; }
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label { text-align: center; color: #aaa; font-size: 0.75rem; margin-top: 6px; }
+.nav-group { display: flex; flex-direction: column; align-items: center; }
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+nav { flex-direction: column; gap: 10px; width: 100%; justify-content: center; }
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav { gap: 6px; padding: 15px; }
+.article-nav-btn { width: 36px; height: 36px; font-size: 1rem; }
+.nav-btn-label { font-size: 0.65rem; }
+}
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam { font-size: 1.3rem !important; letter-spacing: 3px !important; }
+header nav a { padding: 6px 10px !important; font-size: 0.8rem !important; }
+.article-nav-btn { width: 32px; height: 32px; font-size: 0.9rem; }
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah</h1>
+<div class="subtitle">Halaman 9 dari 9 — Penutup, Intisari, dan Pelajaran dari Putra Amirul Mukminin</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Rabu, 28 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Medina_-_Map_of_the_Prophet%27s_Mosque.jpg/440px-Medina_-_Map_of_the_Prophet%27s_Mosque.jpg"
+alt="Madinah Al-Munawwarah — tempat kembali sang putra Amirul Mukminin"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Kufa_Mosque.jpg/440px-Kufa_Mosque.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Madinah Al-Munawwarah — kota yang menjadi saksi perjalanan hidup Muhammad bin Ali Al-Hanafiyyah, dari masa kecil hingga wafatnya. Di tanah suci inilah sang tabi'in agung kembali kepada Rabbnya setelah menempuh perjalanan panjang penuh ujian, kesabaran, dan keilmuan.</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Demikianlah perjalanan hidup Muhammad Al-Hanafiyyah — putra Amirul Mukminin Ali bin Abi Thalib radhiyallahu 'anhu, salah satu ulama besar tabi'in, dan tokoh yang sangat dihormati di kalangan umat Islam. Beliau wafat sekitar tahun <strong>81 H (700 M)</strong> setelah menempuh kehidupan yang penuh dengan ujian, kesabaran, dan keilmuan. Dari keluarga mualaf Persia melalui ibundanya, beliau diangkat oleh Allah menjadi salah satu tokoh paling berpengaruh dalam sejarah awal Islam — bukan karena kekuasaan, bukan karena harta, melainkan karena ilmu, akhlak, dan keteguhan imannya. Beliau membuktikan bahwa kemuliaan sejati bukanlah pada nasab semata, melainkan pada takwa dan amal shaleh. Pada halaman penutup ini, kita merangkum seluruh perjalanan beliau, mengambil hikmahnya, dan menata cara menghidupkan warisan beliau dalam kehidupan kita sehari-hari.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEMBALI KEPADA ALLAH — QS. AL-FAJR: 27-30</div>
+<div class="arabic-text">
+يَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ ارْجِعِي إِلَىٰ رَبِّكِ رَاضِيَةً مَّرْضِيَّةً ۝ فَادْخُلِي فِي عِبَادِي ۝ وَادْخُلِي جَنَّتِي
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Yā ayyatuha-n-nafsu-l-muṭma'innah. Irji'ī ilā rabbiki rāḍiyatan marḍiyyah. Fa-dkhulī fī 'ibādī. Wa-dkhulī jannatī."<br>
+<strong>Artinya:</strong> "Wahai jiwa yang tenang, kembalilah kepada Tuhanmu dengan hati yang puas lagi diridhai-Nya. Maka masuklah ke dalam jamaah hamba-hamba-Ku. Dan masuklah ke dalam surga-Ku."
+<br>— QS. Al-Fajr: 27-30
+</div>
+</div>
+<h2>Husnul Khatimah — Kembali kepada Dzat yang Selalu Dituju</h2>
+<p>
+Bagi seorang ulama yang telah menghabiskan seluruh hidupnya untuk ilmu dan ibadah, kematian bukanlah akhir perjalanan, melainkan pintu pertemuan dengan Dzat yang selama ini ia sembah. Seluruh kesabaran dalam menghadapi fitnah, keteguhan dalam menolak baiat yang memecah belah umat, dan keikhlasan dalam menuntut ilmu — semuanya bermuara pada satu saat: ketika jiwa diserahkan kembali kepada Allah dalam keadaan <em>rāḍiyatan marḍiyyah</em> (ridha dan diridhai).
+</p>
+<p>
+Para ulama mencatat bahwa Muhammad Al-Hanafiyyah wafat pada sekitar tahun 81 H (700 M), pada masa kekhalifahan Abdul Malik bin Marwan. Ada perbedaan pendapat di kalangan sejarawan tentang tempat wafat beliau — sebagian menyebutkan Madinah, sebagian lain menyebutkan bahwa beliau sempat berada di Syam pada akhir hayatnya. Yang disepakati adalah bahwa beliau wafat dalam keadaan husnul khatimah, setelah menjalani kehidupan yang penuh dengan ujian dan kesabaran.
+</p>
+<p>
+Beliau wafat tanpa meninggalkan harta yang banyak, tanpa meninggalkan jabatan, dan tanpa meninggalkan kekuasaan. Yang beliau tinggalkan hanyalah ilmu yang bermanfaat, akhlak yang mulia, dan keturunan yang shaleh. Inilah warisan sejati seorang ulama — warisan yang tidak akan pernah habis dimakan waktu, dan terus mengalir pahalanya selama ilmu itu diamalkan dan diajarkan.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN TENTANG AKHIR KEHIDUPAN SEORANG ULAMA</div>
+<div class="arabic-text">
+مَوْتُ الْعَالِمِ ثُلْمَةٌ فِي الْإِسْلَامِ لَا يَسُدُّهَا إِلَّا خَلَفٌ مِنْهُ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Mawtu-l-'ālmi ṡulmatun fī-l-islāmi lā yasudduhā illā khalafun minh."<br>
+<strong>Artinya:</strong> "Wafatnya seorang ulama adalah keretakan dalam Islam yang tidak dapat ditambal kecuali oleh pengganti darinya."
+<br>— Perkataan hikmah dalam tradisi salaf
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Intisari Perjalanan Hidup — Delapan Babak Sang Tabi'in Agung</span>
+<div class="karomah-arabic">خُلَاصَةُ الْحَيَاةِ — ثَمَانِيَةُ مَشَاهِدَ لِلتَّابِعِيِّ الْجَلِيلِ</div>
+<p>
+Sepanjang delapan halaman sebelumnya, kita telah menelusuri delapan babak kehidupan Muhammad Al-Hanafiyyah. Berikut rangkumannya sebagai bekal perenungan:
+</p>
+<ul>
+<li><strong>Babak 1 — Pengenalan & Nasab:</strong> Lahir sekitar 36 H (656 M) di Madinah sebagai putra Amirul Mukminin Ali bin Abi Thalib dari ibundanya Khaulah binti Ja'far Al-Hanafiyyah. Beliau adalah muslim generasi ketiga dari keluarga yang baru masuk Islam melalui kakeknya — bukti bahwa kemuliaan bukan pada nasab semata, melainkan pada takwa.</li>
+<li><strong>Babak 2 — Masa Kecil & Pendidikan:</strong> Tumbuh di Madinah dan Kufah di bawah bimbingan langsung ayahandanya Ali bin Abi Thalib. Menghafal Al-Qur'an sejak dini, dan menyaksikan syahidnya ayahandanya pada 40 H.</li>
+<li><strong>Babak 3 — Menuntut Ilmu & Para Guru:</strong> Berguru kepada ayahandanya Ali bin Abi Thalib (Bab al-'Ilm), saudara-saudaranya Al-Hasan dan Al-Husain, serta para sahabat besar seperti Ibnu Abbas, Abu Hurairah, Anas bin Malik, dan Ibnu Umar. Sanad keilmuan yang sangat tinggi dan kuat.</li>
+<li><strong>Babak 4 — Perjalanan Spiritual:</strong> Ibadah yang tekun, qiyamul lail yang tidak pernah ditinggalkan, puasa sunnah, dan tazkiyatun nafs ala Ahlul Bait. Menjaga istiqamah dalam ibadah sepanjang hayatnya.</li>
+<li><strong>Babak 5 — Tantangan & Konflik:</strong> Kehilangan ayahanda dan saudara-saudara tercinta, fitnah Mukhtar ats-Tsaqafi yang menggunakan namanya tanpa izin, tekanan dari Abdullah bin Zubair hingga dipenjara, dan tuduhan dari berbagai kelompok.</li>
+<li><strong>Babak 6 — Pro/Kontra Masyarakat, Ulama & Penguasa:</strong> Dicintai masyarakat sebagai putra Ali bin Abi Thalib, dihormati para ulama seperti Ibnu Syihab Az-Zuhri, namun juga diperebutkan oleh tiga kekuatan politik yang saling bersaing.</li>
+<li><strong>Babak 7 — Sikap terhadap Penguasa:</strong> Memilih sikap netral yang prinsipil — menolak baiat kepada pihak yang memecah belah umat, menolak klaim politik tanpa izin, dan tetap menjaga kemerdekaan hatinya di hadapan penguasa.</li>
+<li><strong>Babak 8 — Warisan Keilmuan:</strong> Hadits-hadits yang tercatat dalam kitab muktabar, murid-murid besar seperti Abu Ja'far Al-Baqir dan Ibnu Syihab Az-Zuhri, serta warisan fikih, tafsir, dan akhlak Ahlul Bait yang terus hidup hingga hari ini.</li>
+</ul>
+<blockquote>
+<em>"Delapan babak itu sesungguhnya hanya satu pelajaran: seorang hamba Allah sejati tidak diukur oleh kedudukannya di mata manusia, melainkan oleh keteguhannya di jalan Allah — meskipun seluruh dunia memusuhinya."</em>
+</blockquote>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KETEGUHAN — QS. FUSSILAT: 30</div>
+<div class="arabic-text">
+إِنَّ الَّذِينَ قَالُوا رَبُّنَا اللَّهُ ثُمَّ اسْتَقَامُوا تَتَنَزَّلُ عَلَيْهِمُ الْمَلَائِكَةُ أَلَّا تَخَافُوا وَلَا تَحْزَنُوا وَأَبْشِرُوا بِالْجَنَّةِ الَّتِي كُنتُمْ تُوعَدُونَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Inna-l-ladzīna qālū rabbunā-Llāhu tsumma-staqāmū tatanazzalu 'alayhimu-l-malā'ikatu allā takhāfū wa lā taḥzanū wa absyirū bi-l-jannati-l-latī kuntum tū'adūn."<br>
+<strong>Artinya:</strong> "Sesungguhnya orang-orang yang mengatakan: 'Tuhan kami ialah Allah', kemudian mereka meneguhkan pendirian mereka (istiqamah), maka malaikat akan turun kepada mereka dengan mengatakan: 'Janganlah kamu takut dan janganlah merasa sedih; dan gembirakanlah mereka dengan jannah yang telah dijanjikan Allah kepadamu.'"
+<br>— QS. Fussilat: 30
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Sepuluh Pelajaran Utama — Bekal untuk Kehidupan Sehari-hari</span>
+<div class="karomah-arabic">عَشْرُ دُرَرٍ لِلْعَمَلِ فِي الْحَيَاةِ الْيَوْمِيَّةِ</div>
+<h3>1. Kemuliaan Sejati Ada pada Takwa, Bukan Nasab</h3>
+<p>
+Muhammad Al-Hanafiyyah berasal dari keluarga yang mulia — putra Ali bin Abi Thalib. Namun, beliau tidak pernah menjadikan nasab sebagai alasan untuk berbangga atau merasa lebih tinggi dari orang lain. Beliau mengajarkan bahwa nasab adalah amanah, dan kemuliaan sejati hanya dapat diraih dengan takwa dan amal shaleh.
+</p>
+<h3>2. Ilmu Harus Dibarengi dengan Amal</h3>
+<p>
+Beliau bukan hanya seorang yang alim, tetapi juga seorang yang mengamalkan ilmunya. Setiap ilmu yang beliau pelajari, beliau terapkan dalam kehidupan sehari-hari. Inilah yang menjadikan ilmu beliau berkah dan bermanfaat bagi banyak orang.
+</p>
+<h3>3. Sabar Adalah Kunci Melewati Fitnah</h3>
+<p>
+Dalam menghadapi berbagai ujian — kehilangan orang tercinta, fitnah politik, tekanan penguasa, dan tuduhan dari berbagai kelompok — beliau selalu memilih kesabaran. Beliau mengajarkan bahwa kesabaran bukanlah kelemahan, melainkan kekuatan tertinggi seorang mukmin.
+</p>
+<h3>4. Jangan Jual Agama Demi Kekuasaan</h3>
+<p>
+Meskipun memiliki legitimasi nasab yang sangat kuat untuk mengklaim kekuasaan, beliau tidak pernah memanfaatkannya. Beliau lebih memilih hidup sederhana sebagai ulama daripada menjadi penguasa yang mempertaruhkan agamanya. Ini adalah pelajaran penting di zaman ketika banyak orang rela menjual prinsip demi jabatan.
+</p>
+<h3>5. Netralitas Bukan Berarti Tidak Peduli</h3>
+<p>
+Sikap netral beliau dalam politik bukanlah sikap acuh tak acuh terhadap nasib umat. Justru, itu adalah bentuk kepedulian tertinggi — beliau tidak ingin menambah darah yang tertumpah di antara umat, dan memilih jalur ilmu serta dakwah yang lebih konstruktif.
+</p>
+<h3>6. Jaga Lisan dan Sikap di Tengah Fitnah</h3>
+<p>
+Di masa fitnah, kata-kata dapat menjadi pedang yang melukai. Muhammad Al-Hanafiyyah mengajarkan untuk senantiasa berhati-hati dalam berbicara, tidak mudah terprovokasi, dan tidak ikut menyebarkan berita yang belum jelas kebenarannya.
+</p>
+<h3>7. Berpegang Teguh pada Kebenaran Meskipun Sendirian</h3>
+<p>
+Ketika seluruh kekuatan politik berusaha menariknya ke pihak mereka, beliau tetap teguh pada prinsipnya. Beliau tidak takut menjadi sendirian di jalan kebenaran, karena ia tahu bahwa Allah senantiasa bersamanya.
+</p>
+<h3>8. Hormati Orang Tua dan Guru</h3>
+<p>
+Sepanjang hidupnya, Muhammad Al-Hanafiyyah selalu mengenang dan menghormati ayahandanya Ali bin Abi Thalib. Beliau tidak pernah melupakan wasiat ayahnya dan senantiasa mengamalkannya. Ini adalah teladan tentang bagaimana seorang anak harus berbakti kepada orang tuanya.
+</p>
+<h3>9. Cinta kepada Ahlul Bait Harus Sesuai Syariat</h3>
+<p>
+Meskipun beliau sendiri adalah bagian dari Ahlul Bait, beliau menolak pengkultusan yang berlebihan terhadap dirinya. Beliau mengajarkan bahwa cinta kepada Ahlul Bait harus sesuai dengan syariat — tidak boleh sampai mengangkat mereka di atas kedudukan yang telah ditetapkan Allah.
+</p>
+<h3>10. Warisan Terbaik Adalah Ilmu dan Akhlak</h3>
+<p>
+Di akhir hayatnya, beliau tidak meninggalkan harta atau kekuasaan. Yang beliau tinggalkan adalah ilmu yang bermanfaat dan akhlak yang mulia. Inilah warisan yang tidak akan pernah habis — selama ilmu itu diamalkan dan diajarkan, pahalanya akan terus mengalir.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN TENTANG WARISAN SEJATI</div>
+<div class="arabic-text">
+خَيْرُ مَا يَتْرُكُهُ الْعَبْدُ بَعْدَهُ عِلْمٌ يُنْتَفَعُ بِهِ وَوَلَدٌ صَالِحٌ يَدْعُو لَهُ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Khairu mā yatrukuhu-l-'abdu ba'dahū 'ilmun yuntafa'u bihī wa waladun ṣāliḥun yad'ū lah."<br>
+<strong>Artinya:</strong> "Sebaik-baik yang ditinggalkan seorang hamba setelahnya adalah ilmu yang bermanfaat dan anak shaleh yang mendoakannya."
+<br>— Makna dari hadits riwayat Muslim
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Relevansi Ajaran Beliau di Zaman Modern</span>
+<div class="karomah-arabic">صَلَاحِيَّةُ تَعَالِيمِهِ فِي الْعَصْرِ الْحَدِيثِ</div>
+<p>
+Meskipun lebih dari tiga belas abad telah berlalu sejak wafatnya Muhammad Al-Hanafiyyah, ajaran dan keteladanan beliau tetap sangat relevan untuk kehidupan kita hari ini. Di tengah berbagai tantangan zaman modern, prinsip-prinsip yang beliau pegang menjadi panduan yang sangat berharga.
+</p>
+<h3>A. Di Tengah Polarisasi Umat</h3>
+<p>
+Di zaman ketika umat Islam sering terpecah belah oleh perbedaan pandangan politik dan mazhab, sikap netral dan bijak Muhammad Al-Hanafiyyah menjadi teladan yang sangat relevan. Beliau mengajarkan bahwa persatuan umat lebih penting daripada memenangkan satu kelompok atas kelompok lain, dan bahwa seorang muslim sejati harus mampu menjadi pemersatu, bukan pemecah belah.
+</p>
+<h3>B. Di Tengah Godaan Kekuasaan</h3>
+<p>
+Di zaman ketika banyak orang rela mengorbankan prinsip demi jabatan dan kekuasaan, zuhud Muhammad Al-Hanafiyyah terhadap kekuasaan menjadi pengingat yang sangat penting. Beliau mengajarkan bahwa kekuasaan adalah amanah yang akan dihisab, dan bahwa tidak semua orang harus mengejar jabatan — ada jalan lain yang lebih mulia, yaitu jalan ilmu dan dakwah.
+</p>
+<h3>C. Di Tengah Arus Informasi yang Tak Terkendali</h3>
+<p>
+Di zaman media sosial ketika berita bohong dan fitnah menyebar dengan sangat cepat, prinsip tabayyun (klarifikasi) yang diajarkan oleh Islam dan dipraktikkan oleh Muhammad Al-Hanafiyyah menjadi sangat relevan. Beliau tidak pernah mudah percaya pada berita yang belum jelas kebenarannya, dan tidak pernah ikut menyebarkan berita yang dapat memecah belah umat.
+</p>
+<h3>D. Di Tengah Krisis Keteladanan</h3>
+<p>
+Di zaman ketika banyak tokoh publik yang mengecewakan, keteladanan Muhammad Al-Hanafiyyah menjadi oase yang menyejukkan. Beliau menunjukkan bahwa ada manusia yang hidup dengan integritas penuh — yang tidak pernah mengkhianati prinsipnya, tidak pernah menjual agamanya, dan tidak pernah meninggalkan kewajibannya kepada Allah meskipun menghadapi tekanan yang sangat berat.
+</p>
+<h3>E. Di Tengah Krisis Penghormatan kepada Orang Tua dan Guru</h3>
+<p>
+Di zaman ketika banyak anak yang durhaka kepada orang tua dan tidak menghormati guru, bakti Muhammad Al-Hanafiyyah kepada ayahandanya Ali bin Abi Thalib menjadi teladan yang sangat penting. Beliau senantiasa mengingat wasiat ayahnya, mendoakannya, dan mengamalkan ajarannya sepanjang hidupnya.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG TABAYYUN — QS. AL-HUJURAT: 6</div>
+<div class="arabic-text">
+يَا أَيُّهَا الَّذِينَ آمَنُوا إِن جَاءَكُمْ فَاسِقٌ بِنَبَإٍ فَتَبَيَّنُوا أَن تُصِيبُوا قَوْمًا بِجَهَالَةٍ فَتُصْبِحُوا عَلَىٰ مَا فَعَلْتُمْ نَادِمِينَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Yā ayyuhā-l-ladzīna āmanū in jā'akum fāsiqun bi-naba'in fa-tabayyanū an tuṣībū qauman bi-jahālatin fa-tuṣbiḥū 'alā mā fa'altum nādimīn."<br>
+<strong>Artinya:</strong> "Wahai orang-orang yang beriman, jika datang kepadamu orang fasik membawa suatu berita, maka periksalah dengan teliti, agar kamu tidak menimpakan suatu musibah kepada suatu kaum tanpa mengetahui keadaannya yang menyebabkan kamu menyesal atas perbuatanmu itu."
+<br>— QS. Al-Hujurat: 6
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Cara Menghidupkan Warisan Beliau — Lima Amalan Praktis</span>
+<div class="karomah-arabic">كَيْفَ نُحْيِي تُرَاثَهُ — خَمْسُ خُطُوَاتٍ عَمَلِيَّةٍ</div>
+<p>
+Menghidupkan warisan Muhammad Al-Hanafiyyah bukan hanya dengan mengenang kisahnya, tetapi dengan mengamalkan prinsip-prinsip yang beliau ajarkan dalam kehidupan kita sehari-hari. Berikut adalah lima langkah praktis yang dapat kita lakukan:
+</p>
+<h3>A. Mempelajari Sirah Ahlul Bait dengan Benar</h3>
+<p>
+Luangkan waktu untuk mempelajari sejarah keluarga Rasulullah SAW dan Ali bin Abi Thalib dengan sumber-sumber yang terpercaya. Kenali siapa saja anggota keluarga ini, apa peran mereka dalam sejarah Islam, dan bagaimana mereka menghadapi berbagai ujian. Dengan memahami sirah mereka, kita akan semakin mencintai mereka dan berusaha meneladani akhlak mereka.
+</p>
+<h3>B. Mengamalkan Prinsip Sabar dan Istiqamah</h3>
+<p>
+Dalam menghadapi ujian hidup — baik yang besar maupun yang kecil — ingatlah keteladanan Muhammad Al-Hanafiyyah yang senantiasa sabar dan istiqamah. Jangan mudah putus asa, jangan mudah menyerah, dan jangan pernah mengorbankan prinsip demi kenyamanan sesaat.
+</p>
+<h3>C. Menjaga Diri dari Fitnah dan Perpecahan</h3>
+<p>
+Di tengah berbagai isu yang dapat memecah belah umat, jadilah seperti Muhammad Al-Hanafiyyah — seorang yang tidak mudah terprovokasi, tidak ikut menyebarkan fitnah, dan selalu berusaha menjadi jembatan persatuan. Jangan mudah memberi label atau menghakimi sesama muslim.
+</p>
+<h3>D. Menuntut Ilmu dengan Ikhlas</h3>
+<p>
+Ikuti jejak beliau dalam menuntut ilmu — dengan penuh kesungguhan, keikhlasan, dan adab. Jangan menuntut ilmu untuk berdebat atau menyombongkan diri, melainkan untuk mengamalkannya dan mendekatkan diri kepada Allah. Dan jangan lupa untuk senantiasa menghormati guru-guru kita.
+</p>
+<h3>E. Mendoakan Beliau dan Keluarga Ali bin Abi Thalib</h3>
+<p>
+Salah satu cara terbaik untuk menghidupkan warisan Muhammad Al-Hanafiyyah adalah dengan mendoakan beliau dan seluruh keluarga Ali bin Abi Thalib. Doakan mereka dengan doa kebaikan, memohon kepada Allah agar meridhai mereka dan menempatkan mereka di tempat yang mulia di sisi-Nya.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENDOAKAN ORANG YANG TELAH WAFAT — HADITS NABAWI</div>
+<div class="arabic-text">
+إِذَا مَاتَ ابْنُ آدَمَ انْقَطَعَ عَمَلُهُ إِلَّا مِنْ ثَلَاثٍ: صَدَقَةٍ جَارِيَةٍ، أَوْ عِلْمٍ يُنْتَفَعُ بِهِ، أَوْ وَلَدٍ صَالِحٍ يَدْعُو لَهُ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Idzā māta-bnu Ādama-nqaṭa'a 'amaluhū illā min ṡalāṡin: ṣadaqatin jāriyatin, au 'ilmin yuntafa'u bihī, au waladin ṣāliḥin yad'ū lah."<br>
+<strong>Artinya:</strong> "Apabila anak Adam meninggal dunia, terputuslah amalnya kecuali tiga perkara: sedekah jariyah, ilmu yang bermanfaat, dan anak shaleh yang mendoakannya."
+<br>— HR. Muslim
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Penutup — Cahaya yang Tak Pernah Padam</span>
+<div class="karomah-arabic">الْخَاتِمَةُ — نُورٌ لَا يَنْطَفِئُ</div>
+<p>
+Kita tiba di akhir perjalanan panjang menelusuri kehidupan Muhammad Al-Hanafiyyah — putra Amirul Mukminin Ali bin Abi Thalib, tabi'in agung, dan teladan bagi seluruh umat Islam. Dari Madinah hingga Kufah, dari masa kanak-kanak di bawah bimbingan ayahandanya hingga wafatnya dalam keadaan husnul khatimah, beliau telah menunjukkan kepada kita bagaimana seharusnya seorang muslim menjalani hidupnya — dengan ilmu, amal, kesabaran, dan keteguhan di jalan Allah.
+</p>
+<p>
+Kisah beliau mengajarkan kita bahwa kebesaran seseorang tidak diukur dari harta yang ia kumpulkan atau jabatan yang ia raih, melainkan dari ilmu yang ia amalkan dan manfaat yang ia berikan kepada umat. Muhammad Al-Hanafiyyah mungkin tidak pernah menjadi khalifah atau penguasa, tetapi pengaruhnya dalam sejarah Islam jauh melampaui banyak penguasa di zamannya. Nama beliau terus disebut dalam kitab-kitab hadits, sejarah, dan biografi ulama — bukan karena kekuasaannya, melainkan karena keilmuan dan kesalehannya.
+</p>
+<p>
+Beliau juga mengajarkan kita bahwa ujian dan fitnah adalah bagian tak terpisahkan dari kehidupan seorang mukmin. Namun, ujian bukanlah untuk menjatuhkan, melainkan untuk mengangkat derajat. Barangsiapa yang mampu melewati ujian dengan kesabaran dan keimanan, maka Allah akan mengangkatnya ke derajat yang lebih tinggi. Inilah yang terjadi pada Muhammad Al-Hanafiyyah — setiap ujian yang beliau hadapi justru semakin mengangkat namanya di hati umat.
+</p>
+<p>
+Semoga kita semua dapat mengambil pelajaran dari kehidupan beliau, mengamalkan prinsip-prinsip yang beliau ajarkan, dan mengikuti jejaknya dalam menuntut ilmu serta beribadah kepada Allah. Dan semoga Allah SWT mempertemukan kita dengan beliau dan seluruh keluarga Rasulullah SAW di surga Firdaus yang tertinggi, bersama para nabi, shiddiqin, syuhada, dan orang-orang shaleh.
+</p>
+<blockquote>
+<em>"Semoga kita semua dapat meneladani keteguhan beliau, kesabaran beliau, dan keikhlasan beliau dalam mengabdi kepada Allah. Dan semoga kita termasuk orang-orang yang mendapatkan syafaat keluarga Rasulullah SAW di hari kiamat kelak."</em>
+</blockquote>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Akhir Biografi Muhammad Al-Hanafiyyah:</strong>
+<ul>
+<li><strong>Nama lengkap:</strong> Muhammad bin Ali bin Abi Thalib bin Abdul Muthalib Al-Hanafiyyah</li>
+<li><strong>Lahir:</strong> Sekitar 36 H (656 M) di Madinah Al-Munawwarah</li>
+<li><strong>Wafat:</strong> Sekitar 81 H (700 M)</li>
+<li><strong>Kedudukan:</strong> Tabi'in agung, putra Amirul Mukminin Ali bin Abi Thalib radhiyallahu 'anhu</li>
+<li><strong>Guru utama:</strong> Ayahandanya Ali bin Abi Thalib, para sahabat besar Rasulullah SAW</li>
+<li><strong>Murid-murid besar:</strong> Abu Ja'far Al-Baqir, Ibnu Syihab Az-Zuhri, dan para tabi'in lainnya</li>
+<li><strong>Keistimewaan:</strong> Alim, zuhud, wara', ahli ibadah, menjauhi fitnah politik</li>
+<li><strong>Sikap politik:</strong> Netral, menolak baiat kepada pihak yang memecah belah umat</li>
+<li><strong>Warisan utama:</strong> Ilmu hadits, fikih, tafsir, dan akhlak Ahlul Bait</li>
+<li><strong>Pelajaran abadi:</strong> Kemuliaan sejati ada pada takwa, bukan nasab; ilmu harus dibarengi amal; sabar adalah kunci melewati fitnah; jangan jual agama demi kekuasaan</li>
+</ul>
+</div>
+<h2>Doa Penutup — Memohon Syafaat dan Keberkahan</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA UNTUK KELUARGA RASULULLAH DAN PARA TABI'IN</div>
+<div class="arabic-text">
+اللَّهُمَّ ارْضَ عَنْ آلِ بَيْتِ نَبِيِّكَ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ، وَعَنِ التَّابِعِينَ لَهُمْ بِإِحْسَانٍ إِلَى يَوْمِ الدِّينِ. اللَّهُمَّ اجْعَلْنَا مِمَّنْ يُحِبُّهُمْ وَيَتَّبِعُ سِيرَتَهُمْ وَيَهْتَدِي بِهَدْيِهِمْ، وَاحْشُرْنَا فِي زُمْرَتِهِمْ يَوْمَ الْقِيَامَةِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Allāhumma-rḍha 'an āli bayti nabiyyika ṣallā-Llāhu 'alaihi wa sallam, wa 'ani-t-tābi'īna lahum bi-iḥsānin ilā yawmi-d-dīn. Allāhumma-j'alnā mimman yuḥibbuhum wa yattabi'u sīratahum wa yahtadī bi-hadyihim, wa-ḥsyurnā fī zumratihim yawma-l-qiyāmah."<br>
+<strong>Artinya:</strong> "Ya Allah, ridhailah keluarga Nabi-Mu shallallahu 'alaihi wa sallam, dan para tabi'in yang mengikuti mereka dengan kebaikan hingga hari kiamat. Ya Allah, jadikanlah kami termasuk orang-orang yang mencintai mereka, mengikuti jejak mereka, dan mendapat petunjuk dengan petunjuk mereka, dan kumpulkanlah kami dalam golongan mereka pada hari kiamat."
+</div>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DOA HUSNUL KHATIMAH</div>
+<div class="arabic-text">
+اللَّهُمَّ اجْعَلْ خَيْرَ أَعْمَالِنَا خَوَاتِيمَهَا، وَخَيْرَ أَيَّامِنَا يَوْمَ نَلْقَاكَ، وَاجْعَلْ آخِرَ كَلَامِنَا مِنَ الدُّنْيَا: لَا إِلَهَ إِلَّا اللَّهُ مُحَمَّدٌ رَسُولُ اللَّهِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Allāhumma-j'al khaira a'mālinā khawātimahā, wa khaira ayyāminā yawma nalqāka, wa-j'al ākhira kalāminā mina-d-dunyā: Lā ilāha illā-Llāhu Muḥammadun Rasūlu-Llāh."<br>
+<strong>Artinya:</strong> "Ya Allah, jadikanlah sebaik-baik amal kami adalah penutupnya, dan sebaik-baik hari kami adalah hari ketika kami bertemu dengan-Mu, dan jadikanlah akhir perkataan kami dari dunia ini: La ilaha illallah Muhammad Rasulullah (Tiada Tuhan selain Allah, Muhammad utusan Allah)."
+</div>
+</div>
+<h2>Penutup Akhir — Sampai Jumpa di Telaga Al-Kautsar</h2>
+<p>
+Demikianlah telah selesai kita menelusuri perjalanan hidup Muhammad Al-Hanafiyyah — putra Amirul Mukminin Ali bin Abi Thalib, tabi'in agung, dan teladan bagi seluruh umat Islam. Semoga biografi ini menjadi wasilah bagi kita semua untuk lebih mencintai keluarga Rasulullah SAW, lebih tekun dalam menuntut ilmu, lebih sabar dalam menghadapi ujian, dan lebih istiqamah di jalan Allah.
+</p>
+<p>
+Semoga Allah SWT menerima seluruh amal kebaikan beliau, mengampuni segala kekhilafannya, dan menempatkannya di tempat yang paling mulia di sisi-Nya — bersama ayahandanya Ali bin Abi Thalib, saudara-saudaranya Al-Hasan dan Al-Husain, dan seluruh keluarga Rasulullah SAW di surga Firdaus yang tertinggi.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam. Shalawat dan salam semoga senantiasa tercurah kepada junjungan kita Nabi Muhammad SAW, kepada keluarga beliau, para sahabat, dan seluruh pengikutnya hingga hari kiamat.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+سُبْحَانَ رَبِّكَ رَبِّ الْعِزَّةِ عَمَّا يَصِفُونَ وَسَلَامٌ عَلَى الْمُرْسَلِينَ وَالْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Subḥāna rabbika rabbi-l-'izzati 'ammā yaṣifūn. Wa salāmun 'alā-l-mursalīn. Wa-l-ḥamdu li-Llāhi rabbi-l-'ālamīn."<br>
+<strong>Artinya:</strong> "Maha Suci Tuhanmu Tuhan yang memiliki keperkasaan dari apa yang mereka sifatkan. Dan keselamatan atas para rasul. Dan segala puji bagi Allah Tuhan semesta alam."
+<br>— QS. Ash-Shaffat: 180-182
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="hanafi1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi2.html" class="article-nav-btn" title="Halaman 2: Masa Kecil & Pendidikan">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="hanafi3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="hanafi4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="hanafi5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="hanafi7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="hanafi8.html" class="article-nav-btn" title="Halaman 8: Warisan Keilmuan">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi9.html" class="article-nav-btn active" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

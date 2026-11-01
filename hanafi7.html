@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+@media (max-width: 768px) {
+.article-container { max-width: 100%; padding: 20px; }
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover { background: rgba(233, 69, 96, 0.15); transform: scale(1.05); }
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover { background: #e94560; color: #fff; border-color: #e94560; }
+.article-content { font-size: 1.05rem; line-height: 1.9; color: #444; }
+.article-content p { margin-bottom: 20px; text-align: justify; }
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 { font-size: 1.2rem; color: #333; margin: 25px 0 10px; }
+.article-content ul { margin: 15px 0 20px 30px; }
+.article-content ul li { margin-bottom: 10px; line-height: 1.7; }
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title { font-size: 1.3rem; color: #1a1a2e; font-weight: bold; display: inline; }
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul { margin: 15px 0 0 30px; }
+.highlight-box ul li { margin-bottom: 10px; line-height: 1.7; }
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label { text-align: center; color: #aaa; font-size: 0.75rem; margin-top: 6px; }
+.nav-group { display: flex; flex-direction: column; align-items: center; }
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+nav { flex-direction: column; gap: 10px; width: 100%; justify-content: center; }
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav { gap: 6px; padding: 15px; }
+.article-nav-btn { width: 36px; height: 36px; font-size: 1rem; }
+.nav-btn-label { font-size: 0.65rem; }
+}
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam { font-size: 1.3rem !important; letter-spacing: 3px !important; }
+header nav a { padding: 6px 10px !important; font-size: 0.8rem !important; }
+.article-nav-btn { width: 32px; height: 32px; font-size: 0.9rem; }
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah</h1>
+<div class="subtitle">Halaman 7 dari 9 — Sikap terhadap Penguasa: Netral di Tengah Tiga Kekuasaan yang Bersaing</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Rabu, 28 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Kufa_Mosque.jpg/440px-Kufa_Mosque.jpg"
+alt="Masjid Kufah — saksi gejolak politik di masa Muhammad Al-Hanafiyyah"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Medina_-_Map_of_the_Prophet%27s_Mosque.jpg/440px-Medina_-_Map_of_the_Prophet%27s_Mosque.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Makkah, Madinah, Kufah, dan Damaskus — empat kota yang menjadi saksi sikap netral Muhammad bin Ali Al-Hanafiyyah di tengah persaingan tiga kekuatan besar: Bani Umayyah, Abdullah bin Zubair, dan gerakan Mukhtar ats-Tsaqafi</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Sikap Muhammad Al-Hanafiyyah terhadap para penguasa di zamannya adalah salah satu contoh paling mengagumkan tentang bagaimana seorang ulama menjaga kemerdekaan hati di tengah badai politik. Beliau hidup di masa ketika dunia Islam terpecah menjadi tiga kekuatan besar yang saling bersaing: <em>Bani Umayyah</em> di Syam, <em>Abdullah bin Zubair</em> di Makkah dan Madinah, serta gerakan <em>Mukhtar ats-Tsaqafi</em> di Kufah. Ketiga kekuatan ini sama-sama berusaha menarik Muhammad Al-Hanafiyyah ke pihak mereka — karena nama beliau sebagai putra Amirul Mukminin Ali bin Abi Thalib memiliki nilai politik yang sangat besar. Namun, beliau memilih jalan yang paling sulit sekaligus paling mulia: <strong>tidak berbaiat kepada siapa pun yang memecah belah umat, tidak memberontak dengan kekerasan, dan tidak menjual agama demi kekuasaan</strong>. Beliau lebih memilih dipenjara dan ditekan daripada mengkhianati prinsipnya — sebuah sikap yang menjadikannya teladan abadi bagi para ulama di sepanjang zaman.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG TIDAK MENJUAL AYAT ALLAH — QS. AL-BAQARAH: 41</div>
+<div class="arabic-text">
+وَلَا تَشْتَرُوا بِآيَاتِي ثَمَنًا قَلِيلًا ۖ وَاتَّقُونِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa lā tasytarū bi-āyātī ṡamanan qalīlā. Wa-ttaqūni."<br>
+<strong>Artinya:</strong> "Dan janganlah kamu menukarkan ayat-ayat-Ku dengan harga yang murah, dan bertakwalah kepada-Ku."
+<br>— QS. Al-Baqarah: 41
+</div>
+</div>
+<h2>Prinsip Utama — Menjaga Jarak dari Kekuasaan, Mendekat kepada Allah</h2>
+<p>
+Masa hidup Muhammad Al-Hanafiyyah (36-81 H / 656-700 M) bertepatan dengan periode paling bergejolak dalam sejarah politik awal Islam. Setelah syahidnya ayahanda beliau Ali bin Abi Thalib pada tahun 40 H, kekuasaan beralih kepada Muawiyah bin Abi Sufyan (pendiri Dinasti Umayyah), lalu kepada putranya Yazid bin Muawiyah. Setelah wafatnya Yazid pada tahun 64 H, dunia Islam terpecah menjadi tiga kekuatan besar yang saling mengklaim legitimasi kekhalifahan.
+</p>
+<p>
+Di tengah situasi yang sangat rumit inilah, Muhammad Al-Hanafiyyah merumuskan prinsip sikapnya terhadap kekuasaan. Beliau pernah berkata: <em>"Penguasa itu seperti api — jika engkau mendekat terlalu jauh, engkau akan terbakar; jika engkau menjauh terlalu jauh, engkau akan kehilangan manfaatnya bagi umat. Maka hendaklah engkau berada di posisi yang tepat — memberikan nasihat tanpa menjilat, menolak kezaliman tanpa memberontak, dan senantiasa menjaga agar hatimu tidak terikat oleh kekuasaan."</em>
+</p>
+<p>
+Prinsip ini beliau pegang dengan teguh sepanjang hidupnya. Beliau tidak pernah menerima jabatan dari penguasa mana pun, tidak pernah memanfaatkan namanya untuk menggalang kekuatan politik, dan tidak pernah membaiat pihak yang beliau anggap memecah belah umat. Bahkan ketika beliau dipenjara dan ditekan, beliau tetap tidak mengalah. Sikap inilah yang menjadikan beliau dihormati oleh semua pihak pada akhirnya — meskipun pada awalnya beliau dicurigai dan ditekan.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN TENTANG HUBUNGAN ULAMA DAN PENGUASA</div>
+<div class="arabic-text">
+إِنَّ الْعَالِمَ إِذَا دَنَا مِنَ السُّلْطَانِ أَفْسَدَهُ، وَإِنَّمَا مَثَلُ الْعَالِمِ مَعَ السُّلْطَانِ كَمَثَلِ النَّارِ مَعَ الْحَطَبِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Inna-l-'ālma idzā danā mina-s-sulṭāni afsadah. Wa innamā maṡalu-l-'ālmi ma'a-s-sulṭāni ka-maṡali-n-nāri ma'a-l-ḥaṭab."<br>
+<strong>Artinya:</strong> "Sesungguhnya seorang ulama apabila terlalu dekat dengan penguasa, maka penguasa akan merusaknya. Dan perumpamaan ulama bersama penguasa adalah seperti api bersama kayu bakar."
+<br>— Perkataan hikmah dalam tradisi salaf
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Konteks Politik — Tiga Kekuasaan yang Bersaing</span>
+<div class="karomah-arabic">السِّيَاقُ السِّيَاسِيُّ — ثَلَاثُ سُلْطَاتٍ مُتَنَافِسَةٍ</div>
+<p>
+Untuk memahami sikap Muhammad Al-Hanafiyyah terhadap penguasa, kita perlu memahami konteks politik yang sangat rumit pada masa beliau. Setelah wafatnya Yazid bin Muawiyah pada tahun 64 H, dunia Islam terpecah menjadi tiga kekuatan besar yang saling bersaing:
+</p>
+<h3>A. Bani Umayyah di Syam</h3>
+<p>
+Kekuatan pertama adalah Bani Umayyah yang berpusat di Damaskus, Syam. Setelah wafatnya Yazid bin Muawiyah, kekuasaan sempat mengalami kekosongan sejenak sebelum akhirnya dipegang oleh <em>Marwan bin Hakam</em> (64-65 H), kemudian dilanjutkan oleh putranya <em>Abdul Malik bin Marwan</em> (65-86 H). Bani Umayyah memiliki kekuatan militer yang besar dan menguasai wilayah Syam, Mesir, dan sebagian Irak.
+</p>
+<h3>B. Abdullah bin Zubair di Makkah dan Madinah</h3>
+<p>
+Kekuatan kedua adalah <em>Abdullah bin Zubair</em>, putra Zubair bin Awwam (salah satu dari sepuluh sahabat yang dijamin masuk surga). Abdullah bin Zubair mengklaim kekhalifahan dan menguasai Makkah, Madinah, serta sebagian besar wilayah Hijaz dan Irak. Beliau dibaiat oleh banyak penduduk Makkah dan Madinah.
+</p>
+<h3>C. Gerakan Mukhtar ats-Tsaqafi di Kufah</h3>
+<p>
+Kekuatan ketiga adalah gerakan <em>Mukhtar bin Abi Ubaid ats-Tsaqafi</em> yang berpusat di Kufah (66-67 H). Mukhtar mengklaim bergerak atas nama Muhammad bin Ali Al-Hanafiyyah untuk menuntut balas atas syahidnya Al-Husain bin Ali di Karbala. Gerakan ini sangat problematis karena menggunakan nama Muhammad Al-Hanafiyyah tanpa izin beliau.
+</p>
+<p>
+Di tengah persaingan tiga kekuatan inilah, Muhammad Al-Hanafiyyah hidup di Madinah. Beliau menjadi tokoh yang sangat diperebutkan — setiap kekuatan ingin mendapatkan dukungan beliau karena nama besarnya sebagai putra Ali bin Abi Thalib memiliki legitimasi politik yang sangat tinggi. Namun, beliau menolak untuk memihak kepada salah satu dari mereka, dan memilih jalur yang berbeda: jalur ilmu, ibadah, dan netralitas.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG PERPECAHAN UMAT — QS. AL-AN'AM: 159</div>
+<div class="arabic-text">
+إِنَّ الَّذِينَ فَرَّقُوا دِينَهُمْ وَكَانُوا شِيَعًا لَّسْتَ مِنْهُمْ فِي شَيْءٍ ۚ إِنَّمَا أَمْرُهُمْ إِلَى اللَّهِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Inna-l-ladzīna farraqū dīnahum wa kānū syiya'an lasta minhum fī syai'. Innamā amruhum ilā-Llāh."<br>
+<strong>Artinya:</strong> "Sesungguhnya orang-orang yang memecah belah agamanya dan mereka (terpecah) menjadi beberapa golongan, tidak ada sedikit pun tanggung jawabmu terhadap mereka. Sesungguhnya urusan mereka hanyalah (terserah) kepada Allah."
+<br>— QS. Al-An'am: 159
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Menolak Baiat Abdullah bin Zubair — Keteguhan di Tengah Tekanan</span>
+<div class="karomah-arabic">رَفْضُ بَيْعَةِ عَبْدِ اللَّهِ بْنِ الزُّبَيْرِ — الثَّبَاتُ فِي وَسَطِ الضُّغُوطِ</div>
+<p>
+Salah satu ujian terberat yang dihadapi Muhammad Al-Hanafiyyah adalah ketika <em>Abdullah bin Zubair</em> menguasai Makkah dan Madinah, lalu menuntut baiat dari seluruh penduduk kedua kota suci tersebut, termasuk dari Muhammad Al-Hanafiyyah dan keluarga Bani Hasyim lainnya.
+</p>
+<h3>A. Tuntutan Baiat</h3>
+<p>
+Abdullah bin Zubair menuntut agar Muhammad Al-Hanafiyyah dan seluruh anggota Bani Hasyim berbaiat kepadanya sebagai Khalifah. Namun, Muhammad Al-Hanafiyyah menolak dengan halus namun tegas. Alasan penolakan beliau sangat prinsipil: <em>umat Islam saat itu sedang terpecah, dan berbaiat kepada salah satu pihak hanya akan memperdalam perpecahan</em>.
+</p>
+<p>
+Beliau berkata kepada Abdullah bin Zubair (sebagaimana diriwayatkan oleh para sejarawan): <em>"Aku tidak akan berbaiat kepadamu selama umat masih terpecah seperti ini. Apabila umat telah bersatu di bawah satu pemimpin, maka aku akan menjadi orang pertama yang berbaiat. Namun selama mereka masih terpecah, aku tidak akan memihak kepada salah satu dari mereka."</em>
+</p>
+<h3>B. Tekanan dan Ancaman</h3>
+<p>
+Penolakan ini membuat Abdullah bin Zubair sangat marah. Beliau kemudian menekan Muhammad Al-Hanafiyyah dengan berbagai cara, di antaranya:
+</p>
+<ul>
+<li><strong>Memenjarakan beliau</strong> — Menurut beberapa riwayat, Abdullah bin Zubair memenjarakan Muhammad Al-Hanafiyyah beserta sejumlah anggota Bani Hasyim di Makkah.</li>
+<li><strong>Mengancam dengan kekerasan</strong> — Ada riwayat yang menyebutkan bahwa beliau diancam akan dibakar jika tidak berbaiat. Riwayat ini menunjukkan betapa kerasnya tekanan yang beliau hadapi.</li>
+<li><strong>Mengisolasi beliau</strong> — Beliau diisolasi dari masyarakat agar tidak dapat mengajarkan ilmu dan berdakwah.</li>
+</ul>
+<h3>C. Keteguhan yang Luar Biasa</h3>
+<p>
+Meskipun menghadapi tekanan yang demikian berat, Muhammad Al-Hanafiyyah tetap tidak bergeming dari prinsipnya. Beliau tidak mau berbaiat kepada pihak yang beliau anggap memecah belah umat, dan beliau juga tidak mau menggunakan kekerasan untuk melawan. Beliau memilih jalur kesabaran dan ketawakkalan kepada Allah.
+</p>
+<p>
+Beliau berkata kepada keluarganya yang ikut menderita bersamanya: <em>"Bersabarlah, wahai keluargaku. Sesungguhnya kesabaran ini adalah bagian dari agama kita. Jika kita berbaiat karena takut, maka kita telah mengkhianati agama kita. Dan jika kita melawan dengan kekerasan, maka kita akan menambah darah yang tertumpah di antara umat. Maka jalan yang terbaik adalah bersabar dan bertawakkal kepada Allah."</em>
+</p>
+<p>
+Sikap keteguhan ini pada akhirnya menjadi salah satu ciri khas Muhammad Al-Hanafiyyah yang paling dihormati oleh para ulama sepanjang sejarah. Beliau membuktikan bahwa seorang ulama sejati tidak dapat dibeli dengan tekanan maupun ancaman.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KETEGUHAN — QS. AL-AHZAB: 23</div>
+<div class="arabic-text">
+مِّنَ الْمُؤْمِنِينَ رِجَالٌ صَدَقُوا مَا عَاهَدُوا اللَّهَ عَلَيْهِ ۖ فَمِنْهُم مَّن قَضَىٰ نَحْبَهُ وَمِنْهُم مَّن يَنتَظِرُ ۖ وَمَا بَدَّلُوا تَبْدِيلًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Mina-l-mu'minīna rijālun shadaqū mā 'āhadū-Llāha 'alayh. Fa-minhum man qaḍā naḥbah wa minhum man yantaẓir. Wa mā baddalū tabdīlā."<br>
+<strong>Artinya:</strong> "Di antara orang-orang mukmin itu ada orang-orang yang menepati apa yang telah mereka janjikan kepada Allah. Maka di antara mereka ada yang gugur, dan di antara mereka ada (pula) yang menunggu-nunggu, dan mereka tidak mengubah (janjinya)."
+<br>— QS. Al-Ahzab: 23
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Berada di Syam pada Masa Abdul Malik bin Marwan</span>
+<div class="karomah-arabic">الْوُجُودُ فِي الشَّامِ فِي عَهْدِ عَبْدِ الْمَلِكِ بْنِ مَرْوَانَ</div>
+<p>
+Setelah kekuasaan Abdullah bin Zubair berakhir pada tahun 73 H ketika Hajjaj bin Yusuf ats-Tsaqafi (panglima Abdul Malik bin Marwan) berhasil menaklukkan Makkah dan membunuh Abdullah bin Zubair, seluruh wilayah Hijaz kembali ke tangan Bani Umayyah. Pada masa ini, Muhammad Al-Hanafiyyah menghadapi situasi baru dalam hubungannya dengan kekuasaan.
+</p>
+<h3>A. Perjalanan ke Syam</h3>
+<p>
+Para sejarawan mencatat bahwa Muhammad Al-Hanafiyyah pernah pergi ke Syam (Damaskus) dan bertemu dengan Khalifah <em>Abdul Malik bin Marwan</em>. Ada beberapa riwayat tentang alasan perjalanan ini — sebagian menyebutkan bahwa beliau pergi untuk mengklarifikasi posisinya, sebagian lain menyebutkan bahwa beliau diundang oleh Khalifah. Yang jelas, pertemuan ini berlangsung dengan penuh saling menghormati.
+</p>
+<h3>B. Pertemuan dengan Abdul Malik bin Marwan</h3>
+<p>
+Dalam pertemuan tersebut, Abdul Malik bin Marwan menyambut Muhammad Al-Hanafiyyah dengan penghormatan yang besar. Khalifah memahami bahwa Muhammad Al-Hanafiyyah bukanlah ancaman politik, melainkan seorang ulama yang menjauhi fitnah. Abdul Malik bertanya kepada beliau tentang berbagai masalah agama, dan Muhammad Al-Hanafiyyah menjawabnya dengan ilmu yang mendalam.
+</p>
+<p>
+Para ulama mencatat bahwa dalam pertemuan ini, Muhammad Al-Hanafiyyah tetap menjaga prinsipnya — beliau tidak menjilat kepada Khalifah, tidak meminta jabatan, dan tidak memanfaatkan pertemuan ini untuk kepentingan duniawi. Beliau berbicara sebagai ulama yang setara di hadapan penguasa, memberikan nasihat dengan hikmah tanpa kehilangan kehormatan dirinya.
+</p>
+<h3>C. Kembali ke Madinah</h3>
+<p>
+Setelah pertemuan tersebut, Muhammad Al-Hanafiyyah kembali ke Madinah dan melanjutkan kegiatan keilmuan serta ibadahnya. Beliau tidak menerima jabatan apa pun dari Bani Umayyah, dan tetap hidup sederhana sebagai ulama yang mengajarkan ilmu kepada umat.
+</p>
+<h3>D. Hikmah dari Perjalanan Ini</h3>
+<p>
+Perjalanan ke Syam ini menunjukkan kebijaksanaan Muhammad Al-Hanafiyyah dalam berinteraksi dengan penguasa. Beliau tidak mengasingkan diri sepenuhnya (yang akan membuatnya tidak dapat memberikan pengaruh positif), namun juga tidak mendekat secara berlebihan (yang akan mengikat hatinya kepada dunia). Beliau memilih posisi tengah — dekat untuk menasihati, namun jauh untuk menjaga hati.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG HIKMAH DALAM DAKWAH — QS. AN-NAHL: 125</div>
+<div class="arabic-text">
+ادْعُ إِلَىٰ سَبِيلِ رَبِّكَ بِالْحِكْمَةِ وَالْمَوْعِظَةِ الْحَسَنَةِ ۖ وَجَادِلْهُم بِالَّتِي هِيَ أَحْسَنُ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Ud'u ilā sabīli rabbika bi-l-ḥikmati wa-l-maw'iẓati-l-ḥasanah. Wa jādilhum bi-l-latī hiya aḥsan."<br>
+<strong>Artinya:</strong> "Serulah (manusia) kepada jalan Tuhanmu dengan hikmah dan pengajaran yang baik, dan berdebatlah dengan mereka dengan cara yang baik."
+<br>— QS. An-Nahl: 125
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Menolak Klaim Mukhtar ats-Tsaqafi — Membersihkan Nama dari Fitnah</span>
+<div class="karomah-arabic">رَفْضُ دَعْوَى الْمُخْتَارِ الثَّقَفِيِّ — تَنْزِيهُ الِاسْمِ عَنِ الْفِتْنَةِ</div>
+<p>
+Salah satu ujian terbesar bagi Muhammad Al-Hanafiyyah dalam hubungannya dengan kekuasaan adalah fitnah yang ditimbulkan oleh <em>Mukhtar bin Abi Ubaid ats-Tsaqafi</em>. Mukhtar memimpin pemberontakan di Kufah pada tahun 66-67 H dengan dalih menuntut balas atas syahidnya Al-Husain bin Ali, dan ia menggunakan nama Muhammad Al-Hanafiyyah sebagai legitimasi politiknya.
+</p>
+<h3>A. Klaim Tanpa Izin</h3>
+<p>
+Mukhtar ats-Tsaqafi mengklaim bahwa ia bergerak atas perintah Muhammad Al-Hanafiyyah, dan bahwa Muhammad Al-Hanafiyyah adalah <em>Al-Mahdi</em> yang dijanjikan. Klaim ini sama sekali tidak benar — Muhammad Al-Hanafiyyah tidak pernah memberikan izin kepada Mukhtar, tidak pernah mengklaim diri sebagai Al-Mahdi, dan tidak pernah mendukung pemberontakan tersebut.
+</p>
+<h3>B. Bantahan yang Tegas</h3>
+<p>
+Ketika berita tentang klaim Mukhtar sampai kepada Muhammad Al-Hanafiyyah, beliau segera memberikan bantahan yang tegas dan jelas. Beliau menyatakan kepada umat bahwa:
+</p>
+<ul>
+<li><strong>Beliau tidak ada hubungannya dengan gerakan Mukhtar</strong> — Gerakan tersebut adalah inisiatif Mukhtar sendiri, bukan atas perintah beliau.</li>
+<li><strong>Beliau tidak mengklaim diri sebagai Al-Mahdi</strong> — Klaim tersebut adalah kebohongan yang dinisbahkan kepada beliau.</li>
+<li><strong>Beliau tidak mendukung pemberontakan dengan kekerasan</strong> — Jalan yang beliau pilih adalah ilmu dan dakwah, bukan pertumpahan darah.</li>
+</ul>
+<h3>C. Munculnya Kelompok Kaysaniyyah</h3>
+<p>
+Sayangnya, meskipun Muhammad Al-Hanafiyyah telah berlepas diri dari gerakan Mukhtar, sebagian pengikut Mukhtar tetap meyakini klaim-klaim tersebut bahkan setelah kematian Mukhtar pada tahun 67 H. Kelompok ini kemudian dikenal sebagai <em>Kaysaniyyah</em> (dinisbahkan kepada Kaysan, nama lain atau pemimpin di kalangan mereka). Sebagian dari kelompok ini bahkan meyakini bahwa Muhammad Al-Hanafiyyah tidak benar-benar wafat, melainkan bersembunyi dan akan kembali sebagai Al-Mahdi.
+</p>
+<p>
+Keyakinan-keyakinan seperti ini sangat bertentangan dengan ajaran Islam yang lurus, dan Muhammad Al-Hanafiyyah sendiri telah berlepas diri darinya semasa hidupnya. Para ulama Ahlus Sunnah wal Jama'ah kemudian menegaskan bahwa keyakinan Kaysaniyyah adalah keyakinan yang sesat, dan bahwa Muhammad Al-Hanafiyyah tidak ada hubungannya dengan keyakinan tersebut.
+</p>
+<h3>D. Pelajaran dari Peristiwa Ini</h3>
+<p>
+Peristiwa Mukhtar ats-Tsaqafi memberikan pelajaran penting tentang bagaimana seorang ulama harus bersikap ketika namanya digunakan untuk kepentingan politik yang tidak ia setujui. Muhammad Al-Hanafiyyah menunjukkan bahwa klarifikasi yang tegas dan konsisten adalah jalan terbaik, dan bahwa seorang ulama tidak boleh diam ketika namanya digunakan untuk menyebarkan kebatilan.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEBENARAN YANG MENANG — QS. AL-ISRA': 81</div>
+<div class="arabic-text">
+وَقُلْ جَاءَ الْحَقُّ وَزَهَقَ الْبَاطِلُ ۚ إِنَّ الْبَاطِلَ كَانَ زَهُوقًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa qul jā'a-l-ḥaqqu wa zahaqa-l-bāṭil. Inna-l-bāṭila kāna zahūqā."<br>
+<strong>Artinya:</strong> "Dan katakanlah: 'Yang benar telah datang dan yang batil pasti lenyap.' Sesungguhnya yang batil itu pasti lenyap."
+<br>— QS. Al-Isra': 81
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Nasihat untuk Penguasa dan Sikap Zuhud terhadap Kekuasaan</span>
+<div class="karomah-arabic">النَّصِيحَةُ لِلْحُكَّامِ وَالزُّهْدُ فِي السُّلْطَةِ</div>
+<p>
+Meskipun Muhammad Al-Hanafiyyah menjauhi politik praktis, beliau tidak pernah pelit memberikan nasihat ketika berinteraksi dengan para penguasa. Nasihat-nasihat beliau dikenal dengan hikmahnya yang mendalam dan keberaniannya dalam menyampaikan kebenaran.
+</p>
+<h3>A. Nasihat tentang Keadilan</h3>
+<p>
+Ketika bertemu dengan para penguasa, beliau senantiasa mengingatkan mereka tentang pentingnya keadilan. Beliau berkata: <em>"Wahai penguasa, kekuasaanmu adalah amanah, bukan hak milik. Engkau akan dihisab atas setiap keputusan yang engkau buat, atas setiap harta yang engkau ambil, dan atas setiap nyawa yang berada di bawah tanggung jawabmu. Maka berbuat adillah, karena keadilan adalah pondasi kerajaan."</em>
+</p>
+<h3>B. Nasihat tentang Rakyat</h3>
+<p>
+Beliau juga senantiasa mengingatkan para penguasa tentang hak-hak rakyat. Beliau berkata: <em>"Rakyatmu adalah tanggung jawabmu di hadapan Allah. Janganlah engkau membebani mereka dengan pajak yang memberatkan, janganlah engkau menzalimi mereka dengan keputusan yang tidak adil, dan janganlah engkau mengabaikan kebutuhan mereka. Karena penguasa yang baik adalah penguasa yang melayani rakyatnya, bukan yang dilayani oleh rakyatnya."</em>
+</p>
+<h3>C. Nasihat tentang Ulama</h3>
+<p>
+Beliau juga menasihati para penguasa tentang cara memperlakukan ulama. Beliau berkata: <em>"Muliakanlah ulama yang jujur, karena mereka adalah cermin yang menunjukkan aibmu. Dan berhati-hatilah terhadap ulama yang menjilat, karena mereka adalah pengkhianat agama yang akan merusak kekuasaanmu dari dalam."</em>
+</p>
+<h3>D. Sikap Zuhud terhadap Kekuasaan</h3>
+<p>
+Yang paling mengagumkan dari sikap Muhammad Al-Hanafiyyah adalah zuhudnya terhadap kekuasaan itu sendiri. Meskipun beliau memiliki legitimasi nasab yang sangat kuat untuk mengklaim kekuasaan (sebagai putra Ali bin Abi Thalib), beliau tidak pernah memanfaatkan legitimasi ini untuk kepentingan pribadi. Beliau lebih memilih hidup sederhana sebagai ulama daripada menjadi penguasa.
+</p>
+<p>
+Beliau pernah berkata: <em>"Sehari menjadi hamba Allah yang merdeka lebih aku cintai daripada seribu hari menjadi penguasa yang diperbudak oleh kekuasaannya sendiri. Karena penguasa yang diperbudak oleh kekuasaannya akan dihisab atas setiap kezaliman yang dilakukannya, sedangkan hamba Allah yang merdeka hanya akan dihisab atas dirinya sendiri."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG AMANAH KEKUASAAN — QS. AN-NISA': 58</div>
+<div class="arabic-text">
+إِنَّ اللَّهَ يَأْمُرُكُمْ أَن تُؤَدُّوا الْأَمَانَاتِ إِلَىٰ أَهْلِهَا وَإِذَا حَكَمْتُم بَيْنَ النَّاسِ أَن تَحْكُمُوا بِالْعَدْلِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Inna-Llāha ya'murukum an tu'addū-l-amānāti ilā ahlihā. Wa idzā ḥakamtum bayna-n-nāsi an taḥkumū bi-l-'adl."<br>
+<strong>Artinya:</strong> "Sesungguhnya Allah menyuruh kamu menyampaikan amanat kepada yang berhak menerimanya, dan (menyuruh kamu) apabila menetapkan hukum di antara manusia supaya kamu menetapkan dengan adil."
+<br>— QS. An-Nisa': 58
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">6</span>
+<span class="karomah-title">Warisan Sikap — Teladan bagi Ulama Sepanjang Zaman</span>
+<div class="karomah-arabic">إِرْثُ الْمَوْقِفِ — قُدْوَةٌ لِلْعُلَمَاءِ فِي كُلِّ زَمَانٍ</div>
+<p>
+Sikap Muhammad Al-Hanafiyyah terhadap penguasa menjadi warisan yang sangat berharga bagi para ulama di sepanjang zaman. Prinsip-prinsip yang beliau terapkan tetap relevan hingga hari ini, dan menjadi panduan bagi para ulama dalam berinteraksi dengan kekuasaan.
+</p>
+<h3>A. Prinsip-Prinsip Warisan</h3>
+<ul>
+<li><strong>Netralitas yang Prinsipil</strong> — Tidak memihak kepada kekuatan politik yang memecah belah umat, namun juga tidak mengabaikan tanggung jawab untuk memberikan nasihat.</li>
+<li><strong>Keberanian dalam Kebenaran</strong> — Tidak takut menyampaikan kebenaran kepada penguasa, meskipun ada risiko tekanan atau penjara.</li>
+<li><strong>Zuhud terhadap Kekuasaan</strong> — Tidak memanfaatkan legitimasi agama atau nasab untuk meraih kekuasaan duniawi.</li>
+<li><strong>Kesabaran dalam Ujian</strong> — Menghadapi tekanan dan penjara dengan kesabaran, bukan dengan kekerasan.</li>
+<li><strong>Menjaga Kemurnian Niat</strong> — Selalu memastikan bahwa setiap tindakan dilandasi oleh niat yang ikhlas karena Allah, bukan kepentingan pribadi.</li>
+</ul>
+<h3>B. Pengaruh terhadap Ulama Setelahnya</h3>
+<p>
+Sikap Muhammad Al-Hanafiyyah menjadi inspirasi bagi banyak ulama setelahnya dalam menghadapi penguasa yang zalim. Para ulama seperti Imam Abu Hanifah, Imam Malik, Imam Ahmad bin Hanbal, dan banyak lainnya menunjukkan sikap yang mirip ketika menghadapi tekanan penguasa — mereka tidak memberontak dengan kekerasan, namun juga tidak menjilat dan mengkhianati prinsip-prinsip agama mereka.
+</p>
+<h3>C. Relevansi di Zaman Modern</h3>
+<p>
+Di zaman modern ini, sikap Muhammad Al-Hanafiyyah tetap sangat relevan. Para ulama dan dai di seluruh dunia Islam menghadapi dilema yang mirip — bagaimana berinteraksi dengan penguasa tanpa kehilangan independensi, bagaimana memberikan nasihat tanpa menjilat, dan bagaimana menolak kezaliman tanpa menimbulkan kekacauan. Prinsip-prinsip yang diwariskan oleh Muhammad Al-Hanafiyyah memberikan panduan yang sangat berharga untuk menghadapi dilema-dilema ini.
+</p>
+<p>
+Beliau pernah berkata sebagai penutup wasiatnya tentang kekuasaan: <em>"Ingatlah, wahai umat Islam, bahwa agama ini lebih mulia dari kekuasaan mana pun. Janganlah kalian menjual agama kalian demi kekuasaan, dan janganlah kalian menggunakan agama sebagai alat untuk meraih kekuasaan. Karena agama adalah amanah dari Allah, dan kita semua akan dihisab atas bagaimana kita menjaga amanah ini."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG TAWAKKAL — QS. ATH-THALAQ: 3</div>
+<div class="arabic-text">
+وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ ۚ إِنَّ اللَّهَ بَالِغُ أَمْرِهِ ۚ قَدْ جَعَلَ اللَّهُ لِكُلِّ شَيْءٍ قَدْرًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa man yatawakkal 'alā-Llāhi fa-huwa ḥasbuh. Inna-Llāha bālighu amrih. Qad ja'ala-Llāhu li-kulli syai'in qadrā."<br>
+<strong>Artinya:</strong> "Dan barangsiapa yang bertawakkal kepada Allah, niscaya Allah akan mencukupkan (keperluan)nya. Sesungguhnya Allah melaksanakan urusan (yang dikehendaki)-Nya. Sesungguhnya Allah telah mengadakan ketentuan bagi tiap-tiap sesuatu."
+<br>— QS. Ath-Thalaq: 3
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Sikap Muhammad Al-Hanafiyyah terhadap Penguasa:</strong>
+<ul>
+<li><strong>Konteks politik:</strong> Tiga kekuatan bersaing — Bani Umayyah di Syam, Abdullah bin Zubair di Makkah-Madinah, Mukhtar ats-Tsaqafi di Kufah</li>
+<li><strong>Prinsip utama:</strong> "Menjaga jarak dari kekuasaan, mendekat kepada Allah" — dekat untuk menasihati, jauh untuk menjaga hati</li>
+<li><strong>Menolak baiat Ibnu Zubair:</strong> Karena umat sedang terpecah; lebih memilih dipenjara daripada mengkhianati prinsip</li>
+<li><strong>Pertemuan dengan Abdul Malik bin Marwan:</strong> Berlangsung dengan saling menghormati, tanpa menjilat dan tanpa meminta jabatan</li>
+<li><strong>Menolak klaim Mukhtar:</strong> Bantahan tegas bahwa beliau tidak mendukung gerakan Mukhtar dan tidak mengklaim diri sebagai Al-Mahdi</li>
+<li><strong>Kelompok Kaysaniyyah:</strong> Pengikut Mukhtar yang tetap mengkultuskan beliau meskipun telah dibantah</li>
+<li><strong>Nasihat untuk penguasa:</strong> Tentang keadilan, hak rakyat, dan cara memperlakukan ulama</li>
+<li><strong>Zuhud terhadap kekuasaan:</strong> Tidak memanfaatkan legitimasi nasab untuk meraih kekuasaan</li>
+<li><strong>Warisan sikap:</strong> Menjadi teladan bagi ulama sepanjang zaman — netralitas prinsipil, keberanian dalam kebenaran, kesabaran dalam ujian</li>
+</ul>
+</div>
+<h2>Doa Memohon Keteguhan di Tengah Fitnah Kekuasaan</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON KETEGUHAN DAN HIKMAH</div>
+<div class="arabic-text">
+اللَّهُمَّ ثَبِّتْنِي عَلَى دِينِكَ، وَارْزُقْنِي الْحِكْمَةَ فِي الْقَوْلِ وَالْفِعْلِ، وَاجْعَلْنِي مِمَّنْ يَخَافُكَ فِي السِّرِّ وَالْعَلَانِيَةِ، وَلَا يَخَافُ فِيكَ لَوْمَةَ لَائِمٍ. اللَّهُمَّ لَا تَجْعَلْ حَاجَتِي إِلَى أَحَدٍ مِنْ خَلْقِكَ، وَاجْعَلْ غِنَايَ فِي نَفْسِي، وَرِزْقِي فِي سَمَائِكَ. وَارْزُقْنِي شَفَاعَةَ سَيِّدِنَا مُحَمَّدِ بْنِ عَلِيِّ بْنِ أَبِي طَالِبٍ يَوْمَ الْقِيَامَةِ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Allāhumma thabbitnī 'alā dīnika, wa-rzuqnī-l-ḥikmata fī-l-qawli wa-l-fi'l, wa-j'alnī mimman yakhāfuka fī-s-sirri wa-l-'alāniyah, wa lā yakhāfu fīka lawmata lā'im. Allāhumma lā taj'al ḥājatī ilā aḥadin min khalqika, wa-j'al ghināya fī nafsī, wa rizqī fī samā'ika. Wa-rzuqnī syafā'ata sayyidinā Muḥammadi bni 'Aliyyi bni Abī Ṭālibin yawma-l-qiyāmah."<br>
+<strong>Artinya:</strong> "Ya Allah, teguhkanlah aku di atas agama-Mu, anugerahkanlah kepadaku hikmah dalam perkataan dan perbuatan, dan jadikanlah aku termasuk orang yang takut kepada-Mu dalam keadaan sembunyi maupun terang-terangan, dan yang tidak takut celaan orang yang mencela dalam menegakkan agama-Mu. Ya Allah, janganlah Engkau jadikan kebutuhanku kepada seorang pun dari makhluk-Mu, dan jadikanlah kekayaanku dalam jiwaku, dan rezekiku di langit-Mu. Anugerahkanlah kepadaku syafaat Sayyidina Muhammad bin Ali bin Abi Thalib pada hari kiamat."
+</div>
+</div>
+<h2>Penutup Halaman 7</h2>
+<p>
+Demikianlah sikap Muhammad Al-Hanafiyyah terhadap para penguasa di zamannya — sebuah sikap yang memadukan keberanian dan kelembutan, keteguhan dan kebijaksanaan, netralitas dan tanggung jawab. Beliau membuktikan bahwa seorang ulama sejati dapat tetap menjaga kemerdekaan hatinya di tengah tekanan kekuasaan, dapat tetap menyampaikan kebenaran tanpa menjilat, dan dapat tetap zuhud meskipun memiliki legitimasi untuk meraih kekuasaan.
+</p>
+<p>
+Sikap beliau menjadi teladan abadi bagi para ulama di sepanjang zaman — bahwa kekuasaan bukanlah tujuan, melainkan sarana; bahwa agama tidak boleh dijual demi kepentingan politik; dan bahwa kesabaran dalam kebenaran lebih mulia daripada kemenangan dalam kebatilan. Prinsip-prinsip ini tetap relevan hingga hari ini, dan akan terus menjadi panduan bagi setiap muslim yang ingin menjaga kemurnian agamanya di tengah godaan kekuasaan.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas warisan keilmuan Muhammad Al-Hanafiyyah — bagaimana ajaran-ajaran beliau tentang fikih, tafsir, hadits, dan akhlak diwariskan kepada para murid beliau, dan bagaimana pengaruh beliau terus hidup melalui generasi-generasi ulama setelahnya hingga hari ini.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Ḥasbunā-Llāhu wa ni'ma-l-wakīl."<br>
+<strong>Artinya:</strong> "Cukuplah Allah menjadi Penolong kami, dan Allah adalah sebaik-baik Pelindung."
+<br>— QS. Ali 'Imran: 173
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="hanafi1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi2.html" class="article-nav-btn" title="Halaman 2: Masa Kecil & Pendidikan">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="hanafi3.html" class="article-nav-btn" title="Halaman 3: Perjalanan Menuntut Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="hanafi4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="hanafi5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="hanafi7.html" class="article-nav-btn active" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="hanafi8.html" class="article-nav-btn" title="Halaman 8: Warisan Keilmuan">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>

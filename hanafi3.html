@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+window.scrollTo(0, 0);
+</script>
+<title>Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah - KALAM</title>
+<style>
+html { scroll-behavior: auto !important; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: 'Georgia', serif;
+background-color: #f5f5f0;
+color: #333;
+min-height: 100vh;
+line-height: 1.8;
+}
+@media (max-width: 768px) {
+.article-container { max-width: 100%; padding: 20px; }
+h1 { font-size: 26px; }
+.featured-img { max-width: 100%; }
+}
+header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo-kalam {
+font-size: 1.8rem;
+font-weight: bold;
+color: #e94560;
+letter-spacing: 5px;
+text-decoration: none;
+text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+transition: all 0.3s ease;
+padding: 8px 16px;
+border-radius: 8px;
+}
+.logo-kalam:hover { background: rgba(233, 69, 96, 0.15); transform: scale(1.05); }
+.logo-kalam span { color: #fff; }
+nav { display: flex; gap: 15px; }
+nav a {
+color: #ccc;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 25px;
+transition: all 0.3s ease;
+font-size: 0.95rem;
+}
+nav a:hover { background: #e94560; color: #fff; }
+.breadcrumb {
+padding: 15px 40px;
+background: #eee;
+font-size: 0.85rem;
+color: #777;
+}
+.breadcrumb a { color: #e94560; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.article-container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.article-header { margin-bottom: 30px; }
+.article-header h1 {
+font-size: 2.2rem;
+color: #1a1a2e;
+line-height: 1.4;
+margin-bottom: 15px;
+}
+.article-header .subtitle {
+font-size: 1.1rem;
+color: #e94560;
+font-style: italic;
+margin-bottom: 15px;
+}
+.article-meta {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #888;
+font-size: 0.9rem;
+padding-bottom: 20px;
+border-bottom: 1px solid #ddd;
+}
+.author { display: flex; align-items: center; gap: 8px; }
+.author-avatar {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: linear-gradient(135deg, #e94560, #c23152);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-weight: bold;
+font-size: 0.85rem;
+}
+.author-name { font-weight: bold; color: #333; }
+.meta-date { color: #999; }
+.article-image-wrapper {
+margin: 25px 0;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+position: relative;
+}
+.article-image-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+transition: transform 0.5s ease;
+}
+.article-image-wrapper:hover img { transform: scale(1.02); }
+.image-caption {
+background: rgba(0,0,0,0.7);
+color: #ccc;
+padding: 10px 15px;
+font-size: 0.8rem;
+}
+.share-bar {
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+.share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+.share-btn {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-decoration: none;
+font-size: 0.85rem;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+.share-btn.fb { background: #3b5998; }
+.share-btn.tw { background: #1da1f2; }
+.share-btn.wa { background: #25d366; }
+.share-btn.tg { background: #0088cc; }
+.share-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+.font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+.font-btn {
+width: 32px;
+height: 32px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background: #fff;
+cursor: pointer;
+font-weight: bold;
+font-size: 0.85rem;
+transition: all 0.2s;
+}
+.font-btn:hover { background: #e94560; color: #fff; border-color: #e94560; }
+.article-content { font-size: 1.05rem; line-height: 1.9; color: #444; }
+.article-content p { margin-bottom: 20px; text-align: justify; }
+.article-content .lead {
+font-size: 1.15rem;
+font-weight: bold;
+color: #1a1a2e;
+border-left: 4px solid #e94560;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+.article-content blockquote {
+background: #f0f0eb;
+border-left: 4px solid #e94560;
+padding: 20px 25px;
+margin: 25px 0;
+border-radius: 0 8px 8px 0;
+font-style: italic;
+color: #555;
+}
+.article-content h2 {
+font-size: 1.5rem;
+color: #1a1a2e;
+margin: 35px 0 15px;
+padding-bottom: 10px;
+border-bottom: 2px solid #e94560;
+}
+.article-content h3 { font-size: 1.2rem; color: #333; margin: 25px 0 10px; }
+.article-content ul { margin: 15px 0 20px 30px; }
+.article-content ul li { margin-bottom: 10px; line-height: 1.7; }
+.arabic-box {
+background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+border: 2px solid #d4af37;
+border-radius: 12px;
+padding: 30px 25px;
+margin: 25px 0;
+text-align: center;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+position: relative;
+}
+.arabic-box::before {
+content: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ';
+position: absolute;
+top: -14px;
+left: 50%;
+transform: translateX(-50%);
+background: #f8f6f0;
+padding: 0 12px;
+font-size: 1.2rem;
+color: #d4af37;
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+white-space: nowrap;
+line-height: 1.4;
+z-index: 2;
+}
+.arabic-text {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.8rem;
+line-height: 2.8;
+color: #1a1a2e;
+direction: rtl;
+margin: 15px 0;
+}
+.arabic-translation {
+font-size: 0.95rem;
+color: #666;
+font-style: italic;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px dashed #d4af37;
+}
+.arabic-label {
+display: inline-block;
+background: #d4af37;
+color: #fff;
+padding: 4px 15px;
+border-radius: 15px;
+font-size: 0.8rem;
+font-weight: bold;
+margin-bottom: 15px;
+letter-spacing: 1px;
+}
+.karomah-card {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #e94560;
+}
+.karomah-number {
+display: inline-block;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-weight: bold;
+font-size: 1.2rem;
+margin-right: 10px;
+}
+.karomah-title { font-size: 1.3rem; color: #1a1a2e; font-weight: bold; display: inline; }
+.karomah-arabic {
+font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', 'Noto Naskh Arabic', serif;
+font-size: 1.6rem;
+color: #d4af37;
+direction: rtl;
+margin: 10px 0;
+text-align: right;
+}
+.highlight-box {
+background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+border: 1px solid #e0ddd5;
+border-radius: 12px;
+padding: 25px;
+margin: 25px 0;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+border-left: 5px solid #d4af37;
+}
+.highlight-box ul { margin: 15px 0 0 30px; }
+.highlight-box ul li { margin-bottom: 10px; line-height: 1.7; }
+.article-nav {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin: 40px 0;
+padding: 20px;
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 15px;
+flex-wrap: wrap;
+}
+.article-nav-btn {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+border: 2px solid #e94560;
+background: rgba(233, 69, 96, 0.1);
+color: #fff;
+font-size: 1.15rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.article-nav-btn:hover {
+background: #e94560;
+transform: scale(1.15);
+box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+}
+.article-nav-btn.active {
+background: #e94560;
+box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+}
+.nav-btn-label { text-align: center; color: #aaa; font-size: 0.75rem; margin-top: 6px; }
+.nav-group { display: flex; flex-direction: column; align-items: center; }
+.kalam-back-btn {
+display: block;
+text-align: center;
+margin: 40px auto;
+padding: 18px 50px;
+background: linear-gradient(135deg, #e94560, #c23152);
+color: #fff;
+text-decoration: none;
+border-radius: 35px;
+font-size: 1.2rem;
+font-weight: bold;
+letter-spacing: 4px;
+transition: all 0.4s ease;
+box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+max-width: 350px;
+}
+.kalam-back-btn:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+background: linear-gradient(135deg, #ff6b81, #e94560);
+letter-spacing: 6px;
+}
+.kalam-back-btn .btn-sub {
+display: block;
+font-size: 0.75rem;
+letter-spacing: 2px;
+margin-top: 5px;
+opacity: 0.8;
+font-weight: normal;
+}
+footer {
+background: #1a1a2e;
+color: #888;
+text-align: center;
+padding: 25px;
+font-size: 0.9rem;
+margin-top: 40px;
+}
+footer span { color: #e94560; }
+@media (max-width: 600px) {
+body { font-size: 14px; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+nav { flex-direction: column; gap: 10px; width: 100%; justify-content: center; }
+.article-container { padding: 0 15px; }
+.article-content { font-size: 0.95rem; }
+.arabic-text { font-size: 1.4rem; line-height: 2.4; }
+.karomah-arabic { font-size: 1.3rem; }
+.article-nav { gap: 6px; padding: 15px; }
+.article-nav-btn { width: 36px; height: 36px; font-size: 1rem; }
+.nav-btn-label { font-size: 0.65rem; }
+}
+@media (max-width: 600px) {
+header {
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+gap: 10px !important;
+padding: 15px 16px !important;
+text-align: center;
+}
+header .logo-kalam {
+font-size: 1.5rem !important;
+letter-spacing: 4px !important;
+padding: 6px 14px !important;
+margin: 0 auto !important;
+display: inline-block;
+}
+header nav {
+flex-direction: row !important;
+gap: 8px !important;
+width: auto !important;
+justify-content: center !important;
+margin: 0 auto !important;
+}
+header nav a {
+padding: 8px 14px !important;
+font-size: 0.85rem !important;
+white-space: nowrap;
+}
+}
+@media (max-width: 360px) {
+header .logo-kalam { font-size: 1.3rem !important; letter-spacing: 3px !important; }
+header nav a { padding: 6px 10px !important; font-size: 0.8rem !important; }
+.article-nav-btn { width: 32px; height: 32px; font-size: 0.9rem; }
+}
+</style>
+</head>
+<body onload="window.scrollTo(0,0)">
+<header>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+<span>K</span>ALAM
+</a>
+<nav>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+<a href="biografi.html">Artikel</a>
+</nav>
+</header>
+<div class="breadcrumb">
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikelwali2.html">Artikel</a> &raquo; Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah
+</div>
+<div class="article-container">
+<div class="article-header">
+<h1>Biografi Syeikh Muhammad Ibnu Al-Hanafiyyah</h1>
+<div class="subtitle">Halaman 3 dari 9 — Perjalanan Menuntut Ilmu di Madinah, Bidang Keilmuan, dan Para Guru Beliau</div>
+<div class="article-meta">
+<div class="author">
+<div class="author-avatar">MY</div>
+<div>
+<div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+<div class="meta-date">Rabu, 28 Oktober 2026, 08:00 WIB</div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-image-wrapper">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Medina_-_Map_of_the_Prophet%27s_Mosque.jpg/440px-Medina_-_Map_of_the_Prophet%27s_Mosque.jpg"
+alt="Masjid Nabawi Madinah — pusat keilmuan tempat Muhammad Al-Hanafiyyah menuntut ilmu"
+loading="eager"
+decoding="async"
+onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Kufa_Mosque.jpg/440px-Kufa_Mosque.jpg';">
+<div class="image-caption">Sumber: kalam.web.id — Masjid Nabawi di Madinah Al-Munawwarah — pusat keilmuan Islam di abad pertama Hijriah, tempat Muhammad bin Ali Al-Hanafiyyah menuntut ilmu dari para sahabat besar Rasulullah SAW</div>
+</div>
+<div class="share-bar">
+<span>Bagikan:</span>
+<a href="#" class="share-btn fb">f</a>
+<a href="#" class="share-btn tw">t</a>
+<a href="#" class="share-btn wa">W</a>
+<a href="#" class="share-btn tg">T</a>
+<div class="font-size-controls">
+<button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+<button class="font-btn" onclick="changeFontSize(1)">A+</button>
+</div>
+</div>
+<div class="article-content" id="articleContent">
+<p class="lead">
+Perjalanan menuntut ilmu Muhammad Al-Hanafiyyah adalah perjalanan seorang penuntut ilmu yang sangat istimewa. Berbeda dengan kebanyakan ulama yang harus melakukan <em>rihlah ilmiyyah</em> (perjalanan jauh) untuk berguru kepada para ulama di berbagai negeri, Muhammad Al-Hanafiyyah memiliki keistimewaan yang sangat langka — beliau berguru langsung kepada ayahandanya sendiri, Amirul Mukminin Ali bin Abi Thalib radhiyallahu 'anhu, serta kepada para sahabat besar Rasulullah SAW yang masih hidup di Madinah pada masa itu. Beliau menyerap ilmu dari sumber-sumber paling otentik dalam Islam — dari mulut orang-orang yang menyaksikan langsung turunnya wahyu, mendengar langsung sabda-sabda Rasulullah SAW, dan hidup bersama beliau dalam suka maupun duka. Di bawah bimbingan para guru mulia inilah, Muhammad Al-Hanafiyyah menempa dirinya menjadi seorang ulama besar yang menguasai berbagai bidang ilmu — dari Al-Qur'an dan tafsir, hadits, fikih, hingga ilmu-ilmu batin yang menjadi warisan khusus Ahlul Bait.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENUNTUT ILMU — QS. AL-MUJADILAH: 11</div>
+<div class="arabic-text">
+يَرْفَعِ اللَّهُ الَّذِينَ آمَنُوا مِنكُمْ وَالَّذِينَ أُوتُوا الْعِلْمَ دَرَجَاتٍ ۚ وَاللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Yarfa'i-Llāhu-l-ladzīna āmanū minkum wa-l-ladzīna ūtū-l-'ilma darajātin. Wa-Llāhu bimā ta'malūna Khabīr."<br>
+<strong>Artinya:</strong> "Allah akan mengangkat orang-orang yang beriman di antaramu dan orang-orang yang diberi ilmu pengetahuan beberapa derajat. Dan Allah Maha Mengetahui apa yang kamu kerjakan."
+<br>— QS. Al-Mujadilah: 11
+</div>
+</div>
+<h2>Rihlah Ilmiah di Kota Nabi — Berguru kepada Para Sahabat Besar</h2>
+<p>
+Perjalanan menuntut ilmu Muhammad Al-Hanafiyyah berpusat di dua kota suci Islam: <em>Madinah Al-Munawwarah</em> dan <em>Kufah</em>. Berbeda dengan sebagian ulama di zamannya yang melakukan perjalanan jauh ke berbagai negeri untuk mencari ilmu, Muhammad Al-Hanafiyyah memiliki keistimewaan bahwa ilmu datang kepadanya melalui dua sumber utama — ayahandanya Ali bin Abi Thalib yang merupakan <em>Bab al-'Ilm</em> (Pintu Ilmu), dan para sahabat besar Rasulullah SAW yang masih hidup di Madinah.
+</p>
+<p>
+Madinah pada abad pertama Hijriah adalah pusat keilmuan Islam yang tiada tandingannya. Di kota ini, Masjid Nabawi menjadi madrasah terbesar di dunia Islam, tempat para sahabat mengajarkan ilmu yang mereka terima langsung dari Rasulullah SAW. Di antara para sahabat besar yang masih hidup pada masa Muhammad Al-Hanafiyyah menuntut ilmu adalah: <em>Abu Hurairah radhiyallahu 'anhu</em> (wafat 57 H), <em>Anas bin Malik radhiyallahu 'anhu</em> (wafat 93 H), <em>Abdullah bin Umar radhiyallahu 'anhuma</em> (wafat 73 H), <em>Abdullah bin Abbas radhiyallahu 'anhuma</em> (wafat 68 H), dan <em>Sayyidah Aisyah radhiyallahu 'anha</em> (wafat 58 H).
+</p>
+<p>
+Di bawah bimbingan para sahabat inilah Muhammad Al-Hanafiyyah menuntut ilmu dengan penuh kesungguhan. Beliau tidak hanya mempelajari ilmu-ilmu zhahir seperti fikih, tafsir, dan hadits, tetapi juga ilmu-ilmu batin yang diwariskan secara khusus dalam keluarga Ahlul Bait. Para ulama mencatat bahwa beliau sangat tekun dalam menuntut ilmu, dan tidak pernah menyia-nyiakan kesempatan untuk belajar dari para sahabat yang masih hidup pada masa itu.
+</p>
+<div class="arabic-box">
+<div class="arabic-label">PERKATAAN TENTANG KEUTAMAAN ILMU AHLUL BAIT</div>
+<div class="arabic-text">
+عِلْمُنَا مَأْخُوذٌ عَنْ رَسُولِ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ، لَا عَنْ كُتُبِ النَّاسِ وَلَا عَنْ آرَائِهِمْ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "'Ilmunā ma'khūdzun 'an Rasūli-Llāhi ṣallā-Llāhu 'alaihi wa sallam, lā 'an kutubi-n-nāsi wa lā 'an ārā'ihim."<br>
+<strong>Artinya:</strong> "Ilmu kami diambil dari Rasulullah shallallahu 'alaihi wa sallam, bukan dari buku-buku manusia dan bukan dari pendapat-pendapat mereka."
+<br>— Prinsip keilmuan yang dipegang oleh keluarga Ahlul Bait
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">1</span>
+<span class="karomah-title">Bidang Ilmu yang Dipelajari — Dari Al-Qur'an hingga Ilmu Batin</span>
+<div class="karomah-arabic">الْعُلُومُ الَّتِي تَعَلَّمَهَا — مِنَ الْقُرْآنِ إِلَى الْعُلُومِ الْبَاطِنِيَّةِ</div>
+<p>
+Muhammad Al-Hanafiyyah mempelajari berbagai bidang ilmu yang sangat luas, mencakup ilmu-ilmu zhahir (lahir) dan ilmu-ilmu batin. Keistimewaan beliau adalah mampu memadukan kedua jenis ilmu ini secara seimbang, sehingga beliau menjadi ulama yang tidak hanya tajam akalnya, tetapi juga dalam spiritualitasnya.
+</p>
+<h3>A. Ilmu-Ilmu Zhahir (Lahir)</h3>
+<ul>
+<li><strong>Al-Qur'an dan Ilmu Qira'at</strong> — Beliau mempelajari Al-Qur'an dengan berbagai qira'at (cara baca) yang dikenal pada masa itu, serta memahami makna-maknanya secara mendalam.</li>
+<li><strong>Ilmu Tafsir</strong> — Beliau mempelajari tafsir Al-Qur'an dari ayahandanya Ali bin Abi Thalib, yang dikenal sebagai salah satu sahabat paling alim dalam menafsirkan Al-Qur'an. Beliau juga belajar dari Abdullah bin Abbas, yang dijuluki <em>Tarjuman Al-Qur'an</em> (Penerjemah Al-Qur'an).</li>
+<li><strong>Ilmu Hadits dan Riwayat</strong> — Beliau menghafal dan mempelajari hadits-hadits Rasulullah SAW dari para sahabat yang meriwayatkannya langsung, dengan perhatian khusus pada sanad dan matan.</li>
+<li><strong>Ilmu Fikih</strong> — Beliau mempelajari hukum-hukum Islam dari ayahandanya Ali bin Abi Thalib, yang dikenal sebagai salah satu sahabat paling faqih. Fikih yang beliau pelajari mencakup berbagai madzhab sahabat yang berkembang pada masa itu.</li>
+<li><strong>Ilmu Ushul Fikih</strong> — Beliau mempelajari kaidah-kaidah pengambilan hukum dari Al-Qur'an dan Sunnah.</li>
+<li><strong>Ilmu Bahasa Arab</strong> — Beliau menguasai bahasa Arab dengan sangat baik, termasuk nahwu, sharaf, dan balaghah, yang merupakan kunci untuk memahami Al-Qur'an dan hadits.</li>
+<li><strong>Ilmu Sejarah (Sirah)</strong> — Beliau mempelajari sirah Rasulullah SAW dan sejarah para sahabat, yang menjadi teladan dalam kehidupan sehari-hari.</li>
+</ul>
+<h3>B. Ilmu-Ilmu Batin</h3>
+<ul>
+<li><strong>Ilmu Tazkiyatun Nafs</strong> — Ilmu tentang penyucian jiwa, yang beliau pelajari dari ayahandanya dan dari tradisi Ahlul Bait.</li>
+<li><strong>Ilmu Irfan dan Ma'rifat</strong> — Ilmu tentang pengenalan kepada Allah secara mendalam, yang menjadi ciri khas keilmuan Ahlul Bait.</li>
+<li><strong>Ilmu Adab dan Akhlak</strong> — Beliau mempelajari adab-adab spiritual yang menjadi warisan khusus keluarga Ahlul Bait.</li>
+<li><strong>Ilmu Doa dan Munajat</strong> — Beliau mempelajari doa-doa dan munajat yang diajarkan oleh Rasulullah SAW dan diwariskan melalui Ahlul Bait.</li>
+</ul>
+<p>
+Perpaduan antara ilmu zhahir dan batin inilah yang menjadikan Muhammad Al-Hanafiyyah sebagai ulama yang sangat dihormati di zamannya. Beliau tidak hanya menguasai aspek formal agama, tetapi juga memahami dimensi spiritualnya secara mendalam. Para ulama salaf memuji beliau sebagai orang yang <em>jami' bain al-'ilmi wa-l-'amal</em> — memadukan ilmu dan amal secara sempurna.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEUTAMAAN MEMPELAJARI AL-QUR'AN — HADITS NABAWI</div>
+<div class="arabic-text">
+خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Khairukum man ta'allama-l-Qur'āna wa 'allamah."<br>
+<strong>Artinya:</strong> "Sebaik-baik kalian adalah orang yang mempelajari Al-Qur'an dan mengajarkannya."
+<br>— HR. Al-Bukhari
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">2</span>
+<span class="karomah-title">Para Guru Utama — Ayahanda dan Para Sahabat Besar</span>
+<div class="karomah-arabic">مَشَايِخُهُ الرَّئِيسِيَّةُ — الْوَالِدُ وَالصَّحَابَةُ الْكِبَارُ</div>
+<p>
+Keistimewaan terbesar Muhammad Al-Hanafiyyah dalam menuntut ilmu adalah beliau berguru langsung kepada para sumber ilmu paling otentik dalam Islam. Para guru beliau bukan sembarang ulama, melainkan ayahanda dan saudara-saudara beliau sendiri, serta para sahabat besar Rasulullah SAW yang masih hidup pada masa itu.
+</p>
+<h3>A. Amirul Mukminin Ali bin Abi Thalib (Guru Utama)</h3>
+<p>
+Guru pertama dan utama Muhammad Al-Hanafiyyah adalah ayahandanya sendiri, <em>Ali bin Abi Thalib radhiyallahu 'anhu</em>. Ali bukan hanya Khalifah keempat dan sahabat terdekat Rasulullah SAW, tetapi beliau juga dikenal sebagai <em>Bab al-'Ilm</em> (Pintu Ilmu). Dari ayahnya, Muhammad belajar segala aspek keilmuan Islam — dari Al-Qur'an, hadits, fikih, hingga ilmu-ilmu batin yang diwariskan khusus dalam keluarga Ahlul Bait.
+</p>
+<h3>B. Al-Hasan bin Ali (Saudara Seayah)</h3>
+<p>
+Al-Hasan bin Ali radhiyallahu 'anhu, cucu Rasulullah SAW dan saudara seayah Muhammad Al-Hanafiyyah, juga menjadi salah satu guru beliau. Al-Hasan dikenal sebagai orang yang sangat alim, penyabar, dan penuh hikmah. Beliau wafat pada tahun 50 H, dan Muhammad Al-Hanafiyyah sangat berduka atas kepergiannya.
+</p>
+<h3>C. Al-Husain bin Ali (Saudara Seayah)</h3>
+<p>
+Al-Husain bin Ali radhiyallahu 'anhu, cucu Rasulullah SAW dan saudara seayah Muhammad Al-Hanafiyyah, juga menjadi sumber ilmu bagi beliau. Al-Husain dikenal sebagai orang yang sangat zuhud, ahli ibadah, dan memiliki kedudukan spiritual yang sangat tinggi. Beliau syahid di Karbala pada tahun 61 H, dan Muhammad Al-Hanafiyyah sangat berduka atas syahidnya saudaranya ini.
+</p>
+<h3>D. Abdullah bin Abbas radhiyallahu 'anhuma</h3>
+<p>
+Abdullah bin Abbas (wafat 68 H) adalah sepupu Rasulullah SAW dan putra Abbas bin Abdul Muthalib. Beliau dikenal dengan julukan <em>Tarjuman Al-Qur'an</em> (Penerjemah Al-Qur'an) dan <em>Habr al-Ummah</em> (Ulama Umat). Dari beliau, Muhammad Al-Hanafiyyah mempelajari tafsir Al-Qur'an secara mendalam.
+</p>
+<h3>E. Para Sahabat Lainnya</h3>
+<ul>
+<li><strong>Abu Hurairah radhiyallahu 'anhu</strong> (wafat 57 H) — sahabat yang paling banyak meriwayatkan hadits</li>
+<li><strong>Anas bin Malik radhiyallahu 'anhu</strong> (wafat 93 H) — pelayan Rasulullah SAW</li>
+<li><strong>Abdullah bin Umar radhiyallahu 'anhuma</strong> (wafat 73 H) — putra Umar bin Khattab</li>
+<li><strong>Sayyidah Aisyah radhiyallahu 'anha</strong> (wafat 58 H) — istri Rasulullah SAW</li>
+<li><strong>Abdullah bin Ja'far radhiyallahu 'anhu</strong> — putra Ja'far bin Abi Thalib</li>
+</ul>
+<p>
+Dengan berguru kepada para sahabat besar ini, Muhammad Al-Hanafiyyah mendapatkan ilmu dari sumber yang paling otentik. Para ulama salaf mencatat bahwa sanad keilmuan beliau sangat kuat karena bersambung langsung kepada Rasulullah SAW melalui para sahabat yang meriwayatkan langsung dari beliau.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG MENGHORMATI GURU — QS. AL-KAHFI: 66</div>
+<div class="arabic-text">
+هَلْ أَتَّبِعُكَ عَلَىٰ أَن تُعَلِّمَنِ مِمَّا عُلِّمْتَ رُشْدًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Hal attabi'uka 'alā an tu'allimani mimmā 'ullimta rusydā."<br>
+<strong>Artinya:</strong> "Bolehkah aku mengikutimu supaya kamu mengajarkan kepadaku ilmu yang benar di antara ilmu-ilmu yang telah diajarkan kepadamu?"
+<br>— QS. Al-Kahfi: 66 (ucapan Nabi Musa kepada Khidir)
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">3</span>
+<span class="karomah-title">Majelis Ilmu di Masjid Nabawi — Madrasah Para Sahabat</span>
+<div class="karomah-arabic">مَجَالِسُ الْعِلْمِ فِي الْمَسْجِدِ النَّبَوِيِّ — مَدْرَسَةُ الصَّحَابَةِ</div>
+<p>
+Masjid Nabawi di Madinah Al-Munawwarah bukan hanya tempat ibadah, tetapi juga menjadi madrasah terbesar di dunia Islam pada abad pertama Hijriah. Di masjid inilah Muhammad Al-Hanafiyyah menghabiskan sebagian besar waktunya untuk menuntut ilmu dari para sahabat Rasulullah SAW.
+</p>
+<h3>A. Suasana Majelis Ilmu di Masjid Nabawi</h3>
+<p>
+Majelis ilmu di Masjid Nabawi pada masa itu memiliki suasana yang sangat khas. Para sahabat duduk melingkar di sekitar tiang-tiang masjid, mengajarkan ilmu kepada para murid mereka. Di antara majelis-majelis yang terkenal adalah:
+</p>
+<ul>
+<li><strong>Majelis Abdullah bin Umar</strong> — mengajarkan fikih dan hadits</li>
+<li><strong>Majelis Abdullah bin Abbas</strong> — mengajarkan tafsir Al-Qur'an</li>
+<li><strong>Majelis Abu Hurairah</strong> — mengajarkan hadits-hadits Rasulullah SAW</li>
+<li><strong>Majelis Anas bin Malik</strong> — mengajarkan sirah dan hadits</li>
+</ul>
+<p>
+Muhammad Al-Hanafiyyah hadir di berbagai majelis ini, menyerap ilmu dari setiap guru dengan penuh perhatian. Para sahabat yang melihat ketekunan beliau dalam menuntut ilmu sering memuji beliau dan mendoakan keberkahan baginya.
+</p>
+<h3>B. Metode Pembelajaran di Masjid Nabawi</h3>
+<p>
+Metode pembelajaran di Masjid Nabawi pada masa itu sangat berbeda dengan metode pembelajaran di madrasah-madrasah modern. Metode yang digunakan antara lain:
+</p>
+<ul>
+<li><strong>As-Sima'</strong> — Mendengarkan langsung dari guru tanpa mencatat</li>
+<li><strong>Al-Hifzh</strong> — Menghafal apa yang didengar dari guru</li>
+<li><strong>Al-Mudzakarah</strong> — Mengulang-ulang dan mendiskusikan ilmu yang telah dipelajari</li>
+<li><strong>Al-Munāqasyah</strong> — Berdiskusi dan bertanya kepada guru tentang hal-hal yang belum dipahami</li>
+<li><strong>Al-'Amal</strong> — Mengamalkan ilmu yang telah dipelajari dalam kehidupan sehari-hari</li>
+</ul>
+<p>
+Muhammad Al-Hanafiyyah sangat tekun dalam menerapkan semua metode ini. Beliau tidak hanya mendengar, tetapi juga menghafal, mendiskusikan, dan mengamalkan setiap ilmu yang beliau terima. Inilah yang menjadikan beliau sebagai ulama yang sangat mendalam ilmunya dan sangat kuat amalnya.
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG KEUTAMAAN MASJID — HADITS NABAWI</div>
+<div class="arabic-text">
+مَا اجْتَمَعَ قَوْمٌ فِي بَيْتٍ مِنْ بُيُوتِ اللَّهِ يَتْلُونَ كِتَابَ اللَّهِ وَيَتَدَارَسُونَهُ بَيْنَهُمْ إِلَّا نَزَلَتْ عَلَيْهِمُ السَّكِينَةُ وَغَشِيَتْهُمُ الرَّحْمَةُ وَحَفَّتْهُمُ الْمَلَائِكَةُ وَذَكَرَهُمُ اللَّهُ فِيمَنْ عِنْدَهُ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Mā jtama'a qaumun fī baytin min buyūti-Llāhi yatlūna kitāba-Llāhi wa yatadārasūnahū baynahum illā nazalat 'alayhimu-s-sakīnati wa ghasyiyat-humu-r-raḥmatu wa ḥaffat-humu-l-malā'ikatu wa dzakara-humu-Llāhu fīman 'indah."<br>
+<strong>Artinya:</strong> "Tidaklah suatu kaum berkumpul di salah satu rumah Allah (masjid) untuk membaca Kitab Allah dan mempelajarinya di antara mereka, melainkan ketenangan akan turun kepada mereka, rahmat akan meliputi mereka, malaikat akan mengelilingi mereka, dan Allah akan menyebut mereka di kalangan makhluk yang ada di sisi-Nya."
+<br>— HR. Muslim
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">4</span>
+<span class="karomah-title">Sanad Keilmuan — Mata Rantai Emas kepada Rasulullah SAW</span>
+<div class="karomah-arabic">السَّنَدُ الْعِلْمِيُّ — السِّلْسِلَةُ الذَّهَبِيَّةُ إِلَى رَسُولِ اللَّهِ</div>
+<p>
+Salah satu keistimewaan terbesar Muhammad Al-Hanafiyyah adalah sanad keilmuan beliau yang sangat kuat dan bersambung langsung kepada Rasulullah SAW. Sanad ini bukan hanya sekadar rangkaian nama, tetapi merupakan mata rantai emas yang menjamin keotentikan ilmu yang beliau miliki.
+</p>
+<h3>A. Sanad melalui Ayahanda Ali bin Abi Thalib</h3>
+<p>
+Sanad utama Muhammad Al-Hanafiyyah adalah melalui ayahandanya sendiri:
+</p>
+<blockquote>
+Muhammad Al-Hanafiyyah ← Ali bin Abi Thalib ← Rasulullah SAW
+</blockquote>
+<p>
+Ini adalah sanad yang sangat pendek dan sangat kuat. Hanya ada satu perantara antara Muhammad Al-Hanafiyyah dengan Rasulullah SAW, yaitu ayahandanya Ali bin Abi Thalib. Para ulama menyebut sanad seperti ini sebagai <em>sanad 'ali</em> (sanad tinggi) karena sedikitnya perantara.
+</p>
+<h3>B. Sanad melalui Para Sahabat Lainnya</h3>
+<p>
+Selain melalui ayahandanya, Muhammad Al-Hanafiyyah juga memiliki sanad melalui para sahabat besar lainnya:
+</p>
+<blockquote>
+Muhammad Al-Hanafiyyah ← Abdullah bin Abbas ← Rasulullah SAW<br>
+Muhammad Al-Hanafiyyah ← Abu Hurairah ← Rasulullah SAW<br>
+Muhammad Al-Hanafiyyah ← Anas bin Malik ← Rasulullah SAW<br>
+Muhammad Al-Hanafiyyah ← Abdullah bin Umar ← Rasulullah SAW
+</blockquote>
+<h3>C. Sanad melalui Saudara-Saudaranya</h3>
+<p>
+Muhammad Al-Hanafiyyah juga memiliki sanad melalui saudara-saudaranya:
+</p>
+<blockquote>
+Muhammad Al-Hanafiyyah ← Al-Hasan bin Ali ← Ali bin Abi Thalib ← Rasulullah SAW<br>
+Muhammad Al-Hanafiyyah ← Al-Husain bin Ali ← Ali bin Abi Thalib ← Rasulullah SAW
+</blockquote>
+<h3>D. Keistimewaan Sanad Ahlul Bait</h3>
+<p>
+Sanad keilmuan Muhammad Al-Hanafiyyah memiliki keistimewaan khusus karena beliau berasal dari keluarga Ahlul Bait. Para ulama menyebutkan bahwa ilmu Ahlul Bait memiliki ciri khas yang tidak dimiliki oleh sanad lainnya — yaitu ilmu yang diwariskan secara khusus dalam keluarga, dengan pemahaman yang lebih mendalam tentang makna-makna batin Al-Qur'an dan hadits.
+</p>
+<p>
+Beliau pernah berkata tentang sanad keilmuannya: <em>"Aku mengambil ilmu dari ayahku, dan ayahku mengambilnya dari Rasulullah shallallahu 'alaihi wa sallam. Maka ilmuku adalah ilmu Rasulullah, dan aku tidak akan mengubahnya sedikit pun. Barangsiapa yang ingin mengambil ilmu dari sumber yang murni, maka hendaklah ia mengambilnya dari sanad ini."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG PENTINGNYA SANAD — HADITS NABAWI</div>
+<div class="arabic-text">
+إِنَّ هَذَا الْعِلْمَ دِينٌ فَانْظُرُوا عَمَّنْ تَأْخُذُونَ دِينَكُمْ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Inna hādzā-l-'ilma dīnun fa-nzhurū 'amman ta'khudzūna dīnakum."<br>
+<strong>Artinya:</strong> "Sesungguhnya ilmu ini adalah agama, maka perhatikanlah dari siapa kalian mengambil agama kalian."
+<br>— Perkataan Abdullah bin Al-Mubarak (diriwayatkan dalam Muqaddimah Shahih Muslim)
+</div>
+</div>
+<div class="karomah-card">
+<span class="karomah-number">5</span>
+<span class="karomah-title">Keistimewaan Metode Belajar — Adab Sebelum Ilmu</span>
+<div class="karomah-arabic">مُمَيِّزَاتُ مَنْهَجِهِ فِي التَّعَلُّمِ — الْأَدَبُ قَبْلَ الْعِلْمِ</div>
+<p>
+Salah satu keistimewaan Muhammad Al-Hanafiyyah dalam menuntut ilmu adalah beliau sangat memperhatikan adab dan akhlak sebelum mempelajari ilmu itu sendiri. Beliau memahami bahwa ilmu tanpa adab adalah seperti pohon tanpa buah — tidak ada manfaatnya. Prinsip ini beliau warisi dari ayahandanya Ali bin Abi Thalib, yang selalu menekankan pentingnya adab dalam menuntut ilmu.
+</p>
+<h3>A. Adab terhadap Guru</h3>
+<p>
+Muhammad Al-Hanafiyyah sangat menghormati guru-gurunya. Beliau tidak pernah memotong pembicaraan guru, tidak pernah mendebat dengan cara yang tidak sopan, dan tidak pernah meninggikan suara di hadapan mereka. Beliau duduk dengan penuh hormat, mendengarkan dengan penuh perhatian, dan mencatat dengan teliti setiap ilmu yang disampaikan.
+</p>
+<h3>B. Adab terhadap Ilmu</h3>
+<p>
+Beliau memperlakukan ilmu dengan penuh penghormatan. Beliau tidak pernah mempelajari ilmu dengan niat untuk berdebat atau untuk menyombongkan diri, melainkan dengan niat untuk mengamalkannya dan mendekatkan diri kepada Allah. Beliau berkata: <em>"Barangsiapa yang menuntut ilmu bukan karena Allah, maka ilmu itu akan menjadi beban baginya di hari kiamat."</em>
+</p>
+<h3>C. Adab terhadap Sesama Penuntut Ilmu</h3>
+<p>
+Muhammad Al-Hanafiyyah sangat rendah hati terhadap sesama penuntut ilmu. Beliau tidak pernah merasa lebih tinggi dari orang lain, tidak pernah merendahkan orang yang kurang ilmunya, dan selalu siap membantu siapa saja yang ingin belajar. Sikap ini menjadikan beliau sangat dicintai oleh para sahabat dan tabi'in.
+</p>
+<h3>D. Mengamalkan Ilmu yang Dipelajari</h3>
+<p>
+Yang paling penting, Muhammad Al-Hanafiyyah selalu mengamalkan setiap ilmu yang beliau pelajari. Beliau tidak pernah menjadi orang yang hanya tahu tetapi tidak mengamalkan. Setiap ayat Al-Qur'an yang beliau pelajari, beliau amalkan dalam kehidupan sehari-hari. Setiap hadits yang beliau hafal, beliau terapkan dalam interaksi dengan sesama. Inilah yang menjadikan ilmu beliau berkah dan bermanfaat bagi banyak orang.
+</p>
+<p>
+Beliau pernah berkata: <em>"Ilmu yang tidak diamalkan adalah seperti pohon yang tidak berbuah. Dan pohon yang tidak berbuah lebih baik ditebang daripada dibiarkan memenuhi tanah. Maka hendaklah kalian mengamalkan ilmu yang kalian pelajari, agar ilmu itu menjadi berkah bagi kalian dan bagi orang lain."</em>
+</p>
+</div>
+<div class="arabic-box">
+<div class="arabic-label">DALIL TENTANG ADAB MENUNTUT ILMU — QS. AL-KAHFI: 78</div>
+<div class="arabic-text">
+سَأُنَبِّئُكَ بِتَأْوِيلِ مَا لَمْ تَسْتَطِع عَّلَيْهِ صَبْرًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Sa-unabbi'uka bi-ta'wīli mā lam tastaṭi' 'alayhi ṣabrā."<br>
+<strong>Artinya:</strong> "Aku akan memberitahukan kepadamu takwil dari apa yang kamu tidak dapat bersabar terhadapnya."
+<br>— QS. Al-Kahfi: 78 (ucapan Khidir kepada Nabi Musa, mengajarkan adab dalam menuntut ilmu)
+</div>
+</div>
+<div class="highlight-box">
+<strong style="color: #d4af37; font-size: 1.1rem;">Intisari Perjalanan Menuntut Ilmu Muhammad Al-Hanafiyyah:</strong>
+<ul>
+<li><strong>Pusat keilmuan:</strong> Madinah Al-Munawwarah dan Kufah</li>
+<li><strong>Guru utama:</strong> Ayahandanya Ali bin Abi Thalib radhiyallahu 'anhu</li>
+<li><strong>Guru dari kalangan Ahlul Bait:</strong> Al-Hasan bin Ali, Al-Husain bin Ali</li>
+<li><strong>Guru dari kalangan sahabat:</strong> Abdullah bin Abbas, Abu Hurairah, Anas bin Malik, Abdullah bin Umar, Sayyidah Aisyah</li>
+<li><strong>Bidang ilmu zhahir:</strong> Al-Qur'an, tafsir, hadits, fikih, ushul fikih, bahasa Arab, sirah</li>
+<li><strong>Bidang ilmu batin:</strong> Tazkiyatun nafs, ma'rifat, adab spiritual, doa dan munajat</li>
+<li><strong>Tempat belajar:</strong> Masjid Nabawi di Madinah</li>
+<li><strong>Metode belajar:</strong> As-sima', al-hifzh, al-mudzakarah, al-munāqasyah, al-'amal</li>
+<li><strong>Sanad keilmuan:</strong> Bersambung langsung kepada Rasulullah SAW melalui ayahandanya dan para sahabat</li>
+<li><strong>Prinsip utama:</strong> Adab sebelum ilmu, mengamalkan setiap ilmu yang dipelajari</li>
+<li><strong>Ciri khas:</strong> Memadukan ilmu zhahir dan batin secara seimbang</li>
+</ul>
+</div>
+<h2>Doa Memohon Keberkahan Ilmu dan Sanad yang Shahih</h2>
+<div class="arabic-box">
+<div class="arabic-label">DOA MEMOHON ILMU YANG BERMANFAAT</div>
+<div class="arabic-text">
+اللَّهُمَّ انْفَعْنِي بِمَا عَلَّمْتَنِي، وَعَلِّمْنِي مَا يَنْفَعُنِي، وَزِدْنِي عِلْمًا، وَاجْعَلْنِي مِمَّنْ يَسْتَمِعُونَ الْقَوْلَ فَيَتَّبِعُونَ أَحْسَنَهُ
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Allāhumma-nfa'nī bimā 'allamtanī, wa 'allimnī mā yanfa'unī, wa zidnī 'ilmā, wa-j'alnī mimman yastami'ūna-l-qawla fa-yattabi'ūna aḥsanah."<br>
+<strong>Artinya:</strong> "Ya Allah, berilah manfaat kepadaku dengan apa yang telah Engkau ajarkan kepadaku, ajarilah aku apa yang bermanfaat bagiku, tambahkanlah ilmu kepadaku, dan jadikanlah aku termasuk orang-orang yang mendengarkan perkataan lalu mengikuti yang terbaik darinya."
+</div>
+</div>
+<h2>Penutup Halaman 3</h2>
+<p>
+Demikianlah perjalanan menuntut ilmu Muhammad Al-Hanafiyyah — putra Amirul Mukminin Ali bin Abi Thalib yang memiliki keistimewaan berguru langsung kepada ayahandanya dan kepada para sahabat besar Rasulullah SAW di Madinah Al-Munawwarah. Beliau mempelajari berbagai bidang ilmu — dari Al-Qur'an dan tafsir, hadits, fikih, hingga ilmu-ilmu batin yang diwariskan dalam keluarga Ahlul Bait — dengan sanad yang sangat kuat dan metode belajar yang penuh adab. Keistimewaan beliau adalah mampu memadukan ilmu zhahir dan batin secara seimbang, serta senantiasa mengamalkan setiap ilmu yang beliau pelajari.
+</p>
+<p>
+Pada halaman berikutnya, kita akan membahas perjalanan spiritual Muhammad Al-Hanafiyyah — bagaimana beliau menempuh jalan suluk di bawah bimbingan ayahandanya, pengalaman-pengalaman spiritual yang beliau alami, dan maqam-maqam kewalian yang beliau capai.
+</p>
+<p>
+<em>Wallahu a'lam bish-shawab.</em> Dan segala puji bagi Allah, Tuhan semesta alam.
+</p>
+<div class="arabic-box">
+<div class="arabic-text">
+وَقُل رَّبِّ زِدْنِي عِلْمًا
+</div>
+<div class="arabic-translation">
+<strong>Latin:</strong> "Wa qur rabbi zidnī 'ilmā."<br>
+<strong>Artinya:</strong> "Dan katakanlah: 'Ya Tuhanku, tambahkanlah kepadaku ilmu pengetahuan.'"
+<br>— QS. Thaha: 114
+</div>
+</div>
+</div>
+<!-- NAVIGASI 9 TOMBOL -->
+<div class="article-nav">
+<div class="nav-group">
+<a href="hanafi1.html" class="article-nav-btn" title="Halaman 1: Pendahuluan">1</a>
+<div class="nav-btn-label">Pendahuluan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi2.html" class="article-nav-btn" title="Halaman 2: Masa Kecil & Pendidikan">2</a>
+<div class="nav-btn-label">Masa Kecil</div>
+</div>
+<div class="nav-group">
+<a href="hanafi3.html" class="article-nav-btn active" title="Halaman 3: Perjalanan Menuntut Ilmu & Para Guru">3</a>
+<div class="nav-btn-label">Guru & Ilmu</div>
+</div>
+<div class="nav-group">
+<a href="hanafi4.html" class="article-nav-btn" title="Halaman 4: Perjalanan Spiritual">4</a>
+<div class="nav-btn-label">Spiritual</div>
+</div>
+<div class="nav-group">
+<a href="hanafi5.html" class="article-nav-btn" title="Halaman 5: Tantangan & Konflik">5</a>
+<div class="nav-btn-label">Tantangan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi6.html" class="article-nav-btn" title="Halaman 6: Pro/Kontra Masyarakat & Ulama">6</a>
+<div class="nav-btn-label">Pro/Kontra</div>
+</div>
+<div class="nav-group">
+<a href="hanafi7.html" class="article-nav-btn" title="Halaman 7: Sikap terhadap Penguasa">7</a>
+<div class="nav-btn-label">Penguasa</div>
+</div>
+<div class="nav-group">
+<a href="hanafi8.html" class="article-nav-btn" title="Halaman 8: Warisan Keilmuan">8</a>
+<div class="nav-btn-label">Warisan</div>
+</div>
+<div class="nav-group">
+<a href="hanafi9.html" class="article-nav-btn" title="Halaman 9: Penutup & Intisari">9</a>
+<div class="nav-btn-label">Penutup</div>
+</div>
+</div>
+</div>
+<a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+KALAM
+<span class="btn-sub">← Kembali ke Beranda</span>
+</a>
+</div>
+<footer>
+<p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+</footer>
+<script>
+let currentFontSize = 1.05;
+function changeFontSize(delta) {
+currentFontSize += delta * 0.1;
+if (currentFontSize < 0.8) currentFontSize = 0.8;
+if (currentFontSize > 1.5) currentFontSize = 1.5;
+document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+}
+</script>
+</body>
+</html>
